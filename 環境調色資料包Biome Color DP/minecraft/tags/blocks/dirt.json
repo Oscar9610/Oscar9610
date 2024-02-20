@@ -1,0 +1,23 @@
+{
+    "values": [
+        "grass_block",
+        "oak_leaves",
+        "spruce_leaves",
+        "birch_leaves",
+        "jungle_leaves",
+        "azalea_leaves",
+        "acacia_leaves",
+        "dark_oak_leaves",
+        "mangrove_leaves",
+        "cherry_leaves",
+        "flowering_azalea_leaves",
+        "dirt",
+        "podzol",
+        "coarse_dirt",
+        "mycelium",
+        "rooted_dirt",
+        "moss_block",
+        "mud",
+        "muddy_mangrove_roots"
+    ]
+}

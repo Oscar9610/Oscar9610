@@ -1,0 +1,1 @@
+function water_sword:scoreboard

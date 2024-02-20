@@ -1,0 +1,10 @@
+scoreboard objectives add water_sword_rightclick minecraft.used:minecraft.carrot_on_a_stick "水鏡之光右鍵偵測"
+scoreboard objectives add water_sword_cd dummy "水鏡之光CD"
+scoreboard objectives add water_sword_max_cd dummy "水鏡之光CD上限"
+scoreboard objectives add water_sword_passive dummy "被動[幽光]"
+scoreboard objectives add water_sword_passive_delay dummy "水鏡之光被動消耗間隔"
+scoreboard players set @a water_sword_max_cd 25
+scoreboard players set @a water_sword_cd 0
+scoreboard players set @a water_sword_rightclick 0
+scoreboard players set @a water_sword_passive 0
+scoreboard players set @a water_sword_passive_delay 0
