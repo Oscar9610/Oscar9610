@@ -1,0 +1,7 @@
+{
+  "asset_id": "hill_trim",
+  "description": {
+    "translate": "trim_pattern.minecraft.hill"
+  },
+  "template_item": "minecraft:clock"
+}

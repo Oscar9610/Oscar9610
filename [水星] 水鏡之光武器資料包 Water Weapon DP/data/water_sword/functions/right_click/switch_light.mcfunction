@@ -10,4 +10,5 @@ function water_sword:passive/light_sword_passive
 effect give @s minecraft:speed 15 2 true
 effect give @s minecraft:strength 5 0 true
 effect give @s minecraft:haste 15 1 true
+function time_traveler:players/space_time_deceleration
 scoreboard players operation @s water_sword_cd = @s water_sword_max_cd
