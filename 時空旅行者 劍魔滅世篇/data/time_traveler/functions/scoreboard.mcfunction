@@ -22,6 +22,7 @@ scoreboard objectives add music.place_of_trial dummy "[水星 - 奧蘭蒂斯] �
 scoreboard objectives add spaceship.global.main dummy "[太空站 - 奧莉亞] 主要全局"
 scoreboard objectives add spaceship.story dummy "[太空站 - 奧莉亞] 劇情"
 scoreboard objectives add music.spaceship dummy "[太空站 - 奧莉亞] 背景音樂"
+scoreboard objectives add music.time_and_space_journey_mercury.chr.1 dummy "[時空旅途其一] 背景音樂"
 scoreboard objectives add duration dummy "實體存在時間"
 scoreboard objectives add health health "玩家血量"
 scoreboard objectives add attack dummy "玩家攻擊力"
@@ -103,5 +104,8 @@ scoreboard players set shadow_cave p4.world_area 0
 scoreboard players set @a music.orantes_city 0
 scoreboard players set @a music.spaceship 0
 scoreboard players set @a music.place_of_trial 0
+scoreboard players set @a music.time_and_space_journey_mercury.chr.1 0
+
+
 scoreboard players set @a disable.tp_book 0
 #=====================================================================================

@@ -4,9 +4,9 @@
       "item": "minecraft:campfire"
     },
     "title": "[主線] 在洞穴偶遇陳述？！",
-    "description": "你找到了陳述，陳述在小避難所想拿回東西，究竟會發生甚麼事呢",
+    "description": [{"text":"你找到了陳述，陳述在小避難所想拿回東西，究竟會發生甚麼事呢"},{"text":" (目標：右鍵點擊陳述！)","color":"gold"}],
     "background": "minecraft:textures/gui/advancements/backgrounds/prismarine.png",
-    "frame": "task",
+    "frame": "goal",
     "show_toast": true,
     "announce_to_chat": false,
     "hidden": false

@@ -5,9 +5,18 @@
       "nbt": "{SkullOwner:{Id:[I;597445495,376455587,-1576080428,-1359908725],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODNjNjc4ZDdlMGFkYzAwMjZmZjUxY2NiMGI2OTViYzhhOGQ5N2VhNmM1ZWI0M2FmZTQ0MjRlYWQzNmQ3YWEzMCJ9fX0=\"}]}},display:{Name:'{\"text\":\"Pilot\"}'}}"
     },
     "title": "[主線] 陳述不見了？！",
-    "description": "你選擇先前往奧蘭蒂斯城尋找魔劍相關情報，詢問這裡的爺爺，爺爺知道情報但是希望你能找到 陳述 於是踏上旅途先尋找陳述",
+    "description": [
+      {
+        "text": "你選擇先前往奧蘭蒂斯城尋找魔劍相關情報，詢問這裡的爺爺，爺爺知道情報但是希望你能找到 陳述",
+        "insertion": "\\n"
+      },
+      {
+        "text": " (目標：前往城市外面的大樹找到陳述！)",
+        "color": "gold"
+      }
+    ],
     "background": "minecraft:textures/gui/advancements/backgrounds/prismarine.png",
-    "frame": "task",
+    "frame": "goal",
     "show_toast": true,
     "announce_to_chat": false,
     "hidden": false

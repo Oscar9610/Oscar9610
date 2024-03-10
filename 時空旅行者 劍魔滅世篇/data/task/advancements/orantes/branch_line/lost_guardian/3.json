@@ -7,7 +7,7 @@
     "title": "[支線] 貝洛斯",
     "description": "你向阿爾敦詢問關於雷納的消息，阿爾敦說『雷納的舊友和家人會是關鍵』於是建議你去詢問尋找村長和雷納的家人",
     "background": "minecraft:textures/gui/advancements/backgrounds/prismarine.png",
-    "frame": "task",
+    "frame": "goal",
     "show_toast": true,
     "announce_to_chat": false,
     "hidden": false

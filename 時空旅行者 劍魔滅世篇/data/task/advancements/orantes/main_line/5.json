@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:player_head",
+      "nbt": "{SkullOwner:{Id:[I;1855635559,1167544114,-1695440178,-2087995804],Name:\"Milbrillion\",Properties:{textures:[{Signature:\"MfCxefSnb2Z3zGmdUs4WBEFo3XwhE3niXgHGQVrTk44zK9fv5pAkkRaSsW21AhxJAFvXbXCLTIQLt4m5ffQ7/6BEl4FAPiRQKgHmClNgPIE5fC3jQRWk6JYG85CPuTfL0QokX7vo+qFEyY0ImyOYBnOt8WtAyL3ZIEso53iDon4rIhtwFTSsJiXzgyLu+jPyzTm1to0OMPVvo0kpti4x7gtK9Q21sqa0nyUK93rzBzsLRGkJgit0meUU8IHXpRWLjGrQ0dPtAGB8r8qvJ+OMJcGRiZkeLmqyJ/lTrXUib8uVFS4QHUfHT9SvItI0eCo6/2+nakrfABd8Q0G4W2RTUjRH9kIwnU9KBWAKWmzhVimcNQXZRP+pqOgY5lCtoTUBwHEvXli4mihZRCqJqo84T1RTrx864VjtrT0qGMrSW9uwVoou604/pNd7Tj5QUXWfQmkJRqocd9+u8Bzl8cqrVO9Dw1ZtKlHDn1+/Ejt/wT09hGCXqhwl8A+s7bbOlegamUrX3AR9npwSq0/oFV6WsVECqlZC9k+vl3DnQviyQKRY3C2eqH9PCvYiFBH36EnOrCNnbyRbg1D1KPszpKANGz6z/Jio2ZgsgvxuCktCVUtSNgGMS5TE4+hLvDEF8Hb08qCoDxF1QmOep+1ENz9A++X5XC148KidGd762xZcFiM=\",Value:\"ewogICJ0aW1lc3RhbXAiIDogMTY5OTI1NTY0MjgxNiwKICAicHJvZmlsZUlkIiA6ICI2ZTlhYzA2NzQ1OTc0ZjMyOWFmMWEyY2U4MzhiYjY2NCIsCiAgInByb2ZpbGVOYW1lIiA6ICJNaWxicmlsbGlvbiIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS80MTRjMDZkMTFjYjZhNjQ4NTAyODIzMzIxYjhkNTM0YTk5NTNkMzZhZTQ4MjE3OWNjMDIxOWM3MThlZjZiZmRlIgogICAgfQogIH0KfQ==\"}]}},display:{Name:'{\"text\":\"Old Man\"}'}}"
+    },
+    "title": "[主線] 回去找爺爺",
+    "description": [
+      {
+        "text": "在經過戰鬥後，你與陳述終於回到了奧蘭蒂斯城市！"
+      },
+      {
+        "text": " (目標：回去奧蘭蒂斯城找陳述爺爺！)",
+        "color": "gold"
+      }
+    ],
+    "background": "minecraft:textures/gui/advancements/backgrounds/prismarine.png",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "task:orantes/main_line/4",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

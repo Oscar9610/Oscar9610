@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:carrot_on_a_stick",
+      "nbt": "{CustomModelData:4}"
+    },
+    "title": "[主線] 前往試煉之地",
+    "description": [
+      {
+        "text": "你與爺爺匯報守護封印的守護者已經被擊敗，是時候前往試煉之地了"
+      },
+      {
+        "text": " (目標：前往試煉之地擊敗被深淵操控的水鏡之光主人 - 阿塔爾！)",
+        "color": "gold"
+      }
+    ],
+    "background": "minecraft:textures/gui/advancements/backgrounds/prismarine.png",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "task:orantes/main_line/7",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

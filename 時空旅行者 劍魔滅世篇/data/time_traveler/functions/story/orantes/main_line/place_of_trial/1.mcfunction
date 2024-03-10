@@ -16,6 +16,7 @@ execute positioned 6 63 177 in game_map:orantes as @a[tag=!op,distance=..14] if 
 execute positioned 6 63 177 in game_map:orantes as @a[tag=!op,distance=..14] if score .main_line orantes.story matches 113 run tellraw @s {"text":"［爺爺］你們等等去一趟試煉之地要小心！"}
 execute positioned 6 63 177 in game_map:orantes as @a[tag=!op,distance=..14] if score .main_line orantes.story matches 114 run tellraw @s [{"text":"【目標】去森林深處的試煉之地！","color": "gold","bold": false},{"text":" (紅色信標標記處) ","bold": true,"color": "red"}]
 execute in minecraft:overworld if score .main_line orantes.story matches 114 run weather thunder
+execute if score .main_line orantes.story matches 114 run scoreboard players set #main_line global.advancements 8
 #循環偵測
 #loop
 execute if score .main_line orantes.story matches 104..114 run scoreboard players add .main_line orantes.story 1

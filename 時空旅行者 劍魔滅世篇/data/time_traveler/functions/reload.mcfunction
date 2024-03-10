@@ -14,3 +14,5 @@ execute as @a[gamemode=!creative,gamemode=!spectator] run function time_traveler
 
 #創造 or 觀察者
 execute as @a[gamemode=!survival,gamemode=!adventure] run function time_traveler:tp/orantes/all_open
+
+advancement revoke @a only time_traveler:interaction/library/1

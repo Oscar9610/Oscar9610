@@ -18,6 +18,7 @@ execute positioned -12 62 73 in game_map:orantes as @a[distance=..20] if score .
 execute positioned -12 62 73 in game_map:orantes as @a[distance=..20] if score .main_line orantes.story matches 97 run tellraw @s {"text":"［陳述爺爺］分別是城市旁邊的紫色洞穴(魅影)、在試煉之地森林附近的綠色洞穴(毒霧)、村莊附近的灰色洞穴(風暴守護者)"}
 execute positioned -12 62 73 in game_map:orantes as @a[distance=..20] if score .main_line orantes.story matches 98 run tellraw @s {"text":"［陳述爺爺］洞穴十分危險，你們一定要小心！"}
 execute positioned -12 62 73 in game_map:orantes as @a[distance=..20] if score .main_line orantes.story matches 99 run tellraw @s [{"text":"【目標】討伐守護者！","color": "gold","bold": false},{"text":" (淺藍色信標標記處) ","bold": true,"color": "aqua"}]
+execute positioned -12 62 73 in game_map:orantes as @a[distance=..20] if score .main_line orantes.story matches 99 run scoreboard players set #main_line global.advancements 6
 execute if score .main_line orantes.story matches 99 run function time_traveler:story/orantes/main_line/core/reset_core_stage
 execute if score .main_line orantes.story matches 99 run function time_traveler:story/orantes/main_line/core/core_stage
 execute if score .main_line orantes.story matches 99 run kill @e[tag=statement_grandpa_1]
