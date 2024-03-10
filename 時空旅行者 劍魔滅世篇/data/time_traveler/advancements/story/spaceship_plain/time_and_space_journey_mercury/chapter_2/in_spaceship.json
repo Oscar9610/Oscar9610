@@ -1,0 +1,14 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "player": {},
+        "to": "game_map:spaceship_interior"
+      }
+    }
+  },
+  "rewards": {
+    "function": "time_traveler:story/spaceship_plain/time_and_space_journey_mercury/chapter_2/start_2"
+  }
+}

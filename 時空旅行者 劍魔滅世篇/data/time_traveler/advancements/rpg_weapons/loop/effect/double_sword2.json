@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "kill_enemy": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "player": {
+          "nbt": "{SelectedItem:{tag:{double_sword:-1b}},Inventory:[{Slot:-106b,tag:{double_sword:1b}}]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "time_traveler:rpg_weapons/loop/effect/double_sword/1"
+  }
+}

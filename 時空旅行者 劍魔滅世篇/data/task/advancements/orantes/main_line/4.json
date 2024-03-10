@@ -1,0 +1,20 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:campfire"
+    },
+    "title": "[主線] 在洞穴偶遇陳述？！",
+    "description": "你找到了陳述，陳述在小避難所想拿回東西，究竟會發生甚麼事呢",
+    "background": "minecraft:textures/gui/advancements/backgrounds/prismarine.png",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "task:orantes/main_line/3",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

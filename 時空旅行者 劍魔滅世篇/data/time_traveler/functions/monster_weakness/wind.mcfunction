@@ -1,0 +1,4 @@
+execute as @a[nbt={SelectedItem:{tag:{wind:1b}}}] at @s anchored eyes facing entity @e[sort=nearest,limit=1,type=!player,tag=wind] eyes anchored feet positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^-1 unless entity @s[distance=..0.3] run item modify entity @s weapon.mainhand time_traveler:monster_weakness/no_damage_bonus
+execute as @a[nbt={SelectedItem:{tag:{wind:1b}}}] at @s anchored eyes facing entity @e[tag=wind,sort=nearest,limit=1,type=!player] eyes anchored feet positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^-1 if entity @s[distance=..0.3] run item modify entity @s weapon.mainhand time_traveler:monster_weakness/damage_bonus
+execute as @a[advancements={time_traveler:monster_weakness/wind_weakness=true}] run item modify entity @s weapon.mainhand time_traveler:monster_weakness/no_damage_bonus
+execute as @a[advancements={time_traveler:monster_weakness/wind_weakness=true}] run advancement revoke @s only time_traveler:monster_weakness/wind_weakness

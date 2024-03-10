@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "entity": {
+            "nbt": "{Tags:[\"potion\"]}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "time_traveler:boss/spawner/potion/set_delay/1"
+    }
+  }
+  

@@ -1,0 +1,21 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:player_head",
+      "nbt": "{SkullOwner:{Id:[I;-46780029,1861566863,-1195432582,-619590427],Name:\"Wizard\",Properties:{textures:[{Signature:\"CLHcBqMGOVB4gEAdQHziLtCxS81+njW1j/n4Nbvz+MUa38uJ8UoCNOG/r81AEXDgPC433GMKUnWN0jm01nmmVxq0rkbJuwLvoGY7Zxb5UOAVW7/Qr77NibDQUKebgsukOGIEXyTc6I8ePApTzCVYgQuddbb+hnDmIlbqrTTAlJicsjm8PrD7K4oNildsi6aFz0AgNqGxdo4FngOC/DWmVk589LNlLW9hvhczzfLlLV6fWihxG62OzRr3D3nANQv9aZFdQK01hRQ8X2/ZxWmo6MxfoY8+uYHgV8ky8rGQv0biakq7AA9gueXJ7q5pQeWaBdoC8skfdSoo/rbXK6XVBlLWhdy81ZAZDqS/4astt6Al/GNrREuvBo8QHAHTLuJOkiCTbhZp/uId+paoX0kRn96B6O5ox2/HyeZFtOGZrMdGujLmY9Pb4igpphDfBSbmikLdnNbrnZI1ln+MHtZs/5j/q2nPPaymeEqsU0qiDEKuCUitSF6T5on7wtJ702llTx+/m26WCp9++4WyIABiIZkubFZer3vX944kz+E9muGDa0eDuSxsA20kXDZAtk7v/OSaUqoxRI08sPBFtcCeiKZ7BnBD0fYsn+tNout9s+NhQiurED8hmxc2uAFsi3ecCQpn9owpoQQD+PVRZFHgS1ozsNDkEv3bq38yFqMBehM=\",Value:\"ewogICJ0aW1lc3RhbXAiIDogMTY4OTE3NTYwMjg0NywKICAicHJvZmlsZUlkIiA6ICJmZDM2MzE4MzZlZjU0MThmYjhiZjI1N2FkYjExY2NlNSIsCiAgInByb2ZpbGVOYW1lIiA6ICJXaXphcmQiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTMxNWRjNzRiNTQxMDUxMTAxODhlZGQwYzU0MmQ4NjZhNjM3ZjE1NzUzNmNhZjAzNzhhMDZkNTRjNWI3ZWQ1MSIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9\"}]}},display:{Name:'{\"text\":\"Sasuke Uchiha\"}'}}"
+    },
+    "title": "回去找艾梅拉",
+    "description": "艾梅拉似乎有什麼事情忘記跟你說，快去找她吧",
+    "background": "minecraft:textures/gui/advancements/backgrounds/space.png",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "task:spaceship/main_line/4",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

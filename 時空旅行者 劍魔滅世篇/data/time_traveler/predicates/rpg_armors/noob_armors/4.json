@@ -1,0 +1,33 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "head": {
+          "items": [
+            "minecraft:leather_helmet"
+          ],
+          "nbt": "{noob:1b}"
+        },
+        "chest": {
+          "items": [
+            "minecraft:leather_chestplate"
+          ],
+          "nbt": "{noob:1b}"
+        },
+        "legs": {
+          "items": [
+            "minecraft:leather_leggings"
+          ],
+          "nbt": "{noob:1b}"
+        },
+        "feet": {
+          "items": [
+            "minecraft:leather_boots"
+          ],
+          "nbt": "{noob:1b}"
+        }
+      }
+    }
+  }
+  

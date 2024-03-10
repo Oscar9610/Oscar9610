@@ -1,0 +1,7 @@
+{
+    "asset_id": "minecraft:aldon_trim",
+    "description": {
+      "translate": "trim_pattern.minecraft.grass_block"
+    },
+    "template_item": "minecraft:grass_block"
+  }

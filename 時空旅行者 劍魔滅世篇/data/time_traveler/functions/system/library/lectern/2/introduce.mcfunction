@@ -1,0 +1,10 @@
+tellraw @s {"text":"你翻閱了其中一頁，上面寫著:"}
+tellraw @s {"text":"【行行重行行】"}
+tellraw @s {"text":"行行重行行，與君生別離。"}
+tellraw @s {"text":"相去萬餘里，各在天一涯。"}
+tellraw @s {"text":"道路阻且長，會面安可知？"}
+tellraw @s {"text":"胡馬依北風，越鳥巢南枝。"}
+tellraw @s {"text":"相去日已遠，衣帶日已緩。"}
+tellraw @s {"text":"浮雲蔽白日，遊子不顧返。"}
+tellraw @s {"text":"思君令人老，歲月忽已晚。"}
+tellraw @s {"text":"棄捐勿複道，努力加餐飯。"}

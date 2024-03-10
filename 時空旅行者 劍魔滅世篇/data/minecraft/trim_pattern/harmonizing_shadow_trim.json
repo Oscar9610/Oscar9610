@@ -1,0 +1,7 @@
+{
+  "asset_id": "harmonizing_shadow_trim",
+  "description": {
+    "translate": "trim_pattern.minecraft.harmonizing_shadow"
+  },
+  "template_item": "minecraft:black_concrete"
+}

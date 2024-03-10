@@ -1,0 +1,9 @@
+{
+  "asset_name": "detective_material",
+  "description": {
+    "translate": "trim_material.minecraft.brown_concrete",
+    "color": "#9A5CC6"
+  },
+  "ingredient": "minecraft:brown_concrete",
+  "item_model_index": 0.01
+}

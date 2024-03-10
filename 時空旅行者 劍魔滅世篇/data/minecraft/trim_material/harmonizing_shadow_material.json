@@ -1,0 +1,9 @@
+{
+  "asset_name": "harmonizing_shadow_material",
+  "description": {
+    "color": "#555555",
+    "translate": "trim_material.minecraft.harmonizing_shadow"
+  },
+  "ingredient": "minecraft:black_concrete",
+  "item_model_index": 0.01
+}

@@ -1,0 +1,9 @@
+{
+  "asset_name": "atar_water_material",
+  "description": {
+    "translate": "trim_material.minecraft.water_bucket",
+    "color": "#9A5CC6"
+  },
+  "ingredient": "minecraft:water_bucket",
+  "item_model_index": 0.01
+}

@@ -1,0 +1,7 @@
+{
+  "asset_id": "bonnie_trim",
+  "description": {
+    "translate": "trim_pattern.minecraft.bonnie"
+  },
+  "template_item": "minecraft:pink_wool"
+}

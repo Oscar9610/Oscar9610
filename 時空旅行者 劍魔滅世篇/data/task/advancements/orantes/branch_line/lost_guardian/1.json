@@ -1,0 +1,21 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:player_head",
+      "nbt": "{SkullOwner:{Id:[I;662463333,-1893250689,-1559570881,-24868393],Properties:{textures:[{Signature:\"G5IPz/2fFJ04f5lu4FAloKI8tz/VDul+nslVDtr/13ohqP5++1YzfFo3MAJh+Soz+jN6jgbV3G3w7J93gycgzJvQ7vMuE5VOgIOLFq1I314KuHlO5K7yRkgT4TOYDksWr4qECd55/yhroZXAtCR59v3/p2Lxqzwk2bGn0vsuFzN/RSabT/gsuDk+mF7vPtRJntnkrmGozQZGV9dy3cva85iHnM4fNMnCC4Jdp5XTiHeCyhBdf/n3GN8hHm/oxJm0cTZfY78GlS2GGqYJCfmJYSYjF2eFkwMxcABzYLL5OE8mqUl6PGi9TuvutIaKGz+JeFlEAJ/d5XzSUj1u1Br6TC95b+aWki55oDVwJ9JisnRo7gVhhbrlbUsh9b0dujvWFa5QGTe2fKQUE1yq6pzDPWozjCuyplJ6+fL4IrGwywhBADyCDEQOP6jwEn4AtGNfN4w3dKRWyUUTKBvP3xODbchgBmsFzSr/cN9x/Nlnrl0m0JgruTEUGwNQ/YHnRdZXxz/Op+NcbIGvrPwN/YVnhVg09LYxPIsCpya5MrfV5pTuDcxh/JlZ6nJwqXEkJUdpRH2XMYNpSMRLGRHRD+57suRqB55Thwl9uYJGt32R1F+bCttZmUAdQhyBMf7YMN2XwaACy3JjdrovOtjSocIJ4sCxe+jAAanmSs8J1BglGuQ=\",Value:\"ewogICJ0aW1lc3RhbXAiIDogMTYzMzA0NDM3NDE0OSwKICAicHJvZmlsZUlkIiA6ICJhYjlkYmMzZjk4NGE0ZWI4YTVmY2RlYWMzNzEzZWFkMSIsCiAgInByb2ZpbGVOYW1lIiA6ICJDeWJvcm51dDIiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjEzYTRiNmRmZmFkZTFjMmFkMTVmZjg5YmU3N2QwZTFlMzZmZGViNDNlOTMxMmU5MWMxOWY0NmM0ZmQ1MzE5MCIKICAgIH0KICB9Cn0=\"}]}},display:{Lore:['{\"text\":\"Skin 14f0ffd3\"}','{\"text\":\"generated on Oct 1, 2021 7:26:14 AM\"}','{\"text\":\"via MineSkin.org\"}','{\"text\":\"https://minesk.in/14f0ffd3d42642aeb5c475a05b9d46f4\"}'],Name:'{\"text\":\"14f0ffd3\"}'}}"
+    },
+    "title": "[支線] 遺失的守護者",
+    "description": "奧蘭蒂斯城的一位前守護者，名為雷納，多年前在對抗深淵怪物時失蹤。他是村落中一位尊敬的英雄，擁有一把傳說中的劍，被稱為“光明之劍”。雷納的失蹤令村民居民感到沉重的損失，但他的故事逐漸被遺忘。",
+    "background": "minecraft:textures/gui/advancements/backgrounds/prismarine.png",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "task:orantes/main_mission/go_orantes_city",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

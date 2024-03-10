@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "entity": {
+            "nbt": "{Tags:[\"storm_keeper\"]}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "time_traveler:boss/spawner/storm_keeper/set_delay/1"
+    }
+  }
+  

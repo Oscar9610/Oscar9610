@@ -1,0 +1,21 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:bow"
+      },
+      "title": "【支線】射擊比賽！",
+      "description": "WalkMan467設計的射擊比賽！只要通過就可以獲得大量星輝幣！",
+      "background": "minecraft:textures/gui/advancements/backgrounds/prismarine.png",
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "parent": "task:orantes/main_line/1",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

@@ -1,0 +1,11 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:target_hit"
+      }
+    },
+    "rewards": {
+      "function": "time_traveler:system/shooting_contest/add_score"
+    }
+  }
+  

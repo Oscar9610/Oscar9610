@@ -1,0 +1,3 @@
+execute if score mini_game.shooting_contest.timer global.main matches 0.. run function time_traveler:mini_game/shooting_contest/shooting_contest_reset
+execute if score mini_game.shooting_contest.timer global.main matches 1.. run schedule function time_traveler:mini_game/shooting_contest/shooting_contest 1s
+execute if score mini_game.shooting_contest.timer global.main matches 1.. run schedule function time_traveler:mini_game/shooting_contest/loop 5s

@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "entity": {
+            "nbt": "{Tags:[\"atar\"]}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "time_traveler:boss/spawner/atar/set_delay/1"
+    }
+  }
+  

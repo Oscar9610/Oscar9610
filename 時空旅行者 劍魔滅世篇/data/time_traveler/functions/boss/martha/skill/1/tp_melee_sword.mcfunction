@@ -1,0 +1,9 @@
+execute as @e[tag=melee_1,limit=1,sort=nearest] at @e[tag=martha,limit=1,sort=nearest] run tp @s ^1.5 ^ ^1 ~ ~
+execute as @e[tag=melee_2,limit=1,sort=nearest] at @e[tag=martha,limit=1,sort=nearest] run tp @s ^1 ^ ^1 ~ ~
+execute as @e[tag=melee_3,limit=1,sort=nearest] at @e[tag=martha,limit=1,sort=nearest] run tp @s ^0.5 ^ ^1 ~ ~
+execute as @e[tag=melee_4,limit=1,sort=nearest] at @e[tag=martha,limit=1,sort=nearest] run tp @s ^1.5 ^0.5 ^1 ~ ~
+execute as @e[tag=melee_5,limit=1,sort=nearest] at @e[tag=martha,limit=1,sort=nearest] run tp @s ^1 ^0.5 ^1 ~ ~
+execute as @e[tag=melee_6,limit=1,sort=nearest] at @e[tag=martha,limit=1,sort=nearest] run tp @s ^0.5 ^0.5 ^1 ~ ~
+execute as @e[tag=melee_7,limit=1,sort=nearest] at @e[tag=martha,limit=1,sort=nearest] run tp @s ^1.5 ^-0.5 ^1 ~ ~
+execute as @e[tag=melee_8,limit=1,sort=nearest] at @e[tag=martha,limit=1,sort=nearest] run tp @s ^1 ^-0.5 ^1 ~ ~
+execute as @e[tag=melee_9,limit=1,sort=nearest] at @e[tag=martha,limit=1,sort=nearest] run tp @s ^0.5 ^-0.5 ^1 ~ ~

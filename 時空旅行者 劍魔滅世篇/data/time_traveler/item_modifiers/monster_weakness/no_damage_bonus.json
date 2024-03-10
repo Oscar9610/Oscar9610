@@ -1,0 +1,10 @@
+[
+    {
+      "function": "minecraft:set_enchantments",
+      "enchantments": {
+        "minecraft:smite": 0
+      },
+      "add": false
+    }
+  ]
+  

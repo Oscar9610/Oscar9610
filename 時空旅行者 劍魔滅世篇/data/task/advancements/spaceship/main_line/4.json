@@ -1,0 +1,21 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:player_head",
+      "nbt": "{SkullOwner:{Id:[I;-1210879219,973817880,-1915836071,-641042622],Name:\"magicmacey1111\",Properties:{textures:[{Signature:\"IZjws+DAiwG9tQnAdRsK40TIhZ07jUWC1z4VXiLgYYeNuSBJAEk/mF3LueHOnl/e/4sVa/pQBpSgQIgNYBbgjxt+EXTDmeC/b8TboLM5tZxM/pEG1hTXzrX+zboIagtO9PJGiIua4qyanOV+io65MG1Mxrj6cb3p3+g+UfF2++ObrqAJrgn6KFoIs74iMDC0u1H9aHkMme8Hj3LaIChXN2yFiioNZ8nbxAPPWUCvH5oZ5QTOhwio9PZcjbFlFpZDE/EmyeeN2za+JSrnwVQsUOIVEakDHE0q0t18i6afOzcfSVL46HxaeE6AUwAv/ZYiMhygSDzNf0h2E9IPcl8/KLwUWszInK+WdWbiD9D2gF7duBP6rovT1cL7MD00pIIwWBe/fFtTuYDkq2ZSxOodGYrwmHzZNyZAuix0nnAulFE7VfohjhDZtfuDIHXszXZvnPA096960HxQ2A1Qgfgsui72iD59VHpbsKWlCxXecT11QDFO6BGlKA5ugAMRluzXKgbjLGK78X6IDkbsBrTkgmncbzvNdTp+3uybc1zEqedgMcxviY1qu8Iu43yu/uFbZ1XScvyxaIBkFCR81/HUo9mPKVUas77QhTfPt/rnw2ZAFznbLlNqlzw/h7jq541FusZnhRpBkeGIBC4yJ4UAQn0fWV8wULem8MgwaxlrEH8=\",Value:\"ewogICJ0aW1lc3RhbXAiIDogMTY4OTU5NzEwOTE2MCwKICAicHJvZmlsZUlkIiA6ICJiN2QzNzMwZDNhMGI0ODE4OGRjZWE5NTlkOWNhNzc0MiIsCiAgInByb2ZpbGVOYW1lIiA6ICJtYWdpY21hY2V5MTExMSIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9lYWE1ZGU0ZWQ1OWZjMjJlZWZlNjA2NGFiZWM5ZTA4NjhiOGU1NDA0ZjM1ZmQwZDJiZTUxMjA5NzI5MmU4ZDY2IgogICAgfQogIH0KfQ==\"}]}},display:{Name:'{\"text\":\"Girl\"}'}}"
+    },
+    "title": "去找萊娜",
+    "description": "萊娜是飛船駕駛員，任何地圖都可以在她那邊拿到",
+    "background": "minecraft:textures/gui/advancements/backgrounds/space.png",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "task:spaceship/main_line/3",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

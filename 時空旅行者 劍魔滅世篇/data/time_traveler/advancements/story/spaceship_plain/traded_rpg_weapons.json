@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "traded": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:carrot_on_a_stick"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "traded"
+    ]
+  ],
+  "rewards": {
+    "function": "time_traveler:story/spaceship_plain/traded_rpg_weapons"
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,21 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:player_head",
+      "nbt": "{SkullOwner:{Id:[I;-1344746688,1315980211,-2097015181,247082902],Properties:{textures:[{Signature:\"SuHY/yBGor4Oi8cSusjOWVWK9bZwnU+o2Xi/wZXG5OCQWNrdcGS8R7JCFwm1LGilTQ/lNkG7gLggVb3F3rY4cjffY4faybVrL3qy/xSdcvFYXGP+ul9FO4BHCuqlcwhcnQOAmPKreROffIrK5TyimviX+InH9GIupFeCVlsFTCPDmWVHZ6Y0B/rrhrKkYActNqhx8LFSuqiDMB5tfLvQo7iGjpeFO6qQDZ878ujGPlSyIo6rzpUts2tgmy8OluJLRYts126mqCCGh7v5aX9oEt9WFCF/FpTAh3zkSDerMixJQTYSHH/vO8O9ojpIcc29U3rMUikMvLOo0ODacJby1gNTTLHPuIxDfpUlFC+d2v/uIPgBITaE8biiJixexwJ9MN7eVHfhbmIa+bP4PeO2+OeZrJNGsxP37xJFwZkOLpAunBko9V0tJmyWW54x/LaxfPQVE64O5+poYWTIEpkKGSrSNcWTpiEDRFA/wF4uurkjk/k2T5MFaJSHEsxVtfiC7R9+WAJ2KjV9wgsRpFGsOEwznUtDRhCZa3ocmvRkAIb10aiy/QGYuPCWOsAQKpoNNcZT4xJ6crc95Uz1qvDm87g5Mrd+KMTeey8N9+a+fsA0k74DnxLrUySFL3q/3PIVKclXbl5PzQZZlzguHxG7R491xG05eLUgYFVQl/5qyTc=\",Value:\"ewogICJ0aW1lc3RhbXAiIDogMTcwNDI2NzU1NjA0NiwKICAicHJvZmlsZUlkIiA6ICIxZjEyNTNhYTVkYTQ0ZjU5YWU1YWI1NmFhZjRlNTYxNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJfX21pa3lfXyIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS81OWZhNzQwYWRkN2RiNTgxMDBkMGIwYjNmOThjYmNjNDJmMmY3MmYzNjU2ZTE3ZjYwMGE2MzY0NTc1ZDRhZjhmIgogICAgfQogIH0KfQ==\"}]}},display:{Lore:['{\"text\":\"Skin ce885aaa\"}','{\"text\":\"generated on Jan 3, 2024 3:39:16 PM\"}','{\"text\":\"via MineSkin.org\"}','{\"text\":\"https://minesk.in/ce885aaa53914b02b1b90da80cec82c4\"}'],Name:'{\"text\":\"ce885aaa\"}'}}"
+    },
+    "title": "[支線] 阿爾敦",
+    "description": "你想了解關於更多雷納的事，爺爺們建議你去找 \"阿爾敦\" 詢問關於雷納的消息",
+    "background": "minecraft:textures/gui/advancements/backgrounds/prismarine.png",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "task:orantes/branch_line/lost_guardian/1",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

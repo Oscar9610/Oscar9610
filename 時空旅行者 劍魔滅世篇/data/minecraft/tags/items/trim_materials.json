@@ -1,0 +1,24 @@
+{
+  "values": [
+    "minecart:black_concrete",
+    "minecraft:sculk",
+    "minecraft:blackstone",
+    "minecraft:pink_wool",
+    "minecraft:cyan_wool",
+    "minecraft:brown_concrete",
+    "minecraft:water_bucket",
+    "minecraft:grass_block",
+    "minecraft:gilded_blackstone",
+
+    "minecraft:iron_ingot",
+    "minecraft:copper_ingot",
+    "minecraft:gold_ingot",
+    "minecraft:lapis_lazuli",
+    "minecraft:emerald",
+    "minecraft:diamond",
+    "minecraft:netherite_ingot",
+    "minecraft:redstone",
+    "minecraft:quartz",
+    "minecraft:amethyst_shard"
+  ]
+}

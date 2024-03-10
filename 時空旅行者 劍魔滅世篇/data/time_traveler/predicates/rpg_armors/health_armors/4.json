@@ -1,0 +1,33 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "head": {
+          "items": [
+            "minecraft:diamond_helmet"
+          ],
+          "nbt": "{health:1b}"
+        },
+        "chest": {
+          "items": [
+            "minecraft:diamond_chestplate"
+          ],
+          "nbt": "{health:1b}"
+        },
+        "legs": {
+          "items": [
+            "minecraft:diamond_leggings"
+          ],
+          "nbt": "{health:1b}"
+        },
+        "feet": {
+          "items": [
+            "minecraft:diamond_boots"
+          ],
+          "nbt": "{health:1b}"
+        }
+      }
+    }
+  }
+  
