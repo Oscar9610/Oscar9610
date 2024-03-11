@@ -1,7 +1,7 @@
 
 # player
 title @a[distance=..10] title {"text":"遊戲結束！","color":"red"}
-function time_traveler:mini_game/shooting_contest/remove_bow
+function time_traveler:mini_game/shooting_contest/bow/remove
 
 # success
 tellraw @a[distance=..10] [{"text":"[WalkMan467] ","color":"white"},{"text":"遊戲結束！結算分數！","color":"green"}]
