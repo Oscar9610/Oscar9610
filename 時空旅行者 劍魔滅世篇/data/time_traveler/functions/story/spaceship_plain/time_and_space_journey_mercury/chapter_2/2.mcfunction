@@ -11,7 +11,7 @@ execute in game_map:spaceship_interior positioned 20.5 56.5 19.5 as @a[distance=
 execute in game_map:spaceship_interior positioned 20.5 56.5 19.5 as @a[distance=..8] if score .time_and_space_journey_mercury_chapter_2 spaceship.story matches 8 run tellraw @s {"text":"［希爾］我們過去看看"}
 execute in game_map:spaceship_interior positioned 20.5 56.5 19.5 as @a[distance=..8] if score .time_and_space_journey_mercury_chapter_2 spaceship.story matches 9 run tellraw @s {"text":"【目標】向前詢問！","color":"gold"}
 execute if score .time_and_space_journey_mercury_chapter_2 spaceship.story matches 9 run schedule clear time_traveler:story/spaceship_plain/time_and_space_journey_mercury/chapter_2/smooth_camera
-execute in game_map:spaceship_interior positioned 20.5 56.5 19.5 as @a[distance=..8] if score .time_and_space_journey_mercury_chapter_2 spaceship.story matches 9 run scoreboard players set .time_and_space_journey_mercury_chapter_2 spaceship.global.main 5
+execute if score .time_and_space_journey_mercury_chapter_2 spaceship.story matches 9 run scoreboard players set .time_and_space_journey_mercury_chapter_2 spaceship.global.main 5
 
 execute if score .time_and_space_journey_mercury_chapter_2 spaceship.story matches 4..9 run scoreboard players add .time_and_space_journey_mercury_chapter_2 spaceship.story 1
 execute if score .time_and_space_journey_mercury_chapter_2 spaceship.story matches 4..9 run schedule function time_traveler:story/spaceship_plain/time_and_space_journey_mercury/chapter_2/2 3s

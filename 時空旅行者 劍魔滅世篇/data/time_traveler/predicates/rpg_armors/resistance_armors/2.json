@@ -1,0 +1,203 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "head": {
+                "items": [
+                  "minecraft:netherite_helmet"
+                ],
+                "nbt": "{resistance:1b}"
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "chest": {
+                "items": [
+                  "minecraft:netherite_chestplate"
+                ],
+                "nbt": "{resistance:1b}"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "head": {
+                "items": [
+                  "minecraft:netherite_helmet"
+                ],
+                "nbt": "{resistance:1b}"
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "legs": {
+                "items": [
+                  "minecraft:netherite_leggings"
+                ],
+                "nbt": "{resistance:1b}"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "head": {
+                "items": [
+                  "minecraft:netherite_helmet"
+                ],
+                "nbt": "{resistance:1b}"
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "feet": {
+                "items": [
+                  "minecraft:netherite_boots"
+                ],
+                "nbt": "{resistance:1b}"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "chest": {
+                "items": [
+                  "minecraft:netherite_chestplate"
+                ],
+                "nbt": "{resistance:1b}"
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "legs": {
+                "items": [
+                  "minecraft:netherite_leggings"
+                ],
+                "nbt": "{resistance:1b}"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "chest": {
+                "items": [
+                  "minecraft:netherite_chestplate"
+                ],
+                "nbt": "{resistance:1b}"
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "feet": {
+                "items": [
+                  "minecraft:netherite_boots"
+                ],
+                "nbt": "{resistance:1b}"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "legs": {
+                "items": [
+                  "minecraft:netherite_leggings"
+                ],
+                "nbt": "{resistance:1b}"
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "feet": {
+                "items": [
+                  "minecraft:netherite_boots"
+                ],
+                "nbt": "{resistance:1b}"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

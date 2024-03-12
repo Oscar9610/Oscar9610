@@ -26,6 +26,7 @@ execute in game_map:spaceship_interior positioned 20.5 56.5 19.5 as @a[distance=
 execute in game_map:spaceship_interior positioned 20.5 56.5 19.5 as @a[distance=..8] if score .time_and_space_journey_mercury_chapter_2 spaceship.story matches 34 run tellraw @s {"text":"［阿斯卡］我會在奧蘭蒂斯的藍色大樹與你相見！"}
 execute in game_map:spaceship_interior positioned 20.5 56.5 19.5 as @a[distance=..8] if score .time_and_space_journey_mercury_chapter_2 spaceship.story matches 35 run tellraw @s {"text":"【目標】傳送至 奧蘭蒂斯 平原！","color":"gold"}
 execute as @e[tag=time_and_space_journey_mercury.chapter_2.2] if score .time_and_space_journey_mercury_chapter_2 spaceship.story matches 35 run kill @s
+execute if score .time_and_space_journey_mercury_chapter_2 spaceship.story matches 35 run scoreboard players set .time_and_space_journey_mercury_chapter_2 spaceship.global.main 6
 
 execute if score .time_and_space_journey_mercury_chapter_2 spaceship.story matches 10..35 run scoreboard players add .time_and_space_journey_mercury_chapter_2 spaceship.story 1
 execute if score .time_and_space_journey_mercury_chapter_2 spaceship.story matches 10..35 run schedule function time_traveler:story/spaceship_plain/time_and_space_journey_mercury/chapter_2/3 3s

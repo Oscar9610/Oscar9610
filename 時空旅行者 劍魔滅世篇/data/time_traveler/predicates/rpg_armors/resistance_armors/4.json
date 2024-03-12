@@ -5,27 +5,27 @@
     "equipment": {
       "head": {
         "items": [
-          "minecraft:diamond_helmet"
+          "minecraft:netherite_helmet"
         ],
-        "nbt": "{health:1b}"
+        "nbt": "{resistance:1b}"
       },
       "chest": {
         "items": [
-          "minecraft:diamond_chestplate"
+          "minecraft:netherite_chestplate"
         ],
-        "nbt": "{health:1b}"
+        "nbt": "{resistance:1b}"
       },
       "legs": {
         "items": [
-          "minecraft:diamond_leggings"
+          "minecraft:netherite_leggings"
         ],
-        "nbt": "{health:1b}"
+        "nbt": "{resistance:1b}"
       },
       "feet": {
         "items": [
-          "minecraft:diamond_boots"
+          "minecraft:netherite_boots"
         ],
-        "nbt": "{health:1b}"
+        "nbt": "{resistance:1b}"
       }
     }
   }
