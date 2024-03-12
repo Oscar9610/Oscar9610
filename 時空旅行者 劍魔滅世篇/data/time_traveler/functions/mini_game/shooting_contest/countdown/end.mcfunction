@@ -1,0 +1,3 @@
+
+function time_traveler:mini_game/shooting_contest/loop
+function time_traveler:mini_game/shooting_contest/game_over/detect
