@@ -17,7 +17,7 @@ tag @s[nbt={SelectedItem:{tag:{the_night:0b,CustomModelData:5,rarity:3b}}}] add 
 tag @s[nbt={SelectedItem:{tag:{the_night:0b,CustomModelData:5,rarity:4b}}}] add night_open_4
 tag @s[nbt={SelectedItem:{tag:{the_night:0b,CustomModelData:5,rarity:5b}}}] add night_open_5
 
-execute as @s run function time_traveler:rpg_weapons/loop/rightclick/the_night/blood_sacrifice_time
+function time_traveler:rpg_weapons/loop/rightclick/the_night/blood_sacrifice_time
 
 execute as @s[nbt={SelectedItem:{tag:{the_night:0b,CustomModelData:5,rarity:3b}}}] run function time_traveler:rpg_weapons/loop/rightclick/the_night/3star/give_the_night_2
 execute as @s[nbt={SelectedItem:{tag:{the_night:0b,CustomModelData:5,rarity:4b}}}] run function time_traveler:rpg_weapons/loop/rightclick/the_night/4star/give_the_night_2

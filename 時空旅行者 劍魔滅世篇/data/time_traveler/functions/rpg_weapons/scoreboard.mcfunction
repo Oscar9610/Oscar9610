@@ -18,6 +18,8 @@ scoreboard players set @a wind_sword_max_cd 8
 scoreboard objectives add the_night_CD dummy "夜幕CD"
 scoreboard objectives add the_night_max_CD dummy "夜幕CD上限"
 scoreboard objectives add the_night_time dummy "夜幕血祭持續時間"
+scoreboard objectives add the_night_charge dummy "夜幕充能"
+scoreboard objectives add the_night_charge_timer dummy "夜幕充能特效"
 
 scoreboard players set @a the_night_CD 0
 scoreboard players set @a the_night_time 0

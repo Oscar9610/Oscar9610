@@ -15,3 +15,4 @@ function time_traveler:player_attributes/double_sword_water/effect
 function time_traveler:player_attributes/water_sword_demon/skill/water_sword_demon
 function time_traveler:player_attributes/noob_schtick/skill/noob_schtick
 function time_traveler:player_attributes/the_night/skill/the_night
+function time_traveler:player_attributes/the_night/skill/the_night_passive
