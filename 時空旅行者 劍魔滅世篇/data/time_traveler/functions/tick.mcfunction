@@ -36,3 +36,9 @@ scoreboard players remove @a[scores={the_night.screen_animation=1..}] the_night.
 
 #凡是有 facing 標籤的實體在8個內都會看向最近的玩家
 execute as @e[tag=facing] at @s run tp @s ~ ~ ~ facing entity @p[distance=..8]
+
+#凡是有 rotate 標籤的實體都會旋轉
+execute as @e[tag=rotate.15] at @s run tp @s ~ ~ ~ ~15 ~
+execute as @e[tag=rotate] at @s run tp @s ~ ~ ~ ~15 ~
+execute as @e[tag=rotate.30] at @s run tp @s ~ ~ ~ ~30 ~
+execute as @e[tag=rotate.45] at @s run tp @s ~ ~ ~ ~45 ~
