@@ -10,4 +10,6 @@ schedule clear time_traveler:interaction/spaceship_plain/time_and_space_journey_
 
 advancement revoke @a only time_traveler:story/spaceship_plain/time_and_space_journey_mercury/chapter_2/in_spaceship
 
+advancement revoke @a only time_traveler:story/spaceship_plain/time_and_space_journey_mercury/chapter_2/in_orantes
+
 #function time_traveler:story/orantes/reload_story/time_and_space_journey_mercury/chapter_2
