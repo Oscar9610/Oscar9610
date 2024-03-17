@@ -36,8 +36,8 @@ schedule function time_traveler:monsters/main/loop 1t
 schedule function time_traveler:damage_formula/loop 1t
 schedule function time_traveler:players/detect_player_get_id 1t
 schedule function time_traveler:timer 1t
-schedule function time_traveler:rpg_weapons/loop/effect/double_sword/fire/loop 1s
-schedule function time_traveler:rpg_weapons/loop/effect/noob_axe/noob_axe 10s
+schedule function time_traveler:rpg_weapons/effect/double_sword/fire/loop 1s
+schedule function time_traveler:rpg_weapons/effect/noob_axe/heal 10s
 schedule function time_traveler:rpg_items/get/gift_pack/double_sword 1t
 schedule function time_traveler:rpg_items/get/gift_pack/double_sword_fire 1t
 schedule function time_traveler:rpg_weapons/loop/detect_sword_demon 1t
@@ -74,13 +74,13 @@ execute if score .main_line orantes.story matches 29.. in game_map:orantes posit
 
 ##假設要開始寫進度
 #   星球名稱資料包:
-#   rpg_weapons/loop/effect/advancements/test1.json
+#   rpg_weapons/effect/advancements/test1.json
 
 #========================================================
 
 ##獲取進度執行function 取名方式要是這樣：
 #   星球名稱資料包:
-#   rpg_weapons/loop/effect/function/test1.mcfunction
+#   rpg_weapons/effect/function/test1.mcfunction
 #========================================================
 
 ##計分板之後會新增一個叫 星球名.分類.main
