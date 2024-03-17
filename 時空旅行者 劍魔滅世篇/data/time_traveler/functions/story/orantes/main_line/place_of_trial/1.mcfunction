@@ -1,8 +1,6 @@
-#水星初始離開飛船對話劇情
-#Mercury initial leaving spacecraft dialogue plot
+#水星主線即將去試煉之地對話劇情
 
 #透過scoreboard story(dummy) + schedule 指令運行整個劇情
-#The orantes.story is executed through the global function of the "story" scoreboard and the schedule control interval.
 
 execute positioned 6 63 177 in game_map:orantes as @a[tag=!op,distance=..14] if score .main_line orantes.story matches 104 run tellraw @s {"text":"［希爾］爺爺我們回來了！"}
 execute positioned 6 63 177 in game_map:orantes as @a[tag=!op,distance=..14] if score .main_line orantes.story matches 105 run tellraw @s {"text":"［爺爺］保護封印的守護者都解決了嗎?"}

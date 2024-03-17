@@ -1,7 +1,8 @@
+#水星主線即將去試煉之地對話劇情
 
 #透過scoreboard story(dummy) + schedule 指令運行整個劇情
-#The orantes.story is executed through the global function of the "story" scoreboard and the schedule control interval.
 execute positioned 11 62 -125 in game_map:orantes if score .main_line orantes.story matches 115 run scoreboard players add .world_level global.main 1
+execute in minecraft:overworld if score .main_line orantes.story matches 115 run weather clear
 execute positioned 11 62 -125 in game_map:orantes if score .main_line orantes.story matches 115 run tellraw @a[tag=!op,distance=..100] {"text":"［阿塔爾］你... 你做到了。深淵的鎖鏈正在我心中解開。自由，這感覺... 我幾乎忘記了。"}
 execute positioned 11 62 -125 in game_map:orantes if score .main_line orantes.story matches 116 run tellraw @a[tag=!op,distance=..100] {"text":"［阿塔爾］謝謝你，旅行者。你不僅救了我，也為奧蘭蒂斯帶來了希望。你的力量，你的純潔之心，超乎了我的期望。"}
 execute positioned 11 62 -125 in game_map:orantes if score .main_line orantes.story matches 117 run tellraw @a[tag=!op,distance=..100] {"text":"［阿塔爾］但這只是開始。深淵的力量仍在蠢蠢欲動。你的旅程遠遠沒有結束，你將面對更加艱難的試煉。"}

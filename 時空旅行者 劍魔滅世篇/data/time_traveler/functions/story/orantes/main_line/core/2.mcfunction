@@ -1,5 +1,6 @@
-#沿用story:core/6後面對話
-#Follow the dialogue behind story:core/6
+#水星主線討伐封印守護者的對話劇情
+
+#透過scoreboard story(dummy) + schedule 指令運行整個劇情
 #劇情
 #story
 execute positioned -12 62 73 in game_map:orantes as @a[tag=p1,distance=..30] if score .main_line orantes.story matches 90 run tp @s -11 62 70 facing -12 62 73
