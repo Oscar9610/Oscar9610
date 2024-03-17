@@ -17,8 +17,8 @@ execute as @a[scores={water_sword_cd=1}] at @s run playsound minecraft:entity.pl
 execute as @a[scores={noob_sickle_cd=1}] run tellraw @s [{"text":"[","color":"green","bold":true},{"text":"☆新手鐮刀{物理}","color":"white","bold":true},{"text":"] ","color":"green","bold":true},{"text":"冷卻完畢！","color":"green","bold":true}]
 execute as @a[scores={noob_sickle_cd=1}] at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~ 0.5 1.5
 
-execute as @a[scores={the_night_CD=1}] run tellraw @s [{"text":"[","color":"green","bold":true},{"text":"☆☆☆夜幕 {風}","color":"dark_green","bold":true},{"text":"] ","color":"green","bold":true},{"text":"冷卻完畢！","color":"green","bold":true}]
-execute as @a[scores={the_night_CD=1}] at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~ 0.5 1.5
+execute as @a[scores={the_night_cd=1}] run tellraw @s [{"text":"[","color":"green","bold":true},{"text":"☆☆☆夜幕 {風}","color":"dark_green","bold":true},{"text":"] ","color":"green","bold":true},{"text":"冷卻完畢！","color":"green","bold":true}]
+execute as @a[scores={the_night_cd=1}] at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~ 0.5 1.5
 
 execute as @a[scores={double_sword_cd=1}] run tellraw @s [{"text":"[","color":"green","bold":true},{"text":"☆☆☆☆鋒利雙股劍 {物理}","color":"white","bold":true},{"text":"] ","color":"green","bold":true},{"text":"冷卻完畢！","color":"green","bold":true}]
 execute as @a[scores={double_sword_cd=1}] at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~ 0.5 1.5
@@ -45,7 +45,6 @@ scoreboard players remove @a[scores={double_sword_water_effect_cd=1..}] double_s
 scoreboard players remove @a[scores={water_sword_cd=1..}] water_sword_cd 1
 scoreboard players remove @a[scores={noob_sickle_cd=1..}] noob_sickle_cd 1
 scoreboard players remove @a[scores={time_space_lock_cd=1..}] time_space_lock_cd 1
-
-schedule function time_traveler:rpg_weapons/loop/rightclick/the_night/blood_sacrifice_time 1s
+scoreboard players remove @a[scores={the_night_cd=1..}] the_night_cd 1
 
 schedule function time_traveler:rpg_weapons/loop/timer 1s
