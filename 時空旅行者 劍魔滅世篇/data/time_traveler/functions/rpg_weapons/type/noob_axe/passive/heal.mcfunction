@@ -7,4 +7,4 @@ tellraw @a[tag=temp] [{"text":"[","color":"green","bold":true},{"text":"保護",
 
 tag @a[tag=temp] remove temp
 
-schedule function time_traveler:rpg_weapons/effect/noob_axe/heal 10s
+schedule function time_traveler:rpg_weapons/type/noob_axe/passive/heal 10s

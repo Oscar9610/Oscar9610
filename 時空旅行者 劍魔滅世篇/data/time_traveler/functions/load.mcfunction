@@ -37,7 +37,7 @@ schedule function time_traveler:monsters/main/loop 1t
 schedule function time_traveler:players/detect_player_get_id 1t
 schedule function time_traveler:timer 1t
 schedule function time_traveler:rpg_weapons/type/double_sword_fire/passive/loop 1s
-schedule function time_traveler:rpg_weapons/effect/noob_axe/heal 10s
+schedule function time_traveler:rpg_weapons/type/noob_axe/passive/heal 10s
 schedule function time_traveler:rpg_items/get/gift_pack/double_sword 1t
 schedule function time_traveler:rpg_items/get/gift_pack/double_sword_fire 1t
 schedule function time_traveler:entity_fx/loop 1t

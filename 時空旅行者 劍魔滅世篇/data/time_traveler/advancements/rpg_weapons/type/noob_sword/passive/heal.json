@@ -10,6 +10,6 @@
     }
   },
   "rewards": {
-    "function": "time_traveler:rpg_weapons/effect/noob_sword/heal"
+    "function": "time_traveler:rpg_weapons/type/noob_sword/passive/heal"
   }
 }

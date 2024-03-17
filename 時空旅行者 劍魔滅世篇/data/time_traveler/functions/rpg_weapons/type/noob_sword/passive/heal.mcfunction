@@ -1,5 +1,5 @@
 
-advancement revoke @s only time_traveler:rpg_weapons/effect/noob_sword
+advancement revoke @s only time_traveler:rpg_weapons/type/noob_sword/passive/heal
 execute if predicate time_traveler:chance/50 run return 0
 
 # heal
