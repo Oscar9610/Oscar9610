@@ -1,1 +1,3 @@
+
 function water_sword:scoreboard
+schedule function water_sword:detect_sword_demon 1t
