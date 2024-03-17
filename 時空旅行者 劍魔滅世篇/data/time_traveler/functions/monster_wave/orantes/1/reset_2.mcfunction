@@ -8,5 +8,5 @@ kill @e[type=!player,tag=orantes_1_monster_wave]
 kill @e[type=armor_stand,tag=orantes_main_battle]
 execute positioned -64 63 5 as @e[distance=..30,type=item,nbt={Item:{tag:{money:1b}}}] run kill @s
 scoreboard players set .main_line orantes.global.main 7
-function time_traveler:story/orantes/main_line/rescue_statement/2
+function time_traveler:story/orantes/main_line/rs/guide
 schedule clear time_traveler:monster_wave/orantes/1/loop

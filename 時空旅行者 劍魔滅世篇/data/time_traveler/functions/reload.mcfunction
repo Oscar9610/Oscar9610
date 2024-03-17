@@ -4,8 +4,8 @@ scoreboard players set #shooting_contest orantes.story 0
 scoreboard players set #shooting_contest orantes.global.main 0
 scoreboard players set #shooting_contest global.advancements 0
 
-function time_traveler:story/orantes/reload_story/lost_guardian
-function time_traveler:story/orantes/reload_story/main_line
+function time_traveler:story/reload_story/lost_guardian
+function time_traveler:story/reload_story/main_line
 
 execute in game_map:orantes run kill @e[tag=ml.sgp]
 

@@ -1,0 +1,1 @@
+schedule clear time_traveler:story/orantes/main_line/rs/3/walk/walk_loop

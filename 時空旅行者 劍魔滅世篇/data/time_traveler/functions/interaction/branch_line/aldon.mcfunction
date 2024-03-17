@@ -3,4 +3,4 @@ execute as @e[type=minecraft:interaction,tag=aldon.interaction] if score .lost_g
 execute as @e[type=minecraft:interaction,tag=aldon.interaction] if score .lost_guardian orantes.story matches 11.. if score #lost_guardian global.advancements matches 8 if data entity @s interaction.timestamp run function time_traveler:story/orantes/npc/aldon/2
 execute as @e[type=minecraft:interaction,tag=aldon.interaction] if data entity @s interaction.timestamp run data remove entity @s interaction
 
-schedule function time_traveler:interaction/aldon 1t
+schedule function time_traveler:interaction/branch_line/aldon 1t
