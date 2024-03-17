@@ -3,6 +3,7 @@ function time_traveler:monsters/main/scoreboard
 function time_traveler:boss/main/scoreboard
 function time_traveler:damage_formula/scoreboard
 function time_traveler:rpg_weapons/scoreboard
+function rotas:scoreboard
 
 schedule function time_traveler:interaction/realm_of_time_and_space/weapons/the_night_5star 1t
 schedule function time_traveler:rpg_weapons/loop/rightclick/the_night/loop 1t
