@@ -7,3 +7,5 @@ scoreboard objectives add rotas.remaining_monster dummy "[時空之境] 怪物�
 scoreboard objectives add rotas.target_wave dummy "[時空之境] 怪物波次目標"
 scoreboard objectives add rotas.kill dummy "[時空之境] 已獲得分數"
 scoreboard objectives add rotas.monster_wave dummy "[時空之境] 怪物波次"
+
+scoreboard players set rotas.reset rotas.global.main 0

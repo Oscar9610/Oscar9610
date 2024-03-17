@@ -1,6 +1,6 @@
 
-advancement revoke @s only time_traveler:rpg_weapons/effect/double_sword/water/effect/1
-advancement revoke @s only time_traveler:rpg_weapons/effect/double_sword/water/effect/2
+advancement revoke @s only time_traveler:rpg_weapons/type/double_sword_water/passive/1
+advancement revoke @s only time_traveler:rpg_weapons/type/double_sword_water/passive/2
 execute unless score @s double_sword_water_effect_cd matches ..0 run return 0
 
 # player

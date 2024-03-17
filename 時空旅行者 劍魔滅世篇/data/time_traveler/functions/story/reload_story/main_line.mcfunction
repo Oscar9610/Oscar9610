@@ -21,7 +21,7 @@ schedule clear time_traveler:story/orantes/main_line/statement_go_back_to_old_ho
 function task:reset_task
 
 #啟動循環function
-function time_traveler:interaction/statement_grandpa
+function time_traveler:interaction/main_line/statement_grandpa/loop
 function time_traveler:story/orantes/main_line/loop
 schedule clear time_traveler:interaction/statement_2
 schedule clear time_traveler:story/orantes/main_line/core/core_stage

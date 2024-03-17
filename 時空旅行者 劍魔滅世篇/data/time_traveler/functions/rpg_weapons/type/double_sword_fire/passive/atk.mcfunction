@@ -5,5 +5,5 @@ scoreboard players operation @e[type=#time_traveler:monsters,tag=temp] double_sw
 scoreboard players operation @e[type=#time_traveler:monsters,tag=temp] double_sword_fire.effect.id = @s id
 tag @e[tag=temp] remove temp
 
-advancement revoke @s only time_traveler:rpg_weapons/effect/double_sword/fire/effect/1
-advancement revoke @s only time_traveler:rpg_weapons/effect/double_sword/fire/effect/2
+advancement revoke @s only time_traveler:rpg_weapons/type/double_sword_fire/passive/1
+advancement revoke @s only time_traveler:rpg_weapons/type/double_sword_fire/passive/2

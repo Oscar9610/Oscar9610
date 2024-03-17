@@ -20,6 +20,6 @@
     }
   },
   "rewards": {
-    "function": "time_traveler:rpg_weapons/effect/double_sword/water"
+    "function": "time_traveler:rpg_weapons/type/double_sword_water/passive/water"
   }
 }

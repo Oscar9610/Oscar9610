@@ -1,7 +1,7 @@
 {
   "criteria": {
     "double_sword_fire": {
-      "trigger": "minecraft:player_hurt_entity",
+      "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "player": [
           {
@@ -10,7 +10,7 @@
             "predicate": {
               "equipment": {
                 "mainhand": {
-                  "nbt": "{double_sword:-2b}"
+                  "nbt": "{double_sword:1b}"
                 }
               }
             }
@@ -20,6 +20,6 @@
     }
   },
   "rewards": {
-    "function": "time_traveler:rpg_weapons/effect/double_sword/fire/atk"
+    "function": "time_traveler:rpg_weapons/type/double_sword/passive/physic"
   }
 }

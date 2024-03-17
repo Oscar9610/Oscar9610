@@ -1,0 +1,11 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "game_map:orantes",
+        "to": "game_map:realm_of_time_and_space"
+      }
+    }
+  }
+}

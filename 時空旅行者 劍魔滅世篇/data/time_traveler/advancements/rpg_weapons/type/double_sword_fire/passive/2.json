@@ -10,7 +10,7 @@
             "predicate": {
               "equipment": {
                 "mainhand": {
-                  "nbt": "{double_sword:2b}"
+                  "nbt": "{double_sword:-2b}"
                 }
               }
             }
@@ -20,6 +20,6 @@
     }
   },
   "rewards": {
-    "function": "time_traveler:rpg_weapons/effect/double_sword/fire/atk"
+    "function": "time_traveler:rpg_weapons/type/double_sword_fire/passive/atk"
   }
 }

@@ -6,8 +6,6 @@ function time_traveler:boss/main/scoreboard
 function time_traveler:rpg_weapons/scoreboard
 function rotas:scoreboard
 
-schedule function time_traveler:interaction/realm_of_time_and_space/weapons/the_night_5star 1t
-schedule function time_traveler:rpg_weapons/loop/rightclick/the_night/loop 1t
 schedule function time_traveler:entity_fx/control_thread/guide 1t
 schedule function time_traveler:interaction/library/lectern/1 1t
 schedule function time_traveler:interaction/library/lectern/2 1t
@@ -38,7 +36,7 @@ schedule function time_traveler:interaction/lena 1t
 schedule function time_traveler:monsters/main/loop 1t
 schedule function time_traveler:players/detect_player_get_id 1t
 schedule function time_traveler:timer 1t
-schedule function time_traveler:rpg_weapons/effect/double_sword/fire/loop 1s
+schedule function time_traveler:rpg_weapons/type/double_sword_fire/passive/loop 1s
 schedule function time_traveler:rpg_weapons/effect/noob_axe/heal 10s
 schedule function time_traveler:rpg_items/get/gift_pack/double_sword 1t
 schedule function time_traveler:rpg_items/get/gift_pack/double_sword_fire 1t
