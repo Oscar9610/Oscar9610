@@ -1,6 +1,8 @@
 #沿用 story:orantes/3 回應對話
 #follow story:orantes/3 Respond to the conversation
 
+#rs  = 【主線】拯救陳述
+
 #劇情
 #story
 execute positioned -64 63 5 in game_map:orantes as @a[distance=..30] if score .main_line orantes.story matches 22 run tellraw @s {"text":"［???］算了，不跟你們計較了"}

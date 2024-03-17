@@ -1,3 +1,4 @@
+#rs  = 【主線】拯救陳述
 execute if score .main_line orantes.story matches 30 run effect give @e[tag=walk,tag=statement] glowing 5 1 true
 execute if score .main_line orantes.story matches 30 run tellraw @a {"text":"［希爾］陳述你別跑那麼快，我們跟不上你的速度"}
 execute if score .main_line orantes.story matches 31 run tellraw @a {"text":"［陳述］等等我突然想到我忘記拿個東西"}

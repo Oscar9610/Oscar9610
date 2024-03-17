@@ -1,4 +1,6 @@
 ##重置拯救陳述對話
+
+#rs  = 【主線】拯救陳述
 scoreboard players set .main_line orantes.story 22
 scoreboard players set .main_line orantes.global.main 3
 function task:reset_task

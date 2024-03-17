@@ -1,3 +1,4 @@
+#rs  = 【主線】拯救陳述
 execute as @e[tag=walk,tag=statement] at @s positioned -79 63 -11 if entity @s[distance=..1] run tp @s ^ ^ ^1 facing -86 63 -4
 execute as @e[tag=walk,tag=statement] at @s positioned -149 62 -15 if entity @s[distance=..1] run tp @s ^ ^ ^1 facing -166 61 -18
 
