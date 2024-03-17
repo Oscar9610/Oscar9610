@@ -1,1 +1,0 @@
-execute positioned -2 63 169 in game_map:orantes as @a[distance=..12] if score .statement_is_missing orantes.story matches 7 run tellraw @s {"text":"已完成支線任務 [陳述不見了？！] ","color":"gold"}

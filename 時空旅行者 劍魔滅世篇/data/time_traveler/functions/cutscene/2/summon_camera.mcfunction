@@ -2,6 +2,7 @@
 #teleport_duration = 轉場速度
 #schedule function time_traveler:cutscene/1/cancel = 結束時間
 
+##夜幕5星的斬擊的動畫
 #初始 Camera 起點位置
 summon minecraft:item_display ~ ~20 ~ {view_range:0f,teleport_duration:15,Tags:["camera","Duration","camera.2"],item:{id:"minecraft:air",Count:1b},Rotation:[90f,-80f]}
 gamemode spectator @s

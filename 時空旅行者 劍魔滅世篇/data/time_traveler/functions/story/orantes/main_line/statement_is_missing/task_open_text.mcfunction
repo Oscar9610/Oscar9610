@@ -6,4 +6,4 @@ title @s subtitle {"text":"開始","color": "dark_green","bold": true}
 tellraw @s [{"text":"\n按 ","color": "white"},{"keybind":"key.advancements","color": "dark_green","bold": true},{"text":" 可以查看目前任務進度與成就！","bold": false,"color": "white"}]
 tellraw @s [{"text":"====================\n","color":"gold"},{"text":"【主線】陳述不見了？！"},"\n ",{"text":"任務獎勵 "},{"text":"20個","color":"light_purple"},{"text":"星輝幣","color":"dark_purple"},{"text":"！","color":"gold"},{"text":"\n====================","color":"gold"}]
 
-schedule clear time_traveler:interaction/statement_grandpa
+schedule clear time_traveler:interaction/main_line/statement_grandpa/loop

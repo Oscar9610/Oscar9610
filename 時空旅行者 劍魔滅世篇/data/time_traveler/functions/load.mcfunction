@@ -4,14 +4,13 @@ function time_traveler:boss/main/scoreboard
 function time_traveler:damage_formula/scoreboard
 function time_traveler:rpg_weapons/scoreboard
 
-schedule function time_traveler:story/orantes/realm_of_time_and_space/event/guide 1t
+schedule function time_traveler:interaction/realm_of_time_and_space/weapons/the_night_5star 1t
+schedule function time_traveler:rpg_weapons/loop/rightclick/the_night/loop 1t
 schedule function time_traveler:entity_fx/control_thread/guide 1t
-schedule function time_traveler:screen_amimation/the_night_5star/loop 1t
 schedule function time_traveler:interaction/library/lectern/1 1t
 schedule function time_traveler:interaction/library/lectern/2 1t
 schedule function time_traveler:interaction/library/lectern/3 1t
 schedule function time_traveler:interaction/library/lectern/4 1t
-schedule function time_traveler:mini_game/shooting_contest/remove_bow 1t
 schedule function time_traveler:story/orantes/npc/shooting_contest/loop 1t
 schedule function time_traveler:system/shooting_contest/kill_arrow 6t
 schedule function time_traveler:story/orantes/branch_line/loop 1t

@@ -7,7 +7,6 @@ execute as @s[nbt={SelectedItem:{tag:{the_night:1b,rarity:4b}}}] store result sc
 execute as @s[nbt={SelectedItem:{tag:{the_night:1b,rarity:4b}}}] run scoreboard players operation @s the_night_CD -= the_night .rdm
 
 
-execute as @s[nbt={SelectedItem:{tag:{the_night:1b,rarity:5b}}}] store result score the_night .rdm run random value 1..3
-execute as @s[nbt={SelectedItem:{tag:{the_night:1b,rarity:5b}}}] run scoreboard players operation @s the_night_CD -= the_night .rdm
+execute as @s[nbt={SelectedItem:{tag:{the_night:1b,rarity:5b}}}] run scoreboard players operation @s the_night_CD -= #1 the_night_CD
 
 advancement revoke @s only time_traveler:rpg_weapons/loop/rightclick/the_night/the_night_attack

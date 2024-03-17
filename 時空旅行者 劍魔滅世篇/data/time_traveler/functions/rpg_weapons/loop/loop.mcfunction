@@ -1,9 +1,9 @@
 #單手劍
 execute as @a[scores={rightclick=1..,noob_sword_cd=0},nbt={SelectedItem:{tag:{noob:1b}}}] at @s run function time_traveler:rpg_weapons/loop/rightclick/noob_sword/noob_sword
 execute as @a[scores={rightclick=1..,wind_sword_cd=0},nbt={SelectedItem:{tag:{wind_sword:1b}}}] at @s run function time_traveler:rpg_weapons/loop/rightclick/wind_sword/rightclick
-execute as @a[scores={rightclick=1..,the_night_CD=0},nbt={SelectedItem:{tag:{the_night:0b,rarity:3b}}}] at @s run function time_traveler:rpg_weapons/loop/rightclick/the_night/start
-execute as @a[scores={rightclick=1..,the_night_CD=0},nbt={SelectedItem:{tag:{the_night:0b,rarity:4b}}}] at @s run function time_traveler:rpg_weapons/loop/rightclick/the_night/start
-execute as @a[scores={rightclick=1..,the_night_CD=0},nbt={SelectedItem:{tag:{the_night:0b,rarity:5b}}}] at @s run function time_traveler:rpg_weapons/loop/rightclick/the_night/start
+execute as @a[scores={rightclick=1..,the_night_CD=..0},nbt={SelectedItem:{tag:{the_night:0b,rarity:3b}}}] at @s run function time_traveler:rpg_weapons/loop/rightclick/the_night/start
+execute as @a[scores={rightclick=1..,the_night_CD=..0},nbt={SelectedItem:{tag:{the_night:0b,rarity:4b}}}] at @s run function time_traveler:rpg_weapons/loop/rightclick/the_night/start
+execute as @a[scores={rightclick=1..,the_night_CD=..0},nbt={SelectedItem:{tag:{the_night:0b,rarity:5b}}}] at @s run function time_traveler:rpg_weapons/loop/rightclick/the_night/start
 execute as @a[scores={rightclick=1..,noob_sickle_cd=0},nbt={SelectedItem:{tag:{noob:3b}}}] at @s run function time_traveler:rpg_weapons/loop/rightclick/noob_sickle/skill1
 
 #斧頭

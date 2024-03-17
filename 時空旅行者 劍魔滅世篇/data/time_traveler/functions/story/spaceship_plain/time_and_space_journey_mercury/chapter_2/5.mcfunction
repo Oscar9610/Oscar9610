@@ -8,6 +8,8 @@ execute in game_map:orantes positioned -70 63 0 as @a[distance=..8] if score .ti
 execute in game_map:orantes positioned -70 63 0 as @a[distance=..8] if score .time_and_space_journey_mercury_chapter_2 spaceship.story matches 43 run tellraw @s {"text":"【目標】進入時空傳送門","color":"gold"}
 execute if score .time_and_space_journey_mercury_chapter_2 spaceship.story matches 43 run kill @e[tag=time_and_space_journey_mercury.chapter_2.4]
 execute if score .time_and_space_journey_mercury_chapter_2 spaceship.story matches 43 in game_map:orantes run fill -74 73 14 -70 78 14 minecraft:nether_portal replace air
+execute if score .time_and_space_journey_mercury_chapter_2 spaceship.story matches 43 in game_map:orantes run scoreboard players set orantes.rotas.open global.main 1
+execute if score .time_and_space_journey_mercury_chapter_2 spaceship.story matches 43 in game_map:orantes run playsound minecraft:block.end_portal.spawn voice @a -72 73 14 1 1 1
 execute if score .time_and_space_journey_mercury_chapter_2 spaceship.story matches 43 run schedule clear time_traveler:interaction/spaceship_plain/time_and_space_journey_mercury/chapter_2/aska_3
 
 execute if score .time_and_space_journey_mercury_chapter_2 spaceship.story matches 36..43 run scoreboard players add .time_and_space_journey_mercury_chapter_2 spaceship.story 1
