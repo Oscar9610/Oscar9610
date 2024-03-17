@@ -5,8 +5,8 @@ function time_traveler:monsters/main/scoreboard
 function time_traveler:boss/main/scoreboard
 function time_traveler:rpg_weapons/scoreboard
 
-# schedule
-schedule function time_traveler:story/orantes/realm_of_time_and_space/event/guide 1t
+schedule function time_traveler:interaction/realm_of_time_and_space/weapons/the_night_5star 1t
+schedule function time_traveler:rpg_weapons/loop/rightclick/the_night/loop 1t
 schedule function time_traveler:entity_fx/control_thread/guide 1t
 schedule function time_traveler:interaction/library/lectern/1 1t
 schedule function time_traveler:interaction/library/lectern/2 1t

@@ -9,10 +9,9 @@ execute if score .main_line orantes.story matches 2 run tellraw @a[tag=!op] {"te
 execute if score .main_line orantes.story matches 3 run tellraw @a[tag=!op] {"text":"［希爾］我們過去看看！"}
 execute if score .main_line orantes.story matches 4 run tellraw @a[tag=!op] {"text":"【目標】前往奧蘭蒂斯城市！","color":"gold"}
 execute if score .main_line orantes.story matches 4 run scoreboard players set #main_line global.advancements 1
-execute if score .main_line orantes.story matches 4 run function time_traveler:interaction/statement_grandpa
-execute if score .main_line orantes.story matches 4 in game_map:orantes run function time_traveler:story/orantes/main_line/statement_is_missing/summon_statement_grandpa
+execute if score .main_line orantes.story matches 4 in game_map:orantes run function time_traveler:interaction/main_line/statement_grandpa/summon
 execute if score .main_line orantes.story matches 4 run scoreboard players set .main_line orantes.global.main 2
-execute if score .main_line orantes.story matches 4 run effect give @e[tag=main_line.statement_grandpa] glowing 15 1 true
+execute if score .main_line orantes.story matches 4 run effect give @e[tag=ml.sgp] glowing 15 1 true
 
 
 #循環偵測
