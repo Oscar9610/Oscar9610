@@ -6,5 +6,5 @@ execute if score has.the_night_4star p1.main matches 1.. run scoreboard players 
 execute if score has.the_night_4star p1.main matches 1.. run scoreboard players set #loop.the_night_4star p1.main 0
 execute if score has.the_night_4star p1.main matches 1.. run function time_traveler:players/update_weapons/the_night_4star
 
-tellraw @a [{"text":"已更新背包所有武器資料！","color":"green"}]
-execute as @a at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~ 1 1.5
+tellraw @s [{"text":"已更新背包所有武器資料！","color":"green"}]
+playsound minecraft:entity.player.levelup voice @s ~ ~ ~ 1 1.5

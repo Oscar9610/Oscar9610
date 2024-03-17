@@ -47,4 +47,4 @@ scoreboard players remove @a[scores={noob_sickle_cd=1..}] noob_sickle_cd 1
 scoreboard players remove @a[scores={time_space_lock_cd=1..}] time_space_lock_cd 1
 scoreboard players remove @a[scores={the_night_cd=1..}] the_night_cd 1
 
-schedule function time_traveler:rpg_weapons/loop/timer 1s
+schedule function time_traveler:rpg_weapons/timer 1s
