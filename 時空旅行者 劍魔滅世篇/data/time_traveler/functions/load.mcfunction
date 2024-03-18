@@ -6,6 +6,7 @@ function time_traveler:boss/main/scoreboard
 function time_traveler:rpg_weapons/scoreboard
 function rotas:scoreboard
 
+
 schedule function time_traveler:story/spaceship_plain/branch_line/loop 1t
 schedule function time_traveler:entity_fx/control_thread/guide 1t
 schedule function time_traveler:interaction/library/lectern/1 1t

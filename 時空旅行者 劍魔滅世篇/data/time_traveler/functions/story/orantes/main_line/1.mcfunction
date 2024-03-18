@@ -12,7 +12,6 @@ execute if score .main_line orantes.story matches 4 run tellraw @a[tag=!op] {"te
 execute if score .main_line orantes.story matches 4 run scoreboard players set #main_line global.advancements 1
 execute if score .main_line orantes.story matches 4 in game_map:orantes run function time_traveler:story/orantes/main_line/sim/summon
 execute if score .main_line orantes.story matches 4 run scoreboard players set .main_line orantes.global.main 2
-execute if score .main_line orantes.story matches 4 run effect give @e[tag=ml.sgp] glowing 15 1 true
 
 
 #循環偵測
