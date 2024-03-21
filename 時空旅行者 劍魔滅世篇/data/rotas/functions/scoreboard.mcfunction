@@ -1,6 +1,8 @@
 #劇情、事件用
 scoreboard objectives add rotas.story dummy "[時空之境] 劇情"
 scoreboard objectives add rotas.global.main dummy "[時空之境] 主要全局"
+scoreboard objectives add rotas.fx dummy "特效專用"
+scoreboard players set 40 rotas.fx 40
 
 # 時空之境 怪物波次
 scoreboard objectives add rotas.remaining_monster dummy "[時空之境] 怪物波次剩餘怪物數量"
