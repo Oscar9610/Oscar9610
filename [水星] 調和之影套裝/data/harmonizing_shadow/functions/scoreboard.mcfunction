@@ -1,0 +1,1 @@
+scoreboard objectives add _rdm dummy "隨機數"

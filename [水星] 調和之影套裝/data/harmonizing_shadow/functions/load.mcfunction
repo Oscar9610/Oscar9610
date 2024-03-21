@@ -1,0 +1,1 @@
+function harmonizing_shadow:scoreboard

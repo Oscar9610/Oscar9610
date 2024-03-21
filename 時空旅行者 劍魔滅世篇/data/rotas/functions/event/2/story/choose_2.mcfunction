@@ -7,8 +7,9 @@ execute if score #rotas.event.act.2 rotas.story matches 8 run tellraw @s {"text"
 execute if score #rotas.event.act.2 rotas.story matches 9 run tellraw @s {"text":"［回憶］你轉身離開"}
 execute if score #rotas.event.act.2 rotas.story matches 10 run scoreboard players add #rotas.event.act.2 rotas.story 1
 execute if score #rotas.event.act.2 rotas.story matches 11 run scoreboard players add #rotas.event.act.2 rotas.story 1
-execute if score #rotas.event.act.2 rotas.story matches 12 run tellraw @s {"text":"(劇情已結束！)\n","color":"red"}
 execute if score #rotas.event.act.2 rotas.story matches 12 run kill @e[tag=rotas.event.2]
+execute if score #rotas.event.act.2 rotas.story matches 12 run tellraw @s {"text":"(劇情已結束！)\n","color":"red"}
+execute if score #rotas.event.act.2 rotas.story matches 12 run function rotas:main/open_portal
 execute if score #rotas.event.act.2 rotas.story matches 12 run function rotas:event/2/story/reset
 
 scoreboard players add #rotas.event.act.2 rotas.story 1

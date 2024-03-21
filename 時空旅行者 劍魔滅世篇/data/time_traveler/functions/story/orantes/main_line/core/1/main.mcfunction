@@ -1,6 +1,7 @@
 #水星主線討伐封印守護者的對話劇情
 
 #透過scoreboard story(dummy) + schedule 指令運行整個劇情
+execute if score .main_line orantes.story matches 66 run effect clear @e[tag=ml.sgp] glowing
 execute if score .main_line orantes.story matches 66 run tellraw @s {"text":"［陳述］我回來了！"}
 execute if score .main_line orantes.story matches 67 run tellraw @s {"text":"［陳述爺爺］我不是說好不能亂跑出去嗎，你怎麼又來了"}
 execute if score .main_line orantes.story matches 68 run tellraw @s {"text":"［陳述］對不起...."}
