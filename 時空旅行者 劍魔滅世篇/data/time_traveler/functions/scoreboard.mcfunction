@@ -49,6 +49,7 @@ scoreboard objectives add remaining_monster dummy "剩餘怪物數"
 scoreboard objectives add detect_player_in_lobby dummy "偵測是否有玩家在大廳"
 scoreboard objectives add core_stage dummy "封印守護者進度"
 scoreboard objectives add the_night.screen_animation dummy
+scoreboard objectives add has_reiner_sword dummy
 
 #=====================================================================================
 ##傳送書

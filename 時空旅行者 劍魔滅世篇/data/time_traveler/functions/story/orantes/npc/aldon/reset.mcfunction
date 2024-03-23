@@ -3,7 +3,6 @@ tellraw @s {"text":"【目標】尋找老村長和雷納的家人","color":"gold
 kill @e[tag=aldon]
 scoreboard players add #lost_guardian_task_1 orantes.story 1
 scoreboard players set #lost_guardian global.advancements 3
-schedule clear time_traveler:interaction/aldon
 schedule function time_traveler:interaction/bellows 1t
 
 kill @e[tag=bellows]

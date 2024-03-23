@@ -16,8 +16,6 @@ function time_traveler:story/orantes/main_line/rs/3/remove_display_monster
 function time_traveler:story/reload_story/lost_guardian
 function time_traveler:story/reload_story/main_line
 
-function time_traveler:story/reload_story/rotas/chapter_1
-
 execute in game_map:orantes run fill -74 73 14 -70 78 14 minecraft:air replace nether_portal
 
 kill @e[tag=ml.sgp]

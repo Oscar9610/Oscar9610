@@ -1,7 +1,6 @@
 ## By 遊戲亡 Gamedier、 March、前面有一隻超可愛的狗勾
 
 ## 劇情
-execute if score .main world_tree.story matches 21 run advancement grant @a only task:spaceship/main_mission/1
 execute if score .main world_tree.story matches 20 run title @a times 20 60 20
 execute if score .main world_tree.story matches 20 run title @a title ""
 execute if score .main world_tree.story matches 20 run title @a subtitle ["",{"text":"| ","italic":true,"bold":true,"obfuscated":true,"color":"light_purple"},{"text":"時","bold":true,"italic":true,"color":"#FFD780"},{"text":"空","bold":true,"italic":true,"color":"#FFCB5C"},{"text":"旅","bold":true,"italic":true,"color":"#FFCB5C"},{"text":"行","bold":true,"italic":true,"color":"#FFD780"},{"text":"者","italic":true,"bold":true,"color":"red"},{"text":": ","italic":true,"bold":true,"color":"#FC7654"},{"text":"劍","italic":true,"bold":true,"color":"#FCB654"},{"text":"魔","italic":true,"color":"#FCD854"},{"text":"滅","bold":true,"color":"#E9FC54"},{"text":"世","italic":true,"bold":true,"color":"#B9FC54"},{"text":"篇","italic":true,"bold":true,"color":"#87FC54"},{"text":"🗡","italic":true,"bold":true,"color":"#54FC9D"},{"text":" |","italic":true,"bold":true,"obfuscated":true,"color":"light_purple"}]
@@ -43,5 +42,5 @@ execute as @a at @s if score .main world_tree.story matches 1 positioned ~ ~1.7 
 
 ## 調整循環開關
 scoreboard players remove .main world_tree.story 1
-execute if score .main world_tree.story matches 1.. run schedule function time_traveler:story/worldtree 4s
+execute if score .main world_tree.story matches 1.. run schedule function time_traveler:story/world_tree/opening/worldtree 4s
 execute if score .main world_tree.story matches 0 run schedule function time_traveler:story/spaceship_plain/spaceship_plain_start 4s

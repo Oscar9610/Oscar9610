@@ -14,7 +14,7 @@ execute in minecraft:overworld as @a at @s if dimension minecraft:overworld if s
 #地圖大廳
 execute in minecraft:overworld positioned 8 -62 -4 as @a[distance=..2.5] run function time_traveler:reload
 execute in minecraft:overworld positioned 8 -62 -4 as @a[distance=..2.5] run scoreboard players set .main world_tree.story 9
-execute in minecraft:overworld positioned 8 -62 -4 as @a[distance=..2.5] run function time_traveler:story/worldtree_title
+execute in minecraft:overworld positioned 8 -62 -4 as @a[distance=..2.5] run function time_traveler:story/world_tree/opening/worldtree_title
 
 
 schedule function time_traveler:tp/map_lobby/loop 1t
