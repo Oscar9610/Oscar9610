@@ -1,6 +1,6 @@
 ##主線任務開啟提示
 
-#sim  = 【支線】陳述不見了？！
+#sim  = 【主線】陳述不見了？！
 playsound minecraft:ui.toast.in voice @a[distance=..14] ~ ~ ~ 999999 0.5
 scoreboard players set #main_line global.advancements 2
 title @s times 10 60 10

@@ -110,4 +110,8 @@ scoreboard players set @a music.time_and_space_journey_mercury.chr.1 0
 
 
 scoreboard players set @a disable.tp_book 0
+
+
+##時空之境水星傳送門
+scoreboard players set #fx.tp_door orantes.global.main 0
 #=====================================================================================

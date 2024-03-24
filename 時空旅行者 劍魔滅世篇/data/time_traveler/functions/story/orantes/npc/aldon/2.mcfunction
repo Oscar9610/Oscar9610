@@ -21,8 +21,8 @@
 
 #對話互動：玩家與阿爾敦
 #Dialogue interaction: players and Aldon
-execute positioned 112 63 -80 in game_map:orantes if score #aldon_1 orantes.story matches 0 run tellraw @a[distance=..12] {"text":"［阿爾敦］旅行者！關於雷納的劍你有找到嗎?"}
-execute positioned 112 63 -80 in game_map:orantes if score #aldon_1 orantes.story matches 1 run tellraw @a[distance=..12] {"text":"【我們找到了】(手持 雷納的劍 點擊即可繼續)","bold":true,"color":"dark_green","clickEvent":{"action":"run_command","value":"/execute if score #lost_guardian global.advancements matches 8 run function time_traveler:story/orantes/npc/aldon/detect_sword"}}
+execute if score #aldon_1 orantes.story matches 0 run tellraw @a[distance=..12] {"text":"［阿爾敦］旅行者！關於雷納的劍你有找到嗎?"}
+execute if score #aldon_1 orantes.story matches 1 run tellraw @a[distance=..12] {"text":"【我們找到了】(手持 雷納的劍 點擊即可繼續)","bold":true,"color":"dark_green","clickEvent":{"action":"run_command","value":"/execute if score #lost_guardian global.advancements matches 8 run function time_traveler:story/orantes/npc/aldon/detect_sword"}}
 execute if score #aldon_1 orantes.story matches 1 run scoreboard players set #aldon_1 orantes.story 0
 #循環偵測
 #loop

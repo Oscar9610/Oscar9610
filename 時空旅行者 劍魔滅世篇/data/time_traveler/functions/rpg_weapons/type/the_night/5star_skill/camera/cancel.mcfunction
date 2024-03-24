@@ -5,4 +5,4 @@ execute as @e[tag=camera,tag=camera.2] at @s run playsound minecraft:entity.gene
 execute as @e[tag=camera,tag=camera.2] at @s run playsound minecraft:block.beacon.power_select voice @a ~ ~1 ~ 1 1.212
 execute as @e[tag=camera,tag=camera.2] at @s positioned ~ ~-1.8 ~ run function time_traveler:players/space_time_deceleration
 execute as @a at @s run kill @e[tag=camera.2,distance=..5]
-schedule clear time_traveler:cutscene/2/loop
+schedule clear time_traveler:rpg_weapons/type/the_night/5star_skill/camera/loop

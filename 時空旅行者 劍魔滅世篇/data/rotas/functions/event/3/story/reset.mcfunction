@@ -6,4 +6,4 @@ tellraw @s {"text":"時空之境:水星篇","bold": true,"color": "aqua"}
 tellraw @s {"text":"事件3: 遺跡探險","bold": true,"color": "gold"}
 tellraw @s {"text":"=============================="}
 
-kill @e[tag=rotas.event.3]
+function rotas:main/kill_all_event

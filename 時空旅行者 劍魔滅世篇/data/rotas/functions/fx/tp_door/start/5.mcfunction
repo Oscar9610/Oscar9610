@@ -2,6 +2,9 @@
 # block
 fill -71 74 14 -73 77 14 nether_portal replace air
 
+# open
+scoreboard players set orantes.rotas.open global.main 1
+
 # particle
 particle minecraft:flash -72 75 14.0
 particle minecraft:flash -72 75 15.0
