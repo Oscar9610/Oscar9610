@@ -1,6 +1,10 @@
 # ----- start ----- #
 # lock
 execute as @e[type=item_display,tag=rotas.lock,limit=1] at @s run function rotas:fx/tp_door/start/main
+# spin fx
+execute as @e[type=marker,tag=rotas.spin_fx,limit=1] at @s run function rotas:fx/tp_door/start/spin_fx
+# vertical spin fx
+execute as @e[type=marker,tag=rotas.vspin_fx,limit=1] at @s run function rotas:fx/tp_door/vspin/main
 
 
 # ----- idle ----- #

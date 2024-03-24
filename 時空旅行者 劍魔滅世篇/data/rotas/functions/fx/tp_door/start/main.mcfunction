@@ -8,8 +8,8 @@ execute if score @s rotas.fx matches 80 run function rotas:fx/tp_door/start/5
 
 scoreboard players operation #temp rotas.fx = @s rotas.fx
 scoreboard players operation #temp rotas.fx %= 40 rotas.fx
-execute if score #temp rotas.fx matches 0..20 run tp @s ~ ~0.01 ~
-execute if score #temp rotas.fx matches 21..39 run tp @s ~ ~-0.01 ~
+execute if score #temp rotas.fx matches 0..19 run tp @s ~ ~0.01 ~
+execute if score #temp rotas.fx matches 20..39 run tp @s ~ ~-0.01 ~
 
 # particle
-particle minecraft:falling_dust light_blue_concrete ~ ~ ~ 0.3 0 0.3 0 1 force
+#particle minecraft:falling_dust light_blue_concrete ~ ~ ~ 0.3 0 0.3 0 1 force
