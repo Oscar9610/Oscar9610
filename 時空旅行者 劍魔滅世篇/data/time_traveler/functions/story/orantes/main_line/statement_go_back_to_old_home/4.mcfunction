@@ -19,7 +19,10 @@ execute if score .main_line orantes.story matches 62 run tellraw @a[tag=statemen
 execute if score .main_line orantes.story matches 63 run tellraw @a[tag=statement_go_back_to_old_home_end] {"text":"【目標】回去找陳述爺爺！","color":"gold"}
 execute if score .main_line orantes.story matches 64 run scoreboard players set .main_line orantes.story 65
 execute if score .main_line orantes.story matches 64 run scoreboard players set .main_line orantes.global.main 13
-execute if score .main_line orantes.story matches 65 run effect give @e[tag=main_line.statement_grandpa] glowing 15 1 true
+execute if score .main_line orantes.story matches 65 run effect give @e[tag=ml.sgp] glowing 15 1 true
+execute if score .main_line orantes.story matches 65 run tag @e[tag=ml.sgp] add task_glow.fx
+execute if score .main_line orantes.story matches 65 run summon minecraft:text_display -3.98 64.00 170.075 {text:'"\\uE019"',background:0,billboard:"fixed",Tags:["display.right_click_display","display"],Rotation:[-90.0f,0.0f]}
+
 execute if score .main_line orantes.story matches 65 as @a at @s run function time_traveler:story/orantes/main_line/statement_go_back_to_old_home/task_end_text
 execute if score .main_line orantes.story matches 65 run tag @a remove statement_go_back_to_old_home_end
 

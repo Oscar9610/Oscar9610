@@ -14,6 +14,6 @@ execute if score .main world_tree.story matches 4 run title @a subtitle {"text":
 execute if score .main world_tree.story matches 1 run title @a times 20 60 20
 execute if score .main world_tree.story matches 1 run title @a times 0 1 40
 execute if score .main world_tree.story matches 1 run title @a title {"text":"\uE002"}
-execute as @a at @s if score .main world_tree.story matches 1 run function time_traveler:story/worldtree_start
+execute as @a at @s if score .main world_tree.story matches 1 run function time_traveler:story/world_tree/opening/worldtree_start
 scoreboard players remove .main world_tree.story 1
-execute if score .main world_tree.story matches 1..9 run schedule function time_traveler:story/worldtree_title 3s
+execute if score .main world_tree.story matches 1..9 run schedule function time_traveler:story/world_tree/opening/worldtree_title 3s

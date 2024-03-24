@@ -1,5 +1,6 @@
 playsound minecraft:entity.player.levelup voice @a[distance=..14] ~ ~ ~ 999999 0.5
 tag @a remove statement_walk
+effect give @e[type=armor_stand,tag=ml.sgp] glowing 5 1 true
 title @s times 10 60 10
 title @s title "【主線】拯救陳述"
 title @s subtitle {"text":"完成","color": "dark_green","bold": true}

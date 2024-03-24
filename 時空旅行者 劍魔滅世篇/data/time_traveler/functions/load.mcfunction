@@ -7,6 +7,9 @@ function time_traveler:rpg_weapons/scoreboard
 function rotas:scoreboard
 
 
+schedule function time_traveler:rpg_items/get/detect_has_reiner_sword 1t
+schedule function time_traveler:display/elk_display/guide 1t
+schedule function time_traveler:display/elk_display/timer 5s
 schedule function time_traveler:story/spaceship_plain/branch_line/loop 1t
 schedule function time_traveler:entity_fx/control_thread/guide 1t
 schedule function time_traveler:interaction/library/lectern/1 1t
@@ -17,7 +20,6 @@ schedule function time_traveler:mini_game/shooting_contest/bow/remove 1t
 schedule function time_traveler:story/orantes/npc/shooting_contest/loop 1t
 schedule function time_traveler:system/shooting_contest/kill_arrow 6t
 schedule function time_traveler:story/orantes/branch_line/loop 1t
-schedule function time_traveler:players/has_weapons 1t
 schedule function time_traveler:boss/spawner/shadow/set_delay/loop 1t
 schedule function time_traveler:boss/spawner/potion/set_delay/loop 1t
 schedule function time_traveler:boss/spawner/storm_keeper/set_delay/loop 1t

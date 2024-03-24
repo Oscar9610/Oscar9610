@@ -7,4 +7,6 @@ scoreboard players set rotas.event.1.mw rotas.kill 0
 kill @e[type=!player,tag=rotas.event.1.monster_wave]
 kill @e[type=armor_stand,tag=rotas.event.1.mw]
 execute positioned 87 73 79 as @e[distance=..30,type=item,nbt={Item:{tag:{money:1b}}}] run kill @s
+function rotas:main/open_portal
+function rotas:event/1/rdm_get_award
 schedule clear rotas:event/1/monster_wave/loop
