@@ -7,7 +7,7 @@ function time_traveler:rpg_weapons/scoreboard
 function rotas:scoreboard
 
 schedule function time_traveler:story/spaceship_plain/rotas/chapter_2/loop_close_portal/main 1t
-
+schedule function rotas:1sec 1s
 schedule function time_traveler:rpg_items/get/detect_has_reiner_sword 1t
 schedule function time_traveler:display/elk_display/guide 1t
 schedule function time_traveler:display/elk_display/timer 5s

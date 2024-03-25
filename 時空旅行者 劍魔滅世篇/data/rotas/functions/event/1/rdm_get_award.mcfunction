@@ -1,4 +1,4 @@
-execute store result score #event.1.rdm_get_award rotas.global.main run random value 1..14
+execute store result score #event.1.rdm_get_award rotas.global.main run random value 1..15
 
 execute if score #event.1.rdm_get_award rotas.global.main matches 1 run function time_traveler:rpg_weapons/get/axe/noob_axe
 execute if score #event.1.rdm_get_award rotas.global.main matches 2 run function time_traveler:rpg_weapons/get/double_weapons/double_sword
@@ -14,3 +14,4 @@ execute if score #event.1.rdm_get_award rotas.global.main matches 11 run functio
 execute if score #event.1.rdm_get_award rotas.global.main matches 12 run function time_traveler:rpg_armors/get/noob_armor
 execute if score #event.1.rdm_get_award rotas.global.main matches 13 run function time_traveler:rpg_armors/get/resistance_armors
 execute if score #event.1.rdm_get_award rotas.global.main matches 14 run function harmonizing_shadow:get_armors
+execute if score #event.1.rdm_get_award rotas.global.main matches 15 run function rotas:bless/wts/get

@@ -1,4 +1,4 @@
-execute store result score #event.4.rdm_get_weapons rotas.global.main run random value 1..10
+execute store result score #event.4.rdm_get_weapons rotas.global.main run random value 1..11
 
 execute if score #event.4.rdm_get_weapons rotas.global.main matches 1 run function time_traveler:rpg_weapons/get/axe/noob_axe
 execute if score #event.4.rdm_get_weapons rotas.global.main matches 2 run function time_traveler:rpg_weapons/get/double_weapons/double_sword
@@ -10,3 +10,4 @@ execute if score #event.4.rdm_get_weapons rotas.global.main matches 7 run functi
 execute if score #event.4.rdm_get_weapons rotas.global.main matches 8 run function time_traveler:rpg_weapons/get/sword/the_night_sword_4star
 execute if score #event.4.rdm_get_weapons rotas.global.main matches 9 run function time_traveler:rpg_weapons/get/sword/the_night_sword_5star
 execute if score #event.4.rdm_get_weapons rotas.global.main matches 10 run function time_traveler:rpg_weapons/get/sword/wind_sword
+execute if score #event.4.rdm_get_weapons rotas.global.main matches 11 run function rotas:bless/wts/get

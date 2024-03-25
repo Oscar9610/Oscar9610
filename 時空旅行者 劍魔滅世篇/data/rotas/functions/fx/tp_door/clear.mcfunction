@@ -10,3 +10,5 @@ kill @e[tag=rotas.lock]
 kill @e[tag=rotas.spin_fx]
 kill @e[tag=rotas.vspin_fx]
 function rotas:fx/tp_door/idle/clear
+
+advancement revoke @a only rotas:in_orantes
