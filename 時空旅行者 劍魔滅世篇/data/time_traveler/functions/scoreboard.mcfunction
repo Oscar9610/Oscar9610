@@ -20,6 +20,7 @@ scoreboard objectives add orantes.global.main dummy "[水星 - 奧蘭蒂斯] 主
 scoreboard objectives add music.orantes_city dummy "[水星 - 奧蘭蒂斯] 城市音樂"
 scoreboard objectives add music.place_of_trial dummy "[水星 - 奧蘭蒂斯] 試煉之地音樂"
 scoreboard objectives add spaceship.global.main dummy "[太空站 - 奧莉亞] 主要全局"
+scoreboard objectives add orantes.transitions dummy "[水星 - 奧蘭蒂斯] 城市"
 scoreboard objectives add spaceship.story dummy "[太空站 - 奧莉亞] 劇情"
 scoreboard objectives add music.spaceship dummy "[太空站 - 奧莉亞] 背景音樂"
 scoreboard objectives add music.time_and_space_journey_mercury.chr.1 dummy "[時空旅途其一] 背景音樂"

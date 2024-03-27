@@ -1,1 +1,0 @@
-data merge block ~ ~ ~ {"Lock":"§"}

@@ -19,7 +19,7 @@
       },
       "description": "你被派往到奧蘭蒂斯清除魔物，與此同時，你也即將展開一場大冒險！",
       "background": "minecraft:textures/gui/advancements/backgrounds/space.png",
-      "frame": "challenge",
+      "frame": "goal",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false

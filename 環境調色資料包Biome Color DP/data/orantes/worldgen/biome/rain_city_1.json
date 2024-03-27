@@ -9,12 +9,8 @@
     "fog_color": 12638463,
     "water_color": 799552,
     "water_fog_color": 26987,
-    "particle": {
-      "options": {
-        "type": "minecraft:dolphin"
-      },
-      "probability": 0.2
-    }
+    "grass_color": 372130,
+    "foliage_color": 12638463
   },
   "spawners": {},
   "spawn_costs": {},

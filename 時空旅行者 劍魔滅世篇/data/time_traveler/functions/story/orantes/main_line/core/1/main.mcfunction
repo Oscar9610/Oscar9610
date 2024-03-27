@@ -41,7 +41,7 @@ execute if score .main_line orantes.story matches 88 run tellraw @s {"text":"［
 execute if score .main_line orantes.story matches 89 run tellraw @s {"text":"［陳述爺爺］全員，準備防守！"}
 execute if score .main_line orantes.story matches 89 run schedule clear time_traveler:story/orantes/main_line/core/loop
 execute if score .main_line orantes.story matches 89 run kill @e[tag=display,distance=..2]
-execute if score .main_line orantes.story matches 89 run kill @e[tag=statement_grandpa]
+execute if score .main_line orantes.story matches 89 run kill @e[tag=task_glow.fx]
 execute if score .main_line orantes.story matches 89 run tp @s -12 62 70 0 0
 execute if score .main_line orantes.story matches 89 run scoreboard players set .main_line orantes.global.main 15
 
