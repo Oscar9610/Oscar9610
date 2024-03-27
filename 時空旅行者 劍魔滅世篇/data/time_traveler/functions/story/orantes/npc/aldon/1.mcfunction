@@ -21,14 +21,14 @@
 
 #對話互動：玩家與阿爾敦
 #Dialogue interaction: players and Aldon
-execute positioned 112 63 -80 in game_map:orantes as @a[distance=..12] if score #aldon orantes.story matches 0 run tellraw @s {"text":"［希爾］阿爾敦先生，我尋找通往試煉之地以及有關雷納的劍的信息"}
-execute positioned 112 63 -80 in game_map:orantes as @a[distance=..12] if score #aldon orantes.story matches 1 run tellraw @s {"text":"［阿爾敦］試煉之地？那是雷納曾經面對最大試煉的地方。你確定你準備好面對那些挑戰了嗎？"}
-execute positioned 112 63 -80 in game_map:orantes as @a[distance=..12] if score #aldon orantes.story matches 2 run tellraw @s {"text":"［你］我需要找到雷納的劍，我聽說它在那裡的一個小洞穴裡"}
-execute positioned 112 63 -80 in game_map:orantes as @a[distance=..12] if score #aldon orantes.story matches 3 run tellraw @s {"text":"［阿爾敦］是的，劍確實在那裡，但它被古老的魔法封印了。只有真正了解雷納故事的人才能夠解開封印"}
-execute positioned 112 63 -80 in game_map:orantes as @a[distance=..12] if score #aldon orantes.story matches 4 run tellraw @s {"text":"［你］我應該怎麼做才能了解雷納的故事？"}
-execute positioned 112 63 -80 in game_map:orantes as @a[distance=..12] if score #aldon orantes.story matches 5 run tellraw @s [{"text":"［阿爾敦］"},{"text":"雷納的舊友和家人會是關鍵。","bold": true,"color":"gold"},{"text":"你需要先找到他們，聽聽他們的故事，才能接近劍","bold": false,"color":"white"}]
-execute positioned 112 63 -80 in game_map:orantes as @a[distance=..12] if score #aldon orantes.story matches 6 run tellraw @s {"text":"［你］您知道我應該去哪裡尋找他們嗎？"}
-execute positioned 112 63 -80 in game_map:orantes as @a[distance=..12] if score #aldon orantes.story matches 7 run function time_traveler:story/orantes/npc/aldon/reset
+execute if score #aldon orantes.story matches 0 run tellraw @s {"text":"［希爾］阿爾敦先生，我尋找通往試煉之地以及有關雷納的劍的信息"}
+execute if score #aldon orantes.story matches 1 run tellraw @s {"text":"［阿爾敦］試煉之地？那是雷納曾經面對最大試煉的地方。你確定你準備好面對那些挑戰了嗎？"}
+execute if score #aldon orantes.story matches 2 run tellraw @s {"text":"［你］我需要找到雷納的劍，我聽說它在那裡的一個小洞穴裡"}
+execute if score #aldon orantes.story matches 3 run tellraw @s {"text":"［阿爾敦］是的，劍確實在那裡，但它被古老的魔法封印了。只有真正了解雷納故事的人才能夠解開封印"}
+execute if score #aldon orantes.story matches 4 run tellraw @s {"text":"［你］我應該怎麼做才能了解雷納的故事？"}
+execute if score #aldon orantes.story matches 5 run tellraw @s [{"text":"［阿爾敦］"},{"text":"雷納的舊友和家人會是關鍵。","bold": true,"color":"gold"},{"text":"你需要先找到他們，聽聽他們的故事，才能接近劍","bold": false,"color":"white"}]
+execute if score #aldon orantes.story matches 6 run tellraw @s {"text":"［你］您知道我應該去哪裡尋找他們嗎？"}
+execute if score #aldon orantes.story matches 7 run function time_traveler:story/orantes/npc/aldon/reset
 #循環偵測
 #loop
 execute if score #aldon orantes.story matches 0..7 run scoreboard players add #aldon orantes.story 1

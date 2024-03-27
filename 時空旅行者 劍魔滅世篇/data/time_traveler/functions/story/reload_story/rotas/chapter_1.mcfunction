@@ -1,5 +1,6 @@
 scoreboard players set rotas._chapter_1 spaceship.story 0
 scoreboard players set rotas._chapter_1 spaceship.global.main 0
+scoreboard players set @a music.time_and_space_journey_mercury.chr.1 0
 
 tellraw @a [{"text":"［","color":"white"},{"text":"WalkMan467","color":"green"},{"text":"］","color":"white"},{"text":"希爾似乎有什麼事情要找你，要不要過去看看！","color":"white"}]
 tellraw @a [{"text":"【目標】前往奧蘭蒂斯城市尋找希爾！","color":"gold"}]

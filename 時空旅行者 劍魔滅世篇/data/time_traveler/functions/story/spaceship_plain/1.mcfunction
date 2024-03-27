@@ -16,7 +16,7 @@ execute if score .spaceship_plain world_tree.story matches 12 run title @a times
 execute if score .spaceship_plain world_tree.story matches 12 run title @a title {"text":"\uE002"}
 execute if score .spaceship_plain world_tree.story matches 11 run tellraw @a {"text":"(你跟著希爾進入了太空站裡)"}
 execute as @a if score .spaceship_plain world_tree.story matches 11 run effect clear @a invisibility
-execute as @a at @s if score .spaceship_plain world_tree.story matches 11 in game_map:spaceship_interior run tp @a 0 61 -52 0 0
+execute as @a at @s if score .spaceship_plain world_tree.story matches 11 in game_map:spaceship_interior run tp @a 0 56 0 -90 0
 execute if score .spaceship_plain world_tree.story matches 11 run scoreboard players set global detect_player_in_lobby 1
 execute if score .spaceship_plain world_tree.story matches 11 run title @a times 0 20 20
 execute if score .spaceship_plain world_tree.story matches 11 run title @a title {"text":"\uE002"}

@@ -10,8 +10,8 @@ scoreboard players set #bellows orantes.story 0
 scoreboard players set #elena orantes.story 0
 
 schedule clear time_traveler:story/orantes/branch_line/lost_guardian/open_npc_loop
-schedule clear time_traveler:interaction/aldon
-schedule clear time_traveler:interaction/bellows
+schedule clear time_traveler:story/orantes/npc/aldon/act_loop
+schedule clear time_traveler:story/orantes/npc/bellows/act_loop
 schedule clear time_traveler:interaction/elena
 schedule function time_traveler:interaction/reina_sword 1t
 schedule function time_traveler:story/orantes/branch_line/loop 1t

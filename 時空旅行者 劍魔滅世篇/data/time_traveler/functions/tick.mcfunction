@@ -33,6 +33,9 @@ execute store result score .money p2.main run clear @a[tag=p2,limit=1,sort=neare
 execute store result score .money p3.main run clear @a[tag=p3,limit=1,sort=nearest] emerald{money:1b} 0
 execute store result score .money p4.main run clear @a[tag=p4,limit=1,sort=nearest] emerald{money:1b} 0
 
+
+execute store result score .player.highest_level global.main run scoreboard players get .world_level global.main
+
 #凡是有 facing 標籤的實體在8個內都會看向最近的玩家
 execute as @e[tag=facing] at @s run tp @s ~ ~ ~ facing entity @p[distance=..8]
 

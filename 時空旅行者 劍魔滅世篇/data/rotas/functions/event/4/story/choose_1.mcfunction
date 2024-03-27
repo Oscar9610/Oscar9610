@@ -8,8 +8,8 @@ execute if score #rotas.event.act.4 rotas.story matches 9 run tellraw @s {"text"
 execute if score #rotas.event.act.4 rotas.story matches 10 run tellraw @s {"text":"［回憶］你成功了！獲得村民們世代相傳的寶貴知識！"}
 execute if score #rotas.event.act.4 rotas.story matches 11 run scoreboard players add #rotas.event.act.4 rotas.story 1
 execute if score #rotas.event.act.4 rotas.story matches 12 run tellraw @s {"text":"(劇情已結束！)\n","color":"red"}
-execute if score #rotas.event.act.4 rotas.story matches 12 run function rotas:main/open_portal
+execute if score #rotas.event.act.4 rotas.story matches 12 positioned 207 59 30 run function rotas:main/portal/open_portal
+execute if score #rotas.event.act.4 rotas.story matches 12 run function rotas:main/kill_all_event
 execute if score #rotas.event.act.4 rotas.story matches 12 run function rotas:event/4/story/reset
-#execute if score #rotas.event.act.4 rotas.story matches 12 run kill @e[tag=rotas.event.4]
 
 scoreboard players add #rotas.event.act.4 rotas.story 1

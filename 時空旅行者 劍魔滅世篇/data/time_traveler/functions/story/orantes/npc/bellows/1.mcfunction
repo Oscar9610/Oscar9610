@@ -1,4 +1,4 @@
-#村長 - 貝洛斯
+##村長 - 貝洛斯
 #story
 execute positioned 111 65 -67 in game_map:orantes as @a[distance=..12] if score #bellows orantes.story matches 0 run tellraw @s {"text":"［希爾］村長你好，我在尋找關於雷納和他的劍的故事"}
 execute positioned 111 65 -67 in game_map:orantes as @a[distance=..12] if score #bellows orantes.story matches 1 run tellraw @s {"text":"［貝洛斯］雷納？那個英雄？他的故事是奧蘭蒂斯的傳奇。他的劍，是我們的驕傲。"}

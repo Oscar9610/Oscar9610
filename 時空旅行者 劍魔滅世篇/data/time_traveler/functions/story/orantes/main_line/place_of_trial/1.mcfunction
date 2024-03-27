@@ -2,7 +2,7 @@
 
 #透過scoreboard story(dummy) + schedule 指令運行整個劇情
 
-execute positioned 6 63 177 in game_map:orantes as @a[tag=!op,distance=..18] if score .main_line orantes.story matches 114 run tag @e[tag=ml.sgp] remove task_glow.fx
+execute positioned 6 63 177 in game_map:orantes as @a[tag=!op,distance=..18] if score .main_line orantes.story matches 104 run tag @e[tag=ml.sgp] remove task_glow.fx
 execute positioned 6 63 177 in game_map:orantes as @a[tag=!op,distance=..18] if score .main_line orantes.story matches 104 run tellraw @s {"text":"［希爾］爺爺我們回來了！"}
 execute positioned 6 63 177 in game_map:orantes as @a[tag=!op,distance=..18] if score .main_line orantes.story matches 105 run tellraw @s {"text":"［爺爺］保護封印的守護者都解決了嗎?"}
 execute positioned 6 63 177 in game_map:orantes as @a[tag=!op,distance=..18] if score .main_line orantes.story matches 106 run tellraw @s {"text":"［你］是的","color":"dark_green"}

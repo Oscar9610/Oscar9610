@@ -9,6 +9,6 @@
     }
   },
   "rewards": {
-    "function": "rotas:main/in_rotas"
+    "function": "rotas:main/portal/in_rotas"
   }
 }
