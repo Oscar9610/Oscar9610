@@ -1,7 +1,7 @@
 #水星主線討伐封印守護者的對話劇情
 
 #透過scoreboard story(dummy) + schedule 指令運行整個劇情
-execute if score .main_line orantes.story matches 100 run tellraw @a[tag=!op] {"text":"［希爾］保護封印的守護者都解決了"}
+execute if score .main_line orantes.story matches 100 run tellraw @a[tag=!op] {"text":"［希爾］三個深淵的魔將都解決了"}
 execute if score .main_line orantes.story matches 101 run tellraw @a[tag=!op] {"text":"［希爾］我們回去找陳述爺爺吧"}
 execute if score .main_line orantes.story matches 102 run tellraw @a[tag=!op] {"text":"【目標】回去找陳述爺爺！","color":"gold"}
 execute if score .main_line orantes.story matches 102 run tag @e[tag=ml.sgp] add task_glow.fx

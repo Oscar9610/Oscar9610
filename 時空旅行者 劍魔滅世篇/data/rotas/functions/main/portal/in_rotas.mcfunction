@@ -1,5 +1,11 @@
+execute if score rotas.reset rotas.global.main matches 0 run scoreboard players set rotas.layer rotas.global.main 0
+
 execute store result score rotas.rdm rotas.global.main run random value 1..8
 scoreboard players set rotas.reset rotas.global.main 1
+scoreboard players add rotas.layer rotas.global.main 1
+
+execute as @a if dimension game_map:realm_of_time_and_space run function rotas:main/portal/fade_out
+
 
 function rotas:main/kill_all_event
 

@@ -9,6 +9,10 @@ gamemode spectator @s
 title @s times 20 140 20
 title @s title {"text":"\uE000"}
 scoreboard players set @s orantes.transitions 8
+
+schedule clear time_traveler:transitions/orantes_city/1/loop
+schedule clear time_traveler:transitions/orantes_city/2/loop
+
 schedule function time_traveler:transitions/orantes_city/1/loop 1t
 schedule function time_traveler:transitions/orantes_city/1/cancel 4s
 

@@ -1,5 +1,5 @@
 
-summon marker -72 75 14 {Tags:[temp]}
+summon marker -5 63 104 {Tags:[temp]}
 
 scoreboard players set #x rotas.fx -72000
 scoreboard players set #y rotas.fx 75000

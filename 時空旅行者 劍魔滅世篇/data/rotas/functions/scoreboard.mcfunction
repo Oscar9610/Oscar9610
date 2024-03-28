@@ -3,6 +3,8 @@ scoreboard objectives add rotas.story dummy "[時空之境] 劇情"
 scoreboard objectives add rotas.global.main dummy "[時空之境] 主要全局"
 scoreboard objectives add rotas.rdm dummy "[時空之境] 隨機"
 scoreboard objectives add rotas.fx dummy "[時空之境] 特效專用"
+scoreboard objectives add portal.clock.fx dummy "[時空之境] 特效專用2"
+
 scoreboard players set 40 rotas.fx 40
 
 # 時空之境 怪物波次

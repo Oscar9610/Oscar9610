@@ -1,9 +1,10 @@
-scoreboard players set rotas.event.2.mw rotas.remaining_monster 40
-scoreboard players set rotas.event.2.mw rotas.target_wave 40
+scoreboard players set rotas.event.2.mw rotas.remaining_monster 20
+scoreboard players set rotas.event.2.mw rotas.target_wave 20
 scoreboard players set rotas.event.2.mw rotas.kill 0
 scoreboard players set rotas.event.2.mw rotas.monster_wave 1
 execute in game_map:realm_of_time_and_space run summon armor_stand 87 73 79 {Marker:1,Invisible:1,Tags:["rotas.event.2.mw"]}
 advancement revoke @a only rotas:monster_wave/kill
+schedule clear rotas:monster_wave/summon
 schedule function rotas:monster_wave/summon 1t
 
 # tp in game_map:realm_of_time_and_space everyone #
