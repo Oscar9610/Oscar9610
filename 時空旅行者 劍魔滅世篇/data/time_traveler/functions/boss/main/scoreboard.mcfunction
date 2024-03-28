@@ -17,6 +17,9 @@ scoreboard players display name .atar global.monsters.health "水鏡之光BOSS"
 
 ##設值
 
+##世界等級
+scoreboard players set .world_level_ratio global.main 10
+
 ##世界等級引響BOSS最大血量(BOSS最初血量 *= 世界等級)
 
 ##設置伏聆BOSS 的最初血量
