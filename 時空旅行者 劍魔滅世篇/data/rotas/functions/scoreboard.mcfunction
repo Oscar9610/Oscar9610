@@ -18,5 +18,4 @@ scoreboard objectives add bless.wts.cd dummy "[時空之境] 時間停刻之時C
 scoreboard objectives add bless.wts.voice dummy "[時空之境] 時間停刻之時音效"
 scoreboard objectives add bless.wts.fx dummy "[時空之境] 時間停刻之時特效"
 
-scoreboard players set rotas.reset rotas.global.main 0
 scoreboard players set @a bless.wts.cd 0

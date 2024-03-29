@@ -1,4 +1,5 @@
 #成功
+scoreboard players set #orantes_1.mw.rt orantes.global.main 0
 schedule clear time_traveler:monster_wave/orantes/1/summon
 scoreboard players set orantes_1 remaining_monster 20
 scoreboard players set orantes_1 target_wave 20

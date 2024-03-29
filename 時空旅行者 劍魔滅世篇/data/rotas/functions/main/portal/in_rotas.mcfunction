@@ -4,14 +4,14 @@
 #rotas.reset = 重製 全部 時空之境(rotas) 開關
 
 # ------------------------------------------ #
-#添加層數值
-scoreboard players add rotas.layer rotas.global.main 1
 
 #關閉傳送門傳送開關
 scoreboard players set #clearance rotas.global.main 0
 
 #如果 時空之境重製開關(rotas.reset) 是 0 就初始化整個 時空之境 遊戲
 execute if score rotas.reset rotas.global.main matches 0 run scoreboard players set rotas.layer rotas.global.main 0
+
+scoreboard players set rotas.reset rotas.global.main 1
 
 #進入區域淡出
 execute as @a run function rotas:main/portal/fade_out

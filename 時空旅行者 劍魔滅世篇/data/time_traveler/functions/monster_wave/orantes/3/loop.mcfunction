@@ -1,4 +1,4 @@
-execute positioned -12 62 70 in game_map:orantes as @a unless entity @s[distance=..30] run function time_traveler:monster_wave/orantes/3/reset
+execute positioned -12 62 70 in game_map:orantes as @a unless entity @a[distance=..30] run function time_traveler:monster_wave/orantes/3/reset
 execute as @e[tag=orantes_main_battle] at @s run particle minecraft:dust 1 0 0 1.5 ^ ^2 ^30 0 0 0 0 5 force
 execute as @e[tag=orantes_main_battle] at @s run particle minecraft:dust 1 0 0 1.5 ^ ^2 ^-30 0 0 0 0 5 force
 execute as @e[tag=orantes_main_battle] at @s run particle minecraft:dust 1 0 0 1.5 ^1 ^2 ^-30 0 0 0 0 5 force

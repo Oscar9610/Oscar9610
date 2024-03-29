@@ -5,4 +5,3 @@ execute as @e[type=minecraft:interaction,tag=Emera] if data entity @s interactio
 
 #重新設置互動偵測
 execute as @e[type=minecraft:interaction,tag=Emera,limit=1,sort=nearest] if data entity @s interaction.timestamp run data remove entity @s interaction
-schedule function time_traveler:interaction/emera 1t
