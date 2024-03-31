@@ -1,4 +1,4 @@
-##開啟下一層的傳送門
+#開啟下一層的傳送門
 scoreboard players set #clearance rotas.global.main 1
 playsound minecraft:entity.allay.ambient_without_item voice @s ~ ~1 ~ 0.7 0.5
 

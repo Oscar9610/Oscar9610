@@ -8,6 +8,13 @@ function time_traveler:monster_weakness/water
 function time_traveler:monster_weakness/grass
 #=========================================================
 
+function time_traveler:boss/spawner/main
+function time_traveler:interaction/main
+function time_traveler:players/effects/main
+function time_traveler:system/main
+
+#=========================================================
+
 # 玩家升等
 execute as @a at @s run function time_traveler:players/update_strength/main
 

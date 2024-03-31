@@ -1,7 +1,7 @@
-title @s title {"text":"\uE002"}
-title @s times 0 10 10
-execute in game_map:realm_of_time_and_space run function rotas:main/portal/in_rotas
+#偵測是否小於第6層 如果有直接傳回奧蘭蒂斯城 沒有則繼續傳到下一層
+execute if score rotas.layer rotas.global.main matches 6 as @a if dimension game_map:realm_of_time_and_space run function rotas:main/portal/end
 
+execute unless score rotas.layer rotas.global.main matches 6 in game_map:realm_of_time_and_space run function rotas:main/portal/rdm
+
+#移除傳送門
 kill @e[tag=rotas.main.portal]
-
-scoreboard players set #clearance rotas.global.main 0

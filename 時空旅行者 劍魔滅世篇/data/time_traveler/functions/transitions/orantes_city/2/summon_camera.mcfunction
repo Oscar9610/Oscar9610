@@ -6,8 +6,6 @@
 #初始 Camera 起點位置
 summon minecraft:item_display -5.05 65.00 63.0 {view_range:0f,teleport_duration:100,Tags:["Duration","transitions.orantes_city.2"],item:{id:"minecraft:air",Count:1b},Rotation:[0f,70f]}
 gamemode spectator @a[scores={orantes.transitions=1..4}]
-title @a[scores={orantes.transitions=1..4}] times 20 40 20
-title @a[scores={orantes.transitions=1..4}] title {"text":"\uE000"}
 schedule function time_traveler:transitions/orantes_city/2/loop 1t
 schedule function time_traveler:transitions/orantes_city/2/cancel 4s
 

@@ -9,6 +9,7 @@ function rotas:scoreboard
 schedule function time_traveler:transitions/orantes_city/loop 1t
 schedule function rotas:fx/loop_close_portal/main 1t
 schedule function rotas:1s 1s
+schedule function rotas:loop 1t
 schedule function time_traveler:rpg_items/get/detect_has_reiner_sword 1t
 schedule function time_traveler:display/elk_display/guide 1t
 schedule function time_traveler:display/elk_display/timer 5s

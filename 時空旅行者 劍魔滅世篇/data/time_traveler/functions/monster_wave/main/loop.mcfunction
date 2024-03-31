@@ -10,8 +10,7 @@ execute as @a if score orantes_3 kill = orantes_3 target_wave run tag @a remove 
 execute as @a if score orantes_3 kill = orantes_3 target_wave run function story:orantes/6
 execute as @a if score orantes_3 kill = orantes_3 target_wave run function time_traveler:monster_wave/orantes/3/reset_2
 
-execute positioned -65 63 7 in game_map:orantes as @a if entity @a[distance=..30] if score .main_line orantes.global.main matches 5 run function time_traveler:monster_wave/orantes/1/open
-execute positioned -65 63 7 in game_map:orantes as @a if entity @a[distance=..30] if score .main_line orantes.global.main matches 5 run scoreboard players set .main_line orantes.global.main 6
+execute positioned -65 63 7 in game_map:orantes as @a if entity @a[distance=..30] if score #orantes_1.mw.rt orantes.global.main matches 1 run function time_traveler:monster_wave/orantes/1/open
 
 execute positioned -178 61 -11 in game_map:orantes as @a if entity @a[distance=..30] if score .main_line orantes.global.main matches 10 run function time_traveler:monster_wave/orantes/2/open
 execute positioned -178 61 -11 in game_map:orantes as @a if entity @a[distance=..30] if score .main_line orantes.global.main matches 10 run scoreboard players set .main_line orantes.global.main 11
