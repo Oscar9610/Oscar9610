@@ -1,4 +1,4 @@
-#水星主線討伐封印守護者的對話劇情
+#水星主線討伐魔將的對話劇情
 
 #透過scoreboard story(dummy) + schedule 指令運行整個劇情
 execute if score .main_line orantes.story matches 66 run effect clear @e[tag=ml.sgp] glowing

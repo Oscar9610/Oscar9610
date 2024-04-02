@@ -28,9 +28,10 @@ execute if score #aldon_1 orantes.story matches 5 run kill @e[tag=bl.lg.an]
 execute if score #aldon_1 orantes.story matches 5 run kill @e[tag=reina_sword]
 execute if score #aldon_1 orantes.story matches 5 run kill @e[tag=elena_home]
 execute if score #aldon_1 orantes.story matches 5 run schedule function time_traveler:story/orantes/npc/aldon/detect_sword 1t
-execute if score #aldon_1 orantes.story matches 6 run tellraw @s [{"text":"====================\n","color":"gold"},{"text":"【支線】遺失的守護者 任務完成！"},"\n ",{"text":"獎勵大家 "},{"text":"60個","color":"light_purple"},{"text":"星輝幣","color":"dark_purple"},{"text":"！","color":"gold"},{"text":"\n====================","color":"gold"}]
-execute if score #aldon_1 orantes.story matches 6 run give @s emerald{Unbreakable:1b,money:1b,HideFlags:7,display:{Name:'[{"text":"","italic":false},{"text":"星輝幣 1 元","color":"dark_purple"}]',Lore:['[{"text":"","italic":false},{"text":"通用金錢","color":"dark_gray"}]','[{"text":"","italic":false},{"text":"全宇宙通用的貨幣","color":"gray"}]','[{"text":"","italic":false},{"text":"任誰都能理解它的價值與份量","color":"gray"}]']}} 60
+execute if score #aldon_1 orantes.story matches 6 run tellraw @a [{"text":"====================\n","color":"gold"},{"text":"【支線】遺失的守護者 任務完成！"},"\n ",{"text":"獎勵大家 "},{"text":"60個","color":"light_purple"},{"text":"星輝幣","color":"dark_purple"},{"text":"！","color":"gold"},{"text":"\n====================","color":"gold"}]
+execute if score #aldon_1 orantes.story matches 6 as @a run give @s emerald{Unbreakable:1b,money:1b,HideFlags:7,display:{Name:'[{"text":"","italic":false},{"text":"星輝幣 1 元","color":"dark_purple"}]',Lore:['[{"text":"","italic":false},{"text":"通用金錢","color":"dark_gray"}]','[{"text":"","italic":false},{"text":"全宇宙通用的貨幣","color":"gray"}]','[{"text":"","italic":false},{"text":"任誰都能理解它的價值與份量","color":"gray"}]']}} 60
 execute if score #aldon_1 orantes.story matches 6 run function time_traveler:story/orantes/branch_line/lost_guardian/cancel_loop
+execute if score #aldon_1 orantes.story matches 6 run scoreboard players set #lost_guardian global.advancements 9
 #循環偵測
 #loop
 execute if score #aldon_1 orantes.story matches 3..6 run scoreboard players add #aldon_1 orantes.story 1

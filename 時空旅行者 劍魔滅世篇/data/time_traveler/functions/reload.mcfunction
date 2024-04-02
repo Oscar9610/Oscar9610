@@ -11,6 +11,11 @@ scoreboard players set rotas._chapter_2 spaceship.story 0
 scoreboard players set rotas._chapter_2 spaceship.global.main 0
 scoreboard players set orantes.rotas.open global.main 0
 
+xp set @s 0 levels
+xp set @s 0 points
+scoreboard players set .world_level global.main 1
+scoreboard players set .player.highest_level global.main 1
+
 function time_traveler:story/orantes/main_line/rs/3/remove_display_monster
 schedule clear time_traveler:story/spaceship_plain/rotas/chapter_2/loop
 

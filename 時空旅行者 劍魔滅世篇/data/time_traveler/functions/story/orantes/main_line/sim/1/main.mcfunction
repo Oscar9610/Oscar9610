@@ -16,7 +16,7 @@ execute if score .main_line orantes.story matches 11 run tellraw @s {"text":"【
 execute if score .main_line orantes.story matches 11 run kill @e[tag=display,distance=..2]
 execute if score .main_line orantes.story matches 11 run kill @e[tag=ml.hill.1]
 execute if score .main_line orantes.story matches 11 run function time_traveler:story/orantes/main_line/rs/2/summon_display_monster
-execute if score .main_line orantes.story matches 11 run schedule function time_traveler:story/orantes/main_line/loop 1t
+execute if score .main_line orantes.story matches 11 run function time_traveler:story/orantes/main_line/loop
 execute if score .main_line orantes.story matches 11 run function time_traveler:story/orantes/main_line/sim/task_open_text
 execute if score .main_line orantes.story matches 11 run tag @e[tag=ml.sgp] remove task_glow.fx
 execute if score .main_line orantes.story matches 11 run effect clear @e[tag=ml.sgp] glowing

@@ -4,10 +4,14 @@ function time_traveler:scoreboard
 function time_traveler:monsters/main/scoreboard
 function time_traveler:boss/main/scoreboard
 function time_traveler:rpg_weapons/scoreboard
+
+schedule function time_traveler:players/player_id 1t
+
 function rotas:scoreboard
 
+function time_traveler:rpg_weapons/type/gravity_axe/timer
+schedule function time_traveler:remove_overworld_text_display 100s
 schedule function time_traveler:transitions/orantes_city/loop 1t
-schedule function rotas:fx/loop_close_portal/main 1t
 schedule function rotas:1s 1s
 schedule function rotas:loop 1t
 schedule function time_traveler:rpg_items/get/detect_has_reiner_sword 1t
@@ -15,10 +19,6 @@ schedule function time_traveler:display/elk_display/guide 1t
 schedule function time_traveler:display/elk_display/timer 5s
 schedule function time_traveler:story/spaceship_plain/branch_line/loop 1t
 schedule function time_traveler:entity_fx/control_thread/guide 1t
-schedule function time_traveler:interaction/library/lectern/1 1t
-schedule function time_traveler:interaction/library/lectern/2 1t
-schedule function time_traveler:interaction/library/lectern/3 1t
-schedule function time_traveler:interaction/library/lectern/4 1t
 schedule function time_traveler:mini_game/shooting_contest/bow/remove 1t
 schedule function time_traveler:story/orantes/npc/shooting_contest/loop 1t
 schedule function time_traveler:system/shooting_contest/kill_arrow 6t
@@ -28,7 +28,6 @@ schedule function time_traveler:boss/spawner/potion/set_delay/loop 1t
 schedule function time_traveler:boss/spawner/storm_keeper/set_delay/loop 1t
 schedule function time_traveler:boss/spawner/atar/set_delay/loop 1t
 schedule function time_traveler:interaction/shooting_contest 1t
-schedule function time_traveler:boss/potion/jump_detect 1t
 schedule function time_traveler:players/effects/saturation 1t
 schedule function time_traveler:players/effects/speed 1t
 schedule function time_traveler:rpg_weapons/timer 1s
@@ -41,7 +40,6 @@ schedule function time_traveler:random_hint 1t
 schedule function time_traveler:interaction/emera 1t
 schedule function time_traveler:interaction/lena 1t
 schedule function time_traveler:monsters/main/loop 1t
-schedule function time_traveler:players/detect_player_get_id 1t
 schedule function time_traveler:timer 1t
 schedule function time_traveler:rpg_weapons/type/double_sword_fire/passive/loop 1s
 schedule function time_traveler:rpg_weapons/type/noob_axe/passive/heal 10s
@@ -50,7 +48,6 @@ schedule function time_traveler:rpg_items/get/gift_pack/double_sword_fire 1t
 schedule function time_traveler:entity_fx/loop 1t
 schedule function time_traveler:tp/map_lobby/loop 1t
 schedule function time_traveler:boss/main/loop 1t
-execute as @a at @s run function time_traveler:players/update_weapons/main
 
 #修復【主線】陳述不見了？！ 顯示問題Bug (觸發Bug的時候陳述盔甲座不會刪掉，基於懶因此直接用這行刪除)
 execute if score .main_line orantes.story matches 29.. in game_map:orantes positioned -65 63 7 run kill @e[tag=statement,distance=..3]

@@ -42,6 +42,14 @@ scoreboard objectives add noob_axe_max_cd dummy "新手斧CD上限"
 scoreboard players set @a noob_axe_cd 0
 scoreboard players set @a noob_axe_max_cd 25
 #===================================================================
+#重力斧
+scoreboard objectives add gravity_axe_cd dummy "重力斧CD"
+scoreboard objectives add gravity_axe_max_cd dummy "重力斧CD上限"
+scoreboard objectives add gravity_axe.use dummy "重力斧持續時間"
+
+scoreboard players set @a gravity_axe_cd 0
+scoreboard players set @a gravity_axe_max_cd 20
+#===================================================================
 #新手劍
 scoreboard objectives add noob_sword_cd dummy "新手劍CD"
 scoreboard objectives add noob_sword_max_cd dummy "新手劍CD上限"
@@ -100,6 +108,7 @@ scoreboard players set .noob_sword_4 atk 500
 scoreboard players set .noob_sword_5 atk 600
 scoreboard players set .wind_sword atk 100
 scoreboard players set .noob_sickle atk 300
+scoreboard players set .gravity_axe atk 200
 scoreboard players set .water_sword_demon atk 250
 scoreboard players set .double_sword atk 300
 scoreboard players set .double_sword1 atk 60
