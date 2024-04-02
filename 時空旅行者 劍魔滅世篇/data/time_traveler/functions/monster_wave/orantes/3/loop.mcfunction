@@ -1,13 +1,18 @@
-execute positioned -12 62 70 in game_map:orantes as @a unless entity @a[distance=..30] run function time_traveler:monster_wave/orantes/3/reset
-execute as @e[tag=orantes_main_battle] at @s run particle minecraft:dust 1 0 0 1.5 ^ ^2 ^30 0 0 0 0 5 force
-execute as @e[tag=orantes_main_battle] at @s run particle minecraft:dust 1 0 0 1.5 ^ ^2 ^-30 0 0 0 0 5 force
-execute as @e[tag=orantes_main_battle] at @s run particle minecraft:dust 1 0 0 1.5 ^1 ^2 ^-30 0 0 0 0 5 force
-execute as @e[tag=orantes_main_battle] at @s run particle minecraft:dust 1 0 0 1.5 ^-1 ^2 ^-30 0 0 0 0 5 force
-execute as @e[tag=orantes_main_battle] at @s run particle minecraft:dust 1 0 0 1.5 ^1 ^2 ^30 0 0 0 0 5 force
-execute as @e[tag=orantes_main_battle] at @s run particle minecraft:dust 1 0 0 1.5 ^-1 ^2 ^30 0 0 0 0 5 force
-execute as @e[tag=orantes_main_battle] at @s run tp @s ~ ~ ~ ~25 0
 
-execute positioned -12 62 70 in game_map:orantes as @e[type=!player,tag=orantes_3_monster_wave,distance=30..] at @s run tp @s ~ ~ ~ facing -12 62 70
-execute positioned -12 62 70 in game_map:orantes as @e[type=!player,tag=orantes_3_monster_wave,distance=30..] at @s anchored feet run tp @s ^ ^0.5 ^1
-execute positioned -12 62 70 in game_map:orantes as @a[distance=..30] run spawnpoint @s ~ ~ ~
-execute positioned -12 62 70 in game_map:orantes if entity @a[distance=..30] run schedule function time_traveler:monster_wave/orantes/3/loop 1t
+# ----- detect open ----- #
+execute if score #orantes_3.mw.rt orantes.global.main matches 1 if entity @a[distance=..30,limit=1] run function time_traveler:monster_wave/orantes/3/open
+
+# ----- wave system ----- #
+execute unless score #orantes_3.mw.rt orantes.global.main matches 0 run return 0
+execute unless score .main_line orantes.global.main matches 15 run return 0
+
+# range
+execute as @e[type=marker,tag=orantes_main_battle,limit=1] at @s run function time_traveler:monster_wave/orantes/3/range
+execute as @e[type=marker,tag=orantes_main_battle,limit=1] at @s run function time_traveler:monster_wave/orantes/3/range
+
+# monster
+execute as @e[type=#time_traveler:monsters,tag=orantes_3_monster_wave,distance=30..] at @s facing -178 61 -11 run tp @s ^ ^0.5 ^1
+
+# loop
+execute unless entity @a[distance=..30,limit=1] run function time_traveler:monster_wave/orantes/3/result/escape
+execute if score orantes_3 kill = orantes_3 target_wave run function time_traveler:monster_wave/orantes/3/result/win
