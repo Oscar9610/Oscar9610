@@ -3,7 +3,7 @@
 #orantes_1.mw.rt =  怪物波次重製開關(Monster Wave Reset)
 
 scoreboard players set #orantes_1.mw.rt orantes.global.main 1
-scoreboard players set .main_line orantes.global.main 6
+scoreboard players set .main_line orantes.global.main 5
 schedule clear time_traveler:monster_wave/orantes/1/loop
 tellraw @s {"text":"(已脫離戰場)","color": "red","bold": true}
 schedule clear time_traveler:monster_wave/orantes/1/summon

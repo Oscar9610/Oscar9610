@@ -33,7 +33,8 @@
         "witch",
         "wither",
         "zoglin",
-        "zombie_villager"
+        "zombie_villager",
+        "zombified_piglin"
 
     ]
 }

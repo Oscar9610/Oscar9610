@@ -8,7 +8,6 @@
 
 # ============================================================ #
 
-scoreboard players set #orantes_1.mw.rt orantes.global.main 0
 scoreboard players set .main_line orantes.global.main 6
 
 scoreboard players set orantes_1 remaining_monster 20
