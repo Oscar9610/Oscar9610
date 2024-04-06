@@ -1,0 +1,1 @@
+summon block_display ~-0.5 ~10 ~-0.5 {Tags:["resonance_stone.disp","Duration"],block_state:{Name:"minecraft:crying_obsidian",Properties:{facing:"south",powered:"false"}},transformation:{left_rotation:[0.0f,-0.0f,0.0f],right_rotation:[0.0f,0.0f,0.0f,0.0f],scale:[1.0f,1.0f,1.0f],translation:[0.5f,0.0f,-0.5f]}}

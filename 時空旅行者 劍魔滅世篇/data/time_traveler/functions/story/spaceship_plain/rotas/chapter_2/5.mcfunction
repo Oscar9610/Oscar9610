@@ -9,7 +9,6 @@ execute if score rotas._chapter_2 spaceship.story matches 43 run tellraw @s [{"t
 execute if score rotas._chapter_2 spaceship.story matches 43 run kill @e[tag=rotas.2.4]
 execute if score rotas._chapter_2 spaceship.story matches 43 run scoreboard players set #clearance rotas.global.main 1
 execute if score rotas._chapter_2 spaceship.story matches 43 run scoreboard players set rotas._chapter_2 spaceship.global.main 8
-execute if score rotas._chapter_2 spaceship.story matches 43 run scoreboard players set rotas.cd rotas.global.main 1
 execute if score rotas._chapter_2 spaceship.story matches 43 run schedule clear time_traveler:interaction/spaceship_plain/rotas/chapter_2/aska_3
 
 execute if score rotas._chapter_2 spaceship.story matches 36..43 run scoreboard players add rotas._chapter_2 spaceship.story 1

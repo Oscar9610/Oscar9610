@@ -1,0 +1,16 @@
+#施法開始
+execute as @s[scores={boss.skill.cast.cd=0}] at @s run function rotas:boss/infinite_abyss/cast
+
+#施法中
+execute as @s[scores={boss.skill.casting=1..}] at @s run function rotas:boss/infinite_abyss/casting
+
+#施法結束
+execute as @s[scores={boss.skill.casting=0}] at @s run function rotas:boss/infinite_abyss/castend
+
+kill @e[tag=infinite_abyss.summon,scores={duration=200}]
+
+bossbar set infinite_abyss players @a[distance=..60]
+
+execute as @e[tag=infinite_abyss] store result bossbar infinite_abyss value run data get entity @s Health
+
+execute as @e[tag=infinite_abyss] store result bossbar infinite_abyss max run attribute @s generic.max_health get

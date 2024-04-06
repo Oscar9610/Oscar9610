@@ -6,8 +6,9 @@ execute if score rotas._chapter_2 spaceship.story matches 48 run tellraw @s {"te
 execute if score rotas._chapter_2 spaceship.story matches 49 run tellraw @s {"text":"［阿斯卡］不過你們可以去 草星 - 古羅拉斯，那邊有更多強大的武器與裝備"}
 execute if score rotas._chapter_2 spaceship.story matches 50 run tellraw @s {"text":"［阿斯卡］我先走囉，我們草星見！"}
 execute if score rotas._chapter_2 spaceship.story matches 51 run tellraw @s [{"text":"恭喜完成【支線】終有一日，世界將恢復如初 其二","color":"gold"}]
-execute if score rotas._chapter_2 spaceship.story matches 51 run tellraw @s [{"text":"草星地圖目前正在製作中，盡情期待下次草星版本更新！","color":"white"}]
-execute if score rotas._chapter_2 spaceship.story matches 51 run kill @e[tag=rotas.2.5]
+execute if score rotas._chapter_2 spaceship.story matches 52 run tellraw @s [{"text":"草星地圖目前正在製作中，盡情期待下次草星版本更新！","color":"white"}]
 
-execute if score rotas._chapter_2 spaceship.story matches 44..51 run scoreboard players add rotas._chapter_2 spaceship.story 1
-execute positioned -9 61 97 if score rotas._chapter_2 spaceship.story matches 44..51 run schedule function time_traveler:story/spaceship_plain/rotas/chapter_2/6 4s
+execute if score rotas._chapter_2 spaceship.story matches 52 run kill @e[tag=rotas.2.5]
+
+execute if score rotas._chapter_2 spaceship.story matches 44..52 run scoreboard players add rotas._chapter_2 spaceship.story 1
+execute positioned -9 61 97 if score rotas._chapter_2 spaceship.story matches 44..52 run schedule function time_traveler:story/spaceship_plain/rotas/chapter_2/6 3s
