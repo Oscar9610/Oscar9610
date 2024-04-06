@@ -1,0 +1,6 @@
+
+scoreboard players set .time_and_space_journey_mercury_chapter_2 spaceship.story 1
+
+scoreboard players set .time_and_space_journey_mercury_chapter_2 spaceship.global.main 1
+
+function time_traveler:story/spaceship_plain/time_and_space_journey_mercury/chapter_2/1

@@ -1,6 +1,8 @@
-#水星主線即將去試煉之地對話劇情
+#水星初始離開飛船對話劇情
+#Mercury initial leaving spacecraft dialogue plot
 
 #透過scoreboard story(dummy) + schedule 指令運行整個劇情
+#The orantes.story is executed through the global function of the "story" scoreboard and the schedule control interval.
 
 execute positioned 11 62 -125 in game_map:orantes if score #place_of_trial orantes.story matches 1..2 run title @a[tag=!op,distance=..100] actionbar {"text":"［阿塔爾］我感受到了... 熟悉又陌生的靈魂。你是來解救我，還是來毀滅我？"}
 execute positioned 11 62 -125 in game_map:orantes if score #place_of_trial orantes.story matches 3..4 run title @a[tag=!op,distance=..100] actionbar {"text":"［阿塔爾］深淵的黑暗... 它在我心中翻騰，我不能... 我不想成為它的奴隸！"}

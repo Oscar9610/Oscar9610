@@ -14,4 +14,4 @@ schedule function time_traveler:interaction/elena 1t
 schedule function time_traveler:interaction/elena_home/1 1t
 
 
-schedule clear time_traveler:story/orantes/npc/bellows/act_loop
+schedule clear time_traveler:interaction/bellows

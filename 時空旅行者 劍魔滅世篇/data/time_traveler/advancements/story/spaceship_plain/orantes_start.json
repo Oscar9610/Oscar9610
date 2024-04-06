@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "player": {},
+        "from": "game_map:spaceship_interior",
+        "to": "game_map:orantes"
+      }
+    }
+  },
+  "rewards": {
+    "function": "time_traveler:story/orantes/main_line/start"
+  }
+}

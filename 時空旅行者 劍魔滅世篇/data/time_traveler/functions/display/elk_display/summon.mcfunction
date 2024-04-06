@@ -1,1 +1,0 @@
-summon minecraft:marker ~ ~ ~ {Tags:["elk_dis.mr"]}

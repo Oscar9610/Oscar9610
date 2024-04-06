@@ -12,7 +12,7 @@
     "announce_to_chat": false,
     "hidden": false
   },
-  "parent": "task:orantes/main_line/1",
+  "parent": "task:orantes/main_mission/go_orantes_city",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:impossible"

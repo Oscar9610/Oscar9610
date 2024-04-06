@@ -12,7 +12,4 @@ execute if score #automations.orantes.potion automations.boss_time matches 1.. r
 execute if score #automations.orantes.storm_keeper automations.boss_time matches 1.. run scoreboard players remove #automations.orantes.storm_keeper automations.boss_time 1
 execute if score #automations.orantes.atar automations.boss_time matches 1.. run scoreboard players remove #automations.orantes.atar automations.boss_time 1
 
-#過場計時
-scoreboard players remove @a[scores={orantes.transitions=1..}] orantes.transitions 1
-
 schedule function time_traveler:timer 1s

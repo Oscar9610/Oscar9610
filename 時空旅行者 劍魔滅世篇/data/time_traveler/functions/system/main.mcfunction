@@ -1,1 +1,0 @@
-function time_traveler:system/shooting_contest/kill_arrow

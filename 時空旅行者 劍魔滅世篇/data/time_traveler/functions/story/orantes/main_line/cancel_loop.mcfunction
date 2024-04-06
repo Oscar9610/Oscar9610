@@ -1,9 +1,0 @@
-schedule clear time_traveler:story/orantes/main_line/sim/guide
-schedule clear time_traveler:story/orantes/main_line/sim/loop
-schedule clear time_traveler:story/orantes/main_line/rs/guide
-schedule clear time_traveler:story/orantes/main_line/statement_go_back_to_old_home/loop
-schedule clear time_traveler:story/orantes/main_line/core/core_stage
-schedule clear time_traveler:story/orantes/main_line/core/guide
-schedule clear time_traveler:story/orantes/main_line/core/loop
-schedule clear time_traveler:story/orantes/main_line/loop
-schedule clear time_traveler:interaction/statement_2

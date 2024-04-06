@@ -1,0 +1,16 @@
+execute as @a[tag=p1,scores={rightclick=1..,noob_sickle_cd=0},nbt={SelectedItem:{tag:{Tags:["sickle"]}}}] at @s run summon armor_stand ~ ~ ~ {Silent:1b,Invulnerable:1b,Invisible:1b,Tags:["p1_sickle2","sickle2","Duration"],ArmorItems:[{},{},{},{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{Unbreakable:1b,CustomModelData:22}}]}
+execute as @a[tag=p2,scores={rightclick=1..,noob_sickle_cd=0},nbt={SelectedItem:{tag:{Tags:["sickle"]}}}] at @s run summon armor_stand ~ ~ ~ {Silent:1b,Invulnerable:1b,Invisible:1b,Tags:["p2_sickle2","sickle2","Duration"],ArmorItems:[{},{},{},{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{Unbreakable:1b,CustomModelData:22}}]}
+execute as @a[tag=p3,scores={rightclick=1..,noob_sickle_cd=0},nbt={SelectedItem:{tag:{Tags:["sickle"]}}}] at @s run summon armor_stand ~ ~ ~ {Silent:1b,Invulnerable:1b,Invisible:1b,Tags:["p3_sickle2","sickle2","Duration"],ArmorItems:[{},{},{},{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{Unbreakable:1b,CustomModelData:22}}]}
+execute as @a[tag=p4,scores={rightclick=1..,noob_sickle_cd=0},nbt={SelectedItem:{tag:{Tags:["sickle"]}}}] at @s run summon armor_stand ~ ~ ~ {Silent:1b,Invulnerable:1b,Invisible:1b,Tags:["p4_sickle2","sickle2","Duration"],ArmorItems:[{},{},{},{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{Unbreakable:1b,CustomModelData:22}}]}
+function rpg_weapons:rightclick/noob_sickle/tp
+
+execute as @a[scores={rightclick=1..,noob_sickle_cd=0},nbt={SelectedItem:{tag:{Tags:["sickle"]}}}] run tellraw @s [{"text":"[","color":"green","bold":true},{"text":"收割","color":"white","bold":true},{"text":"] ","color":"green","bold":true},{"text":"發動！","color":"green","bold":true}]
+execute as @a[scores={rightclick=1..,noob_sickle_cd=0},nbt={SelectedItem:{tag:{Tags:["sickle"]}}}] at @s run playsound minecraft:item.trident.riptide_3 voice @a[distance=..5] ~ ~ ~ 1 1.07
+execute as @a[scores={rightclick=1..,noob_sickle_cd=0},nbt={SelectedItem:{tag:{Tags:["sickle"]}}}] at @s run particle minecraft:effect ~ ~1 ~ 1 0.5 1 50 20 normal
+execute as @a[scores={rightclick=1..,noob_sickle_cd=0},nbt={SelectedItem:{tag:{Tags:["sickle"]}}}] at @s run particle minecraft:end_rod ~ ~1 ~ 0 0 0 0.5 20 normal
+execute as @a[scores={rightclick=1..,noob_sickle_cd=0},nbt={SelectedItem:{tag:{Tags:["sickle"]}}}] run scoreboard players operation @s noob_sickle_cd = @s noob_sickle_max_cd
+
+execute at @e[type=armor_stand,tag=p1_sickle2] as @e[type=!armor_stand,type=!player,distance=..5] run function time_traveler:damage_formula/noob_schtick/skill/p1_noob_schtick with storage p1_skill_damage
+execute at @e[type=armor_stand,tag=p2_sickle2] as @e[type=!armor_stand,type=!player,distance=..5] run function time_traveler:damage_formula/noob_schtick/skill/p2_noob_schtick with storage p2_skill_damage
+execute at @e[type=armor_stand,tag=p3_sickle2] as @e[type=!armor_stand,type=!player,distance=..5] run function time_traveler:damage_formula/noob_schtick/skill/p3_noob_schtick with storage p3_skill_damage
+execute at @e[type=armor_stand,tag=p4_sickle2] as @e[type=!armor_stand,type=!player,distance=..5] run function time_traveler:damage_formula/noob_schtick/skill/p4_noob_schtick with storage p4_skill_damage

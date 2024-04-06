@@ -2,9 +2,6 @@ function time_traveler:boss/shadow/tag_loop
 function time_traveler:boss/potion/tag_loop
 function time_traveler:boss/storm_keeper/tag_loop
 function time_traveler:boss/martha/tag_loop
-function rotas:event/5/shadow/tag_loop
-function rotas:boss/infinite_abyss/tag_loop
-
 #針對怪物
 execute as @e[tag=boss.spawn] at @s run function time_traveler:boss/main/value_set
 
@@ -24,9 +21,6 @@ scoreboard players remove @e[scores={boss.skill.cast.cd=0..}] boss.skill.cast.cd
 scoreboard players remove @e[scores={boss.skill.casting=0..}] boss.skill.casting 1
 
 ##根據世界等級計算怪物屬性
-# 計算世界等級
-execute as @a at @s run function time_traveler:boss/main/world_level
-
 #怪物血量 * 世界等級 = 最終血量
 
 scoreboard players operation #current_value global.boss.health = .shadow global.boss.health

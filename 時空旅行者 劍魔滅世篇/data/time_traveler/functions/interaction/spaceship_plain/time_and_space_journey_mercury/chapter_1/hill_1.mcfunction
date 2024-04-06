@@ -1,0 +1,4 @@
+execute as @e[type=minecraft:interaction,tag=hill.interaction.time_and_space_journey_mercury.chapter_1.1] if score .time_and_space_journey_mercury_chapter_1 spaceship.story matches 1..5 if data entity @s interaction.timestamp run function time_traveler:story/spaceship_plain/time_and_space_journey_mercury/chapter_1/1
+execute as @e[type=minecraft:interaction,tag=hill.interaction.time_and_space_journey_mercury.chapter_1.1] if data entity @s interaction.timestamp run data remove entity @s interaction
+
+schedule function time_traveler:interaction/spaceship_plain/time_and_space_journey_mercury/chapter_1/hill_1 1t
