@@ -44,6 +44,7 @@ execute if score .main_line orantes.story matches 89 run kill @e[tag=display,dis
 execute if score .main_line orantes.story matches 89 run kill @e[tag=task_glow.fx]
 execute if score .main_line orantes.story matches 89 run tp @s -12 62 70 0 0
 execute if score .main_line orantes.story matches 89 run scoreboard players set .main_line orantes.global.main 15
+execute if score .main_line orantes.story matches 89 run scoreboard players set #orantes_3.mw.rt orantes.global.main 1
 
 #循環偵測
 #loop

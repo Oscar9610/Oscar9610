@@ -4,6 +4,7 @@ function time_traveler:scoreboard
 function time_traveler:monsters/main/scoreboard
 function time_traveler:boss/main/scoreboard
 function time_traveler:rpg_weapons/scoreboard
+schedule function rotas:bless/timer 1s
 
 schedule function time_traveler:players/player_id 1t
 
@@ -12,7 +13,6 @@ function rotas:scoreboard
 function time_traveler:rpg_weapons/type/gravity_axe/timer
 schedule function time_traveler:remove_overworld_text_display 100s
 schedule function time_traveler:transitions/orantes_city/loop 1t
-schedule function rotas:1s 1s
 schedule function rotas:loop 1t
 schedule function time_traveler:rpg_items/get/detect_has_reiner_sword 1t
 schedule function time_traveler:display/elk_display/guide 1t

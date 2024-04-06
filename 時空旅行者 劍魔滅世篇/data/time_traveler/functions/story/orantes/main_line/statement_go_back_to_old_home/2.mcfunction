@@ -16,6 +16,7 @@ execute positioned -189 59 -7 in game_map:orantes if score .main_line orantes.st
 execute positioned -189 59 -7 in game_map:orantes if score .main_line orantes.story matches 49 run tellraw @a[distance=..20] {"text":"［希爾］我們會保護你的！"}
 execute positioned -189 59 -7 in game_map:orantes if score .main_line orantes.story matches 49 as @a[distance=..20] run function time_traveler:players/transitions
 execute as @a at @s positioned -189 59 -7 in game_map:orantes if score .main_line orantes.story matches 49 run scoreboard players set .main_line orantes.global.main 10
+execute as @a at @s positioned -189 59 -7 in game_map:orantes if score .main_line orantes.story matches 49 run scoreboard players set #orantes_2.mw.rt orantes.global.main 1
 execute if score .main_line orantes.story matches 50 run function time_traveler:story/orantes/main_line/statement_go_back_to_old_home/remove_statement_2
 
 execute if score .main_line orantes.story matches 39..50 run scoreboard players add .main_line orantes.story 1

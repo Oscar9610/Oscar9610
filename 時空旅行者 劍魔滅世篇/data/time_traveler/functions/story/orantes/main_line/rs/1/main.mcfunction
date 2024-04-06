@@ -30,7 +30,7 @@ execute if score .main_line orantes.story matches 17 run function time_traveler:
 #Open specific monster wave background
 execute if score .main_line orantes.story matches 17 run tp @a[distance=..20] -64 63 5 -90 0
 execute if score .main_line orantes.story matches 17 run scoreboard players set .main_line orantes.global.main 5
-
+execute if score .main_line orantes.story matches 17 run scoreboard players set #orantes_1.mw.rt orantes.global.main 1
 
 #循環偵測
 #loop

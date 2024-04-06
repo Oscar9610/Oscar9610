@@ -9,6 +9,7 @@ execute as @e[tag=aska.interaction.1] at @s if data entity @s interaction.timest
 
 execute as @e[tag=aska.interaction.3] at @s if data entity @s interaction.timestamp run function time_traveler:story/spaceship_plain/rotas/chapter_2/guide
 
+execute as @e[tag=aska.interaction.4] at @s if data entity @s interaction.timestamp run function time_traveler:story/spaceship_plain/rotas/chapter_2/guide
 
 execute positioned 9.50 56.00 8.50 in game_map:spaceship_interior as @a[distance=..8] at @s if score rotas._chapter_2 spaceship.global.main matches 3 run function time_traveler:story/spaceship_plain/rotas/chapter_2/2
 execute positioned 9.50 56.00 8.50 in game_map:spaceship_interior as @a[distance=..8] at @s if score rotas._chapter_2 spaceship.global.main matches 3 run scoreboard players set rotas._chapter_2 spaceship.global.main 4

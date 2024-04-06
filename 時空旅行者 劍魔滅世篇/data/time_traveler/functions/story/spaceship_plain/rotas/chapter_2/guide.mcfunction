@@ -4,6 +4,8 @@
 #sim  = 【主線】陳述不見了？！
 execute as @a[distance=..8] if score rotas._chapter_2 spaceship.story matches 10..35 run function time_traveler:story/spaceship_plain/rotas/chapter_2/3
 
-execute as @a[distance=..12] if score rotas._chapter_2 spaceship.story matches 36..43 if score rotas._chapter_2 spaceship.global.main matches 7.. run function time_traveler:story/spaceship_plain/rotas/chapter_2/5
+execute as @a[distance=..12] if score rotas._chapter_2 spaceship.story matches 36..43 if score rotas._chapter_2 spaceship.global.main matches 7 run function time_traveler:story/spaceship_plain/rotas/chapter_2/5
+
+execute as @a[distance=..12] if score rotas._chapter_2 spaceship.story matches 44..51 if score rotas._chapter_2 spaceship.global.main matches 9 run function time_traveler:story/spaceship_plain/rotas/chapter_2/6
 
 data remove entity @s interaction

@@ -18,4 +18,11 @@ scoreboard objectives add bless.wts.cd dummy "[時空之境] 時間停刻之時C
 scoreboard objectives add bless.wts.voice dummy "[時空之境] 時間停刻之時音效"
 scoreboard objectives add bless.wts.fx dummy "[時空之境] 時間停刻之時特效"
 
+scoreboard objectives add bless.cup_of_healing.cd dummy "[時空之境] 治癒之泉CD"
+scoreboard objectives add bless.cup_of_strength.cd dummy "[時空之境] 治癒之泉CD"
+scoreboard objectives add bless.cup_of_speed.cd dummy "[時空之境] 速度之泉CD"
+
 scoreboard players set @a bless.wts.cd 0
+scoreboard players set @a bless.cup_of_healing.cd 0
+scoreboard players set @a bless.cup_of_strength.cd 0
+scoreboard players set @a bless.cup_of_speed.cd 0

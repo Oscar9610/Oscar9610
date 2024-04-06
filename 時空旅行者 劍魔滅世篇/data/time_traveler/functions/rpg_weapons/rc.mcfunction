@@ -1,3 +1,4 @@
+function rotas:bless/rc
 
 # 劍
 execute if entity @s[scores={noob_sword_cd=..0},nbt={SelectedItem:{tag:{noob:1b}}}] run function time_traveler:rpg_weapons/type/noob_sword/use

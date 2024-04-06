@@ -3,6 +3,8 @@ function time_traveler:boss/potion/tag_loop
 function time_traveler:boss/storm_keeper/tag_loop
 function time_traveler:boss/martha/tag_loop
 function rotas:event/5/shadow/tag_loop
+function time_traveler:boss/infinite_abyss/tag_loop
+
 #針對怪物
 execute as @e[tag=boss.spawn] at @s run function time_traveler:boss/main/value_set
 

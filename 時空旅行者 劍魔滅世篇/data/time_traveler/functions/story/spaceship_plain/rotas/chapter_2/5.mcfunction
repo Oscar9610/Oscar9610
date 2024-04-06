@@ -8,6 +8,8 @@ execute if score rotas._chapter_2 spaceship.story matches 42 run tellraw @s {"te
 execute if score rotas._chapter_2 spaceship.story matches 43 run tellraw @s [{"text":"【目標】進入時空傳送門 ","color":"gold"},{"text":"(到達城市中心藍色大樹洞口)","bold": true,"color": "red"}]
 execute if score rotas._chapter_2 spaceship.story matches 43 run kill @e[tag=rotas.2.4]
 execute if score rotas._chapter_2 spaceship.story matches 43 run scoreboard players set #clearance rotas.global.main 1
+execute if score rotas._chapter_2 spaceship.story matches 43 run scoreboard players set rotas._chapter_2 spaceship.global.main 8
+execute if score rotas._chapter_2 spaceship.story matches 43 run scoreboard players set rotas.cd rotas.global.main 1
 execute if score rotas._chapter_2 spaceship.story matches 43 run schedule clear time_traveler:interaction/spaceship_plain/rotas/chapter_2/aska_3
 
 execute if score rotas._chapter_2 spaceship.story matches 36..43 run scoreboard players add rotas._chapter_2 spaceship.story 1
