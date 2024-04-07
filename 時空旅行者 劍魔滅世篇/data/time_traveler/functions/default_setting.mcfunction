@@ -7,3 +7,5 @@ scoreboard players set global detect_player_in_lobby 0
 gamerule sendCommandFeedback false
 gamemode adventure @a
 time set midnight
+
+effect clear @a

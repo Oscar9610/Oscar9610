@@ -1,0 +1,14 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:changed_dimension",
+        "conditions": {
+          "to": "game_map:orantes"
+        }
+      }
+    },
+    "rewards": {
+      "function": "rotas:fx/tp_door/clear"
+    }
+  }
+  

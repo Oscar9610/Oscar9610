@@ -1,1 +1,0 @@
-execute store result storage uuid value1 int 1 run data get entity @s UUID[0]

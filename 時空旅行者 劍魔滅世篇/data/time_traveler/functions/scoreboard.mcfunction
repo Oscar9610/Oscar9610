@@ -20,6 +20,7 @@ scoreboard objectives add orantes.global.main dummy "[水星 - 奧蘭蒂斯] 主
 scoreboard objectives add music.orantes_city dummy "[水星 - 奧蘭蒂斯] 城市音樂"
 scoreboard objectives add music.place_of_trial dummy "[水星 - 奧蘭蒂斯] 試煉之地音樂"
 scoreboard objectives add spaceship.global.main dummy "[太空站 - 奧莉亞] 主要全局"
+scoreboard objectives add orantes.transitions dummy "[水星 - 奧蘭蒂斯] 城市"
 scoreboard objectives add spaceship.story dummy "[太空站 - 奧莉亞] 劇情"
 scoreboard objectives add music.spaceship dummy "[太空站 - 奧莉亞] 背景音樂"
 scoreboard objectives add music.time_and_space_journey_mercury.chr.1 dummy "[時空旅途其一] 背景音樂"
@@ -28,6 +29,7 @@ scoreboard objectives add health health "玩家血量"
 scoreboard objectives add attack dummy "玩家攻擊力"
 scoreboard objectives add level_up_strength dummy "玩家升級後提升的攻擊力"
 scoreboard objectives add player_count dummy "玩家數量"
+scoreboard objectives add id dummy "玩家id"
 scoreboard objectives add p1.main dummy "P1的全局"
 scoreboard objectives add p2.main dummy "P2的全局"
 scoreboard objectives add p3.main dummy "P3的全局"
@@ -48,6 +50,8 @@ scoreboard objectives add remaining_monster dummy "剩餘怪物數"
 scoreboard objectives add detect_player_in_lobby dummy "偵測是否有玩家在大廳"
 scoreboard objectives add core_stage dummy "封印守護者進度"
 scoreboard objectives add the_night.screen_animation dummy
+scoreboard objectives add has_reiner_sword dummy
+scoreboard objectives add player.id dummy "玩家id"
 
 #=====================================================================================
 ##傳送書
@@ -108,4 +112,8 @@ scoreboard players set @a music.time_and_space_journey_mercury.chr.1 0
 
 
 scoreboard players set @a disable.tp_book 0
+
+
+##時空之境水星傳送門
+scoreboard players set #fx.tp_door orantes.global.main 0
 #=====================================================================================

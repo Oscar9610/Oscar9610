@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "entity": {
+            "nbt": "{Tags:[\"infinite_abyss\"]}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "rotas:boss/infinite_abyss/kill"
+    }
+  }
+  

@@ -1,0 +1,14 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "player": {},
+        "to": "game_map:orantes"
+      }
+    }
+  },
+  "rewards": {
+    "function": "time_traveler:story/spaceship_plain/rotas/chapter_2/4"
+  }
+}
