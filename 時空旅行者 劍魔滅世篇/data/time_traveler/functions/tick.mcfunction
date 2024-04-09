@@ -1,11 +1,11 @@
 #怪物弱點偵測用
 #=========================================================
-function time_traveler:monster_weakness/wind
-function time_traveler:monster_weakness/fire
-function time_traveler:monster_weakness/physical
-function time_traveler:monster_weakness/thunder
-function time_traveler:monster_weakness/water
-function time_traveler:monster_weakness/grass
+function monster_weakness:wind
+function monster_weakness:fire
+function monster_weakness:physical
+function monster_weakness:thunder
+function monster_weakness:water
+function monster_weakness:grass
 #=========================================================
 #收納
 function time_traveler:boss/spawner/main
