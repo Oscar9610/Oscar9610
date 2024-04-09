@@ -30,4 +30,4 @@ scoreboard players operation #temp global.main %= 4 particle.space_rupture
 execute if score #temp global.main matches 1 run function particle:space_rupture/purple_ash/summon
 
 # reset
-execute if score @s particle.space_rupture matches 172.. run function particle:space_rupture/ground_ash/end
+execute if score @s particle.space_rupture matches 42.. run function particle:space_rupture/ground_ash/end

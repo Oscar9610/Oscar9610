@@ -8,6 +8,9 @@
 #關閉傳送門傳送開關
 scoreboard players set #clearance rotas.global.main 0
 
+#禁用傳送書
+scoreboard players set @a disable.tp_book 1
+
 #如果 時空之境重製開關(rotas.reset) 是 0 就初始化整個 時空之境 遊戲
 execute if score rotas.reset rotas.global.main matches 0 run scoreboard players set rotas.layer rotas.global.main 0
 

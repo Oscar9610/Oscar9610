@@ -10,7 +10,7 @@
       }
     },
     "rewards": {
-      "function": "rotas:boss/infinite_abyss/kill"
+      "function": "rotas:boss/infinite_abyss/story/start2"
     }
   }
   

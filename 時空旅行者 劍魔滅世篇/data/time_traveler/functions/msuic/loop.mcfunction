@@ -1,5 +1,7 @@
 #奧蘭蒂斯城 背景音樂
-execute as @a at @s if biome ~ ~ ~ orantes:rain_city_1 if score @s music.orantes_city matches 0 run function time_traveler:msuic/orantes_city_music/start
+execute as @a at @s if biome ~ ~ ~ orantes:rain_city_1 if score @s music.orantes_city matches 0 store result score #music.rain_city global.main run random value 1..2
+execute as @a at @s if biome ~ ~ ~ orantes:rain_city_1 if score @s music.orantes_city matches 0 if score #music.rain_city global.main matches 1 run function time_traveler:msuic/orantes_city_music/1/start
+execute as @a at @s if biome ~ ~ ~ orantes:rain_city_1 if score @s music.orantes_city matches 0 if score #music.rain_city global.main matches 2 run function time_traveler:msuic/orantes_city_music/2/start
 execute as @a at @s unless biome ~ ~ ~ orantes:rain_city_1 if score @s music.orantes_city matches 1.. run function time_traveler:msuic/orantes_city_music/reset
 
 execute as @a at @s if biome ~ ~ ~ orantes:sculk_biome if score @s music.place_of_trial matches 0 run function time_traveler:msuic/audiomachine_fallen_army/start

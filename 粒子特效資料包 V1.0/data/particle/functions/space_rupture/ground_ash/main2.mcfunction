@@ -19,4 +19,4 @@ execute if score #temp global.main matches 6 run data merge entity @s {text:'{"t
 execute if score #temp global.main matches 7 run data merge entity @s {text:'{"text":"■■■■■■■■■■■","bold":true}'}
 
 # reset
-execute if score @s particle.space_rupture matches 172.. run kill @s
+execute if score @s particle.space_rupture matches 42.. run kill @s

@@ -11,6 +11,7 @@
 
 ##記分板
 scoreboard objectives add global.main dummy "主要全局"
+scoreboard objectives add bool.main dummy "布林值全局"
 scoreboard objectives add global.advancements dummy "全局 - 任務進度顯示"
 scoreboard objectives add world_tree.story dummy "[世界樹] 劇情"
 scoreboard objectives add ancient_lorras.global.main dummy "[草星 - 古羅拉斯] 主要全局"
@@ -104,7 +105,7 @@ scoreboard players set shadow_cave p3.world_area 0
 scoreboard players set shadow_cave p4.world_area 0
 
 ##音樂
-
+scoreboard players set #music.rain_city bool.main 1
 scoreboard players set @a music.orantes_city 0
 scoreboard players set @a music.spaceship 0
 scoreboard players set @a music.place_of_trial 0

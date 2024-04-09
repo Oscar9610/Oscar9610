@@ -12,7 +12,7 @@ function time_traveler:boss/spawner/main
 function time_traveler:interaction/main
 function time_traveler:players/effects/main
 function time_traveler:system/main
-function time_traveler:rpg_weapons/main
+function weapons:main
 function time_traveler:rpg_armors/loop
 execute as @a at @s run function time_traveler:players/update_strength/main
 

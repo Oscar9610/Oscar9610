@@ -1,4 +1,0 @@
-execute as @e[type=minecraft:interaction,tag=reina_sword.interaction] if data entity @s interaction.timestamp run give @p minecraft:carrot_on_a_stick{Unbreakable:1b,CustomModelData:17,reina_sword:1b,HideFlags:39,display:{Name:'[{"text":"","italic":false},{"text":"雷納的劍","color":"white","bold":true}]',Lore:['[{"text":"","italic":false},{"text":" 支線 / 道具","color":"dark_gray"}]','[{"text":"","italic":false},{"text":"支線「遺失的守護者」任務道具，代表雷納精神的劍，知道雷納的精神才能獲得這把劍。","color":"gray"}]','[{"text":"","italic":false}]','[{"text":"","italic":false},{"text":"如果還給阿爾敦則可以完成劇情","color":"gold","bold":true}]']}} 1
-execute as @e[type=minecraft:interaction,tag=reina_sword.interaction] if data entity @s interaction.timestamp run data remove entity @s interaction
-
-schedule function time_traveler:interaction/reina_sword 1t

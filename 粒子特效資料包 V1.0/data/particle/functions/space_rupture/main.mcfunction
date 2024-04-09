@@ -10,4 +10,4 @@ function particle:space_rupture/air_ash/summon
 playsound minecraft:block.furnace.fire_crackle master @a
 
 # reset 
-execute if score @s particle.space_rupture matches 172.. run kill @s
+execute if score @s particle.space_rupture matches 42.. run kill @s
