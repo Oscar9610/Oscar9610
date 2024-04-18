@@ -5,10 +5,12 @@
   "temperature_modifier": "none",
   "creature_spawn_probability": 0,
   "effects": {
-    "sky_color": 3437624,
-    "fog_color": 12779468,
-    "water_color": 4159204,
-    "water_fog_color": 27467
+    "sky_color": 7368816,
+    "fog_color": 2829099,
+    "water_color": 4364876,
+    "water_fog_color": 2302743,
+    "grass_color": 3591772,
+    "foliage_color": 6388580
   },
   "spawners": {},
   "spawn_costs": {},

@@ -14,6 +14,7 @@ function time_traveler:players/effects/main
 function time_traveler:system/main
 function weapons:main
 function time_traveler:rpg_armors/loop
+function weapons:timer_t
 execute as @a at @s run function time_traveler:players/update_strength/main
 
 #=========================================================
@@ -55,3 +56,7 @@ execute store result score .money p4.main run clear @a[tag=p4,limit=1,sort=neare
 execute store result score .player.highest_level global.main run scoreboard players get .world_level global.main
 
 #=========================================================
+
+#偵測是否完成水星主線、支線 終有一日，世界將恢復如初 其二
+
+execute if score rotas._chapter_2 spaceship.story matches 51.. if score .main_line orantes.global.main matches 20 run function ancient_lorras:story/main_line/dtal/1/reset

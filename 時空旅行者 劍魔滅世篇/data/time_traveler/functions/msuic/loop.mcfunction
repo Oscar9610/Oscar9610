@@ -18,5 +18,8 @@ execute as @a at @s unless dimension game_map:spaceship_interior if score @s mus
 execute positioned -68 63 4 as @a at @s if dimension game_map:spaceship_interior unless dimension game_map:orantes if score @s music.time_and_space_journey_mercury.chr.1 matches 0 if score rotas._chapter_2 spaceship.global.main matches 3.. run function time_traveler:msuic/yiruma_river_flows_in_you/start
 execute positioned -68 63 4 as @a at @s unless dimension game_map:spaceship_interior unless dimension game_map:orantes if score @s music.time_and_space_journey_mercury.chr.1 matches 1.. if score rotas._chapter_2 spaceship.global.main matches 3.. run function time_traveler:msuic/yiruma_river_flows_in_you/reset
 
+#地圖大廳 背景音樂
+execute positioned -9 -61 -9 in minecraft:overworld as @a if entity @s[dx=33,dy=17,dz=33] at @s if score @s music.map_hall matches 0 run function time_traveler:msuic/mandragora/start
+execute positioned -9 -61 -9 in minecraft:overworld as @a unless entity @s[dx=33,dy=17,dz=33] if score @s music.map_hall matches 1.. run function time_traveler:msuic/mandragora/reset
 
 schedule function time_traveler:msuic/loop 1t

@@ -14,7 +14,6 @@ scoreboard objectives add global.main dummy "主要全局"
 scoreboard objectives add bool.main dummy "布林值全局"
 scoreboard objectives add global.advancements dummy "全局 - 任務進度顯示"
 scoreboard objectives add world_tree.story dummy "[世界樹] 劇情"
-scoreboard objectives add ancient_lorras.global.main dummy "[草星 - 古羅拉斯] 主要全局"
 scoreboard objectives add global.monsters.health dummy "全局 - 怪物初始血量"
 scoreboard objectives add orantes.story dummy "[水星 - 奧蘭蒂斯] 劇情"
 scoreboard objectives add orantes.global.main dummy "[水星 - 奧蘭蒂斯] 主要全局"
@@ -24,6 +23,8 @@ scoreboard objectives add spaceship.global.main dummy "[太空站 - 奧莉亞] �
 scoreboard objectives add orantes.transitions dummy "[水星 - 奧蘭蒂斯] 城市"
 scoreboard objectives add spaceship.story dummy "[太空站 - 奧莉亞] 劇情"
 scoreboard objectives add music.spaceship dummy "[太空站 - 奧莉亞] 背景音樂"
+scoreboard objectives add music.map_hall dummy "[地圖大廳] 背景音樂"
+scoreboard objectives add daytime_weather.weather dummy "[地圖大廳] 暫存天氣"
 scoreboard objectives add music.time_and_space_journey_mercury.chr.1 dummy "[時空旅途其一] 背景音樂"
 scoreboard objectives add duration dummy "實體存在時間"
 scoreboard objectives add health health "玩家血量"
@@ -104,13 +105,20 @@ scoreboard players set shadow_cave p2.world_area 0
 scoreboard players set shadow_cave p3.world_area 0
 scoreboard players set shadow_cave p4.world_area 0
 
+
+scoreboard players set potion_cave p1.world_area 0
+scoreboard players set storm_keeper_cave p1.world_area 1
+scoreboard players set orantes_village p1.world_area 1
+scoreboard players set place_of_trial p1.world_area 1
+
+
 ##音樂
 scoreboard players set #music.rain_city bool.main 1
 scoreboard players set @a music.orantes_city 0
 scoreboard players set @a music.spaceship 0
 scoreboard players set @a music.place_of_trial 0
 scoreboard players set @a music.time_and_space_journey_mercury.chr.1 0
-
+scoreboard players set @a music.map_hall 0
 
 scoreboard players set @a disable.tp_book 0
 

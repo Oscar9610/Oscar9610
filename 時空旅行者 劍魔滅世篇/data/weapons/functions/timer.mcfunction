@@ -35,9 +35,12 @@ execute as @a[scores={time_space_lock_cd=1}] at @s run playsound minecraft:entit
 execute as @a[scores={gravity_axe_cd=1}] run tellraw @s [{"text":"[","color":"green","bold":true},{"text":"☆☆☆☆重力斧{雷}","color":"white","bold":true},{"text":"] ","color":"green","bold":true},{"text":"冷卻完畢！","color":"green","bold":true}]
 execute as @a[scores={gravity_axe_cd=1}] at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~ 0.5 1.5
 
+execute as @a[scores={otherworld_dust_star_cd=1}] run tellraw @s [{"text":"[","color":"green","bold":true},{"text":"☆☆☆☆☆異界塵星{雷}","color":"white","bold":true},{"text":"] ","color":"green","bold":true},{"text":"冷卻完畢！","color":"green","bold":true}]
+execute as @a[scores={otherworld_dust_star_cd=1}] at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~ 0.5 1.5
+
 
 #所有武器CD計時器1s
-scoreboard players remove @a[scores={yanhuo_sword_cd=1..}] yanhuo_sword_cd 1
+scoreboard players remove @a[scores={otherworld_dust_star_cd=1..}] otherworld_dust_star_cd 1
 scoreboard players remove @a[scores={noob_sword_cd=1..}] noob_sword_cd 1
 scoreboard players remove @a[scores={noob_axe_cd=1..}] noob_axe_cd 1
 scoreboard players remove @a[scores={gravity_axe_cd=1..}] gravity_axe_cd 1

@@ -8,7 +8,10 @@ function weapons:scoreboard
 schedule function time_traveler:players/player_id 1t
 
 function rotas:scoreboard
+function ancient_lorras:scoreboard
 
+schedule function ancient_lorras:world_area/loop 1t
+function time_traveler:daytime_weather/map_hall/save
 function weapons:type/gravity_axe/timer
 schedule function time_traveler:remove_overworld_text_display 100s
 schedule function time_traveler:transitions/orantes_city/loop 1t
@@ -48,6 +51,12 @@ schedule function time_traveler:rpg_items/get/gift_pack/double_sword_fire 1t
 schedule function time_traveler:entity_fx/loop 1t
 schedule function time_traveler:tp/map_lobby/loop 1t
 schedule function time_traveler:boss/main/loop 1t
+
+#========================================================
+#草星
+
+function ancient_lorras:story/main_line/dtal/loop
+#========================================================
 
 #修復【主線】陳述不見了？！ 顯示問題Bug (觸發Bug的時候陳述盔甲座不會刪掉，基於懶因此直接用這行刪除)
 execute if score .main_line orantes.story matches 29.. in game_map:orantes positioned -65 63 7 run kill @e[tag=statement,distance=..3]

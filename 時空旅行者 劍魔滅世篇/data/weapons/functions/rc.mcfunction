@@ -12,6 +12,8 @@ execute if entity @s[scores={noob_axe_cd=..0},nbt={SelectedItem:{tag:{noob:2b}}}
 
 execute if entity @s[scores={gravity_axe_cd=..0},nbt={SelectedItem:{tag:{gravity:1b}}}] run function weapons:type/gravity_axe/use
 
+execute if entity @s[scores={otherworld_dust_star_cd=..0},nbt={SelectedItem:{tag:{dust_star:1b}}}] run function weapons:type/otherworld_dust_star/use
+
 # 雙刀
 execute if entity @s[scores={double_sword_cd=..0},nbt={Inventory:[{Slot:-106b,tag:{double_sword:-1b}}],SelectedItem:{tag:{double_sword:1b}}}] run function weapons:type/double_sword/use
 execute if entity @s[scores={double_sword_fire_cd=..0},nbt={Inventory:[{Slot:-106b,tag:{double_sword:-2b}}],SelectedItem:{tag:{double_sword:2b}}}] run function weapons:type/double_sword_fire/use

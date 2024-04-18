@@ -67,21 +67,21 @@ execute positioned 138 64 63 in game_map:orantes as @a[tag=p4,distance=..20] run
 execute positioned 138 64 63 in game_map:orantes as @a[tag=p4,distance=20..] run scoreboard players set storm_keeper_cave p4.world_area 0
 
 #奧蘭蒂斯村莊
-execute positioned 125 66 -78 in game_map:orantes as @a[tag=p1,distance=..30] if score orantes_village p1.world_area matches 0 run function time_traveler:world_area/orantes_village
-execute positioned 125 66 -78 in game_map:orantes as @a[tag=p1,distance=..30] run scoreboard players set orantes_village p1.world_area 1
-execute positioned 125 66 -78 in game_map:orantes as @a[tag=p1,distance=30..] run scoreboard players set orantes_village p1.world_area 0
+execute positioned 125 66 -78 in game_map:orantes as @a[tag=p1,distance=..60] if score orantes_village p1.world_area matches 0 run function time_traveler:world_area/orantes_village
+execute positioned 125 66 -78 in game_map:orantes as @a[tag=p1,distance=..60] run scoreboard players set orantes_village p1.world_area 1
+execute positioned 125 66 -78 in game_map:orantes as @a[tag=p1,distance=60..] run scoreboard players set orantes_village p1.world_area 0
 
-execute positioned 125 66 -78 in game_map:orantes as @a[tag=p2,distance=..30] if score orantes_village p2.world_area matches 0 run function time_traveler:world_area/orantes_village
-execute positioned 125 66 -78 in game_map:orantes as @a[tag=p2,distance=..30] run scoreboard players set orantes_village p2.world_area 1
-execute positioned 125 66 -78 in game_map:orantes as @a[tag=p2,distance=30..] run scoreboard players set orantes_village p2.world_area 0
+execute positioned 125 66 -78 in game_map:orantes as @a[tag=p2,distance=..60] if score orantes_village p2.world_area matches 0 run function time_traveler:world_area/orantes_village
+execute positioned 125 66 -78 in game_map:orantes as @a[tag=p2,distance=..60] run scoreboard players set orantes_village p2.world_area 1
+execute positioned 125 66 -78 in game_map:orantes as @a[tag=p2,distance=60..] run scoreboard players set orantes_village p2.world_area 0
 
-execute positioned 125 66 -78 in game_map:orantes as @a[tag=p3,distance=..30] if score orantes_village p3.world_area matches 0 run function time_traveler:world_area/orantes_village
-execute positioned 125 66 -78 in game_map:orantes as @a[tag=p3,distance=..30] run scoreboard players set orantes_village p3.world_area 1
-execute positioned 125 66 -78 in game_map:orantes as @a[tag=p3,distance=30..] run scoreboard players set orantes_village p3.world_area 0
+execute positioned 125 66 -78 in game_map:orantes as @a[tag=p3,distance=..60] if score orantes_village p3.world_area matches 0 run function time_traveler:world_area/orantes_village
+execute positioned 125 66 -78 in game_map:orantes as @a[tag=p3,distance=..60] run scoreboard players set orantes_village p3.world_area 1
+execute positioned 125 66 -78 in game_map:orantes as @a[tag=p3,distance=60..] run scoreboard players set orantes_village p3.world_area 0
 
-execute positioned 125 66 -78 in game_map:orantes as @a[tag=p4,distance=..30] if score orantes_village p4.world_area matches 0 run function time_traveler:world_area/orantes_village
-execute positioned 125 66 -78 in game_map:orantes as @a[tag=p4,distance=..30] run scoreboard players set orantes_village p4.world_area 1
-execute positioned 125 66 -78 in game_map:orantes as @a[tag=p4,distance=30..] run scoreboard players set orantes_village p4.world_area 0
+execute positioned 125 66 -78 in game_map:orantes as @a[tag=p4,distance=..60] if score orantes_village p4.world_area matches 0 run function time_traveler:world_area/orantes_village
+execute positioned 125 66 -78 in game_map:orantes as @a[tag=p4,distance=..60] run scoreboard players set orantes_village p4.world_area 1
+execute positioned 125 66 -78 in game_map:orantes as @a[tag=p4,distance=60..] run scoreboard players set orantes_village p4.world_area 0
 
 #試煉之地
 execute as @a[tag=p1] at @s if biome ~ ~ ~ orantes:sculk_biome if score place_of_trial p1.world_area matches 0 run function time_traveler:world_area/place_of_trial

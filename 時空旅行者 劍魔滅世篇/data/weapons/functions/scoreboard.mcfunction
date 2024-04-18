@@ -95,6 +95,15 @@ scoreboard players set global double_sword_fire_dot 3
 
 #===================================================================
 
+scoreboard objectives add otherworld_dust_star_cd dummy "異界塵星CD"
+scoreboard objectives add otherworld_dust_star_max_cd dummy "異界塵星CD上限"
+scoreboard objectives add otherworld_dust_star_ca dummy "異界塵星協同攻擊剩餘時長"
+
+scoreboard players set @a otherworld_dust_star_cd 0
+scoreboard players set @a otherworld_dust_star_max_cd 45
+
+#===================================================================
+
 #這是武器技能傷害取玩家攻擊力的百分比
 #代表著玩家使用武器技能造成的技能傷害會取玩家攻擊力的5倍作為技能造成的傷害
 #可以被力量狀態、裝備修飾符、武器修飾符等影響
@@ -109,7 +118,7 @@ scoreboard players set .noob_sword_5 atk 600
 scoreboard players set .wind_sword atk 100
 scoreboard players set .noob_sickle atk 300
 scoreboard players set .gravity_axe atk 200
-scoreboard players set .water_sword_demon atk 250
+scoreboard players set .water_sword_demon atk 50
 scoreboard players set .double_sword atk 300
 scoreboard players set .double_sword1 atk 60
 scoreboard players set .double_sword_effect atk 100
@@ -120,6 +129,9 @@ scoreboard players set .double_sword_water atk 240
 scoreboard players set .double_sword_water1 atk 35
 scoreboard players set .the_night atk 500
 scoreboard players set .the_night_passive atk 200
+scoreboard players set .otherworld_dust_star atk 200
+scoreboard players set .otherworld_dust_star_ca atk 50
+
 
 #百分比倍率微調
 scoreboard players set 100 atk 100

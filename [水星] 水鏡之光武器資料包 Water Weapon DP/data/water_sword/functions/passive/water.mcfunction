@@ -2,7 +2,7 @@
 # dmg
 tag @e[type=#time_traveler:monsters,distance=..16,limit=1,sort=random] add dmger
 scoreboard players operation @s atk = .water_sword_demon atk
-function time_traveler:dmg_formula/calculate
+function time_traveler:dmg_formula/cooldown_damage/calculate
 
 # particle
 particle sonic_boom ~ ~1 ~ 5 5 5 0 5 force @a

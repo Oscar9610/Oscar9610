@@ -1,6 +1,5 @@
 {
-    "values": [
-      "minecraft:player_explosion"
-    ]
-  }
-  
+  "values": [
+    "weapons:bypasses_cooldown"
+  ]
+}

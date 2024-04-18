@@ -11,4 +11,5 @@ title @s title {"text":"\uE009"}
 title @s actionbar {"text":""}
 title @s times 0 0 15
 particle minecraft:flash ~ ~1 ~ 0 0 0 1 1
+particle minecraft:end_rod ~ ~1 ~ 0 0 0 0.5 200
 function particle:space_rupture/ground_ash/summon

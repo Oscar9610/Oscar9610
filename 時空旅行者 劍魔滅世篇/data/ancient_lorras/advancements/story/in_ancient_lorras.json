@@ -1,0 +1,14 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:changed_dimension",
+        "conditions": {
+          "to": "game_map:ancient_lorras"
+        }
+      }
+    },
+    "rewards": {
+      "function": "ancient_lorras:story/main_line/dtal/3/main"
+    }
+  }
+  
