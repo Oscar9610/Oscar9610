@@ -1,0 +1,2 @@
+data merge entity @s {Pose:{RightArm:[332.0f,330.0f,0.0f],LeftArm:[332.0f,26.0f,0.0f],RightLeg:[271.0f,6.0f,0.0f],LeftLeg:[270.0f,355.0f,0.0f]},NoGravity:1b,ShowArms:1b,NoBasePlate:1b}
+execute if block ~ ~1 ~ air run tp @s ~ ~-0.65 ~

@@ -6,7 +6,7 @@ playsound minecraft:entity.zombie.converted_to_drowned voice @s ~ ~1 ~ 0.2 0.7
 
 function ancient_lorras:daytime_weather/emerald_vale/save
 
-execute in minecraft:overworld run weather thunder
+execute in minecraft:overworld run weather rain 20
 gamerule doDaylightCycle false
 gamerule doWeatherCycle false
 

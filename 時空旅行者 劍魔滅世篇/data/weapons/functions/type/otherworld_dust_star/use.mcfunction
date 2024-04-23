@@ -10,4 +10,8 @@ effect give @s haste 10 2 true
 effect give @s speed 10 2 true
 effect give @s regeneration 10 2 true
 
+title @s times 10 10 10
+title @s subtitle {"text":""}
+title @s title {"text":"\uE026"}
+
 scoreboard players operation @s otherworld_dust_star_cd = @s otherworld_dust_star_max_cd

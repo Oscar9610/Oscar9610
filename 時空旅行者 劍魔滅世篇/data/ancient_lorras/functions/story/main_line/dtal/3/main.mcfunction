@@ -2,12 +2,13 @@
 
 #透過scoreboard story(dummy) + schedule 指令運行整個劇情
 
-#sim  = 【支線】陳述不見了？！
 advancement revoke @a only ancient_lorras:story/in_ancient_lorras
 execute if score .main_line ancient_lorras.story matches 11 run tellraw @a[tag=!op] {"text":"［希爾］哇~這裡就是草星的村莊嗎？"}
 execute if score .main_line ancient_lorras.story matches 12 run tellraw @a[tag=!op] {"text":"［希爾］這裡是狐族的村落，真的好美"}
 execute if score .main_line ancient_lorras.story matches 13 run tellraw @a[tag=!op] {"text":"［希爾］據說 草之魔劍 - 翠綠茵草在這個星球，不過不知道具體在那個位置"}
 execute if score .main_line ancient_lorras.story matches 14 run tellraw @a[tag=!op] {"text":"［希爾］我們過去問問看吧！"}
+execute if score .main_line ancient_lorras.story matches 15 run effect give @e[tag=priest] minecraft:glowing 15 255 true
+execute if score .main_line ancient_lorras.story matches 15 run tag @e[tag=priest] add task_glow.fx
 execute if score .main_line ancient_lorras.story matches 15 run tellraw @a[tag=!op] {"text":"【目標】詢問村落關於魔劍的下落","color":"gold"}
 
 

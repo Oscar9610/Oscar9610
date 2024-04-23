@@ -51,11 +51,14 @@ schedule function time_traveler:rpg_items/get/gift_pack/double_sword_fire 1t
 schedule function time_traveler:entity_fx/loop 1t
 schedule function time_traveler:tp/map_lobby/loop 1t
 schedule function time_traveler:boss/main/loop 1t
+schedule function players:update_pos 1t
+
 
 #========================================================
 #草星
 
-function ancient_lorras:story/main_line/dtal/loop
+schedule function ancient_lorras:story/main_line/sakura_grove/interaction/priest 1t
+schedule function ancient_lorras:story/main_line/sakura_grove/interaction/asker 1t
 #========================================================
 
 #修復【主線】陳述不見了？！ 顯示問題Bug (觸發Bug的時候陳述盔甲座不會刪掉，基於懶因此直接用這行刪除)

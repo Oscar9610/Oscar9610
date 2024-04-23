@@ -4,6 +4,8 @@ execute in game_map:orantes positioned -70 63 4 as @a[distance=..16] if score ro
 execute in game_map:orantes positioned -70 63 4 as @a[distance=..16] if score rotas._chapter_1 spaceship.story matches 13 run tellraw @s {"text":"［希爾］我一直很想跟你說..."}
 execute in game_map:orantes positioned -70 63 4 as @a[distance=..16] if score rotas._chapter_1 spaceship.story matches 14 run tellraw @s {"text":"(希爾深吸一口氣)","color":"red"}
 execute in game_map:orantes positioned -70 63 4 if score rotas._chapter_1 spaceship.story matches 14 run kill @e[tag=display.right_click_display,distance=..3]
+execute in game_map:orantes positioned -70 63 4 as @a[distance=..16] if score rotas._chapter_1 spaceship.story matches 14 run stopsound @s record minecraft:background_music.out_of_the_rain
+execute in game_map:orantes positioned -70 63 4 as @a[distance=..16] if score rotas._chapter_1 spaceship.story matches 14 run stopsound @s record minecraft:background_music.rain_world
 execute in game_map:orantes positioned -70 63 4 as @a[distance=..16] if score rotas._chapter_1 spaceship.story matches 15 run tellraw @s {"text":"［希爾］我...其實很喜歡你"}
 execute in game_map:orantes positioned -70 63 4 as @a[distance=..16] if score rotas._chapter_1 spaceship.story matches 16 run tellraw @s {"text":"［希爾］還記得之前我們第一次相遇時你說的關於你家人的事嗎?"}
 execute in game_map:orantes positioned -70 63 4 as @a[distance=..16] if score rotas._chapter_1 spaceship.story matches 17 run tellraw @s {"text":"［希爾］曾經，我也失去了家人"}
