@@ -8,6 +8,6 @@ scoreboard players operation @s gravity_axe_cd = @s gravity_axe_max_cd
 
 execute as @e[tag=gravity_axe.fx] at @s run tp @s ~ ~ ~ ~25 0
 
-execute as @e[tag=gravity_axe.fx] at @s run particle minecraft:dust_color_transition 0 0.5 0.5 2 0 0 1 ^ ^ ^8 0 0 0 0 5 normal @a
+execute as @e[tag=gravity_axe.fx] at @s run particle dust_color_transition{from_color: [0.0f, 0.5f, 0.5f], scale: 2f, to_color: [0.0f, 0.0f, 1.0f]} ^ ^ ^8 0 0 0 0 5 normal @a
 
 execute if entity @a[scores={gravity_axe.use=1..}] run function weapons:type/gravity_axe/loop

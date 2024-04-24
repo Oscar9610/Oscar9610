@@ -52,6 +52,7 @@ schedule function time_traveler:entity_fx/loop 1t
 schedule function time_traveler:tp/map_lobby/loop 1t
 schedule function time_traveler:boss/main/loop 1t
 schedule function players:update_pos 1t
+execute as @a run function players:attribute
 
 
 #========================================================

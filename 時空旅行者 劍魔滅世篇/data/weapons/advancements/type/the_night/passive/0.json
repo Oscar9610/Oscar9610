@@ -1,23 +1,24 @@
 {
-    "criteria": {
-      "requirement": {
-        "trigger": "minecraft:player_hurt_entity",
-        "conditions": {
-          "player": {
-            "equipment": {
-              "mainhand": {
-                "items": [
-                  "minecraft:carrot_on_a_stick"
-                ],
-                "nbt": "{the_night:0b,rarity:5b}"
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "items": [
+                "minecraft:carrot_on_a_stick"
+              ],
+              "components": {
+                "minecraft:custom_data": {"the_night":0,"rarity":5}
               }
             }
           }
         }
       }
-    },
-    "rewards": {
-      "function": "weapons:type/the_night/passive/5star/use"
     }
+  },
+  "rewards": {
+    "function": "weapons:type/the_night/passive/5star/use"
   }
-  
+}

@@ -10,7 +10,9 @@
             "predicate": {
               "equipment": {
                 "mainhand": {
-                  "nbt": "{double_sword:2b}"
+                  "components": {
+                    "minecraft:custom_data": {"double_sword":2}
+                  }
                 }
               }
             }

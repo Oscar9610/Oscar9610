@@ -22,8 +22,7 @@ execute as @a[scores={the_night_time=1..}] at @s run function weapons:type/the_n
 execute as @a[tag=the_night_5_temp,scores={the_night.screen_animation=1..}] at @s run function weapons:type/the_night/5star_skill/main
 execute as @a[tag=the_night_charger] at @s run function weapons:type/the_night/passive/5star/dmg/main
 execute as @e[type=marker,tag=the_night_p] at @s run function weapons:type/the_night/passive/5star/dmg/blade_main
-execute as @e[type=item,nbt={Item:{tag:{the_night:1b}}}] run data merge entity @s {PickupDelay:0}
+execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data": {the_night:1b}}}}] run data merge entity @s {PickupDelay:0}
 
 # reset
 scoreboard players reset @a rightclick
-scoreboard players reset @a sneak

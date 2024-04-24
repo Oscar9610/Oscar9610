@@ -21,6 +21,7 @@ schedule clear time_traveler:story/spaceship_plain/rotas/chapter_2/loop
 
 function time_traveler:story/reload_story/lost_guardian
 function time_traveler:story/reload_story/main_line
+function ancient_lorras:story/reload_story/main_line
 
 execute in game_map:orantes run fill -74 73 14 -70 78 14 minecraft:air replace nether_portal
 

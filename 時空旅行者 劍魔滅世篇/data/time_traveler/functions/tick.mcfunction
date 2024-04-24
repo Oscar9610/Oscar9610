@@ -45,10 +45,10 @@ execute if score .global spaceship_0_61_-51 matches 1 run scoreboard players set
 #=========================================================
 
 #P1~P4玩家身上有多少錢
-execute store result score .money p1.main run clear @a[tag=p1,limit=1,sort=nearest] emerald{money:1b} 0
-execute store result score .money p2.main run clear @a[tag=p2,limit=1,sort=nearest] emerald{money:1b} 0
-execute store result score .money p3.main run clear @a[tag=p3,limit=1,sort=nearest] emerald{money:1b} 0
-execute store result score .money p4.main run clear @a[tag=p4,limit=1,sort=nearest] emerald{money:1b} 0
+execute store result score .money p1.main run clear @a[tag=p1,limit=1,sort=nearest] emerald[minecraft:custom_data={money:1b}] 0
+execute store result score .money p2.main run clear @a[tag=p2,limit=1,sort=nearest] emerald[minecraft:custom_data={money:1b}] 0
+execute store result score .money p3.main run clear @a[tag=p3,limit=1,sort=nearest] emerald[minecraft:custom_data={money:1b}] 0
+execute store result score .money p4.main run clear @a[tag=p4,limit=1,sort=nearest] emerald[minecraft:custom_data={money:1b}] 0
 
 #=========================================================
 

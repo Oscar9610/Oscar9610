@@ -12,7 +12,7 @@ playsound minecraft:block.beacon.deactivate voice @s ~ ~1 ~ 1 1
 particle minecraft:portal ~ ~1 ~ 0 0 0 1.5 600 normal @a
 particle sonic_boom ~ ~1 ~ 0 0 0 0 1 normal @a
 particle minecraft:dolphin ~ ~4 ~ 4 4 4 0 600 normal @a
-particle minecraft:dust_color_transition 0 0.5 0.5 2 0 0 1 ~ ~4 ~ 4 4 4 0 100 normal @a
+particle dust_color_transition{from_color: [0.0f, 0.5f, 0.5f], scale: 2f, to_color: [0.0f, 0.0f, 1.0f]} ~ ~4 ~ 4 4 4 0 100 normal @a
 
 summon area_effect_cloud ~ ~1 ~ {Tags:["gravity_axe.fx"],Duration:20}
 
