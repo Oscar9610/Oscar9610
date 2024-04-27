@@ -4,7 +4,7 @@
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "player": {
-          "nbt": "{SelectedItem:{components:{\"minecraft:custom_data\": {noob:1b}}}}"
+          "nbt": "{SelectedItem:{components:{\"minecraft:custom_data\": {noob:1}}}}"
         }
       }
     }

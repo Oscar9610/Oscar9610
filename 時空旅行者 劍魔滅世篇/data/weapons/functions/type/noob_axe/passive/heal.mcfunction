@@ -1,6 +1,4 @@
-execute as @a if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[minecraft:custom_model_data=2] run tag @s add temp
-
-execute as @a if items entity @s weapon.offhand minecraft:carrot_on_a_stick[minecraft:custom_model_data=2] run tag @s add temp
+execute as @a if items entity @s weapon.* minecraft:carrot_on_a_stick[minecraft:custom_model_data=2] run tag @s add temp
 
 effect give @a[tag=temp] absorption 10 1 true
 tellraw @a[tag=temp] [{"text":"[","color":"green","bold":true},{"text":"保護","color":"white","bold":true},{"text":"] ","color":"green","bold":true},{"text":"發動！","color":"green","bold":true}]
