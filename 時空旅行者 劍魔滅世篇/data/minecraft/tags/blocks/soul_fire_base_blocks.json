@@ -1,5 +1,7 @@
 {
+    "replace": true,
     "values": [
-        "sculk"
+      "minecraft:sculk"
     ]
-}
+  }
+  

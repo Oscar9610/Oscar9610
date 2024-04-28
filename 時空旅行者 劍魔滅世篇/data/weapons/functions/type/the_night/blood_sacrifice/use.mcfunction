@@ -6,9 +6,9 @@ damage @s 5 minecraft:generic
 effect give @s minecraft:resistance 10 1 true
 
 # level
-execute as @a if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[minecraft:custom_data~{rarity:3b}] run tag @s add the_night_3
-execute as @a if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[minecraft:custom_data~{rarity:4b}] run tag @s add the_night_4
-execute as @a if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[minecraft:custom_data~{rarity:5b}] run tag @s add the_night_5
+execute as @a if items entity @s weapon.mainhand minecraft:iron_sword[minecraft:custom_data~{rarity:3b}] run tag @s add the_night_3
+execute as @a if items entity @s weapon.mainhand minecraft:iron_sword[minecraft:custom_data~{rarity:4b}] run tag @s add the_night_4
+execute as @a if items entity @s weapon.mainhand minecraft:iron_sword[minecraft:custom_data~{rarity:5b}] run tag @s add the_night_5
 
 execute if entity @s[tag=the_night_3] run function weapons:type/the_night/3star/give
 execute if entity @s[tag=the_night_4] run function weapons:type/the_night/4star/give
