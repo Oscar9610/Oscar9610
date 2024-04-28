@@ -1,7 +1,3 @@
-
-# 右鍵偵測rc = rightclick
-execute as @a[scores={rightclick=1..}] at @s run function weapons:rc
-
 # noob sword
 execute as @a[scores={noob_sword_screen=1..}] at @s run function weapons:type/noob_sword/player_main
 
@@ -23,6 +19,3 @@ execute as @a[tag=the_night_5_temp,scores={the_night.screen_animation=1..}] at @
 execute as @a[tag=the_night_charger] at @s run function weapons:type/the_night/passive/5star/dmg/main
 execute as @e[type=marker,tag=the_night_p] at @s run function weapons:type/the_night/passive/5star/dmg/blade_main
 execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data": {the_night:1b}}}}] run data merge entity @s {PickupDelay:0}
-
-# reset
-scoreboard players reset @a rightclick

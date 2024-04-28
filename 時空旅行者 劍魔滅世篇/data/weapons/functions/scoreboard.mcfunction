@@ -1,4 +1,4 @@
-scoreboard objectives add rightclick minecraft.used:minecraft.carrot_on_a_stick "右鍵偵測"
+scoreboard objectives remove rightclick
 scoreboard objectives add rpg_items.get.gift_pack.double_sword_fire dummy "偵測獲取☆☆☆☆熾熱雙股劍(火)禮包"
 scoreboard objectives add rpg_items.get.gift_pack.double_sword dummy "偵測獲取☆☆☆☆鋒利雙股劍(物理)禮包"
 

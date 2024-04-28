@@ -1,3 +1,6 @@
+# load
+function weapons:load
+
 
 # scoreboard
 function time_traveler:scoreboard
