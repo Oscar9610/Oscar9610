@@ -1,0 +1,10 @@
+[
+  {
+    "function": "minecraft:set_custom_model_data",
+    "value": 4
+  },
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": "{wl_light:0,wl_water:1,rarity:5b,water:1b,water_sword_demon:1}"
+  }
+]
