@@ -21,5 +21,3 @@ tag @s add water_sword.w_user
 effect give @e[type=#time_traveler:monsters,distance=..16] slowness 3 5 true
 effect give @e[type=#time_traveler:monsters,distance=..16] weakness 3 255 true
 execute as @e[type=#time_traveler:monsters,distance=..16] run data merge entity @s {Motion:[0.0d,-10.0d,0.0d]}
-
-function water_sword:passive/water

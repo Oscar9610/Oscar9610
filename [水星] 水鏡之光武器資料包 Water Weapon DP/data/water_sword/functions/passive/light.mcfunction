@@ -11,6 +11,4 @@ playsound minecraft:entity.zombie_villager.converted voice @a[distance=..16] ~ ~
 
 # reset
 scoreboard players remove @s water_sword_passive 1
-execute if score @s water_sword_passive matches 0 run tag @s remove water_sword.l_user
-
-execute if score @s water_sword_passive matches 1.. run function water_sword:passive/light
+execute if score @s water_sword_passive matches ..0 run tag @s remove water_sword.l_user

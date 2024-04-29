@@ -11,6 +11,4 @@ playsound block.beacon.activate voice @a[distance=..16] ~ ~1 ~ 9999 1 1
 
 # reset
 scoreboard players remove @s water_sword_passive 1
-execute if score @s water_sword_passive matches 0 run tag @s remove water_sword.w_user
-
-execute if score @s water_sword_passive matches 1.. run function water_sword:passive/water
+execute if score @s water_sword_passive matches ..0 run tag @s remove water_sword.w_user

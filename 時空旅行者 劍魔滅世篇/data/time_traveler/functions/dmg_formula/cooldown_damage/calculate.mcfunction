@@ -1,5 +1,4 @@
 # 執行者 : 玩家
-# tag
 tag @s add atker
 
 # calculate
