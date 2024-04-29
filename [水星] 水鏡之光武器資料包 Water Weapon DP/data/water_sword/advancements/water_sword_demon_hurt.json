@@ -1,24 +1,22 @@
 {
-    "criteria": {
-      "requirement": {
-        "trigger": "minecraft:player_hurt_entity",
-        "conditions": {
-          "player": {
-            "type": "minecraft:player",
-            "equipment": {
-              "mainhand": {
-                "items": [
-                  "minecraft:carrot_on_a_stick"
-                ],
-                "nbt": "{water_sword_demon:1b}"
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "slots": {
+            "weapon.mainhand": {
+              "components": {},
+              "predicates": {
+                "minecraft:custom_data": "{water_sword_demon:1}"
               }
             }
           }
         }
       }
-    },
-    "rewards": {
-      "function": "water_sword:passive/reset_passive_hurt_adv"
     }
+  },
+  "rewards": {
+    "function": "water_sword:passive/reset_passive_hurt_adv"
   }
-  
+}
