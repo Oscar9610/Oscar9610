@@ -1,5 +1,3 @@
-tellraw @s "click"
-
 scoreboard players set #temp global.main 0
 
 playsound minecraft:block.beacon.deactivate voice @s ~ ~1 ~ 1 1
