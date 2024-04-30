@@ -8,8 +8,6 @@ function time_traveler:monsters/main/scoreboard
 function time_traveler:boss/main/scoreboard
 function weapons:scoreboard
 
-schedule function time_traveler:players/player_id 1t
-
 function rotas:scoreboard
 function ancient_lorras:scoreboard
 

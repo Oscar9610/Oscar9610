@@ -9,7 +9,7 @@ scoreboard players operation @s atk /= 100 atk
 
 # store & atk
 execute store result storage temp values float 1 run scoreboard players get @s atk
-function time_traveler:dmg_formula/cooldown_damage/damage with storage temp
+function time_traveler:dmg_formula/damage with storage temp
 
 # reset
 tag @s remove atker

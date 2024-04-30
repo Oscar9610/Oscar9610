@@ -31,7 +31,6 @@ scoreboard objectives add health health "玩家血量"
 scoreboard objectives add attack dummy "玩家攻擊力"
 scoreboard objectives add level_up_strength dummy "玩家升級後提升的攻擊力"
 scoreboard objectives add player_count dummy "玩家數量"
-scoreboard objectives add id dummy "玩家id"
 scoreboard objectives add p1.main dummy "P1的全局"
 scoreboard objectives add p2.main dummy "P2的全局"
 scoreboard objectives add p3.main dummy "P3的全局"
@@ -53,7 +52,6 @@ scoreboard objectives add detect_player_in_lobby dummy "偵測是否有玩家在
 scoreboard objectives add core_stage dummy "封印守護者進度"
 scoreboard objectives add the_night.screen_animation dummy
 scoreboard objectives add has_reiner_sword dummy
-scoreboard objectives add player.id dummy "玩家id"
 
 #=====================================================================================
 ##傳送書
