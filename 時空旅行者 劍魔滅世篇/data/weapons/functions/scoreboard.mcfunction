@@ -94,13 +94,28 @@ scoreboard players set @a double_sword_fire_swtich 1
 scoreboard players set global double_sword_fire_dot 3
 
 #===================================================================
-
+#異界塵星
 scoreboard objectives add otherworld_dust_star_cd dummy "異界塵星CD"
 scoreboard objectives add otherworld_dust_star_max_cd dummy "異界塵星CD上限"
 scoreboard objectives add otherworld_dust_star_ca dummy "異界塵星協同攻擊剩餘時長"
 
 scoreboard players set @a otherworld_dust_star_cd 0
 scoreboard players set @a otherworld_dust_star_max_cd 45
+
+#===================================================================
+#狂風暴雨
+scoreboard objectives add violent_storm_cd dummy "狂風暴雨CD"
+scoreboard objectives add violent_storm_max_cd dummy "狂風暴雨CD上限"
+scoreboard objectives add violent_storm.field_time dummy "狂風暴雨 領域持續時間"
+scoreboard objectives add violent_storm_state dummy "狂風暴雨技能狀態"
+scoreboard objectives add violent_storm_wind_cd dummy "狂風暴雨 颶風流"
+scoreboard objectives add violent_storm_wind_time dummy "狂風暴雨 颶風流剩餘時間"
+scoreboard objectives add violent_storm_thunder_cd dummy "狂風暴雨 雷雨陣"
+
+scoreboard players set @a violent_storm_cd 0
+scoreboard players set @a violent_storm_max_cd 45
+scoreboard players set @a violent_storm_state 0
+scoreboard players set @a violent_storm.field_time 15
 
 #===================================================================
 
@@ -131,7 +146,7 @@ scoreboard players set .the_night atk 500
 scoreboard players set .the_night_passive atk 200
 scoreboard players set .otherworld_dust_star atk 200
 scoreboard players set .otherworld_dust_star_ca atk 50
-
+scoreboard players set .violent_storm atk 250
 
 #百分比倍率微調
 scoreboard players set 100 atk 100

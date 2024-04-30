@@ -22,6 +22,7 @@ execute if score .main_line orantes.story matches 64 run scoreboard players set 
 execute if score .main_line orantes.story matches 65 run effect give @e[tag=ml.sgp] glowing 15 1 true
 execute if score .main_line orantes.story matches 65 run tag @e[tag=ml.sgp] add task_glow.fx
 execute if score .main_line orantes.story matches 65 run schedule clear time_traveler:story/orantes/main_line/sim/loop
+execute if score .main_line orantes.story matches 65 run function time_traveler:story/orantes/main_line/core/loop
 execute if score .main_line orantes.story matches 65 run summon minecraft:text_display -3.98 64.00 170.075 {text:'"\\uE019"',background:0,billboard:"fixed",Tags:["display.right_click_display","display"],Rotation:[-90.0f,0.0f]}
 
 execute if score .main_line orantes.story matches 65 as @a at @s run function time_traveler:story/orantes/main_line/statement_go_back_to_old_home/task_end_text
