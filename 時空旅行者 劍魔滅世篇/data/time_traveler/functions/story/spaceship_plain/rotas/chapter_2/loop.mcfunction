@@ -2,7 +2,7 @@
 #Story Loop file detection
 
 
-execute positioned -70 63 0 in game_map:orantes as @a[distance=..8] at @s if score rotas._chapter_2 spaceship.global.main matches 0 run function time_traveler:story/spaceship_plain/rotas/chapter_2/start
+execute positioned -7 61 93 in game_map:orantes as @a[distance=..8] at @s if score rotas._chapter_2 spaceship.global.main matches 0 run function time_traveler:story/spaceship_plain/rotas/chapter_2/start
 
 #阿斯卡
 execute as @e[tag=aska.interaction.1] at @s if data entity @s interaction.timestamp run function time_traveler:story/spaceship_plain/rotas/chapter_2/guide

@@ -10,7 +10,8 @@ execute as @e[scores={player.space_time_deceleration=1..,player.space_time_decel
 scoreboard players set @e[scores={player.space_time_deceleration=1..,player.space_time_deceleration.fx=0}] player.space_time_deceleration.fx 1
 
 execute as @e[scores={monster.skill.cast.cd=20}] at @s run particle minecraft:sonic_boom ~ ~1 ~ 0 0 0 0 1 force
-execute as @e[scores={monster.skill.cast.cd=20}] at @s run particle minecraft:dust_color_transition 1 1 0 1 1 1 1 ~ ~ ~ 0.1 10 0.1 0 500 force
+execute as @e[scores={monster.skill.cast.cd=20}] at @s run particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 1.0f, 1.0f]} ~ ~ ~ 0.1 10 0.1 0 500 force
+
 execute as @e[scores={monster.skill.cast.cd=20}] at @s run playsound entity.experience_orb.pickup voice @a[distance=..15] ~ ~1 ~ 9999999 1
 
 #怪物技能CD冷卻

@@ -165,13 +165,3 @@ scoreboard players set @a double_sword_water_swtich 1
 scoreboard players set @a double_sword_water_effect_cd 0
 
 #===================================================================
-#時空之鎖
-scoreboard objectives add time_space_lock_cd dummy "時空之鎖CD"
-scoreboard objectives add time_space_lock_max_cd dummy "時空之鎖CD上限"
-scoreboard objectives add time_space_lock_switch dummy "時空之鎖主動技開關"
-scoreboard objectives add time_space_lock_switch_cd dummy "時空之鎖主動技開關間隔"
-
-scoreboard players set @a time_space_lock_cd 0
-scoreboard players set @a time_space_lock_max_cd 60
-scoreboard players set @a time_space_lock_switch 1
-scoreboard players set @a time_space_lock_switch_cd 10
