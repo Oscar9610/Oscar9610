@@ -1,4 +1,4 @@
-execute if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{reina_sword:1b}}}] run scoreboard players set #aldon_1 orantes.story 3
-execute if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{reina_sword:1b}}}] run function time_traveler:story/orantes/npc/aldon/3
-execute if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{reina_sword:1b}}}] run scoreboard players set #lost_guardian global.advancements 9
-execute unless entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{reina_sword:1b}}}] run tellraw @a {"text":"看來你們還沒拿到 雷納的劍 不妨問問雷納的家人收集一些線索"}
+execute if items entity @s container.* minecraft:carrot_on_a_stick[minecraft:custom_data~{reina_sword:1b}] run scoreboard players set #aldon_1 orantes.story 3
+execute if items entity @s container.* minecraft:carrot_on_a_stick[minecraft:custom_data~{reina_sword:1b}] run function time_traveler:story/orantes/npc/aldon/3
+execute if items entity @s container.* minecraft:carrot_on_a_stick[minecraft:custom_data~{reina_sword:1b}] run scoreboard players set #lost_guardian global.advancements 9
+execute unless items entity @s container.* minecraft:carrot_on_a_stick[minecraft:custom_data~{reina_sword:1b}] run tellraw @a {"text":"看來你們還沒拿到 雷納的劍 不妨問問雷納的家人收集一些線索"}

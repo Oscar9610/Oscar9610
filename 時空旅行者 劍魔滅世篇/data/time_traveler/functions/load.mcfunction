@@ -11,6 +11,7 @@ function weapons:scoreboard
 function rotas:scoreboard
 function ancient_lorras:scoreboard
 
+schedule function time_traveler:rpg_items/get/gift_pack/the_night_4star 1t
 schedule function ancient_lorras:world_area/loop 1t
 function time_traveler:daytime_weather/map_hall/save
 function weapons:type/gravity_axe/timer

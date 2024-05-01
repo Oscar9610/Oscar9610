@@ -13,7 +13,7 @@ scoreboard players set @s violent_storm_cd 2
 title @s title {"text":"\uE009"}
 title @s times 0 0 10
 
-tag @e[type=#time_traveler:monsters,sort=nearest,limit=1] add dmger
+execute at @e[tag=violent_storm.range] run tag @e[type=#time_traveler:monsters,distance=..15] add dmger
 scoreboard players operation @s atk = .violent_storm atk
 function time_traveler:dmg_formula/calculate
 

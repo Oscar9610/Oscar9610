@@ -1,41 +1,42 @@
-particle dust_color_transition 1 1 0 1 1 0.5 0 ^ ^-1 ^6.1 0 0 0 0 1
-particle dust_color_transition 1 1 0 1 1 0.5 0 ^ ^-1 ^6.3 0 0 0 0 1
-particle dust_color_transition 1 1 0 1 1 0.5 0 ^ ^-1 ^6.5 0 0 0 0 1
-particle dust_color_transition 1 1 0 1 1 0.5 0 ^ ^-1 ^6.7 0 0 0 0 1
-particle dust_color_transition 1 1 0 1 1 0.5 0 ^ ^-1 ^6.9 0 0 0 0 1
-particle dust_color_transition 1 1 0 1 1 0.5 0 ^ ^-1 ^7.1 0 0 0 0 1
-particle dust_color_transition 1 1 0 1 1 0.5 0 ^ ^-1 ^7.3 0 0 0 0 1
-particle dust_color_transition 1 1 0 1 1 0.5 0 ^ ^-1 ^7.5 0 0 0 0 1
-particle dust_color_transition 1 1 0 1 1 0.5 0 ^ ^-1 ^7.7 0 0 0 0 1
-particle dust_color_transition 1 1 0 1 1 0.5 0 ^ ^-1 ^7.9 0 0 0 0 1
-particle dust_color_transition 1 1 0 1 1 0.5 0 ^ ^-1 ^8.1 0 0 0 0 1
-particle dust_color_transition 1 1 0 1 1 0.5 0 ^ ^-1 ^8.3 0 0 0 0 1
-particle dust_color_transition 1 1 0 1 1 0.5 0 ^ ^-1 ^8.5 0 0 0 0 1
-particle dust_color_transition 1 1 0 1 1 0.5 0 ^ ^-1 ^8.7 0 0 0 0 1
-particle dust_color_transition 1 1 0 1 1 0.5 0 ^ ^-1 ^8.9 0 0 0 0 1
-particle dust_color_transition 1 1 0 1 1 0.5 0 ^ ^-1 ^9.1 0 0 0 0 1
-particle dust_color_transition 1 1 0 1 1 0.5 0 ^ ^-1 ^9.3 0 0 0 0 1
-particle dust_color_transition 1 1 0 1 1 0.5 0 ^ ^-1 ^9.5 0 0 0 0 1
-particle dust_color_transition 1 1 0 1 1 0.5 0 ^ ^-1 ^9.7 0 0 0 0 1
-particle dust_color_transition 1 1 0 1 1 0.5 0 ^ ^-1 ^9.9 0 0 0 0 1
+particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 0.5f, 0.0f]} ^ ^-1 ^6.1 0 0 0 0 1
+particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 0.5f, 0.0f]} ^ ^-1 ^6.3 0 0 0 0 1
+particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 0.5f, 0.0f]} ^ ^-1 ^6.5 0 0 0 0 1
+particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 0.5f, 0.0f]} ^ ^-1 ^6.7 0 0 0 0 1
+particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 0.5f, 0.0f]} ^ ^-1 ^6.9 0 0 0 0 1
+particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 0.5f, 0.0f]} ^ ^-1 ^7.1 0 0 0 0 1
+particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 0.5f, 0.0f]} ^ ^-1 ^7.3 0 0 0 0 1
+particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 0.5f, 0.0f]} ^ ^-1 ^7.5 0 0 0 0 1
+particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 0.5f, 0.0f]} ^ ^-1 ^7.7 0 0 0 0 1
+particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 0.5f, 0.0f]} ^ ^-1 ^7.9 0 0 0 0 1
+particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 0.5f, 0.0f]} ^ ^-1 ^8.1 0 0 0 0 1
+particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 0.5f, 0.0f]} ^ ^-1 ^8.3 0 0 0 0 1
+particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 0.5f, 0.0f]} ^ ^-1 ^8.5 0 0 0 0 1
+particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 0.5f, 0.0f]} ^ ^-1 ^8.7 0 0 0 0 1
+particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 0.5f, 0.0f]} ^ ^-1 ^8.9 0 0 0 0 1
+particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 0.5f, 0.0f]} ^ ^-1 ^9.1 0 0 0 0 1
+particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 0.5f, 0.0f]} ^ ^-1 ^9.3 0 0 0 0 1
+particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 0.5f, 0.0f]} ^ ^-1 ^9.5 0 0 0 0 1
+particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 0.5f, 0.0f]} ^ ^-1 ^9.7 0 0 0 0 1
+particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 0.5f, 0.0f]} ^ ^-1 ^9.9 0 0 0 0 1
 
-particle dust_color_transition 1 1 0 1 1 0.5 0 ^ ^-1 ^-6.1 0 0 0 0 1
-particle dust_color_transition 1 1 0 1 1 0.5 0 ^ ^-1 ^-6.3 0 0 0 0 1
-particle dust_color_transition 1 1 0 1 1 0.5 0 ^ ^-1 ^-6.5 0 0 0 0 1
-particle dust_color_transition 1 1 0 1 1 0.5 0 ^ ^-1 ^-6.7 0 0 0 0 1
-particle dust_color_transition 1 1 0 1 1 0.5 0 ^ ^-1 ^-6.9 0 0 0 0 1
-particle dust_color_transition 1 1 0 1 1 0.5 0 ^ ^-1 ^-7.1 0 0 0 0 1
-particle dust_color_transition 1 1 0 1 1 0.5 0 ^ ^-1 ^-7.3 0 0 0 0 1
-particle dust_color_transition 1 1 0 1 1 0.5 0 ^ ^-1 ^-7.5 0 0 0 0 1
-particle dust_color_transition 1 1 0 1 1 0.5 0 ^ ^-1 ^-7.7 0 0 0 0 1
-particle dust_color_transition 1 1 0 1 1 0.5 0 ^ ^-1 ^-7.9 0 0 0 0 1
-particle dust_color_transition 1 1 0 1 1 0.5 0 ^ ^-1 ^-8.1 0 0 0 0 1
-particle dust_color_transition 1 1 0 1 1 0.5 0 ^ ^-1 ^-8.3 0 0 0 0 1
-particle dust_color_transition 1 1 0 1 1 0.5 0 ^ ^-1 ^-8.5 0 0 0 0 1
-particle dust_color_transition 1 1 0 1 1 0.5 0 ^ ^-1 ^-8.7 0 0 0 0 1
-particle dust_color_transition 1 1 0 1 1 0.5 0 ^ ^-1 ^-8.9 0 0 0 0 1
-particle dust_color_transition 1 1 0 1 1 0.5 0 ^ ^-1 ^-9.1 0 0 0 0 1
-particle dust_color_transition 1 1 0 1 1 0.5 0 ^ ^-1 ^-9.3 0 0 0 0 1
-particle dust_color_transition 1 1 0 1 1 0.5 0 ^ ^-1 ^-9.5 0 0 0 0 1
-particle dust_color_transition 1 1 0 1 1 0.5 0 ^ ^-1 ^-9.7 0 0 0 0 1
-particle dust_color_transition 1 1 0 1 1 0.5 0 ^ ^-1 ^-9.9 0 0 0 0 1
+
+particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 0.5f, 0.0f]} ^ ^-1 ^-6.1 0 0 0 0 1
+particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 0.5f, 0.0f]} ^ ^-1 ^-6.3 0 0 0 0 1
+particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 0.5f, 0.0f]} ^ ^-1 ^-6.5 0 0 0 0 1
+particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 0.5f, 0.0f]} ^ ^-1 ^-6.7 0 0 0 0 1
+particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 0.5f, 0.0f]} ^ ^-1 ^-6.9 0 0 0 0 1
+particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 0.5f, 0.0f]} ^ ^-1 ^-7.1 0 0 0 0 1
+particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 0.5f, 0.0f]} ^ ^-1 ^-7.3 0 0 0 0 1
+particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 0.5f, 0.0f]} ^ ^-1 ^-7.5 0 0 0 0 1
+particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 0.5f, 0.0f]} ^ ^-1 ^-7.7 0 0 0 0 1
+particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 0.5f, 0.0f]} ^ ^-1 ^-7.9 0 0 0 0 1
+particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 0.5f, 0.0f]} ^ ^-1 ^-8.1 0 0 0 0 1
+particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 0.5f, 0.0f]} ^ ^-1 ^-8.3 0 0 0 0 1
+particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 0.5f, 0.0f]} ^ ^-1 ^-8.5 0 0 0 0 1
+particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 0.5f, 0.0f]} ^ ^-1 ^-8.7 0 0 0 0 1
+particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 0.5f, 0.0f]} ^ ^-1 ^-8.9 0 0 0 0 1
+particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 0.5f, 0.0f]} ^ ^-1 ^-9.1 0 0 0 0 1
+particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 0.5f, 0.0f]} ^ ^-1 ^-9.3 0 0 0 0 1
+particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 0.5f, 0.0f]} ^ ^-1 ^-9.5 0 0 0 0 1
+particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 0.5f, 0.0f]} ^ ^-1 ^-9.7 0 0 0 0 1
+particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 1f, to_color: [1.0f, 0.5f, 0.0f]} ^ ^-1 ^-9.9 0 0 0 0 1

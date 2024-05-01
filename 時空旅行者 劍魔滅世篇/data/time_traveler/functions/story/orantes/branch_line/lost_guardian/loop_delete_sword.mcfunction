@@ -1,1 +1,1 @@
-clear @a carrot_on_a_stick{reina_sword:1b}
+clear @a carrot_on_a_stick[minecraft:custom_data~{reina_sword:1b}]

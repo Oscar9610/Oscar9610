@@ -32,6 +32,9 @@ execute as @e[tag=rotate.15] at @s run tp @s ~ ~ ~ ~15 ~
 execute as @e[tag=rotate.30] at @s run tp @s ~ ~ ~ ~30 ~
 execute as @e[tag=rotate.45] at @s run tp @s ~ ~ ~ ~45 ~
 
+#玩家死亡
+execute as @a if score @s player_die matches 1.. run function players:die
+
 #=========================================================
 
 #局部時空減速

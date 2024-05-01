@@ -6,4 +6,7 @@ function time_traveler:monsters/main/reset_properties with storage minecraft:mon
 effect give @s[type=#minecraft:undead] minecraft:instant_damage 1 27 true
 effect give @s[type=!#minecraft:undead] minecraft:instant_health 1 27 true
 
+data merge entity @s {DeathLootTable:"entity:entities/monster"}
+
 tag @s remove monster.spawn
+
