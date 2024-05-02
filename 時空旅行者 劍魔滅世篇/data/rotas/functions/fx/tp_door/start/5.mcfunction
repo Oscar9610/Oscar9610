@@ -24,6 +24,4 @@ playsound minecraft:block.chorus_flower.grow master @a ~ ~ ~ 1 0.75
 playsound minecraft:block.chorus_flower.grow master @a ~ ~ ~ 1 0.75
 playsound minecraft:block.chorus_flower.grow master @a ~ ~ ~ 1 0.75
 
-schedule function rotas:5t 5t
-
 function rotas:fx/tp_door/idle/start

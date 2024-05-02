@@ -1,9 +1,9 @@
 
-summon marker -5 63 104 {Tags:[temp]}
+summon marker -6 63 104 {Tags:[temp]}
 
-scoreboard players set #x rotas.fx -72000
-scoreboard players set #y rotas.fx 75000
-scoreboard players set #z rotas.fx 14000
+scoreboard players set #x rotas.fx -6000
+scoreboard players set #y rotas.fx 63000
+scoreboard players set #z rotas.fx 104000
 
 execute store result score #random rotas.fx run random value -3000..3000
 scoreboard players operation #x rotas.fx += #random rotas.fx

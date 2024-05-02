@@ -19,4 +19,4 @@ scoreboard players add @e[type=marker,tag=rotasfx.margin] rotas.fx 1
 execute as @e[type=marker,tag=rotasfx.margin] at @s run function rotas:fx/tp_door/idle/margin/main
 
 # particle
-execute if entity @e[type=marker,tag=rotasfx.margin] run particle minecraft:reverse_portal -8 65 104 1 1 1 0.5 1 force
+execute if entity @e[type=marker,tag=rotasfx.margin] run particle minecraft:reverse_portal -6 62 104 1 1 1 0.5 1 force
