@@ -1,7 +1,8 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:bow"
+      "id": "minecraft:bow",
+      "count": 1
     },
     "title": "【支線】射擊比賽！",
     "description": "WalkMan467設計的射擊比賽！只要通過就可以獲得大量星輝幣！",

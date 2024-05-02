@@ -1,5 +1,4 @@
 # 偵測是否手持開啟血祭的夜暮 ; 50% 觸發回血
-
 # player
 execute if predicate time_traveler:chance/50 run effect give @s minecraft:instant_health 1 0
 

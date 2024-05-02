@@ -5,3 +5,5 @@ execute as @a[tag=water_sword.w_user] at @s if score @s water_sword_passive matc
 execute as @a[tag=water_sword.l_user] at @s if score @s water_sword_passive matches 1.. run function water_sword:passive/light
 
 scoreboard players reset @a water_sword_rightclick
+
+execute if score #is_water_sword_demon.passive? global.main matches 1.. run scoreboard players remove #is_water_sword_demon.passive? global.main 1

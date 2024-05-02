@@ -5,6 +5,7 @@ execute if score .main world_tree.story matches 20 run title @a times 20 60 20
 execute if score .main world_tree.story matches 20 run title @a title ""
 execute if score .main world_tree.story matches 20 run title @a subtitle ["",{"text":"| ","italic":true,"bold":true,"obfuscated":true,"color":"light_purple"},{"text":"時","bold":true,"italic":true,"color":"#FFD780"},{"text":"空","bold":true,"italic":true,"color":"#FFCB5C"},{"text":"旅","bold":true,"italic":true,"color":"#FFCB5C"},{"text":"行","bold":true,"italic":true,"color":"#FFD780"},{"text":"者","italic":true,"bold":true,"color":"red"},{"text":": ","italic":true,"bold":true,"color":"#FC7654"},{"text":"劍","italic":true,"bold":true,"color":"#FCB654"},{"text":"魔","italic":true,"color":"#FCD854"},{"text":"滅","bold":true,"color":"#E9FC54"},{"text":"世","italic":true,"bold":true,"color":"#B9FC54"},{"text":"篇","italic":true,"bold":true,"color":"#87FC54"},{"text":"🗡","italic":true,"bold":true,"color":"#54FC9D"},{"text":" |","italic":true,"bold":true,"obfuscated":true,"color":"light_purple"}]
 execute if score .main world_tree.story matches 20 as @a run tellraw @s {"text":"【SKIP】(點擊跳過劇情對話) ","color":"light_purple","clickEvent":{"action":"run_command","value":"/execute if score .main world_tree.story matches 14..21 run scoreboard players set .main world_tree.story 13"}}
+execute if score .main world_tree.story matches 20 run scoreboard players set #spaceship global.advancements 1
 execute if score .main world_tree.story matches 20 run tellraw @a {"text":"[旁白] 世界即將毀滅"}
 execute if score .main world_tree.story matches 20 run effect give @a minecraft:invisibility 100 255 true
 execute if score .main world_tree.story matches 19 run tellraw @a {"text":"[旁白] 深淵的力量正在侵蝕著世界的每個角落"}
@@ -38,7 +39,7 @@ execute if score .main world_tree.story matches 1 run scoreboard players set .sp
 execute if score .main world_tree.story matches 1 run effect give @a minecraft:nausea 8 0 true
 execute if score .main world_tree.story matches 1 run effect give @a slowness 6 10 true
 execute as @a at @s if score .main world_tree.story matches 1 run playsound minecraft:block.portal.trigger voice @a
-execute as @a at @s if score .main world_tree.story matches 1 positioned ~ ~1.7 ~ run particle minecraft:block_marker nether_portal ^ ^ ^0.3 0 0 0 0 1
+execute as @a at @s if score .main world_tree.story matches 1 positioned ~ ~1.7 ~ run particle minecraft:block_marker{block_state: "minecraft:nether_portal"} ^ ^ ^0.3 0 0 0 0 1
 
 ## 調整循環開關
 scoreboard players remove .main world_tree.story 1

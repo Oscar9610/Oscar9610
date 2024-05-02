@@ -1,8 +1,11 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:carrot_on_a_stick",
-      "nbt": "{CustomModelData:4}"
+      "id": "minecraft:iron_sword",
+      "count": 1,
+      "components": {
+        "minecraft:custom_model_data": 4
+      }
     },
     "title": "[主線] 前往試煉之地",
     "description": [

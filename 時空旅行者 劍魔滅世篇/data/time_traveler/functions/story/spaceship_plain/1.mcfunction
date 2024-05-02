@@ -1,4 +1,5 @@
-execute if score .spaceship_plain world_tree.story matches 25 run tellraw @s {"text":"\n\n【SKIP】(點擊跳過劇情對話) ","color":"light_purple","clickEvent":{"action":"run_command","value":"/execute if score .main world_tree.story matches 11..25 run scoreboard players set .spaceship_plain world_tree.story 15"}}
+execute if score .spaceship_plain world_tree.story matches 25 run scoreboard players set #spaceship global.advancements 2
+execute if score .spaceship_plain world_tree.story matches 25 run tellraw @s {"text":"\n\n【SKIP】(點擊跳過劇情對話) ","color":"light_purple","clickEvent":{"action":"run_command","value":"/execute if score .spaceship_plain world_tree.story matches 11..25 run scoreboard players set .spaceship_plain world_tree.story 12"}}
 execute if score .spaceship_plain world_tree.story matches 25 run tellraw @a {"text":"［???］原來是這樣"}
 execute if score .spaceship_plain world_tree.story matches 24 run tellraw @a {"text":"［???］雖然說你的父母為了守護世界犧牲了自己"}
 execute if score .spaceship_plain world_tree.story matches 23 run tellraw @a {"text":"［???］但是我相信他們一定還在世界的其中一個角落看著你"}

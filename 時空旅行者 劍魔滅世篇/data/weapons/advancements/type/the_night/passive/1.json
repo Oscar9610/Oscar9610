@@ -6,11 +6,10 @@
         "player": {
           "equipment": {
             "mainhand": {
-              "items": [
-                "minecraft:carrot_on_a_stick"
-              ],
-              "components": {
-                "minecraft:custom_data": {"the_night":1,"rarity":5}
+              "items": [],
+              "components": {},
+              "predicates": {
+                "minecraft:custom_data": "{the_night:1,rarity:5}"
               }
             }
           }

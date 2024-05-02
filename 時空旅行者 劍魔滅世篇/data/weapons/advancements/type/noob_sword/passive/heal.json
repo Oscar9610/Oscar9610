@@ -4,7 +4,13 @@
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "player": {
-          "nbt": "{SelectedItem:{components:{\"minecraft:custom_data\": {noob:1}}}}"
+          "equipment": {
+            "mainhand": {
+              "predicates": {
+                "minecraft:custom_data": "{noob:1}"
+              }
+            }
+          }
         }
       }
     }

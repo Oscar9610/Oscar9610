@@ -1,10 +1,13 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:carrot_on_a_stick",
-      "nbt": "{CustomModelData:4}"
+      "id": "minecraft:iron_sword",
+      "count": 1,
+      "components": {
+        "minecraft:custom_model_data": 4
+      }
     },
-    "title": "[主線] 休息，然後開始尋找下一位元素之神！",
+    "title": "[主線] 恭喜完成水星主線",
     "description": [
       {
         "text": "恭喜完成水星 - 奧蘭蒂斯的主線，地圖還會持續更新喔~ 別忘了關注 劍魔滅世篇 OuO"
