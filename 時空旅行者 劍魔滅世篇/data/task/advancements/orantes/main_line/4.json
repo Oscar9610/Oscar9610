@@ -1,10 +1,19 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:campfire"
+      "id": "minecraft:campfire",
+      "count": 1
     },
     "title": "[主線] 在洞穴偶遇陳述？！",
-    "description": [{"text":"你找到了陳述，陳述在小避難所想拿回東西，究竟會發生甚麼事呢"},{"text":" (目標：右鍵點擊陳述！)","color":"gold"}],
+    "description": [
+      {
+        "text": "你找到了陳述，陳述在小避難所想拿回東西，究竟會發生甚麼事呢"
+      },
+      {
+        "text": " (目標：右鍵點擊陳述！)",
+        "color": "gold"
+      }
+    ],
     "background": "minecraft:textures/gui/advancements/backgrounds/prismarine.png",
     "frame": "goal",
     "show_toast": true,

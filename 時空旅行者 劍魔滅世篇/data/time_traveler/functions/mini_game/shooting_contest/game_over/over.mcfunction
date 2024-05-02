@@ -14,7 +14,7 @@ playsound minecraft:entity.player.levelup voice @a[distance=..10] ~ ~1 ~ 9999999
 
 # over 20
 execute if score #shooting_contest.score global.main matches 20.. run tellraw @a[distance=..10] ["送你 ",{"text":"40個","color":"light_purple"},{"text":"星輝幣","color":"dark_purple"},{"text":" ！","color":"white"}]
-execute if score #shooting_contest.score global.main matches 20.. run give @a[distance=..10] emerald{Unbreakable:1b,money:1b,HideFlags:7,display:{Name:'[{"text":"","italic":false},{"text":"星輝幣 1 元","color":"dark_purple"}]',Lore:['[{"text":"","italic":false},{"text":"通用金錢","color":"dark_gray"}]','[{"text":"","italic":false},{"text":"全宇宙通用的貨幣","color":"gray"}]','[{"text":"","italic":false},{"text":"任誰都能理解它的價值與份量","color":"gray"}]']}} 40
+execute if score #shooting_contest.score global.main matches 20.. run give @a[distance=..10] minecraft:emerald[minecraft:attribute_modifiers={modifiers:[],show_in_tooltip:0b},minecraft:custom_data={money:1b},minecraft:custom_name='{"extra":[{"color":"dark_purple","text":"星輝幣 1 元"}],"italic":false,"text":""}',minecraft:enchantments={levels:{},show_in_tooltip:0b},minecraft:lore=['{"extra":[{"color":"dark_gray","text":"通用金錢"}],"italic":false,"text":""}','{"extra":[{"color":"gray","text":"全宇宙通用的貨幣"}],"italic":false,"text":""}','{"extra":[{"color":"gray","text":"任誰都能理解它的價值與份量"}],"italic":false,"text":""}'],minecraft:unbreakable={show_in_tooltip:0b}] 40
 
 # game
 schedule clear time_traveler:mini_game/shooting_contest/loop

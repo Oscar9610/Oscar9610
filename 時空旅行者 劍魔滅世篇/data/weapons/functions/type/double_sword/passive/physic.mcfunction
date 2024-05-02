@@ -1,3 +1,4 @@
+tellraw @s [{"text":"[","color":"green","bold":true},{"text":"補刀","color":"white","bold":true},{"text":"] ","color":"green","bold":true},{"text":"發動！","color":"green","bold":true}]
 
 # dmg
 tag @e[type=#time_traveler:monsters,sort=nearest,limit=1] add dmger

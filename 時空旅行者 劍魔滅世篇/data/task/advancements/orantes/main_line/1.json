@@ -1,9 +1,12 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:nautilus_shell"
+      "id": "minecraft:nautilus_shell",
+      "count": 1
     },
-    "title": "水星 - 奧蘭蒂斯",
+    "title": {
+      "text": "水星 - 奧蘭蒂斯"
+    },
     "description": [
       {
         "text": "你與希爾一同前往第一個魔物清除區\"奧蘭蒂斯\", 究竟在這個星球會發生什麼有趣的事嗎?",

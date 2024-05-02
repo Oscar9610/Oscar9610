@@ -2,7 +2,7 @@ scoreboard players set @s violent_storm_state 2
 
 particle minecraft:gust_emitter_large ~ ~ ~ 5 0 5 0 10
 
-tag @e[type=#time_traveler:monsters,sort=nearest,limit=1] add dmger
+execute at @e[tag=violent_storm.range] run tag @e[type=#time_traveler:monsters,distance=..15] add dmger
 scoreboard players operation @s atk = .violent_storm atk
 function time_traveler:dmg_formula/calculate
 scoreboard players set @s violent_storm_wind_time 10

@@ -1,10 +1,9 @@
-
-execute as @e[tag=rotas.event.1.mw] at @s run particle minecraft:dust 1 0 0 1.5 ^ ^2 ^30 0 0 0 0 5 force
-execute as @e[tag=rotas.event.1.mw] at @s run particle minecraft:dust 1 0 0 1.5 ^ ^2 ^-30 0 0 0 0 5 force
-execute as @e[tag=rotas.event.1.mw] at @s run particle minecraft:dust 1 0 0 1.5 ^1 ^2 ^-30 0 0 0 0 5 force
-execute as @e[tag=rotas.event.1.mw] at @s run particle minecraft:dust 1 0 0 1.5 ^-1 ^2 ^-30 0 0 0 0 5 force
-execute as @e[tag=rotas.event.1.mw] at @s run particle minecraft:dust 1 0 0 1.5 ^1 ^2 ^30 0 0 0 0 5 force
-execute as @e[tag=rotas.event.1.mw] at @s run particle minecraft:dust 1 0 0 1.5 ^-1 ^2 ^30 0 0 0 0 5 force
+execute as @e[tag=rotas.event.1.mw] at @s run particle minecraft:dust{color:[1.000,0.000,0.000],scale:1.5} ^ ^2 ^30 0.1 0.1 0.1 0 5 force
+execute as @e[tag=rotas.event.1.mw] at @s run particle minecraft:dust{color:[1.000,0.000,0.000],scale:1.5} ^ ^2 ^-30 0.1 0.1 0.1 0 5 force
+execute as @e[tag=rotas.event.1.mw] at @s run particle minecraft:dust{color:[1.000,0.000,0.000],scale:1.5} ^1 ^2 ^30 0.1 0.1 0.1 0 5 force
+execute as @e[tag=rotas.event.1.mw] at @s run particle minecraft:dust{color:[1.000,0.000,0.000],scale:1.5} ^-1 ^2 ^-30 0.1 0.1 0.1 0 5 force
+execute as @e[tag=rotas.event.1.mw] at @s run particle minecraft:dust{color:[1.000,0.000,0.000],scale:1.5} ^1 ^2 ^30 0.1 0.1 0.1 0 5 force
+execute as @e[tag=rotas.event.1.mw] at @s run particle minecraft:dust{color:[1.000,0.000,0.000],scale:1.5} ^-1 ^2 ^30 0.1 0.1 0.1 0 5 force
 execute as @e[tag=rotas.event.1.mw] at @s run tp @s ~ ~ ~ ~25 0
 
 execute as @a if score rotas.event.1.mw rotas.kill = rotas.event.1.mw rotas.target_wave run function rotas:event/1/monster_wave/reset_2

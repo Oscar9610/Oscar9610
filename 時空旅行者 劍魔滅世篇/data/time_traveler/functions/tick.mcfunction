@@ -16,6 +16,7 @@ function weapons:main
 function time_traveler:rpg_armors/loop
 function weapons:timer_t
 execute as @a at @s run function time_traveler:players/update_strength/main
+advancement revoke @a only weapons:use/gravity_axe
 
 #=========================================================
 
@@ -30,6 +31,9 @@ execute as @e[tag=rotate] at @s run tp @s ~ ~ ~ ~15 ~
 execute as @e[tag=rotate.15] at @s run tp @s ~ ~ ~ ~15 ~
 execute as @e[tag=rotate.30] at @s run tp @s ~ ~ ~ ~30 ~
 execute as @e[tag=rotate.45] at @s run tp @s ~ ~ ~ ~45 ~
+
+#玩家死亡
+execute as @a if score @s player_die matches 1.. run function players:die
 
 #=========================================================
 

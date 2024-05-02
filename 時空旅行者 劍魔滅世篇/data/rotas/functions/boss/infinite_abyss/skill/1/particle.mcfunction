@@ -7,8 +7,10 @@ particle falling_dripstone_water ^ ^ ^0.1 0.1 0.75 0.1 0 20
 particle dolphin ^ ^ ^0.1 0.1 1 0.1 0 20
 particle splash ^ ^ ^0.1 0.1 0.5 0.1 0 20
 particle sweep_attack ^ ^ ^0.1 0.5 0.5 0.5 0 2
-particle item light_blue_concrete ^ ^ ^1 ^ ^ ^1 0.0000005 0 force
-particle dust 1 1 1 2 ^ ^0.2 ^1 0.25 0.25 0.25 0 10 force
+particle minecraft:item{item: "minecraft:light_blue_concrete"} ^ ^ ^1 ^ ^ ^1 0.0000005 0 force
+
+particle dust{color: [1.0f, 1.0f, 1.0f], scale: 2f} ^ ^0.2 ^1 0.25 0.25 0.25 0 10 force
+
 
 # sound
 playsound minecraft:item.shield.break voice @a ~ ~1 ~ 0.5 1

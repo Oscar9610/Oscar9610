@@ -114,7 +114,7 @@ scoreboard objectives add violent_storm_thunder_cd dummy "狂風暴雨 雷雨陣
 scoreboard players set @a violent_storm_cd 0
 scoreboard players set @a violent_storm_max_cd 45
 scoreboard players set @a violent_storm_state 0
-scoreboard players set @a violent_storm.field_time 15
+scoreboard players set @a violent_storm.field_time 0
 
 #===================================================================
 
@@ -145,7 +145,7 @@ scoreboard players set .the_night atk 500
 scoreboard players set .the_night_passive atk 200
 scoreboard players set .otherworld_dust_star atk 200
 scoreboard players set .otherworld_dust_star_ca atk 50
-scoreboard players set .violent_storm atk 250
+scoreboard players set .violent_storm atk 400
 
 #百分比倍率微調
 scoreboard players set 100 atk 100
@@ -165,13 +165,3 @@ scoreboard players set @a double_sword_water_swtich 1
 scoreboard players set @a double_sword_water_effect_cd 0
 
 #===================================================================
-#時空之鎖
-scoreboard objectives add time_space_lock_cd dummy "時空之鎖CD"
-scoreboard objectives add time_space_lock_max_cd dummy "時空之鎖CD上限"
-scoreboard objectives add time_space_lock_switch dummy "時空之鎖主動技開關"
-scoreboard objectives add time_space_lock_switch_cd dummy "時空之鎖主動技開關間隔"
-
-scoreboard players set @a time_space_lock_cd 0
-scoreboard players set @a time_space_lock_max_cd 60
-scoreboard players set @a time_space_lock_switch 1
-scoreboard players set @a time_space_lock_switch_cd 10

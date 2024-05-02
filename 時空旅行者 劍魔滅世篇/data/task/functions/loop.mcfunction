@@ -31,5 +31,7 @@ execute if score #shooting_contest global.advancements matches 0 run advancement
 
 execute if score #main_line global.advancements matches 0 run function task:reset_task
 
+execute if score #spaceship global.advancements matches 0 run function task:spaceship_reset_task
+
 execute if score #lost_guardian global.advancements matches 0 run function task:branch_line/reset_task
 schedule function task:loop 1t

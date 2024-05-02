@@ -52,6 +52,8 @@ scoreboard objectives add detect_player_in_lobby dummy "偵測是否有玩家在
 scoreboard objectives add core_stage dummy "封印守護者進度"
 scoreboard objectives add the_night.screen_animation dummy
 scoreboard objectives add has_reiner_sword dummy
+scoreboard objectives add has_the_night_4star dummy "擁有夜幕4星"
+scoreboard objectives add player_die deathCount
 
 #=====================================================================================
 ##傳送書
