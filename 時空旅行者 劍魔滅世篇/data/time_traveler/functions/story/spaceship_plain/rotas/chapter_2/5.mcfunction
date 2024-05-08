@@ -7,6 +7,7 @@ execute if score rotas._chapter_2 spaceship.story matches 41 run tellraw @s {"te
 execute if score rotas._chapter_2 spaceship.story matches 42 run tellraw @s {"text":"［阿斯卡］準備好了嗎?準備好就可以直接進去了！"}
 execute if score rotas._chapter_2 spaceship.story matches 43 run tellraw @s [{"text":"【目標】進入時空傳送門 ","color":"gold"},{"text":"(到達城市中心藍色大樹洞口)","bold": true,"color": "red"}]
 execute if score rotas._chapter_2 spaceship.story matches 43 run kill @e[tag=rotas.2.4]
+execute if score rotas._chapter_2 spaceship.story matches 43 run scoreboard players set #rotas.chapter_2 global.advancements 4
 execute if score rotas._chapter_2 spaceship.story matches 43 run scoreboard players set #clearance rotas.global.main 1
 execute if score rotas._chapter_2 spaceship.story matches 43 run scoreboard players set rotas._chapter_2 spaceship.global.main 8
 execute if score rotas._chapter_2 spaceship.story matches 43 run scoreboard players set rotas.cd rotas.global.main 1

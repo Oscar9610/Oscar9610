@@ -13,8 +13,13 @@ scoreboard players set @s violent_storm_cd 2
 title @s title {"text":"\uE009"}
 title @s times 0 0 10
 
+execute as @e[tag=violent_storm.range] at @s rotated ~ ~45 positioned ~ ~10 ~5 run function particle:lightning/bolt_start
+execute as @e[tag=violent_storm.range] at @s rotated ~ ~60 positioned ~ ~10 ~-5 run function particle:lightning/bolt_start
+execute as @e[tag=violent_storm.range] at @s rotated ~ ~60 positioned ~5 ~10 ~ run function particle:lightning/bolt_start
+execute as @e[tag=violent_storm.range] at @s rotated ~ ~45 positioned ~-5 ~10 ~ run function particle:lightning/bolt_start
+
 execute at @e[tag=violent_storm.range] run tag @e[type=#time_traveler:monsters,distance=..15] add dmger
 scoreboard players operation @s atk = .violent_storm atk
 function time_traveler:dmg_formula/calculate
 
-function weapons:type/violent_storm/cam/thunder/summon_camera
+#function weapons:type/violent_storm/cam/thunder/summon_camera

@@ -1,22 +1,26 @@
 {
-    "display": {
-      "icon": {
-        "item": "minecraft:player_head",
-        "nbt": "{SkullOwner:\"Blue_Radio\"}"
-      },
-      "title": "偷 偷 工 商！",
-      "description": "這個男人真是太狠了，居然在別人的頻道偷偷工商！",
-      "background": "minecraft:textures/gui/advancements/backgrounds/prismarine.png",
-      "frame": "task",
-      "show_toast": true,
-      "announce_to_chat": true,
-      "hidden": false
-    },
-    "parent": "task:orantes/main_line/1",
-    "criteria": {
-      "requirement": {
-        "trigger": "minecraft:impossible"
+  "display": {
+    "icon": {
+      "id": "minecraft:player_head",
+      "count": 1,
+      "components": {
+        "minecraft:profile": {
+          "name": "Blue_Radio"
+        }
       }
+    },
+    "title": "偷 偷 工 商！",
+    "description": "這個男人真是太狠了，居然在別人的頻道偷偷工商！",
+    "background": "minecraft:textures/gui/advancements/backgrounds/prismarine.png",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "task:orantes/main_line/1",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
     }
   }
-  
+}

@@ -1,7 +1,8 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:writable_book"
+      "id": "minecraft:writable_book",
+      "count": 1
     },
     "title": "[支線] 尋找雷納留下的日誌和詩篇",
     "description": "你向阿爾敦詢問關於雷納的消息，阿爾敦說『雷納的舊友和家人會是關鍵』於是建議你去詢問尋找村長和雷納的家人",

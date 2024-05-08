@@ -1,3 +1,4 @@
+execute if score rotas._chapter_1 spaceship.story matches 10 run scoreboard players set #rotas.chapter_1 global.advancements 3
 execute in game_map:orantes positioned -7 61 93 as @a[distance=..16] if score rotas._chapter_1 spaceship.story matches 10 run tellraw @s {"text":"［希爾］這裡就是奧蘭蒂斯最美的風景"}
 execute in game_map:orantes positioned -7 61 93 as @a[distance=..16] if score rotas._chapter_1 spaceship.story matches 11 run tellraw @s {"text":"［希爾］在穿越到過去奧蘭蒂斯之前"}
 execute in game_map:orantes positioned -7 61 93 as @a[distance=..16] if score rotas._chapter_1 spaceship.story matches 12 run tellraw @s {"text":"［希爾］旅行者，其實..."}
@@ -30,6 +31,7 @@ execute in game_map:orantes positioned -7 61 93 as @a[distance=..16] if score ro
 execute if score rotas._chapter_1 spaceship.story matches 32 run kill @e[tag=hill.rotas.chapter_1]
 execute if score rotas._chapter_1 spaceship.story matches 32 in game_map:orantes positioned -7 61 93 run kill @e[tag=display.right_click_display,distance=..3]
 execute if score rotas._chapter_1 spaceship.story matches 32 in game_map:orantes positioned -7 61 93 as @a[distance=..16] run function time_traveler:story/spaceship_plain/rotas/chapter_1/task_end_text
+execute if score rotas._chapter_1 spaceship.story matches 32 run scoreboard players set #rotas.chapter_1 global.advancements 4
 execute if score rotas._chapter_1 spaceship.story matches 33 run function time_traveler:story/reload_story/rotas/chapter_2
 
 

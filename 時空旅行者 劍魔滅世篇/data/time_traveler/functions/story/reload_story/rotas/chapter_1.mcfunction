@@ -19,5 +19,6 @@ schedule clear time_traveler:story/spaceship_plain/rotas/chapter_1/3
 schedule function time_traveler:interaction/spaceship_plain/rotas/chapter_1/hill_1 1t
 schedule function time_traveler:story/spaceship_plain/rotas/chapter_1/loop 1t
 scoreboard players set #start spaceship.global.main 2
+scoreboard players set #rotas.chapter_1 global.advancements 0
 
 #function time_traveler:story/reload_story/rotas/chapter_1

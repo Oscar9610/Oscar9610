@@ -10,6 +10,7 @@ scoreboard players set rotas._chapter_1 spaceship.global.main 0
 scoreboard players set rotas._chapter_2 spaceship.story 0
 scoreboard players set rotas._chapter_2 spaceship.global.main 0
 scoreboard players set orantes.rotas.open global.main 0
+scoreboard players set .main_line ancient_lorras.global.main 0
 
 xp set @s 0 levels
 xp set @s 0 points

@@ -1,8 +1,18 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:player_head",
-      "nbt": "{SkullOwner:{Id:[I;-763962954,-1853341025,-1994391335,1454576448],Name:\"Isabel\",Properties:{textures:[{Signature:\"i/seqr7sDxcckpqReRx+1jVtTlDoW+CXPYB+AutPT+Bc4qMaSlxQCIqa8Gy/TkuuNB2ZW5cR9TJuthjmxVUGosY52MHqY6wvS2FTgDF7RquW9sT+6W9jw1LwgQpIfio0KT1v0nVCToIuABM2G2OagDD8qVLG70eUAw5RJN53kGRLU3t9SB68kz76XnulyGNVyJcXPHcNOHyz/xyrK51Un/FkvCBZ0phyNFxT6dVKOa4GKOBjoDmRrilBi0Z3qIRpF15EVozECDu1eZnmc5jE1JwQuS1pvVoRXzFl49G6NcLmtHZwtheN04EvAPkhtb6f1JzPBXSW+BsVvZAS6Vv4gRsj26/K/aH8h0C7tcx3S5bQ0W8UBi76SPIOGOhZQiT6H1EVnJiKCXHtPgx1ek2rG+0WMhCc0PyVOMC8rGfIt0iNhGUVB8atfnicO937EnZw6jiEQviFOwbPEJCXAuEsfTWrOdRWQcz3Tu2E57S4MlGb4VYiZtx2OI52+XrkVptdKsLqc39C+5D2cvHp6XmBIR/mE0f8QHiiszroEVV8rNdToYA+K9cqa4eYMslrpuVlazFKhUzdKDvhdd2mTXtdhBwTU1Dpui3XFeVCslNTDpYWmALxqjUD4BZIKs7tWLHAs9WSV/i857OY4cbbEio94GkKrIo2Fu82bTPcl6dLWJE=\",Value:\"ewogICJ0aW1lc3RhbXAiIDogMTcwNDYxNzAzNjM2MCwKICAicHJvZmlsZUlkIiA6ICJkMjc2ZDliNjkxODg0MjlmODkyMDAwZDk1NmIzMTM0MCIsCiAgInByb2ZpbGVOYW1lIiA6ICJJc2FiZWwiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQwNjQzMDUyNTY1ODYyNzBhMzZjNWM2OWVhNDAwY2FmNDk1ZjcyMDgwMDc2M2Y3MDEwYzQzZWVmNzUwYTc3NCIKICAgIH0KICB9Cn0=\"}]}},display:{Name:'{\"text\":\"Girl\"}'}}"
+      "id": "minecraft:player_head",
+      "count": 1,
+      "components": {
+        "minecraft:profile": {
+          "properties": [
+            {
+              "name": "textures",
+              "value": "ewogICJ0aW1lc3RhbXAiIDogMTcwNDYxNzAzNjM2MCwKICAicHJvZmlsZUlkIiA6ICJkMjc2ZDliNjkxODg0MjlmODkyMDAwZDk1NmIzMTM0MCIsCiAgInByb2ZpbGVOYW1lIiA6ICJJc2FiZWwiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQwNjQzMDUyNTY1ODYyNzBhMzZjNWM2OWVhNDAwY2FmNDk1ZjcyMDgwMDc2M2Y3MDEwYzQzZWVmNzUwYTc3NCIKICAgIH0KICB9Cn0="
+            }
+          ]
+        }
+      }
     },
     "title": "[支線] 艾琳娜",
     "description": "你向貝洛斯詢問關於雷納的消息，貝洛斯說『尋找他留下的日誌和詩篇。』建議你去尋找雷納的家人 艾琳娜",

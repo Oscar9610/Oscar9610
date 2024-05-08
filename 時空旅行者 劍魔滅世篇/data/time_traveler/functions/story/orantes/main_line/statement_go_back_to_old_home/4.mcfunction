@@ -19,6 +19,7 @@ execute if score .main_line orantes.story matches 62 run tellraw @a[tag=statemen
 execute if score .main_line orantes.story matches 63 run tellraw @a[tag=statement_go_back_to_old_home_end] {"text":"【目標】回去找陳述爺爺！","color":"gold"}
 execute if score .main_line orantes.story matches 64 run scoreboard players set .main_line orantes.story 65
 execute if score .main_line orantes.story matches 64 run scoreboard players set .main_line orantes.global.main 13
+execute if score .main_line orantes.story matches 64 run scoreboard players set #main_line global.advancements 5
 execute if score .main_line orantes.story matches 65 run effect give @e[tag=ml.sgp] glowing 15 1 true
 execute if score .main_line orantes.story matches 65 run tag @e[tag=ml.sgp] add task_glow.fx
 execute if score .main_line orantes.story matches 65 run schedule clear time_traveler:story/orantes/main_line/sim/loop

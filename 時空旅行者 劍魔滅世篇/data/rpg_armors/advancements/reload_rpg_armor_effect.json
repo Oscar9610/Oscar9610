@@ -1,0 +1,11 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:effects_changed"
+      }
+    },
+    "rewards": {
+      "function": "rpg_armors:reload_rpg_armor_effect"
+    }
+  }
+  

@@ -9,8 +9,8 @@ execute as @e[type=minecraft:interaction,tag=Emera] if data entity @s interactio
 
 #========================================================
 #草星
-execute as @e[type=minecraft:interaction,tag=Emera] at @s if data entity @s interaction.timestamp if score rotas._chapter_2 spaceship.story matches 52.. if score .main_line ancient_lorras.story matches 1..7 run function ancient_lorras:story/main_line/dtal/guide
-execute as @e[type=minecraft:interaction,tag=Lena] at @s if data entity @s interaction.timestamp if score rotas._chapter_2 spaceship.story matches 52.. if score .main_line ancient_lorras.story matches 8..10 run function ancient_lorras:story/main_line/dtal/guide
+execute as @e[type=minecraft:interaction,tag=Emera] at @s if data entity @s interaction.timestamp if score rotas._chapter_2 spaceship.story matches 52.. if score .main_line ancient_lorras.story matches 1..7 run function ancient_lorras:story/main_line/dtal/guide/emera
+execute as @e[type=minecraft:interaction,tag=Lena] at @s if data entity @s interaction.timestamp if score rotas._chapter_2 spaceship.story matches 52.. if score .main_line ancient_lorras.story matches 8..10 run function ancient_lorras:story/main_line/dtal/guide/lena
 
 #========================================================
 

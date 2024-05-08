@@ -1,7 +1,7 @@
 #雷納的家人 - 妹妹艾琳娜
 #story
 execute positioned -54 64 152 in game_map:orantes as @a[distance=..12] if score #shooting_contest orantes.story matches 0 run tellraw @s {"text":"［WalkMan467］哈囉我是WalkMan467！的分身人偶"}
-execute positioned -54 64 152 in game_map:orantes as @a[distance=..12] if score #shooting_contest orantes.story matches 1 run tellraw @s [{"text":"［WalkMan467］","strikethrough":false},{"text":"我是 100%純天然歡愉命途 + AKA斜槓人生WalkMan","strikethrough":true}]
+execute positioned -54 64 152 in game_map:orantes as @a[distance=..12] if score #shooting_contest orantes.story matches 1 run tellraw @s [{"text":"［WalkMan467］","strikethrough":false},{"text":"我是 100%純天然劍魔滅世工作狂 + AKA斜槓人生WalkMan","strikethrough":true}]
 execute positioned -54 64 152 in game_map:orantes as @a[distance=..12] if score #shooting_contest orantes.story matches 2 run tellraw @s {"text":"［WalkMan467］ (・∀・) ","strikethrough":false}
 execute positioned -54 64 152 in game_map:orantes as @a[distance=..12] if score #shooting_contest orantes.story matches 3 run tellraw @s {"text":"［WalkMan467］這是【射擊比賽！】小遊戲的遊戲區！"}
 execute positioned -54 64 152 in game_map:orantes as @a[distance=..12] if score #shooting_contest orantes.story matches 4 run tellraw @s {"text":"［WalkMan467］你支付我20個星輝代幣就可以玩一場遊戲"}

@@ -16,4 +16,4 @@ execute if score .main_line ancient_lorras.story matches 7 run scoreboard player
 execute if score .main_line ancient_lorras.story matches 7 run scoreboard players set #planet_id global.main 2
 execute if score .main_line ancient_lorras.story matches 7 run scoreboard players set .main_line orantes.global.main 22
 
-execute if score .main_line ancient_lorras.story matches 1..8 run scoreboard players add .main_line ancient_lorras.story 1
+execute if score .main_line ancient_lorras.story matches 1..7 run scoreboard players add .main_line ancient_lorras.story 1

@@ -25,6 +25,17 @@ execute if score #lost_guardian global.advancements matches 5.. run advancement 
 execute if score #lost_guardian global.advancements matches 8.. run advancement grant @a only task:orantes/branch_line/lost_guardian/6
 execute if score #lost_guardian global.advancements matches 9.. run advancement grant @a only task:orantes/branch_line/lost_guardian/7
 
+execute if score #rotas.chapter_1 global.advancements matches 1.. run advancement grant @a only task:spaceship/branch_line/rotas/chapter_1/1
+execute if score #rotas.chapter_1 global.advancements matches 2.. run advancement grant @a only task:spaceship/branch_line/rotas/chapter_1/2
+execute if score #rotas.chapter_1 global.advancements matches 3.. run advancement grant @a only task:spaceship/branch_line/rotas/chapter_1/3
+execute if score #rotas.chapter_1 global.advancements matches 4.. run advancement grant @a only task:spaceship/branch_line/rotas/chapter_1/4
+
+execute if score #rotas.chapter_2 global.advancements matches 1.. run advancement grant @a only task:spaceship/branch_line/rotas/chapter_2/1
+execute if score #rotas.chapter_2 global.advancements matches 2.. run advancement grant @a only task:spaceship/branch_line/rotas/chapter_2/2
+execute if score #rotas.chapter_2 global.advancements matches 3.. run advancement grant @a only task:spaceship/branch_line/rotas/chapter_2/3
+execute if score #rotas.chapter_2 global.advancements matches 4.. run advancement grant @a only task:spaceship/branch_line/rotas/chapter_2/4
+execute if score #rotas.chapter_2 global.advancements matches 5.. run advancement grant @a only task:spaceship/branch_line/rotas/chapter_2/5
+
 execute if score #shooting_contest global.advancements matches 1.. run advancement grant @a only task:orantes/shooting_contest
 
 execute if score #shooting_contest global.advancements matches 0 run advancement revoke @a only task:orantes/shooting_contest
@@ -32,6 +43,10 @@ execute if score #shooting_contest global.advancements matches 0 run advancement
 execute if score #main_line global.advancements matches 0 run function task:reset_task
 
 execute if score #spaceship global.advancements matches 0 run function task:spaceship_reset_task
+
+execute if score #rotas.chapter_1 global.advancements matches 0 run function task:rotas_chapter_1
+
+execute if score #rotas.chapter_2 global.advancements matches 0 run function task:rotas_chapter_2
 
 execute if score #lost_guardian global.advancements matches 0 run function task:branch_line/reset_task
 schedule function task:loop 1t

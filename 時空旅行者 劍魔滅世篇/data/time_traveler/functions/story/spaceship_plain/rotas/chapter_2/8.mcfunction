@@ -7,6 +7,7 @@ execute if score rotas._chapter_2 spaceship.story matches 49 run tellraw @s {"te
 execute if score rotas._chapter_2 spaceship.story matches 50 run tellraw @s {"text":"［阿斯卡］我先走囉，我們草星見！"}
 execute if score rotas._chapter_2 spaceship.story matches 51 run tellraw @s [{"text":"恭喜完成【支線】終有一日，世界將恢復如初 其二","color":"gold"}]
 execute if score rotas._chapter_2 spaceship.story matches 51 run tellraw @s [{"text":"草星地圖目前正在製作中，盡情期待下次草星版本更新！","color":"white"}]
+execute if score rotas._chapter_2 spaceship.story matches 51 run scoreboard players set #rotas.chapter_2 global.advancements 5
 
 execute if score rotas._chapter_2 spaceship.story matches 51 run kill @e[tag=rotas.2.5]
 

@@ -1,8 +1,18 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:player_head",
-      "nbt": "{SkullOwner:{Id:[I;-1095073973,1667581628,-1454411145,1779462910],Properties:{textures:[{Signature:\"KOTbsLPD54FiClF4XKQt6yQpMVkzMaNt2sBKpSq2eJXmSuiptOEU0SMuBPyyaPDbNCV+/nSiW9UvCxlsxDmDH7e/n2DTufIYCHiO0P5QjOD3IWk8pUcH8DJme+oDqjp0H1RN/j6XgJGn3+MvlWVhWi+TnL1nvKGadBbRZ0M2RrLDMhjIfAbxnigU+eueAUXeynF9PZgQdifbnhM72Xer5m8B1P67R7VTHpRXuuWhFzXjJ4QKIrKJ4CuPxyFMR8Z+TJgdUMcQjqZfEIRI+kwy3WU/cIf/alhedQjzAbgdHB4v69xvbWuoZGOWqqh/mFpf2B+FHzCICyUMoznIhJLYb+daWAAxSKXNB/w9HjT/oWmV3Jsv/15kVwAkWR3YVuFe/Im5m+A06I6BITyc2xiP+UVl0U7Sn6LYXER/eXHD3EIZEEfdHKn83eEIWv8UxrsPi6u04J4OjBORA+aMGIGqBpDkF2hUHq99Nfjnc8O5kdEqkWMrETg7qZcdtQnVrL+gTDXHVWUwY/5ao0fVoxER5yNxpolgxGIhR5MONlh70WQiF/AAmtD4cNm4j6dUkohZh23j6AX+U2erBU70G9peWk+WI1ehLsiyQ4FkHL8fjjQlHiMP5pmiUaUDzKpvf5o6lL+KRwV5TMsG0aZhynYnF1WxWZEmkQ2nSBuM+zhX5fQ=\",Value:\"ewogICJ0aW1lc3RhbXAiIDogMTU5OTg3NTczNDQzNSwKICAicHJvZmlsZUlkIiA6ICI5MWYwNGZlOTBmMzY0M2I1OGYyMGUzMzc1Zjg2ZDM5ZSIsCiAgInByb2ZpbGVOYW1lIiA6ICJTdG9ybVN0b3JteSIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS80NTdhMTEzMjA5ZWZhZDRlODAxYjRhY2I2ZGRjNTY1YWZkMGNkODRlMzNkYzI2OTRjMWNmMGM2YzkyYmMwMThiIgogICAgfQogIH0KfQ==\"}]}},display:{Lore:['{\"text\":\"Skin 4742826c\"}','{\"text\":\"generated on Sep 12, 2020 9:55:35 AM\"}','{\"text\":\"via MineSkin.org\"}','{\"text\":\"https://minesk.in/4742826c6f1148c6ae81d1c6ce24c174\"}'],Name:'{\"text\":\"4742826c\"}'}}"
+      "id": "minecraft:player_head",
+      "count": 1,
+      "components": {
+        "minecraft:profile": {
+          "properties": [
+            {
+              "name": "textures",
+              "value": "ewogICJ0aW1lc3RhbXAiIDogMTU5OTg3NTczNDQzNSwKICAicHJvZmlsZUlkIiA6ICI5MWYwNGZlOTBmMzY0M2I1OGYyMGUzMzc1Zjg2ZDM5ZSIsCiAgInByb2ZpbGVOYW1lIiA6ICJTdG9ybVN0b3JteSIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS80NTdhMTEzMjA5ZWZhZDRlODAxYjRhY2I2ZGRjNTY1YWZkMGNkODRlMzNkYzI2OTRjMWNmMGM2YzkyYmMwMThiIgogICAgfQogIH0KfQ=="
+            }
+          ]
+        }
+      }
     },
     "title": "[支線] 貝洛斯",
     "description": "你向阿爾敦詢問關於雷納的消息，阿爾敦說『雷納的舊友和家人會是關鍵』於是建議你去詢問尋找 村長",

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:player_head",
+      "count": 1,
+      "components": {
+        "minecraft:profile": {
+          "properties": [
+            {
+              "name": "textures",
+              "value": "ewogICJ0aW1lc3RhbXAiIDogMTY4ODU0MDY1MjY2NSwKICAicHJvZmlsZUlkIiA6ICIzMGUyNzFiMDk4ZmI0YzBiYjBhN2YxMDkzYTZkYWRhYiIsCiAgInByb2ZpbGVOYW1lIiA6ICJ0b21kb2c1MTYiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWI5MjE4YmRkMzBkNmE3MmY3OGIwYTQ0MzJiYzQ5N2Q1YjEyYTdhNWQyZGRlYjk1NGZlNzhkOGQ4YWNlMDEzMCIKICAgIH0KICB9Cn0="
+            }
+          ]
+        }
+      }
+    },
+    "title": "恭喜完成時空旅途水星篇系列支線",
+    "description": {
+      "text": "你與阿斯卡擊敗了深淵令使，但是旅途漫長且遙遠，以現在的力量還遠遠無法戰勝深淵，在這之前先準備好去下一個星球吧！",
+      "color": "green",
+      "italic": false
+    },
+    "background": "minecraft:textures/gui/advancements/backgrounds/space.png",
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "task:spaceship/branch_line/rotas/chapter_2/4",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -20,6 +20,6 @@ execute at @e[tag=violent_storm.range] as @e[type=#entity:monsters,distance=..15
 playsound minecraft:voice.wind_sword_skill_1 voice @a ~ ~1 ~ 1 0.75
 playsound minecraft:voice.time_and_space_portal_open voice @a ~ ~1 ~ 1 1
 
-function weapons:type/violent_storm/cam/wind/summon_camera
+#function weapons:type/violent_storm/cam/wind/summon_camera
 
 scoreboard players set @s violent_storm_cd 2
