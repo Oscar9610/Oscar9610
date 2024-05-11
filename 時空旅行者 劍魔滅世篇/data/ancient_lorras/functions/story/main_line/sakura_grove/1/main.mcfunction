@@ -16,9 +16,8 @@ execute if score .main_line ancient_lorras.story matches 26 run tellraw @s[tag=!
 execute if score .main_line ancient_lorras.story matches 27 run tellraw @s[tag=!op] [{"text":"［希爾］或許這件事情跟我們正在收集的魔劍情報有關聯"}]
 execute if score .main_line ancient_lorras.story matches 27 run tellraw @s[tag=!op] [{"text":"［希爾］祭司小姐，關於洞穴的地點在哪？"}]
 execute if score .main_line ancient_lorras.story matches 28 run tellraw @s[tag=!op] [{"text":"［祭司］洞穴位於"},{"text":"櫻花林西方的草原附近","color":"gold"},{"text":" 在去之前或許你們需要一些資源"}]
+execute if score .main_line ancient_lorras.story matches 28 run give @a minecraft:emerald[minecraft:attribute_modifiers={modifiers:[],show_in_tooltip:0b},minecraft:custom_data={money:1b},minecraft:custom_name='{"extra":[{"color":"dark_purple","text":"星輝幣 1 元"}],"italic":false,"text":""}',minecraft:enchantments={levels:{},show_in_tooltip:0b},minecraft:lore=['{"extra":[{"color":"dark_gray","text":"通用金錢"}],"italic":false,"text":""}','{"extra":[{"color":"gray","text":"全宇宙通用的貨幣"}],"italic":false,"text":""}','{"extra":[{"color":"gray","text":"任誰都能理解它的價值與份量"}],"italic":false,"text":""}'],minecraft:unbreakable={show_in_tooltip:0b}] 60
 execute if score .main_line ancient_lorras.story matches 29 run tellraw @s[tag=!op] [{"text":"［祭司］在櫻花林裡你可以購買一些這裡的裝備來提升戰力"}]
-
-
 execute if score .main_line ancient_lorras.story matches 30 run tellraw @a[tag=!op] {"text":"\n【目標】前往位於櫻花林西方草原的洞穴！","color":"gold"}
 
 #循環偵測

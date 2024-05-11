@@ -1,5 +1,4 @@
-reload
-scoreboard players set .world_level global.main 1
+
 scoreboard players set #shooting_contest orantes.story 0
 scoreboard players set #shooting_contest orantes.global.main 0
 scoreboard players set #shooting_contest global.advancements 0
@@ -14,7 +13,6 @@ scoreboard players set .main_line ancient_lorras.global.main 0
 
 xp set @s 0 levels
 xp set @s 0 points
-scoreboard players set .world_level global.main 1
 scoreboard players set .player.highest_level global.main 1
 
 function time_traveler:story/orantes/main_line/rs/3/remove_display_monster

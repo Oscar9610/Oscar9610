@@ -1,6 +1,6 @@
 {
   "values": [
-    "minecart:black_concrete",
+    "minecraft:black_concrete",
     "minecraft:sculk",
     "minecraft:blackstone",
     "minecraft:pink_wool",
@@ -9,6 +9,7 @@
     "minecraft:water_bucket",
     "minecraft:grass_block",
     "minecraft:gilded_blackstone",
+    "minecraft:moss_block",
 
     "minecraft:iron_ingot",
     "minecraft:copper_ingot",

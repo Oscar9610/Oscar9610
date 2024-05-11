@@ -5,34 +5,34 @@
     "equipment": {
       "head": {
         "items": [
-          "minecraft:diamond_helmet"
+          "minecraft:leather_helmet"
         ],
         "predicates": {
-          "minecraft:custom_data": "{health:1b}"
+          "minecraft:custom_data": "{strength:1b}"
         }
       },
       "chest": {
         "items": [
-          "minecraft:diamond_chestplate"
+          "minecraft:leather_chestplate"
         ],
         "predicates": {
-          "minecraft:custom_data": "{health:1b}"
+          "minecraft:custom_data": "{strength:1b}"
         }
       },
       "legs": {
         "items": [
-          "minecraft:diamond_leggings"
+          "minecraft:leather_leggings"
         ],
         "predicates": {
-          "minecraft:custom_data": "{health:1b}"
+          "minecraft:custom_data": "{strength:1b}"
         }
       },
       "feet": {
         "items": [
-          "minecraft:diamond_boots"
+          "minecraft:leather_boots"
         ],
         "predicates": {
-          "minecraft:custom_data": "{health:1b}"
+          "minecraft:custom_data": "{strength:1b}"
         }
       }
     }

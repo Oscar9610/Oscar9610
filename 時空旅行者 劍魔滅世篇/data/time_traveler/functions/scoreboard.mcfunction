@@ -85,7 +85,7 @@ scoreboard players set #math level_up_strength 5
 
 ##世界等級引響怪物最大血量(怪物最初血量 *= 世界等級)
 scoreboard players set @a rightclick 0
-scoreboard players set .world_level global.main 1
+#scoreboard players set .world_level global.main 1
 
 ##設置伏聆破壞者(sculk_saboteur) 的最初血量
 scoreboard players set .sculk_saboteur global.monsters.health 20
