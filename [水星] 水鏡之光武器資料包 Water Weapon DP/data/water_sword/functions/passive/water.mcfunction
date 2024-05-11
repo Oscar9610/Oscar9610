@@ -1,6 +1,6 @@
 
 # dmg
-tag @e[type=#time_traveler:monsters,distance=..16,limit=1,sort=random] add dmger
+tag @e[type=#time_traveler:monsters,distance=..8,limit=1,sort=random] add dmger
 scoreboard players operation @s atk = .water_sword_demon atk
 function time_traveler:dmg_formula/cooldown_damage/calculate
 
