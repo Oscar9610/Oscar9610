@@ -1,0 +1,9 @@
+{
+  "asset_name": "strength_armors_material",
+  "description": {
+    "translate": "trim_material.minecraft.moss_block",
+    "color": "#9A5CC6"
+  },
+  "ingredient": "minecraft:moss_block",
+  "item_model_index": 0.01
+}
