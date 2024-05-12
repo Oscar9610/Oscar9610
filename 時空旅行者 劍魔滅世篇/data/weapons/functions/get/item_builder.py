@@ -15,7 +15,7 @@ attribute = []
 custom_name = ['5', '異界塵星','#F4E75D']
 info  = ['鐮刀', '異界', '雷']
 story = ['從異次元時空穿越到這個宇宙中，','星塵的光芒照耀著整個宇宙']
-item_data     = {'real_item': 'iron_sword', 'custom_model_data': 0, 'custom_data': '{dust_star:1b,thunder:1b,weight:1b}'}
+item_data     = {'real_item': 'iron_sword', 'custom_model_data': 0, 'custom_data': '{dust_star:1b,thunder:1b,weight:1b}','max_damage':300}
 main_skill    = {'is_skill': True, 'cd': 45, 'name': '星塵光照 ● 時差晨轉', 'info': ['劃破空間，在原地製造一個時空傳送門，當接下來的10秒內，','每次攻擊都會給怪物造成&=200%攻擊傷害&-']}
 passive_skill = {'is_skill': False, 'cd': 0, 'name': '', 'info': ['']}
 
@@ -77,7 +77,9 @@ def attribute_info(text):
 def attribute_value(text):
     temp = []
     for i in text:
-        i = '{type:\"'+i["attribute_name"]+'\",name:\"_\",amount:'+str(i["value"])+',operation:\"add_value\",uuid:[I;0,0,0,0]}'
+        operation = "add_value"
+        if "%" in i["show_value"]: operation = "add_multiplied_base"
+        i = '{type:\"'+i["attribute_name"]+'\",name:\"_\",amount:'+str(i["value"])+',operation:\"'+operation+'\",uuid:[I;0,0,0,0]}'
         temp.append(i)
     return ','.join(temp)
 
@@ -87,11 +89,14 @@ else: main_skill["cd"] = ""
 if int(passive_skill["cd"]) >= 1: passive_skill["cd"] = ',{\"text\":\"⌛冷卻時間 '+str(passive_skill["cd"])+'s\",\"color\":\"#6E6E6E\"}'
 else: passive_skill["cd"] = ""
 
+if int(item_data["max_damage"]) != -1: item_data["max_damage"] = 'max_damage='+str(item_data["max_damage"])+',damage=0'
+else: item_data["max_damage"] = "unbreakable={show_in_tooltip:0b}"
+
 # ----- generator ----- #
 
 with open(__file__.replace("item_builder.py","#temp.mcfunction"),mode="w+",encoding="utf-8") as f:
     f.write(f'give @p minecraft:{item_data["real_item"]}[custom_name=\'[{{\"text\":\"\",\"italic\":false,\"bold\":true}},{{\"text\":\"{star}\",\"color\":\"{star_colour(int(custom_name[0]))[0]}\"}},{{\"text\":\"{custom_name[1]}\",\"color\":\"{star_colour(int(custom_name[0]))[1]}\"}}]\',lore=[\'[{{\"text\":\"\",\"italic\":false}},{{\"text\":\"{info[0]} / {info[1]} / \",\"color\":\"dark_gray\"}},{{\"text\":\"{info_icon(info[2])}\",\"color\":\"white\"}},{{\"text\":\"{info[2]}\",\"color\":\"dark_gray\"}}]\',\'[{{\"text\":\"{story}\",\"italic\":false,\"color\":\"blue\"}}]\'')
     if main_skill["is_skill"] == True : f.write(f',\'[{{\"text\":\"\",\"italic\":false}},{{\"text\":\"✨ ——— \",\"color\":\"gray\"}},{{\"text\":\"主動技能\",\"color\":\"gray\",\"bold\":true}},{{\"text\":\" ——— ✨\",\"color\":\"gray\"}}]\',\'[{{\"text\":\"\",\"italic\":false}},{{\"text\":\"【{main_skill["name"]}】 \",\"color\":\"dark_aqua\"}}{main_skill["cd"]}]\'{skill_info(main_skill["info"])},\'[{{\"text\":\"\"}}]\'')
     if passive_skill["is_skill"] == True : f.write(f',\'[{{\"text\":\"\",\"italic\":false}},{{\"text\":\"✨ ——— \",\"color\":\"gray\"}},{{\"text\":\"被動技能\",\"color\":\"gray\",\"bold\":true}},{{\"text\":\" ——— ✨\",\"color\":\"gray\"}}]\',\'[{{\"text\":\"\",\"italic\":false}},{{\"text\":\"【{passive_skill["name"]}】 \",\"color\":\"dark_aqua\"}}{passive_skill["cd"]}]\'{skill_info(passive_skill["info"])},\'[{{\"text\":\"\"}}]\'')
-    f.write(f'{attribute_info(attribute)}],attribute_modifiers={{modifiers:[{attribute_value(attribute)}],show_in_tooltip:false}},food={{nutrition:0,saturation:0.0,eat_seconds:1000000,can_always_eat:true}},max_stack_size=1,max_damage=300,damage=0,custom_model_data={str(item_data["custom_model_data"])},custom_data={str(item_data["custom_data"])}] 1')
+    f.write(f'{attribute_info(attribute)}],attribute_modifiers={{modifiers:[{attribute_value(attribute)}],show_in_tooltip:false}},food={{nutrition:0,saturation:0.0,eat_seconds:1000000,can_always_eat:true}},max_stack_size=1,max_damage={str(item_data["max_damage"])},damage=0,custom_model_data={str(item_data["custom_model_data"])},custom_data={str(item_data["custom_data"])}] 1')
     f.write(backup)
