@@ -145,7 +145,7 @@ scoreboard players set .the_night atk 500
 scoreboard players set .the_night_passive atk 200
 scoreboard players set .otherworld_dust_star atk 200
 scoreboard players set .otherworld_dust_star_ca atk 50
-scoreboard players set .violent_storm atk 400
+scoreboard players set .violent_storm atk 350
 
 #百分比倍率微調
 scoreboard players set 100 atk 100

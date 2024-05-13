@@ -12,16 +12,15 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-custom_name = ['3', '漆黑騎士的長靴', '#F4E75D']
-info  = ['鞋子', '漆黑騎士']
-story = ['漆黑騎士的長靴，遭受王族的背叛，遊走於深淵！']
-item_data     = {'real_item': 'netherite_boots', 'trim': {'material': 'sculk_material', 'pattern': 'sculk_trim'}, 'rgb': -1, 'custom_data': '{resistance:1b}', 'max_damage': -1}
-series_skill  = {'is_skill': True, 'cd': 0, 'name': '漆黑騎士！碎甲重啟！', 'info': ['穿上2件系列套裝，可永久獲得&=抗性ɪɪ&+', '穿上4件系列套裝，擊殺敵人時可獲得&=吸收ɪɪ&+，持續10秒']}
+custom_name = ['3', '狂暴獵人靴子', '#F4E75D']
+info  = ['鞋子', '狂暴獵人']
+story = ['狂戰士的靴子，象徵著族裡的榮耀']
+item_data     = {'real_item': 'diamond_boots', 'trim': {'material': 'copper', 'pattern': 'spire'}, 'rgb': -1, 'custom_data': '{strength:1b}', 'max_damage': -1}
+series_skill  = {'is_skill': True, 'cd': 0, 'name': '狂暴', 'info': ['穿上4件系列套裝，可永久獲得&=力量ɪ&+']}
 passive_skill = {'is_skill': False, 'cd': 0, 'name': '', 'info': ['']}
 
-attribute.append({'name': '盔甲值', 'show_value': '2', 'value': 2.5, 'attribute_name': 'generic.armor'})
-attribute.append({'name': '抗擊退', 'show_value': '10%', 'value': 0.1, 'attribute_name': 'generic.knockback_resistance'})
-attribute.append({'name': '&-最大血量', 'show_value': '-0.5', 'value': -0.5, 'attribute_name': 'generic.max_health'})
+attribute.append({'name': '移動速度', 'show_value': '15%', 'value': 0.15, 'attribute_name': 'generic.knockback_resistance'})
+attribute.append({'name': '攻擊力', 'show_value': '1', 'value': 1, 'attribute_name': 'generic.attack_damage'})
 
 # ----- init ----- #
 
