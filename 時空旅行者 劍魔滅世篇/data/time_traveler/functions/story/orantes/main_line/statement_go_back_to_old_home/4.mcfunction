@@ -10,10 +10,12 @@ execute positioned -189 59 -7 in game_map:orantes if score .main_line orantes.st
 execute positioned -189 59 -7 in game_map:orantes if score .main_line orantes.story matches 57 run tellraw @a[distance=..45] {"text":"［希爾］謝謝陳述"}
 execute positioned -189 59 -7 in game_map:orantes if score .main_line orantes.story matches 58 run tellraw @a[distance=..45] {"text":"［希爾］陳述你說這裡有奧蘭蒂斯城市可以帶我們去嗎?"}
 execute positioned -189 59 -7 in game_map:orantes if score .main_line orantes.story matches 59 run tellraw @a[distance=..45] {"text":"［陳述］好的，我去繼續出發去奧蘭蒂斯城市吧"}
-execute if score .main_line orantes.story matches 59 run kill @e[tag=statement_2]
+execute if score .main_line orantes.story matches 59 in game_map:orantes run forceload add -176 1 -197 -16
 execute positioned -189 59 -7 in game_map:orantes if score .main_line orantes.story matches 59 as @a[distance=..45] run function time_traveler:story/orantes/main_line/statement_go_back_to_old_home/unable_to_move
 execute positioned -189 59 -7 in game_map:orantes if score .main_line orantes.story matches 59 as @a[distance=..45] run function time_traveler:players/transitions
 execute positioned -189 59 -7 in game_map:orantes if score .main_line orantes.story matches 60 as @a[distance=..45] run function time_traveler:story/orantes/main_line/statement_go_back_to_old_home/end
+execute if score .main_line orantes.story matches 60 in game_map:orantes run kill @e[tag=statement_2]
+execute if score .main_line orantes.story matches 60 in game_map:orantes run forceload remove -176 1 -197 -16
 execute if score .main_line orantes.story matches 61 run tellraw @a[tag=statement_go_back_to_old_home_end] {"text":"［陳述］這裡就是奧蘭蒂斯城市了"}
 execute if score .main_line orantes.story matches 62 run tellraw @a[tag=statement_go_back_to_old_home_end] {"text":"［陳述］我們過去吧！"}
 execute if score .main_line orantes.story matches 63 run tellraw @a[tag=statement_go_back_to_old_home_end] {"text":"【目標】回去找陳述爺爺！","color":"gold"}

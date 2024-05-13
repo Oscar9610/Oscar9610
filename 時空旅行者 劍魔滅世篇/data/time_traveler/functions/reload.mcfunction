@@ -27,6 +27,7 @@ execute in game_map:orantes run fill -74 73 14 -70 78 14 minecraft:air replace n
 kill @e[tag=ml.sgp]
 kill @e[tag=rotas.2.2]
 kill @e[tag=hill.rotas.chapter_2]
+kill @e[tag=rs.statement]
 
 #冒險 or 生存
 execute as @a[gamemode=!creative,gamemode=!spectator] run function time_traveler:tp/orantes/all_reset

@@ -20,15 +20,16 @@ execute if score .main_line orantes.story matches 16 run tellraw @a[distance=..3
 
 #過場淡出屏幕動畫
 #cut scene fade screen animation
-execute if score .main_line orantes.story matches 16 run function time_traveler:players/transitions
+execute if score .main_line orantes.story matches 16 run title @a[distance=..30] times 40 40 20
+execute if score .main_line orantes.story matches 16 run title @a[distance=..30] title {"text":"\uE002"}
 
 #展示用殭屍刪除
 #Show delete with zombie
-execute if score .main_line orantes.story matches 17 run function time_traveler:story/orantes/main_line/rs/3/remove_display_monster
+execute if score .main_line orantes.story matches 17 in game_map:orantes run kill @e[tag=rescue_statement.display]
 
 #開啟特定的怪物波次後台
 #Open specific monster wave background
-execute if score .main_line orantes.story matches 17 run tp @a[distance=..20] -64 63 5 -90 0
+execute if score .main_line orantes.story matches 17 run tp @a[distance=..30] -64 63 5 -90 0
 execute if score .main_line orantes.story matches 17 run scoreboard players set .main_line orantes.global.main 5
 execute if score .main_line orantes.story matches 17 run scoreboard players set #orantes_1.mw.rt orantes.global.main 1
 

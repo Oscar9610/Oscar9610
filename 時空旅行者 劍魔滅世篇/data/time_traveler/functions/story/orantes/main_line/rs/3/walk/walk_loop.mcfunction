@@ -19,5 +19,5 @@ kill @e[tag=walk,tag=statement,scores={duration=200..}]
 execute as @e[tag=walk,tag=statement,tag=automated_walking] at @s positioned -180 61 -10 if entity @s[distance=..1] run schedule function time_traveler:story/orantes/main_line/rs/3/walk/remove_walk_loop 2t
 execute as @e[tag=walk,tag=statement,tag=automated_walking] at @s positioned -180 61 -10 if entity @s[distance=..1] run kill @s
 
-
+kill @e[tag=rs.statement]
 schedule function time_traveler:story/orantes/main_line/rs/3/walk/walk_loop 1t

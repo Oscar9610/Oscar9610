@@ -4,7 +4,10 @@ execute if score .main_line orantes.story matches 30 run tellraw @a[tag=statemen
 execute if score .main_line orantes.story matches 31 run tellraw @a[tag=statement_walk] {"text":"［陳述］等等我突然想到我忘記拿個東西"}
 execute if score .main_line orantes.story matches 32 run tellraw @a[tag=statement_walk] {"text":"（陳述急忙的跑掉了）","color":"red"}
 execute if score .main_line orantes.story matches 33 run tellraw @a[tag=statement_walk] {"text":"［希爾］恩... (ﾒﾟДﾟ)ﾒ 氣死我了！陳述怎麼突然就跑掉了！"}
+execute if score .main_line orantes.story matches 33 in game_map:orantes run forceload add -54 -14 -191 30
 execute if score .main_line orantes.story matches 34 run scoreboard players set .main_line orantes.global.main 8
+execute if score .main_line orantes.story matches 34 in game_map:orantes run kill @e[tag=statement.walk]
+execute if score .main_line orantes.story matches 34 in game_map:orantes run forceload remove -54 -14 -191 30
 execute if score .main_line orantes.story matches 34 run function time_traveler:story/orantes/main_line/rs/task_end_text
 execute if score .main_line orantes.story matches 34 run function time_traveler:story/orantes/main_line/statement_go_back_to_old_home/loop
 execute if score .main_line orantes.story matches 34 run function time_traveler:story/orantes/main_line/rs/3/end

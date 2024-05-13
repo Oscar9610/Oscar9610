@@ -16,6 +16,7 @@ function time_traveler:monster_wave/orantes/1/result/wave_reset
 
 # center
 kill @e[type=marker,tag=orantes_main_battle,limit=1]
+kill @e[tag=rescue_statement.display]
 summon marker ~ ~ ~ {Tags:["orantes_main_battle"]}
 
 # player
