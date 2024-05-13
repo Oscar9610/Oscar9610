@@ -12,15 +12,15 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-custom_name = ['5', '異界塵星','#F4E75D']
-info  = ['鐮刀', '異界', '雷']
-story = ['從異次元時空穿越到這個宇宙中，','星塵的光芒照耀著整個宇宙']
-item_data     = {'real_item': 'iron_sword', 'custom_model_data': 0, 'custom_data': '{dust_star:1b,thunder:1b,weight:1b}','max_damage':300}
-main_skill    = {'is_skill': True, 'cd': 45, 'name': '星塵光照 ● 時差晨轉', 'info': ['劃破空間，在原地製造一個時空傳送門，當接下來的10秒內，','每次攻擊都會給怪物造成&=200%攻擊傷害&-']}
-passive_skill = {'is_skill': False, 'cd': 0, 'name': '', 'info': ['']}
+custom_name = ['4', '鋒利雙股劍壹', '#F4E75D']
+info  = ['雙刀', '雙股劍', '物理']
+story = ['外型對稱，手感良好的雙股劍', '若是雙持，能發出最好的效果']
+item_data     = {'real_item': 'iron_sword', 'custom_model_data': 23, 'custom_data': '{physical:1b,double_sword:1,weight:1b}', 'max_damage': 247}
+main_skill    = {'is_skill': True, 'cd': 40, 'name': '左右橫跳的雙鋒', 'info': ['向四周發射刀鋒，對周圍敵人造成&=300%攻擊傷害&-，同時進入「劈砍狀態」','「劈砍狀態」時，主、副手同時持有此雙刀且切換副手武器時，','會向前方劈砍，對前方敵人造成&=60%攻擊傷害&-，狀態持續10秒']}
+passive_skill = {'is_skill': True, 'cd': 0, 'name': '補刀', 'info': ['擊殺敵人時，對最近的敵人造成&=100%功擊傷害&-']}
 
-attribute.append({'name': '攻擊力', 'show_value': '9', 'value': 9, 'attribute_name': 'generic.attack_damage'})
-attribute.append({'name': '攻擊速度', 'show_value': '1.5', 'value': -2.5, 'attribute_name': 'generic.attack_speed'})
+attribute.append({'name': '攻擊力', 'show_value': '6.5', 'value': 6.5, 'attribute_name': 'generic.attack_damage', 'slot': 'mainhand'})
+attribute.append({'name': '攻擊速度', 'show_value': '1.6', 'value': -2.4, 'attribute_name': 'generic.attack_speed', 'slot': 'mainhand'})
 
 # ----- init ----- #
 
@@ -40,7 +40,7 @@ def info_icon(element):
     for i in element:
         if   i == "風"  :  temp.append("\\\\uE003")
         elif i == "火"  :  temp.append("\\\\uE011")
-        elif i == "物理":  temp.append("\\\\uE012")
+        elif i == "物"  :  temp.append("\\\\uE012")
         elif i == "水"  :  temp.append("\\\\uE013")
         elif i == "草"  :  temp.append("\\\\uE014")
         elif i == "雷"  :  temp.append("\\\\uE015")
@@ -77,9 +77,14 @@ def attribute_info(text):
 def attribute_value(text):
     temp = []
     for i in text:
+        if str(i["slot"]) == "mainhand": temp2 = 0
+        elif str(i["slot"]) == "offhand": temp2 = 1
+        else : 
+            print("[Debug] attribute slot 有問題")
+            temp2 = 9487
         operation = "add_value"
         if "%" in i["show_value"]: operation = "add_multiplied_base"
-        i = '{type:\"'+i["attribute_name"]+'\",name:\"_\",amount:'+str(i["value"])+',operation:\"'+operation+'\",uuid:[I;0,0,0,0]}'
+        i = '{type:\"'+i["attribute_name"]+'\",name:\"_\",amount:'+str(i["value"])+',slot:"'+str(i["slot"])+'",operation:\"'+operation+'\",uuid:[I;0,0,0,'+str(temp2)+']}'
         temp.append(i)
     return ','.join(temp)
 
@@ -89,7 +94,7 @@ else: main_skill["cd"] = ""
 if int(passive_skill["cd"]) >= 1: passive_skill["cd"] = ',{\"text\":\"⌛冷卻時間 '+str(passive_skill["cd"])+'s\",\"color\":\"#6E6E6E\"}'
 else: passive_skill["cd"] = ""
 
-if int(item_data["max_damage"]) != -1: item_data["max_damage"] = 'max_damage='+str(item_data["max_damage"])+',damage=0'
+if int(item_data["max_damage"]) != -1: item_data["max_damage"] = ',max_damage='+str(item_data["max_damage"])+',damage=0'
 else: item_data["max_damage"] = "unbreakable={show_in_tooltip:0b}"
 
 # ----- generator ----- #
@@ -98,5 +103,5 @@ with open(__file__.replace("item_builder.py","#temp.mcfunction"),mode="w+",encod
     f.write(f'give @p minecraft:{item_data["real_item"]}[custom_name=\'[{{\"text\":\"\",\"italic\":false,\"bold\":true}},{{\"text\":\"{star}\",\"color\":\"{star_colour(int(custom_name[0]))[0]}\"}},{{\"text\":\"{custom_name[1]}\",\"color\":\"{star_colour(int(custom_name[0]))[1]}\"}}]\',lore=[\'[{{\"text\":\"\",\"italic\":false}},{{\"text\":\"{info[0]} / {info[1]} / \",\"color\":\"dark_gray\"}},{{\"text\":\"{info_icon(info[2])}\",\"color\":\"white\"}},{{\"text\":\"{info[2]}\",\"color\":\"dark_gray\"}}]\',\'[{{\"text\":\"{story}\",\"italic\":false,\"color\":\"blue\"}}]\'')
     if main_skill["is_skill"] == True : f.write(f',\'[{{\"text\":\"\",\"italic\":false}},{{\"text\":\"✨ ——— \",\"color\":\"gray\"}},{{\"text\":\"主動技能\",\"color\":\"gray\",\"bold\":true}},{{\"text\":\" ——— ✨\",\"color\":\"gray\"}}]\',\'[{{\"text\":\"\",\"italic\":false}},{{\"text\":\"【{main_skill["name"]}】 \",\"color\":\"dark_aqua\"}}{main_skill["cd"]}]\'{skill_info(main_skill["info"])},\'[{{\"text\":\"\"}}]\'')
     if passive_skill["is_skill"] == True : f.write(f',\'[{{\"text\":\"\",\"italic\":false}},{{\"text\":\"✨ ——— \",\"color\":\"gray\"}},{{\"text\":\"被動技能\",\"color\":\"gray\",\"bold\":true}},{{\"text\":\" ——— ✨\",\"color\":\"gray\"}}]\',\'[{{\"text\":\"\",\"italic\":false}},{{\"text\":\"【{passive_skill["name"]}】 \",\"color\":\"dark_aqua\"}}{passive_skill["cd"]}]\'{skill_info(passive_skill["info"])},\'[{{\"text\":\"\"}}]\'')
-    f.write(f'{attribute_info(attribute)}],attribute_modifiers={{modifiers:[{attribute_value(attribute)}],show_in_tooltip:false}},food={{nutrition:0,saturation:0.0,eat_seconds:1000000,can_always_eat:true}},max_stack_size=1,max_damage={str(item_data["max_damage"])},damage=0,custom_model_data={str(item_data["custom_model_data"])},custom_data={str(item_data["custom_data"])}] 1')
+    f.write(f'{attribute_info(attribute)}],attribute_modifiers={{modifiers:[{attribute_value(attribute)}],show_in_tooltip:false}},food={{nutrition:0,saturation:0.0,eat_seconds:1000000,can_always_eat:true}},max_stack_size=1{str(item_data["max_damage"])},custom_model_data={str(item_data["custom_model_data"])},custom_data={str(item_data["custom_data"])}] 1')
     f.write(backup)

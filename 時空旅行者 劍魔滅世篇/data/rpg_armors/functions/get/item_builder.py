@@ -12,15 +12,16 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-custom_name = ['3', '漆黑騎士的頭盔','#F4E75D']
-info  = ['頭冠', '漆黑騎士']
-story = ['漆黑騎士的頭盔，遭受王族的背叛，遊走於深淵！']
-item_data     = {'real_item': 'netherite_helmet', 'trim':{'material':'sculk_material','pattern':'sculk_trim'}, 'rgb':-1, 'custom_data': '{resistance:1b}','max_damage':-1}
-series_skill  = {'is_skill': True, 'cd': 0, 'name': '漆黑騎士！碎甲重啟！', 'info': ['穿上2件系列套裝，可永久獲得&=抗性ɪɪ&+','穿上4件系列套裝，擊殺敵人時可獲得&=吸收ɪɪ&+，持續10秒。']}
+custom_name = ['3', '漆黑騎士的長靴', '#F4E75D']
+info  = ['鞋子', '漆黑騎士']
+story = ['漆黑騎士的長靴，遭受王族的背叛，遊走於深淵！']
+item_data     = {'real_item': 'netherite_boots', 'trim': {'material': 'sculk_material', 'pattern': 'sculk_trim'}, 'rgb': -1, 'custom_data': '{resistance:1b}', 'max_damage': -1}
+series_skill  = {'is_skill': True, 'cd': 0, 'name': '漆黑騎士！碎甲重啟！', 'info': ['穿上2件系列套裝，可永久獲得&=抗性ɪɪ&+', '穿上4件系列套裝，擊殺敵人時可獲得&=吸收ɪɪ&+，持續10秒']}
 passive_skill = {'is_skill': False, 'cd': 0, 'name': '', 'info': ['']}
 
-attribute.append({'name': '盔甲值', 'show_value': '3', 'value': 3, 'attribute_name': 'generic.armor'})
-attribute.append({'name': '&-最大血量', 'show_value': '-20%', 'value': -0.2, 'attribute_name': 'generic.max_health'})
+attribute.append({'name': '盔甲值', 'show_value': '2', 'value': 2.5, 'attribute_name': 'generic.armor'})
+attribute.append({'name': '抗擊退', 'show_value': '10%', 'value': 0.1, 'attribute_name': 'generic.knockback_resistance'})
+attribute.append({'name': '&-最大血量', 'show_value': '-0.5', 'value': -0.5, 'attribute_name': 'generic.max_health'})
 
 # ----- init ----- #
 
@@ -68,13 +69,13 @@ def attribute_value(text):
     temp = []
     for i in text:
         def slot(item):            
-            if item[-11:] == '_chestplate': return "chest"
-            if item[-9:] == '_leggings': return "legs"
-            if item[-6:] == '_boots': return "feet"
-            else : return "head"
+            if item[-11:] == '_chestplate': return ["chest",5]
+            if item[-9:] == '_leggings': return ["legs",4]
+            if item[-6:] == '_boots': return ["feet",3]
+            else : return ["head",2]
         operation = "add_value"
         if "%" in i["show_value"]: operation = "add_multiplied_base"
-        i = '{type:\"'+i["attribute_name"]+'\",name:\"_\",amount:'+str(i["value"])+',operation:\"'+operation+'\",slot:\"'+slot(item_data["real_item"])+'\",uuid:[I;0,0,0,0]}'
+        i = '{type:\"'+i["attribute_name"]+'\",name:\"_\",amount:'+str(i["value"])+',operation:\"'+operation+'\",slot:\"'+slot(item_data["real_item"])[0]+'\",uuid:[I;0,0,0,'+str(slot(item_data["real_item"])[1])+']}'
         temp.append(i)
     return ','.join(temp)
 

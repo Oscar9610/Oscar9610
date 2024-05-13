@@ -71,7 +71,7 @@ scoreboard objectives add double_sword_switch dummy "鋒利雙股劍交換判定
 scoreboard objectives add double_sword_switch_cd dummy "鋒利雙股劍交換冷卻"
 
 scoreboard players set @a double_sword_cd 0
-scoreboard players set @a double_sword_max_cd 60
+scoreboard players set @a double_sword_max_cd 40
 scoreboard players set @a double_sword_swtich 1
 
 #===================================================================
@@ -88,7 +88,7 @@ scoreboard objectives add double_sword_fire.effect.cd dummy "熾熱雙股劍被�
 
 scoreboard players set @a double_sword_fire.effect.cd 0
 scoreboard players set @a double_sword_fire_cd 0
-scoreboard players set @a double_sword_fire_max_cd 60
+scoreboard players set @a double_sword_fire_max_cd 40
 scoreboard players set @a double_sword_fire_swtich 1
 scoreboard players set global double_sword_fire_dot 3
 
@@ -160,7 +160,7 @@ scoreboard objectives add double_sword_water_switch_cd dummy "清涼雙股劍交
 scoreboard objectives add double_sword_water_effect_cd dummy "清涼雙股劍被動冷卻"
 
 scoreboard players set @a double_sword_water_cd 0
-scoreboard players set @a double_sword_water_max_cd 60
+scoreboard players set @a double_sword_water_max_cd 40
 scoreboard players set @a double_sword_water_swtich 1
 scoreboard players set @a double_sword_water_effect_cd 0
 
