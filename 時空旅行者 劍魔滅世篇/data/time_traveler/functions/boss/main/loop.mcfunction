@@ -1,7 +1,6 @@
 function time_traveler:boss/shadow/tag_loop
 function time_traveler:boss/potion/tag_loop
 function time_traveler:boss/storm_keeper/tag_loop
-function time_traveler:boss/martha/tag_loop
 function rotas:event/5/shadow/tag_loop
 function rotas:boss/infinite_abyss/tag_loop
 
@@ -30,7 +29,7 @@ execute as @a at @s run function time_traveler:boss/main/world_level
 
 #怪物血量 * 世界等級 = 最終血量
 
-scoreboard players operation #current_value global.boss.health = .shadow global.boss.health
+scoreboard players operation #current_value global.boss.health = .boss global.boss.health
 scoreboard players operation #current_value global.boss.health *= .world_level global.main
 execute store result storage minecraft:boss.health temp int 1 run scoreboard players get #current_value global.boss.health
 

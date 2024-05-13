@@ -9,10 +9,7 @@ scoreboard objectives add automations.boss.count dummy "區域內多少隻BOSS"
 #=====================================================================================
 
 ##display 中文翻譯
-scoreboard players display name .shadow global.monsters.health "魅影BOSS"
-scoreboard players display name .potion global.monsters.health "毒霧BOSS"
-scoreboard players display name .storm_keeper global.monsters.health "毒霧BOSS"
-scoreboard players display name .atar global.monsters.health "水鏡之光BOSS"
+scoreboard players display name .boss global.monsters.health "BOSS血量"
 #=====================================================================================
 
 ##設值
@@ -23,10 +20,7 @@ scoreboard players set .world_level_ratio global.main 10
 ##世界等級引響BOSS最大血量(BOSS最初血量 *= 世界等級)
 
 ##設置伏聆BOSS 的最初血量
-scoreboard players set .shadow global.boss.health 300
-scoreboard players set .potion global.boss.health 300
-scoreboard players set .storm_keeper global.boss.health 300
-scoreboard players set .atar global.boss.health 300
+scoreboard players set .boss global.boss.health 200
 ##風暴守護者既能釋放迴圈計時
 
 scoreboard players set skill1 storm_keeper_time 0

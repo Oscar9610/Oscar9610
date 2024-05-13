@@ -1,6 +1,13 @@
 # load
 function weapons:load
 
+team add main_line "主線劇情顏色"
+team modify main_line color white
+
+
+#設置玩家重生點為太空站內部
+execute in game_map:spaceship_interior run spawnpoint @a 0 56 0
+execute in game_map:spaceship_interior run setworldspawn 0 56 0
 
 # scoreboard
 function time_traveler:scoreboard
@@ -56,7 +63,6 @@ schedule function time_traveler:rpg_items/get/gift_pack/double_sword_fire 1t
 schedule function time_traveler:entity_fx/loop 1t
 schedule function time_traveler:tp/map_lobby/loop 1t
 schedule function time_traveler:boss/main/loop 1t
-schedule function players:update_pos 1t
 execute as @a run function players:attribute
 
 #修復【主線】陳述不見了？！ 顯示問題Bug (觸發Bug的時候陳述盔甲座不會刪掉，基於懶因此直接用這行刪除)

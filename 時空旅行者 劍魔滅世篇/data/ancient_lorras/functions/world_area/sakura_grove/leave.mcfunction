@@ -1,0 +1,1 @@
+scoreboard players set sakura_grove p1.world_area 0

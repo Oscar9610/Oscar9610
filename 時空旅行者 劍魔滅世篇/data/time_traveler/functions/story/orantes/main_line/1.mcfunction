@@ -5,10 +5,15 @@
 #sim  = 【支線】陳述不見了？！
 
 execute if score .main_line orantes.story matches 1 run schedule function time_traveler:story/orantes/main_line/loop 1t
-execute if score .main_line orantes.story matches 1 run tellraw @a[tag=!op] {"text":"［希爾］聽說這裡就是魔劍所在的星球，我們去附近打聽一下魔劍的事情"}
-execute if score .main_line orantes.story matches 2 run tellraw @a[tag=!op] {"text":"［希爾］這個星球有著繁榮且陽光的城市"}
-execute if score .main_line orantes.story matches 3 run tellraw @a[tag=!op] {"text":"［希爾］我們過去看看！"}
-execute if score .main_line orantes.story matches 4 run tellraw @a[tag=!op] {"text":"【目標】前往奧蘭蒂斯城市！","color":"gold"}
+execute if score .main_line orantes.story matches 1 run tellraw @a {"text":"［希爾］聽說這裡就是魔劍所在的星球，我們去附近打聽一下魔劍的事情"}
+execute if score .main_line orantes.story matches 2 run tellraw @a {"text":"［希爾］這個星球有著繁榮且陽光的城市"}
+execute if score .main_line orantes.story matches 3 run tellraw @a {"text":"［希爾］我們過去看看！"}
+execute if score .main_line orantes.story matches 4 run tellraw @a {"text":"【目標】前往奧蘭蒂斯城市！","color":"gold"}
+execute if score .main_line orantes.story matches 4 run tellraw @a [{"text":"\n【劇情位置】在","color":"gray","bold":true},{"text":" 奧蘭蒂斯城","color":"dark_green"}]
+execute if score .main_line orantes.story matches 4 run tellraw @a [{"text":"【區分顏色】","color":"gray","bold":true},{"text":" 白色","color":"white"}]
+execute if score .main_line orantes.story matches 4 run tellraw @a [{"selector":"@a[distance=..16]","color":"green"},{"text":" 剛剛開啟了【主線】水星 - 奧蘭蒂斯","color":"white"}]
+execute if score .main_line orantes.story matches 4 run tellraw @a [{"text":"按 ","color":"gray"},{"keybind":"key.inventory","color":"green","bold":true},{"text":" 鍵即可開啟進度顯示\n","color":"gray"}]
+
 execute if score .main_line orantes.story matches 4 run scoreboard players set #main_line global.advancements 1
 execute if score .main_line orantes.story matches 4 in game_map:orantes run function time_traveler:story/orantes/main_line/sim/summon
 execute if score .main_line orantes.story matches 4 run scoreboard players set .main_line orantes.global.main 2
