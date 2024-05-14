@@ -10,6 +10,7 @@
 #=====================================================================================
 
 ##記分板
+scoreboard objectives add id dummy
 scoreboard objectives add global.main dummy "主要全局"
 scoreboard objectives add bool.main dummy "布林值全局"
 scoreboard objectives add global.advancements dummy "全局 - 任務進度顯示"
@@ -31,10 +32,7 @@ scoreboard objectives add health health "玩家血量"
 scoreboard objectives add attack dummy "玩家攻擊力"
 scoreboard objectives add level_up_strength dummy "玩家升級後提升的攻擊力"
 scoreboard objectives add player_count dummy "玩家數量"
-scoreboard objectives add p1.main dummy "P1的全局"
-scoreboard objectives add p2.main dummy "P2的全局"
-scoreboard objectives add p3.main dummy "P3的全局"
-scoreboard objectives add p4.main dummy "P4的全局"
+scoreboard objectives add money dummy "就是他madre的dinero"
 scoreboard objectives add player_death deathCount "玩家死亡偵測"
 scoreboard objectives add player.out_of_combat_detection dummy "脫離戰場"
 scoreboard objectives add .rdm dummy "隨機數"

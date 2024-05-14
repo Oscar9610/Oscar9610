@@ -52,7 +52,6 @@ scoreboard players remove @a[scores={gravity_axe_cd=1..}] gravity_axe_cd 1
 scoreboard players remove @a[scores={wind_sword_cd=1..}] wind_sword_cd 1
 scoreboard players remove @a[scores={double_sword_cd=1..}] double_sword_cd 1
 scoreboard players remove @a[scores={double_sword_fire_cd=1..}] double_sword_fire_cd 1
-scoreboard players remove @a[scores={double_sword_fire.effect.cd=1..}] double_sword_fire.effect.cd 1
 scoreboard players remove @a[scores={double_sword_water_cd=1..}] double_sword_water_cd 1
 scoreboard players remove @a[scores={double_sword_water_effect_cd=1..}] double_sword_water_effect_cd 1
 scoreboard players remove @a[scores={water_sword_cd=1..}] water_sword_cd 1

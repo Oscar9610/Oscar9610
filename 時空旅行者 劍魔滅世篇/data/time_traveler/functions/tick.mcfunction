@@ -48,11 +48,6 @@ execute if score .global spaceship_0_61_-51 matches 1 run scoreboard players set
 
 #=========================================================
 
-#P1玩家身上有多少錢
-execute store result score .money p1.main run clear @a emerald[minecraft:custom_data={money:1b}] 0
-
-#=========================================================
-
 #世界等級
 execute store result score .player.highest_level global.main run scoreboard players get .world_level global.main
 

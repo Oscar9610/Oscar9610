@@ -84,9 +84,8 @@ scoreboard objectives add double_sword_fire_switch_cd dummy "熾熱雙股劍交�
 
 scoreboard objectives add double_sword_fire_dot dummy "熾熱雙股劍dot持續時間"
 scoreboard objectives add double_sword_fire_max_dot dummy "熾熱雙股劍最大dot持續時間"
-scoreboard objectives add double_sword_fire.effect.cd dummy "熾熱雙股劍被動CD"
+scoreboard objectives add double_sword_fire.effect.id dummy "被動id"
 
-scoreboard players set @a double_sword_fire.effect.cd 0
 scoreboard players set @a double_sword_fire_cd 0
 scoreboard players set @a double_sword_fire_max_cd 40
 scoreboard players set @a double_sword_fire_swtich 1

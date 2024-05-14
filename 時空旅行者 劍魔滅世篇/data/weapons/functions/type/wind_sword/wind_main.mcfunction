@@ -14,8 +14,10 @@ particle dust_color_transition{from_color: [0.5f, 0.75f, 1.0f], scale: 0.75f, to
 # dmg
 execute positioned ~ ~-1.5 ~ run tag @e[type=#time_traveler:monsters,distance=..2] add dmger
 execute as @e[type=#time_traveler:monsters,tag=dmger] run data merge entity @s {Motion:[0.0d,0.7d,0.0d]}
-scoreboard players operation @a atk = .wind_sword atk
-execute as @a run function time_traveler:dmg_formula/calculate
+scoreboard players operation #this id = @s id
+execute as @a if score @s id = #this id run tag @s add atker
+scoreboard players operation @a[tag=atker,limit=1] atk = .wind_sword atk
+execute as @a[tag=atker,limit=1] run function time_traveler:dmg_formula/calculate
 
 # reset
 execute if score @s duration matches 20.. run function weapons:type/wind_sword/wind_clear
