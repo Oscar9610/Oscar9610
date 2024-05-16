@@ -1,6 +1,6 @@
 
 # 施法
-execute if score @s boss.skill.cast.cd matches 0 run function time_traveler:boss/poison/cast/cast
+execute if score @s[tag=!poison_boss.4] boss.skill.cast.cd matches 0 run function time_traveler:boss/poison/cast/cast
 execute if score @s boss.skill.casting matches 0 run function time_traveler:boss/poison/cast/end
 
 scoreboard players set 2 global.main 2

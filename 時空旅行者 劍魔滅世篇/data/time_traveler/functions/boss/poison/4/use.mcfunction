@@ -1,6 +1,7 @@
 
 tag @s add poison_boss.4
 tag @s add poison_boss.4.already
+scoreboard players set @s boss.skill.cd 100
 scoreboard players set @s boss.skill.casting 100
 data merge entity @s {Glowing:1b,NoGravity:1b,NoAI:1b,Invulnerable:1b}
 
