@@ -40,7 +40,7 @@ schedule function time_traveler:story/orantes/npc/shooting_contest/loop 1t
 schedule function time_traveler:system/shooting_contest/kill_arrow 6t
 schedule function time_traveler:story/orantes/branch_line/loop 1t
 schedule function time_traveler:boss/spawner/shadow/set_delay/loop 1t
-schedule function time_traveler:boss/spawner/potion/set_delay/loop 1t
+schedule function time_traveler:boss/spawner/poison/set_delay/loop 1t
 schedule function time_traveler:boss/spawner/storm_keeper/set_delay/loop 1t
 schedule function time_traveler:boss/spawner/atar/set_delay/loop 1t
 schedule function time_traveler:interaction/shooting_contest 1t

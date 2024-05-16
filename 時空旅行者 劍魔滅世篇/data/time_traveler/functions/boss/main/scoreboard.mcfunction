@@ -12,26 +12,24 @@ scoreboard objectives add automations.boss.count dummy "區域內多少隻BOSS"
 scoreboard players display name .boss global.monsters.health "BOSS血量"
 #=====================================================================================
 
-##設值
-
-##世界等級
+##世界等級比率
 scoreboard players set .world_level_ratio global.main 10
 
-##世界等級引響BOSS最大血量(BOSS最初血量 *= 世界等級)
-
-##設置伏聆BOSS 的最初血量
+## 設置伏聆BOSS 的最初血量
 scoreboard players set .boss global.boss.health 200
-##風暴守護者既能釋放迴圈計時
-
+## 風暴守護者既能釋放迴圈計時
 scoreboard players set skill1 storm_keeper_time 0
 scoreboard players set skill2 storm_keeper_time 0
 scoreboard players set skill3 storm_keeper_time 0
 
+## 毒霧
+scoreboard objectives add poison_boss.move2 dummy
+
 ##生成間隔
 scoreboard players set #automations.orantes.shoadow automations.boss.count 1
 scoreboard players set #automations.orantes.shoadow automations.boss_time 0
-scoreboard players set #automations.orantes.potion automations.boss.count 1
-scoreboard players set #automations.orantes.potion automations.boss_time 0
+scoreboard players set #automations.orantes.poison automations.boss.count 1
+scoreboard players set #automations.orantes.poison automations.boss_time 0
 scoreboard players set #automations.orantes.storm_keeper automations.boss.count 1
 scoreboard players set #automations.orantes.storm_keeper automations.boss_time 0
 scoreboard players set #automations.orantes.atar automations.boss.count 1

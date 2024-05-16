@@ -33,21 +33,21 @@ execute positioned -120 62 99 in game_map:orantes as @a[tag=p4,distance=..20] ru
 execute positioned -120 62 99 in game_map:orantes as @a[tag=p4,distance=20..] run scoreboard players set shadow_cave p4.world_area 0
 
 #幻境洞穴 毒霧
-execute positioned -109 68 -100 in game_map:orantes as @a[tag=p1,distance=..20] if score potion_cave p1.world_area matches 0 run function time_traveler:world_area/potion_cave
-execute positioned -109 68 -100 in game_map:orantes as @a[tag=p1,distance=..20] run scoreboard players set potion_cave p1.world_area 1
-execute positioned -109 68 -100 in game_map:orantes as @a[tag=p1,distance=20..] run scoreboard players set potion_cave p1.world_area 0
+execute positioned -109 68 -100 in game_map:orantes as @a[tag=p1,distance=..20] if score poison_cave p1.world_area matches 0 run function time_traveler:world_area/poison_cave
+execute positioned -109 68 -100 in game_map:orantes as @a[tag=p1,distance=..20] run scoreboard players set poison_cave p1.world_area 1
+execute positioned -109 68 -100 in game_map:orantes as @a[tag=p1,distance=20..] run scoreboard players set poison_cave p1.world_area 0
 
-execute positioned -109 68 -100 in game_map:orantes as @a[tag=p2,distance=..20] if score potion_cave p2.world_area matches 0 run function time_traveler:world_area/potion_cave
-execute positioned -109 68 -100 in game_map:orantes as @a[tag=p2,distance=..20] run scoreboard players set potion_cave p2.world_area 1
-execute positioned -109 68 -100 in game_map:orantes as @a[tag=p2,distance=20..] run scoreboard players set potion_cave p2.world_area 0
+execute positioned -109 68 -100 in game_map:orantes as @a[tag=p2,distance=..20] if score poison_cave p2.world_area matches 0 run function time_traveler:world_area/poison_cave
+execute positioned -109 68 -100 in game_map:orantes as @a[tag=p2,distance=..20] run scoreboard players set poison_cave p2.world_area 1
+execute positioned -109 68 -100 in game_map:orantes as @a[tag=p2,distance=20..] run scoreboard players set poison_cave p2.world_area 0
 
-execute positioned -109 68 -100 in game_map:orantes as @a[tag=p3,distance=..20] if score potion_cave p3.world_area matches 0 run function time_traveler:world_area/potion_cave
-execute positioned -109 68 -100 in game_map:orantes as @a[tag=p3,distance=..20] run scoreboard players set potion_cave p3.world_area 1
-execute positioned -109 68 -100 in game_map:orantes as @a[tag=p3,distance=20..] run scoreboard players set potion_cave p3.world_area 0
+execute positioned -109 68 -100 in game_map:orantes as @a[tag=p3,distance=..20] if score poison_cave p3.world_area matches 0 run function time_traveler:world_area/poison_cave
+execute positioned -109 68 -100 in game_map:orantes as @a[tag=p3,distance=..20] run scoreboard players set poison_cave p3.world_area 1
+execute positioned -109 68 -100 in game_map:orantes as @a[tag=p3,distance=20..] run scoreboard players set poison_cave p3.world_area 0
 
-execute positioned -109 68 -100 in game_map:orantes as @a[tag=p4,distance=..20] if score potion_cave p4.world_area matches 0 run function time_traveler:world_area/potion_cave
-execute positioned -109 68 -100 in game_map:orantes as @a[tag=p4,distance=..20] run scoreboard players set potion_cave p4.world_area 1
-execute positioned -109 68 -100 in game_map:orantes as @a[tag=p4,distance=20..] run scoreboard players set potion_cave p4.world_area 0
+execute positioned -109 68 -100 in game_map:orantes as @a[tag=p4,distance=..20] if score poison_cave p4.world_area matches 0 run function time_traveler:world_area/poison_cave
+execute positioned -109 68 -100 in game_map:orantes as @a[tag=p4,distance=..20] run scoreboard players set poison_cave p4.world_area 1
+execute positioned -109 68 -100 in game_map:orantes as @a[tag=p4,distance=20..] run scoreboard players set poison_cave p4.world_area 0
 
 #幻境洞穴 風暴守護者
 execute positioned 138 64 63 in game_map:orantes as @a[tag=p1,distance=..20] if score storm_keeper_cave p1.world_area matches 0 run function time_traveler:world_area/storm_keeper_cave

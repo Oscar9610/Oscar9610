@@ -4,10 +4,13 @@
         "trigger": "minecraft:player_killed_entity",
         "conditions": {
           "entity": {
-            "nbt": "{Tags:[\"potion\"]}"
+            "nbt": "{Tags:[\"poison_boss\"]}"
           }
         }
       }
+    },
+    "rewards": {
+      "function": "time_traveler:boss/spawner/poison/set_delay/1"
     }
   }
   

@@ -14,7 +14,7 @@ execute in game_map:orantes positioned -114 64 -96 as @a[dz=-10,dx=10] if score 
 execute in game_map:orantes positioned -114 64 -96 as @a[dz=-10,dx=10] if score .main_line orantes.story matches ..98 run tellraw @s [{"text":"［希爾］前面的區域，以後再來探索吧！"}]
 execute in game_map:orantes positioned -114 64 -96 as @a[dz=-10,dx=10] if score .main_line orantes.story matches ..98 run tp @s -116 63 -115 -30 0
 execute in game_map:orantes positioned -114 64 -96 as @a[dz=-10,dx=10] if score .main_line orantes.story matches 98.. run spawnpoint @s -104 69 -101
-execute in game_map:orantes positioned -114 64 -96 as @a[dz=-10,dx=10] in game_map:potion_arena if score .main_line orantes.story matches 98.. run tp @s -23 61 0 -90 0
+execute in game_map:orantes positioned -114 64 -96 as @a[dz=-10,dx=10] in game_map:poison_arena if score .main_line orantes.story matches 98.. run tp @s 20 61 0.0 90 0
 
 execute in game_map:orantes positioned 124 56 73 as @a[distance=..5] if score .main_line orantes.story matches ..98 run playsound minecraft:voice.paimon voice @s ~ ~1 ~ 9999 1
 execute in game_map:orantes positioned 124 56 73 as @a[distance=..5] if score .main_line orantes.story matches ..98 run title @s title {"text":"\uE002"}

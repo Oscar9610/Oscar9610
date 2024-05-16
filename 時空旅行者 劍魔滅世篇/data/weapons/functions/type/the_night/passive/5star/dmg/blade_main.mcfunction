@@ -15,5 +15,5 @@ execute as @e[type=block_display,tag=rotater] at @s run function weapons:type/th
 
 # reset
 execute if score @s the_night_charge_timer matches 360.. run function weapons:type/the_night/passive/5star/dmg/clear
-tag @e[type=item_display,tag=rotater] remove rotater
+tag @e[type=block_display,tag=rotater] remove rotater
 tag @s remove mid
