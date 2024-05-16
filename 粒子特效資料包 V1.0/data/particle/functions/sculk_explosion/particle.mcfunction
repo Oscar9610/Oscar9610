@@ -1,0 +1,27 @@
+particle dust_color_transition{from_color: [0.5f, 0.0f, 0.5f], scale: 1.5f, to_color: [0.0f, 0.0f, 0.0f]} ^ ^ ^1.5 0 0 0 0 2 normal @a
+particle dust_color_transition{from_color: [0.5f, 0.0f, 0.5f], scale: 1.5f, to_color: [0.0f, 0.0f, 0.0f]} ^0.25 ^ ^1.5 0 0 0 0 2 normal @a
+particle dust_color_transition{from_color: [0.5f, 0.0f, 0.5f], scale: 1.5f, to_color: [0.0f, 0.0f, 0.0f]} ^-0.25 ^ ^1.5 0 0 0 0 2 normal @a
+particle dust_color_transition{from_color: [0.5f, 0.0f, 0.5f], scale: 1.5f, to_color: [0.0f, 0.0f, 0.0f]} ^0.5 ^ ^1.5 0 0 0 0 2 normal @a
+particle dust_color_transition{from_color: [0.5f, 0.0f, 0.5f], scale: 1.5f, to_color: [0.0f, 0.0f, 0.0f]} ^-0.5 ^ ^1.5 0 0 0 0 2 normal @a
+particle dust_color_transition{from_color: [0.5f, 0.0f, 0.5f], scale: 1.5f, to_color: [0.0f, 0.0f, 0.0f]} ^0.75 ^ ^1.5 0 0 0 0 2 normal @a
+particle dust_color_transition{from_color: [0.5f, 0.0f, 0.5f], scale: 1.5f, to_color: [0.0f, 0.0f, 0.0f]} ^-0.75 ^ ^1.5 0 0 0 0 2 normal @a
+particle dust_color_transition{from_color: [0.5f, 0.0f, 0.5f], scale: 1.5f, to_color: [0.0f, 0.0f, 0.0f]} ^1 ^ ^1.5 0 0 0 0 2 normal @a
+particle dust_color_transition{from_color: [0.5f, 0.0f, 0.5f], scale: 1.5f, to_color: [0.0f, 0.0f, 0.0f]} ^-1 ^ ^1.5 0 0 0 0 2 normal @a
+particle dust_color_transition{from_color: [0.5f, 0.0f, 0.5f], scale: 1.5f, to_color: [0.0f, 0.0f, 0.0f]} ^-1.25 ^ ^1.5 0 0 0 0 2 normal @a
+particle dust_color_transition{from_color: [0.5f, 0.0f, 0.5f], scale: 1.5f, to_color: [0.0f, 0.0f, 0.0f]} ^1.25 ^ ^1.5 0 0 0 0 2 normal @a
+particle dust_color_transition{from_color: [0.5f, 0.0f, 0.5f], scale: 1.5f, to_color: [0.0f, 0.0f, 0.0f]} ^-1.5 ^ ^1.5 0 0 0 0 2 normal @a
+particle dust_color_transition{from_color: [0.5f, 0.0f, 0.5f], scale: 1.5f, to_color: [0.0f, 0.0f, 0.0f]} ^1.5 ^ ^1.5 0 0 0 0 2 normal @a
+
+particle dust_color_transition{from_color: [0.5f, 0.0f, 0.5f], scale: 1.5f, to_color: [0.0f, 0.0f, 0.0f]} ^ ^ ^-1.5 0 0 0 0 2 normal @a
+particle dust_color_transition{from_color: [0.5f, 0.0f, 0.5f], scale: 1.5f, to_color: [0.0f, 0.0f, 0.0f]} ^0.25 ^ ^-1.5 0 0 0 0 2 normal @a
+particle dust_color_transition{from_color: [0.5f, 0.0f, 0.5f], scale: 1.5f, to_color: [0.0f, 0.0f, 0.0f]} ^-0.25 ^ ^-1.5 0 0 0 0 2 normal @a
+particle dust_color_transition{from_color: [0.5f, 0.0f, 0.5f], scale: 1.5f, to_color: [0.0f, 0.0f, 0.0f]} ^0.5 ^ ^-1.5 0 0 0 0 2 normal @a
+particle dust_color_transition{from_color: [0.5f, 0.0f, 0.5f], scale: 1.5f, to_color: [0.0f, 0.0f, 0.0f]} ^-0.5 ^ ^-1.5 0 0 0 0 2 normal @a
+particle dust_color_transition{from_color: [0.5f, 0.0f, 0.5f], scale: 1.5f, to_color: [0.0f, 0.0f, 0.0f]} ^0.75 ^ ^-1.5 0 0 0 0 2 normal @a
+particle dust_color_transition{from_color: [0.5f, 0.0f, 0.5f], scale: 1.5f, to_color: [0.0f, 0.0f, 0.0f]} ^-0.75 ^ ^-1.5 0 0 0 0 2 normal @a
+particle dust_color_transition{from_color: [0.5f, 0.0f, 0.5f], scale: 1.5f, to_color: [0.0f, 0.0f, 0.0f]} ^1 ^ ^-1.5 0 0 0 0 2 normal @a
+particle dust_color_transition{from_color: [0.5f, 0.0f, 0.5f], scale: 1.5f, to_color: [0.0f, 0.0f, 0.0f]} ^-1 ^ ^-1.5 0 0 0 0 2 normal @a
+particle dust_color_transition{from_color: [0.5f, 0.0f, 0.5f], scale: 1.5f, to_color: [0.0f, 0.0f, 0.0f]} ^-1.25 ^ ^-1.5 0 0 0 0 2 normal @a
+particle dust_color_transition{from_color: [0.5f, 0.0f, 0.5f], scale: 1.5f, to_color: [0.0f, 0.0f, 0.0f]} ^1.25 ^ ^-1.5 0 0 0 0 2 normal @a
+particle dust_color_transition{from_color: [0.5f, 0.0f, 0.5f], scale: 1.5f, to_color: [0.0f, 0.0f, 0.0f]} ^-1.5 ^ ^-1.5 0 0 0 0 2 normal @a
+particle dust_color_transition{from_color: [0.5f, 0.0f, 0.5f], scale: 1.5f, to_color: [0.0f, 0.0f, 0.0f]} ^1.5 ^ ^-1.5 0 0 0 0 2 normal @a

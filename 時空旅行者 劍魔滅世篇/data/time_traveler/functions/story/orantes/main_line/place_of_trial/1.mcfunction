@@ -15,6 +15,12 @@ execute positioned 6 63 177 in game_map:orantes as @a[tag=!op,distance=..18] if 
 execute positioned 6 63 177 in game_map:orantes as @a[tag=!op,distance=..18] if score .main_line orantes.story matches 112 run tellraw @s [{"text":"［爺爺］水鏡之光據我研究他似乎怕","bold":false},{"text":" 風","color":"dark_green","bold":true},{"text":"、","color":"white","bold":false},{"text":"物理屬性 攻擊","color":"white","bold":true}]
 execute positioned 6 63 177 in game_map:orantes as @a[tag=!op,distance=..18] if score .main_line orantes.story matches 113 run tellraw @s {"text":"［爺爺］你們等等去一趟試煉之地要小心！"}
 execute positioned 6 63 177 in game_map:orantes as @a[tag=!op,distance=..18] if score .main_line orantes.story matches 114 run tellraw @s [{"text":"【目標】去森林深處的試煉之地！","color": "gold","bold": false},{"text":" (紅色信標標記處) ","bold": true,"color": "red"}]
+execute positioned 6 63 177 in game_map:orantes as @a[tag=!op,distance=..18] if score .main_line orantes.story matches 114 run tellraw @a ["",{"text":"【劇情位置】在","bold":true,"color":"gray","clickEvent":{"action":"run_command","value":"/function time_traveler:tp/orantes/orantes_12_62_-73"},"hoverEvent":{"action":"show_text","contents":[{"text":"點擊文字即可傳送至附近 (需解鎖奧蘭蒂斯城傳點)","bold":true,"color":"dark_aqua"}]}},{"text":" 試煉之地 (點擊文字即可傳送至附近)","bold":true,"color":"dark_green","clickEvent":{"action":"run_command","value":"/function time_traveler:tp/orantes/orantes_12_62_-73"},"hoverEvent":{"action":"show_text","contents":[{"text":"點擊文字即可傳送至附近 (需解鎖奧蘭蒂斯城傳點)","bold":true,"color":"dark_aqua"}]}}]
+execute positioned 6 63 177 in game_map:orantes as @a[tag=!op,distance=..18] if score .main_line orantes.story matches 114 run tellraw @a [{"text":"【區分顏色】","color":"gray","bold":true},{"text":" 白色 ▨","color":"white"}]
+execute if score .main_line orantes.story matches 114 in game_map:orantes positioned 6 62 174 run tellraw @a [{"selector":"@a[distance=..30]","color":"green"},{"text":" 剛剛開啟了【主線】前往試煉之地！","color":"white"}]
+execute positioned 6 63 177 in game_map:orantes as @a[tag=!op,distance=..18] if score .main_line orantes.story matches 114 run tellraw @a [{"text":"按 ","color":"gray"},{"keybind":"key.advancements","color":"green","bold":true},{"text":" 鍵即可開啟進度顯示\n","color":"gray"}]
+
+
 execute in minecraft:overworld if score .main_line orantes.story matches 114 run weather thunder
 execute in minecraft:overworld if score .main_line orantes.story matches 114 run tag @e[tag=ml.sgp] remove task_glow.fx
 execute if score .main_line orantes.story matches 114 run scoreboard players set #main_line global.advancements 8

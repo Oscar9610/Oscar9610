@@ -28,7 +28,9 @@ execute if score #aldon orantes.story matches 3 run tellraw @s {"text":"［阿�
 execute if score #aldon orantes.story matches 4 run tellraw @s {"text":"［你］我應該怎麼做才能了解雷納的故事？"}
 execute if score #aldon orantes.story matches 5 run tellraw @s [{"text":"［阿爾敦］"},{"text":"雷納的舊友和家人會是關鍵。","bold": true,"color":"gold"},{"text":"你需要先找到他們，聽聽他們的故事，才能接近劍","bold": false,"color":"white"}]
 execute if score #aldon orantes.story matches 6 run tellraw @s {"text":"［你］您知道我應該去哪裡尋找他們嗎？"}
+execute if score #aldon orantes.story matches 6 run forceload add 111 -67 111 -67
 execute if score #aldon orantes.story matches 7 run function time_traveler:story/orantes/npc/aldon/reset
+execute if score #aldon orantes.story matches 7 run forceload remove 111 -67 111 -67
 #循環偵測
 #loop
 execute if score #aldon orantes.story matches 0..7 run scoreboard players add #aldon orantes.story 1

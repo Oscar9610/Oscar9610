@@ -19,10 +19,10 @@ execute if score .main_line orantes.story matches 11 run kill @e[tag=ml.hill.1]
 execute if score .main_line orantes.story matches 11 run function time_traveler:story/orantes/main_line/rs/2/summon_display_monster
 execute if score .main_line orantes.story matches 11 run function time_traveler:story/orantes/main_line/loop
 execute if score .main_line orantes.story matches 11 as @a[distance=..16] run function time_traveler:story/orantes/main_line/sim/task_open_text
-execute if score .main_line orantes.story matches 11 run tellraw @a [{"text":"\n【劇情位置】在","color":"gray","bold":true},{"text":" 奧蘭蒂斯城","color":"dark_green"}]
-execute if score .main_line orantes.story matches 11 run tellraw @a [{"text":"【區分顏色】","color":"gray","bold":true},{"text":" 白色","color":"white"}]
+execute if score .main_line orantes.story matches 11 run tellraw @a ["",{"text":"【劇情位置】在","bold":true,"color":"gray","clickEvent":{"action":"run_command","value":"/function time_traveler:tp/orantes/orantes_6_61_107"},"hoverEvent":{"action":"show_text","contents":[{"text":"點擊文字即可傳送至附近 (需解鎖奧蘭蒂斯城傳點)","bold":true,"color":"dark_aqua"}]}},{"text":" 奧蘭蒂斯平原 (點擊文字即可傳送至附近)","bold":true,"color":"dark_green","clickEvent":{"action":"run_command","value":"/function time_traveler:tp/orantes/orantes_-17_62_16"},"hoverEvent":{"action":"show_text","contents":[{"text":"點擊文字即可傳送至附近 (需解鎖奧蘭蒂斯城傳點)","bold":true,"color":"dark_aqua"}]}}]
+execute if score .main_line orantes.story matches 11 run tellraw @a [{"text":"【區分顏色】","color":"gray","bold":true},{"text":" 白色 ▨","color":"white"}]
 execute if score .main_line orantes.story matches 11 run tellraw @a [{"selector":"@a[distance=..16]","color":"green"},{"text":" 剛剛開啟了【主線】陳述不見了？！","color":"white"}]
-execute if score .main_line orantes.story matches 11 run tellraw @a [{"text":"按 ","color":"gray"},{"keybind":"key.inventory","color":"green","bold":true},{"text":" 鍵即可開啟進度顯示\n","color":"gray"}]
+execute if score .main_line orantes.story matches 11 run tellraw @a [{"text":"按 ","color":"gray"},{"keybind":"key.advancements","color":"green","bold":true},{"text":" 鍵即可開啟進度顯示\n","color":"gray"}]
 execute if score .main_line orantes.story matches 11 run tag @e[tag=ml.sgp] remove task_glow.fx
 execute if score .main_line orantes.story matches 11 run effect clear @e[tag=ml.sgp] glowing
 

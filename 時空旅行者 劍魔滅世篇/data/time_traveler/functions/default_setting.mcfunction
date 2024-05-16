@@ -1,4 +1,4 @@
-execute in minecraft:overworld run tp @p 8 -60 8 -90 0
+execute in minecraft:overworld run tp @a 8 -60 8 -90 0
 clear @a
 spawnpoint @a 8 -60 8
 function time_traveler:reload

@@ -12,15 +12,15 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-custom_name = ['3', '狂暴獵人靴子', '#F4E75D']
-info  = ['鞋子', '狂暴獵人']
-story = ['狂戰士的靴子，象徵著族裡的榮耀']
-item_data     = {'real_item': 'diamond_boots', 'trim': {'material': 'copper', 'pattern': 'spire'}, 'rgb': -1, 'custom_data': '{strength:1b}', 'max_damage': -1}
-series_skill  = {'is_skill': True, 'cd': 0, 'name': '狂暴', 'info': ['穿上4件系列套裝，可永久獲得&=力量ɪ&+']}
+custom_name = ['3', '靈風箭手護腿', '#F4E75D']
+info  = ['護腿', '靈風箭手']
+story = ['靈風箭手的護腿']
+item_data     = {'real_item': 'chainmail_leggings', 'trim': {'material': 'diamond', 'pattern': 'spire'}, 'rgb': -1, 'custom_data': '{speed:1b}', 'max_damage': -1}
+series_skill  = {'is_skill': True, 'cd': 0, 'name': '風之庇佑', 'info': ['穿上4件系列套裝，可永久獲得&=速度ɪɪ&+']}
 passive_skill = {'is_skill': False, 'cd': 0, 'name': '', 'info': ['']}
 
-attribute.append({'name': '移動速度', 'show_value': '15%', 'value': 0.15, 'attribute_name': 'generic.knockback_resistance'})
-attribute.append({'name': '攻擊力', 'show_value': '1', 'value': 1, 'attribute_name': 'generic.attack_damage'})
+attribute.append({'name': '移動速度', 'show_value': '10%', 'value': 0.1, 'attribute_name': 'generic.movement_speed'})
+attribute.append({'name': '防禦力', 'show_value': '2', 'value': 2, 'attribute_name': 'generic.armor'})
 
 # ----- init ----- #
 

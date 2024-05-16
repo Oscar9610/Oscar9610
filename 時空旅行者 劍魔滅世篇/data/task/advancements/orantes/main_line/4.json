@@ -25,5 +25,8 @@
     "requirement": {
       "trigger": "minecraft:impossible"
     }
+  },
+  "rewards": {
+    "function": "time_traveler:story/orantes/main_line/statement_go_back_to_old_home/title"
   }
 }

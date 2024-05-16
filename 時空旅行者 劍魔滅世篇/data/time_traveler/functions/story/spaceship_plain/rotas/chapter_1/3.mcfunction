@@ -28,7 +28,9 @@ execute in game_map:orantes positioned -7 61 93 as @a[distance=..16] if score ro
 execute in game_map:orantes positioned -7 61 93 as @a[distance=..16] if score rotas._chapter_1 spaceship.story matches 29 run tellraw @s {"text":"(希爾擦乾了眼淚，緊緊的抱住你一段時間)","color":"red"}
 execute in game_map:orantes positioned -7 61 93 as @a[distance=..16] if score rotas._chapter_1 spaceship.story matches 30 run tellraw @s {"text":"［希爾］我們再看一下奧蘭蒂斯現在的風景吧，晚點再回去也沒關係"}
 execute in game_map:orantes positioned -7 61 93 as @a[distance=..16] if score rotas._chapter_1 spaceship.story matches 31 run function time_traveler:players/transitions
+execute in game_map:orantes if score rotas._chapter_1 spaceship.story matches 31 run forceload add -8 92 -6 94
 execute if score rotas._chapter_1 spaceship.story matches 32 run kill @e[tag=hill.rotas.chapter_1]
+execute in game_map:orantes if score rotas._chapter_1 spaceship.story matches 32 run forceload remove -8 92 -6 94
 execute if score rotas._chapter_1 spaceship.story matches 32 in game_map:orantes positioned -7 61 93 run kill @e[tag=display.right_click_display,distance=..3]
 execute if score rotas._chapter_1 spaceship.story matches 32 in game_map:orantes positioned -7 61 93 as @a[distance=..16] run function time_traveler:story/spaceship_plain/rotas/chapter_1/task_end_text
 execute if score rotas._chapter_1 spaceship.story matches 32 run scoreboard players set #rotas.chapter_1 global.advancements 4

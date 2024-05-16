@@ -19,6 +19,11 @@ execute positioned -5 62 83 in game_map:orantes as @a[distance=..20] if score .m
 execute positioned -5 62 83 in game_map:orantes as @a[distance=..20] if score .main_line orantes.story matches 98 run tellraw @s {"text":"［陳述爺爺］洞穴十分危險，你們一定要小心！"}
 execute if score .main_line orantes.story matches 98 in game_map:orantes run forceload add -4 82 -6 84
 execute positioned -5 62 83 in game_map:orantes as @a[distance=..20] if score .main_line orantes.story matches 99 run tellraw @s [{"text":"【目標】討伐深淵的魔將！","color": "gold","bold": false},{"text":" (淺藍色信標標記處) ","bold": true,"color": "aqua"}]
+execute if score .main_line orantes.story matches 99 run tellraw @a ["",{"text":"【劇情位置】在","bold":true,"color":"gray","clickEvent":{"action":"run_command","value":"/function time_traveler:tp/orantes/orantes_6_61_107"},"hoverEvent":{"action":"show_text","contents":[{"text":"點擊文字即可傳送至附近 (需解鎖奧蘭蒂斯城傳點)","bold":true,"color":"dark_aqua"}]}},{"text":" 奧蘭蒂斯城 (點擊文字即可傳送至附近)","bold":true,"color":"dark_green","clickEvent":{"action":"run_command","value":"/function time_traveler:tp/orantes/orantes_6_61_107"},"hoverEvent":{"action":"show_text","contents":[{"text":"點擊文字即可傳送至附近 (需解鎖奧蘭蒂斯城傳點)","bold":true,"color":"dark_aqua"}]}}]
+execute if score .main_line orantes.story matches 99 run tellraw @a [{"text":"【區分顏色】","color":"gray","bold":true},{"text":" 白色 ▨","color":"white"}]
+execute if score .main_line orantes.story matches 99 run tellraw @a [{"selector":"@a[distance=..16]","color":"green"},{"text":" 剛剛開啟了【主線】討伐三個深淵的魔將！","color":"white"}]
+execute if score .main_line orantes.story matches 99 run tellraw @a [{"text":"按 ","color":"gray"},{"keybind":"key.advancements","color":"green","bold":true},{"text":" 鍵即可開啟進度顯示\n","color":"gray"}]
+
 execute positioned -5 62 83 in game_map:orantes if score .main_line orantes.story matches 99 run scoreboard players set #main_line global.advancements 6
 execute if score .main_line orantes.story matches 99 in game_map:orantes run kill @e[tag=statement_grandpa_1]
 execute if score .main_line orantes.story matches 99 in game_map:orantes run forceload remove -4 82 -6 84

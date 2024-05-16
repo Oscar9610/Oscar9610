@@ -19,6 +19,10 @@ execute if score .main_line orantes.story matches 60 in game_map:orantes run for
 execute if score .main_line orantes.story matches 61 run tellraw @a[tag=statement_go_back_to_old_home_end] {"text":"［陳述］這裡就是奧蘭蒂斯城市了"}
 execute if score .main_line orantes.story matches 62 run tellraw @a[tag=statement_go_back_to_old_home_end] {"text":"［陳述］我們過去吧！"}
 execute if score .main_line orantes.story matches 63 run tellraw @a[tag=statement_go_back_to_old_home_end] {"text":"【目標】回去找陳述爺爺！","color":"gold"}
+execute if score .main_line orantes.story matches 63 run tellraw @a ["",{"text":"【劇情位置】在","bold":true,"color":"gray","clickEvent":{"action":"run_command","value":"/function time_traveler:tp/orantes/orantes_6_61_107"},"hoverEvent":{"action":"show_text","contents":[{"text":"點擊文字即可傳送至附近 (需解鎖奧蘭蒂斯城傳點)","bold":true,"color":"dark_aqua"}]}},{"text":" 奧蘭蒂斯平原 (點擊文字即可傳送至附近)","bold":true,"color":"dark_green","clickEvent":{"action":"run_command","value":"/function time_traveler:tp/orantes/orantes_-17_62_16"},"hoverEvent":{"action":"show_text","contents":[{"text":"點擊文字即可傳送至附近 (需解鎖奧蘭蒂斯城傳點)","bold":true,"color":"dark_aqua"}]}}]
+execute if score .main_line orantes.story matches 63 run tellraw @a [{"text":"【區分顏色】","color":"gray","bold":true},{"text":" 白色 ▨","color":"white"}]
+execute if score .main_line orantes.story matches 63 run execute in game_map:orantes positioned 6 62 174 run tellraw @a [{"selector":"@a[distance=..30]","color":"green"},{"text":" 剛剛開啟了【主線】回去找陳述爺爺","color":"white"}]
+execute if score .main_line orantes.story matches 63 run tellraw @a [{"text":"按 ","color":"gray"},{"keybind":"key.advancements","color":"green","bold":true},{"text":" 鍵即可開啟進度顯示\n","color":"gray"}]
 execute if score .main_line orantes.story matches 64 run scoreboard players set .main_line orantes.story 65
 execute if score .main_line orantes.story matches 64 run scoreboard players set .main_line orantes.global.main 13
 execute if score .main_line orantes.story matches 64 run scoreboard players set #main_line global.advancements 5

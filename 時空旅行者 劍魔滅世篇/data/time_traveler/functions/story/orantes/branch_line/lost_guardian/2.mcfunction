@@ -11,9 +11,11 @@ execute if score .lost_guardian orantes.story matches 8 run kill @e[tag=lost_gua
 execute positioned 120 64 -93 in game_map:orantes as @a[distance=..12] if score .lost_guardian orantes.story matches 9 run title @s times 40 40 40
 execute positioned 120 64 -93 in game_map:orantes as @a[distance=..12] if score .lost_guardian orantes.story matches 9 run title @s title {"text":"【支線任務】遺失的守護者","color":"gold"}
 execute positioned 120 64 -93 in game_map:orantes as @a[distance=..12] if score .lost_guardian orantes.story matches 9 run title @s subtitle {"text":"開啟！","color":"green"}
+execute in game_map:orantes if score .lost_guardian orantes.story matches 9 run forceload add 112 -81 114 -79
 execute positioned 120 64 -93 in game_map:orantes as @a[distance=..12] if score .lost_guardian orantes.story matches 10 run tellraw @s {"text":"【目標】詢問阿爾敦關於雷納的資訊！","color":"gold"}
 execute if score .lost_guardian orantes.story matches 10 run function time_traveler:story/orantes/branch_line/lost_guardian/open_npc_loop
 execute in game_map:orantes if score .lost_guardian orantes.story matches 10 run function time_traveler:story/orantes/branch_line/lost_guardian/summon_npc
+execute in game_map:orantes if score .lost_guardian orantes.story matches 10 run forceload remove 112 -81 114 -79
 execute if score .lost_guardian orantes.story matches 10 run scoreboard players set #lost_guardian global.advancements 2
 #循環偵測
 #loop

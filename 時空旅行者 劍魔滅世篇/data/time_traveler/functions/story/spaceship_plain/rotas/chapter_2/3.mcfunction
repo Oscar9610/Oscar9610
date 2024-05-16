@@ -24,8 +24,10 @@ execute if score rotas._chapter_2 spaceship.story matches 31 run tellraw @s {"te
 execute if score rotas._chapter_2 spaceship.story matches 32 run tellraw @s {"text":"［阿斯卡］甚至是一位好父親，帶領你一起去冒險"}
 execute if score rotas._chapter_2 spaceship.story matches 33 run tellraw @s {"text":"［阿斯卡］如果可以，我希望你也能堅持不懈地一同來戰勝深淵"}
 execute if score rotas._chapter_2 spaceship.story matches 34 run tellraw @s {"text":"［阿斯卡］我會在奧蘭蒂斯的藍色大樹與你相見！"}
+execute in game_map:spaceship_interior if score rotas._chapter_2 spaceship.story matches 34 run forceload add 9 9 8 8
 execute if score rotas._chapter_2 spaceship.story matches 35 run tellraw @s {"text":"【目標】傳送至 奧蘭蒂斯城！","color":"gold"}
-execute as @e[tag=rotas.2.2] if score rotas._chapter_2 spaceship.story matches 35 run kill @s
+execute if score rotas._chapter_2 spaceship.story matches 35 run kill @e[tag=rotas.2.2]
+execute in game_map:spaceship_interior if score rotas._chapter_2 spaceship.story matches 35 run forceload remove 9 9 8 8
 execute if score rotas._chapter_2 spaceship.story matches 35 run scoreboard players set rotas._chapter_2 spaceship.global.main 6
 
 execute if score rotas._chapter_2 spaceship.story matches 10..35 run scoreboard players add rotas._chapter_2 spaceship.story 1

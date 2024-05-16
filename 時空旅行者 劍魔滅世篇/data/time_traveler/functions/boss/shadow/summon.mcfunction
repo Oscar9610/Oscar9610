@@ -3,5 +3,5 @@ summon minecraft:zombie ~ ~ ~ {DeathLootTable:"boss:shadow",Tags:["cast_no_move"
 scoreboard players set @e[scores={boss.skill.cast.cd=0..},limit=1,sort=nearest] boss.skill.cast.cd 0
 #cast = 施法
 
-bossbar add shadow "☪ 守護封印的守護者 - 魅影 ☪"
+bossbar add shadow "☪ 守護封印的深淵魔將 - 魅影 ☪"
 bossbar set shadow color purple

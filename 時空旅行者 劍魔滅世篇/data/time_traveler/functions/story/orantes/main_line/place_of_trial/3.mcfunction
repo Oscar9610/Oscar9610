@@ -10,6 +10,11 @@ execute positioned 11 62 -125 in game_map:orantes if score .main_line orantes.st
 execute positioned 11 62 -125 in game_map:orantes if score .main_line orantes.story matches 120 run tellraw @a[tag=!op,distance=..100] [{"text":"［阿塔爾］在我完全恢復之前，我無法提供更多的幫助。但你應該尋找其他元素之神，他們的力量將是對抗深淵不可或缺的。"}]
 execute positioned 11 62 -125 in game_map:orantes if score .main_line orantes.story matches 121 run tellraw @a[tag=!op,distance=..100] {"text":"［阿塔爾］現在，我必須要去恢復我的力量，並修復我在深淵戰鬥中留下的創傷。當我再次醒來時，希望能夠再次以盟友的身份與你相見。"}
 execute positioned 11 62 -125 in game_map:orantes if score .main_line orantes.story matches 122 run tellraw @a[tag=!op,distance=..100] {"text":"【目標】回去找爺爺！","color":"gold"}
+execute if score .main_line orantes.story matches 122 run tellraw @a ["",{"text":"【劇情位置】在","bold":true,"color":"gray","clickEvent":{"action":"run_command","value":"/function time_traveler:tp/orantes/orantes_6_61_107"},"hoverEvent":{"action":"show_text","contents":[{"text":"點擊文字即可傳送至附近 (需解鎖奧蘭蒂斯城傳點)","bold":true,"color":"dark_aqua"}]}},{"text":" 奧蘭蒂斯平原 (點擊文字即可傳送至附近)","bold":true,"color":"dark_green","clickEvent":{"action":"run_command","value":"/function time_traveler:tp/orantes/orantes_-17_62_16"},"hoverEvent":{"action":"show_text","contents":[{"text":"點擊文字即可傳送至附近 (需解鎖奧蘭蒂斯城傳點)","bold":true,"color":"dark_aqua"}]}}]
+execute if score .main_line orantes.story matches 122 run tellraw @a [{"text":"【區分顏色】","color":"gray","bold":true},{"text":" 白色 ▨","color":"white"}]
+execute if score .main_line orantes.story matches 122 in game_map:orantes positioned 11 62 -125 run tellraw @a [{"selector":"@a[distance=..60]","color":"green"},{"text":" 剛剛開啟了【主線】回去找陳述爺爺","color":"white"}]
+execute if score .main_line orantes.story matches 122 run tellraw @a [{"text":"按 ","color":"gray"},{"keybind":"key.advancements","color":"green","bold":true},{"text":" 鍵即可開啟進度顯示\n","color":"gray"}]
+
 execute positioned 11 62 -125 in game_map:orantes if score .main_line orantes.story matches 122 run scoreboard players set .main_line orantes.global.main 19
 execute if score .main_line orantes.story matches 122 run effect give @e[tag=ml.sgp] glowing infinite 1 true
 #循環偵測

@@ -1,10 +1,10 @@
-give @p minecraft:diamond_boots[custom_name='[{"text":"","italic":false,"bold":true},{"text":"☆☆☆","color":"#ABF2F2"},{"text":"狂暴獵人靴子","color":"white"}]',lore=['[{"text":"","italic":false},{"text":"鞋子 / 狂暴獵人","color":"dark_gray"}]','[{"text":"狂戰士的靴子，象徵著族裡的榮耀","italic":false,"color":"blue"}]','[{"text":"","italic":false},{"text":"✨ ——— ","color":"gray"},{"text":"四件套系列技能","color":"gray","bold":true},{"text":" ——— ✨","color":"gray"}]','[{"text":"","italic":false},{"text":"【狂暴】 ","color":"dark_aqua"}]','[{"text":"","italic":false},{"text":"穿上4件系列套裝，可永久獲得","color":"blue"},{"text":"力量ɪ","color":"#2EBD2E","underlined":true}]','[{"text":""}]','[{"text":"","italic":false},{"text":"移動速度 ","color":"gray"},{"text":"15%","color":"white"}]','[{"text":"","italic":false},{"text":"攻擊力\\uF829\\uF803","color":"gray"},{"text":"1","color":"white"}]'],attribute_modifiers={modifiers:[{type:"generic.knockback_resistance",name:"_",amount:0.15,operation:"add_multiplied_base",slot:"feet",uuid:[I;0,0,0,3]},{type:"generic.attack_damage",name:"_",amount:1,operation:"add_value",slot:"feet",uuid:[I;0,0,0,3]}],show_in_tooltip:false},max_stack_size=1,unbreakable={show_in_tooltip:0b},trim={'material': 'copper', 'pattern': 'spire',show_in_tooltip:false},custom_data={strength:1b}] 1
-#custom_name = ['3', '狂暴獵人靴子', '#F4E75D']
-#info  = ['鞋子', '狂暴獵人']
-#story = ['狂戰士的靴子，象徵著族裡的榮耀']
-#item_data     = {'real_item': 'diamond_boots', 'trim': {'material': 'copper', 'pattern': 'spire'}, 'rgb': -1, 'custom_data': '{strength:1b}', 'max_damage': -1}
-#series_skill  = {'is_skill': True, 'cd': 0, 'name': '狂暴', 'info': ['穿上4件系列套裝，可永久獲得&=力量ɪ&+']}
+give @p minecraft:chainmail_leggings[custom_name='[{"text":"","italic":false,"bold":true},{"text":"☆☆☆","color":"#ABF2F2"},{"text":"靈風箭手護腿","color":"white"}]',lore=['[{"text":"","italic":false},{"text":"護腿 / 靈風箭手","color":"dark_gray"}]','[{"text":"靈風箭手的護腿","italic":false,"color":"blue"}]','[{"text":"","italic":false},{"text":"✨ ——— ","color":"gray"},{"text":"四件套系列技能","color":"gray","bold":true},{"text":" ——— ✨","color":"gray"}]','[{"text":"","italic":false},{"text":"【風之庇佑】 ","color":"dark_aqua"}]','[{"text":"","italic":false},{"text":"穿上4件系列套裝，可永久獲得","color":"blue"},{"text":"速度ɪɪ","color":"#2EBD2E","underlined":true}]','[{"text":""}]','[{"text":"","italic":false},{"text":"移動速度 ","color":"gray"},{"text":"10%","color":"white"}]','[{"text":"","italic":false},{"text":"防禦力\\uF829\\uF803","color":"gray"},{"text":"2","color":"white"}]'],attribute_modifiers={modifiers:[{type:"generic.movement_speed",name:"_",amount:0.1,operation:"add_multiplied_base",slot:"legs",uuid:[I;0,0,0,4]},{type:"generic.armor",name:"_",amount:2,operation:"add_value",slot:"legs",uuid:[I;0,0,0,4]}],show_in_tooltip:false},max_stack_size=1,unbreakable={show_in_tooltip:0b},trim={'material': 'diamond', 'pattern': 'spire',show_in_tooltip:false},custom_data={speed:1b}] 1
+#custom_name = ['3', '靈風箭手護腿', '#F4E75D']
+#info  = ['護腿', '靈風箭手']
+#story = ['靈風箭手的護腿']
+#item_data     = {'real_item': 'chainmail_leggings', 'trim': {'material': 'diamond', 'pattern': 'spire'}, 'rgb': -1, 'custom_data': '{speed:1b}', 'max_damage': -1}
+#series_skill  = {'is_skill': True, 'cd': 0, 'name': '風之庇佑', 'info': ['穿上4件系列套裝，可永久獲得&=速度ɪɪ&+']}
 #passive_skill = {'is_skill': False, 'cd': 0, 'name': '', 'info': ['']}
 
-#attribute.append({'name': '移動速度', 'show_value': '15%', 'value': 0.15, 'attribute_name': 'generic.knockback_resistance'})
-#attribute.append({'name': '攻擊力', 'show_value': '1', 'value': 1, 'attribute_name': 'generic.attack_damage'})
+#attribute.append({'name': '移動速度', 'show_value': '10%', 'value': 0.1, 'attribute_name': 'generic.movement_speed'})
+#attribute.append({'name': '防禦力', 'show_value': '2', 'value': 2, 'attribute_name': 'generic.armor'})

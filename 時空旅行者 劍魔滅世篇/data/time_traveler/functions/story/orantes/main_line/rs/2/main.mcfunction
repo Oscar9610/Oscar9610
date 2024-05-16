@@ -24,6 +24,7 @@ execute if score .main_line orantes.story matches 28 run kill @e[tag=statement]
 execute if score .main_line orantes.story matches 28 run function time_traveler:players/transitions
 execute if score .main_line orantes.story matches 29 run tag @a[distance=..30] add statement_walk
 execute as @a[distance=..30,tag=statement_walk] if score .main_line orantes.story matches 29 run tellraw @a[distance=..30] {"text":"【目標】跟著陳述","color":"gold"}
+
 execute as @a[distance=..30,tag=statement_walk] if score .main_line orantes.story matches 29 run tp @a[distance=..30] -68 63 -11 90 0
 #劇情
 #story

@@ -1,19 +1,23 @@
 {
   "criteria": {
-    "requirement": {
+    "double_sword_fire": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "player": {
-          "equipment": {
-            "mainhand": {
-              "items": [],
-              "components": {},
-              "predicates": {
-                "minecraft:custom_data": "{the_night:1,rarity:5}"
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": "{the_night:1,rarity:5}"
+                  }
+                }
               }
             }
           }
-        }
+        ]
       }
     }
   },
