@@ -13,6 +13,7 @@ execute in game_map:spaceship_interior run setworldspawn 0 56 0
 function time_traveler:scoreboard
 function time_traveler:monsters/main/scoreboard
 function time_traveler:boss/main/scoreboard
+function rpg_armors:scoreboard
 function weapons:scoreboard
 
 function rotas:scoreboard

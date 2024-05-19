@@ -1,6 +1,6 @@
 
 execute if score @s boss.skill.casting matches 95.. at @s run tp @s ~ ~0.2 ~
-execute if score @s boss.skill.casting matches 90.. at @s run tp @s ~ ~0.05 ~
+execute if score @s boss.skill.casting matches 80.. at @s run tp @s ~ ~0.05 ~
 
 execute if score @s boss.skill.casting matches 60 run function time_traveler:boss/poison/4/1
 

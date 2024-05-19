@@ -22,4 +22,4 @@ execute as @e[type=zombie,tag=poison_boss.4] at @s run function time_traveler:bo
 execute as @e[type=marker,tag=poison_boss.4.1] at @s run function time_traveler:boss/poison/4/main.par_mar
 
 # Boss Self
-execute as @e[tag=poison_boss,limit=1] at @s run function time_traveler:boss/poison/main.boss
+execute as @e[type=zombie,tag=poison_boss,limit=1] at @s run function time_traveler:boss/poison/main.boss

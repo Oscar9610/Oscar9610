@@ -12,15 +12,15 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-custom_name = ['3', '靈風箭手護腿', '#F4E75D']
-info  = ['護腿', '靈風箭手']
-story = ['靈風箭手的護腿']
-item_data     = {'real_item': 'chainmail_leggings', 'trim': {'material': 'diamond', 'pattern': 'spire'}, 'rgb': -1, 'custom_data': '{speed:1b}', 'max_damage': -1}
-series_skill  = {'is_skill': True, 'cd': 0, 'name': '風之庇佑', 'info': ['穿上4件系列套裝，可永久獲得&=速度ɪɪ&+']}
+custom_name = ['3', '調和☯之影鞋子', '#F4E75D']
+info  = ['鞋子', '調和之影']
+story = ['黑白調和！以此身為界！塑造萬象！']
+item_data     = {'real_item': 'chainmail_boots', 'trim': {'material': 'harmonizing_shadow_material', 'pattern': 'harmonizing_shadow_trim'}, 'rgb': -1, 'custom_data': '{harmonizing_shadow:1b}', 'max_damage': -1}
+series_skill  = {'is_skill': True, 'cd': 10, 'name': '黑白調和', 'info': ['穿上4件系列套裝，攻擊敵人時會隨機獲得其中一種屬性',' - 恢復&=8點血量&+',' - 獲得&=加速ɪ&+，持續5秒',' - 獲得&=6點護盾&+，持續10秒',' - 獲得&=力量ɪ&+，持續5秒']}
 passive_skill = {'is_skill': False, 'cd': 0, 'name': '', 'info': ['']}
 
-attribute.append({'name': '移動速度', 'show_value': '10%', 'value': 0.1, 'attribute_name': 'generic.movement_speed'})
-attribute.append({'name': '防禦力', 'show_value': '2', 'value': 2, 'attribute_name': 'generic.armor'})
+attribute.append({'name': '攻擊速度', 'show_value': '10%', 'value': 0.1, 'attribute_name': 'generic.attack_speed'})
+attribute.append({'name': '移動速度', 'show_value': '15%', 'value': 0.15, 'attribute_name': 'generic.movement_speed'})
 
 # ----- init ----- #
 

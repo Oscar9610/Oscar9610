@@ -18,6 +18,8 @@ execute as @a[predicate=rpg_armors:resistance_armors/4] run advancement revoke @
 execute as @a[predicate=!rpg_armors:resistance_armors/4] run advancement grant @s only rpg_armors:resistance_armors/4/take_off
 execute as @a[predicate=!rpg_armors:resistance_armors/4] run advancement revoke @s only rpg_armors:resistance_armors/4/eqipment
 
+execute as @a[advancements={rpg_armors:harmonizing_shadow=true}] run function rpg_armors:harmonizing_armor/main
+
 #重製死亡偵測
 execute as @a[scores={player_death=1..}] run function rpg_armors:reload_rpg_armor_effect
 
