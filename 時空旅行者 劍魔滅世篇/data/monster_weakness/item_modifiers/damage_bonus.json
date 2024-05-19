@@ -1,10 +1,9 @@
 [
-    {
-      "function": "minecraft:set_enchantments",
-      "enchantments": {
-        "minecraft:smite": 1
-      },
-      "add": false
-    }
-  ]
-  
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "minecraft:sharpness": 2
+    },
+    "add": false
+  }
+]

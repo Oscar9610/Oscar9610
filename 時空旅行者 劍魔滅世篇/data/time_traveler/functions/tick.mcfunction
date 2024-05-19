@@ -1,11 +1,6 @@
 #怪物弱點偵測用
 #=========================================================
-function monster_weakness:wind
-function monster_weakness:fire
-function monster_weakness:physical
-function monster_weakness:thunder
-function monster_weakness:water
-function monster_weakness:grass
+execute as @a at @s run function monster_weakness:player_loop
 #=========================================================
 #收納
 function time_traveler:boss/spawner/main
