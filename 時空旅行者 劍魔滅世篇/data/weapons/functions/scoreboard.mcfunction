@@ -116,6 +116,15 @@ scoreboard players set @a violent_storm_state 0
 scoreboard players set @a violent_storm.field_time 0
 
 #===================================================================
+scoreboard objectives add spider_cd dummy "蜘蛛CD"
+scoreboard objectives add spider_max_cd dummy "蜘蛛CD上限"
+scoreboard objectives add spider_passive dummy "被動[寬恕無關慈悲]"
+scoreboard objectives add spider_passive_dot dummy "被動[寬恕無關慈悲]dot"
+scoreboard objectives add is_spider.passive dummy "是否是蜘蛛被動造成的傷害?"
+
+scoreboard players set @a spider_passive 0
+scoreboard players set global spider_passive_dot 5
+#===================================================================
 
 #這是武器技能傷害取玩家攻擊力的百分比
 #代表著玩家使用武器技能造成的技能傷害會取玩家攻擊力的5倍作為技能造成的傷害
