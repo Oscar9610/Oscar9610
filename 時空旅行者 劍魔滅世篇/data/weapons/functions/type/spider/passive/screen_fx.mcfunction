@@ -7,3 +7,4 @@ playsound minecraft:block.anvil.land voice @a ~ ~1 ~ 1 1
 playsound minecraft:entity.iron_golem.death master @a ~ ~1 ~ 1 1
 playsound minecraft:block.glass.break master @a ~ ~1 ~ 1 0.5
 playsound minecraft:block.chain.place master @a ~ ~1 ~ 1 0.75
+playsound minecraft:voice.violin voice @s ~ ~1 ~ 0.5 1

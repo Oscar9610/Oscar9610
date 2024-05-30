@@ -1,6 +1,8 @@
 # load
 function weapons:load
 
+team add yellow "黃色"
+team modify yellow color yellow
 team add main_line "主線劇情顏色"
 team modify main_line color white
 

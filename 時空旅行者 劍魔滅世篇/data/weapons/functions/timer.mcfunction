@@ -41,8 +41,11 @@ execute as @a[scores={otherworld_dust_star_cd=1}] at @s run playsound minecraft:
 execute as @a[scores={violent_storm_cd=1}] run tellraw @s [{"text":"[","color":"green","bold":true},{"text":"☆☆☆☆☆狂風暴雨{風}","color":"white","bold":true},{"text":"] ","color":"green","bold":true},{"text":"冷卻完畢！","color":"green","bold":true}]
 execute as @a[scores={violent_storm_cd=1}] at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~ 0.5 1.5
 
+execute as @a[scores={spider_cd=1}] run tellraw @s [{"text":"[","color":"green","bold":true},{"text":"☆☆☆☆☆蜘蛛{雷}","color":"white","bold":true},{"text":"] ","color":"green","bold":true},{"text":"冷卻完畢！","color":"green","bold":true}]
+execute as @a[scores={spider_cd=1}] at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~ 0.5 1.5
 
 #所有武器CD計時器1s
+scoreboard players remove @a[scores={spider_cd=1..}] spider_cd 1
 scoreboard players remove @a[scores={otherworld_dust_star_cd=1..}] otherworld_dust_star_cd 1
 scoreboard players remove @a[scores={violent_storm.field_time=1..}] violent_storm.field_time 1
 scoreboard players remove @a[scores={violent_storm_cd=1..}] violent_storm_cd 1
