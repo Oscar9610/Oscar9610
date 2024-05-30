@@ -1,5 +1,9 @@
 [
   {
+    "function": "minecraft:set_custom_data",
+    "tag": "{monster_weakness:0b}"
+  },
+  {
     "function": "minecraft:set_enchantments",
     "enchantments": {
       "minecraft:sharpness": 0

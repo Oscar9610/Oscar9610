@@ -10,3 +10,5 @@ execute if score #temp global.main matches 0 store success score #temp global.ma
 
 execute if score #temp global.main matches 1 run item modify entity @s weapon.mainhand monster_weakness:damage_bonus
 execute if score #temp global.main matches 0 run item modify entity @s weapon.mainhand monster_weakness:no_damage_bonus
+
+advancement revoke @s only monster_weakness:attack
