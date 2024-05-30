@@ -1,6 +1,8 @@
 scoreboard players set .main_line ancient_lorras.story 1
 scoreboard players set .main_line ancient_lorras.global.main 1
 
+kill @e[tag=wounded]
+
 function ancient_lorras:story/main_line/dtal/guide/emera
 function ancient_lorras:story/main_line/dtal/guide/lena
 

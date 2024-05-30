@@ -122,6 +122,8 @@ scoreboard objectives add spider_passive dummy "被動[寬恕無關慈悲]"
 scoreboard objectives add spider_passive_dot dummy "被動[寬恕無關慈悲]dot"
 scoreboard objectives add is_spider.passive dummy "是否是蜘蛛被動造成的傷害?"
 
+scoreboard players set @a spider_cd 0
+scoreboard players set @a spider_max_cd 25
 scoreboard players set @a spider_passive 0
 scoreboard players set global spider_passive_dot 5
 #===================================================================
@@ -154,6 +156,7 @@ scoreboard players set .the_night_passive atk 200
 scoreboard players set .otherworld_dust_star atk 200
 scoreboard players set .otherworld_dust_star_ca atk 50
 scoreboard players set .violent_storm atk 350
+scoreboard players set .spider atk 200
 
 #百分比倍率微調
 scoreboard players set 100 atk 100
