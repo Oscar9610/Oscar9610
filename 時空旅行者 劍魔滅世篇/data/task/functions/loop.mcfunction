@@ -38,7 +38,11 @@ execute if score #rotas.chapter_2 global.advancements matches 5.. run advancemen
 
 execute if score #shooting_contest global.advancements matches 1.. run advancement grant @a only task:orantes/shooting_contest
 
+execute if score #paimon global.advancements matches 1.. run advancement grant @a only task:orantes/paimon
+
 execute if score #shooting_contest global.advancements matches 0 run advancement revoke @a only task:orantes/shooting_contest
+
+execute if score #paimon global.advancements matches 0 run advancement revoke @a only task:orantes/paimon
 
 execute if score #main_line global.advancements matches 0 run function task:reset_task
 

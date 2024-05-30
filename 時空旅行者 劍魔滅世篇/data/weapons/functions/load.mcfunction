@@ -10,3 +10,5 @@ advancement revoke @a only weapons:use/noob_sickle
 advancement revoke @a only weapons:use/noob_sword
 advancement revoke @a only weapons:use/the_night
 advancement revoke @a only weapons:use/wind_swod
+
+schedule function weapons:type/spider/passive/loop 1s
