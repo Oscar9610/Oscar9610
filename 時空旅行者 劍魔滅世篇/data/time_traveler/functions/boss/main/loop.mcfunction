@@ -1,6 +1,6 @@
 
 function time_traveler:boss/shadow/tag_loop
-function time_traveler:boss/poison/main
+execute in game_map:poison_arena run function time_traveler:boss/poison/main
 function time_traveler:boss/storm_keeper/tag_loop
 function rotas:event/5/shadow/tag_loop
 function rotas:boss/infinite_abyss/tag_loop
