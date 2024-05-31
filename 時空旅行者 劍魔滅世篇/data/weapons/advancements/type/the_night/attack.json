@@ -6,8 +6,6 @@
         "player": {
           "equipment": {
             "mainhand": {
-              "items": [],
-              "components": {},
               "predicates": {
                 "minecraft:custom_data": "{the_night:1}"
               }

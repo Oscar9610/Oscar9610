@@ -19,20 +19,20 @@ execute if score .main world_tree.story matches 14 run title @a title {"text":"\
 execute if score .main world_tree.story matches 13 run tellraw @a {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
 execute if score .main world_tree.story matches 13 as @a at @s in game_map:initial run tp @a -2 -47 -8 -180 10
 execute if score .main world_tree.story matches 13 run tellraw @a {"text":"【SKIP】(點擊跳過劇情對話) ","color":"light_purple","clickEvent":{"action":"run_command","value":"/execute if score .main world_tree.story matches 1..13 run scoreboard players set .main world_tree.story 1"}}
-execute if score .main world_tree.story matches 13 run tellraw @a {"text":"［旁白］ 你甦醒於世界樹下"}
-execute if score .main world_tree.story matches 12 run tellraw @a {"text":"［旁白］ 守護者們說..."}
-execute if score .main world_tree.story matches 11 run tellraw @a {"text":"［瑪莎］ 世界即將迎來毀滅"}
-execute if score .main world_tree.story matches 10 run tellraw @a {"text":"［瑪莎］ 孩子，你是拯救世界的唯一希望"}
-execute if score .main world_tree.story matches 9 run tellraw @a {"text":"［瑪莎］ 深淵力量正在侵蝕世界"}
-execute if score .main world_tree.story matches 8 run tellraw @a {"text":"［瑪莎］ 為了拯救世界，我將會把你送往其他的星球"}
-execute if score .main world_tree.story matches 7 run tellraw @a {"text":"［瑪莎］ 深淵會侵蝕他能侵蝕的任何東西"}
-execute if score .main world_tree.story matches 6 run tellraw @a {"text":"［阿斯卡］ 包括我們的力量"}
-execute if score .main world_tree.story matches 5 run tellraw @a {"text":"［阿斯卡］ 他能穿越各個星球並蔓延到不同宇宙星球裡"}
-execute if score .main world_tree.story matches 4 run tellraw @a {"text":"［阿斯卡］ 必須在他毀滅世界前，盡速消滅"}
-execute as @a if score .main world_tree.story matches 3 run tellraw @s [{"text":"［阿斯卡］ ","extra":[{"selector":"@s"}]},{"text":"，我知道你能做到"}]
-execute if score .main world_tree.story matches 2 run tellraw @a {"text":"［阿斯卡］ 堅持下去，相信路上遇到的夥伴，互相幫助"}
+execute if score .main world_tree.story matches 13 run tellraw @a {"text":"［旁白］你甦醒於世界樹下"}
+execute if score .main world_tree.story matches 12 run tellraw @a {"text":"［旁白］守護者們說..."}
+execute if score .main world_tree.story matches 11 run tellraw @a {"text":"［瑪莎］世界即將迎來毀滅"}
+execute if score .main world_tree.story matches 10 run tellraw @a {"text":"［瑪莎］孩子，你是拯救世界的唯一希望"}
+execute if score .main world_tree.story matches 9 run tellraw @a {"text":"［瑪莎］深淵力量正在侵蝕世界"}
+execute if score .main world_tree.story matches 8 run tellraw @a {"text":"［瑪莎］為了拯救世界，我將會把你送往其他的星球"}
+execute if score .main world_tree.story matches 7 run tellraw @a {"text":"［瑪莎］深淵會侵蝕他能侵蝕的任何東西"}
+execute if score .main world_tree.story matches 6 run tellraw @a {"text":"［阿斯卡］包括我們的力量"}
+execute if score .main world_tree.story matches 5 run tellraw @a {"text":"［阿斯卡］他能穿越各個星球並蔓延到不同宇宙星球裡"}
+execute if score .main world_tree.story matches 4 run tellraw @a {"text":"［阿斯卡］必須在他毀滅世界前，盡速消滅"}
+execute as @a if score .main world_tree.story matches 3 run tellraw @s [{"text":"［阿斯卡］","extra":[{"selector":"@s"}]},{"text":"，我知道你能做到"}]
+execute if score .main world_tree.story matches 2 run tellraw @a {"text":"［阿斯卡］堅持下去，相信路上遇到的夥伴，互相幫助"}
 execute if score .main world_tree.story matches 1 run tellraw @a {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
-execute if score .main world_tree.story matches 1 run tellraw @a {"text":"［阿斯卡］ 再見了，好好活下去！"}
+execute if score .main world_tree.story matches 1 run tellraw @a {"text":"［阿斯卡］再見了，好好活下去！"}
 execute if score .main world_tree.story matches 1 run scoreboard players set .spaceship_plain world_tree.story 26
 
 ## 傳送效果

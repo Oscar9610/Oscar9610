@@ -1,9 +1,9 @@
 
 tag @s add poison_boss.2
-scoreboard players set @a[distance=..60] poison_boss.move2 80
+scoreboard players set @a[distance=..60] poison_boss.move2 10
 execute as @a[distance=..60] run attribute @s generic.armor modifier add f5a9aa71-61da-4dbd-be73-20cd6e75f50b "poison_boss.move2" -100 add_value
 scoreboard players set @s boss.skill.casting 60
-execute at @s facing entity @p eyes rotated ~180 -40 run function time_traveler:monster/motion {range:3}
+execute at @s facing entity @p eyes rotated ~180 -40 run function monsters:motion {range:3}
 
 summon slime 2 65 2 {Tags:[poison_boss.2.1,summon],Size:0,DeathLootTable:"",NoAI:1b}
 summon slime -3 65 2 {Tags:[poison_boss.2.1,summon],Size:0,DeathLootTable:"",NoAI:1b}

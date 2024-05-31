@@ -12,15 +12,16 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-custom_name = ['2', '風力劍', '#28778A']
-info  = ['劍', '元素', '風']
-story = ['受到風之祝福的劍，擁有操控風的力量']
-item_data     = {'real_item': 'iron_sword', 'custom_model_data': 21, 'custom_data': '{wind:1b,wind_sword:1,weight:1b}', 'max_damage': 246}
-main_skill    = {'is_skill': True, 'cd': 8, 'name': '風速斬', 'info': ['操控風的力量，連續施放2個風速劍氣，對路徑','上的敵人造成&=100%攻擊傷害&-並且使他們起飛']}
-passive_skill = {'is_skill': False, 'cd': 0, 'name': '', 'info': ['']}
-#颶風流 = #5ACECE / 雷雲陣 = yellow
-attribute.append({'name': '攻擊力', 'show_value': '6', 'value': 6, 'attribute_name': 'generic.attack_damage', 'slot': 'mainhand'})
-attribute.append({'name': '攻擊速度', 'show_value': '1.8', 'value': -2.2, 'attribute_name': 'generic.attack_speed', 'slot': 'mainhand'})
+custom_name = ['3', '夜幕', '#972DC8']
+info  = ['劍', '夜幕', '風']
+story = ['誕生於夜光之下，守護著森林的夜晚']
+item_data     = {'real_item': 'iron_sword', 'custom_model_data': 6, 'custom_data': '{wind:1b,the_night:1,rarity:3b,weight:1b}', 'max_damage': 24}
+main_skill    = {'is_skill': True, 'cd': 60, 'name': '血祭', 'info': ['消耗&=5點血量&-，進入「血祭」狀態，持續10秒', '期間獲得&=高額攻擊力、攻擊速度、抗性&+，並且', '攻擊敵人有50%機率恢復&=4點血量&+，', '狀態結束時會&=提升自身速度40%&+，持續2秒']}
+passive_skill = {'is_skill': True, 'cd': 0, 'name': '血月恩賜', 'info': ['攻擊敵人時，減少主動技能冷卻時間1秒']}
+
+attribute.append({'name': '攻擊力', 'show_value': '8', 'value': 8, 'attribute_name': 'generic.attack_damage', 'slot': 'mainhand'})
+attribute.append({'name': '攻擊速度', 'show_value': '2.2', 'value': -1.8, 'attribute_name': 'generic.attack_speed', 'slot': 'mainhand'})
+attribute.append({'name': '最大血量', 'show_value': '4', 'value': 4, 'attribute_name': 'generic.max_health', 'slot': 'mainhand'})
 
 # ----- init ----- #
 
