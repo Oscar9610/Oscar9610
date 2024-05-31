@@ -11,7 +11,7 @@ scoreboard players set orantes_1 remaining_monster 20
 scoreboard players set orantes_1 target_wave 20
 advancement revoke @a only time_traveler:monster_wave/orantes/1/1
 scoreboard players set orantes_1 kill 0
-kill @e[type=!player,tag=orantes_1_monster_wave]
+kill @e[type=!player,tag=orantes_1.monster_wave]
 kill @e[type=experience_orb]
 kill @e[type=item,nbt={Item:{tag:{money:1b}}}]
 kill @e[type=armor_stand,tag=orantes_main_battle]

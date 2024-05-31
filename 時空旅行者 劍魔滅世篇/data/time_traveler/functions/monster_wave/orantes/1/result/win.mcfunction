@@ -8,11 +8,11 @@ scoreboard players set .main_line orantes.global.main 7
 function time_traveler:monster_wave/orantes/1/result/wave_reset
 
 # player
-tag @a remove orantes_1_monster_wave
+tag @a remove orantes_1.monster_wave
 tag @a[distance=..30] add statement_walk
 function time_traveler:story/orantes/main_line/rs/guide
 
 # monster
-kill @e[type=#time_traveler:monsters,tag=orantes_1_monster_wave]
+kill @e[type=#time_traveler:monsters,tag=orantes_1.monster_wave]
 function time_traveler:monster_wave/wave_clear
 schedule clear time_traveler:monster_wave/orantes/1/summon

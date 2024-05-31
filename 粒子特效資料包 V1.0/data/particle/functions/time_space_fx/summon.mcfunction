@@ -1,0 +1,2 @@
+
+summon area_effect_cloud ~ ~0.25 ~ {Duration:100,Tags:["player.space_time_deceleration.fx4"],Passengers:[{id:"minecraft:area_effect_cloud",Tags:["player.space_time_deceleration.fx3"],Duration:100,Passengers:[{id:"minecraft:area_effect_cloud",Tags:["player.space_time_deceleration.fx2"],Duration:100,Passengers:[{id:"minecraft:area_effect_cloud",Tags:["player.space_time_deceleration.fx"],Duration:100}]}]}]}

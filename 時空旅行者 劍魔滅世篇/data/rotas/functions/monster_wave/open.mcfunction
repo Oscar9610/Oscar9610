@@ -10,5 +10,5 @@ schedule function rotas:monster_wave/summon 1t
 # tp in game_map:realm_of_time_and_space everyone #
 execute as @a if dimension game_map:realm_of_time_and_space run tp @s 104 74 79 90 0
 
-kill @e[type=!player,tag=rotas.event.2.monster_wave]
+kill @e[type=!player,tag=rotas_event_2.monster_wave]
 schedule function rotas:monster_wave/loop 1t

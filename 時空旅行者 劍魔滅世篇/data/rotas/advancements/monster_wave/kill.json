@@ -4,7 +4,7 @@
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "entity": {
-          "nbt": "{Tags:[\"rotas.event.2.monster_wave\"]}"
+          "nbt": "{Tags:[\"rotas_event_2.monster_wave\"]}"
         }
       }
     }

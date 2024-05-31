@@ -12,14 +12,14 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-custom_name = ['5', '狂風暴雨', '#28778A']
-info  = ['斧頭', '元素', '風']
-story = ['狂風暴雨之中的神奇斧頭，擁有操控天氣的力量！']
-item_data     = {'real_item': 'iron_sword', 'custom_model_data': 29, 'custom_data': '{wind:1b,violent_storm:1,weight:1b}', 'max_damage': 246}
-main_skill    = {'is_skill': True, 'cd': 20, 'name': '暴風雨', 'info': ['展開半徑15格的暴風領域，並且玩家在期間無法離開，持續18秒','期間再次使用技能可以來回召喚「&=颶風流&=/&=雷雲陣&=」','「&=颶風流&=」會在玩家位置上方凝聚氣流，形成強烈的颶風，','吸引大範圍內的敵人至其中並造成&=350%攻擊傷害&-','','「&=雷雲陣&=」會在暴風雨中心凝聚一朵雷雲','並施展巨響雷鳴對大範圍內的敵人造成&=350%攻擊傷害&-','「&=颶風流&=/&=雷雲陣&=」的冷卻均為2秒']}
+custom_name = ['2', '風力劍', '#28778A']
+info  = ['劍', '元素', '風']
+story = ['受到風之祝福的劍，擁有操控風的力量']
+item_data     = {'real_item': 'iron_sword', 'custom_model_data': 21, 'custom_data': '{wind:1b,wind_sword:1,weight:1b}', 'max_damage': 246}
+main_skill    = {'is_skill': True, 'cd': 8, 'name': '風速斬', 'info': ['操控風的力量，連續施放2個風速劍氣，對路徑','上的敵人造成&=100%攻擊傷害&-並且使他們起飛']}
 passive_skill = {'is_skill': False, 'cd': 0, 'name': '', 'info': ['']}
 #颶風流 = #5ACECE / 雷雲陣 = yellow
-attribute.append({'name': '攻擊力', 'show_value': '80%', 'value': 0.8, 'attribute_name': 'generic.attack_damage', 'slot': 'mainhand'})
+attribute.append({'name': '攻擊力', 'show_value': '6', 'value': 6, 'attribute_name': 'generic.attack_damage', 'slot': 'mainhand'})
 attribute.append({'name': '攻擊速度', 'show_value': '1.8', 'value': -2.2, 'attribute_name': 'generic.attack_speed', 'slot': 'mainhand'})
 
 # ----- init ----- #

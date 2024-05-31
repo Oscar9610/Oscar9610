@@ -10,7 +10,7 @@
       }
     },
     "rewards": {
-      "function": "time_traveler:boss/martha/kill"
+      "function": "boss:martha/kill"
     }
   }
   

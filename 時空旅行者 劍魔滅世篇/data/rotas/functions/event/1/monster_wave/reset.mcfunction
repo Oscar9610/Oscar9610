@@ -5,7 +5,7 @@ scoreboard players set rotas.event.1.mw rotas.remaining_monster 20
 scoreboard players set rotas.event.1.mw rotas.target_wave 20
 advancement revoke @a only rotas:event/1/monster_wave/kill
 scoreboard players set rotas.event.1.mw rotas.kill 0
-kill @e[type=!player,tag=rotas.event.1.monster_wave]
+kill @e[type=!player,tag=rotas_event_1.monster_wave]
 kill @e[type=experience_orb]
 kill @e[type=item,nbt={Item:{tag:{money:1b}}}]
 kill @e[type=armor_stand,tag=rotas.event.1.mw]

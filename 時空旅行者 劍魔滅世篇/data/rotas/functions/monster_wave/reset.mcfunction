@@ -5,7 +5,7 @@ scoreboard players set rotas.event.2.mw rotas.remaining_monster 20
 scoreboard players set rotas.event.2.mw target_wave 20
 advancement revoke @a only rotas:monster_wave/kill
 scoreboard players set rotas.event.2.mw rotas.kill 0
-kill @e[type=!player,tag=rotas.event.2.monster_wave]
+kill @e[type=!player,tag=rotas_event_2.monster_wave]
 kill @e[type=armor_stand,tag=rotas.event.2.mw]
 execute positioned 87 73 79 as @e[distance=..30,type=item,nbt={Item:{tag:{money:1b}}}] run kill @s
 execute positioned 87 73 79 run function rotas:main/portal/open_portal

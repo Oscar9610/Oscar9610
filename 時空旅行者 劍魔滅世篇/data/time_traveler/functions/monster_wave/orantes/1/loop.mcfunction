@@ -11,7 +11,7 @@ execute as @e[type=marker,tag=orantes_main_battle,limit=1] at @s run function ti
 execute as @e[type=marker,tag=orantes_main_battle,limit=1] at @s run function time_traveler:monster_wave/orantes/1/range
 
 # monster
-execute as @e[type=#time_traveler:monsters,tag=orantes_1_monster_wave,distance=30..] at @s facing -64 63 5 run tp @s ^ ^0.5 ^1
+execute as @e[type=#time_traveler:monsters,tag=orantes_1.monster_wave,distance=30..] at @s facing -64 63 5 run tp @s ^ ^0.5 ^1
 
 # loop
 execute unless entity @a[distance=..30,limit=1] run function time_traveler:monster_wave/orantes/1/result/escape

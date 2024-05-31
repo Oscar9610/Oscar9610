@@ -11,6 +11,6 @@ function time_traveler:monster_wave/orantes/1/result/wave_reset
 tellraw @a {"text":"(已脫離戰場)","color": "red","bold": true}
 
 # monster
-kill @e[type=#time_traveler:monsters,tag=orantes_1_monster_wave]
+kill @e[type=#time_traveler:monsters,tag=orantes_1.monster_wave]
 function time_traveler:monster_wave/wave_clear
 schedule clear time_traveler:monster_wave/orantes/1/summon

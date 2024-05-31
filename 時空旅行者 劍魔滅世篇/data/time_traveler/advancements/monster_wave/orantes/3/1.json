@@ -4,7 +4,7 @@
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "entity": {
-          "nbt": "{Tags:[\"orantes_3_monster_wave\"]}"
+          "nbt": "{Tags:[\"orantes_3.monster_wave\"]}"
         }
       }
     }

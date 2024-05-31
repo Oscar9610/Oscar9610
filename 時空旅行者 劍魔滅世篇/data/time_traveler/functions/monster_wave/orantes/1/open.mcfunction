@@ -23,7 +23,7 @@ summon marker ~ ~ ~ {Tags:["orantes_main_battle"]}
 spawnpoint @a ~ ~ ~
 
 # summon
-kill @e[type=#time_traveler:monsters,tag=orantes_1_monster_wave]
+kill @e[type=#time_traveler:monsters,tag=orantes_1.monster_wave]
 schedule function time_traveler:monster_wave/orantes/1/summon 1t
 
 # ============================================================ #

@@ -3,7 +3,7 @@
 execute as @a at @s run function monster_weakness:player_loop
 #=========================================================
 #收納
-function time_traveler:boss/spawner/main
+function boss:spawner/main
 function time_traveler:interaction/main
 function time_traveler:players/effects/main
 function time_traveler:system/main

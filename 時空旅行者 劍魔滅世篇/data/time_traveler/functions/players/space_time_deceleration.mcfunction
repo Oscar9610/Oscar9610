@@ -6,7 +6,7 @@ effect give @e[type=!minecraft:player,distance=..8] minecraft:levitation 1 0 tru
 effect give @e[type=!minecraft:player,distance=..8] minecraft:mining_fatigue 10 255 true
 effect give @e[type=!minecraft:player,distance=..8] minecraft:weakness 10 255 true
 
-function time_traveler:entity_fx/time_space_fx/summon_time_space_fx
+function particle:time_space_fx/summon
 effect give @s minecraft:resistance 1 255 true
 effect give @s minecraft:fire_resistance 1 255 true
 damage @s[gamemode=survival] 0.000000000000001 minecraft:player_attack

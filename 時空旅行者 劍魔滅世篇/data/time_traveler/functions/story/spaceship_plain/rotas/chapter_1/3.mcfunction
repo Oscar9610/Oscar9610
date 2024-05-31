@@ -5,8 +5,8 @@ execute in game_map:orantes positioned -7 61 93 as @a[distance=..16] if score ro
 execute in game_map:orantes positioned -7 61 93 as @a[distance=..16] if score rotas._chapter_1 spaceship.story matches 13 run tellraw @s {"text":"［希爾］我一直很想跟你說..."}
 execute in game_map:orantes positioned -7 61 93 as @a[distance=..16] if score rotas._chapter_1 spaceship.story matches 14 run tellraw @s {"text":"(希爾深吸一口氣)","color":"red"}
 execute in game_map:orantes positioned -7 61 93 if score rotas._chapter_1 spaceship.story matches 14 run kill @e[tag=display.right_click_display,distance=..3]
-execute in game_map:orantes positioned -7 61 93 as @a[distance=..16] if score rotas._chapter_1 spaceship.story matches 14 run stopsound @s record minecraft:background_music.out_of_the_rain
-execute in game_map:orantes positioned -7 61 93 as @a[distance=..16] if score rotas._chapter_1 spaceship.story matches 14 run stopsound @s record minecraft:background_music.rain_world
+execute in game_map:orantes positioned -7 61 93 as @a[distance=..16] if score rotas._chapter_1 spaceship.story matches 14 run stopsound @s record minecraft:bgm.out_of_the_rain
+execute in game_map:orantes positioned -7 61 93 as @a[distance=..16] if score rotas._chapter_1 spaceship.story matches 14 run stopsound @s record minecraft:bgm.rain_world
 execute if score rotas._chapter_1 spaceship.story matches 14 run scoreboard players set #music.rain_city global.main 3
 execute in game_map:orantes positioned -7 61 93 as @a[distance=..16] if score rotas._chapter_1 spaceship.story matches 14 run function time_traveler:msuic/orantes_city_music/3/start
 execute in game_map:orantes as @e[tag=rotas.chapter_1.3] if score rotas._chapter_1 spaceship.story matches 14 run tag @s add facing

@@ -10,7 +10,7 @@
       }
     },
     "rewards": {
-      "function": "time_traveler:boss/spawner/poison/set_delay/1"
+      "function": "boss:spawner/poison/set_delay/1"
     }
   }
   

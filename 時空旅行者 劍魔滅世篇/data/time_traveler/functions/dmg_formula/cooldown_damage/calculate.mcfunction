@@ -3,7 +3,7 @@
 tag @s add atker
 
 # calculate
-execute if entity @s[type=player] store result score #temp atk run attribute @s minecraft:generic.attack_damage get
+execute store result score #temp atk run attribute @s minecraft:generic.attack_damage get
 scoreboard players operation @s atk *= #temp atk
 scoreboard players operation @s atk /= 100 atk
 

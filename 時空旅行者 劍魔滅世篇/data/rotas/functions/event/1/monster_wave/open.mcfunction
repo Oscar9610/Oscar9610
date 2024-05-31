@@ -6,5 +6,5 @@ execute in game_map:realm_of_time_and_space run summon armor_stand 87 73 79 {Mar
 advancement revoke @a only rotas:event/1/monster_wave/kill
 schedule function rotas:event/1/monster_wave/summon 1t
 
-kill @e[type=!player,tag=rotas.event.1.monster_wave]
+kill @e[type=!player,tag=rotas_event_1.monster_wave]
 schedule function rotas:event/1/monster_wave/loop 1t

@@ -1,13 +1,13 @@
-scoreboard players add @s particle.space_rupture 1
 
-# rotated
-tp @s ~ ~ ~ ~6 0
+# main
+execute as @e[type=marker,tag=fx.sr.main] at @s run function particle:space_rupture/main.main
 
-# particle
-execute if score @s particle.space_rupture matches 12.. run particle minecraft:dust 0.933 0.545 0.302 5 ^ ^ ^7.5 0.3 0 0.3 0 1 force
-execute if score @s particle.space_rupture matches 12.. run particle minecraft:dust 0.933 0.545 0.302 5 ^ ^ ^-7.5 0.3 0 0.3 0 1 force
-function particle:space_rupture/air_ash/summon
-playsound minecraft:block.furnace.fire_crackle master @a
+# ground ash
+execute as @e[type=text_display,tag=fx.sr.ga] at @s run function particle:space_rupture/ground_ash/main
+execute as @e[type=text_display,tag=fx.sr.ga2] at @s run function particle:space_rupture/ground_ash/main2
 
-# reset 
-execute if score @s particle.space_rupture matches 42.. run kill @s
+# purple ash
+execute as @e[type=block_display,tag=fx.sr.pa] at @s run function particle:space_rupture/purple_ash/main
+
+# air ash
+execute as @e[type=text_display,tag=fx.sr.aa] at @s run function particle:space_rupture/air_ash/main
