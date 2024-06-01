@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "entity": {
+            "nbt": "{Tags:[\"storm_boss\"]}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "monsters:boss_respawn/storm/slain"
+    }
+  }
+  

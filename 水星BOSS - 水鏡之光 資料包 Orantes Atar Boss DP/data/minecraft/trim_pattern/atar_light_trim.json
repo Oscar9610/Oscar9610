@@ -1,7 +1,0 @@
-{
-  "asset_id": "atar_light_trim",
-  "description": {
-    "translate": "trim_pattern.minecraft.atar_light"
-  },
-  "template_item": "minecraft:glowstone"
-}

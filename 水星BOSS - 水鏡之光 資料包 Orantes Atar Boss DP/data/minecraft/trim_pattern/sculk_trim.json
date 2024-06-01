@@ -1,7 +1,0 @@
-{
-  "asset_id": "sculk_trim",
-  "description": {
-    "translate": "trim_pattern.minecraft.sculk"
-  },
-  "template_item": "minecraft:sculk"
-}

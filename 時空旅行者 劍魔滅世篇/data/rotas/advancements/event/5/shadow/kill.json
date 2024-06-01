@@ -4,7 +4,7 @@
         "trigger": "minecraft:player_killed_entity",
         "conditions": {
           "entity": {
-            "nbt": "{Tags:[\"shadow.1\"]}"
+            "nbt": "{Tags:[\"shadow_boss.1\"]}"
           }
         }
       }

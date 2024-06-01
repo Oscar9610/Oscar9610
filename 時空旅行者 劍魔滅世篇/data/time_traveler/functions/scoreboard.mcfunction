@@ -104,7 +104,7 @@ scoreboard players set shadow_cave p4.world_area 0
 
 
 scoreboard players set poison_cave p1.world_area 0
-scoreboard players set storm_keeper_cave p1.world_area 1
+scoreboard players set storm_cave p1.world_area 1
 scoreboard players set orantes_village p1.world_area 1
 scoreboard players set place_of_trial p1.world_area 1
 

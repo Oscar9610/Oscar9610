@@ -3,7 +3,6 @@
 execute as @a at @s run function monster_weakness:player_loop
 #=========================================================
 #收納
-function boss:spawner/main
 function time_traveler:interaction/main
 function time_traveler:players/effects/main
 function time_traveler:system/main
@@ -28,7 +27,7 @@ execute as @e[tag=rotate.30] at @s run tp @s ~ ~ ~ ~30 ~
 execute as @e[tag=rotate.45] at @s run tp @s ~ ~ ~ ~45 ~
 
 #玩家死亡
-execute as @a if score @s player_death matches 1.. run function players:die
+execute as @a[scores={player_death=1..}] at @s run function players:die
 
 #=========================================================
 
@@ -44,7 +43,7 @@ execute if score .global spaceship_0_61_-51 matches 1 run scoreboard players set
 #=========================================================
 
 #世界等級
-execute store result score .player.highest_level global.main run scoreboard players get .world_level global.main
+execute as @a at @s run function time_traveler:world_level
 
 #=========================================================
 

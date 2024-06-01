@@ -1,7 +1,6 @@
 
 ## ----- 施法開始 ----- ##
-scoreboard players set @s monster.skill.casting 0
-scoreboard players set @s monster.skill.cast.cd 2147483647
+function monsters:-init/no_cast
 
-# Skill 1
+# Skill
 function monsters:sculk_priest/1/use

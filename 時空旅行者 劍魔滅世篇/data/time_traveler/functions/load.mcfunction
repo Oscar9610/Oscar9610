@@ -14,7 +14,6 @@ execute in game_map:spaceship_interior run setworldspawn 0 56 0
 # scoreboard
 function time_traveler:scoreboard
 function monsters:scoreboard
-function boss:main/scoreboard
 function rpg_armors:scoreboard
 function weapons:scoreboard
 
@@ -40,10 +39,10 @@ schedule function time_traveler:mini_game/shooting_contest/bow/remove 1t
 schedule function time_traveler:story/orantes/npc/shooting_contest/loop 1t
 schedule function time_traveler:system/shooting_contest/kill_arrow 6t
 schedule function time_traveler:story/orantes/branch_line/loop 1t
-schedule function boss:spawner/shadow/set_delay/loop 1t
-schedule function boss:spawner/poison/set_delay/loop 1t
-schedule function boss:spawner/storm_keeper/set_delay/loop 1t
-schedule function boss:spawner/atar/set_delay/loop 1t
+schedule function monsters:spawner/shadow/set_delay/loop 1t
+schedule function monsters:spawner/poison/set_delay/loop 1t
+schedule function monsters:spawner/storm/set_delay/loop 1t
+schedule function monsters:spawner/atar/set_delay/loop 1t
 schedule function time_traveler:interaction/shooting_contest 1t
 schedule function time_traveler:players/effects/saturation 1t
 schedule function time_traveler:players/effects/speed 1t
@@ -63,7 +62,7 @@ schedule function weapons:type/noob_axe/passive/heal 10s
 schedule function time_traveler:rpg_items/get/gift_pack/double_sword 1t
 schedule function time_traveler:rpg_items/get/gift_pack/double_sword_fire 1t
 schedule function time_traveler:tp/map_lobby/loop 1t
-schedule function boss:main/loop 1t
+schedule function monsters:main/loop 1t
 execute as @a run function players:attribute
 
 #修復【主線】陳述不見了？！ 顯示問題Bug (觸發Bug的時候陳述盔甲座不會刪掉，基於懶因此直接用這行刪除)
@@ -81,8 +80,8 @@ execute if score .main_line orantes.story matches 29.. in game_map:orantes posit
 
 ##武器(該星球的資料包/weapons:type/)
 #   [格式]
-#       武器獲取放 weapons:type//get 資料包
-#       被動、技能放 weapons:type//loop 資料包的 effect、rightclick
+#       武器獲取放 weapons:type/get 資料包
+#       被動、技能放 weapons:type/loop 資料包的 effect、rightclick
 
 #   進度、述詞、計分板等偵測方式 + 執行 function 格式
 #       進度、述詞取名方式做個範例
@@ -97,7 +96,7 @@ execute if score .main_line orantes.story matches 29.. in game_map:orantes posit
 
 ##獲取進度執行function 取名方式要是這樣：
 #   星球名稱資料包:
-#   weapons:type//effect/function/test1.mcfunction
+#   weapons:type/effect/function/test1.mcfunction
 #========================================================
 
 ##計分板之後會新增一個叫 星球名.分類.main

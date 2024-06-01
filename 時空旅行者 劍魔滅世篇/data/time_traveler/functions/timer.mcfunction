@@ -5,13 +5,6 @@ execute as @a[scores={player.out_of_combat_detection=0}] run effect give @s spee
 
 execute if score mini_game.shooting_contest.timer global.main matches 1.. run scoreboard players remove mini_game.shooting_contest.timer global.main 1
 
-
-#BOSS重生計時器
-execute if score #automations.orantes.shadow automations.boss_time matches 1.. run scoreboard players remove #automations.orantes.shadow automations.boss_time 1
-execute if score #automations.orantes.poison automations.boss_time matches 1.. run scoreboard players remove #automations.orantes.poison automations.boss_time 1
-execute if score #automations.orantes.storm_keeper automations.boss_time matches 1.. run scoreboard players remove #automations.orantes.storm_keeper automations.boss_time 1
-execute if score #automations.orantes.atar automations.boss_time matches 1.. run scoreboard players remove #automations.orantes.atar automations.boss_time 1
-
 #過場計時
 scoreboard players remove @a[scores={orantes.transitions=1..}] orantes.transitions 1
 

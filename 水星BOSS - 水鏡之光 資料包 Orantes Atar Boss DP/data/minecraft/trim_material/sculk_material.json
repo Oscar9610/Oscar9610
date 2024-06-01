@@ -1,9 +1,0 @@
-{
-  "asset_name": "sculk_material",
-  "description": {
-    "translate": "trim_material.minecraft.sculk",
-    "color": "#9A5CC6"
-  },
-  "ingredient": "minecraft:sculk",
-  "item_model_index": 0.01
-}

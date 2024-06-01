@@ -1,4 +1,4 @@
-function boss:spawner/atar/set_delay/loop
-function boss:spawner/poison/set_delay/loop
-function boss:spawner/storm_keeper/set_delay/loop
-function boss:spawner/shadow/set_delay/loop
+function monsters:spawner/atar/set_delay/loop
+function monsters:spawner/poison/set_delay/loop
+function monsters:spawner/storm/set_delay/loop
+function monsters:spawner/shadow/set_delay/loop
