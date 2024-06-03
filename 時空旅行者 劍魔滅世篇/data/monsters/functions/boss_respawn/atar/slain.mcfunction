@@ -1,6 +1,7 @@
 
 # 故事
 summon item 11 62 -125 {Glowing:1,Item:{id:"minecraft:iron_sword",count:1,components:{"minecraft:max_damage": 112,"minecraft:custom_name":'[{"text":"","italic":false,"bold":true},{"text":"☆☆☆☆☆ ","color":"#14D8FF"},{"text":"水鏡之光","color":"#14D8FF"}]',"minecraft:lore":['[{"text":"","italic":false},{"text":"劍 / 魔劍 / ","color":"dark_gray"},{"text":"\\uE013","color":"white"},{"text":"水","color":"dark_gray"}]','[{"text":"","italic":false,"color":"blue"},{"text":"那場暴風雨...美的催人淚下"}]','[{"text":"","italic":false,"color":"blue"},{"text":"雨的離去也意味著...是時候該結束了"}]','[{"text":"","italic":false},{"text":"✨ ——— ","color":"gray"},{"text":"主動技能","color":"gray","bold":true},{"text":" ——— ✨","color":"gray"}]','[{"text":"","italic":false},{"text":"【悲鳴雨斬 ● 明鏡止水】 ","color":"dark_aqua"},{"text":"⌛冷卻時間 25s","color":"#6E6E6E"}]','[{"text":"","italic":false},{"text":"使用時會切換「","color":"blue"},{"text":"光","color":"yellow"},{"text":"/","color":"blue"},{"text":"水","color":"aqua"},{"text":"」兩種型態，並觸發「局部時空減速」","color":"blue"}]','[{"text":"","italic":false},{"text":"使時空減速內的敵人","color":"blue"},{"text":"無法動彈、無法攻擊","color":"red","underlined":true}]','[{"text":"","italic":false},{"text":"「","color":"blue"},{"text":"光型態","color":"yellow"},{"text":"」時會","color":"blue"},{"text":"獲得力量、攻擊速度、加速","color":"#2EBD2E","underlined":true},{"text":"，彈飛範圍內敵人","color":"blue"}]','[{"text":"","italic":false},{"text":"「","color":"blue"},{"text":"水型態","color":"aqua"},{"text":"」時會","color":"blue"},{"text":"獲得立即恢復、抗性、漂浮","color":"#2EBD2E","underlined":true},{"text":"，使範圍內敵人快速墜落","color":"blue"}]','[{"text":"","italic":false},{"text":"並根據「幽光」層數，每秒對範圍內隨機敵人造成20次","color":"blue"}]','[{"text":"","italic":false},{"text":"50%攻擊傷害","color":"red","underlined":true},{"text":"，每次減少一層幽光，直到幽光耗盡","color":"blue"}]','[{"text":""}]','[{"text":"","italic":false},{"text":"✨ ——— ","color":"gray"},{"text":"被動技能","color":"gray","bold":true},{"text":" ——— ✨","color":"gray"}]','[{"text":"","italic":false},{"text":"【幽光】 ","color":"dark_aqua"}]','[{"text":"","italic":false},{"text":"攻擊敵人時會疊加一層「幽光」，上限為25層","color":"blue"}]','[{"text":""}]','[{"text":"","italic":false},{"text":"攻擊力  \\uF825","color":"gray"},{"text":"8","color":"white"}]','[{"text":"","italic":false},{"text":"攻擊速度 ","color":"gray"},{"text":"1.6","color":"white"}]','[{"text":"","italic":false},{"text":"盔甲值  \\uF825","color":"red"},{"text":"-20%","color":"red"}]'],"minecraft:custom_model_data":4,"minecraft:custom_data":{wl_water:1,rarity:5b,water:1b,water_sword_demon:1},"minecraft:attribute_modifiers":{modifiers:[{type:"generic.attack_damage",name:"_",amount:8,operation:"add_value",uuid:[I;-1189847372,-417837558,-2125555392,-928241585],slot:"mainhand"},{type:"generic.attack_speed",name:"_",amount:-2.4,operation:"add_value",uuid:[I;-1043973782,-340373879,-2013491430,-464654117],slot:"mainhand"},{type:"generic.armor",name:"_",amount:-0.2,operation:"add_multiplied_base",uuid:[I;628632401,-1504427735,-1913312814,-560365642],slot:"mainhand"}],show_in_tooltip:false},"minecraft:food":{nutrition:0,saturation:0,can_always_eat:true,eat_seconds:1000000}}}}
+schedule clear time_traveler:story/orantes/main_line/place_of_trial/2
 function time_traveler:story/orantes/main_line/place_of_trial/3
 
 # 重製
@@ -11,8 +12,11 @@ scoreboard players set light_sky_blade atar_skills -1
 scoreboard players set gravity_rain atar_skills -1
 bossbar remove atar
 
-advancement revoke @a only atar:kill_water_sword_boss
+advancement revoke @a only monsters:kill_boss/atar
 
 playsound minecraft:entity.wither.death voice @a ~ ~1 ~ 1 1
 particle minecraft:explosion_emitter ~ ~1 ~ 0 0 0 0 1
 particle minecraft:dripping_dripstone_water ~ ~5 ~ 5 5 5 0 600
+
+# Boss Spawn CD
+scoreboard players set orantes.atar boss.respawn.cd 2000
