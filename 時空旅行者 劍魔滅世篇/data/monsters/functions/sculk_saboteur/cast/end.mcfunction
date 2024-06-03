@@ -6,4 +6,4 @@ scoreboard players reset @s monster.skill.casting
 tag @s remove sculk_saboteur.1
 
 # 隨機技能CD
-execute store result score @s monster.skill.cast.cd run random value 80..150
+execute store result score @s monster.skill.cast.cd run random value 150..250
