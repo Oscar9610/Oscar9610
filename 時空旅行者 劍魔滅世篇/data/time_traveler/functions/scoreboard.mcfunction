@@ -29,8 +29,6 @@ scoreboard objectives add daytime_weather.weather dummy "[地圖大廳] 暫存�
 scoreboard objectives add music.time_and_space_journey_mercury.chr.1 dummy "[時空旅途其一] 背景音樂"
 scoreboard objectives add duration dummy "實體存在時間"
 scoreboard objectives add health health "玩家血量"
-scoreboard objectives add attack dummy "玩家攻擊力"
-scoreboard objectives add level_up_strength dummy "玩家升級後提升的攻擊力"
 scoreboard objectives add player_count dummy "玩家數量"
 scoreboard objectives add money dummy "就是他madre的dinero"
 scoreboard objectives add player_death deathCount "玩家死亡偵測"
@@ -50,7 +48,6 @@ scoreboard objectives add detect_player_in_lobby dummy "偵測是否有玩家在
 scoreboard objectives add core_stage dummy "封印守護者進度"
 scoreboard objectives add the_night.screen_animation dummy
 scoreboard objectives add has_reiner_sword dummy
-scoreboard objectives add has_the_night_4star dummy "擁有夜幕4星"
 
 #=====================================================================================
 ##傳送書
@@ -68,26 +65,12 @@ scoreboard objectives add disable.tp_book dummy "禁用傳送書"
 
 #=====================================================================================
 
-##display 中文翻譯
-scoreboard players display name .sculk_saboteur global.monsters.health "伏聆破壞者"
-scoreboard players display name .sculk_priest global.monsters.health "伏聆祭司"
-scoreboard players display name .wind_shamen global.monsters.health "風之薩滿"
+## 數字
+scoreboard players set #2 global.main 2
+scoreboard players set #3 global.main 3
+scoreboard players set #4 global.main 4
+scoreboard players set #5 global.main 5
 
-#=====================================================================================
-
-##設值
-
-##每提升特定等級提升攻擊力
-scoreboard players set #math level_up_strength 5
-
-##世界等級引響怪物最大血量(怪物最初血量 *= 世界等級)
-scoreboard players set @a rightclick 0
-#scoreboard players set .world_level global.main 1
-
-##設置伏聆破壞者(sculk_saboteur) 的最初血量
-scoreboard players set .sculk_saboteur global.monsters.health 20
-scoreboard players set .sculk_priest global.monsters.health 40
-scoreboard players set .wind_shamen global.monsters.health 50
 ##脫離戰場
 scoreboard players set @a player.out_of_combat_detection 0
 
@@ -102,12 +85,10 @@ scoreboard players set shadow_cave p2.world_area 0
 scoreboard players set shadow_cave p3.world_area 0
 scoreboard players set shadow_cave p4.world_area 0
 
-
 scoreboard players set poison_cave p1.world_area 0
 scoreboard players set storm_cave p1.world_area 1
 scoreboard players set orantes_village p1.world_area 1
 scoreboard players set place_of_trial p1.world_area 1
-
 
 ##音樂
 scoreboard players set #music.rain_city bool.main 1

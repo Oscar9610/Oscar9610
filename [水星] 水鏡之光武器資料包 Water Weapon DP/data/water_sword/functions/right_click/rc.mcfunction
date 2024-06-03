@@ -1,4 +1,4 @@
-# rc = rightclick
+
 scoreboard players set #temp global.main 0
 execute if items entity @s weapon.mainhand minecraft:iron_sword[minecraft:custom_data~{wl_light:1}] run scoreboard players set #temp global.main 1
 execute if items entity @s weapon.mainhand minecraft:iron_sword[minecraft:custom_data~{wl_water:1}] run scoreboard players set #temp global.main 2

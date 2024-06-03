@@ -1,6 +1,7 @@
-#偵測獲取雙股劍禮包
-execute as @a store result score @s rpg_items.get.gift_pack.double_sword_fire run clear @s carrot_on_a_stick[minecraft:custom_data~{gift_pack:1b}]
-execute as @a[scores={rpg_items.get.gift_pack.double_sword_fire=1..}] run function weapons:get/double_weapons/double_sword_fire
-execute as @a[scores={rpg_items.get.gift_pack.double_sword_fire=1..}] run clear @s carrot_on_a_stick[minecraft:custom_data~{gift_pack:1b}] 1
 
-schedule function time_traveler:rpg_items/get/gift_pack/double_sword_fire 1t
+# 偵測獲取雙股劍
+execute store success score #is_item global.main run clear @s carrot_on_a_stick[minecraft:custom_data~{gift_pack:1b}]
+execute if score #is_item global.main matches 0 run return 0
+
+function weapons:get/double_weapons/double_sword_fire
+clear @s carrot_on_a_stick[minecraft:custom_data~{gift_pack:1b}] 1

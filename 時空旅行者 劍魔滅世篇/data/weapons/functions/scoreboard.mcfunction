@@ -1,6 +1,3 @@
-scoreboard objectives remove rightclick
-scoreboard objectives add rpg_items.get.gift_pack.double_sword_fire dummy "偵測獲取☆☆☆☆熾熱雙股劍(火)禮包"
-scoreboard objectives add rpg_items.get.gift_pack.double_sword dummy "偵測獲取☆☆☆☆鋒利雙股劍(物理)禮包"
 
 #翻譯記分板分數功能
 scoreboard players display name water_sword_demon .main [{"text":"偵測所有玩家擁有 ","bold":false},{"text":"水鏡之光(武器)","color":"blue","bold":true},{"text":" 數量","bold":false}]
@@ -55,9 +52,7 @@ scoreboard objectives add noob_sword_cd dummy "新手劍CD"
 scoreboard objectives add noob_sword_max_cd dummy "新手劍CD上限"
 scoreboard objectives add noob_sword_screen dummy "新手劍螢幕動畫"
 scoreboard objectives add noob_sword.increase_damage dummy "新手劍增傷"
-scoreboard objectives add noob_sword_rdm dummy "新手劍被動偵測"
 
-scoreboard players set @a noob_sword_rdm 0
 scoreboard players set @a noob_sword_cd 0
 scoreboard players set @a noob_sword_max_cd 25
 scoreboard players set @a noob_sword_screen 0

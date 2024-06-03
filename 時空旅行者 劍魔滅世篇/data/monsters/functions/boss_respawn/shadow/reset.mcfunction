@@ -1,4 +1,4 @@
-say reset
+
 tp @e[tag=shadow_boss] ~ -255 ~
 kill @e[tag=shadow_boss]
 kill @e[tag=shadow_boss.1]

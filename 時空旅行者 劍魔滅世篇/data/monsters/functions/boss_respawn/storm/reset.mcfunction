@@ -1,4 +1,4 @@
-say reset
+
 tp @e[tag=storm_boss] ~ -255 ~
 kill @e[tag=storm_boss]
 
