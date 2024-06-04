@@ -1,4 +1,0 @@
-execute store result score .storm_1 automations.boss.count run execute positioned 83 37 95 in game_map:orantes if entity @e[tag=storm,distance=..45]
-execute positioned 83 37 95 in game_map:orantes if entity @a[distance=..45] if score .storm_1 automations.boss.count matches 2.. run function monsters:spawner/storm/set_delay/leave
-execute positioned 83 37 95 in game_map:orantes unless entity @a[distance=..45] if score .storm_1 automations.boss.count matches 1.. run function monsters:spawner/storm/set_delay/leave
-execute positioned 83 37 95 in game_map:orantes if entity @a[distance=..45] unless entity @e[tag=storm,distance=..45] if score #automations.orantes.storm automations.boss_time matches 0 if score .main_line orantes.story matches 99.. run function monsters:storm/summon

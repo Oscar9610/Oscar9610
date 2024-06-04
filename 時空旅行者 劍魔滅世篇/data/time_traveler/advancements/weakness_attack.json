@@ -10,6 +10,6 @@
     }
   },
   "rewards": {
-    "function": "monster_weakness:use"
+    "function": "time_traveler:monster_weakness/use"
   }
 }

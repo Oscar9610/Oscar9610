@@ -1,6 +1,6 @@
 #怪物弱點偵測用
 #=========================================================
-execute as @a at @s run function monster_weakness:player_loop
+execute as @a at @s run function time_traveler:monster_weakness/player_loop
 #=========================================================
 #收納
 function time_traveler:interaction/main

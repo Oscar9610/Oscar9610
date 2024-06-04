@@ -23,14 +23,12 @@ function ancient_lorras:scoreboard
 execute if score .main_line orantes.story matches 129.. run function ancient_lorras:load
 
 schedule function players:id/detect 1t
-schedule function time_traveler:rpg_items/get/gift_pack/the_night_4star 1t
 schedule function ancient_lorras:world_area/loop 1t
 function time_traveler:daytime_weather/map_hall/save
 function weapons:type/gravity_axe/timer
 schedule function time_traveler:remove_overworld_text_display 100s
 schedule function rotas:1s 1s
 schedule function rotas:loop 1t
-schedule function time_traveler:rpg_items/get/detect_has_reiner_sword 1t
 schedule function time_traveler:display/elk_display/guide 1t
 schedule function time_traveler:display/elk_display/timer 5s
 schedule function time_traveler:story/spaceship_plain/branch_line/loop 1t

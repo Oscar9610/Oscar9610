@@ -15,4 +15,4 @@ function time_traveler:story/orantes/main_line/rs/guide
 # monster
 kill @e[type=#time_traveler:monsters,tag=orantes_1.monster_wave]
 function time_traveler:monster_wave/wave_clear
-schedule clear time_traveler:monster_wave/orantes/1/summon
+schedule clear time_traveler:monster_wave/orantes/1/summon/layout
