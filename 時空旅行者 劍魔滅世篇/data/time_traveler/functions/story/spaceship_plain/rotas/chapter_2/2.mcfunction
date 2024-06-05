@@ -1,7 +1,6 @@
 execute in game_map:spaceship_interior positioned 9.50 56.00 8.50 as @a[distance=..8] run tag @s add aska.rotas.chapter_2.smooth_camera
 
-execute in game_map:spaceship_interior positioned 9.50 56.00 8.50 as @a[distance=..8] if score rotas._chapter_2 spaceship.story matches 4 run effect give @s slowness 15 255 true
-execute in game_map:spaceship_interior positioned 9.50 56.00 8.50 as @a[distance=..8] if score rotas._chapter_2 spaceship.story matches 4 run attribute @s minecraft:generic.jump_strength base set 0
+execute in game_map:spaceship_interior positioned 9.50 56.00 8.50 as @a[distance=..8] if score rotas._chapter_2 spaceship.story matches 4 run scoreboard players set @s disable_operate 300
 execute in game_map:spaceship_interior positioned 9.50 56.00 8.50 as @a[distance=..8] if score rotas._chapter_2 spaceship.story matches 4 run title @s title {"text":"\uE000"}
 execute in game_map:spaceship_interior positioned 9.50 56.00 8.50 as @a[distance=..8] if score rotas._chapter_2 spaceship.story matches 4 run title @s times 20 260 20
 execute if score rotas._chapter_2 spaceship.story matches 4 run function time_traveler:story/spaceship_plain/rotas/chapter_2/smooth_camera
