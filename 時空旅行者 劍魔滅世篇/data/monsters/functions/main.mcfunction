@@ -14,7 +14,7 @@ function monsters:atar/main
 
 ## ----- 怪物技能系統 ----- ##
 # 怪物即將施法提示(1s)
-execute as @e[type=#time_traveler:monsters,tag=monster,scores={monster.skill.cast.cd=20}] at @s run function monsters:unlease_skill_tip
+execute as @e[type=#time_traveler:monsters,tag=monster,scores={monster.skill.cast.cd=30}] at @s run function monsters:unlease_skill_tip
 
 # 怪物技能CD冷卻
 scoreboard players remove @e[type=#time_traveler:monsters,tag=monster,scores={monster.skill.cast.cd=0..}] monster.skill.cast.cd 1

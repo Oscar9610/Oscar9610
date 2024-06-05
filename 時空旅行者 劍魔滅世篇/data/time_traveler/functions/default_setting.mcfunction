@@ -11,6 +11,8 @@ xp set @a 0 points
 scoreboard players set .player.highest_level global.main 1
 scoreboard players set .world_level global.main 1
 
+scoreboard objectives setdisplay sidebar
+
 gamerule sendCommandFeedback false
 gamemode adventure @a
 time set midnight

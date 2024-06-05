@@ -11,6 +11,7 @@
 
 ##記分板
 scoreboard objectives add id dummy
+scoreboard objectives add disable_operate dummy "禁用跳躍"
 scoreboard objectives add global.main dummy "主要全局"
 scoreboard objectives add bool.main dummy "布林值全局"
 scoreboard objectives add global.advancements dummy "全局 - 任務進度顯示"

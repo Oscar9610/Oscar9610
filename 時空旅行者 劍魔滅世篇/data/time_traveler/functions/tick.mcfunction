@@ -9,6 +9,7 @@ function time_traveler:system/main
 function weapons:main
 function rpg_armors:loop
 function weapons:timer_t
+function players:disable_operate
 execute as @a at @s run function time_traveler:players/update_strength/main
 advancement revoke @a only weapons:use/gravity_axe
 
