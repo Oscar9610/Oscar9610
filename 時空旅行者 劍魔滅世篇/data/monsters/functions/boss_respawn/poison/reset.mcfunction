@@ -1,4 +1,3 @@
-say reset
 tp @e[tag=poison_boss] ~ -255 ~
 kill @e[tag=poison_boss]
 kill @e[tag=poison_boss.1]

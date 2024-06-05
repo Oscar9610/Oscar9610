@@ -2,6 +2,7 @@
 # player
 scoreboard players operation @s noob_axe_cd = @s noob_axe_max_cd
 effect give @a[distance=..4] resistance 5 3 false
+effect give @a[distance=..4] haste 5 2 false
 effect give @a[distance=..4] instant_health 1 1 false
 
 # particle

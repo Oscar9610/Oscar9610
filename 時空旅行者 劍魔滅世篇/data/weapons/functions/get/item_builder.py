@@ -12,16 +12,17 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-custom_name = ['3', '夜幕', '#972DC8']
-info  = ['劍', '夜幕', '風']
-story = ['誕生於夜光之下，守護著森林的夜晚']
-item_data     = {'real_item': 'iron_sword', 'custom_model_data': 6, 'custom_data': '{wind:1b,the_night:1,rarity:3b,weight:1b}', 'max_damage': 24}
-main_skill    = {'is_skill': True, 'cd': 60, 'name': '血祭', 'info': ['消耗&=5點血量&-，進入「血祭」狀態，持續10秒', '期間獲得&=高額攻擊力、攻擊速度、抗性&+，並且', '攻擊敵人有50%機率恢復&=4點血量&+，', '狀態結束時會&=提升自身速度40%&+，持續2秒']}
-passive_skill = {'is_skill': True, 'cd': 0, 'name': '血月恩賜', 'info': ['攻擊敵人時，減少主動技能冷卻時間1秒']}
+custom_name = ['1', '新手木斧', 'white']
+info  = ['斧頭', '新手', '物理']
+story = ['一把普通的斧頭']
+item_data     = {'real_item': 'iron_sword', 'custom_model_data': 2, 'custom_data': '{noob:2,physical:1b,weight:1b}', 'max_damage': 300}
+main_skill    = {'is_skill': True, 'cd': 30, 'name': '守護屏障', 'info': ['施予範圍內的玩家&=抗性IV、攻速III&+，持續5秒，並回復&=8點血量&+']}
+passive_skill = {'is_skill': True, 'cd': 10, 'name': '保護', 'info': ['手持此武器時，每隔10秒會賦予自身&=6點護盾&+']}
 
-attribute.append({'name': '攻擊力', 'show_value': '8', 'value': 8, 'attribute_name': 'generic.attack_damage', 'slot': 'mainhand'})
-attribute.append({'name': '攻擊速度', 'show_value': '2.2', 'value': -1.8, 'attribute_name': 'generic.attack_speed', 'slot': 'mainhand'})
-attribute.append({'name': '最大血量', 'show_value': '4', 'value': 4, 'attribute_name': 'generic.max_health', 'slot': 'mainhand'})
+attribute.append({'name': '攻擊力', 'show_value': '6.5', 'value': 6.5, 'attribute_name': 'generic.attack_damage', 'slot': 'mainhand'})
+attribute.append({'name': '攻擊速度', 'show_value': '1', 'value': -3, 'attribute_name': 'generic.attack_speed', 'slot': 'mainhand'})
+attribute.append({'name': '盔甲值', 'show_value': '4', 'value': 4, 'attribute_name': 'generic.armor', 'slot': 'mainhand'})
+attribute.append({'name': '抗擊退', 'show_value': '30%', 'value': 0.3, 'attribute_name': 'generic.knockback_resistance', 'slot': 'mainhand'})
 
 # ----- init ----- #
 
