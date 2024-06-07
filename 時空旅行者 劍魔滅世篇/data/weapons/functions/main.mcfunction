@@ -20,3 +20,9 @@ execute as @a[tag=the_night_charger] at @s run function weapons:type/the_night/p
 execute as @e[type=marker,tag=the_night_p] at @s run function weapons:type/the_night/passive/5star/dmg/blade_main
 execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data": {the_night:1}}}}] run data merge entity @s {PickupDelay:0}
 clear @a[tag=!the_night_3,tag=!the_night_4,tag=!the_night_5] iron_sword[minecraft:custom_data~{the_night:1}]
+
+# water sword demon
+execute as @a[tag=water_sword.w_user] at @s if score @s water_sword_passive matches 1.. run function weapons:type/water_sword_demon/passive/water
+execute as @a[tag=water_sword.l_user] at @s if score @s water_sword_passive matches 1.. run function weapons:type/water_sword_demon/passive/light
+
+execute if score #is_water_sword_demon.passive? global.main matches 1.. run scoreboard players remove #is_water_sword_demon.passive? global.main 1

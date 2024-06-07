@@ -23,6 +23,6 @@ spawnpoint @a ~ ~ ~
 
 # summon
 kill @e[type=#time_traveler:monsters,tag=orantes_3.monster_wave]
-schedule function time_traveler:monster_wave/orantes/3/summon 1t
+schedule function time_traveler:monster_wave/orantes/3/summon/layout 1t
 
 # ============================================================ #

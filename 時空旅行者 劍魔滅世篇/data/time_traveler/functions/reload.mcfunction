@@ -15,18 +15,12 @@ scoreboard players set #rotas.chapter_2 global.advancements 0
 
 scoreboard players set #lost_guardian global.advancements 0
 
-xp set @s 0 levels
-xp set @s 0 points
-scoreboard players set .player.highest_level global.main 1
-
 function time_traveler:story/orantes/main_line/rs/3/remove_display_monster
 schedule clear time_traveler:story/spaceship_plain/rotas/chapter_2/loop
 
 function time_traveler:story/reload_story/lost_guardian
 function time_traveler:story/reload_story/main_line
 function ancient_lorras:story/reload_story/main_line
-
-execute in game_map:orantes run fill -74 73 14 -70 78 14 minecraft:air replace nether_portal
 
 kill @e[tag=ml.sgp]
 kill @e[tag=rotas.2.2]
@@ -40,7 +34,5 @@ execute as @a[gamemode=!creative,gamemode=!spectator] run function time_traveler
 execute as @a[gamemode=!survival,gamemode=!adventure] run function time_traveler:tp/orantes/all_open
 
 advancement revoke @a only time_traveler:interaction/library/1
-
 advancement revoke @a only time_traveler:story/spaceship_plain/rotas/chapter_2/in_spaceship
-
 advancement revoke @a only time_traveler:story/spaceship_plain/rotas/chapter_2/in_orantes

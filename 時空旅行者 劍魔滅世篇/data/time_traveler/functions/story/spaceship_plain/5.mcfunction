@@ -2,8 +2,7 @@ execute if score #emera orantes.story matches 5 run tellraw @a[tag=!op] {"text":
 execute if score #emera orantes.story matches 6 run tellraw @a[tag=!op] {"text":"［艾梅拉］ 有甚麼事嗎"}
 execute if score #emera orantes.story matches 7 run tellraw @a[tag=!op] {"text":"【萊娜說你有東西要給我】","color":"dark_green","clickEvent":{"action":"run_command","value":"/execute if score #emera orantes.story matches 16 run function story:spaceship_plain/6"}}
 execute if score #emera orantes.story matches 8 run tellraw @a {"text":"［艾梅拉］好的，我現在把新人需要的東西給你們"}
-execute as @a if score #emera orantes.story matches 9 run function time_traveler:rpg_items/get/noob_weapon_tickets
-execute as @a if score #emera orantes.story matches 9 run function time_traveler:rpg_items/get/noob_armor_tickets
+execute as @a if score #emera orantes.story matches 9 run function rpg_items:orantes/noob_tickets
 execute if score #emera orantes.story matches 9 run tellraw @a {"text":"［艾梅拉］既然都準備出征了，就來跟你講一下為何會有這個太空站吧"}
 execute if score #emera orantes.story matches 10 run tellraw @a {"text":"［艾梅拉］這個太空站誕生的原因是為了抵抗深淵勢力所以打造出來的，深淵勢力正在侵蝕著一切，我們決定組成團隊開往世界各地去拯救世界"}
 execute if score #emera orantes.story matches 11 run tellraw @a {"text":"［艾梅拉］外面的世界可是很危險的，但是我們即使遇到困難都必須要向前邁進"}
