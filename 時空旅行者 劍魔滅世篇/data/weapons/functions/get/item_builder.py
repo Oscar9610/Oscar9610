@@ -20,7 +20,7 @@ main_skill    = {'is_skill': True, 'cd': 30, 'name': '守護屏障', 'info': ['�
 passive_skill = {'is_skill': True, 'cd': 10, 'name': '保護', 'info': ['手持此武器時，每隔10秒會賦予自身&=6點護盾&+']}
 
 attribute.append({'name': '攻擊力', 'show_value': '6.5', 'value': 6.5, 'attribute_name': 'generic.attack_damage', 'slot': 'mainhand'})
-attribute.append({'name': '攻擊速度', 'show_value': '1', 'value': -3, 'attribute_name': 'generic.attack_speed', 'slot': 'mainhand'})
+attribute.append({'name': '攻擊速度', 'show_value': '1.4', 'value': -2.6, 'attribute_name': 'generic.attack_speed', 'slot': 'mainhand'})
 attribute.append({'name': '盔甲值', 'show_value': '4', 'value': 4, 'attribute_name': 'generic.armor', 'slot': 'mainhand'})
 attribute.append({'name': '抗擊退', 'show_value': '30%', 'value': 0.3, 'attribute_name': 'generic.knockback_resistance', 'slot': 'mainhand'})
 

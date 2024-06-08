@@ -101,6 +101,7 @@ scoreboard players set @a music.map_hall 0
 
 scoreboard players set @a disable.tp_book 0
 
+scoreboard players set .world_level_ratio global.main 30
 
 ##時空之境水星傳送門
 scoreboard players set #fx.tp_door orantes.global.main 0
