@@ -8,3 +8,5 @@ function ancient_lorras:story/main_line/dtal/guide/lena
 
 advancement revoke @a only ancient_lorras:story/in_ancient_lorras
 schedule clear ancient_lorras:story/main_line/sakura_grove/loop
+
+schedule clear ancient_lorras:monster_wave/main/loop
