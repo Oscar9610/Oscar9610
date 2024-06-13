@@ -1,19 +1,6 @@
 #奧蘭蒂斯城
-execute as @a[tag=p1] at @s if biome ~ ~ ~ orantes:rain_city_1 if score orantes_city p1.world_area matches 0 run function time_traveler:world_area/orantes_city
-execute as @a[tag=p1] at @s if biome ~ ~ ~ orantes:rain_city_1 run scoreboard players set orantes_city p1.world_area 1
-execute as @a[tag=p1] at @s unless biome ~ ~ ~ orantes:rain_city_1 run scoreboard players set orantes_city p1.world_area 0
-
-execute as @a[tag=p2] at @s if biome ~ ~ ~ orantes:rain_city_1 if score orantes_city p2.world_area matches 0 run function time_traveler:world_area/orantes_city
-execute as @a[tag=p2] at @s if biome ~ ~ ~ orantes:rain_city_1 run scoreboard players set orantes_city p2.world_area 1
-execute as @a[tag=p2] at @s unless biome ~ ~ ~ orantes:rain_city_1 run scoreboard players set orantes_city p2.world_area 0
-
-execute as @a[tag=p3] at @s if biome ~ ~ ~ orantes:rain_city_1 if score orantes_city p3.world_area matches 0 run function time_traveler:world_area/orantes_city
-execute as @a[tag=p3] at @s if biome ~ ~ ~ orantes:rain_city_1 run scoreboard players set orantes_city p3.world_area 1
-execute as @a[tag=p3] at @s unless biome ~ ~ ~ orantes:rain_city_1 run scoreboard players set orantes_city p3.world_area 0
-
-execute as @a[tag=p4] at @s if biome ~ ~ ~ orantes:rain_city_1 if score orantes_city p4.world_area matches 0 run function time_traveler:world_area/orantes_city
-execute as @a[tag=p4] at @s if biome ~ ~ ~ orantes:rain_city_1 run scoreboard players set orantes_city p4.world_area 1
-execute as @a[tag=p4] at @s unless biome ~ ~ ~ orantes:rain_city_1 run scoreboard players set orantes_city p4.world_area 0
+execute as @a at @s if biome ~ ~ ~ orantes:rain_city_1 run advancement grant @s only time_traveler:world_area/orantes_city/in
+execute as @a at @s unless biome ~ ~ ~ orantes:rain_city_1 run advancement grant @s only time_traveler:world_area/orantes_city/out
 
 #幻境洞穴 魅影
 execute positioned -120 62 99 in game_map:orantes as @a[tag=p1,distance=..20] if score shadow_cave p1.world_area matches 0 run function time_traveler:world_area/shadow_cave

@@ -4,7 +4,7 @@
 execute in game_map:orantes positioned -6 63 104 as @a[distance=..1.5] if score orantes.rotas.open global.main matches 1 run advancement grant @s only rotas:inventory/in
 
 ## ---傳送門離開--- ##
-execute in game_map:realm_of_time_and_space positioned 76 76 79 as @a[distance=..1.5] run advancement grant @s only rotas:inventory/out
+execute in game_map:realm_of_time_and_space positioned 76 76 79 as @a[dz=-1,dy=2] run advancement grant @s only rotas:inventory/out
 
 ## ---傳送門開關--- ##
 execute in game_map:orantes positioned -6 62 104 if score rotas._chapter_2 spaceship.story matches 44.. unless entity @a[distance=..8] if score #fx.tp_door orantes.global.main matches 1 run function rotas:fx/tp_door/clear
