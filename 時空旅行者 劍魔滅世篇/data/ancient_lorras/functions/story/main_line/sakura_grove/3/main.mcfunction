@@ -21,6 +21,8 @@ execute if score .main_line ancient_lorras.story matches 47 run kill @e[tag=al.m
 execute if score .main_line ancient_lorras.story matches 47 run title @a[distance=..30] title {"text":"\uE002"}
 execute if score .main_line ancient_lorras.story matches 47 run title @a[distance=..30] times 0 40 20
 execute in game_map:ancient_lorras positioned -189 262 -10 if score .main_line ancient_lorras.story matches 47 run tp @a[distance=..30] -187 250 3 0 25
+execute if score .main_line ancient_lorras.story matches 47 run scoreboard players set .main_line ancient_lorras.global.main 1
+execute if score .main_line ancient_lorras.story matches 47 run scoreboard players set #ancient_lorras_1.mw.rt ancient_lorras.global.main 1
 execute if score .main_line ancient_lorras.story matches 47 run function ancient_lorras:monster_wave/main/loop
 
 
