@@ -1,4 +1,4 @@
-execute store result score #ancient_lorras.ancient_lorras.rdm_mob.1 global.main run random value 1..3
+execute store result score #ancient_lorras.rdm_mob.1 global.main run random value 1..3
 
 execute if score #ancient_lorras.rdm_mob.1 global.main matches 1 run function monsters:summon/sculk_saboteur
 execute if score #ancient_lorras.rdm_mob.1 global.main matches 2 run function monsters:summon/sculk_priest
