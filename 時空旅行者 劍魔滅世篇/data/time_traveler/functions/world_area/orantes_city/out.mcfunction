@@ -1,0 +1,1 @@
+advancement revoke @s only time_traveler:world_area/orantes_city/in
