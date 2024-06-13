@@ -9,6 +9,7 @@ execute if score .main_line ancient_lorras.story matches 12 run tellraw @a[tag=!
 execute if score .main_line ancient_lorras.story matches 13 run tellraw @a[tag=!op] {"text":"［希爾］據說 草之魔劍 - 翠綠茵草在這個星球，不過不知道具體在那個位置"}
 execute if score .main_line ancient_lorras.story matches 14 run tellraw @a[tag=!op] {"text":"［希爾］我們過去問問看吧！"}
 execute if score .main_line ancient_lorras.story matches 15 run tellraw @a[tag=!op] {"text":"【目標】詢問村落關於魔劍的下落","color":"gold"}
+execute if score .main_line ancient_lorras.story matches 15 run function ancient_lorras:story/main_line/sakura_grove/interaction/priest
 
 
 #循環偵測

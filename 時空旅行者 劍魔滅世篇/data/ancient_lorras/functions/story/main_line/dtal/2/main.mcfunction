@@ -12,4 +12,6 @@ execute as @a if score .main_line ancient_lorras.story matches 10 run clear @a w
 execute as @a if score .main_line ancient_lorras.story matches 10 run function ancient_lorras:tp_book
 execute if score .main_line ancient_lorras.story matches 10 run scoreboard players set #enable global.main 1
 
+execute as @e[tag=Lena] at @s if score .main_line ancient_lorras.story matches 7..10 run playsound minecraft:entity.experience_orb.pickup voice @a[distance=..30] ~ ~ ~
+
 execute if score .main_line ancient_lorras.story matches 7..10 run scoreboard players add .main_line ancient_lorras.story 1
