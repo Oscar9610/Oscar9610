@@ -1,7 +1,7 @@
 #水星 時空之境
 
 ## ---傳送門進入--- ##
-execute in game_map:orantes positioned -5 62 104 as @a[dx=-2,dy=3] if score orantes.rotas.open global.main matches 1 run advancement grant @s only rotas:inventory/in
+execute in game_map:orantes positioned -6 63 104 as @a[distance=..1.5] if score orantes.rotas.open global.main matches 1 run advancement grant @s only rotas:inventory/in
 
 ## ---傳送門離開--- ##
 execute in game_map:realm_of_time_and_space positioned 76 76 79 as @a[dz=-1,dy=2] run advancement grant @s only rotas:inventory/out
