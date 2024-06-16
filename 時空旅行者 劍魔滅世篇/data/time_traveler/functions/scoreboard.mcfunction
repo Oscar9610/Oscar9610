@@ -91,6 +91,8 @@ scoreboard players set storm_cave p1.world_area 1
 scoreboard players set orantes_village p1.world_area 1
 scoreboard players set place_of_trial p1.world_area 1
 
+scoreboard players add #random.pos global.main 0
+
 ##音樂
 scoreboard players set #music.rain_city bool.main 1
 scoreboard players set @a music.orantes_city 0

@@ -1,6 +1,7 @@
 function players:inventory/-store {bag:overworld}
 function players:inventory/-return {bag:rotas}
-execute in game_map:realm_of_time_and_space run tp @s 106 74 79 90 0
+function rotas:inventory/random_pos
+execute as @s at @s in game_map:realm_of_time_and_space run spawnpoint @s ~ ~ ~
 
 execute as @s at @s run playsound minecraft:bgm.doom_eternal record @s ~ ~1 ~ 0.25 1
 
