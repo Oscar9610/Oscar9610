@@ -6,7 +6,7 @@ scoreboard players set #ancient_lorras_1.mw.rt ancient_lorras.global.main 1
 scoreboard players set .main_line ancient_lorras.global.main 1
 schedule clear ancient_lorras:monster_wave/ancient_lorras/1/loop
 tellraw @s {"text":"(已脫離戰場)","color": "red","bold": true}
-schedule clear ancient_lorras:monster_wave/ancient_lorras/1/summon
+schedule clear ancient_lorras:monster_wave/ancient_lorras/1/summon/layout
 scoreboard players set ancient_lorras_1 remaining_monster 20
 scoreboard players set ancient_lorras_1 target_wave 20
 advancement revoke @a only ancient_lorras:monster_wave/ancient_lorras/1/1
