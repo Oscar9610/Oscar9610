@@ -21,7 +21,7 @@ execute if score .main_line ancient_lorras.story matches 43 run tellraw @a[dista
 execute if score .main_line ancient_lorras.story matches 44 run tellraw @a[distance=..16] [{"text":"［小雪］太好了！真的謝謝你們！"}]
 execute if score .main_line ancient_lorras.story matches 45 run tellraw @a[distance=..16] [{"text":"［小雪］我會一點醫療技術，你們把傷員帶過來，我負責幫他們包紮傷口"}]
 execute if score .main_line ancient_lorras.story matches 46 run tellraw @a[distance=..16] [{"text":"［希爾］恩恩，那旅行者！我們就先幫忙救那些遇難的傷員吧"}]
-execute if score .main_line ancient_lorras.story matches 47 run tellraw @a[distance=..16] {"text":"\n【目標】深入洞穴！","color":"gold"}
+execute if score .main_line ancient_lorras.story matches 47 run tellraw @a[distance=..16] {"text":"\n【目標】深入洞穴！拯救3名傷員","color":"gold"}
 
 execute if score .main_line ancient_lorras.story matches 47 run kill @e[tag=al.ml.hill.2]
 execute if score .main_line ancient_lorras.story matches 47 run title @a[distance=..30] title {"text":"\uE002"}
@@ -39,4 +39,4 @@ execute in game_map:ancient_lorras if score .main_line ancient_lorras.story matc
 execute if score .main_line ancient_lorras.story matches 34..47 run scoreboard players add .main_line ancient_lorras.story 1
 
 #音效
-execute in game_map:ancient_lorras positioned -189 262 -10 if score .main_line ancient_lorras.story matches 34..47 run playsound minecraft:entity.experience_orb.pickup voice @s ~ ~ ~ 0.5 1
+execute in game_map:ancient_lorras positioned -189 262 -10 if score .main_line ancient_lorras.story matches 34..47 run playsound minecraft:entity.experience_orb.pickup voice @a ~ ~ ~ 0.5 1
