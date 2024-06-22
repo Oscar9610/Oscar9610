@@ -19,13 +19,9 @@ scoreboard objectives add world_tree.story dummy "[世界樹] 劇情"
 scoreboard objectives add global.monsters.health dummy "全局 - 怪物初始血量"
 scoreboard objectives add orantes.story dummy "[水星 - 奧蘭蒂斯] 劇情"
 scoreboard objectives add orantes.global.main dummy "[水星 - 奧蘭蒂斯] 主要全局"
-scoreboard objectives add music.orantes_city dummy "[水星 - 奧蘭蒂斯] 城市音樂"
-scoreboard objectives add music.place_of_trial dummy "[水星 - 奧蘭蒂斯] 試煉之地音樂"
 scoreboard objectives add spaceship.global.main dummy "[太空站 - 奧莉亞] 主要全局"
 scoreboard objectives add orantes.transitions dummy "[水星 - 奧蘭蒂斯] 城市"
-scoreboard objectives add spaceship.story dummy "[太空站 - 奧莉亞] 劇情"
-scoreboard objectives add music.spaceship dummy "[太空站 - 奧莉亞] 背景音樂"
-scoreboard objectives add music.map_hall dummy "[地圖大廳] 背景音樂"
+
 scoreboard objectives add daytime_weather.weather dummy "[地圖大廳] 暫存天氣"
 scoreboard objectives add music.time_and_space_journey_mercury.chr.1 dummy "[時空旅途其一] 背景音樂"
 scoreboard objectives add duration dummy "實體存在時間"
@@ -37,10 +33,6 @@ scoreboard objectives add player.out_of_combat_detection dummy "脫離戰場"
 scoreboard objectives add .rdm dummy "隨機數"
 scoreboard objectives add player.space_time_deceleration dummy "超時空減速"
 scoreboard objectives add player.space_time_deceleration.fx dummy "超時空減速特效"
-scoreboard objectives add p1.world_area dummy "P1所在區域"
-scoreboard objectives add p2.world_area dummy "P2所在區域"
-scoreboard objectives add p3.world_area dummy "P3所在區域"
-scoreboard objectives add p4.world_area dummy "P4所在區域"
 scoreboard objectives add monster_wave dummy "怪物波次"
 scoreboard objectives add kill dummy "怪物波次已擊殺怪物數"
 scoreboard objectives add target_wave dummy "目標擊殺怪物數"
@@ -76,10 +68,16 @@ scoreboard players set #5 global.main 5
 scoreboard players set @a player.out_of_combat_detection 0
 
 ##區域
-scoreboard players set orantes_city p1.world_area 0
-scoreboard players set orantes_city p2.world_area 0
-scoreboard players set orantes_city p3.world_area 0
-scoreboard players set orantes_city p4.world_area 0
+
+scoreboard objectives add world_area.shadow_cave dummy "[區域] 幻境洞穴 - 魅影"
+scoreboard objectives add world_area.poison_cave dummy "[區域] 幻境洞穴 - 毒霧"
+scoreboard objectives add world_area.storm_cave dummy "[區域] 幻境洞穴 - 風暴"
+scoreboard objectives add world_area.orantes_village dummy "[區域] 奧蘭蒂斯村莊"
+
+scoreboard players add @a world_area.shadow_cave 0
+scoreboard players add @s world_area.poison_cave 0
+scoreboard players add @s world_area.storm_cave 0
+scoreboard players add @s world_area.orantes_village 0
 
 scoreboard players set shadow_cave p1.world_area 0
 scoreboard players set shadow_cave p2.world_area 0
@@ -93,13 +91,26 @@ scoreboard players set place_of_trial p1.world_area 1
 
 scoreboard players add #random.pos global.main 0
 
-##音樂
+#=====================================================================================
+
+## ----音樂---- ##
+scoreboard objectives add spaceship.story dummy "[太空站 - 奧莉亞] 劇情"
+scoreboard objectives add music.spaceship dummy "[太空站 - 奧莉亞] 背景音樂"
+scoreboard objectives add music.map_hall dummy "[地圖大廳] 背景音樂"
+scoreboard objectives add music.orantes_city dummy "[水星 - 奧蘭蒂斯] 城市音樂"
+scoreboard objectives add music.orantes_city.rdm dummy "[水星 - 奧蘭蒂斯] 城市音樂隨機數"
+scoreboard objectives add music.place_of_trial dummy "[水星 - 奧蘭蒂斯] 試煉之地音樂"
+
+#=====================================================================================
+
 scoreboard players set #music.rain_city bool.main 1
 scoreboard players set @a music.orantes_city 0
 scoreboard players set @a music.spaceship 0
 scoreboard players set @a music.place_of_trial 0
 scoreboard players set @a music.time_and_space_journey_mercury.chr.1 0
 scoreboard players set @a music.map_hall 0
+
+#=====================================================================================
 
 scoreboard players set @a disable.tp_book 0
 

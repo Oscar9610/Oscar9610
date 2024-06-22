@@ -22,6 +22,7 @@ function ancient_lorras:scoreboard
 # 偵測玩家是否完成水星主線？ ；開啟調用 草星 - 古羅拉斯 function 資源
 execute if score .main_line orantes.story matches 129.. run function ancient_lorras:load
 
+schedule function time_traveler:msuic/main 1t
 schedule function players:id/detect 1t
 schedule function ancient_lorras:world_area/loop 1t
 function time_traveler:daytime_weather/map_hall/save

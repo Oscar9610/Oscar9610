@@ -5,3 +5,7 @@ execute as @s[scores={orantes_12_62_-73=0}] run tellraw @s [{"text":"已解鎖�
 scoreboard players set @s orantes_12_62_-73 1
 playsound minecraft:entity.ender_dragon.growl voice @s ~ ~ ~ 9999 0.5
 playsound minecraft:ambient.cave voice @s ~ ~ ~ 9999 1
+
+scoreboard players set @s music.place_of_trial 1
+
+advancement revoke @s only time_traveler:world_area/land_of_trial/out
