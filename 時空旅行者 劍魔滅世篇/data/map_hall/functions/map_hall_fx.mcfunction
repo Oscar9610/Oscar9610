@@ -6,4 +6,4 @@ execute as @e[tag=map_hall.fx] at @s run particle minecraft:scrape ^ ^4 ^ 0 0 0 
 
 execute as @e[tag=sprinkler] at @s run particle minecraft:splash ^ ^ ^ 0 1.5 0 1 10 force
 
-schedule function time_traveler:map_hall_fx 1t
+schedule function map_hall:map_hall_fx 1t

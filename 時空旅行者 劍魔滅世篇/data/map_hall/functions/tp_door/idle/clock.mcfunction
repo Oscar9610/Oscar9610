@@ -1,0 +1,19 @@
+
+summon marker 29.5 54.5 -4.0 {Tags:[map_hall.temp]}
+
+scoreboard players set #x rotas.fx 29000
+scoreboard players set #y rotas.fx 54000
+scoreboard players set #z rotas.fx -4000
+
+execute store result score #random rotas.fx run random value -3000..3000
+scoreboard players operation #x rotas.fx += #random rotas.fx
+execute store result score #random rotas.fx run random value -3000..3000
+scoreboard players operation #y rotas.fx += #random rotas.fx
+execute store result score #random rotas.fx run random value -3000..3000
+scoreboard players operation #z rotas.fx += #random rotas.fx
+
+execute store result entity @e[type=marker,tag=map_hall.temp,limit=1] Pos[0] double 0.001 run scoreboard players get #x rotas.fx
+execute store result entity @e[type=marker,tag=map_hall.temp,limit=1] Pos[1] double 0.001 run scoreboard players get #y rotas.fx
+execute store result entity @e[type=marker,tag=map_hall.temp,limit=1] Pos[2] double 0.001 run scoreboard players get #z rotas.fx
+execute as @e[type=marker,tag=map_hall.temp,limit=1] at @s run summon item_display ~ ~ ~ {Tags:[map_hall.rotas.clock],item:{id:"minecraft:clock",Count:1},transformation:[-0.0959f,0.3902f,0.2975f,0.0000f,-0.4786f,-0.0075f,-0.1444f,0.0000f,-0.1083f,-0.3125f,0.3750f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f],teleport_duration:40}
+kill @e[type=marker,tag=map_hall.temp,limit=1]

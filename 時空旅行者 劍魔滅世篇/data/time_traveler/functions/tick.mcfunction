@@ -10,6 +10,8 @@ function weapons:main
 function rpg_armors:loop
 function weapons:timer_t
 function players:disable_operate
+function map_hall:tp_door/in
+function map_hall:tp_door/loop
 execute as @a at @s run function time_traveler:players/update_strength/main
 advancement revoke @a only weapons:use/gravity_axe
 

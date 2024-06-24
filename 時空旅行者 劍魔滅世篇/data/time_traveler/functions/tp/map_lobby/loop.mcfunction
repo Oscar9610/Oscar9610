@@ -34,14 +34,4 @@ execute in game_map:orantes positioned 11 62 -125 as @a[distance=..40] if score 
 execute in game_map:orantes positioned 11 62 -125 as @a[distance=..40] if score .main_line orantes.story matches ..113 run tp @s 69 63 -120 90 0
 execute in game_map:orantes positioned 11 62 -125 as @a[distance=..50] if score .main_line orantes.story matches 113.. run function monsters:boss_respawn/atar/start
 
-#偵測有玩家在地圖大廳且 detect_player_in_lobby 記分板大於等於1 強制傳送到飛船內部
-execute as @a at @s if dimension minecraft:overworld if score .global detect_player_in_lobby matches 1 in game_map:spaceship_interior run spawnpoint @s 0 61 -52
-execute as @a at @s if dimension minecraft:overworld if score .global detect_player_in_lobby matches 1 in game_map:spaceship_interior run tp @s 0 61 -52 0 0
-
-#地圖大廳
-execute in minecraft:overworld positioned 8 -62 -4 as @a[distance=..2.5] run function time_traveler:reload
-execute in minecraft:overworld positioned 8 -62 -4 as @a[distance=..2.5] run scoreboard players set .main world_tree.story 9
-execute in minecraft:overworld positioned 8 -62 -4 as @a[distance=..2.5] run function time_traveler:story/world_tree/opening/worldtree_title
-
-
 schedule function time_traveler:tp/map_lobby/loop 1t
