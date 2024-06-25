@@ -11,21 +11,14 @@ execute if score .main_line ancient_lorras.story matches 57 run tellraw @a[dista
 execute if score .main_line ancient_lorras.story matches 58 run tellraw @a[distance=..16] [{"text":"［小雪］謝謝旅行者與希爾！等我一下，我先把剩下的傷員都包紮傷口一下"}]
 execute if score .main_line ancient_lorras.story matches 59 run tellraw @a[distance=..16] [{"text":"(經過一段時間)"}]
 execute if score .main_line ancient_lorras.story matches 60 run tellraw @a[distance=..16] [{"text":"［小雪］好了，我這邊也全部都包紮好了"}]
-execute if score .main_line ancient_lorras.story matches 61 run tellraw @a[distance=..16] [{"text":"［小雪］這個深淵的洞窟真的好危險，我得回去"}]
-execute if score .main_line ancient_lorras.story matches 62 run tellraw @a[distance=..16] [{"text":"［小雪］text.6"}]
-execute if score .main_line ancient_lorras.story matches 63 run tellraw @a[distance=..16] [{"text":"［小雪］text.7"}]
-execute if score .main_line ancient_lorras.story matches 64 run tellraw @a[distance=..16] [{"text":"［小雪］text.8"}]
-execute if score .main_line ancient_lorras.story matches 65 run tellraw @a[distance=..16] [{"text":"［小雪］text.9"}]
-execute if score .main_line ancient_lorras.story matches 66 run tellraw @a[distance=..16] [{"text":"［希爾］text.10"}]
-execute if score .main_line ancient_lorras.story matches 67 run tellraw @a[distance=..16] [{"text":"［小雪］text.11"}]
-execute if score .main_line ancient_lorras.story matches 68 run tellraw @a[distance=..16] [{"text":"［小雪］text.12"}]
-execute if score .main_line ancient_lorras.story matches 69 run tellraw @a[distance=..16] [{"text":"［希爾］text.13"}]
-execute if score .main_line ancient_lorras.story matches 70 run tellraw @a[distance=..16] {"text":"\n【目標】text.14","color":"gold"}
+execute if score .main_line ancient_lorras.story matches 61 run tellraw @a[distance=..16] [{"text":"［希爾］旅行者！剛好時間不多了"}]
+execute if score .main_line ancient_lorras.story matches 62 run tellraw @a[distance=..16] [{"text":"［希爾］我們也回去跟櫻花林的村長說明洞穴的事情吧！"}]
+execute if score .main_line ancient_lorras.story matches 63 run tellraw @a[distance=..16] {"text":"\n【目標】回去找櫻花林村長！","color":"gold"}
 
-execute if score .main_line ancient_lorras.story matches 70 run kill @e[tag=al.ml.hill.3]
+execute if score .main_line ancient_lorras.story matches 63 run kill @e[tag=al.ml.hill.3]
 
 # score +1
-execute if score .main_line ancient_lorras.story matches 57..70 run scoreboard players add .main_line ancient_lorras.story 1
+execute if score .main_line ancient_lorras.story matches 57..63 run scoreboard players add .main_line ancient_lorras.story 1
 
 #音效
-execute in game_map:ancient_lorras positioned -189 262 -10 if score .main_line ancient_lorras.story matches 57..70 run playsound minecraft:entity.experience_orb.pickup voice @a ~ ~ ~ 0.5 1
+execute in game_map:ancient_lorras positioned -189 262 -10 if score .main_line ancient_lorras.story matches 57..63 run playsound minecraft:entity.experience_orb.pickup voice @a ~ ~ ~ 0.5 1

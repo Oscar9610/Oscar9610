@@ -2,6 +2,7 @@
 # scoreboard
 
 function particle:scoreboard
+function particle:broken_glass_scattering/rdm_pos
 
 execute unless entity @e[tag=bolt_dir1] run summon marker 0 0 0 {Tags:["bolt_dir1","bolt_dir"]}
 execute unless entity @e[tag=bolt_dir2] run summon marker 0 0 0 {Tags:["bolt_dir2","bolt_dir"]}

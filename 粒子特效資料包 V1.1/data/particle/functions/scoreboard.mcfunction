@@ -1,3 +1,5 @@
+
+scoreboard objectives add existence_time dummy "存在時間"
 scoreboard objectives add sculk_explosion.round dummy
 
 scoreboard objectives add particle.space_rupture dummy

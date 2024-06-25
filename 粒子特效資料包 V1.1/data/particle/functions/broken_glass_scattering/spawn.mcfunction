@@ -1,0 +1,3 @@
+summon minecraft:item_display ~ ~ ~ {teleport_duration:20,Tags:["broken_glass_scattering.fx.spawn","broken_glass_scattering.fx"],brightness:{block:15,sky:15}, billboard:"fixed",item:{components:{"minecraft:custom_model_data":36,"minecraft:custom_name":'{"color":"yellow","italic":false,"text":"item/shattered_glass"}'},count:1,id:"minecraft:iron_sword"}}
+
+function particle:broken_glass_scattering/tp with storage minecraft:rdm_pos

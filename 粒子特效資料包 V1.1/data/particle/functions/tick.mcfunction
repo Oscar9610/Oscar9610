@@ -1,4 +1,4 @@
-
+function particle:broken_glass_scattering/loop
 # 時空破碎
 function particle:space_rupture/main
 
