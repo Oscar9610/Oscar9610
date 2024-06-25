@@ -4,7 +4,7 @@ scoreboard players reset @s monster.skill.casting
 
 # 標籤
 tag @s remove poison_boss.2
-execute as @a run attribute @s generic.armor modifier remove f5a9aa71-61da-4dbd-be73-20cd6e75f50b
+execute as @a run attribute @s generic.armor modifier remove poison_boss.move2
 tag @s remove poison_boss.3
 tag @s remove poison_boss.4
 

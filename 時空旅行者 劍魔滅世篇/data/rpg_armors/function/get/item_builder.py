@@ -12,15 +12,15 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-custom_name = ['3', '調和☯之影鞋子', '#F4E75D']
-info  = ['鞋子', '調和之影']
-story = ['黑白調和！以此身為界！塑造萬象！']
-item_data     = {'real_item': 'chainmail_boots', 'trim': {'material': 'harmonizing_shadow_material', 'pattern': 'harmonizing_shadow_trim'}, 'rgb': -1, 'custom_data': '{harmonizing_shadow:1b}', 'max_damage': -1}
-series_skill  = {'is_skill': True, 'cd': 10, 'name': '黑白調和', 'info': ['穿上4件系列套裝，攻擊敵人時會隨機獲得其中一種屬性',' - 恢復&=8點血量&+',' - 獲得&=加速ɪ&+，持續5秒',' - 獲得&=6點護盾&+，持續10秒',' - 獲得&=力量ɪ&+，持續5秒']}
+custom_name = ['3', '狂暴獵人靴子', '#F4E75D']
+info  = ['鞋子', '狂暴獵人']
+story = ['狂戰士的靴子，象徵著族裡的榮耀']
+item_data     = {'real_item': 'leather_boots', 'trim': {'material': 'copper', 'pattern': 'spire'}, 'rgb': -1, 'custom_data': '{strength:1b}', 'max_damage': -1}
+series_skill  = {'is_skill': True, 'cd': 0, 'name': '狂暴', 'info': ['穿上4件系列套裝，可永久獲得&=力量ɪ&+']}
 passive_skill = {'is_skill': False, 'cd': 0, 'name': '', 'info': ['']}
 
-attribute.append({'name': '攻擊速度', 'show_value': '10%', 'value': 0.1, 'attribute_name': 'generic.attack_speed'})
-attribute.append({'name': '移動速度', 'show_value': '15%', 'value': 0.15, 'attribute_name': 'generic.movement_speed'})
+attribute.append({'name': '移動速度', 'show_value': '15%', 'value': 0.15, 'attribute_name': 'generic.knockback_resistance'})
+attribute.append({'name': '攻擊力', 'show_value': '1', 'value': 1, 'attribute_name': 'generic.attack_damage'})
 
 # ----- init ----- #
 
@@ -74,7 +74,7 @@ def attribute_value(text):
             else : return ["head",2]
         operation = "add_value"
         if "%" in i["show_value"]: operation = "add_multiplied_base"
-        i = '{type:\"'+i["attribute_name"]+'\",name:\"_\",amount:'+str(i["value"])+',operation:\"'+operation+'\",slot:\"'+slot(item_data["real_item"])[0]+'\",uuid:[I;0,0,0,'+str(slot(item_data["real_item"])[1])+']}'
+        i = '{type:\"'+i["attribute_name"]+'\",id:\"'+str(slot(item_data["real_item"])[1])+'\",amount:'+str(i["value"])+',operation:\"'+operation+'\",slot:\"'+slot(item_data["real_item"])[0]+'\"}'
         temp.append(i)
     return ','.join(temp)
 

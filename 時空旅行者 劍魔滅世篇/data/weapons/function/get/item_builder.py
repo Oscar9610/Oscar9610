@@ -12,17 +12,15 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-custom_name = ['1', '新手木斧', 'white']
-info  = ['斧頭', '新手', '物理']
-story = ['一把普通的斧頭']
-item_data     = {'real_item': 'iron_sword', 'custom_model_data': 2, 'custom_data': '{noob:2,physical:1b,weight:1b}', 'max_damage': 300}
-main_skill    = {'is_skill': True, 'cd': 30, 'name': '守護屏障', 'info': ['施予範圍內的玩家&=抗性IV、攻速III&+，持續5秒，並回復&=8點血量&+']}
-passive_skill = {'is_skill': True, 'cd': 10, 'name': '保護', 'info': ['手持此武器時，每隔10秒會賦予自身&=6點護盾&+']}
+custom_name = ['5', '狂風暴雨', '#28778A']
+info  = ['斧頭', '元素', '風']
+story = ['狂風暴雨之中的神奇斧頭，擁有操控天氣的力量！']
+item_data     = {'real_item': 'iron_sword', 'custom_model_data': 29, 'custom_data': '{wind:1b,violent_storm:1,weight:1b}', 'max_damage': 246}
+main_skill    = {'is_skill': True, 'cd': 20, 'name': '暴風雨', 'info': ['展開半徑15格的暴風領域，並且玩家在期間無法離開，持續18秒', '期間再次使用技能可以依次召喚「&=颶風流&=/&=雷雲陣&=」', '「&=颶風流&=」會在玩家位置上方凝聚氣流，形成強烈的颶風，', '吸引大範圍內的敵人至其中並造成&=250%攻擊傷害&-', '', '「&=雷雲陣&=」會在暴風雨中心凝聚一朵雷雲', '並施展巨響雷鳴對大範圍內的敵人造成&=300%攻擊傷害&-', '「&=颶風流&=/&=雷雲陣&=」的冷卻均為3秒']}
+passive_skill = {'is_skill': False, 'cd': 0, 'name': '', 'info': ['']}
 
-attribute.append({'name': '攻擊力', 'show_value': '6.5', 'value': 6.5, 'attribute_name': 'generic.attack_damage', 'slot': 'mainhand'})
-attribute.append({'name': '攻擊速度', 'show_value': '1.4', 'value': -2.6, 'attribute_name': 'generic.attack_speed', 'slot': 'mainhand'})
-attribute.append({'name': '盔甲值', 'show_value': '4', 'value': 4, 'attribute_name': 'generic.armor', 'slot': 'mainhand'})
-attribute.append({'name': '抗擊退', 'show_value': '30%', 'value': 0.3, 'attribute_name': 'generic.knockback_resistance', 'slot': 'mainhand'})
+attribute.append({'name': '攻擊力', 'show_value': '80%', 'value': 0.8, 'attribute_name': 'generic.attack_damage', 'slot': 'mainhand'})
+attribute.append({'name': '攻擊速度', 'show_value': '1.8', 'value': -2.2, 'attribute_name': 'generic.attack_speed', 'slot': 'mainhand'})
 
 # ----- init ----- #
 
@@ -88,7 +86,7 @@ def attribute_value(text):
             temp2 = 9487
         operation = "add_value"
         if "%" in i["show_value"]: operation = "add_multiplied_base"
-        i = '{type:\"'+i["attribute_name"]+'\",name:\"_\",amount:'+str(i["value"])+',slot:"'+str(i["slot"])+'",operation:\"'+operation+'\",uuid:[I;0,0,0,'+str(temp2)+']}'
+        i = '{type:\"'+i["attribute_name"]+'\",id:\"'+str(temp2)+'\",amount:'+str(i["value"])+',slot:"'+str(i["slot"])+'",operation:\"'+operation+'\"}'
         temp.append(i)
     return ','.join(temp)
 

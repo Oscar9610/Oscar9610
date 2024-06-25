@@ -8,10 +8,9 @@ item replace entity @s armor.legs with diamond_leggings[trim={pattern:'atar_wate
 item replace entity @s weapon.mainhand with carrot_on_a_stick[custom_model_data=4]
 
 data merge entity @s {Glowing:0}
-attribute @s generic.armor modifier add 6934de56-316e-4ca2-b1f7-c7ca13205b0f "atar.w1.1" 11.5 add_multiplied_base
-attribute @s generic.attack_damage modifier remove bf72e4d2-fb4e-417a-bfe0-7aaa06551bfb
-attribute @s generic.movement_speed modifier remove 030748f1-8e2a-4861-b949-7f48fad7350a
-
+attribute @s generic.armor modifier add atar.w.1 11.5 add_multiplied_base
+attribute @s generic.attack_damage modifier remove atar.l.1
+attribute @s generic.movement_speed modifier remove atar.l.2
 particle flash ~ ~1 ~ 0 0 0 1 2
 particle dripping_dripstone_water ~ ~5 ~ 5 5 5 0 300
 particle dust_color_transition{from_color: [0.0f, 0.5f, 1.0f], scale: 3f, to_color: [1.0f, 1.0f, 1.0f]} ~ ~1 ~ 0.4 0.6 0.4 1 100 normal @a
