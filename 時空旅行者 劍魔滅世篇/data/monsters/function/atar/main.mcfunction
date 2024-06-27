@@ -1,4 +1,3 @@
-
 # Bossbar
 execute store result bossbar atar max run attribute @e[tag=atar,limit=1] generic.max_health get
 execute store result bossbar atar value run data get entity @e[tag=atar,limit=1] Health
