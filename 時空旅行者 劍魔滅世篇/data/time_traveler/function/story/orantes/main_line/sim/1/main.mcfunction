@@ -11,9 +11,9 @@ execute if score .main_line orantes.story matches 5 run tellraw @a[distance=..16
 execute if score .main_line orantes.story matches 6 run tellraw @a[distance=..16] {"text":"［希爾］請問爺爺知道魔劍的消息嗎?"}
 execute if score .main_line orantes.story matches 7 run tellraw @a[distance=..16] {"text":"［陳述爺爺］我知道，但是最近我的孫子 陳述 他不見了"}
 execute if score .main_line orantes.story matches 8 run tellraw @a[distance=..16] {"text":"［陳述爺爺］我因為年紀大所以無法去找他"}
-execute if score .main_line orantes.story matches 9 run tellraw @a[distance=..16] [{"text":"［陳述爺爺］旅行者，請問可以幫我找一下陳述嗎?他最常去的地方是"},{"text":"城市外面的藍色大樹","color":"gold"}]
+execute if score .main_line orantes.story matches 9 run tellraw @a[distance=..16] [{"text":"［陳述爺爺］旅行者，請問可以幫我找一下陳述嗎?他最常去的地方是"},{"text":"城市外面的奧蘭蒂斯平原","color":"gold"}]
 execute if score .main_line orantes.story matches 10 run tellraw @a[distance=..16] {"text":"［陳述爺爺］你們找到陳述我再跟你們說一下魔劍有關的信息"}
-execute if score .main_line orantes.story matches 11 run tellraw @a[distance=..16] {"text":"【目標】城市外面的藍色大樹找到陳述！","color":"gold"}
+execute if score .main_line orantes.story matches 11 run tellraw @a[distance=..16] {"text":"【目標】去奧蘭蒂斯平原附近找到陳述！","color":"gold"}
 execute if score .main_line orantes.story matches 11 run kill @e[tag=display,distance=..2]
 execute if score .main_line orantes.story matches 11 run kill @e[tag=ml.hill.1]
 execute if score .main_line orantes.story matches 11 run function time_traveler:story/orantes/main_line/rs/2/summon_display_monster

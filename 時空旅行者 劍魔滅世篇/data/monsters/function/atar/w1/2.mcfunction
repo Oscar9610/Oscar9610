@@ -1,6 +1,6 @@
 
 execute as @a[distance=..8] at @s run function monsters:atar/w1/3
-scoreboard players set @s atk 150
+scoreboard players set @s atk 100
 function time_traveler:dmg_formula/monsters/calculate
 
 function particle:space_rupture/use

@@ -1,13 +1,12 @@
 
-
-scoreboard players set @s[tag=sculk_explosion.spawn] sculk_explosion.round 31
+scoreboard players set @s[tag=sculk_explosion.spawn] sculk_explosion.round 61
 
 tag @s remove sculk_explosion.spawn
 
 scoreboard players remove @s[scores={sculk_explosion.round=1..}] sculk_explosion.round 1
 
-execute as @s[scores={sculk_explosion.round=21..31}] at @s run tp @s ~ ~ ~ ~-20 ~20
-execute as @s[scores={sculk_explosion.round=11..20}] at @s run tp @s ~ ~ ~ ~-20 ~-20
+execute as @s[scores={sculk_explosion.round=31..61}] at @s run tp @s ~ ~ ~ ~-20 ~20
+execute as @s[scores={sculk_explosion.round=11..30}] at @s run tp @s ~ ~ ~ ~-20 ~-20
 
 
 execute positioned ~ ~-2.5 ~ rotated ~67.5 -15 anchored eyes run function particle:sculk_explosion/round
