@@ -1,6 +1,6 @@
 
 # get data
-scoreboard players set #10 global.main 10
+scoreboard players set #10 global.main 20
 execute store result score #world_level_temp global.main run xp query @s levels
 scoreboard players operation #world_level_temp global.main /= #10 global.main
 

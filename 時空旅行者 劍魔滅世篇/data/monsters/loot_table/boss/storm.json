@@ -1,7 +1,10 @@
 {
   "pools": [
     {
-      "rolls": 2,
+      "rolls": {
+        "min": 1,
+        "max": 5
+      },
       "entries": [
         {
           "type": "minecraft:item",
@@ -38,52 +41,15 @@
               "function": "minecraft:set_count",
               "count": {
                 "min": 5,
-                "max": 20
+                "max": 10
               }
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:prismarine_shard",
-          "weight": 25,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 1
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {
-                  "text": "風暴 / 素材",
-                  "color": "dark_gray",
-                  "bold": false,
-                  "italic": false
-                },
-                {
-                  "text": "風暴魔將掉落的能量碎片，可以作為鍛造強力武器的素材！",
-                  "color": "dark_aqua",
-                  "bold": false,
-                  "italic": false
-                }
-              ],
-              "mode": "replace_all"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "text": "【素材】風暴殘片",
-                "color": "gold",
-                "bold": false,
-                "italic": false
-              }
-            },
-            {
-              "function": "minecraft:set_custom_model_data",
-              "value": 1
-            }
-          ]
+          "name": "minecraft:trial_key",
+          "weight": 25
         }
       ]
     }

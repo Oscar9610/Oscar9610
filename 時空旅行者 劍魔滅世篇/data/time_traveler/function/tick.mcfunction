@@ -4,6 +4,7 @@ execute as @a at @s run function time_traveler:monster_weakness/player_loop
 #=========================================================
 #收納
 function time_traveler:interaction/main
+function entity:sounds/main
 function time_traveler:players/effects/main
 function time_traveler:system/main
 function weapons:main

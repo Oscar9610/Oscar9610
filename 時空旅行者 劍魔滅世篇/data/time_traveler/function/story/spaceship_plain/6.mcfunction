@@ -7,6 +7,8 @@ execute if score #emera orantes.story matches 21 run tellraw @a {"text":"［希�
 execute if score #emera orantes.story matches 22 run tellraw @a [{"text":"［希爾］你等等"},{"text":"右鍵使用一下傳送書到 ","color":"gold"},{"text":"傳送至 奧蘭蒂斯平原 ","color":"dark_green","bold":true},{"text":"這是我們第一個要去的星球(ゝ∀･)","color":"white","bold":false}]
 execute as @e[tag=hill] at @s if score #emera orantes.story matches 22 run data merge entity @s {Pose:{LeftArm:[0f,0f,207f]}}
 execute if score #emera orantes.story matches 23 run tellraw @a {"text":"【目標】到達水星 - 奧蘭蒂斯平原","color":"gold"}
+execute if score #emera orantes.story matches 23 run tellraw @a ["",{"text":"\n恭喜新手任務完成！\n","bold":true,"color":"gray"},{"text":"送你 ","bold":true,"color":"white"},{"text":"試煉鑰匙 *1","bold":true,"color":"dark_aqua"},{"text":" 作為獎勵！\n你可以去抽寶庫獲得對應獎勵！","bold":true,"color":"gray"}]
+execute if score #emera orantes.story matches 23 run tellraw @a ["",{"text":"\n\n============================\n獎勵介紹: 寶庫\n","bold":true,"color":"gray"},{"text":"可以透過消耗","bold":true,"color":"gray"},{"text":" 試煉鑰匙 *1 ","bold":true,"color":"dark_aqua"},{"text":"獲得其中隨機獎勵！\n","bold":true,"color":"gray"},{"text":"註: 它可以無限兌換喔！","bold":true,"color":"gold"},{"text":"\n============================","bold":true,"color":"gray"}]
 execute if score #emera orantes.story matches 23 run scoreboard players set .global orantes_-17_62_16 1
 execute if score #emera orantes.story matches 23 run scoreboard players set .global spaceship_0_61_-51 1
 execute if score #emera orantes.story matches 23 run schedule clear time_traveler:tp/disable_tp_book

@@ -1,0 +1,1 @@
+execute as @e[type=zombie] at @s run function entity:sounds/zombie/guide

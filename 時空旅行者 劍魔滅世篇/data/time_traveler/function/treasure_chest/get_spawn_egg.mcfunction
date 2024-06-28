@@ -1,0 +1,1 @@
+give @s bat_spawn_egg[max_stack_size=1,item_name='[{"color":"blue","text":"[水星 - 奧蘭蒂斯] "},{"color":"yellow","text":"寶庫生怪蛋"}]',rarity="epic",entity_data={id:"minecraft:bat",NoGravity:1b,Silent:1b,NoAI:1b,CanPickUpLoot:0b,Health:0.1f,Tags:["vault.spawn_egg"],CustomName:'{"text":"[水星 - 奧蘭蒂斯] 寶庫生怪蛋"}'}] 1

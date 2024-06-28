@@ -3,12 +3,14 @@
     {
       "rolls": {
         "min": 0,
-        "max": 3
+        "max": 1
       },
       "entries": [
         {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
+          "weight": 20,
+          "quality": 20,
           "functions": [
             {
               "function": "minecraft:set_custom_data",
@@ -37,6 +39,12 @@
               }
             }
           ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:trial_key",
+          "weight": 5,
+          "quality": 10
         }
       ]
     }

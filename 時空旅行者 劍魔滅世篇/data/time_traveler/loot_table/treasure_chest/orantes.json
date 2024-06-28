@@ -1,0 +1,289 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 3,
+        "max": 6
+      },
+      "bonus_rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "weight": 60,
+          "quality": 0,
+          "functions": [
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{money:1b}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:unbreakable": {
+                  "show_in_tooltip": false
+                },
+                "minecraft:enchantments": {
+                  "levels": {},
+                  "show_in_tooltip": false
+                },
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [],
+                  "show_in_tooltip": false
+                },
+                "minecraft:custom_name": "{\"extra\":[{\"color\":\"dark_purple\",\"text\":\"星輝幣 1 元\"}],\"italic\":false,\"text\":\"\"}",
+                "minecraft:lore": [
+                  "{\"extra\":[{\"color\":\"dark_gray\",\"text\":\"通用金錢\"}],\"italic\":false,\"text\":\"\"}",
+                  "{\"extra\":[{\"color\":\"gray\",\"text\":\"全宇宙通用的貨幣\"}],\"italic\":false,\"text\":\"\"}",
+                  "{\"extra\":[{\"color\":\"gray\",\"text\":\"任誰都能理解它的價值與份量\"}],\"italic\":false,\"text\":\"\"}"
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 5,
+                "max": 10
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_sword",
+          "weight": 40,
+          "quality": 20,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:food": {
+                  "nutrition": 0,
+                  "saturation": 0,
+                  "can_always_eat": true,
+                  "eat_seconds": 1000000
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{noob:1,physical:1b,weight:1b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "target": "custom_name",
+              "name": {
+                "text": "☆新手劍",
+                "color": "white",
+                "bold": true,
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "劍 / 新手 / ",
+                  "color": "dark_gray",
+                  "italic": false,
+                  "extra": [
+                    {
+                      "text": "\uE012",
+                      "color": "white",
+                      "italic": false,
+                      "extra": [
+                        {
+                          "text": "物理",
+                          "color": "dark_gray",
+                          "italic": false
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "一把普通的短劍",
+                  "color": "blue",
+                  "italic": false
+                },
+                {
+                  "text": "✨ ——— ",
+                  "color": "gray",
+                  "bold": false,
+                  "italic": false,
+                  "extra": [
+                    {
+                      "text": "主動技能 ",
+                      "color": "gray",
+                      "bold": true,
+                      "italic": false
+                    },
+                    {
+                      "text": "——— ✨",
+                      "color": "gray",
+                      "bold": false,
+                      "italic": false
+                    }
+                  ]
+                },
+                {
+                  "text": "【橫砍】 ",
+                  "color": "dark_aqua",
+                  "bold": false,
+                  "italic": false,
+                  "extra": [
+                    {
+                      "text": "⌛冷卻時間 30s",
+                      "color": "#6E6E6E",
+                      "italic": false
+                    }
+                  ]
+                },
+                {
+                  "text": "向前方橫砍，對敵人造成",
+                  "color": "blue",
+                  "italic": false,
+                  "extra": [
+                    {
+                      "text": "200%攻擊傷害",
+                      "color": "red",
+                      "italic": false,
+                      "underlined": true,
+                      "extra": [
+                        {
+                          "text": "，",
+                          "color": "blue",
+                          "italic": false,
+                          "underlined": false
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "每多橫砍到一位敵人，多增加",
+                  "color": "blue",
+                  "italic": false,
+                  "extra": [
+                    {
+                      "text": "100%攻擊傷害",
+                      "color": "red",
+                      "italic": false,
+                      "underlined": true
+                    },
+                    {
+                      "text": "（最多600%）",
+                      "color": "blue",
+                      "italic": false,
+                      "underlined": false
+                    }
+                  ]
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": "✨ ——— ",
+                  "color": "gray",
+                  "bold": false,
+                  "italic": false,
+                  "extra": [
+                    {
+                      "text": "被動技能",
+                      "color": "gray",
+                      "bold": true,
+                      "italic": false
+                    },
+                    {
+                      "text": " ——— ✨",
+                      "color": "gray",
+                      "bold": false,
+                      "italic": false
+                    }
+                  ]
+                },
+                {
+                  "text": "【回復】 ",
+                  "color": "dark_aqua",
+                  "bold": false,
+                  "italic": false
+                },
+                {
+                  "text": "擊殺敵人時，有25%機率恢復",
+                  "color": "blue",
+                  "bold": false,
+                  "italic": false,
+                  "extra": [
+                    {
+                      "text": "4點血量",
+                      "color": "#2EBD2E",
+                      "underlined": true
+                    }
+                  ]
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": "攻擊力\uF829\uF803",
+                  "color": "gray",
+                  "italic": false,
+                  "extra": [
+                    {
+                      "text": "5",
+                      "color": "white",
+                      "italic": false
+                    }
+                  ]
+                },
+                {
+                  "text": "攻擊速度 ",
+                  "color": "gray",
+                  "italic": false,
+                  "extra": [
+                    {
+                      "text": "1.6",
+                      "color": "white",
+                      "italic": false
+                    }
+                  ]
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_custom_model_data",
+              "value": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [
+                    {
+                      "id": "1234-1234-1234-1234",
+                      "type": "minecraft:generic.attack_damage",
+                      "amount": 5,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    },
+                    {
+                      "id": "1234-1234-1234-1234",
+                      "type": "minecraft:generic.attack_speed",
+                      "amount": -2.4,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    }
+                  ],
+                  "show_in_tooltip": false
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

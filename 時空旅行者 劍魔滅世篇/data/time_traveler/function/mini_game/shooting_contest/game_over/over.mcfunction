@@ -16,6 +16,8 @@ title @a[distance=..10] times 10 20 10
 title @a[distance=..10] title {"text":"遊戲結束！","color":"red"}
 function time_traveler:mini_game/shooting_contest/bow/remove
 
+execute as @a in game_map:orantes positioned -48 64 134 unless entity @s[dx=-22,dz=22,dy=6] run function time_traveler:mini_game/shooting_contest/bow/easter_egg
+
 # game
 schedule clear time_traveler:mini_game/shooting_contest/loop
 function time_traveler:mini_game/shooting_contest/sys/reset

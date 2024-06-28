@@ -1,0 +1,1 @@
+execute as @s[nbt={Health:0.0f}] run playsound minecraft:entity.warden.death voice @a ~ ~ ~ 1 1
