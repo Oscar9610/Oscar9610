@@ -3,6 +3,7 @@
 function monsters:sculk_saboteur/main
 function monsters:sculk_priest/main
 function monsters:wind_shamen/main
+function monsters:disaster/main
 
 execute in game_map:shadow_arena run function monsters:shadow/main
 execute in game_map:poison_arena run function monsters:poison/main

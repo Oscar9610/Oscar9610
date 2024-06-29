@@ -1,4 +1,4 @@
-execute if score #emera orantes.story matches 5 run tellraw @a[tag=!op] {"text":"［艾梅拉］ ","extra":[{"selector":"@a","color":"green"}],"text":" 你好"}
+execute if score #emera orantes.story matches 5 run tellraw @a[tag=!op] [{"text":"［艾梅拉］"},{"text":"你好 "},{"selector":"@a[distance=..8]","color":"green"}]
 execute if score #emera orantes.story matches 6 run tellraw @a[tag=!op] {"text":"［艾梅拉］ 有甚麼事嗎"}
 execute if score #emera orantes.story matches 7 run tellraw @a[tag=!op] {"text":"【萊娜說你有東西要給我】","color":"dark_green","clickEvent":{"action":"run_command","value":"/execute if score #emera orantes.story matches 16 run function story:spaceship_plain/6"}}
 execute if score #emera orantes.story matches 8 run tellraw @a {"text":"［艾梅拉］好的，我現在把新人需要的東西給你們"}

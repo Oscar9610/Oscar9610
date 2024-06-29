@@ -16,6 +16,7 @@ execute if score .main_line ancient_lorras.story matches 62 run tellraw @a[dista
 execute if score .main_line ancient_lorras.story matches 63 run tellraw @a[distance=..16] {"text":"\n【目標】回去找櫻花林村長！","color":"gold"}
 
 execute if score .main_line ancient_lorras.story matches 63 run kill @e[tag=al.ml.hill.3]
+execute if score .main_line ancient_lorras.story matches 63 run kill @e[tag=wounded]
 
 # score +1
 execute if score .main_line ancient_lorras.story matches 57..63 run scoreboard players add .main_line ancient_lorras.story 1

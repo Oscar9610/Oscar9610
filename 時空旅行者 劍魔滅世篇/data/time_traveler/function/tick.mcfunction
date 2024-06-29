@@ -53,4 +53,4 @@ execute as @a at @s run function time_traveler:world_level
 
 #偵測是否完成水星主線、支線 終有一日，世界將恢復如初 其二
 
-execute if score rotas._chapter_2 spaceship.story matches 51.. if score .main_line orantes.global.main matches 20 run function ancient_lorras:story/main_line/dtal/1/reset
+execute if score .main_line orantes.story matches 130.. if score .main_line orantes.global.main matches 20 run function ancient_lorras:story/main_line/dtal/1/reset

@@ -1,3 +1,5 @@
+tag @s add sculk_saboteur.1
+
 tag @a[distance=..4] add dmger
 scoreboard players set @s atk 150
 function time_traveler:dmg_formula/monsters/calculate
@@ -7,4 +9,4 @@ particle wax_off ~ ~1 ~ 0 0 0 20 4 force
 particle angry_villager ~ ~1.5 ~ 0.5 0.5 0.5 1 1
 playsound entity.player.attack.sweep voice @a ~ ~1 ~ 2 1
 
-execute if score @s monster.skill.casting matches 60.. run function monsters:sculk_saboteur/cast/end
+function monsters:disaster/cast/end

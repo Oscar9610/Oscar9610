@@ -1,0 +1,2 @@
+tellraw @a[distance=..8] {"text":"［艾梅拉］你要重製哪個劇情的進度？"}
+tellraw @a[distance=..8] {"text":"【奧蘭蒂斯 - 主線劇情】","color":"dark_green","clickEvent":{"action":"run_command","value":"/function time_traveler:story/spaceship_plain/emera/reset_story/orantes/main_line"}}

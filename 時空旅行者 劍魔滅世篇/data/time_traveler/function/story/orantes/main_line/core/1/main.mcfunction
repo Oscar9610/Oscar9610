@@ -27,9 +27,9 @@ execute if score .main_line orantes.story matches 74 run tellraw @s {"text":"［
 execute if score .main_line orantes.story matches 75 run tellraw @s {"text":"［陳述爺爺］謝謝旅行者們的幫忙"}
 execute if score .main_line orantes.story matches 76 run scoreboard players set .main_line orantes.story 77
 execute if score .main_line orantes.story matches 77 run tellraw @s {"text":"［陳述爺爺］好，那我就把我所知道的情報告訴你們吧"}
-execute if score .main_line orantes.story matches 78 run tellraw @s {"text":"［陳述爺爺］大約從 5 年前的一天，那天氣候異常，雷雨交加"}
-execute if score .main_line orantes.story matches 79 run tellraw @s {"text":"［陳述爺爺］突然一陣閃電重天而降"}
-execute if score .main_line orantes.story matches 80 run tellraw @s {"text":"［陳述爺爺］一把深藍色的魔劍秉直的插在落雷處"}
+execute if score .main_line orantes.story matches 78 run tellraw @s {"text":"［陳述爺爺］5年前雷雨交加的日子"}
+execute if score .main_line orantes.story matches 79 run tellraw @s {"text":"［陳述爺爺］突然一陣閃電重天而降一把深藍色的魔劍"}
+execute if score .main_line orantes.story matches 80 run tellraw @s {"text":"［陳述爺爺］秉直的插在落雷處"}
 execute if score .main_line orantes.story matches 81 run tellraw @s {"text":"［陳述爺爺］隨後那把魔劍彷彿被施了詛咒般"}
 execute if score .main_line orantes.story matches 82 run tellraw @s {"text":"［陳述爺爺］源源不絕地冒出深淵魔物"}
 execute if score .main_line orantes.story matches 83 run tellraw @s {"text":"［希爾］所以，深淵是由魔劍造成的 ?"}
