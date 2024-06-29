@@ -7,6 +7,7 @@ function time_traveler:interaction/main
 function entity:sounds/main
 function time_traveler:players/effects/main
 function time_traveler:system/main
+function system:main
 function weapons:main
 function rpg_armors:loop
 function weapons:timer_t

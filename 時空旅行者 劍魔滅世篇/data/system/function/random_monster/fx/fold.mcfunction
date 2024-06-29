@@ -1,0 +1,4 @@
+
+tag @s remove wing_spread
+data merge entity @n[type=block_display,tag=mob.spawner.1.1] {block_state:{Name:"minecraft:crimson_slab",Properties:{type:"bottom",waterlogged:"false"}},id:"minecraft:block_display",start_interpolation:0,interpolation_duration:40,transformation:{left_rotation:[0.0f,0.9914449f,0.1305262f,0.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[0.99811924f,0.99911845f,0.99911845f],translation:[0.12349445f,-0.67445904f,1.3536246f]}}
+data merge entity @n[type=block_display,tag=mob.spawner.1.2] {block_state:{Name:"minecraft:crimson_slab",Properties:{type:"bottom",waterlogged:"false"}},id:"minecraft:block_display",start_interpolation:0,interpolation_duration:40,transformation:{left_rotation:[-0.13058378f,0.0f,0.0f,0.9914374f],right_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[0.998119f,0.99911803f,0.99911803f],translation:[-0.87349445f,-0.6745f,-1.3535534f]}}
