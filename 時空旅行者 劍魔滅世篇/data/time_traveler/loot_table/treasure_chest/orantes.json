@@ -90,7 +90,7 @@
                   "italic": false,
                   "extra": [
                     {
-                      "text": "\uE012",
+                      "text": "",
                       "color": "white",
                       "italic": false,
                       "extra": [
@@ -227,7 +227,7 @@
                   "text": ""
                 },
                 {
-                  "text": "攻擊力\uF829\uF803",
+                  "text": "攻擊力",
                   "color": "gray",
                   "italic": false,
                   "extra": [
@@ -274,6 +274,274 @@
                       "type": "minecraft:generic.attack_speed",
                       "amount": -2.4,
                       "operation": "add_value",
+                      "slot": "mainhand"
+                    }
+                  ],
+                  "show_in_tooltip": false
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_sword",
+          "weight": 40,
+          "quality": 20,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:food": {
+                  "nutrition": 0,
+                  "saturation": 0,
+                  "can_always_eat": true,
+                  "eat_seconds": 1000000
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{noob:2,physical:1b,weight:1b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "target": "custom_name",
+              "name": {
+                "text": "☆新手木斧",
+                "color": "white",
+                "bold": true,
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "斧頭 / 新手 / ",
+                  "color": "dark_gray",
+                  "italic": false,
+                  "extra": [
+                    {
+                      "text": "",
+                      "color": "white",
+                      "italic": false,
+                      "extra": [
+                        {
+                          "text": "物理",
+                          "color": "dark_gray",
+                          "italic": false
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "一把普通的斧頭",
+                  "color": "blue",
+                  "italic": false
+                },
+                {
+                  "text": "✨ ——— ",
+                  "color": "gray",
+                  "bold": false,
+                  "italic": false,
+                  "extra": [
+                    {
+                      "text": "主動技能 ",
+                      "color": "gray",
+                      "bold": true,
+                      "italic": false
+                    },
+                    {
+                      "text": "——— ✨",
+                      "color": "gray",
+                      "bold": false,
+                      "italic": false
+                    }
+                  ]
+                },
+                {
+                  "text": "【守護屏障】 ",
+                  "color": "dark_aqua",
+                  "bold": false,
+                  "italic": false,
+                  "extra": [
+                    {
+                      "text": "⌛冷卻時間 30s",
+                      "color": "#6E6E6E",
+                      "italic": false
+                    }
+                  ]
+                },
+                {
+                  "text": "施予範圍內的玩家",
+                  "color": "blue",
+                  "italic": false,
+                  "extra": [
+                    {
+                      "text": "抗性IV、攻速III",
+                      "color": "#2EBD2E",
+                      "italic": false,
+                      "underlined": true,
+                      "extra": [
+                        {
+                          "text": "，持續5秒，並回復",
+                          "color": "blue",
+                          "italic": false,
+                          "underlined": false
+                        },
+                        {
+                          "text": "8點血量",
+                          "color": "#2EBD2E",
+                          "italic": false,
+                          "underlined": true
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": "✨ ——— ",
+                  "color": "gray",
+                  "bold": false,
+                  "italic": false,
+                  "extra": [
+                    {
+                      "text": "被動技能",
+                      "color": "gray",
+                      "bold": true,
+                      "italic": false
+                    },
+                    {
+                      "text": " ——— ✨",
+                      "color": "gray",
+                      "bold": false,
+                      "italic": false
+                    }
+                  ]
+                },
+                {
+                  "text": "【保護】 ",
+                  "color": "dark_aqua",
+                  "bold": false,
+                  "italic": false,
+                  "extra": [
+                    {
+                      "text": "⌛冷卻時間 10s",
+                      "color": "#6E6E6E",
+                      "bold": false,
+                      "italic": false
+                    }
+                  ]
+                },
+                {
+                  "text": "手持此武器時，每隔10秒會賦予自身",
+                  "color": "blue",
+                  "bold": false,
+                  "italic": false,
+                  "extra": [
+                    {
+                      "text": "6點護盾",
+                      "color": "#2EBD2E",
+                      "underlined": true
+                    }
+                  ]
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": "攻擊力",
+                  "color": "gray",
+                  "italic": false,
+                  "extra": [
+                    {
+                      "text": "6.5",
+                      "color": "white",
+                      "italic": false
+                    }
+                  ]
+                },
+                {
+                  "text": "攻擊速度 ",
+                  "color": "gray",
+                  "italic": false,
+                  "extra": [
+                    {
+                      "text": "1.4",
+                      "color": "white",
+                      "italic": false
+                    }
+                  ]
+                },
+                {
+                  "text": "盔甲值",
+                  "color": "gray",
+                  "italic": false,
+                  "extra": [
+                    {
+                      "text": "4",
+                      "color": "white",
+                      "italic": false
+                    }
+                  ]
+                },
+                {
+                  "text": "抗擊退",
+                  "color": "gray",
+                  "italic": false,
+                  "extra": [
+                    {
+                      "text": "30%",
+                      "color": "white",
+                      "italic": false
+                    }
+                  ]
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_custom_model_data",
+              "value": 2
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [
+                    {
+                      "id": "1234-1234-1234-1234",
+                      "type": "minecraft:generic.attack_damage",
+                      "amount": 6.5,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    },
+                    {
+                      "id": "1234-1234-1234-1234",
+                      "type": "minecraft:generic.attack_speed",
+                      "amount": -2.6,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    },
+                    {
+                      "id": "1234-1234-1234-1234",
+                      "type": "minecraft:generic.armor",
+                      "amount": 4,
+                      "operation": "add_value",
+                      "slot": "any"
+                    },
+                    {
+                      "id": "1234-1234-1234-1234",
+                      "type": "minecraft:generic.knockback_resistance",
+                      "amount": 0.3,
+                      "operation": "add_multiplied_base",
                       "slot": "mainhand"
                     }
                   ],

@@ -123,3 +123,6 @@ scoreboard players add #portal.open global.main 0
 ##時空之境水星傳送門
 scoreboard players set #fx.tp_door orantes.global.main 0
 #=====================================================================================
+
+## 艾梅拉故事劇情控制
+scoreboard players add #story.contrtol spaceship.story 0
