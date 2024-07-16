@@ -9,6 +9,9 @@ scoreboard objectives add boss.respawn.cd dummy "自動生成BOSS間隔"
 ## 毒霧
 scoreboard objectives add poison_boss.move2 dummy
 
+## 災厄
+scoreboard objectives add disaster.move2 dummy
+
 ## 生成間隔
 scoreboard players set orantes.shadow boss.respawn.cd 0
 scoreboard players set orantes.poison boss.respawn.cd 0

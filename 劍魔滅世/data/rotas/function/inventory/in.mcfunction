@@ -3,7 +3,9 @@ function players:inventory/-return {bag:rotas}
 execute in game_map:realm_of_time_and_space run tp @s 0 52 0 0 0
 execute as @s at @s in game_map:realm_of_time_and_space run spawnpoint @s ~ ~ ~
 
-execute as @s at @s run playsound minecraft:bgm.doom_eternal record @s ~ ~1 ~ 0.25 1
+gamemode survival @s[gamemode=!creative,gamemode=!adventure]
+
+function time_traveler:music/rotas/start
 
 execute as @s at @s run playsound minecraft:voice.time_and_space_portal_open voice @a ~ ~ ~ 9999 1
 execute as @s at @s run playsound minecraft:entity.generic.explode voice @a ~ ~ ~ 9999 0.5

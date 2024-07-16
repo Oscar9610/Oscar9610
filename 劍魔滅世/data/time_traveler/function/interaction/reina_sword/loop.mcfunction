@@ -1,2 +1,7 @@
-give @p carrot_on_a_stick[max_stack_size=1,custom_name='{"bold":true,"color":"white","italic":false,"text":"雷納的劍"}',lore=['{"bold":false,"color":"dark_gray","italic":false,"text":"支線 / 道具"}','{"bold":false,"color":"blue","italic":false,"text":"支線「遺失的守護者」任務道具，代表雷納精神的劍，知道雷納的精神才能獲得這把劍。"}'],unbreakable={show_in_tooltip:false},custom_model_data=17,custom_data={reina_sword:1b},enchantments={levels:{"minecraft:infinity":1},show_in_tooltip:false},attribute_modifiers={modifiers:[{type:"generic.attack_damage",name:"generic.attack_damage",amount:-100,operation:"add_multiplied_base",uuid:[I;-1940353282,858277419,-1828185103,751014663],slot:"any"}],show_in_tooltip:false},hide_additional_tooltip={}] 1
+execute as @p unless items entity @s container.* minecraft:iron_sword[minecraft:custom_data~{reina_sword:1b}] if items entity @s weapon.* minecraft:iron_sword[minecraft:custom_data~{reina_sword:1b}] run tellraw @s {"text":"(你已經有一把劍了！)","color":"red"}
+execute as @p if items entity @s container.* minecraft:iron_sword[minecraft:custom_data~{reina_sword:1b}] unless items entity @s weapon.* minecraft:iron_sword[minecraft:custom_data~{reina_sword:1b}] run tellraw @s {"text":"(你已經有一把劍了！)","color":"red"}
+
+
+execute as @p unless items entity @s container.* minecraft:iron_sword[minecraft:custom_data~{reina_sword:1b}] unless items entity @s weapon.* minecraft:iron_sword[minecraft:custom_data~{reina_sword:1b}] run function weapons:get/sword/reina_sword
+
 data remove entity @s interaction

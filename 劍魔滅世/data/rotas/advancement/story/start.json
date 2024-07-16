@@ -1,0 +1,14 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "player": {},
+        "to": "game_map:realm_of_time_and_space"
+      }
+    }
+  },
+  "rewards": {
+    "function": "rotas:story/start"
+  }
+}

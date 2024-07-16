@@ -102,6 +102,7 @@ scoreboard objectives add music.map_hall dummy "[地圖大廳] 背景音樂"
 scoreboard objectives add music.orantes_city dummy "[水星 - 奧蘭蒂斯] 城市音樂"
 scoreboard objectives add music.orantes_city.rdm dummy "[水星 - 奧蘭蒂斯] 城市音樂隨機數"
 scoreboard objectives add music.place_of_trial dummy "[水星 - 奧蘭蒂斯] 試煉之地音樂"
+scoreboard objectives add music.rotas dummy "[時空之境] 背景音樂"
 
 #=====================================================================================
 

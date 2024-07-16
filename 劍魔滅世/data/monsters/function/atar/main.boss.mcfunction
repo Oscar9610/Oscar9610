@@ -4,7 +4,7 @@ execute if score @s monster.skill.cast.cd matches ..0 run function monsters:atar
 
 # Skill 1
 execute if score #atar.1.2 global.main matches 1 run scoreboard players add #atar.1 global.main 1
-execute if score #atar.1 global.main matches 360.. run function monsters:atar/1/use
+execute if score #atar.1 global.main matches 600.. run function monsters:atar/1/use
 
 # execute if score #atar.1 global.main matches 340 run function monsters:atar/2/use
 

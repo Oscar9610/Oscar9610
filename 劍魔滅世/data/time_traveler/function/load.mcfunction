@@ -2,10 +2,18 @@
 function weapons:load
 function time_traveler:world_area/reload
 
+
 team add yellow "黃色"
 team modify yellow color yellow
 team add main_line "主線劇情顏色"
 team modify main_line color white
+
+team add players
+team join players @a
+team modify players friendlyFire false
+
+team add monster
+team modify monster friendlyFire false
 
 
 #設置玩家重生點為太空站內部
@@ -23,6 +31,7 @@ function ancient_lorras:scoreboard
 # 偵測玩家是否完成水星主線？ ；開啟調用 草星 - 古羅拉斯 function 資源
 execute if score .main_line orantes.story matches 129.. run function ancient_lorras:load
 
+schedule function ancient_lorras:world_area/emerald_vale/lightning 3s
 schedule function rpg_items:exchanged/-main 1t
 function time_traveler:treasure_chest/loop
 function players:attribute

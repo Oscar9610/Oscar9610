@@ -1,0 +1,1 @@
+execute as @e[tag=bouncing_lazer.block.display,distance=..1] at @s run tp @s ~ ~ ~ ~15 ~

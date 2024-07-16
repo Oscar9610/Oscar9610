@@ -1,0 +1,2 @@
+summon minecraft:block_display ~ ~ ~ {Tags:["bouncing_lazer.block","bouncing_lazer.block.display"],Passengers:[{id:"minecraft:item_display",Tags:["bouncing_lazer.block.display"],item:{count:1,id:"minecraft:beacon"}}],block_state:{Name:"minecraft:stone_button",Properties:{face:"wall",facing:"north",powered:"false"}},transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[1.0f,1.0f,1.0f],translation:[-0.5f,-0.5f,-0.5f]}}
+summon interaction ~ ~-0.5 ~ {Tags:["bouncing_lazer_block.act","bouncing_lazer_block.display"]}

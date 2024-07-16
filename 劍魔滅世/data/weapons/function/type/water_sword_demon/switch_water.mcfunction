@@ -13,7 +13,7 @@ particle flash ~ ~1 ~ 0 0 0 1 2
 particle dripping_dripstone_water ~ ~5 ~ 5 5 5 0 600
 playsound entity.zombie.converted_to_drowned voice @a ~ ~1 ~ 1 0.7
 playsound block.beacon.deactivate voice @a ~ ~1 ~ 999999 0.5 1
-function time_traveler:players/space_time_deceleration
+function players:space_time_deceleration/use
 
 # dmg
 tag @s add water_sword.w_user

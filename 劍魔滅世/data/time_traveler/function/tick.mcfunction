@@ -3,6 +3,7 @@
 execute as @a at @s run function time_traveler:monster_weakness/player_loop
 #=========================================================
 #收納
+function weapons:tick
 function time_traveler:interaction/main
 function entity:sounds/main
 function time_traveler:players/effects/main
@@ -12,6 +13,7 @@ function weapons:main
 function rpg_armors:loop
 function weapons:timer_t
 function players:disable_operate
+function players:space_time_deceleration/loop
 function map_hall:tp_door/in
 function map_hall:tp_door/loop
 execute as @a at @s run function time_traveler:players/update_strength/main
@@ -34,12 +36,6 @@ execute as @e[tag=rotate.45] at @s run tp @s ~ ~ ~ ~45 ~
 #玩家死亡
 execute as @a[scores={player_death=1..}] at @s run function players:die
 
-#=========================================================
-
-#局部時空減速
-scoreboard players remove @e[scores={player.space_time_deceleration=1..}] player.space_time_deceleration 1
-
-#=========================================================
 
 #如果玩家從 世界樹開頭 到 太空站 就把所有玩家 奧蘭蒂斯平原 太空站 傳送點解鎖
 execute if score .global orantes_-17_62_16 matches 1 run scoreboard players set @a orantes_-17_62_16 1
@@ -48,7 +44,7 @@ execute if score .global spaceship_0_61_-51 matches 1 run scoreboard players set
 #=========================================================
 
 #世界等級
-execute as @a at @s run function time_traveler:world_level
+function world_level:loop
 
 #=========================================================
 

@@ -1,1 +1,2 @@
 function time_traveler:system/shooting_contest/kill_arrow
+function sword_demon:loop

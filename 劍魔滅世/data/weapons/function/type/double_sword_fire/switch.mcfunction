@@ -12,7 +12,7 @@ execute if score #temp global.main matches 0 run return 0
 # dmg
 execute positioned ^ ^ ^3 run tag @e[type=#time_traveler:monsters,distance=..2] add dmger
 scoreboard players operation @s atk = .double_sword_fire1 atk
-function time_traveler:dmg_formula/calculate
+function time_traveler:dmg_formula/cooldown_damage/calculate
 
 # particle
 scoreboard players set #temp global.main 0

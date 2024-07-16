@@ -1,7 +1,6 @@
 # 執行者 : boss
 
-effect give @a[distance=..8] slowness 1 3 true
-effect give @a[distance=..8] jump_boost 1 128 true
+scoreboard players set @a[distance=..8] disable_operate 20
 tag @s add temp
 execute as @a[distance=..5] at @s facing entity @e[tag=temp,limit=1] eyes run tp @s ^ ^ ^0.2
 tag @s remove temp

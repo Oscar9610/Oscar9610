@@ -14,4 +14,4 @@ particle minecraft:lava ~ ~ ~ 1 1 1 0 30 force
 # dmg
 execute positioned ^ ^ ^4 run tag @e[type=#time_traveler:monsters,distance=..5] add dmger
 scoreboard players operation @s atk = .double_sword_fire atk
-function time_traveler:dmg_formula/calculate
+function time_traveler:dmg_formula/cooldown_damage/calculate

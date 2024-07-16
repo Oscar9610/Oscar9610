@@ -14,7 +14,7 @@ particle dust_color_transition{from_color: [1.0f, 1.0f, 0.0f], scale: 2f, to_col
 
 playsound voice.resonance_crystal voice @a
 playsound entity.generic.explode voice @a ~ ~ ~ 1 0.5
-function time_traveler:players/space_time_deceleration
+function players:space_time_deceleration/use
 
 # dmg
 tag @s add water_sword.l_user

@@ -1,14 +1,14 @@
 {
-  "temperature": 0.8,
-  "downfall": 0.4,
+  "temperature": 0,
+  "downfall": 0,
   "has_precipitation": false,
   "effects": {
-    "sky_color": 1966116,
-    "fog_color": 3342397,
-    "water_color": 4980828,
-    "water_fog_color": 3342397,
-    "grass_color": 4980828,
-    "foliage_color": 8192128
+    "sky_color": 1,
+    "fog_color": 1,
+    "water_color": 1,
+    "water_fog_color": 1,
+    "grass_color": 1,
+    "foliage_color": 1
   },
   "spawners": {},
   "spawn_costs": {},

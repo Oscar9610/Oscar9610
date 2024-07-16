@@ -8,8 +8,7 @@ execute if score .lost_guardian orantes.story matches 14 run scoreboard players 
 execute if score .lost_guardian orantes.story matches 14 run function time_traveler:interaction/reina_sword/guide
 execute if score .lost_guardian orantes.story matches 14 run schedule function time_traveler:story/orantes/npc/aldon/loop 1t
 execute if score .lost_guardian orantes.story matches 14 in game_map:orantes run function time_traveler:story/orantes/branch_line/lost_guardian/summon_npc
-execute if score .lost_guardian orantes.story matches 14 in game_map:orantes run summon minecraft:armor_stand 33.25 42.5 -59.0 {Marker:1b,DisabledSlots:4144959,Tags:["reina_sword"],NoGravity:1,Brain: {memories: {}}, HurtByTimestamp: 0, Attributes: [{Base: 0.699999988079071d, Name: "minecraft:generic.movement_speed"}], Invulnerable: 0b, FallFlying: 0b, ShowArms: 1b, PortalCooldown: 0, AbsorptionAmount: 0.0f, FallDistance: 0.0f, DisabledSlots: 0, DeathTime: 0s, Pose: {RightArm: [270.0f, 0.0f, 180.0f]}, Invisible: 1b, Motion: [0.0d, -0.0784000015258789d, 0.0d], Small: 0b, Health: 20.0f, Air: 300s, OnGround: 1b, Rotation: [-180.0f, 0.0f], HandItems: [{components: {"minecraft:custom_model_data": 17}, count: 1, id: "minecraft:iron_sword"}, {}], Fire: -1s, ArmorItems: [{}, {}, {}, {}], NoBasePlate: 0b, HurtTime: 0s}
-execute if score .lost_guardian orantes.story matches 14 in game_map:orantes run summon minecraft:interaction 33.5 43.0 -59.5 {width:0.75,height:1.5,Tags:["reina_sword.interaction","reina_sword"]}
+execute if score .lost_guardian orantes.story matches 14 in game_map:orantes run function time_traveler:interaction/reina_sword/summon
 
 #循環偵測
 #loop

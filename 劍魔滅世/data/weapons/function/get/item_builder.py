@@ -12,15 +12,15 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-custom_name = ['1', '新手鐮刀', 'white']
-info  = ['鐮刀', '新手', '物理']
-story = ['一把普通的鐮刀']
-item_data     = {'real_item': 'iron_sword', 'custom_model_data': 3, 'custom_data': '{noob:3,physical:1b,weight:1b}', 'max_damage': 300}
-main_skill    = {'is_skill': True, 'cd': 30, 'name': '收割', 'info': ['召喚鐮刀橫掃，對周圍敵人攻擊','造成&=100%攻擊傷害&-，持續2秒']}
-passive_skill = {'is_skill': True, 'cd': 5, 'name': '迴旋斬', 'info': ['每攻擊命中敵人5次, 會對範圍內敵人造成&=100%攻擊傷害&-並且獲得&=攻速II&+持續2秒']}
+custom_name = ['5', '不識時務 · 玉石俱摧', '#FF0000']
+info  = ['崩壞3rd', '板磚', '物理']
+story = ['意識的律者使用自身權能打造出的神兵利器。', '與創造者一樣，並沒有實體, 因此獲得「不是實物」的別名。', '不具實體, 即是千變萬化, 以一當千。', '據說, 根據實戰要求, 「不識時務」能夠立即變化成任何武器的樣貌。']
+item_data     = {'real_item': 'iron_sword', 'custom_model_data': 37, 'custom_data': '{physical:1b,bricks:1,weight:1b}', 'max_damage': 275}
+main_skill    = {'is_skill': False, 'cd': 40, 'name': '肆意流淌的岩漿', 'info': ['向四周噴射岩漿，對周圍敵人造成&=150%攻擊傷害&-，同時進入「劈砍狀態」', '「劈砍狀態」時，主、副手同時持有此雙刀且切換副手武器時，', '會向前方劈砍，對前方敵人造成&=50%攻擊傷害&-，狀態持續10秒']}
+passive_skill = {'is_skill': False, 'cd': 0, 'name': '灼傷', 'info': ['攻擊敵人時使敵人著火，每秒造成&=50%攻擊傷害&-，持續3秒']}
 
-attribute.append({'name': '攻擊力', 'show_value': '4', 'value': 4, 'attribute_name': 'generic.attack_damage', 'slot': 'mainhand'})
-attribute.append({'name': '攻擊速度', 'show_value': '1.8', 'value': -2.2, 'attribute_name': 'generic.attack_speed', 'slot': 'mainhand'})
+attribute.append({'name': '攻擊力', 'show_value': '6.5', 'value': 6.5, 'attribute_name': 'generic.attack_damage', 'slot': 'mainhand'})
+attribute.append({'name': '攻擊速度', 'show_value': '1.6', 'value': -2.4, 'attribute_name': 'generic.attack_speed', 'slot': 'mainhand'})
 
 # ----- init ----- #
 

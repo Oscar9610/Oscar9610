@@ -11,10 +11,12 @@ execute if score .main_line ancient_lorras.story matches 68 run tellraw @a[dista
 execute if score .main_line ancient_lorras.story matches 69 run tellraw @a[distance=..16] [{"text":"［希爾］原來是這樣"}]
 execute if score .main_line ancient_lorras.story matches 70 run tellraw @a[distance=..16] [{"text":"［櫻花林村長］旅行者，深淵的力量正在不斷增強"}]
 execute if score .main_line ancient_lorras.story matches 71 run tellraw @a[distance=..16] [{"text":"［櫻花林村長］我們的家園岌岌可危。"}]
-execute if score .main_line ancient_lorras.story matches 72 run tellraw @a[distance=..16] [{"text":"［櫻花林村長］所以希望你們前往風暴峽谷，告知那裡的村長這個消息，並請求他的協助"}]
-execute if score .main_line ancient_lorras.story matches 73 run tellraw @a[distance=..16] [{"text":"［櫻花林村長］好的，我跟旅行者可是非常要好的搭檔"}]
-execute if score .main_line ancient_lorras.story matches 74 run tellraw @a[distance=..16] [{"text":"［櫻花林村長］旅行者！我們準備一下，稍後前往風暴峽谷吧！"}]
-execute if score .main_line ancient_lorras.story matches 75 run tellraw @a[distance=..16] {"text":"\n【目標】前往風暴峽谷！","color":"gold"}
+execute if score .main_line ancient_lorras.story matches 72 run tellraw @a[distance=..16] [{"text":"［櫻花林村長］所以希望旅行者與希爾能夠去找到幕後的根源"}]
+execute if score .main_line ancient_lorras.story matches 73 run tellraw @a[distance=..16] [{"text":"［希爾］沒問題的，我跟旅行者可是非常要好的搭檔"}]
+execute if score .main_line ancient_lorras.story matches 74 run tellraw @a[distance=..16] [{"text":"［櫻花林村長］謝謝你們，如果有什麼需要的物品可以去這裡的商店附近購買"}]
+execute if score .main_line ancient_lorras.story matches 75 run tellraw @a[distance=..16] {"text":"\n【目標】離開櫻花林，四處探索收集更多情報！","color":"gold"}
+execute if score .main_line ancient_lorras.story matches 75 run tellraw @a[distance=..16] {"text":"\n註: 在草星有很多區域玩家可以自由探索，說不定可以收集相關情報","color":"gold"}
+
 execute if score .main_line ancient_lorras.story matches 75 run kill @e[tag=al.ml.hill.4]
 
 

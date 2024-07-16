@@ -1,0 +1,32 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:iron_sword",
+        "count": 1,
+        "components": {
+          "minecraft:custom_model_data": 13
+        }
+      },
+      "title": "時空之境: 黑暗維度",
+      "description": [
+        {
+          "text": "你與阿斯卡探索深淵之樹所在的維度「時空之境」為了尋找曾世界樹的守護者 瑪莎 你必須收集4個水晶開啟傳送祭壇！"
+        },
+        {
+          "text": " 註: 每一個區域都只會有一個水晶！",
+          "color": "gold"
+        }
+      ],
+      "background": "minecraft:textures/gui/advancements/backgrounds/sculk.png",
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  
