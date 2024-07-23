@@ -11,7 +11,7 @@ execute if score #hint global.main matches 4 run tellraw @a [{"text":"WalkMan467
 
 execute if score #hint global.main matches 5 run tellraw @a [{"text":"WalkMan467","bold": true,"color": "dark_green"},{"text":"(關於我):\n這是一張充滿著很多想法的地圖，希望你能夠喜歡\n如果遇到Bug 可以聯繫我 Discord: walkman462 ","color":"gold"}]
 
-execute if score #hint global.main matches 6 run tellraw @a [{"text":"WalkMan467","bold": true,"color": "dark_green"},{"text":"(系統小提示):\n看到周圍有白色星星粒子(wax_off)\n的物件可以試試看右鍵點它","color":"gold"}]
+execute if score #hint global.main matches 6 run tellraw @a [{"text":"WalkMan467","bold": true,"color": "dark_green"},{"text":"(系統小提示):\n看到周圍有白色星星粒子\n的物件可以試試看右鍵點它","color":"gold"}]
 
 execute if score #hint global.main matches 7 run tellraw @a [{"text":"WalkMan467","bold": true,"color": "dark_green"},{"text":"(系統小提示):\n當你每提升經驗等級5次可以增加1點自身攻擊力","color":"gold"}]
 

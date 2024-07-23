@@ -1,1 +1,1 @@
-execute as @s[nbt={HurtTime:10s}] run playsound minecraft:entity.warden.attack_impact voice @a ~ ~ ~ 1 1
+playsound minecraft:entity.warden.attack_impact voice @a ~ ~ ~ 1 1

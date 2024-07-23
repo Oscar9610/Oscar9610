@@ -3,10 +3,9 @@
 clear @a
 effect clear @a
 gamemode adventure @a
+function players:attribute
 execute in game_map:map_hall run tp @a 0 51.5 0 -135 0
 execute in game_map:map_hall run spawnpoint @a 0 51 0 -135
-xp set @a 0 levels
-xp set @a 0 points
 
 # world
 time set midnight
@@ -16,7 +15,6 @@ gamerule sendCommandFeedback false
 
 scoreboard players set global detect_player_in_lobby 0
 scoreboard players set .player.highest_level global.main 1
-scoreboard players set .world_level global.main 1
 scoreboard objectives setdisplay sidebar
 
 reload

@@ -1,6 +1,6 @@
 execute if score #emera orantes.story matches 5 run tellraw @a[tag=!op] [{"translate":"spaceship_plain.story.38"}]
 execute if score #emera orantes.story matches 6 run tellraw @a[tag=!op] {"translate":"spaceship_plain.story.39"}
-execute if score #emera orantes.story matches 7 run tellraw @a[tag=!op] {"translate":"spaceship_plain.story.40","color":"dark_green","clickEvent":{"action":"run_command","value":"/execute if score #emera orantes.story matches 16 run function story:spaceship_plain/6"}}
+execute if score #emera orantes.story matches 7 run tellraw @a[tag=!op] {"translate":"spaceship_plain.story.40","color":"dark_green","clickEvent":{"action":"run_command","value":"/execute if score #emera orantes.story matches 16 run function time_traveler:story/spaceship_plain/6"}}
 execute if score #emera orantes.story matches 8 run tellraw @a {"translate":"spaceship_plain.story.41"}
 execute as @a if score #emera orantes.story matches 9 run function rpg_items:orantes/noob_tickets
 execute if score #emera orantes.story matches 9 run tellraw @a {"translate":"spaceship_plain.story.42"}

@@ -58,12 +58,10 @@ scoreboard players set @a gravity_axe_max_cd 20
 scoreboard objectives add noob_sword_cd dummy "新手劍CD"
 scoreboard objectives add noob_sword_max_cd dummy "新手劍CD上限"
 scoreboard objectives add noob_sword_screen dummy "新手劍螢幕動畫"
-scoreboard objectives add noob_sword.increase_damage dummy "新手劍增傷"
 
 scoreboard players add @a noob_sword_cd 0
 scoreboard players set @a noob_sword_max_cd 25
 scoreboard players set @a noob_sword_screen 0
-scoreboard players set @a noob_sword.increase_damage 0
 
 #===================================================================
 #鋒利雙股劍
@@ -75,7 +73,6 @@ scoreboard objectives add double_sword_switch_cd dummy "鋒利雙股劍交換冷
 
 scoreboard players add @a double_sword_cd 0
 scoreboard players set @a double_sword_max_cd 40
-scoreboard players set @a double_sword_swtich 1
 
 #===================================================================
 #熾熱雙股劍
@@ -86,12 +83,10 @@ scoreboard objectives add double_sword_fire_switch dummy "熾熱雙股劍交換�
 scoreboard objectives add double_sword_fire_switch_cd dummy "熾熱雙股劍交換冷卻"
 
 scoreboard objectives add double_sword_fire_dot dummy "熾熱雙股劍dot持續時間"
-scoreboard objectives add double_sword_fire_max_dot dummy "熾熱雙股劍最大dot持續時間"
 scoreboard objectives add double_sword_fire.effect.id dummy "被動id"
 
 scoreboard players add @a double_sword_fire_cd 0
 scoreboard players set @a double_sword_fire_max_cd 40
-scoreboard players set @a double_sword_fire_swtich 1
 scoreboard players set global double_sword_fire_dot 3
 
 #===================================================================
@@ -105,7 +100,6 @@ scoreboard objectives add double_sword_water_effect_cd dummy "清涼雙股劍被
 
 scoreboard players add @a double_sword_water_cd 0
 scoreboard players set @a double_sword_water_max_cd 40
-scoreboard players set @a double_sword_water_swtich 1
 scoreboard players set @a double_sword_water_effect_cd 0
 
 #===================================================================

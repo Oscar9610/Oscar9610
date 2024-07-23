@@ -31,20 +31,24 @@ function ancient_lorras:scoreboard
 # 偵測玩家是否完成水星主線？ ；開啟調用 草星 - 古羅拉斯 function 資源
 execute if score .main_line orantes.story matches 129.. run function ancient_lorras:load
 
-schedule function ancient_lorras:world_area/emerald_vale/lightning 3s
+
 schedule function rpg_items:exchanged/-main 1t
-function time_traveler:treasure_chest/loop
-function players:attribute
-function map_hall:interaction/main
-schedule function time_traveler:music/main 1t
-schedule function players:id/detect 1t
-schedule function ancient_lorras:world_area/loop 1t
-function time_traveler:daytime_weather/map_hall/save
-function weapons:type/gravity_axe/timer
+
+schedule function map_hall:interaction/main 1t
 function map_hall:map_hall_fx
-schedule function time_traveler:remove_overworld_text_display 100s
-schedule function rotas:1s 1s
+
+function players:attribute
+schedule function players:id/detect 1t
+
+schedule function ancient_lorras:world_area/emerald_vale/lightning 3s
+schedule function ancient_lorras:world_area/loop 1t
+
 schedule function rotas:loop 1t
+
+schedule function time_traveler:treasure_chest/loop 1t
+schedule function time_traveler:music/main 1t
+function time_traveler:daytime_weather/map_hall/save
+schedule function time_traveler:remove_overworld_text_display 100s
 schedule function time_traveler:display/elk_display/guide 1t
 schedule function time_traveler:display/elk_display/timer 5s
 schedule function time_traveler:story/spaceship_plain/branch_line/loop 1t
@@ -55,20 +59,23 @@ schedule function time_traveler:story/orantes/branch_line/loop 1t
 schedule function time_traveler:interaction/shooting_contest 1t
 schedule function time_traveler:players/effects/saturation 1t
 schedule function time_traveler:players/effects/speed 1t
-schedule function weapons:timer 1s
 schedule function time_traveler:monster_wave/main/loop 1t
 schedule function time_traveler:world_area/loop 1t
-schedule function time_traveler:music/loop 1t
-schedule function task:loop 1t
 schedule function time_traveler:music/timer 1s
 schedule function time_traveler:random_hint 1t
 schedule function time_traveler:interaction/emera 1t
 schedule function time_traveler:interaction/lena 1t
-schedule function monsters:main 1t
 schedule function time_traveler:timer 1t
+schedule function time_traveler:tp/map_lobby/loop 1t
+
+schedule function task:loop 1t
+
+schedule function weapons:timer 1s
 schedule function weapons:type/double_sword_fire/passive/loop 1s
 schedule function weapons:type/noob_axe/passive/heal 10s
-schedule function time_traveler:tp/map_lobby/loop 1t
+
+schedule function monsters:main 1t
+
 
 #修復【主線】陳述不見了？！ 顯示問題Bug (觸發Bug的時候陳述盔甲座不會刪掉，基於懶因此直接用這行刪除)
 execute if score .main_line orantes.story matches 29.. in game_map:orantes positioned -65 63 7 run kill @e[tag=statement,distance=..3]
@@ -95,7 +102,7 @@ execute if score .main_line orantes.story matches 29.. in game_map:orantes posit
 
 ##假設要開始寫進度
 #   星球名稱資料包:
-#   weapons:type//effect/advancements/test1.json
+#   weapons:type/effect/advancements/test1.json
 
 #========================================================
 
