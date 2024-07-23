@@ -1,5 +1,5 @@
 
-summon item_display ^ ^0.1 ^ {Tags:[shadow_boss.1.2,Duration],item:{id:"minecraft:ender_eye",Count:1},start_interpolation:0,interpolation_duration:0,transformation:[1.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f]}
+summon item_display ^ ^0.1 ^ {Tags:[shadow_boss.1.2,Duration],item:{id:"minecraft:ender_eye"},start_interpolation:0,interpolation_duration:0,transformation:[1.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f]}
 tp @e[tag=shadow_boss.1.2,sort=nearest,limit=1] ^ ^0.1 ^ ~ 0
 
 tp @s ~ -255 ~

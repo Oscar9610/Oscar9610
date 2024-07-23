@@ -13,6 +13,6 @@ execute unless entity @a[distance=..40,limit=1] run function monsters:boss_respa
 
 bossbar set atar players @a[distance=..40]
 
-particle minecraft:dust{color:[0,0,0],scale:1.5} ~ ~1 ~ 1 1 1 0 1   
+particle minecraft:dust{color:[0,0,0],scale:1.5} ~ ~1 ~ 1 1 1 0 1
 particle minecraft:falling_dust{block_state:"redstone_block"} ~ ~1 ~ 1 1 1 0 1
 particle dust_color_transition{from_color:[0,0,0],scale:2.5,to_color:[1.000,0.000,0.000]} ~ ~ ~ 1 1 1 0 1

@@ -7,7 +7,7 @@ item replace entity @s armor.chest with diamond_chestplate[trim={pattern:'atar_w
 item replace entity @s armor.legs with diamond_leggings[trim={pattern:'atar_water_trim',material:'atar_water_material'}]
 item replace entity @s weapon.mainhand with carrot_on_a_stick[custom_model_data=4]
 
-data merge entity @s {Glowing:0}
+data merge entity @s {Glowing:0b}
 attribute @s generic.armor modifier add atar.w.1 11.5 add_multiplied_base
 attribute @s generic.attack_damage modifier remove atar.l.1
 attribute @s generic.movement_speed modifier remove atar.l.2

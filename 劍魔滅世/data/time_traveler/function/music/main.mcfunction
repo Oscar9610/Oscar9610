@@ -1,6 +1,6 @@
 # ---奧蘭蒂斯城--- #
 
-execute as @a[scores={music.orantes_city=1}] unless score #music.rain_city global.main matches 3 store result score @s music.orantes_city.rdm run random value 1..2 
+execute as @a[scores={music.orantes_city=1}] unless score #music.rain_city global.main matches 3 store result score @s music.orantes_city.rdm run random value 1..2
 
 execute as @a[scores={music.orantes_city=1,music.orantes_city.rdm=1}] run function time_traveler:music/orantes_city_music/1/start
 execute as @a[scores={music.orantes_city=1,music.orantes_city.rdm=2}] run function time_traveler:music/orantes_city_music/2/start

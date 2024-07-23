@@ -8,7 +8,7 @@ execute as @e[scores={otherworld_dust_star_ca=1..},nbt={HurtTime:10s}] run funct
 #特效
 execute store result score #otherworld_dust_star_sound global.main run random value 1..3
 
-execute as @e[scores={otherworld_dust_star_ca=1..},nbt={HurtTime:10s}] at @s run particle end_rod ~ ~1 ~ 0 0 0 0.5 20 
+execute as @e[scores={otherworld_dust_star_ca=1..},nbt={HurtTime:10s}] at @s run particle end_rod ~ ~1 ~ 0 0 0 0.5 20
 execute as @e[scores={otherworld_dust_star_ca=1..},nbt={HurtTime:10s}] at @s run particle minecraft:enchant ~ ~1 ~ 0 0 0 10 100
 execute as @e[scores={otherworld_dust_star_ca=1..},nbt={HurtTime:10s}] at @s run particle minecraft:scrape ~ ~1 ~ 0 0 0 15 100
 execute as @e[scores={otherworld_dust_star_ca=1..},nbt={HurtTime:10s}] at @s run playsound minecraft:entity.generic.explode voice @a ~ ~1 ~ 0.25 1

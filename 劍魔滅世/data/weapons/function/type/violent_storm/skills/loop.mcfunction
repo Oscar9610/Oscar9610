@@ -1,4 +1,4 @@
-execute at @e[tag=violent_storm.range] as @e[type=#entity:monsters,distance=..15] at @s facing entity @e[tag=violent_storm.range] feet run tp @s ^ ^0.1 ^0.1
+execute at @e[tag=violent_storm.range] as @e[type=#time_traveler:monsters,distance=..15] at @s facing entity @e[tag=violent_storm.range] feet run tp @s ^ ^0.1 ^0.1
 
 execute as @e[tag=violent_storm.wind_fx] at @s run tp @s ~ ~ ~ ~15 0
 execute as @e[tag=violent_storm.wind_fx] at @s run particle minecraft:end_rod ^ ^ ^2 ^ ^0500000 ^1000000 0.0000005 0 force

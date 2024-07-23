@@ -1,9 +1,6 @@
 # noob sword
 execute as @a[scores={noob_sword_screen=1..}] at @s run function weapons:type/noob_sword/player_main
 
-# noob sickle
-execute as @e[type=item_display,tag=sickle2] at @s run function weapons:type/noob_sickle/main
-
 # wind sword
 execute as @a[tag=wind_sword_user] at @s run function weapons:type/wind_sword/main
 execute as @e[type=item_display,tag=wind_sword_skill] at @s run function weapons:type/wind_sword/wind_main

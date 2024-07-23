@@ -13,9 +13,9 @@ function weapons:type/violent_storm/skills/tick
 title @s title {"text":"\uE009"}
 title @s times 0 0 10
 
-execute at @e[tag=violent_storm.range] as @e[type=#entity:monsters,distance=..15,nbt={OnGround:1b}] run effect give @s levitation 1 8 true
-execute at @e[tag=violent_storm.range] as @e[type=#entity:monsters,distance=..15,nbt={OnGround:1b}] run effect give @s slowness 5 8 true
-execute at @e[tag=violent_storm.range] as @e[type=#entity:monsters,distance=..15,nbt={OnGround:1b}] run effect give @s weakness 5 255 true
+execute at @e[tag=violent_storm.range] as @e[type=#time_traveler:monsters,distance=..15,nbt={OnGround:1b}] run effect give @s levitation 1 8 true
+execute at @e[tag=violent_storm.range] as @e[type=#time_traveler:monsters,distance=..15,nbt={OnGround:1b}] run effect give @s slowness 5 8 true
+execute at @e[tag=violent_storm.range] as @e[type=#time_traveler:monsters,distance=..15,nbt={OnGround:1b}] run effect give @s weakness 5 255 true
 
 playsound minecraft:voice.wind_sword_skill_1 voice @a ~ ~1 ~ 1 0.75
 playsound minecraft:voice.time_and_space_portal_open voice @a ~ ~1 ~ 1 1

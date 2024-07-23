@@ -4,7 +4,7 @@ playsound block.bone_block.break master @a ^ ^ ^ 1 2
 playsound block.bone_block.break master @a ^ ^ ^ 1 2
 particle enchanted_hit ^ ^ ^ 0 0 0 0.6 25 force
 
-execute if score #temp global.main matches 1 run particle flame ^ ^ ^ 0 0 0 0.2 25 force 
+execute if score #temp global.main matches 1 run particle flame ^ ^ ^ 0 0 0 0.2 25 force
 execute if score #temp global.main matches 2 run particle item{item:"minecraft:blue_concrete"} ^ ^ ^ 0 0 0 0.2 25 force
 execute if score #temp global.main matches 3 run particle item{item:"minecraft:green_concrete"} ^ ^ ^ 0 0 0 0.2 25 force
 execute if score #temp global.main matches 4 run particle item{item:"minecraft:bone_block"} ^ ^ ^ 0 0 0 0.2 25 force
