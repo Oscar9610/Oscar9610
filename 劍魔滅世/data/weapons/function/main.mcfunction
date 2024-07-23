@@ -23,3 +23,9 @@ execute as @a[tag=water_sword.w_user] at @s if score @s water_sword_passive matc
 execute as @a[tag=water_sword.l_user] at @s if score @s water_sword_passive matches 1.. run function weapons:type/water_sword_demon/passive/light
 
 execute if score #is_water_sword_demon.passive? global.main matches 1.. run scoreboard players remove #is_water_sword_demon.passive? global.main 1
+
+# disable drop
+execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{disable_drop:1}}}}] run data merge entity @s {PickupDelay:0s}
+
+# change to vault
+function weapons:vault_version

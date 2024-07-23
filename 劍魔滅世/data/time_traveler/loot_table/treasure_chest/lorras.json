@@ -31,19 +31,19 @@
           "type": "minecraft:item","name": "minecraft:iron_sword",
           "weight": 40,
           "quality": 20,
-          "functions": [{"function": "minecraft:set_custom_data","tag": "{vault:\"noob_sword\"}"},{"function": "minecraft:set_custom_model_data","value": 1}]
+          "functions": [{"function": "minecraft:set_custom_data","tag": "{vault:\"double_sword_water\"}"},{"function": "minecraft:set_custom_model_data","value": 26}]
         },
         {
           "type": "minecraft:item","name": "minecraft:iron_sword",
           "weight": 40,
           "quality": 20,
-          "functions": [{"function": "minecraft:set_custom_data","tag": "{vault:\"noob_axe\"}"},{"function": "minecraft:set_custom_model_data","value": 2}]
+          "functions": [{"function": "minecraft:set_custom_data","tag": "{vault:\"wind_sword\"}"},{"function": "minecraft:set_custom_model_data","value": 21}]
         },
         {
           "type": "minecraft:item","name": "minecraft:iron_sword",
           "weight": 40,
           "quality": 20,
-          "functions": [{"function": "minecraft:set_custom_data","tag": "{vault:\"noob_sickle\"}"},{"function": "minecraft:set_custom_model_data","value": 3}]
+          "functions": [{"function": "minecraft:set_custom_data","tag": "{vault:\"the_night_sword_3star\"}"},{"function": "minecraft:set_custom_model_data","value": 5}]
         }
       ]
     }
