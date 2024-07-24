@@ -12,15 +12,15 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-custom_name = ['3', '狂暴獵人靴子', '#F4E75D']
-info  = ['鞋子', '狂暴獵人']
-story = ['狂戰士的靴子，象徵著族裡的榮耀']
-item_data     = {'real_item': 'leather_boots', 'trim': {'material': 'copper', 'pattern': 'spire'}, 'rgb': -1, 'custom_data': '{strength:1b}', 'max_damage': -1}
-series_skill  = {'is_skill': True, 'cd': 0, 'name': '狂暴', 'info': ['穿上4件系列套裝，可永久獲得&=力量ɪ&+']}
-passive_skill = {'is_skill': False, 'cd': 0, 'name': '', 'info': ['']}
+custom_name = ['4', '時間停刻之時的靴子', '#8AC7C7']
+info  = ['靴子', '時間停刻之時']
+story = ['在墮落的平行時空中時間停刻之時的靴子']
+item_data     = {'real_item': 'chainmail_boots', 'trim': {'material': 'gold', 'pattern': 'spire'}, 'rgb': -1, 'custom_data': '{wts:1b}', 'max_damage': -1}
+series_skill  = {'is_skill': False, 'cd': 0, 'name': '狂暴', 'info': ['穿上4件系列套裝，可永久獲得&=力量ɪ&+']}
+passive_skill = {'is_skill': True, 'cd': 30, 'name': '墮落時空領域', 'info': ['受擊有50%機率觸發&=局部時空領域&+']}
 
-attribute.append({'name': '移動速度', 'show_value': '15%', 'value': 0.15, 'attribute_name': 'generic.knockback_resistance'})
-attribute.append({'name': '攻擊力', 'show_value': '1', 'value': 1, 'attribute_name': 'generic.attack_damage'})
+attribute.append({'name': '移動速度', 'show_value': '15%', 'value': 0.15, 'attribute_name': 'generic.movement_speed'})
+attribute.append({'name': '盔甲值', 'show_value': '3', 'value': 3, 'attribute_name': 'generic.armor'})
 
 # ----- init ----- #
 

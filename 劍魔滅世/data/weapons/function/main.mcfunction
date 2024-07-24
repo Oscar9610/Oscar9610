@@ -22,6 +22,9 @@ clear @a[tag=!the_night_3,tag=!the_night_4,tag=!the_night_5] iron_sword[minecraf
 execute as @a[tag=water_sword.w_user] at @s if score @s water_sword_passive matches 1.. run function weapons:type/water_sword_demon/passive/water
 execute as @a[tag=water_sword.l_user] at @s if score @s water_sword_passive matches 1.. run function weapons:type/water_sword_demon/passive/light
 
+# 偵測水鏡之光是否多把
+
+
 execute if score #is_water_sword_demon.passive? global.main matches 1.. run scoreboard players remove #is_water_sword_demon.passive? global.main 1
 
 # disable drop

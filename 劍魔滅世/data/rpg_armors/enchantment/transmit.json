@@ -1,0 +1,34 @@
+{
+  "description": "transmit",
+  "supported_items": "#minecraft:chest_armor",
+  "weight": 1,
+  "max_level": 3,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 20
+  },
+  "max_cost": {
+    "base": 60,
+    "per_level_above_first": 20
+  },
+  "anvil_cost": 8,
+  "slots": [
+    "any"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "enchanted": "victim",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "rpg_armors:enchantment/transmit/spell_2_cast"
+        },
+        "requirements": {
+          "condition": "minecraft:random_chance",
+          "chance": 0.25
+        }
+      }
+    ]
+  }
+}

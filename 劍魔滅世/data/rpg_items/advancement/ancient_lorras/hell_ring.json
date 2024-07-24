@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:skeleton_skull",
+      "count": 1
+    },
+    "title": "YOU DEAD",
+    "description": "菜就多練！輸不起就別玩！蟻鉗是蟻鉗！蟹在是蟹在！哥們你怎麼不拿你剛出生的時候對比"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_killed_player",
+      "conditions": {
+        "player": {
+          "slots": {
+            "weapon.offhand": {
+              "predicates": {
+                "minecraft:custom_data": "{hell:1}"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

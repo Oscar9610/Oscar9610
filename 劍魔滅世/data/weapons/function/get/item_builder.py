@@ -1,5 +1,5 @@
 '''
-「時空旅行者 劍魔滅世篇」的物品敘述產生器 之 使用指南
+「劍魔滅世篇」的物品敘述產生器 之 使用指南
  - 適用物品 : 武器
  - custom_name  : [星數,武器名稱,顏色(只有星數是5時才需要調整)]
  - info         : [武器種類(劍、雙刀etc),特殊系列(新手、夜幕etc),元素(物理、水etc)]
@@ -12,15 +12,15 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-custom_name = ['5', '不識時務 · 玉石俱摧', '#FF0000']
-info  = ['崩壞3rd', '板磚', '物理']
-story = ['意識的律者使用自身權能打造出的神兵利器。', '與創造者一樣，並沒有實體, 因此獲得「不是實物」的別名。', '不具實體, 即是千變萬化, 以一當千。', '據說, 根據實戰要求, 「不識時務」能夠立即變化成任何武器的樣貌。']
-item_data     = {'real_item': 'iron_sword', 'custom_model_data': 37, 'custom_data': '{physical:1b,bricks:1,weight:1b}', 'max_damage': 275}
+custom_name = ['3', '地獄戒指', '#FF0000']
+info  = ['地獄', '道具', '無']
+story = ['裝備到副手時扣除99%血量換取高額的攻擊力','來自作者的善意。 WalkMan467上']
+item_data     = {'real_item': 'iron_sword', 'custom_model_data': 38, 'custom_data': '{hell:1,weight:1b}', 'max_damage': 275}
 main_skill    = {'is_skill': False, 'cd': 40, 'name': '肆意流淌的岩漿', 'info': ['向四周噴射岩漿，對周圍敵人造成&=150%攻擊傷害&-，同時進入「劈砍狀態」', '「劈砍狀態」時，主、副手同時持有此雙刀且切換副手武器時，', '會向前方劈砍，對前方敵人造成&=50%攻擊傷害&-，狀態持續10秒']}
 passive_skill = {'is_skill': False, 'cd': 0, 'name': '灼傷', 'info': ['攻擊敵人時使敵人著火，每秒造成&=50%攻擊傷害&-，持續3秒']}
 
-attribute.append({'name': '攻擊力', 'show_value': '6.5', 'value': 6.5, 'attribute_name': 'generic.attack_damage', 'slot': 'mainhand'})
-attribute.append({'name': '攻擊速度', 'show_value': '1.6', 'value': -2.4, 'attribute_name': 'generic.attack_speed', 'slot': 'mainhand'})
+attribute.append({'name': '副手時攻擊力', 'show_value': '9', 'value': 9, 'attribute_name': 'generic.attack_damage', 'slot': 'offhand'})
+attribute.append({'name': '&-副手時最大生命值', 'show_value': '-99%', 'value': -0.99, 'attribute_name': 'generic.max_health', 'slot': 'offhand'})
 
 # ----- init ----- #
 
@@ -44,6 +44,7 @@ def info_icon(element):
         elif i == "水"  :  temp.append("\\\\uE013")
         elif i == "草"  :  temp.append("\\\\uE014")
         elif i == "雷"  :  temp.append("\\\\uE015")
+        elif i == "無"  :  temp.append("")
     return ''.join(temp)
 story = '\",\"italic\":false,\"color\":\"blue\"}]\',\'[{\"text\":\"'.join(story)
 def skill_info(text):

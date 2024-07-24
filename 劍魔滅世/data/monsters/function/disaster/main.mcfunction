@@ -9,5 +9,7 @@ execute as @e[type=zombie,tag=disaster.1] at @s run function monsters:disaster/1
 
 execute as @e[type=zombie,tag=disaster.jump] at @s run function monsters:disaster/2/main
 
+execute as @e[type=zombie,tag=disaster.3] at @s run function monsters:disaster/3/main
+
 # Boss Self
 execute as @e[tag=disaster,limit=1] at @s run function monsters:disaster/main.boss

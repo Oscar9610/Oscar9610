@@ -14,6 +14,7 @@ scoreboard players set .main_line ancient_lorras.global.main 0
 scoreboard players set #rotas.chapter_2 global.advancements 0
 
 scoreboard players set #lost_guardian global.advancements 0
+scoreboard players set #paimon global.advancements 0
 
 function time_traveler:story/orantes/main_line/rs/3/remove_display_monster
 schedule clear time_traveler:story/spaceship_plain/rotas/chapter_2/loop
@@ -36,3 +37,4 @@ execute as @a[gamemode=!survival,gamemode=!adventure] run function time_traveler
 advancement revoke @a only time_traveler:interaction/library/1
 advancement revoke @a only time_traveler:story/spaceship_plain/rotas/chapter_2/in_spaceship
 advancement revoke @a only time_traveler:story/spaceship_plain/rotas/chapter_2/in_orantes
+advancement revoke @a only rpg_items:ancient_lorras/hell_ring
