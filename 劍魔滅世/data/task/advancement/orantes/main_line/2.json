@@ -14,7 +14,7 @@
           "properties": [
             {
               "name": "textures",
-              "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODNjNjc4ZDdlMGFkYzAwMjZmZjUxY2NiMGI2OTViYzhhOGQ5N2VhNmM1ZWI0M2FmZTQ0MjRlYWQzNmQ3YWEzMCJ9fX0="
+              "value": "ewogICJ0aW1lc3RhbXAiIDogMTY5OTI1NTY0MjgxNiwKICAicHJvZmlsZUlkIiA6ICI2ZTlhYzA2NzQ1OTc0ZjMyOWFmMWEyY2U4MzhiYjY2NCIsCiAgInByb2ZpbGVOYW1lIiA6ICJNaWxicmlsbGlvbiIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS80MTRjMDZkMTFjYjZhNjQ4NTAyODIzMzIxYjhkNTM0YTk5NTNkMzZhZTQ4MjE3OWNjMDIxOWM3MThlZjZiZmRlIgogICAgfQogIH0KfQ=="
             }
           ]
         }
@@ -23,11 +23,11 @@
     "title": "[主線] 陳述不見了？！",
     "description": [
       {
-        "text": "你選擇先前往奧蘭蒂斯城尋找魔劍相關情報，詢問這裡的爺爺，爺爺知道情報但是希望你能找到 陳述",
+        "text": "你前往奧蘭蒂斯城尋找魔劍相關情報，詢問這裡的爺爺，爺爺知道情報但是希望你能找到在奧蘭蒂斯平原的 陳述",
         "insertion": "\\n"
       },
       {
-        "text": " (目標：前往城市外面的大樹找到陳述！)",
+        "text": " (目標：去奧蘭蒂斯城尋找這裡的爺爺)",
         "color": "gold"
       }
     ],

@@ -2,6 +2,7 @@ title @s title ["",{"text":"🌧","color":"dark_aqua"},{"text":"風暴峽谷","u
 title @s subtitle [{"text":"🌧","color":"dark_aqua"},{"text":"Storm Gorge","italic":true,"underlined":true,"color":"dark_aqua"},{"text":"🌧","color":"dark_aqua"}]
 title @s times 20 20 20
 
+stopsound @s voice minecraft:entity.zombie.converted_to_drowned
 playsound minecraft:entity.zombie.converted_to_drowned voice @s ~ ~1 ~ 0.2 0.7
 
 function ancient_lorras:daytime_weather/emerald_vale/save

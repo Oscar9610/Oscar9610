@@ -1,7 +1,7 @@
 # 執行者 : mob
 
 tag @a[distance=..4] add dmger
-scoreboard players set @s atk 150
+scoreboard players set @s atk 100
 function time_traveler:dmg_formula/monsters/calculate
 
 particle sweep_attack ~ ~1 ~ 1.5 0 1.5 1 2 force
