@@ -9,6 +9,7 @@ execute in game_map:shadow_arena run function monsters:shadow/main
 execute in game_map:poison_arena run function monsters:poison/main
 function monsters:storm/main
 function monsters:atar/main
+function monsters:stormpromax/main
 
 ## ----- 怪物技能系統 ----- ##
 # 怪物即將施法提示(1s)
