@@ -9,8 +9,8 @@ playsound minecraft:entity.wither.spawn master @a ~ ~ ~ 0.2 2
 particle minecraft:explosion_emitter
 
 # hitbox
-effect give @a[distance=..4] instant_damage 1 1 true
+execute as @a[distance=..4] run damage @s 12 magic by @n[tag=stormpromax]
 execute positioned ~ ~0.3 ~ run function monsters:stormpromax/2/3b
 
 # end
-kill @s
+function monsters:stormpromax/2/break_tnt
