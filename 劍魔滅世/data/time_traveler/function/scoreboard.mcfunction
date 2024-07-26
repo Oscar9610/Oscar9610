@@ -63,6 +63,7 @@ scoreboard players set #2 global.main 2
 scoreboard players set #3 global.main 3
 scoreboard players set #4 global.main 4
 scoreboard players set #5 global.main 5
+scoreboard players set #20 global.main 20
 scoreboard players set #40 global.main 40
 scoreboard players set #60 global.main 60
 

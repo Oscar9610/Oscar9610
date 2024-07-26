@@ -8,4 +8,4 @@ execute in game_map:ancient_lorras positioned 137 285 128 if entity @a[distance=
 execute in game_map:ancient_lorras positioned 137 285 128 if entity @a[distance=..75] if score #storm_gorge.lightning ancient_lorras.global.main matches 7 run summon minecraft:lightning_bolt 87 310 128
 execute in game_map:ancient_lorras positioned 137 285 128 if entity @a[distance=..75] if score #storm_gorge.lightning ancient_lorras.global.main matches 8 run summon minecraft:lightning_bolt 101 310 164
 
-schedule function ancient_lorras:world_area/emerald_vale/lightning 3s
+schedule function ancient_lorras:world_area/emerald_vale/lightning 8s

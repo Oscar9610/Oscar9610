@@ -1,4 +1,5 @@
 
+function monsters:stormpromax/3/4
 tp @e[tag=stormpromax] ~ -255 ~
 kill @e[tag=stormpromax]
 
