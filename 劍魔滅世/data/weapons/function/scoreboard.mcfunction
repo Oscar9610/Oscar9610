@@ -161,6 +161,19 @@ scoreboard players add @a bricks_cd 0
 scoreboard players set @a bricks_max_cd 25
 
 #===================================================================
+#夢想一心
+scoreboard objectives add lightning_sword_cd dummy "夢想一心 CD"
+scoreboard objectives add lightning_sword_max_cd dummy "夢想一心 CD上限"
+scoreboard objectives add lightning_sword_passive_cd dummy "夢想一心 被動 CD"
+scoreboard objectives add lightning_sword_passive dummy "夢想一心 被動"
+
+scoreboard players add @a lightning_sword_cd 0
+scoreboard players set @a lightning_sword_max_cd 30
+
+scoreboard players add @a lightning_sword_passive 0
+scoreboard players add @a lightning_sword_passive_cd 0
+
+#===================================================================
 
 #這是武器技能傷害取玩家攻擊力的百分比
 #代表著玩家使用武器技能造成的技能傷害會取玩家攻擊力的5倍作為技能造成的傷害

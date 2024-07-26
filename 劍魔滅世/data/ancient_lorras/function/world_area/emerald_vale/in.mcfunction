@@ -11,4 +11,4 @@ execute in minecraft:overworld run weather rain 20
 gamerule doDaylightCycle false
 gamerule doWeatherCycle false
 
-scoreboard players set emerald_vale p1.world_area 1
+advancement revoke @s only ancient_lorras:world_area/emerald_vale/out

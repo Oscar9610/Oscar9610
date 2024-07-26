@@ -47,7 +47,12 @@ execute as @a[scores={spider_cd=1}] at @s run playsound minecraft:entity.player.
 execute as @a[scores={bricks_cd=1}] run tellraw @s [{"text":"[","color":"green","bold":true},{"text":"☆☆☆☆☆不識時務 · 玉石俱摧{物理}","color":"white","bold":true},{"text":"] ","color":"green","bold":true},{"text":"冷卻完畢！","color":"green","bold":true}]
 execute as @a[scores={bricks_cd=1}] at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~ 0.5 1.5
 
+execute as @a[scores={lightning_sword_cd=1}] run tellraw @s [{"text":"[","color":"green","bold":true},{"text":"☆☆☆☆☆夢想一心{雷}","color":"white","bold":true},{"text":"] ","color":"green","bold":true},{"text":"冷卻完畢！","color":"green","bold":true}]
+execute as @a[scores={lightning_sword_cd=1}] at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~ 0.5 1.5
+
 #所有武器CD計時器1s
+scoreboard players remove @a[scores={lightning_sword_passive_cd=1..}] lightning_sword_passive_cd 1
+scoreboard players remove @a[scores={lightning_sword_cd=1..}] lightning_sword_cd 1
 scoreboard players remove @a[scores={spider_cd=1..}] spider_cd 1
 scoreboard players remove @a[scores={bricks_cd=1..}] bricks_cd 1
 scoreboard players remove @a[scores={otherworld_dust_star_cd=1..}] otherworld_dust_star_cd 1
