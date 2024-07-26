@@ -8,19 +8,27 @@
  - passive_skill: 同上
  - attribute    : {name(屬性名稱，開頭加上"&-"會顯示成負效果，ex:&-盔甲值),show_value(展示在物品敘述的數值),value(真實數值),attribute_name(minecraft屬性的id)}
 執行完會生成在 #temp.mcfunction 內
+
+================
+1☆ white
+2☆ #BEF4BE
+3☆ #ABF2F2
+4☆ #8AC7C7
+================
+
 '''
 attribute = []
 # ----- 設定參數 ----- #
 
-custom_name = ['3', '地獄戒指', '#FF0000']
-info  = ['地獄', '道具', '無']
-story = ['裝備到副手時扣除99%血量換取高額的攻擊力','來自作者的善意。 WalkMan467上']
-item_data     = {'real_item': 'iron_sword', 'custom_model_data': 38, 'custom_data': '{hell:1,weight:1b}', 'max_damage': 275}
-main_skill    = {'is_skill': False, 'cd': 40, 'name': '肆意流淌的岩漿', 'info': ['向四周噴射岩漿，對周圍敵人造成&=150%攻擊傷害&-，同時進入「劈砍狀態」', '「劈砍狀態」時，主、副手同時持有此雙刀且切換副手武器時，', '會向前方劈砍，對前方敵人造成&=50%攻擊傷害&-，狀態持續10秒']}
-passive_skill = {'is_skill': False, 'cd': 0, 'name': '灼傷', 'info': ['攻擊敵人時使敵人著火，每秒造成&=50%攻擊傷害&-，持續3秒']}
+custom_name = ['5', '蜘蛛', '#FF2BA3']
+info  = ['劍', '蜘蛛', '雷']
+story = ['她以言靈操控人心', '如蜘蛛網般將獵物縛於指尖，沒人能逃出她的魔掌']
+item_data     = {'real_item': 'iron_sword', 'custom_model_data': 32, 'custom_data': '{spider:1b,physical:1b,weight:1b}', 'max_damage': 300}
+main_skill    = {'is_skill': True, 'cd': 45, 'name': '月光摩挲連綿', 'info': ['拔刀發起突刺，給予前方怪物造成&=200%攻擊傷害&-']}
+passive_skill = {'is_skill': True, 'cd': 0, 'name': '寬恕無關慈悲', 'info': ['攻擊命中敵人10次時，給予前方怪物造成&=250%攻擊傷害&-，', '並給予目標【折磨】狀態(每秒造成&=75%攻擊傷害&-，持續5秒)']}
 
-attribute.append({'name': '副手時攻擊力', 'show_value': '9', 'value': 9, 'attribute_name': 'generic.attack_damage', 'slot': 'offhand'})
-attribute.append({'name': '&-副手時最大生命值', 'show_value': '-99%', 'value': -0.99, 'attribute_name': 'generic.max_health', 'slot': 'offhand'})
+attribute.append({'name': '攻擊力', 'show_value': '9', 'value': 9, 'attribute_name': 'generic.attack_damage', 'slot': 'mainhand'})
+attribute.append({'name': '攻擊速度', 'show_value': '1.5', 'value': -2.5, 'attribute_name': 'generic.attack_speed', 'slot': 'mainhand'})
 
 # ----- init ----- #
 

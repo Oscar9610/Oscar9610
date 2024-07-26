@@ -1,1 +1,0 @@
-scoreboard players set crimson_abyss p1.world_area 0

@@ -5,4 +5,4 @@ title @s times 20 20 20
 stopsound @s voice minecraft:ambient.crimson_forest.mood
 playsound minecraft:ambient.crimson_forest.mood voice @s ~ ~1 ~ 1 2
 
-scoreboard players set crimson_abyss p1.world_area 1
+advancement revoke @s only ancient_lorras:world_area/crimson_abyss/out
