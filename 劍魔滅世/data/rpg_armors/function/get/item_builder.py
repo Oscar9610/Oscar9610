@@ -12,15 +12,15 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-custom_name = ['4', '時間停刻之時的靴子', '#8AC7C7']
-info  = ['靴子', '時間停刻之時']
-story = ['在墮落的平行時空中時間停刻之時的靴子']
-item_data     = {'real_item': 'chainmail_boots', 'trim': {'material': 'gold', 'pattern': 'spire'}, 'rgb': -1, 'custom_data': '{wts:1b}', 'max_damage': -1}
-series_skill  = {'is_skill': False, 'cd': 0, 'name': '狂暴', 'info': ['穿上4件系列套裝，可永久獲得&=力量ɪ&+']}
-passive_skill = {'is_skill': True, 'cd': 30, 'name': '墮落時空領域', 'info': ['受擊有50%機率觸發&=局部時空領域&+']}
+custom_name = ['4', '超合金之頭盔', '#8AC7C7']
+info  = ['頭盔', '超合金']
+story = ['用來自深處的黑鐵合金作為基底，再用超合金錠打造而成的頭盔']
+item_data     = {'real_item': 'netherite_helmet', 'trim': {'material': 'iron', 'pattern': 'flow'}, 'rgb': -1, 'custom_data': '{resistance:1b}', 'max_damage': -1}
+series_skill  = {'is_skill': True, 'cd': 0, 'name': '超合金', 'info': ['穿上4件系列套裝，可永久獲得&=抗性ɪ&+']}
+passive_skill = {'is_skill': False, 'cd': 30, 'name': '墮落時空領域', 'info': ['受擊有50%機率觸發&=局部時空領域&+']}
 
-attribute.append({'name': '移動速度', 'show_value': '15%', 'value': 0.15, 'attribute_name': 'generic.movement_speed'})
-attribute.append({'name': '盔甲值', 'show_value': '3', 'value': 3, 'attribute_name': 'generic.armor'})
+attribute.append({'name': '生命值', 'show_value': '20%', 'value': 0.2, 'attribute_name': 'generic.max_health'})
+attribute.append({'name': '移動速度', 'show_value': '7%', 'value': 0.07, 'attribute_name': 'generic.movement_speed'})
 
 # ----- init ----- #
 

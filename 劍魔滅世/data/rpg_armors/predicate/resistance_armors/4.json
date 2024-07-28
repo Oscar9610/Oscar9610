@@ -7,25 +7,33 @@
         "items": [
           "minecraft:netherite_helmet"
         ],
-        "nbt": "{resistance:1b}"
+        "predicates": {
+          "minecraft:custom_data": "{resistance:1b}"
+        }
       },
       "chest": {
         "items": [
           "minecraft:netherite_chestplate"
         ],
-        "nbt": "{resistance:1b}"
+        "predicates": {
+          "minecraft:custom_data": "{resistance:1b}"
+        }
       },
       "legs": {
         "items": [
           "minecraft:netherite_leggings"
         ],
-        "nbt": "{resistance:1b}"
+        "predicates": {
+          "minecraft:custom_data": "{resistance:1b}"
+        }
       },
       "feet": {
         "items": [
           "minecraft:netherite_boots"
         ],
-        "nbt": "{resistance:1b}"
+        "predicates": {
+          "minecraft:custom_data": "{resistance:1b}"
+        }
       }
     }
   }
