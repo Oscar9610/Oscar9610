@@ -10,10 +10,5 @@ execute as @a[predicate=!rpg_armors:strength_armors/4] run advancement grant @s 
 execute as @a[predicate=rpg_armors:speed_armors/4] run advancement grant @s only rpg_armors:speed_armors/eqipment
 execute as @a[predicate=!rpg_armors:speed_armors/4] run advancement grant @s only rpg_armors:speed_armors/take_off
 
-execute as @a[predicate=rpg_armors:resistance_armors/2] run advancement grant @s only rpg_armors:resistance_armors/2/eqipment
-execute as @a[predicate=!rpg_armors:resistance_armors/2] run advancement grant @s only rpg_armors:resistance_armors/2/take_off
-
-execute as @a[predicate=rpg_armors:resistance_armors/4] run advancement grant @s only rpg_armors:resistance_armors/4/eqipment
-execute as @a[predicate=rpg_armors:resistance_armors/4] run advancement revoke @s only rpg_armors:resistance_armors/4/take_off
-execute as @a[predicate=!rpg_armors:resistance_armors/4] run advancement grant @s only rpg_armors:resistance_armors/4/take_off
-execute as @a[predicate=!rpg_armors:resistance_armors/4] run advancement revoke @s only rpg_armors:resistance_armors/4/eqipment
+execute as @a[predicate=rpg_armors:resistance_armors/4] run advancement grant @s only rpg_armors:resistance_armors/eqipment
+execute as @a[predicate=!rpg_armors:resistance_armors/4] run advancement grant @s only rpg_armors:resistance_armors/take_off

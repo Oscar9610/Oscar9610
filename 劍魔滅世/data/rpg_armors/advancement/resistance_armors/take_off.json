@@ -3,6 +3,9 @@
       "requirement": {
         "trigger": "minecraft:impossible"
       }
+    },
+    "rewards": {
+      "function": "rpg_armors:resistance_armors/take_off"
     }
   }
   

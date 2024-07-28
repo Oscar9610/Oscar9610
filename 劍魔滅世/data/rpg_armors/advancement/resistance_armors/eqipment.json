@@ -5,7 +5,7 @@
       }
     },
     "rewards": {
-      "function": "rpg_armors:resistance_armors/2/take_off"
+      "function": "rpg_armors:resistance_armors/eqipment"
     }
   }
   
