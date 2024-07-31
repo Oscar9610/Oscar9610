@@ -29,6 +29,9 @@ scoreboard players add @e[tag=Duration] duration 1
 #凡是有 facing 標籤的實體在8個內都會看向最近的玩家
 execute as @e[tag=facing] at @s run tp @s ~ ~ ~ facing entity @p[distance=..8]
 
+execute as @a if score @s player_leave matches 1.. run function world_area:main/reload
+scoreboard players reset @a[scores={player_leave=1..}] player_leave
+
 #凡是有 rotate 標籤的實體都會旋轉
 execute as @e[tag=rotate] at @s run tp @s ~ ~ ~ ~15 ~
 execute as @e[tag=rotate.15] at @s run tp @s ~ ~ ~ ~15 ~

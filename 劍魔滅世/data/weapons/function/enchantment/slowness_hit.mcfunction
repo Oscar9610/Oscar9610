@@ -1,1 +1,1 @@
-effect give @s slowness 10 3 false
+effect give @s[predicate=global:random_chance/25] slowness 5 1 false

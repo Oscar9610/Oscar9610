@@ -1,0 +1,3 @@
+function time_traveler:world_area/reload
+function ancient_lorras:world_area/reload
+function time_traveler:music/rotas/start

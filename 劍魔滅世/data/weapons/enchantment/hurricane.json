@@ -1,5 +1,5 @@
 {
-  "description": {"text":"[風暴]: 攻擊命中敵人有25%機率召喚一道風刃擊飛敵人","color":"gold","bold":true},
+  "description": {"text":"[風暴]: 攻擊命中敵人有25%機率召喚一道風刃擊飛敵人","color":"dark_green","bold":true},
   "supported_items": "#minecraft:swords",
   "weight": 1,
   "max_level": 1,

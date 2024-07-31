@@ -1,23 +1,16 @@
 {
-  "pack": {
-     "pack_format": 48,
-     "supported_formats": {"min_inclusive": 48, "max_inclusive": 48},
-     "description": ""
-  },
-  "filter": {
+    "pack": {
+      "pack_format": 48,
+      "supported_formats": 48,
+      "description": ""
+    },
+    "filter": {
       "block": [
-          {
-              "namespace": "minecraft",
-              "path": "advancement/"
-          }
+        {
+          "namespace": "minecraft",
+          "path": "advancement/"
+        }
       ]
-  },
-  "filter": {
-      "block": [
-          {
-              "namespace": "minecraft",
-              "path": "recipe/"
-          }
-      ]
+    }
   }
-}
+  

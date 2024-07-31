@@ -10,6 +10,7 @@
 #=====================================================================================
 
 ##記分板
+scoreboard objectives add player_leave minecraft.custom:minecraft.leave_game
 scoreboard objectives add id dummy
 scoreboard objectives add disable_operate dummy "禁用操作"
 scoreboard objectives add global.main dummy "主要全局"

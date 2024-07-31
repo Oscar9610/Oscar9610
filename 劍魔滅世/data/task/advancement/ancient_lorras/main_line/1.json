@@ -1,0 +1,22 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:cherry_sapling",
+        "count": 1
+      },
+      "title": "草星 - 古羅拉斯",
+      "description": "",
+      "background": "minecraft:textures/gui/advancements/backgrounds/bamboo_block.png",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible",
+        "conditions": {}
+      }
+    }
+  }
+  
