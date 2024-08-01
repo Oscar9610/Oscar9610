@@ -1,6 +1,6 @@
 {
   "description": {
-    "text": "[風暴]: 攻擊命中敵人有25%機率召喚一道風刃擊飛敵人",
+    "text": "[水晶爆炸]: 攻擊命中敵人有25%機率對周圍5格範圍內的敵人造成5點傷害",
     "color": "dark_aqua",
     "bold": true
   },
@@ -23,10 +23,10 @@
     "minecraft:post_attack": [
       {
         "enchanted": "attacker",
-        "affected": "attacker",
+        "affected": "victim",
         "effect": {
           "type": "minecraft:run_function",
-          "function": "weapons:type/wind_sword/wind"
+          "function": "weapons:enchantment/amethyst_explosion"
         },
         "requirements": {
           "condition": "minecraft:random_chance",

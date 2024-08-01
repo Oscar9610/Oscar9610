@@ -1,38 +1,38 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "pattern": [
-    "XXX",
-    " # ",
-    " # "
-  ],
-  "key": {
-    "#": {
-      "item": "minecraft:stick"
-    },
-    "X": {
-      "item": "minecraft:amethyst_shard"
-    }
-  },
-  "result": {
-    "id": "minecraft:stone_pickaxe",
-    "count": 1,
-    "components": {
-      "minecraft:custom_model_data": 1,
-      "minecraft:custom_name": "{\"text\":\"紫水晶鎬\",\"italic\":false}",
-      "minecraft:attribute_modifiers": {
-        "modifiers": [
-          {
-            "id": "4096-4096-4096-4096",
-            "type": "minecraft:player.mining_efficiency",
-            "amount": 0.1,
-            "operation": "add_multiplied_base",
-            "slot": "mainhand"
-          }
-        ],
-        "show_in_tooltip": true
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "pattern": [
+      "XXX",
+      " # ",
+      " # "
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
       },
-      "minecraft:max_damage": 150
+      "X": {
+        "item": "minecraft:amethyst_shard"
+      }
+    },
+    "result": {
+      "id": "minecraft:stone_pickaxe",
+      "count": 1,
+      "components": {
+        "minecraft:custom_model_data": 1,
+        "minecraft:custom_name": "{\"text\":\"水晶鎬\",\"italic\":false}",
+        "minecraft:attribute_modifiers": {
+          "modifiers": [
+            {
+              "id": "124-1234-1234-1234",
+              "type": "minecraft:player.mining_efficiency",
+              "amount": 0.1,
+              "operation": "add_multiplied_base",
+              "slot": "mainhand"
+            }
+          ],
+          "show_in_tooltip": true
+        }
+      }
     }
   }
-}
+  

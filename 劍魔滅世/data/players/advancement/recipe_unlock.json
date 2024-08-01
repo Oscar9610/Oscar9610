@@ -1,7 +1,8 @@
 {
     "criteria": {
       "requirement": {
-        "trigger": "minecraft:tick"
+        "trigger": "minecraft:tick",
+        "conditions": {}
       }
     },
     "rewards": {

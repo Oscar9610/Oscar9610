@@ -7,3 +7,7 @@ execute if score .main_line orantes.story matches 129.. run function ancient_lor
 
 function ancient_lorras:world_area/reload
 #========================================================
+
+# 古羅拉斯 幻影麋鹿
+function time_traveler:display/elk_display/guide
+schedule function time_traveler:display/elk_display/timer 5s

@@ -1,5 +1,6 @@
 function players:inventory/-store {bag:rotas}
 function players:inventory/-return {bag:overworld}
+attribute @s minecraft:generic.safe_fall_distance modifier add no_fall_damage 9999 add_multiplied_base
 
 function time_traveler:music/rotas/reset
 
