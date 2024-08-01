@@ -23,4 +23,7 @@ execute store result storage temp atk int 1 run scoreboard players operation #at
 
 function monsters:-init/atk with storage temp
 
+# 防摔死
+attribute @s minecraft:generic.safe_fall_distance modifier add no_fall_damage 9999 add_multiplied_base
+
 tag @s remove monster.spawn

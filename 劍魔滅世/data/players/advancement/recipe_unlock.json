@@ -1,0 +1,12 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:tick",
+        "conditions": {}
+      }
+    },
+    "rewards": {
+      "function": "players:recipe_unlock"
+    }
+  }
+  
