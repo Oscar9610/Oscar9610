@@ -1,3 +1,4 @@
+
 execute as @e[type=#time_traveler:monsters,distance=..5] run damage @s 5 player_attack by @p
 
 particle minecraft:item{item: "minecraft:amethyst_block"} ~ ~ ~ 2.5 2.5 2.5 0.5 100
