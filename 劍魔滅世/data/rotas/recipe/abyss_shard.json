@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "building",
+    "pattern": [
+      "###",
+      "###",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:echo_shard"
+      }
+    },
+    "result": {
+      "id": "minecraft:emerald_block",
+      "count": 1,
+      "components": {
+        "minecraft:item_name": "[{\"bold\":true,\"color\":\"#03FFDD\",\"italic\":true,\"text\":\"✡\",\"underlined\":true},{\"bold\":true,\"color\":\"#03F0D0\",\"italic\":true,\"text\":\"黑\"},{\"color\":\"#03E8C9\",\"text\":\"暗\"},{\"bold\":true,\"color\":\"#03E0C2\",\"italic\":true,\"text\":\"水\"},{\"bold\":true,\"color\":\"#02BAA1\",\"italic\":true,\"text\":\"晶\"},{\"bold\":true,\"color\":\"#02A892\",\"italic\":true,\"text\":\"A\"},{\"bold\":true,\"color\":\"#029985\",\"italic\":true,\"text\":\"b\"},{\"bold\":true,\"color\":\"#028573\",\"italic\":true,\"text\":\"y\"},{\"bold\":true,\"color\":\"#027565\",\"italic\":true,\"text\":\"s\"},{\"bold\":true,\"color\":\"#026B5C\",\"italic\":true,\"text\":\"s\"},{\"bold\":true,\"color\":\"#025C4F\",\"italic\":true,\"text\":\" S\"},{\"color\":\"#02574A\",\"text\":\"h\"},{\"bold\":true,\"color\":\"#024D42\",\"italic\":true,\"text\":\"a\"},{\"bold\":true,\"color\":\"#024239\",\"italic\":true,\"text\":\"r\"},{\"bold\":true,\"color\":\"#023B33\",\"italic\":true,\"text\":\"d\"},{\"bold\":true,\"color\":\"#010F0D\",\"italic\":true,\"text\":\"✡\"}]"
+      }
+    }
+  }
+  

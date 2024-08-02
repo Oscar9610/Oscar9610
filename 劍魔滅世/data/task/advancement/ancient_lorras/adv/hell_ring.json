@@ -24,5 +24,8 @@
         }
       }
     }
+  },
+  "rewards": {
+    "function": "task:ancient_lorras/adv/you_dead"
   }
 }

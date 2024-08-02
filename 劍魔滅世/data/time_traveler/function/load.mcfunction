@@ -2,6 +2,7 @@
 # load
 function weapons:load
 function time_traveler:world_area/reload
+advancement revoke @a only players:recipe_unlock
 # ============================================================================================
 # 摔落傷害偵測
 execute as @a at @s unless dimension game_map:realm_of_time_and_space run attribute @s minecraft:generic.safe_fall_distance modifier add no_fall_damage 9999 add_multiplied_base
