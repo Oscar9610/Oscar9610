@@ -174,7 +174,12 @@ scoreboard players add @a lightning_sword_passive 0
 scoreboard players add @a lightning_sword_passive_cd 0
 
 #===================================================================
+#附魔
+scoreboard objectives add enchantment.petrifaction dummy "石化"
+scoreboard objectives add enchantment.illusory_claw dummy "幻影爪"
 
+
+#===================================================================
 #這是武器技能傷害取玩家攻擊力的百分比
 #代表著玩家使用武器技能造成的技能傷害會取玩家攻擊力的5倍作為技能造成的傷害
 #可以被力量狀態、裝備修飾符、武器修飾符等影響
