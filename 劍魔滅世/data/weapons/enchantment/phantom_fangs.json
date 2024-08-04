@@ -1,0 +1,37 @@
+{
+  "description": {
+    "text": "[幻影爪擊]: 25%機率可以快速連續攻擊以及短暫隱形",
+    "color": "aqua"
+  },
+  "supported_items": "#minecraft:swords",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "enchanted": "attacker",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "weapons:enchantment/illusory_claw/use"
+        },
+        "requirements": {
+          "condition": "minecraft:random_chance",
+          "chance": 0.25
+        }
+      }
+    ]
+  }
+}

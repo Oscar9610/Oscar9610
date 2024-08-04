@@ -4,11 +4,11 @@
 
 advancement revoke @a only ancient_lorras:story/in_ancient_lorras
 
-execute if score .main_line ancient_lorras.story matches 11 run tellraw @a[tag=!op] {"text":"［希爾］哇~這裡就是草星的村莊嗎？"}
-execute if score .main_line ancient_lorras.story matches 12 run tellraw @a[tag=!op] {"text":"［希爾］這裡是狐族的村落，真的好美"}
-execute if score .main_line ancient_lorras.story matches 13 run tellraw @a[tag=!op] {"text":"［希爾］據說 草之魔劍 - 翠綠茵草在這個星球，不過不知道具體在那個位置"}
-execute if score .main_line ancient_lorras.story matches 14 run tellraw @a[tag=!op] {"text":"［希爾］我們過去問問看吧！"}
-execute if score .main_line ancient_lorras.story matches 15 run tellraw @a[tag=!op] {"text":"【目標】詢問村落關於魔劍的下落","color":"gold"}
+execute if score .main_line ancient_lorras.story matches 11 run tellraw @a[tag=!op] {"text":"［希爾］根據艾梅拉給的情報"}
+execute if score .main_line ancient_lorras.story matches 12 run tellraw @a[tag=!op] {"text":"［希爾］古羅拉斯據說在光暗大戰後草之魔劍因為被深淵的侵蝕突然失控"}
+execute if score .main_line ancient_lorras.story matches 13 run tellraw @a[tag=!op] {"text":"［希爾］森林四處都是深淵留下的痕跡"}
+execute if score .main_line ancient_lorras.story matches 14 run tellraw @a[tag=!op] {"text":"［希爾］旅行者！這附近有一座村莊，不如我們過去問問看！"}
+execute if score .main_line ancient_lorras.story matches 15 run tellraw @a[tag=!op] {"text":"【目標】去村莊詢問關於魔劍的下落","color":"gold"}
 execute if score .main_line ancient_lorras.story matches 15 run function ancient_lorras:story/main_line/sakura_grove/interaction/priest
 
 
