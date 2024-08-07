@@ -6,7 +6,7 @@
       }
     },
     "rewards": {
-      "function": "ancient_lorras:world_area/crimson_abyss/cave/in"
+      "function": "ancient_lorras:world_area/crimson_abyss/cave/out"
     }
   }
   

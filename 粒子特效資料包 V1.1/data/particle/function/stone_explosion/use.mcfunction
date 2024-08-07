@@ -3,7 +3,7 @@
 summon marker ~ ~ ~ {Tags:[fx.gz.main]}
 
 # particle
-playsound minecraft:entity.generic.explode voice @a ~ ~ ~ 9999 0.5
+playsound minecraft:entity.generic.explode voice @a ~ ~ ~ 3 0.5
 
 
 

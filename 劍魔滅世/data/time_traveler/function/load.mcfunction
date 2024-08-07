@@ -8,6 +8,13 @@ advancement revoke @a only players:recipe_unlock
 execute as @a at @s unless dimension game_map:realm_of_time_and_space run attribute @s minecraft:generic.safe_fall_distance modifier add no_fall_damage 9999 add_multiplied_base
 execute as @a at @s if dimension game_map:realm_of_time_and_space run attribute @s minecraft:generic.safe_fall_distance modifier remove no_fall_damage
 
+# 遊戲難度偵測
+execute store result score #global difficulty run difficulty
+
+execute if score #global difficulty matches 0 run playsound minecraft:entity.cat.hurt voice @a 0 0 0 9999 1
+execute if score #global difficulty matches 0 run playsound minecraft:block.note_block.pling master @a 0 0 0 9999 1
+execute if score #global difficulty matches 0 run tellraw @a [{"text":"\n⚠: ","color":"gold"},{"text":"你現在的模式是","color":"white"},{"text":"和平模式","color":"gold","bold":true},"\n",{"text":"防止BOSS、怪物","color":"white"},{"text":"不生成","color":"red","bold":true},{"text":" 請確保不是和平模式！\n"}]
+
 # ============================================================================================
 # 主線、支線顏色區分
 

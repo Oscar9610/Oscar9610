@@ -4,6 +4,9 @@ execute as @a at @s unless biome ~ ~ ~ orantes:sakura_grove run advancement gran
 execute as @a at @s if biome ~ ~ ~ orantes:crimson_abyss run advancement grant @s only ancient_lorras:world_area/crimson_abyss/in
 execute as @a at @s unless biome ~ ~ ~ orantes:crimson_abyss run advancement grant @s only ancient_lorras:world_area/crimson_abyss/out
 
+execute as @a at @s if biome ~ ~ ~ orantes:crimson_abyss_cave run advancement grant @s only ancient_lorras:world_area/crimson_abyss/cave/in
+execute as @a at @s unless biome ~ ~ ~ orantes:crimson_abyss_cave run advancement grant @s only ancient_lorras:world_area/crimson_abyss/cave/out
+
 execute as @a at @s if biome ~ ~ ~ orantes:emerald_vale run advancement grant @s only ancient_lorras:world_area/emerald_vale/in
 execute as @a at @s unless biome ~ ~ ~ orantes:emerald_vale run advancement grant @s only ancient_lorras:world_area/emerald_vale/out
 

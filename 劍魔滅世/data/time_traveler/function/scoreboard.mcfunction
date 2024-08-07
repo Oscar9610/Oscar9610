@@ -15,6 +15,7 @@ scoreboard objectives add id dummy
 scoreboard objectives add disable_operate dummy "禁用操作"
 scoreboard objectives add global.main dummy "主要全局"
 scoreboard objectives add bool.main dummy "布林值全局"
+scoreboard objectives add difficulty dummy "遊戲難度"
 scoreboard objectives add global.advancements dummy "全局 - 任務進度顯示"
 scoreboard objectives add world_tree.story dummy "[世界樹] 劇情"
 scoreboard objectives add global.monsters.health dummy "全局 - 怪物初始血量"
