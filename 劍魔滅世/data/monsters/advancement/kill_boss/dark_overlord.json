@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "entity": {
+            "nbt": "{Tags:[\"dark_overlord\"]}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "monsters:boss_respawn/dark_overlord/slain"
+    }
+  }
+  

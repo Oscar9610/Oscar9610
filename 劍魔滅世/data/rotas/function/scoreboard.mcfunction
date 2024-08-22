@@ -23,3 +23,5 @@ scoreboard objectives add rotas.boss.infinite_abyss.skill1 dummy "[時空之境]
 scoreboard objectives add rotas.boss.infinite_abyss.fx dummy "[時空之境] 無盡水淵 技能1特效"
 
 scoreboard players set @a bless.wts.cd 0
+
+scoreboard players display name .asker.1 rotas.story "[時空之境開場白]"

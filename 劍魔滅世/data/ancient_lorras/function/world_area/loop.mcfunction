@@ -10,6 +10,10 @@ execute as @a at @s unless biome ~ ~ ~ orantes:crimson_abyss_cave run advancemen
 execute as @a at @s if biome ~ ~ ~ orantes:emerald_vale run advancement grant @s only ancient_lorras:world_area/emerald_vale/in
 execute as @a at @s unless biome ~ ~ ~ orantes:emerald_vale run advancement grant @s only ancient_lorras:world_area/emerald_vale/out
 
-# execute in game_map:ancient_lorras positioned 0 -63 0 as @a[distance=..300] if score #get_yilin ancient_lorras.global.main matches ..3 run function ancient_lorras:world_area/valley_of_memory/tp_to_spawn_point with storage minecraft:p1_attributes
+execute as @a at @s if biome ~ ~ ~ orantes:fluorescent_forest run advancement grant @s only ancient_lorras:world_area/fluorescent_forest/in
+execute as @a at @s unless biome ~ ~ ~ orantes:fluorescent_forest run advancement grant @s only ancient_lorras:world_area/fluorescent_forest/out
+
+execute as @a at @s if biome ~ ~ ~ orantes:fluorescent_forest_cave run advancement grant @s only ancient_lorras:world_area/fluorescent_forest/cave/in
+execute as @a at @s unless biome ~ ~ ~ orantes:fluorescent_forest_cave run advancement grant @s only ancient_lorras:world_area/fluorescent_forest/cave/out
 
 schedule function ancient_lorras:world_area/loop 1t

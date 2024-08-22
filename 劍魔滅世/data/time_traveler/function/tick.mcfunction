@@ -6,6 +6,7 @@ function entity:sounds/main
 function time_traveler:interaction/main
 function time_traveler:players/effects/main
 function time_traveler:system/main
+function system:treasure_chests/guide
 execute as @a at @s run function time_traveler:monster_weakness/player_loop
 
 function system:main
@@ -21,6 +22,13 @@ function map_hall:tp_door/loop
 
 function weapons:main
 function weapons:timer_t
+
+#=========================================================
+
+# 遊戲難度偵測
+execute store result score #global difficulty run difficulty
+execute if score #global difficulty matches 1 run gamerule naturalRegeneration false
+execute if score #global difficulty matches 2.. run gamerule naturalRegeneration true
 #=========================================================
 
 #存在時間 凡是有 Duration 這個 Tag 就會給他分數 +1

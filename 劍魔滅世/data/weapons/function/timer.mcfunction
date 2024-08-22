@@ -50,6 +50,9 @@ execute as @a[scores={bricks_cd=1}] at @s run playsound minecraft:entity.player.
 execute as @a[scores={lightning_sword_cd=1}] run tellraw @s [{"text":"[","color":"green","bold":true},{"text":"☆☆☆☆☆夢想一心{雷}","color":"white","bold":true},{"text":"] ","color":"green","bold":true},{"text":"冷卻完畢！","color":"green","bold":true}]
 execute as @a[scores={lightning_sword_cd=1}] at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~ 0.5 1.5
 
+execute as @a[scores={firework_cd=1}] run tellraw @s [{"text":"[","color":"green","bold":true},{"text":"☆☆☆煙花斧{火}","color":"white","bold":true},{"text":"] ","color":"green","bold":true},{"text":"冷卻完畢！","color":"green","bold":true}]
+execute as @a[scores={firework_cd=1}] at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~ 0.5 1.5
+
 #所有武器CD計時器1s
 scoreboard players remove @a[scores={lightning_sword_passive_cd=1..}] lightning_sword_passive_cd 1
 scoreboard players remove @a[scores={lightning_sword_cd=1..}] lightning_sword_cd 1
@@ -69,7 +72,7 @@ scoreboard players remove @a[scores={double_sword_water_effect_cd=1..}] double_s
 scoreboard players remove @a[scores={water_sword_cd=1..}] water_sword_cd 1
 scoreboard players remove @a[scores={noob_sickle_cd=1..}] noob_sickle_cd 1
 scoreboard players remove @a[scores={noob_sickle_passive_cd=1..}] noob_sickle_passive_cd 1
-scoreboard players remove @a[scores={time_space_lock_cd=1..}] time_space_lock_cd 1
 scoreboard players remove @a[scores={the_night_cd=1..}] the_night_cd 1
+scoreboard players remove @a[scores={firework_cd=1..}] firework_cd 1
 
 schedule function weapons:timer 1s

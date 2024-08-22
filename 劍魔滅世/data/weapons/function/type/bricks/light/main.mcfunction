@@ -1,0 +1,1 @@
+execute as @p at @s positioned ^ ^1 ^ anchored eyes run function weapons:type/bricks/light/raycast/begin

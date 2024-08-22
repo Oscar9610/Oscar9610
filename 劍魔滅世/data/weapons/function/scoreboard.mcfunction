@@ -174,6 +174,14 @@ scoreboard players add @a lightning_sword_passive 0
 scoreboard players add @a lightning_sword_passive_cd 0
 
 #===================================================================
+#夢想一心
+scoreboard objectives add firework_cd dummy "煙花斧 CD"
+scoreboard objectives add firework_max_cd dummy "煙花斧 CD上限"
+
+scoreboard players add @a firework_cd 0
+scoreboard players set @a firework_max_cd 7
+
+#===================================================================
 #附魔
 scoreboard objectives add enchantment.petrifaction dummy "石化"
 scoreboard objectives add enchantment.illusory_claw dummy "幻影爪"
@@ -210,6 +218,7 @@ scoreboard players set .otherworld_dust_star_ca atk 50
 scoreboard players set .violent_storm atk 350
 scoreboard players set .spider atk 200
 scoreboard players set .bricks atk 200
+scoreboard players set .firework_axe atk 250
 
 #百分比倍率微調
 scoreboard players set 100 atk 100

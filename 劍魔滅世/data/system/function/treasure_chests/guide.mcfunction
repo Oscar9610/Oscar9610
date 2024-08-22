@@ -1,0 +1,1 @@
+execute as @e[tag=treasure_chests.act] at @s run function system:treasure_chests/loop

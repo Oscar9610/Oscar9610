@@ -8,4 +8,6 @@ execute as @e[tag=mob_spawner.marker] at @s if entity @a[distance=..30] unless e
 execute as @e[tag=mob_spawner.marker] at @s unless entity @a[distance=..30] if entity @e[tag=mob.spawner,distance=..30] run scoreboard players set @s mob_spawner.timer 1
 execute as @e[tag=mob_spawner.marker] at @s unless entity @a[distance=..30] if entity @e[tag=mob.spawner,distance=..30] as @n[tag=mob.spawner] run function system:mob_spawner_marker/reset
 
+function system:jump_platform/loop
+
 function system:bouncing_lazer_block/interaction

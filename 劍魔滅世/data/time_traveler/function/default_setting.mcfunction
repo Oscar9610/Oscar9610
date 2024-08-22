@@ -13,6 +13,8 @@ function time_traveler:reload
 function time_traveler:reset_level
 gamerule sendCommandFeedback false
 
+advancement revoke @a only rotas:task/1
+
 scoreboard players set global detect_player_in_lobby 0
 scoreboard players set .player.highest_level global.main 1
 scoreboard objectives setdisplay sidebar

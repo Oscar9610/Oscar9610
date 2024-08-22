@@ -17,11 +17,11 @@ execute if score .main_line ancient_lorras.story matches 26 run function ancient
 execute if score .main_line ancient_lorras.story matches 26 run function ancient_lorras:story/main_line/sakura_grove/1/summon
 execute if score .main_line ancient_lorras.story matches 26 run kill @e[tag=al.ml.hill.1]
 execute if score .main_line ancient_lorras.story matches 26 run tellraw @a[distance=..16] {"text":"\n【目標】前往位於櫻花林南方的洞穴！","color":"gold"}
-execute if score .main_line ancient_lorras.story matches 26 run scoreboard players set .main_line ancient_lorras.story 30
+execute if score .main_line ancient_lorras.story matches 26 run scoreboard players set .main_line ancient_lorras.story 31
 
 #循環偵測
 #loop
-execute if score .main_line ancient_lorras.story matches 16..30 run scoreboard players add .main_line ancient_lorras.story 1
+execute if score .main_line ancient_lorras.story matches 16..26 run scoreboard players add .main_line ancient_lorras.story 1
 
 #音效
-execute if score .main_line ancient_lorras.story matches 16..30 run playsound minecraft:entity.experience_orb.pickup voice @s ~ ~ ~ 0.5 1
+execute if score .main_line ancient_lorras.story matches 16..26 run playsound minecraft:entity.experience_orb.pickup voice @a ~ ~ ~ 3 1

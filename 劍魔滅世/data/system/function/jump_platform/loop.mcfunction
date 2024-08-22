@@ -1,0 +1,2 @@
+execute at @e[tag=jump_platform] run effect give @a[distance=..0.75] minecraft:jump_boost 1 15 true
+execute at @e[tag=jump_platform] if entity @a[distance=..0.75] run particle minecraft:item_slime ~ ~ ~ 0.25 0 0.25 0 1

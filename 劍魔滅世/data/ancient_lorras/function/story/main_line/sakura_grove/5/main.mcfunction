@@ -16,6 +16,7 @@ execute if score .main_line ancient_lorras.story matches 67 run tellraw @a {"tex
 execute if score .main_line ancient_lorras.story matches 68 run tellraw @a [{"text":"［拉維爾］十分感謝2位的幫助！"}]
 execute if score .main_line ancient_lorras.story matches 69 run tellraw @a [{"text":"［拉維爾］當你們解開其餘2位守護者的封印後，我便可以讓你們傳送到"},{"text":"薄霧山脈","color":"gold"}]
 execute if score .main_line ancient_lorras.story matches 70 run tellraw @a {"text":"【目標】回去找小雪！","color":"gold"}
+execute if score .main_line ancient_lorras.story matches 70 run kill @e[tag=guardian_ghost]
 
 # score +1
 execute if score .main_line ancient_lorras.story matches 58..70 run scoreboard players add .main_line ancient_lorras.story 1
