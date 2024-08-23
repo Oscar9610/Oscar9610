@@ -4,3 +4,9 @@ advancement revoke @a only ancient_lorras:world_area/crimson_abyss/cave/in
 advancement revoke @a only ancient_lorras:world_area/emerald_vale/in
 advancement revoke @a only ancient_lorras:world_area/fluorescent_forest/in
 advancement revoke @a only ancient_lorras:world_area/fluorescent_forest/cave/in
+advancement revoke @a only ancient_lorras:world_area/snowy_forest/in
+advancement revoke @a only ancient_lorras:world_area/snowy_forest/cave/in
+advancement revoke @a only ancient_lorras:world_area/south_cave/in
+advancement revoke @a only ancient_lorras:world_area/mist_mountains/in
+advancement revoke @a only ancient_lorras:world_area/memory_hill/in
+advancement revoke @a only ancient_lorras:world_area/magic_forest/in
