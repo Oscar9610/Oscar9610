@@ -2,7 +2,7 @@
 
 # speed
 tp @s ^ ^ ^0.5
-execute at @s unless block ~ ~ ~ #time_traveler:transparent run tp @s ~ ~1 ~
+execute at @s unless block ~ ~ ~ #system:transparent run tp @s ~ ~1 ~
 
 # dmg
 execute as @a[distance=..2.5] at @s run function monsters:stormpromax/1/3c

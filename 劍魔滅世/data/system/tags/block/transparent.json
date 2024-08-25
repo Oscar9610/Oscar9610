@@ -5,6 +5,14 @@
         "minecraft:torchflower",
         "minecraft:blue_orchid",
         "minecraft:cornflower",
-        "minecraft:warped_roots"
+        "minecraft:warped_roots",
+        "minecraft:water",
+        "minecraft:moss_carpet",
+        "minecraft:small_dripleaf",
+        "minecraft:dandelion",
+        "minecraft:twisting_vines",
+        "minecraft:dead_fire_coral",
+        "minecraft:dead_brain_coral",
+        "minecraft:warped_fungus"
     ]
 }

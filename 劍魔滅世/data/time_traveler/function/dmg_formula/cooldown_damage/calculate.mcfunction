@@ -5,10 +5,9 @@ tag @s add atker
 # calculate
 execute store result score #temp atk run attribute @s minecraft:generic.attack_damage get
 scoreboard players operation @s atk *= #temp atk
-scoreboard players operation @s atk /= 100 atk
 
 # store & atk
-execute store result storage temp values float 1 run scoreboard players get @s atk
+execute store result storage temp values float 0.01 run scoreboard players get @s atk
 function time_traveler:dmg_formula/cooldown_damage/damage with storage temp
 
 # reset
