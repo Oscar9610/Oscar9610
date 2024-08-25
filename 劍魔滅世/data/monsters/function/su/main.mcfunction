@@ -22,7 +22,7 @@ execute as @e[type=item_display,tag=su.3.1] at @s run function monsters:su/3/1/m
 execute as @n[type=zombie,tag=su,tag=su.4.user] at @s run function monsters:su/4/main.self
 execute as @e[type=item_display,tag=su.4.3] at @s run function monsters:su/4/3/main
 execute as @e[type=marker,tag=su.4.4] at @s run function monsters:su/4/4/main
-execute as @a[tag=su.4.4.dmger] at @s run function monsters:su/4/4/4b
+execute as @a[tag=su.4.4.dmger] at @s run function monsters:su/4/2/2
 
 # Move P
 execute as @a[scores={su.movep.level=1..}] at @s run function monsters:su/p/main.player

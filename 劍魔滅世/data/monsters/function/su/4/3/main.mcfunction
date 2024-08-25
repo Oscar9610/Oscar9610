@@ -1,7 +1,7 @@
 # 執行者 : 樹木尖刺
 
 # effect
-execute if score @s duration matches ..20 if block ~ ~-1 ~ #system:transparent run tp @s ~ ~-1 ~
+execute if score @s duration matches ..60 run function monsters:su/4/3/1b
 execute if score @s duration matches 60.. run tp @s ~ ~-0.5 ~
 execute if score @s duration matches 70.. run function weapons:void
 
