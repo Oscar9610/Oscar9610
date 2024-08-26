@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+      "#X#",
+      "XOX",
+      "#X#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:glass_bottle"
+      },
+      "X": {
+        "item": "minecraft:breeze_rod"
+      },
+      "O": {
+        "item": "minecraft:iron_ingot"
+      }
+    },
+    "result": {
+      "id": "minecraft:iron_ingot",
+      "count": 1,
+      "components": {
+        "minecraft:custom_model_data": 1,
+        "minecraft:item_name": "{\"text\":\"迴旋晶體 Gyrocrystal\",\"italic\":false,\"color\":\"dark_aqua\"}"
+      }
+    }
+  }
+  

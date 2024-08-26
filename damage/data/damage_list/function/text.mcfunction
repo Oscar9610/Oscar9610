@@ -1,3 +1,6 @@
-scoreboard players add @s math 1
-execute as @s at @s run tp @s ~ ~0.01 ~
-kill @s[scores={math=20..}]
+
+# animation
+tp @s ~ ~0.01 ~
+
+# duration
+execute if score @s duration matches 20.. run kill @s

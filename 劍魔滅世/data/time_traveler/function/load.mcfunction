@@ -8,6 +8,10 @@ advancement revoke @a only players:recipe_unlock
 execute as @a at @s unless dimension game_map:realm_of_time_and_space run attribute @s minecraft:generic.safe_fall_distance modifier add no_fall_damage 9999 add_multiplied_base
 execute as @a at @s if dimension game_map:realm_of_time_and_space run attribute @s minecraft:generic.safe_fall_distance modifier remove no_fall_damage
 
+execute as @a at @s if score #global difficulty matches 0 run playsound minecraft:entity.cat.hurt voice @s ~ ~1 ~ 9999 1
+execute as @a at @s if score #global difficulty matches 0 run playsound minecraft:block.note_block.pling master @s ~ ~1 ~ 9999 1
+execute if score #global difficulty matches 0 run tellraw @a [{"text":"\n⚠: ","color":"gold"},{"text":"你現在的模式是","color":"white"},{"text":"和平模式","color":"gold","bold":true},"\n",{"text":"防止BOSS、怪物","color":"white"},{"text":"不生成","color":"red","bold":true},{"text":" 請確保不是和平模式！\n"}]
+
 # ============================================================================================
 # 主線、支線顏色區分
 
@@ -26,13 +30,6 @@ team modify players friendlyFire false
 # 怪物
 team add monster
 team modify monster friendlyFire false
-# ============================================================================================
-
-
-#設置玩家重生點為太空站內部
-execute in game_map:spaceship_interior run spawnpoint @a 0 56 0
-execute in game_map:spaceship_interior run setworldspawn 0 56 0
-
 # ============================================================================================
 
 # scoreboard

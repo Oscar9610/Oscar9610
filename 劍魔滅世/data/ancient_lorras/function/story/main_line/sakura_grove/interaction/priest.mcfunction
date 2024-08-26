@@ -1,5 +1,5 @@
 execute as @e[tag=priest.act] at @s if data entity @s interaction.timestamp if score .main_line ancient_lorras.story matches 16..30 run function ancient_lorras:story/main_line/sakura_grove/1/main
-execute as @e[tag=priest.act] at @s if data entity @s interaction.timestamp if score .main_line ancient_lorras.story matches 64..75 run function ancient_lorras:story/main_line/sakura_grove/6/main
+execute as @e[tag=priest.act] at @s if data entity @s interaction.timestamp if score .main_line ancient_lorras.story matches 79..92 run function ancient_lorras:story/main_line/sakura_grove/7/main
 
 execute as @e[tag=priest.act] at @s if data entity @s interaction.timestamp run data remove entity @s interaction
 

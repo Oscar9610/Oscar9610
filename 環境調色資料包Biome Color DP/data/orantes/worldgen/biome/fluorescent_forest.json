@@ -1,0 +1,25 @@
+{
+    "temperature": 0,
+    "downfall": 0,
+    "has_precipitation": true,
+    "creature_spawn_probability": 0,
+    "effects": {
+      "sky_color": 7907327,
+      "fog_color": 12638463,
+      "water_color": 4159204,
+      "water_fog_color": 329011,
+      "grass_color": 6469428,
+      "foliage_color": 6469428,
+      "particle": {
+        "options": {
+          "type": "minecraft:egg_crack"
+        },
+        "probability": 0.005
+      }
+    },
+    "spawners": {},
+    "spawn_costs": {},
+    "carvers": {},
+    "features": []
+  }
+  

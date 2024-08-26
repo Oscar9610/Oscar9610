@@ -17,4 +17,5 @@ scoreboard players set orantes.shadow boss.respawn.cd 0
 scoreboard players set orantes.poison boss.respawn.cd 0
 scoreboard players set orantes.storm boss.respawn.cd 0
 scoreboard players set orantes.atar boss.respawn.cd 0
-scoreboard players set ancient_lorras.disaster boss.respawn.cd 0
+scoreboard players set lorras.disaster boss.respawn.cd 0
+scoreboard players set rotas.dark_overlord boss.respawn.cd 0

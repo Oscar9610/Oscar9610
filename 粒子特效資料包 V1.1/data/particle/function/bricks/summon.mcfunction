@@ -4,6 +4,8 @@ scoreboard players set @e[tag=bricks.display.spawn] duration 41
 execute as @n[tag=bricks.display.spawn] at @s run tp @s ~ ~-4 ~
 tag @n[tag=bricks.display.spawn] remove bricks.display.spawn
 
+scoreboard players set %range raycast 0
+
 function particle:broken_glass_scattering/summon/20
 
 particle minecraft:explosion_emitter ~ ~ ~ 4 0 4 0 10

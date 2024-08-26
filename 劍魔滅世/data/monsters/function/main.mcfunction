@@ -1,5 +1,7 @@
 
 ## ----- 怪物種類 ----- ##
+function monsters:dark_overlord/main
+function monsters:soul_abyss_beast/main
 function monsters:sculk_saboteur/main
 function monsters:sculk_priest/main
 function monsters:wind_shamen/main

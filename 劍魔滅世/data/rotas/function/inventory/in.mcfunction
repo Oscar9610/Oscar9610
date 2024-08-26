@@ -1,6 +1,6 @@
 function players:inventory/-store {bag:overworld}
 function players:inventory/-return {bag:rotas}
-execute in game_map:realm_of_time_and_space run tp @s 0 52 0 0 0
+execute in game_map:realm_of_time_and_space run tp @s 0 53 0 0 0
 execute as @s at @s in game_map:realm_of_time_and_space run spawnpoint @s ~ ~ ~
 attribute @s minecraft:generic.safe_fall_distance modifier remove no_fall_damage
 

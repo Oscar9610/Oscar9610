@@ -3,7 +3,11 @@ tellraw @s [{"text":"[","color":"green","bold":true},{"text":"吾法武天","col
 function particle:bricks/summon
 
 # mob
-tag @e[type=#time_traveler:monsters,distance=..6] add dmger
+tag @e[type=#time_traveler:monsters,distance=..4] add dmger
+
+effect give @e[type=#time_traveler:monsters,distance=..4] slowness 7 255 true
+effect give @e[type=#time_traveler:monsters,distance=..4] weakness 7 255 true
+
 
 # atk
 scoreboard players operation @s atk = .bricks atk

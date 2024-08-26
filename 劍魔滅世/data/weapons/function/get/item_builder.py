@@ -20,15 +20,17 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-custom_name = ['5', '蜘蛛', '#FF2BA3']
-info  = ['劍', '蜘蛛', '雷']
-story = ['她以言靈操控人心', '如蜘蛛網般將獵物縛於指尖，沒人能逃出她的魔掌']
-item_data     = {'real_item': 'iron_sword', 'custom_model_data': 32, 'custom_data': '{spider:1b,physical:1b,weight:1b}', 'max_damage': 300}
-main_skill    = {'is_skill': True, 'cd': 45, 'name': '月光摩挲連綿', 'info': ['拔刀發起突刺，給予前方怪物造成&=200%攻擊傷害&-']}
-passive_skill = {'is_skill': True, 'cd': 0, 'name': '寬恕無關慈悲', 'info': ['攻擊命中敵人10次時，給予前方怪物造成&=250%攻擊傷害&-，', '並給予目標【折磨】狀態(每秒造成&=75%攻擊傷害&-，持續5秒)']}
+custom_name = ['3', '煙火斧', '#00b395']
+info  = ['斧頭', '煙火', '火']
+story = ['裝上煙火的斧頭', '飛天往下劈砍傷害更高！']
+item_data     = {'real_item': 'mace', 'custom_model_data': 2, 'custom_data': '{firework:1}', 'max_damage': 325}
+main_skill    = {'is_skill': True, 'cd': 7, 'name': '煙火飛行', 'info': ['對5格範圍內敵人造成&=250%攻擊傷害&-','並使自己在空中飛行一段距離']}
+passive_skill = {'is_skill': True, 'cd': 0, 'name': '空中劈砍', 'info': ['跟重錘一樣效果，高度越高造成傷害越高！']}
 
-attribute.append({'name': '攻擊力', 'show_value': '9', 'value': 9, 'attribute_name': 'generic.attack_damage', 'slot': 'mainhand'})
-attribute.append({'name': '攻擊速度', 'show_value': '1.5', 'value': -2.5, 'attribute_name': 'generic.attack_speed', 'slot': 'mainhand'})
+attribute.append({'name': '攻擊力', 'show_value': '8', 'value': 6, 'attribute_name': 'generic.attack_damage', 'slot': 'mainhand'})
+attribute.append({'name': '攻擊速度', 'show_value': '1.4', 'value': -2.6, 'attribute_name': 'generic.attack_speed', 'slot': 'mainhand'})
+attribute.append({'name': '抗擊退', 'show_value': '40%', 'value': 0.4, 'attribute_name': 'generic.knockback_resistance', 'slot': 'mainhand'})
+attribute.append({'name': '', 'show_value': '%', 'value': 0.2, 'attribute_name': 'generic.armor', 'slot': 'offhand'})
 
 # ----- init ----- #
 

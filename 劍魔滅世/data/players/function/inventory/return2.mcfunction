@@ -67,5 +67,10 @@ item replace entity @s armor.chest from block ~ 255 ~ container.15
 item replace entity @s armor.head from block ~ 255 ~ container.16
 item replace entity @s weapon.offhand from block ~ 255 ~ container.17
 
+# get levels
+$data modify storage temp lvl set from storage bag:$(bag) $(0)$(1)$(2)$(3)_lvl
+function players:inventory/return3 with storage temp lvl
+
 data remove storage temp bag
+data remove storage temp lvl
 setblock ~ 255 ~ air
