@@ -1,0 +1,27 @@
+{
+    "temperature": 0,
+    "downfall": 0,
+    "has_precipitation": true,
+    "temperature_modifier": "none",
+    "creature_spawn_probability": 0,
+    "effects": {
+      "sky_color": 1,
+      "fog_color": 1,
+      "water_color": 15673,
+      "water_fog_color": 11819,
+      "grass_color": 156730,
+      "foliage_color": 36005,
+      "grass_color_modifier": "none",
+      "particle": {
+        "options": {
+          "type": "minecraft:enchant"
+        },
+        "probability": 0.01
+      }
+    },
+    "spawners": {},
+    "spawn_costs": {},
+    "carvers": {},
+    "features": []
+  }
+  

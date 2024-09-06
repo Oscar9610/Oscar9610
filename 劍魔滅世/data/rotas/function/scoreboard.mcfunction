@@ -25,3 +25,5 @@ scoreboard objectives add rotas.boss.infinite_abyss.fx dummy "[時空之境] 無
 scoreboard players set @a bless.wts.cd 0
 
 scoreboard players display name .asker.1 rotas.story "[時空之境開場白]"
+
+scoreboard players add #story.2.temp rotas.global.main 0

@@ -6,6 +6,10 @@ scoreboard objectives add monster_weakness.duration dummy "玩家怪物弱點加
 
 scoreboard objectives add boss.respawn.cd dummy "自動生成BOSS間隔"
 
+scoreboard objectives add monster.id dummy "怪物編號"
+
+scoreboard objectives add animation.controller dummy "動畫控制器"
+
 # ----- 特殊Boss記分板 ----- #
 # 取名方式 : [怪物名稱].move[技能id] / movep = 被動的意思(passive)
 ## 毒霧

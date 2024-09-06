@@ -179,13 +179,28 @@ scoreboard objectives add firework_cd dummy "煙花斧 CD"
 scoreboard objectives add firework_max_cd dummy "煙花斧 CD上限"
 
 scoreboard players add @a firework_cd 0
-scoreboard players set @a firework_max_cd 7
+scoreboard players set @a firework_max_cd 3
 
 #===================================================================
 #附魔
 scoreboard objectives add enchantment.petrifaction dummy "石化"
 scoreboard objectives add enchantment.illusory_claw dummy "幻影爪"
 
+
+#===================================================================
+#迴力鏢
+
+scoreboard objectives add boomerang.id dummy [{"text":"[","color":"yellow","bold": false},{"text":"迴力鏢","color":"aqua","bold": true},{"text":"] ","color":"yellow","bold": false},{"text":" 編號","color":"white"}]
+scoreboard objectives add boomerang.return dummy [{"text":"[","color":"yellow","bold": false},{"text":"迴力鏢","color":"aqua","bold": true},{"text":"] ","color":"yellow","bold": false},{"text":"返回","color":"white"}]
+scoreboard objectives add boomerang.range dummy [{"text":"[","color":"yellow","bold": false},{"text":"迴力鏢","color":"aqua","bold": true},{"text":"] ","color":"yellow","bold": false},{"text":"範圍","color":"white"}]
+
+scoreboard objectives add boomerang_cd dummy "迴力鏢 CD"
+scoreboard objectives add boomerang_max_cd dummy "迴力鏢 CD上限"
+
+scoreboard objectives add boomerang.duration dummy "迴力鏢 生存時間"
+
+scoreboard players add @a boomerang_cd 0
+scoreboard players set @a boomerang_max_cd 3
 
 #===================================================================
 #這是武器技能傷害取玩家攻擊力的百分比

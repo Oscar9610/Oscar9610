@@ -1,0 +1,1 @@
+effect give @s[predicate=weapons:enchantment/berserker_shackle/sneak] speed 1 6 true

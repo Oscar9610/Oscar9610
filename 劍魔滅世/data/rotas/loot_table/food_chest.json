@@ -1,0 +1,198 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+      {
+        "rolls": {
+          "type": "minecraft:uniform",
+          "min": 3,
+          "max": 8
+        },
+        "bonus_rolls": 0,
+        "entries": [
+          {
+            "type": "minecraft:alternatives",
+            "children": [
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:wooden_axe",
+                "weight": 3
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:wooden_hoe",
+                "weight": 3
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:wooden_pickaxe",
+                "weight": 3
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:wooden_sword",
+                "weight": 3
+              }
+            ]
+          },
+          {
+            "type": "minecraft:alternatives",
+            "children": [
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:bread",
+                "weight": 5,
+                "functions": [
+                  {
+                    "function": "minecraft:set_count",
+                    "count": {
+                      "min": 1,
+                      "max": 4
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:rotten_flesh",
+                "weight": 5,
+                "functions": [
+                  {
+                    "function": "minecraft:set_count",
+                    "count": {
+                      "min": 1,
+                      "max": 4
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:carrot",
+            "weight": 7,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 0,
+                  "max": 3
+                },
+                "add": false
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:apple",
+            "weight": 3,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 0,
+                  "max": 4
+                },
+                "add": false
+              }
+            ]
+          },
+          {
+            "type": "minecraft:alternatives",
+            "children": [
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:beef",
+                "weight": 2
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:porkchop",
+                "weight": 2
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:mutton",
+                "weight": 2
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:chicken",
+                "weight": 2
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:rabbit",
+                "weight": 2
+              }
+            ]
+          },
+          {
+            "type": "minecraft:alternatives",
+            "children": [
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:stone",
+                "weight": 5,
+                "functions": [
+                  {
+                    "function": "minecraft:set_count",
+                    "count": {
+                      "min": 0,
+                      "max": 5
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:cobblestone",
+                "weight": 5,
+                "functions": [
+                  {
+                    "function": "minecraft:set_count",
+                    "count": {
+                      "min": 0,
+                      "max": 5
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:deepslate",
+                "weight": 5,
+                "functions": [
+                  {
+                    "function": "minecraft:set_count",
+                    "count": {
+                      "min": 0,
+                      "max": 5
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:andesite",
+                "weight": 5,
+                "functions": [
+                  {
+                    "function": "minecraft:set_count",
+                    "count": {
+                      "min": 0,
+                      "max": 5
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "random_sequence": "minecraft:chests/village/village_temple"
+  }
+  

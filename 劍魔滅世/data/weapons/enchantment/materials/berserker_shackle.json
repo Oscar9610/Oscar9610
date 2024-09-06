@@ -1,0 +1,62 @@
+{
+    "description": [
+      {
+        "text": "[狂暴者枷鎖]: ",
+        "color": "aqua",
+        "italic": false
+      },
+      {
+        "text": "攻擊力+3",
+        "color": "dark_green",
+        "italic": false
+      },
+      {
+        "text": " 跳躍力-40%",
+        "color": "dark_red",
+        "italic": false
+      },
+      {
+        "text": " 移動速度-40%",
+        "color": "dark_red",
+        "italic": false
+      }
+    ],
+    "supported_items": "#minecraft:enchantable/weapon",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+      "base": 10,
+      "per_level_above_first": 5
+    },
+    "max_cost": {
+      "base": 10,
+      "per_level_above_first": 5
+    },
+    "anvil_cost": 1,
+    "slots": [
+      "mainhand"
+    ],
+    "effects": {
+      "minecraft:attributes": [
+        {
+          "id": "1234-1234-1234-1234",
+          "attribute": "minecraft:generic.attack_damage",
+          "amount": 3,
+          "operation": "add_value"
+        },
+        {
+          "id": "1234-1234-1234-1234",
+          "attribute": "minecraft:generic.movement_speed",
+          "amount": -0.4,
+          "operation": "add_multiplied_base"
+        },
+        {
+          "id": "1234-1234-1234-1234",
+          "attribute": "minecraft:generic.jump_strength",
+          "amount": -0.4,
+          "operation": "add_multiplied_base"
+        }
+      ]
+    }
+  }
+  
