@@ -3,6 +3,8 @@
 #收納
 function entity:sounds/main
 
+function monsters:tick
+
 function time_traveler:interaction/main
 function time_traveler:players/effects/main
 function time_traveler:system/main

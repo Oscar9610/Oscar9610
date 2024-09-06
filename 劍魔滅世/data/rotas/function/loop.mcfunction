@@ -1,3 +1,6 @@
+## ---循環--- ##
+schedule function rotas:loop 1t
+
 #水星 時空之境
 
 ## ---傳送門進入--- ##
@@ -15,16 +18,6 @@ execute in game_map:realm_of_time_and_space positioned 1 55 -5 as @a[dx=2,dy=3] 
 # execute in game_map:orantes positioned -6 62 104 if score rotas.cd rotas.global.main matches 0 if score rotas._chapter_2 spaceship.story matches 44.. if score #fx.tp_door orantes.global.main matches 0 if entity @a[distance=..8] run function rotas:fx/tp_door/start/use
 # execute in game_map:orantes positioned -6 62 104 if score rotas.cd rotas.global.main matches 0 if score rotas._chapter_2 spaceship.story matches 44.. if score #fx.tp_door orantes.global.main matches 0 if entity @a[distance=..8] run scoreboard players set #fx.tp_door orantes.global.main 1
 
-
-
-## ---開頭--- ##
-execute in game_map:realm_of_time_and_space positioned -27 43 96 store result score #opening rotas.global.main if entity @a[distance=..5]
-execute in game_map:realm_of_time_and_space positioned -27 43 96 if score #opening rotas.global.main matches 1 if score #opening.temp rotas.global.main matches 0 run function rotas:story/start
-execute if score #opening rotas.global.main matches 1 if score #opening.temp rotas.global.main matches 0 run scoreboard players set #opening.temp rotas.global.main 1
-execute in game_map:realm_of_time_and_space positioned -27 43 96 if score #opening rotas.global.main matches 0 if score #opening.temp rotas.global.main matches 1 run function rotas:story/reset
-execute if score #opening rotas.global.main matches 0 if score #opening.temp rotas.global.main matches 1 run scoreboard players set #opening.temp rotas.global.main 0
-
-
 ## ---傳送門CD--- ##
 execute if score rotas.cd rotas.global.main matches 1.. in game_map:orantes run fill -5 62 102 -7 65 102 red_stained_glass_pane[east=true,west=true] replace
 execute if score rotas.cd rotas.global.main matches 0 in game_map:orantes run fill -5 62 102 -7 65 102 air replace
@@ -32,5 +25,35 @@ execute if score rotas.cd rotas.global.main matches 0 in game_map:orantes run fi
 ## ---切換生成模式--- ##
 execute as @a[gamemode=adventure] at @s if dimension game_map:realm_of_time_and_space run function rotas:change_gamemode
 
-## ---循環--- ##
-schedule function rotas:loop 1t
+## ---開頭--- ##
+
+    # Detect
+    execute in game_map:realm_of_time_and_space positioned -27 43 96 store result score #opening rotas.global.main if entity @a[distance=..5]
+
+    # If true;
+    execute in game_map:realm_of_time_and_space positioned -27 43 96 if score #opening rotas.global.main matches 1 if score #opening.temp rotas.global.main matches 0 run function rotas:story/1/start
+    execute if score #opening rotas.global.main matches 1 if score #opening.temp rotas.global.main matches 0 run scoreboard players set #opening.temp rotas.global.main 1
+
+    # Else
+    execute in game_map:realm_of_time_and_space positioned -27 43 96 if score #opening rotas.global.main matches 0 if score #opening.temp rotas.global.main matches 1 run function rotas:story/1/reset
+    execute if score #opening rotas.global.main matches 0 if score #opening.temp rotas.global.main matches 1 run scoreboard players set #opening.temp rotas.global.main 0
+
+## ---進入安全區--- ##
+
+    # True
+
+    # execute in game_map:realm_of_time_and_space positioned -308 32 310 if entity @a[distance=..3] unless function rotas:story/2/start run return 1
+
+    # execute in game_map:realm_of_time_and_space positioned -308 32 310 unless entity @a[distance=..3] unless function rotas:story/2/reset run return fail
+
+    # execute in game_map:realm_of_time_and_space positioned -308 32 310 if score #story.2 rotas.global.main matches 1 if score #story.2.temp rotas.global.main matches 0 run function rotas:story/2/start
+    # execute if score #story.2 rotas.global.main matches 1 if score #story.2.temp rotas.global.main matches 0 run scoreboard players set #story.2.temp rotas.global.main 1
+
+    # False
+
+
+    # execute in game_map:realm_of_time_and_space positioned -308 32 310 if score #story.2 rotas.global.main matches 0 if score #story.2.temp rotas.global.main matches 1 run function rotas:story/2/reset
+    # execute if score #story.2 rotas.global.main matches 0 if score #story.2.temp rotas.global.main matches 1 run scoreboard players set #story.2.temp rotas.global.main 0
+
+    # # Detect
+    # execute in game_map:realm_of_time_and_space positioned -308 32 310 store result score #story.2 rotas.global.main if entity @a[distance=..5]

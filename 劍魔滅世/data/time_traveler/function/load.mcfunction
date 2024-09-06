@@ -12,6 +12,10 @@ execute as @a at @s if score #global difficulty matches 0 run playsound minecraf
 execute as @a at @s if score #global difficulty matches 0 run playsound minecraft:block.note_block.pling master @s ~ ~1 ~ 9999 1
 execute if score #global difficulty matches 0 run tellraw @a [{"text":"\n⚠: ","color":"gold"},{"text":"你現在的模式是","color":"white"},{"text":"和平模式","color":"gold","bold":true},"\n",{"text":"防止BOSS、怪物","color":"white"},{"text":"不生成","color":"red","bold":true},{"text":" 請確保不是和平模式！\n"}]
 
+
+tellraw @a[gamemode=!creative,gamemode=!spectator] [{"text":"\n⚠: ","color":"gold"},{"text":"在遊玩地圖之前可能會出現閃光或圖形等導致癲癇發作\n如有類似癲癇症狀，請立即中止遊玩此地圖！\n\n","color":"white"},{"text":"和平模式","color":"gold","bold":true},"\n",{"text":"防止BOSS、怪物","color":"white"},{"text":"不生成","color":"red","bold":true},{"text":" 請確保不是和平模式！\n"}]
+playsound minecraft:entity.cat.ambient voice @a[gamemode=!creative,gamemode=!spectator] ~ ~ ~ 9999 1
+playsound minecraft:block.note_block.pling voice @a[gamemode=!creative,gamemode=!spectator] ~ ~1 ~ 9999 0
 # ============================================================================================
 # 主線、支線顏色區分
 
@@ -131,6 +135,7 @@ function monsters:main
 schedule function weapons:timer 1s
 schedule function weapons:type/double_sword_fire/passive/loop 1s
 schedule function weapons:type/noob_axe/passive/heal 10s
+schedule function weapons:loop/main 1t
 # ============================================================================================
 
 
