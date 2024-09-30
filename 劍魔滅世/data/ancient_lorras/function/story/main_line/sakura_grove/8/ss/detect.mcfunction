@@ -1,0 +1,2 @@
+execute if entity @s[nbt={Item:{id:"minecraft:prismarine_shard",count:1,components:{"minecraft:custom_data":{storm_shard:1b}}}}] if score #al.sword_demon.boss.1 ancient_lorras.global.main matches 0 run function ancient_lorras:story/main_line/sakura_grove/8/ss/true
+execute unless entity @s[nbt={Item:{id:"minecraft:prismarine_shard",count:1,components:{"minecraft:custom_data":{storm_shard:1b}}}}] run function ancient_lorras:story/main_line/sakura_grove/8/ss/false

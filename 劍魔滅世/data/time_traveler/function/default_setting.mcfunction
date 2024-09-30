@@ -1,5 +1,8 @@
 
 # player
+title @a title ""
+title @a subtitle ""
+title @a times 20 40 20
 clear @a
 effect clear @a
 gamemode adventure @a

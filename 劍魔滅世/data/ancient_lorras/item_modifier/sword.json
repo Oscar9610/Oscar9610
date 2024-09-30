@@ -1,0 +1,43 @@
+[
+    {
+      "function": "minecraft:enchant_with_levels",
+      "levels": {
+        "type": "minecraft:score",
+        "target": "this",
+        "score": "test",
+        "scale": 1
+      },
+      "options": "#minecraft:in_enchanting_table"
+    },
+    {
+      "function": "minecraft:set_item",
+      "item": "minecraft:stone_sword",
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.33
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_item",
+      "item": "minecraft:stone_axe",
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.33
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_item",
+      "item": "minecraft:stone_pickaxe",
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.33
+        }
+      ]
+    }
+  ]
+  

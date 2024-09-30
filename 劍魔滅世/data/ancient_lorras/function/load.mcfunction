@@ -6,6 +6,9 @@ execute if score .main_line orantes.story matches 129.. run function ancient_lor
 #草星
 
 function ancient_lorras:world_area/reload
+function ancient_lorras:memoria/main.scoreboard
+function ancient_lorras:ctm/weapons/scoreboard
+function ancient_lorras:ctm/weapons/timer
 #========================================================
 
 # 古羅拉斯 幻影麋鹿

@@ -1,0 +1,108 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 5
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "weight": 75,
+          "functions": [
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{money:1b}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:unbreakable": {
+                  "show_in_tooltip": false
+                },
+                "minecraft:enchantments": {
+                  "levels": {},
+                  "show_in_tooltip": false
+                },
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [],
+                  "show_in_tooltip": false
+                },
+                "minecraft:custom_name": "{\"extra\":[{\"color\":\"dark_purple\",\"text\":\"星輝幣 1 元\"}],\"italic\":false,\"text\":\"\"}",
+                "minecraft:lore": [
+                  "{\"extra\":[{\"color\":\"dark_gray\",\"text\":\"通用金錢\"}],\"italic\":false,\"text\":\"\"}",
+                  "{\"extra\":[{\"color\":\"gray\",\"text\":\"全宇宙通用的貨幣\"}],\"italic\":false,\"text\":\"\"}",
+                  "{\"extra\":[{\"color\":\"gray\",\"text\":\"任誰都能理解它的價值與份量\"}],\"italic\":false,\"text\":\"\"}"
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 5,
+                "max": 10
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:trial_key",
+          "weight": 25
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_star",
+          "weight": 99999,
+          "functions": [
+            {
+              "function": "minecraft:set_custom_model_data",
+              "value": 1
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "擊敗紅獄深淵的深淵魔將掉落的赤月之石",
+                  "color": "blue",
+                  "bold": false,
+                  "italic": false,
+                  "insertion": "\\n"
+                },
+                {
+                  "text": "據說蘊含著強大的力量可以開啟薄霧山脈的BOSS傳送門",
+                  "color": "blue",
+                  "bold": false,
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "target": "item_name",
+              "name": {
+                "text": "☾赤月之石",
+                "color": "#AB0000",
+                "bold": true,
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{blood_moon_stone:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+execute if entity @s[nbt={Item:{id:"minecraft:nether_star",count:1,components:{"minecraft:custom_data":{blood_moon_stone:1b}}}}] if score #al.sword_demon.boss ancient_lorras.global.main matches 0 run function ancient_lorras:story/main_line/sakura_grove/8/bms/true
+execute unless entity @s[nbt={Item:{id:"minecraft:nether_star",count:1,components:{"minecraft:custom_data":{blood_moon_stone:1b}}}}] run function ancient_lorras:story/main_line/sakura_grove/8/bms/false

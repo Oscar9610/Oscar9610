@@ -8,6 +8,8 @@ scoreboard objectives add wind_sword_cd dummy "風力劍CD"
 scoreboard objectives add wind_sword_max_cd dummy "風力劍CD上限"
 scoreboard objectives add wind_sword_timer dummy "風力劍使用時間"
 
+scoreboard objectives add wind_sword_debuff_cd dummy "風力劍減防CD"
+
 scoreboard players add @a wind_sword_cd 0
 scoreboard players set @a wind_sword_max_cd 8
 
