@@ -1,0 +1,24 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:carrot_on_a_stick",
+        "count": 1,
+        "components": {
+          "minecraft:custom_model_data": 32
+        }
+      },
+      "title": "原神！啟動！",
+      "description": "我最喜歡玩原神了！我是可莉玩家！這是我買的新衣服！可莉！蹦蹦炸彈！",
+      "background": "minecraft:textures/gui/advancements/backgrounds/bamboo_block.png",
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true
+    },
+    "parent": "task:ancient_lorras/main_line/1",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

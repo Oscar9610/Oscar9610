@@ -1,0 +1,1 @@
+scoreboard players remove @a[scores={typhoon_axe_use=1..}] typhoon_axe_use 1

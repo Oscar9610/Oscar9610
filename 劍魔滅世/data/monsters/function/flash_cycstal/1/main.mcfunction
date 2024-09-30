@@ -14,10 +14,12 @@ scoreboard players set #flash.cycstal.temp global.main 0
 execute anchored eyes run function monsters:flash_cycstal/1/particle
 
 title @a[distance=..5,gamemode=!creative,gamemode=!spectator] title {"text":"\uE009"}
-title @a[distance=..5,gamemode=!creative,gamemode=!spectator] times 2 40 20
+title @a[distance=..5,gamemode=!creative,gamemode=!spectator] times 2 10 20
 effect give @a[distance=..5,gamemode=!creative,gamemode=!spectator] minecraft:nausea 10 255 false
 effect give @a[distance=..5,gamemode=!creative,gamemode=!spectator] minecraft:darkness 5 255 true
-effect give @a[distance=..5,gamemode=!creative,gamemode=!spectator] minecraft:wither 5 5 true
+effect give @a[distance=..5,gamemode=!creative,gamemode=!spectator] minecraft:wither 3 5 true
+
+advancement grant @a[distance=..5] only task:ancient_lorras/adv/genshin_impact
 
 execute at @a[distance=..5,gamemode=!creative,gamemode=!spectator] run particle flash ~ ~1 ~ 0 0 0 0 1
 

@@ -8,6 +8,9 @@ scoreboard players set #hp global.main 30
 # 攻擊力
 scoreboard players set #atk global.main 4
 
+# 盔甲值
+scoreboard players set #armor global.main 4
+
 # 隨機技能CD
 execute store result score @e[tag=monster.spawn,limit=1] monster.skill.cast.cd run random value 60..100
 

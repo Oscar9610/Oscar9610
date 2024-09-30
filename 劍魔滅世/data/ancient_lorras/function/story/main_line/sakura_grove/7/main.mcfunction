@@ -16,15 +16,15 @@ execute if score .main_line ancient_lorras.story matches 88 run tellraw @a[dista
 execute if score .main_line ancient_lorras.story matches 88 run tellraw @a[distance=..16] [{"text":"［艾米］(艾米指出了其餘異變森林的位置)"}]
 execute if score .main_line ancient_lorras.story matches 89 run tellraw @a[distance=..16] [{"text":"［艾米］曾經，我們可以抵抗深淵的襲擊，但這依舊治標不治本，深淵每一次的帶來的災害都越來越大"}]
 execute if score .main_line ancient_lorras.story matches 90 run tellraw @a[distance=..16] [{"text":"［艾米］我們的戰力有限，且漸漸落入下風"}]
-execute if score .main_line ancient_lorras.story matches 91 run tellraw @a[distance=..16] [{"text":"［艾米］異變的森林有著強大的魔將"}]
-execute if score .main_line ancient_lorras.story matches 92 run tellraw @a[distance=..16] [{"text":"［艾米］我們發現這些魔將在被擊敗後會掉落一個叫 \"憶鱗\" 的碎片"}]
-execute if score .main_line ancient_lorras.story matches 93 run tellraw @a[distance=..16] [{"text":"［艾米］就是這個，它可以為強大的武器附魔，使武器更加強大"}]
+execute if score .main_line ancient_lorras.story matches 91 run tellraw @a[distance=..16] [{"text":"［艾米］我們發現這些異變的森林都存在著神秘的核心"}]
+execute if score .main_line ancient_lorras.story matches 92 run tellraw @a[distance=..16] [{"text":"［艾米］貌似跟薄霧山脈有關係"}]
+execute if score .main_line ancient_lorras.story matches 93 run scoreboard players add .main_line ancient_lorras.story 1
 execute if score .main_line ancient_lorras.story matches 94 run tellraw @a[distance=..16] [{"text":"［艾米］因為我們已經無法去消滅比我們更強大的魔將"}]
 execute if score .main_line ancient_lorras.story matches 95 run tellraw @a[distance=..16] [{"text":"［艾米］所以只能夠拜託實力強大的你們擊敗這裡的深淵"}]
 execute if score .main_line ancient_lorras.story matches 96 run tellraw @a[distance=..16] [{"text":"［艾米］如果你們獲得憶鱗，可以去這裡附近強化武器"}]
 
 execute if score .main_line ancient_lorras.story matches 97 run tellraw @a[distance=..16] {"text":"\n【目標】前往異變的森林討伐魔將獲得憶鱗","color":"gold"}
-execute if score .main_line ancient_lorras.story matches 97 run function ancient_lorras:story/main_line/sakura_grove/7/intelligence_reset
+execute if score .main_line ancient_lorras.story matches 97 run function ancient_lorras:story/main_line/sakura_grove/8/reset
 
 execute if score .main_line ancient_lorras.story matches 97 run kill @e[tag=al.ml.hill.4]
 
