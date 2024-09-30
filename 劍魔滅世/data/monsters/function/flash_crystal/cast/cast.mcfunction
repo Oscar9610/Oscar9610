@@ -3,4 +3,4 @@
 function monsters:-init/no_cast
 
 # Skill
-function monsters:flash_cycstal/1/use
+function monsters:flash_crystal/1/use

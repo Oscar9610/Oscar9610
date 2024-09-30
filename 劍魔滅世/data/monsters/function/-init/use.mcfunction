@@ -24,18 +24,12 @@ execute store result storage temp atk int 1 run scoreboard players operation #at
 function monsters:-init/atk with storage temp
 
 ## ----- 盔甲值 ----- ##
-# 公式 : 同上
-scoreboard players operation #temp.armor global.main = .world_level global.main
-scoreboard players add #temp.armor global.main 1
-execute store result score #temp2.armor global.main if entity @a[gamemode=!spectator]
-scoreboard players add #temp2.armor global.main 1
-scoreboard players operation #armor global.main *= #temp.armor global.main
-scoreboard players operation #armor global.main *= #temp2.armor global.main
-execute store result storage temp armor int 1 run scoreboard players operation #armor global.main /= #4 global.main
+# 公式 : 無
+execute store result storage temp armor int 1 run scoreboard players get #armor global.main
 
 function monsters:-init/armor with storage temp
 
 # 防摔死
-attribute @s minecraft:generic.safe_fall_distance modifier add no_fall_damage 9999 add_multiplied_base
+attribute @s minecraft:generic.safe_fall_distance modifier add no_fall_damage 9999 add_value
 
 tag @s remove monster.spawn
