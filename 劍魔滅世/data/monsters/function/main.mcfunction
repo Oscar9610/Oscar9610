@@ -23,13 +23,15 @@ execute as @e[type=#time_traveler:monsters,tag=monster,scores={monster.skill.cas
 
 # 怪物技能CD冷卻
 scoreboard players remove @e[tag=monster,scores={monster.skill.cast.cd=0..}] monster.skill.cast.cd 1
-scoreboard players add @e[tag=monster,scores={player.space_time_deceleration=1..}] monster.skill.cast.cd 1
+scoreboard players add @e[tag=monster,scores={monster.disable.skill=1..}] monster.skill.cast.cd 1
 
 # 怪物技能施法中
 scoreboard players add @e[type=#time_traveler:monsters,tag=monster] monster.skill.casting 1
 
 # Boss 重生系統
 function monsters:boss_respawn/main
+
+scoreboard players remove @e[scores={monster.disable.skill=1..}] monster.disable.skill 1
 
 # 循環
 schedule function monsters:main 1t

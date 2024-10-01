@@ -3,6 +3,7 @@ scoreboard objectives add monster.skill.cast.cd dummy "怪物技能目前冷卻"
 scoreboard objectives add monster.skill.casting dummy "怪物技能施法中"
 scoreboard objectives add monster.skill.rdm.skill dummy "隨機放技能"
 scoreboard objectives add monster_weakness.duration dummy "玩家怪物弱點加成持續時間"
+scoreboard objectives add monster.disable.skill dummy "怪物技能沉默"
 
 scoreboard objectives add boss.respawn.cd dummy "自動生成BOSS間隔"
 

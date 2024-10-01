@@ -4,6 +4,7 @@
 execute as @e[type=!minecraft:player,distance=..8] run data merge entity @s {Motion:[0.0,0.5,0.0]}
 effect give @e[type=!minecraft:player,distance=..8] minecraft:levitation 1 0 true
 scoreboard players set @e[type=!player,distance=..8] player.space_time_deceleration 100
+scoreboard players set @e[type=!player,distance=..8] monster.disable.skill 100
 
 # Self
 effect give @s minecraft:resistance 1 255 true
