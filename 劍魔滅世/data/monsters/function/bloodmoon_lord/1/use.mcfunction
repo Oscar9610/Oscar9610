@@ -17,3 +17,5 @@ spreadplayers ~ ~ 10 20 false @n[type=blaze,tag=bloodmoon_lord.1.2]
 title @a[distance=..60] actionbar {"text":"控制連接線碰撞水晶即可造成傷害，碰到BOSS即死亡！","color":"dark_red"}
 playsound minecraft:block.end_portal_frame.fill master @a ~ ~ ~ 10 0
 playsound minecraft:block.end_portal_frame.fill master @a ~ ~ ~ 10 0
+
+function monsters:bloodmoon_lord/cast/end

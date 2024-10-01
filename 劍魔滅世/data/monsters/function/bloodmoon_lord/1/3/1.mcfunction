@@ -1,6 +1,6 @@
 
 # particle
-particle dust{color:[0.5,0.5,0.5],scale:0.8} ~ ~ ~ 0 0 0 0 0 force
+particle dust{color:[1.0,0.0,0.0],scale:0.5} ~ ~ ~ 0 0 0 0 0 force
 
 # detect
 execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @n[type=blaze,tag=bloodmoon_lord.1.2,dx=0,dy=0,dz=0] run return 0
