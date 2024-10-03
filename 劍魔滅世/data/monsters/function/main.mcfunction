@@ -1,6 +1,5 @@
 
 ## ----- 怪物種類 ----- ##
-function monsters:fiery_abyss/animation/main
 function monsters:flash_crystal/main
 function monsters:dark_overlord/main
 function monsters:soul_abyss_beast/main
