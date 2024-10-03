@@ -1,5 +1,5 @@
 
-summon zombie ~ ~ ~ {DeathLootTable:"monsters:boss/lorras",PersistenceRequired:0b,Tags:["normal.zombie.hurt.sound","boss","monster","boss","su","weakness.physical","weakness.thunder","weakness.fire","monster.spawn"],CustomName:'{"italic":false,"text":"蘇\\uE011\\uE003"}',ArmorDropChances:[0.000F,0.000F,0.000F,0.000F],attributes:[{id:"minecraft:generic.attack_knockback",base:2},{id:"minecraft:generic.attack_speed",base:4},{id:"minecraft:generic.gravity",base:0.08},{id:"minecraft:generic.movement_speed",base:0.26},{id:"minecraft:generic.water_movement_efficiency",base:3},{id:"minecraft:generic.scale",base:1}]}
+execute in game_map:ancient_lorras run summon zombie 10000 60 10000 {DeathLootTable:"monsters:boss/lorras",PersistenceRequired:0b,Tags:["boss","monster","boss","su","weakness.physical","weakness.thunder","weakness.fire","monster.spawn"],CustomName:'{"italic":false,"text":"蘇\\uE011\\uE003"}',ArmorDropChances:[0.000F,0.000F,0.000F,0.000F],attributes:[{id:"minecraft:generic.attack_knockback",base:2},{id:"minecraft:generic.attack_speed",base:4},{id:"minecraft:generic.gravity",base:0.08},{id:"minecraft:generic.movement_speed",base:0.26},{id:"minecraft:generic.water_movement_efficiency",base:3},{id:"minecraft:generic.scale",base:1}]}
 
 ## ----- 怪物屬性 ----- ##
 # 血量
