@@ -26,4 +26,5 @@ scoreboard players set @a bless.wts.cd 0
 
 scoreboard players display name .asker.1 rotas.story "[時空之境開場白]"
 
-scoreboard players add #story.2.temp rotas.global.main 0
+scoreboard players add #asker.1.spawn.temp rotas.global.main 0
+scoreboard players add #asker.2.spawn.temp rotas.global.main 0

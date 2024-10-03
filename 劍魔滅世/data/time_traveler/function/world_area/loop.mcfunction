@@ -30,4 +30,7 @@ execute as @a at @s unless biome ~ ~ ~ orantes:sculk_biome run advancement grant
 execute as @a at @s if biome ~ ~ ~ orantes:map_hall run advancement grant @s only time_traveler:world_area/map_hall/in
 execute as @a at @s unless biome ~ ~ ~ orantes:map_hall run advancement grant @s only time_traveler:world_area/map_hall/out
 
+execute as @a at @s if biome ~ ~ ~ orantes:walkman467_arcade run advancement grant @s only time_traveler:world_area/walkman467_arcade/in
+execute as @a at @s unless biome ~ ~ ~ orantes:walkman467_arcade run advancement grant @s only time_traveler:world_area/walkman467_arcade/out
+
 schedule function time_traveler:world_area/loop 1t

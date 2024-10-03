@@ -1,1 +1,1 @@
-execute as @e[type=zombie] at @s run function entity:sounds/zombie/guide
+execute as @e[type=zombie,tag=normal.zombie.hurt.sound] at @s run function entity:sounds/zombie/guide

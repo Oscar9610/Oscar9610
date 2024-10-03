@@ -23,12 +23,6 @@ execute store result storage temp atk int 1 run scoreboard players operation #at
 
 function monsters:-init/atk with storage temp
 
-## ----- 盔甲值 ----- ##
-# 公式 : 無
-execute store result storage temp armor int 1 run scoreboard players get #armor global.main
-
-function monsters:-init/armor with storage temp
-
 # 防摔死
 attribute @s minecraft:generic.safe_fall_distance modifier add no_fall_damage 9999 add_value
 

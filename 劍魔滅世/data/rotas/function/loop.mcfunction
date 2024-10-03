@@ -28,32 +28,21 @@ execute as @a[gamemode=adventure] at @s if dimension game_map:realm_of_time_and_
 ## ---開頭--- ##
 
     # Detect
-    execute in game_map:realm_of_time_and_space positioned -27 43 96 store result score #opening rotas.global.main if entity @a[distance=..5]
+    execute in game_map:realm_of_time_and_space positioned -27 43 96 store result score #asker.1.spawn rotas.global.main if entity @a[distance=..5]
 
     # If true;
-    execute in game_map:realm_of_time_and_space positioned -27 43 96 if score #opening rotas.global.main matches 1 if score #opening.temp rotas.global.main matches 0 run function rotas:story/1/start
-    execute if score #opening rotas.global.main matches 1 if score #opening.temp rotas.global.main matches 0 run scoreboard players set #opening.temp rotas.global.main 1
+    execute in game_map:realm_of_time_and_space positioned -27 43 96 if score #asker.1.spawn rotas.global.main matches 1 if score #asker.1.spawn.temp rotas.global.main matches 0 run function rotas:story/1/start
 
     # Else
-    execute in game_map:realm_of_time_and_space positioned -27 43 96 if score #opening rotas.global.main matches 0 if score #opening.temp rotas.global.main matches 1 run function rotas:story/1/reset
-    execute if score #opening rotas.global.main matches 0 if score #opening.temp rotas.global.main matches 1 run scoreboard players set #opening.temp rotas.global.main 0
+    execute in game_map:realm_of_time_and_space positioned -27 43 96 if score #asker.1.spawn rotas.global.main matches 0 if score #asker.1.spawn.temp rotas.global.main matches 1 run function rotas:story/1/reset
 
 ## ---進入安全區--- ##
 
-    # True
+    # Detect
+    execute in game_map:realm_of_time_and_space positioned -308 32 310 store result score #asker.2.spawn rotas.global.main if entity @a[distance=..5]
 
-    # execute in game_map:realm_of_time_and_space positioned -308 32 310 if entity @a[distance=..3] unless function rotas:story/2/start run return 1
+    # If true;
+    execute in game_map:realm_of_time_and_space positioned -308 32 310 if score #asker.2.spawn rotas.global.main matches 1 if score #asker.2.spawn.temp rotas.global.main matches 0 run function rotas:story/2/start
 
-    # execute in game_map:realm_of_time_and_space positioned -308 32 310 unless entity @a[distance=..3] unless function rotas:story/2/reset run return fail
-
-    # execute in game_map:realm_of_time_and_space positioned -308 32 310 if score #story.2 rotas.global.main matches 1 if score #story.2.temp rotas.global.main matches 0 run function rotas:story/2/start
-    # execute if score #story.2 rotas.global.main matches 1 if score #story.2.temp rotas.global.main matches 0 run scoreboard players set #story.2.temp rotas.global.main 1
-
-    # False
-
-
-    # execute in game_map:realm_of_time_and_space positioned -308 32 310 if score #story.2 rotas.global.main matches 0 if score #story.2.temp rotas.global.main matches 1 run function rotas:story/2/reset
-    # execute if score #story.2 rotas.global.main matches 0 if score #story.2.temp rotas.global.main matches 1 run scoreboard players set #story.2.temp rotas.global.main 0
-
-    # # Detect
-    # execute in game_map:realm_of_time_and_space positioned -308 32 310 store result score #story.2 rotas.global.main if entity @a[distance=..5]
+    # Else
+    execute in game_map:realm_of_time_and_space positioned -308 32 310 if score #asker.2.spawn rotas.global.main matches 0 if score #asker.2.spawn.temp rotas.global.main matches 1 run function rotas:story/2/reset
