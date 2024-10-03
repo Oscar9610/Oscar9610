@@ -12,8 +12,8 @@ execute in game_map:map_hall run spawnpoint @a 0 51 0 -135
 
 # world
 time set midnight
-function time_traveler:reload
-function time_traveler:reset_level
+function global:main/reload
+function global:main/reset_level
 gamerule sendCommandFeedback false
 
 advancement revoke @a only rotas:task/1

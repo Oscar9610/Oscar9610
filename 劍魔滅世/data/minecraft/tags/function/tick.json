@@ -1,5 +1,5 @@
 {
     "values": [
-        "time_traveler:tick"
+        "global:tick"
     ]
 }
