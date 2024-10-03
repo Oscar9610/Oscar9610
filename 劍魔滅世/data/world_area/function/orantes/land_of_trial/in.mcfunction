@@ -8,4 +8,4 @@ playsound minecraft:ambient.cave voice @s ~ ~ ~ 9999 1
 
 scoreboard players set @s music.place_of_trial 1
 
-advancement revoke @s only time_traveler:world_area/land_of_trial/out
+advancement revoke @s only world_area:orantes/land_of_trial/out

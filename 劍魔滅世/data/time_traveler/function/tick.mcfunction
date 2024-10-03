@@ -1,6 +1,7 @@
 
 #=========================================================
 #收納
+function story:loop
 function entity:sounds/main
 
 function monsters:tick
@@ -61,7 +62,3 @@ execute if score .global spaceship_0_61_-51 matches 1 run scoreboard players set
 function world_level:loop
 
 #=========================================================
-
-#偵測是否完成水星主線、支線 終有一日，世界將恢復如初 其二
-
-execute if score .main_line orantes.story matches 130.. if score .main_line orantes.global.main matches 20 run function ancient_lorras:story/main_line/dtal/1/reset

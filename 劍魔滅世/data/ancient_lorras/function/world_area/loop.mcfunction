@@ -33,5 +33,3 @@ execute as @a at @s unless biome ~ ~ ~ orantes:memory_hill run advancement grant
 
 execute as @a at @s if biome ~ ~ ~ orantes:magic_forest run advancement grant @s only ancient_lorras:world_area/magic_forest/in
 execute as @a at @s unless biome ~ ~ ~ orantes:magic_forest run advancement grant @s only ancient_lorras:world_area/magic_forest/out
-
-schedule function ancient_lorras:world_area/loop 1t

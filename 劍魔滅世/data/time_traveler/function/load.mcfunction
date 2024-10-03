@@ -1,7 +1,7 @@
 # ============================================================================================
 # load
 function weapons:load
-function time_traveler:world_area/reload
+function world_area:main/reload
 advancement revoke @a only players:recipe_unlock
 # ============================================================================================
 
@@ -53,7 +53,6 @@ function rpg_items:exchanged/-main
 # ============================================================================================
 # 大廳
 
-function map_hall:interaction/main
 function map_hall:map_hall_fx
 function time_traveler:tp/map_lobby/loop
 
@@ -68,8 +67,7 @@ function time_traveler:players/effects/speed
 # ============================================================================================
 # 世界區域相關
 
-function ancient_lorras:world_area/loop
-function time_traveler:world_area/loop
+function world_area:main/loop
 schedule function ancient_lorras:world_area/emerald_vale/lightning 3s
 
 # ============================================================================================

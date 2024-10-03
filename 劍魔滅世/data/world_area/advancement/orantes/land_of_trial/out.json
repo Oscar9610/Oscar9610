@@ -6,6 +6,6 @@
     }
   },
   "rewards": {
-    "function": "time_traveler:world_area/orantes_city/in"
+    "function": "world_area:orantes/land_of_trial/out"
   }
 }

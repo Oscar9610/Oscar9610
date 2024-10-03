@@ -9,4 +9,4 @@ title @s times 20 20 20
 
 playsound minecraft:bgm.mini_game record @s ~ ~ ~ 9999 1
 
-advancement revoke @s only time_traveler:world_area/walkman467_arcade/out
+advancement revoke @s only world_area:main/walkman467_arcade/out

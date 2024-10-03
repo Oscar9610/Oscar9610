@@ -6,6 +6,6 @@
     }
   },
   "rewards": {
-    "function": "time_traveler:world_area/orantes_city/out"
+    "function": "world_area:main/walkman467_arcade/in"
   }
 }
