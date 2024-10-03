@@ -4,7 +4,7 @@
     function world_area:orantes/loop
 
     # 古羅拉斯
-    function ancient_lorras:world_area/loop
+    function world_area:ancient_lorras/loop
 
 #==================================================
 
