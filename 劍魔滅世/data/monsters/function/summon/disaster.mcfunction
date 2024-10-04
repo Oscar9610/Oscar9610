@@ -4,7 +4,7 @@ summon minecraft:zombie ~ ~ ~ {Tags:["normal.zombie.hurt.sound","boss","monster"
 
 ## ----- 怪物屬性 ----- ##
 # 血量
-scoreboard players set #hp global.main 300
+scoreboard players set #hp global.main 400
 
 # 攻擊力
 scoreboard players set #atk global.main 2

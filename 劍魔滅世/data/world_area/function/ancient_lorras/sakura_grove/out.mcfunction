@@ -1,2 +1,2 @@
-stopsound @s voice minecraft:voice.flute
+execute unless biome ~ ~ ~ orantes:sakura_grove_village run stopsound @s voice minecraft:voice.flute
 advancement revoke @s only world_area:ancient_lorras/sakura_grove/in

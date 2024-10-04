@@ -4,7 +4,7 @@ execute in game_map:ancient_lorras run summon zombie 137 288 128 {DeathLootTable
 
 ## ----- 怪物屬性 ----- ##
 # 血量
-scoreboard players set #hp global.main 300
+scoreboard players set #hp global.main 400
 
 # 攻擊力
 scoreboard players set #atk global.main 5

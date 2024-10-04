@@ -1,0 +1,1 @@
+execute as @a at @s run function ancient_lorras:cutscene/1/3/guide

@@ -10,6 +10,10 @@
     execute as @a at @s if biome ~ ~ ~ orantes:sakura_grove run advancement grant @s only world_area:ancient_lorras/sakura_grove/in
     execute as @a at @s unless biome ~ ~ ~ orantes:sakura_grove run advancement grant @s only world_area:ancient_lorras/sakura_grove/out
 
+    #櫻花村
+    execute as @a at @s if biome ~ ~ ~ orantes:sakura_grove_village run advancement grant @s only world_area:ancient_lorras/sakura_grove/village/in
+    execute as @a at @s unless biome ~ ~ ~ orantes:sakura_grove_village run advancement grant @s only world_area:ancient_lorras/sakura_grove/village/out
+
     #紅獄深淵
     execute as @a at @s if biome ~ ~ ~ orantes:crimson_abyss run advancement grant @s only world_area:ancient_lorras/crimson_abyss/in
     execute as @a at @s unless biome ~ ~ ~ orantes:crimson_abyss run advancement grant @s only world_area:ancient_lorras/crimson_abyss/out

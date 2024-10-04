@@ -1,0 +1,1 @@
+advancement revoke @s only world_area:ancient_lorras/sakura_grove/village/in
