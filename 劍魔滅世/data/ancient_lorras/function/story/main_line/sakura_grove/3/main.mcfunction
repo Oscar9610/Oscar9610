@@ -9,18 +9,18 @@ execute if score .main_line ancient_lorras.story matches 34 run summon minecraft
 execute if score .main_line ancient_lorras.story matches 34 run tellraw @a[distance=..16] {"text":"［？？？］目前看起來只有輕微的皮外傷，這樣包紮完應該就沒問題了"}
 execute as @e[tag=wounded] at @s if score .main_line ancient_lorras.story matches 35 run tp @s ~ ~ ~ facing entity @e[tag=al.ml.hill.2,limit=1]
 
-execute if score .main_line ancient_lorras.story matches 35 run tellraw @a[distance=..16] [{"text":"［希爾］你好，我們正在調查關於魔劍與洞穴的事情"}]
-execute if score .main_line ancient_lorras.story matches 36 run tellraw @a[distance=..16] [{"text":"［希爾］剛剛看到你正在幫兩位傷員包紮傷口，發生什麼事了？"}]
+execute if score .main_line ancient_lorras.story matches 35 run tellraw @a[distance=..16] [{"text":"［你］你好，我正在調查關於魔劍與洞穴的事情"}]
+execute if score .main_line ancient_lorras.story matches 36 run tellraw @a[distance=..16] [{"text":"［你］剛剛看到你正在幫兩位傷員包紮傷口，發生什麼事了？"}]
 execute if score .main_line ancient_lorras.story matches 37 run tellraw @a[distance=..16] [{"text":"［白髮少女］這個洞穴是幻境洞穴，裡面有很多深淵怪物以及遭遇襲擊的傷員"}]
-execute if score .main_line ancient_lorras.story matches 38 run tellraw @a[distance=..16] [{"text":"［小雪］我叫小雪"}]
-execute if score .main_line ancient_lorras.story matches 39 run tellraw @a[distance=..16] [{"text":"［小雪］來到這個星球時，偶然看到這裡有一個洞穴"}]
+execute if score .main_line ancient_lorras.story matches 38 run tellraw @a[distance=..16] [{"text":"［小雪］我叫小雪，我是一名實習醫生"}]
+execute if score .main_line ancient_lorras.story matches 39 run tellraw @a[distance=..16] [{"text":"［小雪］來到這裡時，偶然看到這裡有一個洞穴"}]
 execute if score .main_line ancient_lorras.story matches 40 run tellraw @a[distance=..16] [{"text":"［小雪］上前探索找到了很多被怪物襲擊的人，我幫忙擊敗怪物，帶大家回到入口幫忙包紮傷口"}]
 execute if score .main_line ancient_lorras.story matches 41 run tellraw @a[distance=..16] [{"text":"［小雪］洞穴裡面有很多怪物跟傷員在裡面，所以我得快去拯救那些傷員"}]
 execute if score .main_line ancient_lorras.story matches 42 run tellraw @a[distance=..16] [{"text":"［小雪］你們能夠一起幫忙救洞穴裡的傷員嗎?"}]
-execute if score .main_line ancient_lorras.story matches 43 run tellraw @a[distance=..16] [{"text":"［希爾］當然可以，我跟旅行者現在就進去幫忙"}]
+execute if score .main_line ancient_lorras.story matches 43 run tellraw @a[distance=..16] [{"text":"［你］當然可以，我現在就進去幫忙"}]
 execute if score .main_line ancient_lorras.story matches 44 run tellraw @a[distance=..16] [{"text":"［小雪］太好了！謝謝你們！"}]
-execute if score .main_line ancient_lorras.story matches 45 run tellraw @a[distance=..16] [{"text":"［小雪］我會一點醫療技術，你們把傷員帶出來，我負責處理傷勢"}]
-execute if score .main_line ancient_lorras.story matches 46 run tellraw @a[distance=..16] [{"text":"［希爾］嗯嗯，那旅行者！我們就先把那些傷員救出來吧"}]
+execute if score .main_line ancient_lorras.story matches 45 run tellraw @a[distance=..16] [{"text":"［小雪］我會一點醫療技術，我負責處理傷勢"}]
+execute if score .main_line ancient_lorras.story matches 46 run tellraw @a[distance=..16] [{"text":"［小雪］那就先把那些傷員救出來吧"}]
 execute if score .main_line ancient_lorras.story matches 47 run tellraw @a[distance=..16] {"text":"\n【目標】深入洞穴！拯救3名傷員","color":"gold"}
 
 execute if score .main_line ancient_lorras.story matches 47 run kill @e[tag=al.ml.hill.2]

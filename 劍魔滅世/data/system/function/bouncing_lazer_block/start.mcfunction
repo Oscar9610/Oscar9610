@@ -1,1 +1,0 @@
-execute as @n[tag=bouncing_lazer.block] at @s positioned ^ ^-1.5 ^ rotated 90 0 run function particle:bouncing_lazer/main

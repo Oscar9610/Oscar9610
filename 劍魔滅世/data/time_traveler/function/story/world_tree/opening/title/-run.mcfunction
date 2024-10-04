@@ -1,4 +1,4 @@
-function time_traveler:reload
+function global:main/reload
 
 execute in game_map:initial run tp @a 5 -35 -128 180 0
 

@@ -35,7 +35,7 @@ team modify monster friendlyFire false
 # ============================================================================================
 
 # scoreboard
-function time_traveler:scoreboard
+function global:main/scoreboard
 function monsters:scoreboard
 function rpg_armors:scoreboard
 function weapons:scoreboard
@@ -68,7 +68,7 @@ function time_traveler:players/effects/speed
 # 世界區域相關
 
 function world_area:main/loop
-schedule function ancient_lorras:world_area/emerald_vale/lightning 3s
+schedule function world_area:ancient_lorras/emerald_vale/lightning 3s
 
 # ============================================================================================
 # 時空之境
@@ -110,14 +110,14 @@ function time_traveler:monster_wave/main/loop
 schedule function time_traveler:music/timer 1s
 # ============================================================================================
 # 小提示
-function time_traveler:random_hint
+function global:main/random_hint
 # ============================================================================================
 # 太空站 NPC
 function time_traveler:interaction/emera
 function time_traveler:interaction/lena
 # ============================================================================================
 # 全局
-function time_traveler:timer
+function global:main/timer
 # ============================================================================================
 
 # ============================================================================================

@@ -1,17 +1,10 @@
-
+scoreboard players set #planet_id global.main 0
 scoreboard players set #shooting_contest orantes.story 0
 scoreboard players set #shooting_contest orantes.global.main 0
 scoreboard players set #shooting_contest global.advancements 0
 
-scoreboard players set rotas._chapter_1 spaceship.story 0
-scoreboard players set rotas._chapter_1 spaceship.global.main 0
-scoreboard players set #rotas.chapter_1 global.advancements 0
-
-scoreboard players set rotas._chapter_2 spaceship.story 0
-scoreboard players set rotas._chapter_2 spaceship.global.main 0
 scoreboard players set orantes.rotas.open global.main 0
 scoreboard players set .main_line ancient_lorras.global.main 0
-scoreboard players set #rotas.chapter_2 global.advancements 0
 
 scoreboard players set #lost_guardian global.advancements 0
 scoreboard players set #paimon global.advancements 0

@@ -8,4 +8,4 @@ execute if score mini_game.shooting_contest.timer global.main matches 0.. run sc
 #過場計時
 scoreboard players remove @a[scores={orantes.transitions=1..}] orantes.transitions 1
 
-schedule function time_traveler:timer 1s
+schedule function global:main/timer 1s

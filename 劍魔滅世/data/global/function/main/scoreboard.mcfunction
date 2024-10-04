@@ -84,16 +84,6 @@ scoreboard players add @s world_area.poison_cave 0
 scoreboard players add @s world_area.storm_cave 0
 scoreboard players add @s world_area.orantes_village 0
 
-scoreboard players set shadow_cave p1.world_area 0
-scoreboard players set shadow_cave p2.world_area 0
-scoreboard players set shadow_cave p3.world_area 0
-scoreboard players set shadow_cave p4.world_area 0
-
-scoreboard players set poison_cave p1.world_area 0
-scoreboard players set storm_cave p1.world_area 1
-scoreboard players set orantes_village p1.world_area 1
-scoreboard players set place_of_trial p1.world_area 1
-
 scoreboard players add #random.pos global.main 0
 
 #=====================================================================================
@@ -123,6 +113,8 @@ scoreboard players set @a disable.tp_book 0
 scoreboard players set .world_level_ratio global.main 30
 
 scoreboard players add #portal.open global.main 0
+
+scoreboard players add #planet_id global.main 0
 
 ##時空之境水星傳送門
 scoreboard players set #fx.tp_door orantes.global.main 0

@@ -4,7 +4,7 @@
 
 #sim  = 【支線】陳述不見了？！
 
-execute if score .main_line orantes.story matches 1 run schedule function time_traveler:story/orantes/main_line/loop 1t
+execute if score .main_line orantes.story matches 1 run function time_traveler:story/orantes/main_line/loop
 execute if score .main_line orantes.story matches 1 run tellraw @a {"text":"［希爾］聽說這裡就是魔劍所在的星球，我們去附近打聽一下魔劍的事情"}
 execute if score .main_line orantes.story matches 2 run tellraw @a {"text":"［希爾］這個星球有著繁榮且陽光的城市"}
 execute if score .main_line orantes.story matches 3 run tellraw @a {"text":"［希爾］我們過去看看！"}

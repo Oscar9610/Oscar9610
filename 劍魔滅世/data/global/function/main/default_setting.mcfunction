@@ -1,3 +1,4 @@
+reload
 
 # player
 title @a title ""
@@ -15,11 +16,11 @@ time set midnight
 function global:main/reload
 function global:main/reset_level
 gamerule sendCommandFeedback false
+difficulty normal
+tellraw @a [{"text":"\n目前難度: "},{"text":"普通","color":"gold"}]
 
 advancement revoke @a only rotas:task/1
 
 scoreboard players set global detect_player_in_lobby 0
 scoreboard players set .player.highest_level global.main 1
 scoreboard objectives setdisplay sidebar
-
-reload
