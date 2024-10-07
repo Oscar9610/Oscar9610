@@ -8,7 +8,8 @@ execute rotated ~0 0 run function monsters:su/2/1/1
 execute rotated ~-45 0 run function monsters:su/2/1/1
 
 effect give @s invisibility infinite 0 true
-data modify entity @s ArmorItems set value [{},{},{},{}]
+data modify entity @s ArmorItems set value [{},{},{},{id:"minecraft:brown_wool",count:1}]
+data modify entity @s HandItems set value [{},{}]
 
 # particle
 playsound minecraft:block.sculk_shrieker.shriek master @a ~ ~ ~ 1 2

@@ -1,0 +1,7 @@
+{
+    "asset_id": "minecraft:su_trim",
+    "description": {
+      "translate": "trim_pattern.minecraft.cherry_leaves"
+    },
+    "template_item": "minecraft:cherry_leaves"
+  }

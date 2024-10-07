@@ -11,7 +11,7 @@ title @s times 0 40 20
 title @s title [{"text":" ☠ 死亡 ☠","color":"red"}]
 title @s subtitle {"text":""}
 playsound minecraft:entity.ender_dragon.growl voice @a ~ ~ ~ 1 1
-effect give @s blindness 3 255 true
+# effect give @s blindness 3 255 true
 
 # armor
 function rpg_armors:reload_rpg_armor_effect

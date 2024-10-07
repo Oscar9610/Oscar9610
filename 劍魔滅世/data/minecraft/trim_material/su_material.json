@@ -1,0 +1,9 @@
+{
+  "asset_name": "su_material",
+  "description": {
+    "translate": "trim_material.minecraft.cherry_leaves",
+    "color": "#9A5CC6"
+  },
+  "ingredient": "minecraft:cherry_leaves",
+  "item_model_index": 0.01
+}

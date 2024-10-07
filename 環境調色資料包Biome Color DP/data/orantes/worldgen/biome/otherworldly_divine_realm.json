@@ -10,11 +10,7 @@
     "water_color": 9249,
     "water_fog_color": 9249,
     "grass_color": 1842204,
-    "foliage_color": 5139,
-    "additions_sound": {
-      "sound": "minecraft:ambient.crimson_forest.loop",
-      "tick_chance": 0.05
-    }
+    "foliage_color": 5139
   },
   "spawners": {},
   "spawn_costs": {},
