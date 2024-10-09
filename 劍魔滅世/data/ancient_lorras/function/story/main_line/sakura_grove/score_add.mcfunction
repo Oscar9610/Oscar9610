@@ -1,2 +1,0 @@
-execute if score #al.ml.boss.task ancient_lorras.global.main matches ..1 run scoreboard players add #al.ml.boss.task ancient_lorras.global.main 1
-execute store result bossbar al.ml.boss.task value run scoreboard players get #al.ml.boss.task ancient_lorras.global.main

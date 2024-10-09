@@ -4,9 +4,13 @@ bossbar remove su
 
 stopsound @a record minecraft:bgm.two_steps_from_hell_invincible
 
-function monsters:battle_elf/su/spawn
+execute unless score .main_line ancient_lorras.story matches 107 run function monsters:battle_elf/su/spawn
 
-scoreboard players set @a[distance=..30] disable.tp_book 0
+execute if score .main_line ancient_lorras.story matches 107 run schedule function ancient_lorras:story/main_line/sakura_grove/10/main 2t
+
+
+
+execute unless score .main_line ancient_lorras.story matches 107 run scoreboard players set @a[distance=..99] disable.tp_book 0
 
 tellraw @a[distance=..30] [{"text":"你已擊敗當前區域BOSS，使用","color":"gold"},{"text":"傳送書","color":"green","bold":true},{"text":"即可離開該區域","color":"gold"}]
 

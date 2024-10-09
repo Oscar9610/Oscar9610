@@ -6,11 +6,11 @@ function particle:space_rupture/main
 # 重力場域
 function particle:stone_explosion/main
 
+# 音波場域
+function particle:sound_wave/main
+
 # 魅影爆炸
 function particle:sculk_explosion/guide
-
-# control thread?
-function particle:control_thread/main
 
 
 # 時空減速陣法

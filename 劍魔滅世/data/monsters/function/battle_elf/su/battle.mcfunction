@@ -1,10 +1,11 @@
+tellraw @a[distance=..30] "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 title @a[distance=..30] title {"text":"開始戰鬥！","color":"red"}
 title @a[distance=..30] subtitle ""
 title @a[distance=..30] times 10 20 10
 
 execute in game_map:ancient_lorras run setblock 9996 60 10004 air
 
-stopsound @a[distance=..30] record minecraft:bgm.two_steps_from_hell_invincible
+stopsound @a[distance=..30] record
 playsound minecraft:bgm.two_steps_from_hell_invincible record @a ~ ~ ~ 0.25 1
 
 scoreboard players set @a[distance=..30] disable.tp_book 1
