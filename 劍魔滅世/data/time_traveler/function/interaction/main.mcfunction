@@ -1,6 +1,7 @@
 #太空站
 function time_traveler:interaction/emera
 function time_traveler:interaction/lena
+function time_traveler:interaction/tutorial
 
 #小遊戲
 function time_traveler:interaction/shooting_contest

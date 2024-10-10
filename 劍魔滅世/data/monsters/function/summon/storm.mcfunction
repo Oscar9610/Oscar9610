@@ -7,7 +7,7 @@ execute in game_map:orantes run summon zombie_villager 76 37 95 {Tags:["normal.z
 scoreboard players set #hp global.main 300
 
 # 攻擊力
-scoreboard players set #atk global.main 5
+scoreboard players set #atk global.main 2
 
 # 隨機技能CD
 execute store result score @e[tag=monster.spawn,limit=1] monster.skill.cast.cd run random value 100..120

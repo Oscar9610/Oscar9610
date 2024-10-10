@@ -2,6 +2,7 @@
 scoreboard objectives add existence_time dummy "存在時間"
 scoreboard objectives add particle dummy "粒子暫存記分板"
 scoreboard objectives add msfaw.timer dummy "異界晨星計時器"
+scoreboard objectives add monster_count dummy "怪物塔生成數量"
 
 # 彈跳雷射專用
 scoreboard objectives add raycast dummy

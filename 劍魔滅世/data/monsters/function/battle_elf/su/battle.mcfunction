@@ -14,7 +14,7 @@ title @a[distance=..30] actionbar "音樂名: Two Steps From Hell 音樂作者: 
 
 playsound minecraft:entity.ender_dragon.growl voice @a[distance=..30] ~ ~ ~ 9999 1
 
-execute as @e[tag=boss.display] run function animated_java:boss_display/remove/all
+execute in game_map:ancient_lorras positioned 9996 60 10004 as @e[tag=boss.display,distance=..10] run function animated_java:boss_display/remove/this
 kill @e[tag=battle_elf.su]
 
 function monsters:summon/su

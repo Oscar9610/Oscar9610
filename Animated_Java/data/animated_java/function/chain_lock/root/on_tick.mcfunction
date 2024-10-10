@@ -7,4 +7,5 @@ execute if entity @s[tag=aj.chain_lock.animation.unlock.playing] run function an
 execute on passengers if entity @s[tag=aj.chain_lock.data] run function animated_java:chain_lock/root/zzz/1
 execute at @s on passengers run tp @s ~ ~ ~ ~ ~
 execute as @s at @p run tp @s ~ ~ ~ 0 0
+execute at @a[scores={chain_lock.jump=5}] as @e[distance=..1.5,tag=chain_lock,tag=!chain_lock.unlock] run function animated_java:chain_lock/animations/unlock/play
 function #animated_java:chain_lock/as_root/post_tick

@@ -1,6 +1,6 @@
 
 # effect
-execute as @a[distance=..60] run damage @s 999999 mob_attack by @n[type=zombie,tag=bloodmoon_lord]
+execute as @a[distance=..60] run damage @s 12 mob_attack by @n[type=zombie,tag=bloodmoon_lord]
 
 # particle
 particle minecraft:soul ~ ~ ~ 0 0 0 1 500 force

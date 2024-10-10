@@ -3,3 +3,5 @@ particle minecraft:flash ~ ~1 ~ 0 0 0 0 1 force @a
 playsound minecraft:item.trident.thunder voice @a ~ ~1 ~ 1 1
 playsound minecraft:entity.iron_golem.death voice @a ~ ~1 ~ 1 0.75
 attribute @p minecraft:generic.jump_strength modifier remove chain_lock
+attribute @p minecraft:generic.movement_speed modifier remove chain_lock
+effect clear @p minecraft:glowing

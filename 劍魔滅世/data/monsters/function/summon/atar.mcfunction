@@ -5,7 +5,7 @@ execute in game_map:orantes run summon zombie_villager 11 62 -125 {DeathLootTabl
 
 ## ----- 怪物屬性 ----- ##
 # 血量
-scoreboard players set #hp global.main 150
+scoreboard players set #hp global.main 400
 
 # 攻擊力
 scoreboard players set #atk global.main 8

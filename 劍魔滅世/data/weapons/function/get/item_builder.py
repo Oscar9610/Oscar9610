@@ -20,15 +20,17 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-custom_name = ['5', '☾赤月之石', '#AB0000']
-info  = ['道具', '紅獄深淵', '無']
-story = ['擊敗紅獄深淵的深淵魔將掉落的赤月之石','據說蘊含著強大的力量可以開啟薄霧山脈的BOSS傳送門']
-item_data     = {'real_item': 'nether_star', 'custom_model_data': 1, 'custom_data': '{blood_moon_stone:1b}', 'max_damage': 1}
-main_skill    = {'is_skill': False, 'cd': 10, 'name': '投擲', 'info': ['對碰到的敵人造成&=250%攻擊傷害&-','碰到牆壁會反彈']}
-passive_skill = {'is_skill': False, 'cd': 0, 'name': '森林庇護', 'info': ['當你擊殺一名敵人時，獲得1層持續10秒的【森林庇護】','&=每層+2點盔甲值&+，超過3層對5格範圍內敵人造成&=200%攻擊傷害&-','並移除所有層數進入10秒冷卻']}
+custom_name = ['3', '煙火斧', '#00b395']
+info  = ['斧頭', '煙火', '火']
+story = ['裝上煙火的斧頭', '飛天往下劈砍傷害更高！']
+item_data     = {'real_item': 'mace', 'custom_model_data': 1, 'custom_data': '{firework:1}', 'max_damage': -1}
+main_skill    = {'is_skill': True, 'cd': 7, 'name': '煙火飛行', 'info': ['對5格範圍內敵人造成&=250%攻擊傷害&-', '並使自己在空中飛行一段距離']}
+passive_skill = {'is_skill': True, 'cd': 0, 'name': '空中劈砍', 'info': ['跟重錘一樣效果，高度越高造成傷害越高！']}
 
-# attribute.append({'name': '攻擊力', 'show_value': '8', 'value': 6, 'attribute_name': 'generic.attack_damage', 'slot': 'mainhand'})
-# attribute.append({'name': '攻擊速度', 'show_value': '1.4', 'value': -2.6, 'attribute_name': 'generic.attack_speed', 'slot': 'mainhand'})
+attribute.append({'name': '攻擊力', 'show_value': '8', 'value': 6, 'attribute_name': 'generic.attack_damage', 'slot': 'mainhand'})
+attribute.append({'name': '攻擊速度', 'show_value': '1.4', 'value': -2.6, 'attribute_name': 'generic.attack_speed', 'slot': 'mainhand'})
+attribute.append({'name': '抗擊退', 'show_value': '40%', 'value': 0.4, 'attribute_name': 'generic.knockback_resistance', 'slot': 'mainhand'})
+attribute.append({'name': '', 'show_value': '%', 'value': 0.2, 'attribute_name': 'generic.armor', 'slot': 'offhand'})
 
 # ----- init ----- #
 
@@ -106,12 +108,12 @@ if int(passive_skill["cd"]) >= 1: passive_skill["cd"] = ',{\"text\":\"⌛冷卻�
 else: passive_skill["cd"] = ""
 
 if int(item_data["max_damage"]) != -1: item_data["max_damage"] = ',max_damage='+str(item_data["max_damage"])+',damage=0'
-else: item_data["max_damage"] = "unbreakable={show_in_tooltip:0b}"
+else: item_data["max_damage"] = ",unbreakable={show_in_tooltip:0b}"
 
 # ----- generator ----- #
 
 with open(__file__.replace("item_builder.py","#temp.mcfunction"),mode="w+",encoding="utf-8") as f:
-    f.write(f'give @p minecraft:{item_data["real_item"]}[custom_name=\'[{{\"text\":\"\",\"italic\":false,\"bold\":true}},{{\"text\":\"{star}\",\"color\":\"{star_colour(int(custom_name[0]))[0]}\"}},{{\"text\":\"{custom_name[1]}\",\"color\":\"{star_colour(int(custom_name[0]))[1]}\"}}]\',lore=[\'[{{\"text\":\"\",\"italic\":false}},{{\"text\":\"{info[0]} / {info[1]} / \",\"color\":\"dark_gray\"}},{{\"text\":\"{info_icon(info[2])}\",\"color\":\"white\"}},{{\"text\":\"{info[2]}\",\"color\":\"dark_gray\"}}]\',\'[{{\"text\":\"{story}\",\"italic\":false,\"color\":\"blue\"}}]\'')
+    f.write(f'give @s minecraft:{item_data["real_item"]}[custom_name=\'[{{\"text\":\"\",\"italic\":false,\"bold\":true}},{{\"text\":\"{star}\",\"color\":\"{star_colour(int(custom_name[0]))[0]}\"}},{{\"text\":\"{custom_name[1]}\",\"color\":\"{star_colour(int(custom_name[0]))[1]}\"}}]\',lore=[\'[{{\"text\":\"\",\"italic\":false}},{{\"text\":\"{info[0]} / {info[1]} / \",\"color\":\"dark_gray\"}},{{\"text\":\"{info_icon(info[2])}\",\"color\":\"white\"}},{{\"text\":\"{info[2]}\",\"color\":\"dark_gray\"}}]\',\'[{{\"text\":\"{story}\",\"italic\":false,\"color\":\"blue\"}}]\'')
     if main_skill["is_skill"] == True : f.write(f',\'[{{\"text\":\"\",\"italic\":false}},{{\"text\":\"✨ ——— \",\"color\":\"gray\"}},{{\"text\":\"主動技能\",\"color\":\"gray\",\"bold\":true}},{{\"text\":\" ——— ✨\",\"color\":\"gray\"}}]\',\'[{{\"text\":\"\",\"italic\":false}},{{\"text\":\"【{main_skill["name"]}】 \",\"color\":\"dark_aqua\"}}{main_skill["cd"]}]\'{skill_info(main_skill["info"])},\'[{{\"text\":\"\"}}]\'')
     if passive_skill["is_skill"] == True : f.write(f',\'[{{\"text\":\"\",\"italic\":false}},{{\"text\":\"✨ ——— \",\"color\":\"gray\"}},{{\"text\":\"被動技能\",\"color\":\"gray\",\"bold\":true}},{{\"text\":\" ——— ✨\",\"color\":\"gray\"}}]\',\'[{{\"text\":\"\",\"italic\":false}},{{\"text\":\"【{passive_skill["name"]}】 \",\"color\":\"dark_aqua\"}}{passive_skill["cd"]}]\'{skill_info(passive_skill["info"])},\'[{{\"text\":\"\"}}]\'')
     f.write(f'{attribute_info(attribute)}],attribute_modifiers={{modifiers:[{attribute_value(attribute)}],show_in_tooltip:false}},food={{nutrition:0,saturation:0.0,eat_seconds:1000000,can_always_eat:true}},max_stack_size=1{str(item_data["max_damage"])},custom_model_data={str(item_data["custom_model_data"])},custom_data={str(item_data["custom_data"])}] 1')

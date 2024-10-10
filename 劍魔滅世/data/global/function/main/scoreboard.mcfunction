@@ -116,6 +116,8 @@ scoreboard players add #portal.open global.main 0
 
 scoreboard players add #planet_id global.main 0
 
+scoreboard players add #spaceship.tutorial.state spaceship.global.main 0
+
 ##時空之境水星傳送門
 scoreboard players set #fx.tp_door orantes.global.main 0
 #=====================================================================================

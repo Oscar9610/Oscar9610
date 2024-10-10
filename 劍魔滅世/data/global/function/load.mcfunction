@@ -2,9 +2,10 @@
 # load
 function weapons:load
 function world_area:main/reload
-advancement revoke @a only players:recipe_unlock
+# advancement revoke @a only players:recipe_unlock
 # ============================================================================================
 
+tellraw @a[gamemode=!survival,gamemode=!adventure] {"text":"資料數據更新完成！","color":"green"}
 execute if score #global difficulty matches 0 run kill @e[tag=crystal.monster]
 execute as @a at @s if score #global difficulty matches 0 run playsound minecraft:entity.cat.hurt voice @s ~ ~1 ~ 9999 1
 execute as @a at @s if score #global difficulty matches 0 run playsound minecraft:block.note_block.pling master @s ~ ~1 ~ 9999 1

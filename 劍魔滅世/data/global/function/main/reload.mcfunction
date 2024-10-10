@@ -30,3 +30,4 @@ advancement revoke @a only time_traveler:interaction/library/1
 advancement revoke @a only time_traveler:story/spaceship_plain/rotas/chapter_2/in_spaceship
 advancement revoke @a only time_traveler:story/spaceship_plain/rotas/chapter_2/in_orantes
 advancement revoke @a only task:ancient_lorras/adv/hell_ring
+advancement revoke @a only task:ancient_lorras/adv/genshin_impact
