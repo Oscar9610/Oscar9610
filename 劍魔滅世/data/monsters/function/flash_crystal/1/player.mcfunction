@@ -8,5 +8,5 @@ advancement grant @s only task:ancient_lorras/adv/genshin_impact
 
 # particle
 title @s title {"text":"\uE009"}
-title @s times 2 10 20
+title @s times 5 0 5
 particle flash ~ ~1 ~ 0 0 0 0 1

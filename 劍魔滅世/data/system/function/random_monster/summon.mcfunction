@@ -4,7 +4,7 @@ execute rotated ~ 0 run summon item_display ^ ^3.1 ^0.35 {Tags:[mob.spawner,Dura
 execute rotated ~ 0 run summon slime ^ ^2.4 ^ {Tags:["mob.spawner.hitbox"],DeathLootTable:"",Glowing:0b,Silent:1b,PersistenceRequired:1b,NoAI:1b,Size:1,CustomName:'{"italic":false,"text":"詛咒之地核心"}',active_effects:[{id:"minecraft:resistance",amplifier:5,duration:-1,show_particles:0b,show_icon:0b,ambient:0b},{id:"minecraft:invisibility",amplifier:0,duration:-1,show_particles:0b,show_icon:0b,ambient:0b}]}
 # 生怪種類 & HP
 # summon marker ~ ~ ~ {Tags:[mob.spawner.data],data:{mob_potentials:["sculk_priest","sculk_saboteur","wind_shamen","soul_abyss_beast"],hp:5}}
-summon marker ~ ~ ~ {Tags:[mob.spawner.data],data:{mob_potentials:["abyss_guardian"],hp:5}}
+summon marker ~ ~ ~ {Tags:[mob.spawner.data],data:{mob_potentials:["abyss_guardian","flash_crystal","sculk_saboteur","wind_shamen"],hp:15}}
 
 # 生成間隔
 scoreboard players set @n[type=item_display,tag=mob.spawner] monster.skill.cast.cd 800

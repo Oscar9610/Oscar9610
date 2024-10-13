@@ -6,6 +6,8 @@ effect give @s resistance 1 255 true
 effect give @s fire_resistance 1 255 true
 effect give @s instant_health 1 1 true
 
+scoreboard players set @s disable.airborne 40
+
 # particle
 title @s times 10 5 10
 title @s title {"text":"\uE001"}

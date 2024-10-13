@@ -1,5 +1,5 @@
 
-execute as @e[type=item_display,tag=mob.spawner] at @s if entity @a[distance=..10] positioned ~ ~-3 ~ run function system:random_monster/main
+execute as @e[type=item_display,tag=mob.spawner] at @s if entity @a[distance=..10,gamemode=!spectator,gamemode=!creative] positioned ~ ~-3 ~ run function system:random_monster/main
 execute as @e[type=marker,tag=mob.attempt_sum] at @s run function system:random_monster/mob/main
 
 execute as @e[tag=mob_spawner.marker] at @s unless entity @e[tag=mob.spawner,distance=..30] run scoreboard players remove @s[scores={mob_spawner.timer=1..}] mob_spawner.timer 1
