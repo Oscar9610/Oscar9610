@@ -20,17 +20,16 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-custom_name = ['3', '煙火斧', '#00b395']
-info  = ['斧頭', '煙火', '火']
-story = ['裝上煙火的斧頭', '飛天往下劈砍傷害更高！']
-item_data     = {'real_item': 'mace', 'custom_model_data': 1, 'custom_data': '{firework:1}', 'max_damage': -1}
-main_skill    = {'is_skill': True, 'cd': 7, 'name': '煙火飛行', 'info': ['對5格範圍內敵人造成&=250%攻擊傷害&-', '並使自己在空中飛行一段距離']}
-passive_skill = {'is_skill': True, 'cd': 0, 'name': '空中劈砍', 'info': ['跟重錘一樣效果，高度越高造成傷害越高！']}
+custom_name = ['3', '燦馨鐮', '#00b395']
+info  = ['鐮刀', '', '草']
+story = ['隨風飄散的馨塵，希望萌芽而生。']
+item_data     = {'real_item': 'iron_sword', 'custom_model_data': 40, 'custom_data': '{splensickle:1}', 'max_damage': -1}
+main_skill    = {'is_skill': True, 'cd': 6, 'name': '依附蓮花', 'info': ['射出3束花徑，對路徑上的敵人', '造成&=250%攻擊傷害&-並給予&=凋零效果10秒&-']}
+passive_skill = {'is_skill': True, 'cd': 0, 'name': '敏感性氛圍', 'info': ['拿著武器的玩家半徑10格內若有3或以上','位敵人擁有凋零效果，降低&=50%玩家攻擊力&-']}
 
-attribute.append({'name': '攻擊力', 'show_value': '8', 'value': 6, 'attribute_name': 'generic.attack_damage', 'slot': 'mainhand'})
-attribute.append({'name': '攻擊速度', 'show_value': '1.4', 'value': -2.6, 'attribute_name': 'generic.attack_speed', 'slot': 'mainhand'})
-attribute.append({'name': '抗擊退', 'show_value': '40%', 'value': 0.4, 'attribute_name': 'generic.knockback_resistance', 'slot': 'mainhand'})
-attribute.append({'name': '', 'show_value': '%', 'value': 0.2, 'attribute_name': 'generic.armor', 'slot': 'offhand'})
+attribute.append({'name': '攻擊力', 'show_value': '7', 'value': 7, 'attribute_name': 'generic.attack_damage', 'slot': 'mainhand'})
+attribute.append({'name': '攻擊速度', 'show_value': '1.9', 'value': -2.1, 'attribute_name': 'generic.attack_speed', 'slot': 'mainhand'})
+attribute.append({'name': '攻擊距離', 'show_value': '1', 'value': 1, 'attribute_name': 'player.entity_interaction_range', 'slot': 'mainhand'})
 
 # ----- init ----- #
 
