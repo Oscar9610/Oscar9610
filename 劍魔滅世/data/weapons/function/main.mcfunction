@@ -25,11 +25,18 @@ execute as @a[tag=water_sword.l_user] at @s if score @s water_sword_passive matc
 # 偵測水鏡之光是否多把
 execute if score #is_water_sword_demon.passive? global.main matches 1.. run scoreboard players remove #is_water_sword_demon.passive? global.main 1
 
+# boomerang
+execute as @e[tag=boomerang] at @s run function weapons:type/boomerang/guide
+
+# splensickle
+execute as @e[type=marker,tag=splensickle.1] at @s run function weapons:type/splensickle/1/main
+execute as @a[predicate=weapons:holding/splensickle] at @s run function weapons:type/splensickle/p/main
+execute as @a[predicate=!weapons:holding/splensickle] at @s run attribute @s generic.attack_damage modifier remove splensickle_passive
+
+# ----- 系統 ----- #
 # disable drop
 execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{disable_drop:1}}}}] run data merge entity @s {PickupDelay:0s}
-
 # change to vault
 function weapons:vault_version
-
-# ----- 附魔 ----- #
+# 附魔
 function weapons:enchantment/main
