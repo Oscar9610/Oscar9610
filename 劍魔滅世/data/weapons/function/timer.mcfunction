@@ -56,6 +56,9 @@ execute as @a[scores={firework_cd=1}] at @s run playsound minecraft:entity.playe
 execute as @a[scores={boomerang_cd=1}] run tellraw @s [{"text":"[","color":"green","bold":true},{"text":"☆☆☆木製迴力鏢","color":"white","bold":true},{"text":"] ","color":"green","bold":true},{"text":"冷卻完畢！","color":"green","bold":true}]
 execute as @a[scores={boomerang_cd=1}] at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~ 0.5 1.5
 
+execute as @a[scores={splensickle_cd=1}] run tellraw @s [{"text":"[","color":"green","bold":true},{"text":"☆☆☆燦馨鐮","color":"white","bold":true},{"text":"] ","color":"green","bold":true},{"text":"冷卻完畢！","color":"green","bold":true}]
+execute as @a[scores={splensickle_cd=1}] at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~ 0.5 1.5
+
 #所有武器CD計時器1s
 scoreboard players remove @a[scores={boomerang_cd=1..}] boomerang_cd 1
 scoreboard players remove @a[scores={lightning_sword_passive_cd=1..}] lightning_sword_passive_cd 1

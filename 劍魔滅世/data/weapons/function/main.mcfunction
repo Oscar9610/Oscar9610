@@ -36,9 +36,7 @@ execute as @a[predicate=!weapons:holding/splensickle] at @s run attribute @s gen
 # ----- 系統 ----- #
 # disable drop
 execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{disable_drop:1}}}}] run data merge entity @s {PickupDelay:0s}
-
 # change to vault
 function weapons:vault_version
-
-# ----- 附魔 ----- #
+# 附魔
 function weapons:enchantment/main
