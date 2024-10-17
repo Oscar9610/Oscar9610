@@ -20,6 +20,7 @@
 attribute = []
 # ----- 設定參數 ----- #
 
+<<<<<<< Updated upstream
 custom_name = ['3', '煙火斧', '#00b395']
 info  = ['斧頭', '煙火', '火']
 story = ['裝上煙火的斧頭', '飛天往下劈砍傷害更高！']
@@ -31,6 +32,18 @@ attribute.append({'name': '攻擊力', 'show_value': '8', 'value': 6, 'attribute
 attribute.append({'name': '攻擊速度', 'show_value': '1.4', 'value': -2.6, 'attribute_name': 'generic.attack_speed', 'slot': 'mainhand'})
 attribute.append({'name': '抗擊退', 'show_value': '40%', 'value': 0.4, 'attribute_name': 'generic.knockback_resistance', 'slot': 'mainhand'})
 attribute.append({'name': '', 'show_value': '%', 'value': 0.2, 'attribute_name': 'generic.armor', 'slot': 'offhand'})
+=======
+custom_name = ['5', '翠綠茵草', '#53D45F']
+info  = ['鐮刀', '魔劍', '草']
+story = ['我不知道。']
+item_data     = {'real_item': 'iron_sword', 'custom_model_data': 40, 'custom_data': '{grass_sword_demon:1}', 'max_damage': -1}
+main_skill    = {'is_skill': True, 'cd': 75, 'name': '翠草之境', 'info': ['展開一個8格範圍的領域', '該領域的所有怪物都會減少&=50%防禦&-','受到8次攻擊會觸發一次【殘花之綻】']}
+passive_skill = {'is_skill': True, 'cd': 0, 'name': '殘花之綻', 'info': ['立即對目標造成&=250%玩家攻擊傷害&-，','並且給予領域範圍內玩家3秒的&=吸收II&+']}
+
+attribute.append({'name': '攻擊力', 'show_value': '7', 'value': 7, 'attribute_name': 'generic.attack_damage', 'slot': 'mainhand'})
+attribute.append({'name': '攻擊速度', 'show_value': '2', 'value': -2, 'attribute_name': 'generic.attack_speed', 'slot': 'mainhand'})
+attribute.append({'name': '移動速度', 'show_value': '30%', 'value': 0.3, 'attribute_name': 'generic.movement_speed', 'slot': 'mainhand'})
+>>>>>>> Stashed changes
 
 # ----- init ----- #
 
@@ -90,7 +103,10 @@ def attribute_info(text):
 def attribute_value(text):
     temp = []
     for i in text:
-        if str(i["slot"]) == "mainhand": temp2 = 0
+        #base_attack_speed、base_attack_damage
+        if str(i["attribute_name"]) == "generic.attack_damage": temp2 = "base_attack_damage"
+        elif str(i["attribute_name"]) == "generic.attack_speed": temp2 = "base_attack_speed"
+        elif str(i["slot"]) == "mainhand": temp2 = 0
         elif str(i["slot"]) == "offhand": temp2 = 1
         else : 
             print("[Debug] attribute slot 有問題")

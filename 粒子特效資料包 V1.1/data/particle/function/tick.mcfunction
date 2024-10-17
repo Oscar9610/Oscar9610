@@ -23,3 +23,6 @@ execute as @e[tag=task_glow.fx] at @s if entity @a[distance=..20] run effect giv
 execute as @e[tag=shop.fx] at @s if entity @a[distance=..5] run function particle:shop_fx
 
 function particle:bricks/loop
+
+# 花粉
+function particle:grass_sword/main

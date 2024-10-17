@@ -78,6 +78,7 @@ scoreboard players remove @a[scores={noob_sickle_cd=1..}] noob_sickle_cd 1
 scoreboard players remove @a[scores={noob_sickle_passive_cd=1..}] noob_sickle_passive_cd 1
 scoreboard players remove @a[scores={the_night_cd=1..}] the_night_cd 1
 scoreboard players remove @a[scores={firework_cd=1..}] firework_cd 1
+scoreboard players remove @a[scores={splensickle_cd=1..}] splensickle_cd 1
 
 # 效果類計時器
     execute as @e[type=!area_effect_cloud,type=!armor_stand,type=!marker] run function weapons:effect
