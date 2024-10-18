@@ -215,6 +215,17 @@ scoreboard objectives add splensickle.duration dummy "燦馨鐮 生存時間"
 scoreboard players add @a splensickle_cd 0
 scoreboard players set @a splensickle_max_cd 6
 
+#===================================================================
+#翠綠茵草
+
+scoreboard objectives add grass_sword_cd dummy "翠綠茵草 CD"
+scoreboard objectives add grass_sword_max_cd dummy "翠綠茵草 CD上限"
+
+scoreboard objectives add grass_sword.duration dummy "翠綠茵草 生存時間"
+scoreboard objectives add grass_sword.passive dummy "翠綠茵草 被動"
+
+scoreboard players add @a grass_sword_cd 0
+scoreboard players set @a grass_sword_max_cd 75
 
 #===================================================================
 #這是武器技能傷害取玩家攻擊力的百分比
@@ -248,7 +259,8 @@ scoreboard players set .violent_storm atk 350
 scoreboard players set .spider atk 200
 scoreboard players set .bricks atk 200
 scoreboard players set .firework_axe atk 250
-scoreboard players set .splensickle atk 250
+scoreboard players set .splensickle atk 125
+scoreboard players set .grass_sword_passive atk 250
 
 #百分比倍率微調
 scoreboard players set 100 atk 100

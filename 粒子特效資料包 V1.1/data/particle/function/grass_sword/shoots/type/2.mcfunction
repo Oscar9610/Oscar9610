@@ -1,6 +1,6 @@
 
 # effect
-data merge entity @s {text: '{"text":"■\\n■","color":"dark_green"}'}
+data merge entity @s {text: '{"text":"■\\n■","color":"#84e561"}'}
 
 # particle
 playsound minecraft:block.grass.place master @a ~ ~ ~ 0.1 2

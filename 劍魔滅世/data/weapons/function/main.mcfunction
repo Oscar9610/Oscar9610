@@ -33,6 +33,10 @@ execute as @e[type=marker,tag=splensickle.1] at @s run function weapons:type/spl
 execute as @a[predicate=weapons:holding/splensickle] at @s run function weapons:type/splensickle/p/main
 execute as @a[predicate=!weapons:holding/splensickle] at @s run attribute @s generic.attack_damage modifier remove splensickle_passive
 
+# grass sword demon
+execute as @a[tag=grass_sword.user] at @s run function weapons:type/grass_sword_demon/player/main
+execute as @e[type=marker,tag=grass_sword.body] at @s run function weapons:type/grass_sword_demon/body/main
+
 # ----- 系統 ----- #
 # disable drop
 execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{disable_drop:1}}}}] run data merge entity @s {PickupDelay:0s}
