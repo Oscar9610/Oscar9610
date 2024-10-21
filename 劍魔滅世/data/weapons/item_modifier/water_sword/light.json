@@ -1,0 +1,10 @@
+[
+  {
+    "function": "minecraft:set_custom_model_data",
+    "value": 7
+  },
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": "{type:\"weapon\",weapon:\"water_sword\",id:2,water:1b}"
+  }
+]

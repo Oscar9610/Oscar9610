@@ -11,7 +11,7 @@ execute if score #hpmax global.main >= #hp global.main unless entity @s[tag=pois
 
 # Skill Passive
 effect clear @s slowness
-execute if block ~ ~-1 ~ slime_block facing entity @p eyes rotated ~ -30 run function monsters:motion {range:5}
+execute if block ~ ~-1 ~ slime_block facing entity @p eyes rotated ~ -30 run function monsters:motion {s:5}
 particle spore_blossom_air ~ ~1 ~ 2 2 2 2 2 force @a
 
 bossbar set poison players @a[distance=..60]

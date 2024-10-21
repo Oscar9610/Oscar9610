@@ -7,6 +7,8 @@
       "minecraft:water",
       "minecraft:lava",
       "minecraft:snow",
+      "#flowers",
+      "nether_sprouts",
       "minecraft:structure_void",
       "minecraft:tall_grass",
       "minecraft:fern",

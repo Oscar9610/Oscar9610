@@ -16,7 +16,7 @@
       }
     },
     "rewards": {
-      "function": "weapons:type/lightning_sword/passive/run"
+      "function": "weapons:dreaming/passive/run"
     }
   }
   

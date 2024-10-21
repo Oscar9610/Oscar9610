@@ -130,8 +130,8 @@ function monsters:main
 # ============================================================================================
 # 武器
 schedule function weapons:timer 1s
-schedule function weapons:type/double_sword_fire/passive/loop 1s
-schedule function weapons:type/noob_axe/passive/heal 10s
+schedule function weapons:double_sword_fire/passive/loop 1s
+schedule function weapons:noob_axe/passive 10s
 # ============================================================================================
 
 

@@ -22,6 +22,6 @@
     }
   },
   "rewards": {
-    "function": "weapons:type/spider/passive/score"
+    "function": "weapons:spider/passive/score"
   }
 }

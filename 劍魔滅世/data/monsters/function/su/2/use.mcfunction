@@ -2,7 +2,7 @@
 
 # self
 tag @s add su.2.user
-execute facing entity @p[gamemode=!spectator] feet rotated ~180 -50 run function monsters:motion {range:10}
+execute facing entity @p[gamemode=!spectator] feet rotated ~180 -50 run function monsters:motion {s:10}
 execute rotated ~45 0 run function monsters:su/2/1/1
 execute rotated ~0 0 run function monsters:su/2/1/1
 execute rotated ~-45 0 run function monsters:su/2/1/1

@@ -22,6 +22,6 @@
     }
   },
   "rewards": {
-    "function": "weapons:type/double_sword_fire/passive/atk"
+    "function": "weapons:double_sword_fire/passive/atk"
   }
 }

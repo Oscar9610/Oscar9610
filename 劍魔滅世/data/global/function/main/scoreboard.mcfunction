@@ -68,6 +68,7 @@ scoreboard players set #5 global.main 5
 scoreboard players set #20 global.main 20
 scoreboard players set #40 global.main 40
 scoreboard players set #60 global.main 60
+scoreboard players set #100 global.main 100
 
 ##脫離戰場
 scoreboard players set @a player.out_of_combat_detection 0

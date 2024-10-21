@@ -5,7 +5,7 @@
       }
     },
     "rewards": {
-      "function": "weapons:type/otherworld_dust_star/ca"
+      "function": "weapons:otherworld_dust_star/ca"
     }
   }
   

@@ -20,4 +20,4 @@ effect give @e[type=#time_traveler:monsters,distance=..5] slow_falling 3 255 tru
 # 安全落地移除所有保護狀態並造成傷害
     execute as @a[nbt={OnGround:1b},scores={typhoon_axe_use=1..},tag=typhoon_axe_ground] at @s run function ancient_lorras:ctm/weapons/type/typhoon_axe/explosion
 
-scoreboard players operation @s typhoon_axe_cd = @s typhoon_axe_max_cd
+scoreboard players operation @s typhoon_axe.cd = @s typhoon_axe_max.cd

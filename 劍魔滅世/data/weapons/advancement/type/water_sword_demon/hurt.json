@@ -16,6 +16,6 @@
     }
   },
   "rewards": {
-    "function": "weapons:type/water_sword_demon/passive/reset_passive_hurt_adv"
+    "function": "weapons:water_sword/passive/reset_passive_hurt_adv"
   }
 }

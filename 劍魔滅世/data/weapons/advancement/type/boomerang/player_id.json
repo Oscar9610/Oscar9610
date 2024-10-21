@@ -5,6 +5,6 @@
     }
   },
   "rewards": {
-    "function": "weapons:type/boomerang/player_id"
+    "function": "weapons:wooden_boomerang/player_id"
   }
 }

@@ -22,6 +22,6 @@
     }
   },
   "rewards": {
-    "function": "weapons:type/double_sword/passive/physic"
+    "function": "weapons:double_sword/passive/physic"
   }
 }

@@ -22,6 +22,6 @@
     }
   },
   "rewards": {
-    "function": "weapons:type/double_sword_water/passive/water"
+    "function": "weapons:double_sword_water/passive/water"
   }
 }

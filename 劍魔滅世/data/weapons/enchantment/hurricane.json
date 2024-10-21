@@ -26,7 +26,7 @@
         "affected": "attacker",
         "effect": {
           "type": "minecraft:run_function",
-          "function": "weapons:type/wind_sword/wind"
+          "function": "weapons:wind_sword/wind"
         },
         "requirements": {
           "condition": "minecraft:random_chance",

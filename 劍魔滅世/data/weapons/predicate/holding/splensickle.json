@@ -5,7 +5,7 @@
       "equipment": {
         "mainhand": {
           "predicates": {
-            "minecraft:custom_data": "{splensickle:1}"
+            "minecraft:custom_data": "{weapon:\"splensickle\"}"
           }
         }
       }

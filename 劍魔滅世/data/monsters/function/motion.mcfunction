@@ -1,5 +1,5 @@
 
-$summon marker ^ ^ ^$(range) {Tags:[entity_fx.temp]}
+$summon marker ^ ^ ^$(s) {Tags:[entity_fx.temp]}
 
 execute store result score #x1 global.main run data get entity @s Pos[0] 1000
 execute store result score #y1 global.main run data get entity @s Pos[1] 1000

@@ -20,17 +20,14 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-custom_name = ['3', '煙火斧', '#00b395']
-info  = ['斧頭', '煙火', '火']
-story = ['裝上煙火的斧頭', '飛天往下劈砍傷害更高！']
-item_data     = {'real_item': 'mace', 'custom_model_data': 1, 'custom_data': '{firework:1}', 'max_damage': -1}
-main_skill    = {'is_skill': True, 'cd': 7, 'name': '煙火飛行', 'info': ['對5格範圍內敵人造成&=250%攻擊傷害&-', '並使自己在空中飛行一段距離']}
-passive_skill = {'is_skill': True, 'cd': 0, 'name': '空中劈砍', 'info': ['跟重錘一樣效果，高度越高造成傷害越高！']}
-
-attribute.append({'name': '攻擊力', 'show_value': '8', 'value': 6, 'attribute_name': 'generic.attack_damage', 'slot': 'mainhand'})
+custom_name = ['1', '木製迴力鏢', '#00b395']
+info  = ['迴力鏢', '迴力鏢', '無']
+story = ['一個木製的迴力鏢。']
+item_data     = {'real_item': 'wooden_pickaxe', 'custom_model_data': 0, 'custom_data': '{type:"weapon",weapon:"wooden_boomerang"}', 'max_damage': -1}
+main_skill    = {'is_skill': True, 'cd': 5, 'name': '投擲', 'info': ['丟出迴力鏢，對碰到的敵人造成', '&=250%攻擊傷害&-，碰到牆壁會反彈。']}
+passive_skill = {'is_skill': False, 'cd': 0, 'name': '', 'info': ['']}
+attribute.append({'name': '攻擊力', 'show_value': '6', 'value': 6, 'attribute_name': 'generic.attack_damage', 'slot': 'mainhand'})
 attribute.append({'name': '攻擊速度', 'show_value': '1.4', 'value': -2.6, 'attribute_name': 'generic.attack_speed', 'slot': 'mainhand'})
-attribute.append({'name': '抗擊退', 'show_value': '40%', 'value': 0.4, 'attribute_name': 'generic.knockback_resistance', 'slot': 'mainhand'})
-attribute.append({'name': '', 'show_value': '%', 'value': 0.2, 'attribute_name': 'generic.armor', 'slot': 'offhand'})
 
 # ----- init ----- #
 

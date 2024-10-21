@@ -2,4 +2,4 @@ execute as @e[distance=..15,type=#time_traveler:monsters,predicate=ancient_lorra
 
 playsound minecraft:block.respawn_anchor.deplete voice @a ~ ~1 ~ 1 1
 
-scoreboard players operation @s resonance_sword_cd = @s resonance_sword_max_cd
+scoreboard players operation @s resonance_sword.cd = @s resonance_sword_max.cd
