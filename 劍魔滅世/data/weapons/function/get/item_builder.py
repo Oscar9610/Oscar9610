@@ -23,7 +23,7 @@ attribute = []
 custom_name = ['1', '木製迴力鏢', '#00b395']
 info  = ['迴力鏢', '迴力鏢', '無']
 story = ['一個木製的迴力鏢。']
-item_data     = {'real_item': 'wooden_pickaxe', 'custom_model_data': 0, 'custom_data': '{type:"weapon",weapon:"wooden_boomerang"}', 'max_damage': -1}
+item_data     = {'real_item': 'wooden_pickaxe', 'custom_model_data': 0, 'custom_data': '{type:"weapon",weapon:"wooden_boomerang"}', 'max_damage': -1, 'can_use': False}
 main_skill    = {'is_skill': True, 'cd': 5, 'name': '投擲', 'info': ['丟出迴力鏢，對碰到的敵人造成', '&=250%攻擊傷害&-，碰到牆壁會反彈。']}
 passive_skill = {'is_skill': False, 'cd': 0, 'name': '', 'info': ['']}
 attribute.append({'name': '攻擊力', 'show_value': '6', 'value': 6, 'attribute_name': 'generic.attack_damage', 'slot': 'mainhand'})
@@ -110,11 +110,15 @@ else: passive_skill["cd"] = ""
 if int(item_data["max_damage"]) != -1: item_data["max_damage"] = ',max_damage='+str(item_data["max_damage"])+',damage=0'
 else: item_data["max_damage"] = ",unbreakable={show_in_tooltip:0b}"
 
+if int(item_data["can_use"]) == True: item_data["can_use"] = 'food={nutrition:0,saturation:0.0,eat_seconds:1000000,can_always_eat:true}'
+else: item_data["can_use"] = ""
+
+
 # ----- generator ----- #
 
 with open(__file__.replace("item_builder.py","#temp.mcfunction"),mode="w+",encoding="utf-8") as f:
     f.write(f'give @s minecraft:{item_data["real_item"]}[custom_name=\'[{{\"text\":\"\",\"italic\":false,\"bold\":true}},{{\"text\":\"{star}\",\"color\":\"{star_colour(int(custom_name[0]))[0]}\"}},{{\"text\":\"{custom_name[1]}\",\"color\":\"{star_colour(int(custom_name[0]))[1]}\"}}]\',lore=[\'[{{\"text\":\"\",\"italic\":false}},{{\"text\":\"{info[0]} / {info[1]} / \",\"color\":\"dark_gray\"}},{{\"text\":\"{info_icon(info[2])}\",\"color\":\"white\"}},{{\"text\":\"{info[2]}\",\"color\":\"dark_gray\"}}]\',\'[{{\"text\":\"{story}\",\"italic\":false,\"color\":\"blue\"}}]\'')
     if main_skill["is_skill"] == True : f.write(f',\'[{{\"text\":\"\",\"italic\":false}},{{\"text\":\"✨ ——— \",\"color\":\"gray\"}},{{\"text\":\"主動技能\",\"color\":\"gray\",\"bold\":true}},{{\"text\":\" ——— ✨\",\"color\":\"gray\"}}]\',\'[{{\"text\":\"\",\"italic\":false}},{{\"text\":\"【{main_skill["name"]}】 \",\"color\":\"dark_aqua\"}}{main_skill["cd"]}]\'{skill_info(main_skill["info"])},\'[{{\"text\":\"\"}}]\'')
     if passive_skill["is_skill"] == True : f.write(f',\'[{{\"text\":\"\",\"italic\":false}},{{\"text\":\"✨ ——— \",\"color\":\"gray\"}},{{\"text\":\"被動技能\",\"color\":\"gray\",\"bold\":true}},{{\"text\":\" ——— ✨\",\"color\":\"gray\"}}]\',\'[{{\"text\":\"\",\"italic\":false}},{{\"text\":\"【{passive_skill["name"]}】 \",\"color\":\"dark_aqua\"}}{passive_skill["cd"]}]\'{skill_info(passive_skill["info"])},\'[{{\"text\":\"\"}}]\'')
-    f.write(f'{attribute_info(attribute)}],attribute_modifiers={{modifiers:[{attribute_value(attribute)}],show_in_tooltip:false}},food={{nutrition:0,saturation:0.0,eat_seconds:1000000,can_always_eat:true}},max_stack_size=1{str(item_data["max_damage"])},custom_model_data={str(item_data["custom_model_data"])},custom_data={str(item_data["custom_data"])}] 1')
+    f.write(f'{attribute_info(attribute)}],attribute_modifiers={{modifiers:[{attribute_value(attribute)}],show_in_tooltip:false}},max_stack_size=1{str(item_data["max_damage"])},custom_model_data={str(item_data["custom_model_data"])},custom_data={str(item_data["custom_data"])},{str(item_data["can_use"])}] 1')
     f.write(backup)

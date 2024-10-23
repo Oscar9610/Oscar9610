@@ -5,4 +5,4 @@ tellraw @a[tag=temp] [{"text":"[","color":"green","bold":true},{"text":"保護",
 
 tag @a[tag=temp] remove temp
 
-schedule function weapons:noob_axe/passive 10s
+schedule function weapons:noob_axe/passive 20s
