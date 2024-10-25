@@ -3,6 +3,9 @@ scoreboard players set .main_line ancient_lorras.global.main 0
 scoreboard players set #ancient_lorras_1.mw.rt ancient_lorras.global.main 0
 scoreboard players set #sakura_village.cutscene ancient_lorras.global.main 0
 
+scoreboard players set .main_line orantes.global.main 21
+scoreboard players set .main_line orantes.story 130
+
 
 kill @e[tag=wounded]
 

@@ -1,10 +1,9 @@
-give @p minecraft:netherite_helmet[custom_name='[{"text":"","italic":false,"bold":true},{"text":"☆☆☆☆","color":"#8AC7C7"},{"text":"超合金之頭盔","color":"white"}]',lore=['[{"text":"","italic":false},{"text":"頭盔 / 超合金","color":"dark_gray"}]','[{"text":"用來自深處的黑鐵合金作為基底，再用超合金錠打造而成的頭盔","italic":false,"color":"blue"}]','[{"text":"","italic":false},{"text":"✨ ——— ","color":"gray"},{"text":"四件套系列技能","color":"gray","bold":true},{"text":" ——— ✨","color":"gray"}]','[{"text":"","italic":false},{"text":"【超合金】 ","color":"dark_aqua"}]','[{"text":"","italic":false},{"text":"穿上4件系列套裝，可永久獲得","color":"blue"},{"text":"抗性ɪ","color":"#2EBD2E","underlined":true}]','[{"text":""}]','[{"text":"","italic":false},{"text":"生命值\\uF829\\uF803","color":"gray"},{"text":"20%","color":"white"}]','[{"text":"","italic":false},{"text":"移動速度 ","color":"gray"},{"text":"7%","color":"white"}]'],attribute_modifiers={modifiers:[{type:"generic.max_health",id:"2",amount:0.2,operation:"add_multiplied_base",slot:"head"},{type:"generic.movement_speed",id:"2",amount:0.07,operation:"add_multiplied_base",slot:"head"}],show_in_tooltip:false},max_stack_size=1,unbreakable={show_in_tooltip:0b},trim={'material': 'iron', 'pattern': 'flow',show_in_tooltip:false},custom_data={resistance:1b}] 1
-#custom_name = ['4', '超合金之頭盔', '#8AC7C7']
-#info  = ['頭盔', '超合金']
-#story = ['用來自深處的黑鐵合金作為基底，再用超合金錠打造而成的頭盔']
-#item_data     = {'real_item': 'netherite_helmet', 'trim': {'material': 'iron', 'pattern': 'flow'}, 'rgb': -1, 'custom_data': '{resistance:1b}', 'max_damage': -1}
-#series_skill  = {'is_skill': True, 'cd': 0, 'name': '超合金', 'info': ['穿上4件系列套裝，可永久獲得&=抗性ɪ&+']}
-#passive_skill = {'is_skill': False, 'cd': 30, 'name': '墮落時空領域', 'info': ['受擊有50%機率觸發&=局部時空領域&+']}
+give @p minecraft:leather_boots[custom_name='[{"text":"","italic":false,"bold":true},{"text":"☆","color":"white"},{"text":"新手皮鞋","color":"white"}]',lore=['[{"text":"","italic":false},{"text":"鞋子 / 新手","color":"dark_gray"}]','[{"text":"至少可以不用赤腳走路了","italic":false,"color":"blue"}]','[{"text":"","italic":false},{"text":"移動速度 ","color":"gray"},{"text":"5%","color":"white"}]'],attribute_modifiers={modifiers:[{type:"generic.movement_speed",id:"3",amount:0.05,operation:"add_multiplied_base",slot:"feet"}],show_in_tooltip:false},max_stack_size=1,unbreakable={show_in_tooltip:0b},dyed_color={rgb:16777215,show_in_tooltip:0b},custom_data={noob:1b}] 1
+#custom_name = ['1', '新手皮鞋', '#F4E75D']
+#info  = ['鞋子', '新手']
+#story = ['至少可以不用赤腳走路了']
+#item_data     = {'real_item': 'leather_boots', 'trim': {'material': '', 'pattern': ''}, 'rgb': 16777215, 'custom_data': '{noob:1b}', 'max_damage': -1}
+#series_skill  = {'is_skill': False, 'cd': 0, 'name': '新手', 'info': ['穿上4件系列套裝，可永久獲得&=回復ɪ&+']}
+#passive_skill = {'is_skill': False, 'cd': 0, 'name': '', 'info': ['']}
 
-#attribute.append({'name': '生命值', 'show_value': '20%', 'value': 0.2, 'attribute_name': 'generic.max_health'})
-#attribute.append({'name': '移動速度', 'show_value': '7%', 'value': 0.07, 'attribute_name': 'generic.movement_speed'})
+#attribute.append({'name': '移動速度', 'show_value': '5%', 'value': 0.05, 'attribute_name': 'generic.movement_speed'})

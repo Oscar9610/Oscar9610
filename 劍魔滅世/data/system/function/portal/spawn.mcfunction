@@ -1,0 +1,1 @@
+summon marker ~ ~ ~ {Tags:["portal"],data:{Transmit:[-157,258,104],Transmit_facing:[0,0],Dimension:"ancient_lorras"}}

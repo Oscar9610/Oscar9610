@@ -1,6 +1,6 @@
 execute as @n[tag=battle_elf.su.act] at @s if data entity @s interaction.timestamp as @a[distance=..30] run function monsters:battle_elf/su/introduce
 
-execute as @n[tag=battle_elf.bloodmoon_lord.act] at @s if data entity @s interaction.timestamp as @a[distance=..30] run function monsters:battle_elf/bloodmoon_lord/introduce
+execute as @n[tag=battle_elf.disaster.act] at @s if data entity @s interaction.timestamp as @a[distance=..30] run function monsters:battle_elf/disaster/introduce
 
 execute as @e[tag=battle_elf] at @s run tp @s ~ ~ ~ facing entity @p[distance=..8]
 

@@ -1,6 +1,12 @@
 # 重製
-scoreboard players set lorras.disaster boss.respawn.cd 2000
 bossbar remove disaster
-execute if score #kill_disaster ancient_lorras.global.main matches 1 run scoreboard players set #kill_disaster ancient_lorras.global.main 2
+
+stopsound @a record minecraft:bgm.two_steps_from_hell_invincible
+
+function monsters:battle_elf/disaster/spawn
+
+execute in game_map:ancient_lorras positioned -175 264.5 160 run scoreboard players set @a[distance=..99] disable.tp_book 0
+
+fill -185 274 116 -154 258 116 air replace iron_bars
 
 advancement revoke @a only monsters:kill_boss/disaster

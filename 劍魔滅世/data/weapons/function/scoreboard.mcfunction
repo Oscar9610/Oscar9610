@@ -150,6 +150,9 @@ scoreboard players add @a grass_sword.cd 0
 #可以被力量狀態、裝備修飾符、武器修飾符等影響
 # atk = skill_damage(技能傷害) = 攻擊力
 scoreboard objectives add atk dummy "技能傷害"
+scoreboard objectives add disable.weapons.skill dummy "禁用技能"
+
+scoreboard players add @a disable.weapons.skill 0
 
 #百分比倍率微調
 scoreboard players set 100 atk 100

@@ -1,0 +1,2 @@
+execute as @a at @s if biome ~ ~ ~ orantes:lost_forest run tellraw @s[gamemode=!creative,gamemode=!spectator] [{"text":"(由於觸發了森林的警報，被迷霧帶領至森林外！)","color":"red"}]
+execute as @a at @s if biome ~ ~ ~ orantes:lost_forest run tp @s[gamemode=!creative,gamemode=!spectator] 99960 57 90 90 0

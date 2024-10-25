@@ -20,14 +20,17 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-custom_name = ['1', '木製迴力鏢', '#00b395']
-info  = ['迴力鏢', '迴力鏢', '無']
-story = ['一個木製的迴力鏢。']
-item_data     = {'real_item': 'wooden_pickaxe', 'custom_model_data': 0, 'custom_data': '{type:"weapon",weapon:"wooden_boomerang"}', 'max_damage': -1, 'can_use': False}
-main_skill    = {'is_skill': True, 'cd': 5, 'name': '投擲', 'info': ['丟出迴力鏢，對碰到的敵人造成', '&=250%攻擊傷害&-，碰到牆壁會反彈。']}
-passive_skill = {'is_skill': False, 'cd': 0, 'name': '', 'info': ['']}
-attribute.append({'name': '攻擊力', 'show_value': '6', 'value': 6, 'attribute_name': 'generic.attack_damage', 'slot': 'mainhand'})
-attribute.append({'name': '攻擊速度', 'show_value': '1.4', 'value': -2.6, 'attribute_name': 'generic.attack_speed', 'slot': 'mainhand'})
+custom_name = ['5', '水鏡之光', '#14D8FF']
+info  = ['劍', '魔劍', '水']
+story = ['那場暴風雨...美的催人淚下，', '雨的離去也意味著...是時候該結束了。']
+item_data     = {'real_item': 'iron_sword', 'custom_model_data': 4, 'custom_data': '{type:"weapon",weapon:"water_sword",id:1,water:1b}', 'max_damage': -1, 'can_use': True}
+main_skill    = {'is_skill': True, 'cd': 25, 'name': '悲鳴雨斬 ● 明鏡止水', 'info': ['使用時會切換「光/水」兩種型態，並觸發「局部時空減速」，', '使時空減速內的敵人&=無法動彈、無法攻擊&-。', '「光型態」時會&=獲得力量、攻擊速度、加速&+，彈飛範圍內敵人', '「水型態」時會&=獲得立即恢復、抗性、漂浮&+，使範圍內敵人快', '速墜落並根據「幽光」層數，每秒對範圍內隨機敵人造成20次', '&=75%攻擊傷害&-，每次減少一層幽光，直到幽光耗盡。']}
+passive_skill = {'is_skill': True, 'cd': 0, 'name': '幽光', 'info': ['攻擊敵人時會疊加一層「幽光」，上限為10層。']}
+
+attribute.append({'name': '攻擊力', 'show_value': '7', 'value': 7, 'attribute_name': 'generic.attack_damage', 'slot': 'mainhand'})
+attribute.append({'name': '攻擊速度', 'show_value': '1.8', 'value': -2.2, 'attribute_name': 'generic.attack_speed', 'slot': 'mainhand'})
+attribute.append({'name': '移動速度', 'show_value': '20%', 'value': 0.2, 'attribute_name': 'generic.movement_speed', 'slot': 'mainhand'})
+attribute.append({'name': '&-盔甲值', 'show_value': '-20%', 'value': -0.2, 'attribute_name': 'generic.armor', 'slot': 'mainhand'})
 
 # ----- init ----- #
 

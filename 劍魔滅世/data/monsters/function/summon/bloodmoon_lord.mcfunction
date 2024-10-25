@@ -4,7 +4,7 @@ summon zombie ~ ~ ~ {CustomNameVisible:1b,DeathLootTable:"",Tags:["normal.zombie
 
 ## ----- 怪物屬性 ----- ##
 # 血量
-scoreboard players set #hp global.main 300
+scoreboard players set #hp global.main 600
 
 # 攻擊力
 scoreboard players set #atk global.main 5

@@ -23,7 +23,7 @@ execute if score .main_line ancient_lorras.story matches 95 run tellraw @a[dista
 execute if score .main_line ancient_lorras.story matches 96 run tellraw @a[distance=..16] [{"text":"［艾米］如果你們獲得那些憶鱗，可以去薄霧山脈大樹附近看看"}]
 
 execute if score .main_line ancient_lorras.story matches 97 run tellraw @a[distance=..16] {"text":"\n【目標】前往異變的森林討伐魔將獲得憶鱗","color":"gold"}
-execute if score .main_line ancient_lorras.story matches 97 run function ancient_lorras:story/main_line/sakura_grove/8/reset
+execute in game_map:ancient_lorras if score .main_line ancient_lorras.story matches 97 run function ancient_lorras:story/main_line/sakura_grove/7/1
 
 
 

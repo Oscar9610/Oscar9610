@@ -4,13 +4,13 @@
         "trigger": "minecraft:entity_killed_player",
         "conditions": {
           "entity": {
-            "nbt": "{Tags:[\"bloodmoon_lord\"]}"
+            "nbt": "{Tags:[\"disaster\"]}"
           }
         }
       }
     },
     "rewards": {
-      "function": "monsters:clear_boss/bloodmoon_lord"
+      "function": "monsters:clear_boss/disaster"
     }
   }
   

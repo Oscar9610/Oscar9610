@@ -1,6 +1,4 @@
 
-# test
-execute on attacker run say 1
 
 # effect
 tag @s add firey_dual.p
