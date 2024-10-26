@@ -23,6 +23,9 @@ scoreboard objectives add disaster.move2 dummy
 scoreboard objectives add su.movep.level dummy
 scoreboard objectives add su.movep.timer dummy
 
+## 裂空深淵之型
+scoreboard objectives add afotr.move.3 dummy
+
 ## 生成間隔
 scoreboard players set orantes.shadow boss.respawn.cd 0
 scoreboard players set orantes.poison boss.respawn.cd 0

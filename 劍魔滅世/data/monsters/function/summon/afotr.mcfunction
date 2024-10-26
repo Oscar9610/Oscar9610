@@ -11,6 +11,7 @@ scoreboard players set #hp global.main 300
 scoreboard players set #atk global.main 4
 
 # 隨機技能CD
+execute store result score @n[tag=monster.spawn] monster.skill.rdm.skill run random value 1..3
 execute store result score @n[tag=monster.spawn] monster.skill.cast.cd run random value 60..100
 
 execute as @n[tag=monster.spawn] run function monsters:-init/use
