@@ -9,6 +9,7 @@ summon marker ~ ~-5.5 ~ {Tags:["afotr.3.2","Duration"],Rotation:[135f,0f]}
 summon marker ~ ~-5.5 ~ {Tags:["afotr.3.2","Duration"],Rotation:[-45f,0f]}
 summon marker ~ ~-5.5 ~ {Tags:["afotr.3.2","Duration"],Rotation:[-135f,0f]}
 
+playsound minecraft:voice.resonance_crystal_break voice @a ~ ~1 ~ 1 0.75
 execute as @a[distance=..20] at @s run function monsters:afotr/3/player/use
 
 # particle

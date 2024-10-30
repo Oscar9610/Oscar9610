@@ -10,12 +10,16 @@ function monsters:disaster/main
 function monsters:bloodmoon_lord/main
 function monsters:afotr/main
 
-execute in game_map:shadow_arena run function monsters:shadow/main
-execute in game_map:poison_arena run function monsters:poison/main
+function monsters:shadow/main
+function monsters:poison/main
 function monsters:storm/main
 function monsters:atar/main
 function monsters:stormpromax/main
 function monsters:su/main
+
+## ----- 偵測怪物死亡 ----- ##
+
+function monsters:detect_kill/loop
 
 ## ----- 怪物技能系統 ----- ##
 # 怪物即將施法提示(1s)

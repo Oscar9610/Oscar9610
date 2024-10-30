@@ -7,3 +7,7 @@ summon item_display ~ ~ ~ {Tags:[afotr.2.1,Duration],brightness: {block: 15, sky
 
 # particle
 playsound minecraft:entity.vex.charge master @a ~ ~ ~ 5 1
+
+title @a[distance=..60] title {"text":"\uE029"}
+
+title @a[distance=..60] times 10 10 0

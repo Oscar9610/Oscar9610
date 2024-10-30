@@ -1,0 +1,1 @@
+execute if score #system.injection.skill global.main matches 1.. run function system:injection/fusion/end

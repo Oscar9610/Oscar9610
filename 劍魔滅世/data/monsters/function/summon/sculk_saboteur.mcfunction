@@ -11,4 +11,4 @@ scoreboard players set #atk global.main 4
 # 隨機技能CD
 execute store result score @e[tag=monster.spawn,limit=1] monster.skill.cast.cd run random value 60..100
 
-execute as @e[tag=monster.spawn,limit=1] run function monsters:-init/use
+kill @e[tag=sculk_saboteur.spawn]

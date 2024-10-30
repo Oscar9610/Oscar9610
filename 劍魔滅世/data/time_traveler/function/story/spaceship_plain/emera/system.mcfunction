@@ -1,0 +1,2 @@
+execute if score #emera.system spaceship.global.main matches 1 run scoreboard players set #emera.system spaceship.story 0
+execute if score #emera.system spaceship.global.main matches 1 run scoreboard players set #emera.system spaceship.global.main 2

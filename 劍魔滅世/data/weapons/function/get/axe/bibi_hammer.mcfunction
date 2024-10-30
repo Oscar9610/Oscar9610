@@ -1,0 +1,11 @@
+give @s minecraft:iron_sword[custom_name='[{"text":"","italic":false,"bold":true},{"text":"☆☆","color":"#BEF4BE"},{"text":"逼逼錘","color":"white"}]',lore=['[{"text":"","italic":false},{"text":"斧頭 / 玩具 / ","color":"dark_gray"},{"text":"\\uE012","color":"white"},{"text":"物理","color":"dark_gray"}]','[{"text":"逼逼錘，傷害不高，但是惡趣味極高！","italic":false,"color":"blue"}]','[{"text":"","italic":false},{"text":"攻擊力\\uF829\\uF803","color":"gray"},{"text":"3","color":"white"}]','[{"text":"","italic":false},{"text":"攻擊速度 ","color":"gray"},{"text":"1.2","color":"white"}]','[{"text":"","italic":false},{"text":"擊退\\uF829\\uF826","color":"gray"},{"text":"4","color":"white"}]'],attribute_modifiers={modifiers:[{type:"generic.attack_damage",id:"base_attack_damage",amount:3,slot:"mainhand",operation:"add_value"},{type:"generic.attack_speed",id:"base_attack_speed",amount:-2.8,slot:"mainhand",operation:"add_value"},{type:"generic.attack_knockback",id:"0",amount:4.0,slot:"mainhand",operation:"add_value"}],show_in_tooltip:false},max_stack_size=1,unbreakable={show_in_tooltip:0b},custom_model_data=8,custom_data={type:"weapon",weapon:"bibi_hammer",can_modify:1b,physical:1b},] 1
+#custom_name = ['2', '逼逼錘', '#14D8FF']
+#info  = ['斧頭', '玩具', '物理']
+#story = ['逼逼錘，傷害不高，但是惡趣味極高！']
+#item_data     = {'real_item': 'iron_sword', 'custom_model_data': 8, 'custom_data': '{type:"weapon",weapon:"bibi_hammer",can_modify:1b,physical:1b}', 'max_damage': -1, 'can_use': False}
+#main_skill    = {'is_skill': False, 'cd': 25, 'name': '悲鳴雨斬 ● 明鏡止水', 'info': ['使用時會切換「光/水」兩種型態，並觸發「局部時空減速」，', '使時空減速內的敵人&=無法動彈、無法攻擊&-。', '「光型態」時會&=獲得力量、攻擊速度、加速&+，彈飛範圍內敵人', '「水型態」時會&=獲得立即恢復、抗性、漂浮&+，使範圍內敵人快', '速墜落並根據「幽光」層數，每秒對範圍內隨機敵人造成20次', '&=75%攻擊傷害&-，每次減少一層幽光，直到幽光耗盡。']}
+#passive_skill = {'is_skill': False, 'cd': 0, 'name': '幽光', 'info': ['攻擊敵人時會疊加一層「幽光」，上限為10層。']}
+
+#attribute.append({'name': '攻擊力', 'show_value': '3', 'value': 3, 'attribute_name': 'generic.attack_damage', 'slot': 'mainhand'})
+#attribute.append({'name': '攻擊速度', 'show_value': '1.2', 'value': -2.8, 'attribute_name': 'generic.attack_speed', 'slot': 'mainhand'})
+#attribute.append({'name': '擊退', 'show_value': '4', 'value': 4.0, 'attribute_name': 'generic.attack_knockback', 'slot': 'mainhand'})

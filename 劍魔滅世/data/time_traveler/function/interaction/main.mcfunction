@@ -12,3 +12,5 @@ function time_traveler:interaction/library/lectern/1
 function time_traveler:interaction/library/lectern/2
 function time_traveler:interaction/library/lectern/3
 function time_traveler:interaction/library/lectern/4
+
+function time_traveler:story/spaceship_plain/emera/system

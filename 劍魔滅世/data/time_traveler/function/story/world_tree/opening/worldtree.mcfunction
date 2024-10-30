@@ -14,6 +14,7 @@ execute if score .main world_tree.story matches 15 run tellraw @a {"translate":"
 execute if score .main world_tree.story matches 14 run tellraw @a {"translate":"world_tree.story.7"}
 execute if score .main world_tree.story matches 14 run title @a times 40 60 20
 execute if score .main world_tree.story matches 14 run title @a title {"text":"\uE002"}
+execute if score .main world_tree.story matches 13 run function time_traveler:story/world_tree/opening/camera/2/1
 execute if score .main world_tree.story matches 13 run tellraw @a {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
 execute if score .main world_tree.story matches 13 as @a at @s in game_map:initial run tp @a -2 -47 -8 -180 10
 execute if score .main world_tree.story matches 13 run tellraw @a {"translate":"story.skip","color":"light_purple","clickEvent":{"action":"run_command","value":"/execute if score .main world_tree.story matches 1..13 run scoreboard players set .main world_tree.story 1"}}

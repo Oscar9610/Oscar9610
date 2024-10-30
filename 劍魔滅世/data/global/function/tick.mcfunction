@@ -19,7 +19,6 @@ function rpg_armors:loop
 
 execute as @a[scores={disable_operate=1..}] at @s run function players:disable_operate
 function players:space_time_deceleration/loop
-execute as @a at @s run function time_traveler:players/update_strength/main
 
 function map_hall:tp_door/in
 function map_hall:tp_door/loop
