@@ -1,1 +1,0 @@
-scoreboard objectives add hp_health.display dummy
