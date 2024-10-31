@@ -26,6 +26,8 @@ function map_hall:tp_door/loop
 function weapons:main
 function weapons:timer_t
 
+function system:injection/interaction/fusion
+
 #=========================================================
 
 # 遊戲難度偵測

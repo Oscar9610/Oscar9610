@@ -7,3 +7,5 @@ execute unless entity @a[distance=..40,limit=1] run function monsters:boss_respa
 
 particle minecraft:cloud ~ ~ ~ 5 5 5 1 2 force
 bossbar set storm players @a[distance=..30]
+
+execute unless entity @a[distance=..30] run function monsters:storm/void

@@ -1,3 +1,6 @@
+# 防呆措施 / 偵測是否是和平模式 ; 直接Block掉
+    execute if score #global difficulty matches 0 run return 0
+
 tellraw @a[distance=..30] "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 title @a[distance=..30] title {"text":"開始戰鬥！","color":"red"}
 title @a[distance=..30] subtitle ""

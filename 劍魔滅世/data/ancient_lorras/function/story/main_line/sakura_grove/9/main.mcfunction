@@ -13,7 +13,7 @@ execute if score .main_line ancient_lorras.story matches 105 run tellraw @a[dist
 
 execute if score .main_line ancient_lorras.story matches 106 run tellraw @a[distance=..16] {"text":"\n【目標】擊敗被控制的草之魔神","color":"gold"}
 execute if score .main_line ancient_lorras.story matches 106 run kill @e[tag=su_boss]
-execute if score .main_line ancient_lorras.story matches 106 run function monsters:battle_elf/su/battle
+execute if score .main_line ancient_lorras.story matches 106 run function monsters:battle_elf/ancient_lorras/su/battle
 
 #循環偵測
 #loop

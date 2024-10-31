@@ -4,7 +4,7 @@ bossbar remove su
 
 stopsound @a record minecraft:bgm.two_steps_from_hell_invincible
 
-execute unless score .main_line ancient_lorras.story matches 107 run function monsters:battle_elf/su/spawn
+execute unless score .main_line ancient_lorras.story matches 107 run function monsters:battle_elf/ancient_lorras/su/spawn
 
 execute if score .main_line ancient_lorras.story matches 107 run schedule function ancient_lorras:story/main_line/sakura_grove/10/main 2t
 
