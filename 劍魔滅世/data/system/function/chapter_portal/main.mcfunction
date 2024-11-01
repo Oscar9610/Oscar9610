@@ -1,0 +1,1 @@
+execute in game_map:spaceship_interior run function system:chapter_portal/guide

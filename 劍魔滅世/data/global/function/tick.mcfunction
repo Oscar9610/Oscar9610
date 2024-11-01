@@ -11,6 +11,8 @@ function time_traveler:players/effects/main
 function time_traveler:system/main
 function system:treasure_chests/guide
 function system:portal/loop
+function system:chapter_portal/main
+
 execute as @a at @s run function time_traveler:monster_weakness/player_loop
 
 function system:main

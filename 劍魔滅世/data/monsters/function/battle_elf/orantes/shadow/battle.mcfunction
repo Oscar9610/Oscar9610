@@ -22,7 +22,7 @@
 # 重啟戰鬥音樂
 
     stopsound @a[distance=..30] record
-    playsound minecraft:bgm.two_steps_from_hell_invincible record @a ~ ~ ~ 0.25 1
+    playsound minecraft:bgm.howling_rift_threat_theme record @a ~ ~ ~ 3 1
     title @a[distance=..30] actionbar "音樂名: Two Steps From Hell 音樂作者: Invincible"
 
 # 移除 Display

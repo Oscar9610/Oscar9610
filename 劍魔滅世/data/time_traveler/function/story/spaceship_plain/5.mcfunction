@@ -10,6 +10,7 @@ execute if score #emera orantes.story matches 12 run tellraw @a {"translate":"sp
 execute if score #emera orantes.story matches 13 run tellraw @a {"translate":"spaceship_plain.story.46"}
 execute if score #emera orantes.story matches 14 run tellraw @a {"translate":"spaceship_plain.story.47"}
 execute if score #emera orantes.story matches 15 run tellraw @a {"translate":"spaceship_plain.story.48","color":"gold"}
+execute if score #emera orantes.story matches 15 run scoreboard players set #emera.system spaceship.global.main 1
 execute if score #emera orantes.story matches 15 run effect clear @n[tag=Emera] minecraft:glowing
 execute if score #emera orantes.story matches 15 run effect give @e[tag=shop] minecraft:glowing 20 1 true
 

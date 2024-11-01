@@ -8,6 +8,7 @@ execute if score #lena orantes.story matches 4 run tellraw @a {"translate":"spac
 execute if score #lena orantes.story matches 5 run tellraw @a {"translate":"spaceship_plain.story.30"}
 execute if score #lena orantes.story matches 5 run scoreboard players add #lena orantes.story 1
 execute if score #lena orantes.story matches 6 run tellraw @a {"translate":"spaceship_plain.story.31","color":"gold"}
+execute if score #lena orantes.story matches 6 run scoreboard players set #emera.system spaceship.global.main 0
 execute if score #lena orantes.story matches 6 run effect clear @n[tag=Lena] glowing
 execute if score #lena orantes.story matches 6 run effect give @n[tag=Emera] glowing infinite 1 true
 execute if score #lena orantes.story matches 6 run scoreboard players set #spaceship global.advancements 5

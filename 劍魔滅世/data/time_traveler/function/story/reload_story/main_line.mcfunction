@@ -12,6 +12,8 @@ scoreboard players set #spaceship global.advancements 0
 scoreboard players set #main_line global.advancements 0
 scoreboard players set .main_line ancient_lorras.global.main 0
 
+scoreboard players set .main_line ancient_lorras.story -1
+
 
 advancement revoke @a only time_traveler:story/spaceship_plain/traded_rpg_weapons
 

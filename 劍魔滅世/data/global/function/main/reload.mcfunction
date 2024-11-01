@@ -6,14 +6,9 @@ scoreboard players set #shooting_contest global.advancements 0
 scoreboard players set orantes.rotas.open global.main 0
 scoreboard players set .main_line ancient_lorras.global.main 0
 
-scoreboard players set #lost_guardian global.advancements 0
-scoreboard players set #paimon global.advancements 0
-
-function time_traveler:story/orantes/main_line/rs/3/remove_display_monster
 
 function time_traveler:story/reload_story/lost_guardian
 function time_traveler:story/reload_story/main_line
-function ancient_lorras:story/reload_story/main_line
 
 kill @e[tag=ml.sgp]
 kill @e[tag=rotas.2.2]
