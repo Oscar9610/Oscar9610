@@ -10,6 +10,7 @@
 
     execute on passengers run data modify storage boss_temp name set from entity @s data.Boss[0]
     execute on passengers if data entity @s data.Boss[0] on vehicle if entity @a[distance=..60] run function monsters:detect_kill/run with storage boss_temp
+    execute on passengers as @s[type=marker,tag=monster.marker] run kill @s
 
 
 # 殺死偵測死亡的 Marker

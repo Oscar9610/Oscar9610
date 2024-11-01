@@ -1,0 +1,1 @@
+summon area_effect_cloud ~ ~ ~ {Duration: 81,Tags:["creeper.boom.effect","creeper_of_energy_surge.effect","Duration"]}

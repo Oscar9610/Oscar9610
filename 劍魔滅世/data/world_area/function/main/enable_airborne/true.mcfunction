@@ -3,4 +3,6 @@ tellraw @s[gamemode=!spectator,gamemode=!creative] {"text":"這裡允許你用�
 
 playsound minecraft:item.trident.return voice @s[gamemode=!spectator,gamemode=!creative] ~ ~1 ~ 3 1
 
+scoreboard players set @s disable.airborne 0
+
 advancement revoke @s only world_area:enable_airborne/false

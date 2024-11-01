@@ -3,7 +3,7 @@ summon minecraft:zombie ~ ~ ~ {Passengers:[{id:"marker",Tags:["monster.marker"]}
 
 ## ----- 怪物屬性 ----- ##
 # 血量
-scoreboard players set #hp global.main 17
+scoreboard players set #hp global.main 28
 
 # 攻擊力
 scoreboard players set #atk global.main 3

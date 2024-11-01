@@ -13,21 +13,21 @@
 
 # 設置玩家重生點
 
-    execute in game_map:orantes run spawnpoint @a[distance=..60] 1 74 -340
+    execute in game_map:orantes run spawnpoint @a[distance=..60] 171 167 -55
 
 # 移除光源
 
-    execute in game_map:orantes run setblock 176 111 -56 air
+    execute in game_map:orantes run setblock 176 167 -56 air
 
 # 重啟戰鬥音樂
 
     stopsound @a[distance=..30] record
-    playsound minecraft:bgm.two_steps_from_hell_invincible record @a ~ ~ ~ 0.25 1
-    title @a[distance=..30] actionbar "音樂名: Two Steps From Hell 音樂作者: Invincible"
+    playsound minecraft:bgm.glass_halls_clock_tower_threat_theme record @a ~ ~ ~ 3 1
+    title @a[distance=..30] actionbar "音樂名: Clock Tower Threat Theme 音樂作者: Glass Halls"
 
 # 移除 Display
 
-    execute in game_map:orantes positioned 176 111 -56 as @e[tag=boss.display,distance=..10] run function animated_java:boss_display/remove/this
+    execute in game_map:orantes positioned 176 167 -56 as @e[tag=boss.display,distance=..10] run function animated_java:boss_display/remove/this
     kill @e[tag=battle_elf.storm]
 
 # BOSS 生成
