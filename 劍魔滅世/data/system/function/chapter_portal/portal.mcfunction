@@ -1,0 +1,1 @@
+particle rain -43 57 31 0.15 1 0.15 1 10 force @a

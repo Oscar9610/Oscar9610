@@ -20,5 +20,15 @@
     execute as @a at @s if biome ~ ~ ~ orantes:walkman467_arcade run advancement grant @s only world_area:main/walkman467_arcade/in
     execute as @a at @s unless biome ~ ~ ~ orantes:walkman467_arcade run advancement grant @s only world_area:main/walkman467_arcade/out
 
+# 偵測生態域標籤
+
+    #切換遊戲模式
+
+    execute as @a at @s if biome ~ ~ ~ #orantes:change_advancture run advancement grant @s only world_area:main/mode_change/advancture
+    execute as @a at @s if biome ~ ~ ~ #orantes:change_survival run advancement grant @s only world_area:main/mode_change/survival
+
+    execute as @a at @s if biome ~ ~ ~ #orantes:enable_airborne run advancement grant @s only world_area:enable_airborne/true
+    execute as @a at @s unless biome ~ ~ ~ #orantes:enable_airborne run advancement grant @s only world_area:enable_airborne/false
+
 # Loop
 schedule function world_area:main/loop 1t

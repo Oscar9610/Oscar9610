@@ -1,0 +1,2 @@
+execute positioned -43 57 31 if entity @a[distance=..1.25] run kill @e[tag=story.spaceship_plain.6]
+execute positioned -43 57 31 if entity @a[distance=..1.25] as @a[distance=..1.25] in game_map:orantes run tp @s -5.0 62.0 82.25 0 0

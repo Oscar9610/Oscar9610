@@ -15,7 +15,6 @@ execute if score .main_line orantes.story matches 4 run tellraw @a [{"selector":
 execute if score .main_line orantes.story matches 4 run tellraw @a [{"text":"按 ","color":"gray"},{"keybind":"key.advancements","color":"green","bold":true},{"text":" 鍵即可開啟進度顯示\n","color":"gray"}]
 
 execute if score .main_line orantes.story matches 4 run scoreboard players set #main_line global.advancements 1
-execute if score .main_line orantes.story matches 4 in game_map:orantes run function time_traveler:story/orantes/main_line/sim/summon
 execute if score .main_line orantes.story matches 4 run scoreboard players set .main_line orantes.global.main 2
 
 

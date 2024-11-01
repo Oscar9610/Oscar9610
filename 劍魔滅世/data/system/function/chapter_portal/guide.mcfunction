@@ -1,0 +1,2 @@
+function system:chapter_portal/portal
+function system:chapter_portal/tp

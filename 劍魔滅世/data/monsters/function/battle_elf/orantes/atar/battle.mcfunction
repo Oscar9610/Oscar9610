@@ -22,8 +22,8 @@
 # 重啟戰鬥音樂
 
     stopsound @a[distance=..30] record
-    playsound minecraft:bgm.two_steps_from_hell_invincible record @a ~ ~ ~ 0.25 1
-    title @a[distance=..30] actionbar "音樂名: Two Steps From Hell 音樂作者: Invincible"
+    playsound minecraft:bgm.glass_halls_clock_tower_threat_theme record @a[distance=..30] ~ ~ ~ 3 1
+    title @a[distance=..60] actionbar "音樂名: Clock Tower Threat Theme 音樂作者: Glass Halls"
 
 # 移除 Display
 
