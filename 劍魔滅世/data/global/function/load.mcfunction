@@ -1,6 +1,5 @@
 # ============================================================================================
 # load
-function weapons:load
 function world_area:main/reload
 # advancement revoke @a only players:recipe_unlock
 # ============================================================================================
@@ -130,8 +129,7 @@ function monsters:main
 # ============================================================================================
 # 武器
 schedule function weapons:timer 1s
-schedule function weapons:double_sword_fire/passive/loop 1s
-schedule function weapons:noob_axe/passive 10s
+schedule function weapons:noob_axe/passive 20s
 # ============================================================================================
 
 

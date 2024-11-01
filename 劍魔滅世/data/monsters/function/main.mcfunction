@@ -1,21 +1,27 @@
 
 ## ----- 怪物種類 ----- ##
+# 普通小怪
 function monsters:flash_crystal/main
-function monsters:dark_overlord/main
+
 function monsters:soul_abyss_beast/main
 function monsters:sculk_saboteur/main
 function monsters:sculk_priest/main
 function monsters:wind_shamen/main
 function monsters:disaster/main
-function monsters:bloodmoon_lord/main
-function monsters:afotr/main
 
+# Boss
 execute in game_map:shadow_arena run function monsters:shadow/main
 execute in game_map:poison_arena run function monsters:poison/main
 function monsters:storm/main
 function monsters:atar/main
 function monsters:stormpromax/main
 function monsters:su/main
+function monsters:dark_overlord/main
+function monsters:bloodmoon_lord/main
+function monsters:afotr/main
+
+# CTM
+function monsters:ctm/main
 
 ## ----- 怪物技能系統 ----- ##
 # 怪物即將施法提示(1s)
