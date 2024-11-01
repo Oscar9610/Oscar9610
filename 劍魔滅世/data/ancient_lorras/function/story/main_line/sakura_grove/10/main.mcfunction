@@ -9,7 +9,7 @@ execute in game_map:ancient_lorras positioned 10000 60 10000 if score .main_line
 execute in game_map:ancient_lorras positioned 10000 60 10000 if score .main_line ancient_lorras.story matches 109 run title @a[distance=..60] title {"text":"\uE009"}
 execute in game_map:ancient_lorras positioned 10000 60 10000 if score .main_line ancient_lorras.story matches 109 run title @a[distance=..60] times 20 20 20
 execute as @a if score .main_line ancient_lorras.story matches 110 run function ancient_lorras:cutscene/start
-execute if score .main_line ancient_lorras.story matches 110 run function monsters:battle_elf/su/spawn
+execute if score .main_line ancient_lorras.story matches 110 run function monsters:battle_elf/ancient_lorras/su/spawn
 execute in game_map:ancient_lorras positioned 10000 60 10000 if score .main_line ancient_lorras.story matches 110 run tp @a[distance=..99] 10009 69 9859 180 0
 execute in game_map:ancient_lorras positioned 10009 69 9859 if score .main_line ancient_lorras.story matches 110 run playsound minecraft:bgm.olafur_arnalds_near_light record @a[distance=..60] ~ ~ ~ 0.5 1
 execute in game_map:ancient_lorras positioned 10009 65 9836 if score .main_line ancient_lorras.story matches 110 run title @a[distance=..60] actionbar "音樂名:Near Light  音樂作者: Ólafur Arnalds"

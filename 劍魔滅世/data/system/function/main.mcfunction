@@ -10,4 +10,4 @@ execute as @e[tag=mob_spawner.marker] at @s unless entity @a[distance=..30] if e
 
 function system:jump_platform/loop
 
-function system:bouncing_lazer_block/interaction
+function system:injection/loop

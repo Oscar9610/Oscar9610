@@ -1,0 +1,1 @@
+advancement revoke @s only world_area:orantes/corrosion_of_conformity/in

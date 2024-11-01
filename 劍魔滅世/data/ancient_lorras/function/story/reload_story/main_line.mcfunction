@@ -1,3 +1,4 @@
+scoreboard players set #emera.system spaceship.global.main 0
 scoreboard players set .main_line ancient_lorras.story 1
 scoreboard players set .main_line ancient_lorras.global.main 0
 scoreboard players set #ancient_lorras_1.mw.rt ancient_lorras.global.main 0

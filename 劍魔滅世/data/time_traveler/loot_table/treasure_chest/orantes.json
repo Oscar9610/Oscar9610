@@ -2,48 +2,55 @@
   "pools": [
     {
       "rolls": {
-        "min": 3,
-        "max": 6
+        "min": 5,
+        "max": 8
       },
-      "bonus_rolls": 2,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:emerald",
-          "weight": 60,
-          "quality": 0,
+          "name": "minecraft:iron_sword",
+          "weight": 5,
           "functions": [
             {
-              "function": "minecraft:set_custom_data",
-              "tag": "{money:1b}"
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "1234-1234-1234-1234",
+                  "attribute": "minecraft:generic.attack_damage",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "1234-1234-1234-1234",
+                  "attribute": "minecraft:generic.attack_speed",
+                  "amount": -2.8,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "1234-1234-1234-1234",
+                  "attribute": "minecraft:generic.attack_knockback",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
             },
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:unbreakable": {
-                  "show_in_tooltip": false
-                },
-                "minecraft:enchantments": {
-                  "levels": {},
-                  "show_in_tooltip": false
-                },
-                "minecraft:attribute_modifiers": {
-                  "modifiers": [],
-                  "show_in_tooltip": false
-                },
-                "minecraft:custom_name": "{\"extra\":[{\"color\":\"dark_purple\",\"text\":\"星輝幣 1 元\"}],\"italic\":false,\"text\":\"\"}",
+                "minecraft:custom_name": "{\"extra\":[{\"text\":\"\",\"italic\":false,\"bold\":true},{\"text\":\"☆☆\",\"color\":\"#BEF4BE\",\"bold\":true},{\"text\":\"逼逼錘\",\"color\":\"white\",\"bold\":true}],\"italic\":false,\"text\":\"\"}",
                 "minecraft:lore": [
-                  "{\"extra\":[{\"color\":\"dark_gray\",\"text\":\"通用金錢\"}],\"italic\":false,\"text\":\"\"}",
-                  "{\"extra\":[{\"color\":\"gray\",\"text\":\"全宇宙通用的貨幣\"}],\"italic\":false,\"text\":\"\"}",
-                  "{\"extra\":[{\"color\":\"gray\",\"text\":\"任誰都能理解它的價值與份量\"}],\"italic\":false,\"text\":\"\"}"
-                ]
-              }
-            },
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 5,
-                "max": 10
+                  "{\"extra\":[{\"text\":\"\",\"italic\":false},{\"text\":\"斧頭 / 玩具 / \",\"color\":\"dark_gray\"},{\"text\":\"\\uE012\",\"color\":\"white\"},{\"text\":\"物理\",\"color\":\"dark_gray\"}],\"italic\":false,\"text\":\"\"}",
+                  "{\"extra\":[{\"text\":\"逼逼錘，傷害不高，但是惡趣味極高！\",\"italic\":false,\"color\":\"blue\"}],\"italic\":false,\"text\":\"\"}",
+                  "{\"extra\":[{\"text\":\"\",\"italic\":false},{\"text\":\"攻擊力\\uF829\\uF803\",\"color\":\"gray\"},{\"text\":\"3\",\"color\":\"white\"}],\"italic\":false,\"text\":\"\"}",
+                  "{\"extra\":[{\"text\":\"\",\"italic\":false},{\"text\":\"攻擊速度 \",\"color\":\"gray\"},{\"text\":\"1.2\",\"color\":\"white\"}],\"italic\":false,\"text\":\"\"}",
+                  "{\"extra\":[{\"text\":\"\",\"italic\":false},{\"text\":\"擊退\\uF829\\uF826\",\"color\":\"gray\"},{\"text\":\"4\",\"color\":\"white\"}],\"italic\":false,\"text\":\"\"}"
+                ],
+                "minecraft:custom_model_data": 8,
+                "minecraft:custom_data": "{type:\"weapon\",weapon:\"bibi_hammer\",can_modify:1b,physical:1b}",
+                "minecraft:max_damage": 156
               }
             }
           ]
@@ -51,48 +58,99 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:iron_sword",
-          "weight": 10,
-          "quality": 20,
+          "weight": 5,
           "functions": [
             {
-              "function": "minecraft:set_custom_data",
-              "tag": "{vault:\"noob_sword\"}"
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "1234-1234-1234-1234",
+                  "attribute": "minecraft:generic.attack_damage",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "1234-1234-1234-1234",
+                  "attribute": "minecraft:generic.attack_speed",
+                  "amount": -2.5,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "1234-1234-1234-1234",
+                  "attribute": "minecraft:generic.armor",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
             },
             {
-              "function": "minecraft:set_custom_model_data",
-              "value": 1
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "{\"extra\":[{\"text\":\"\",\"italic\":false,\"bold\":true},{\"text\":\"☆☆☆\",\"color\":\"#ABF2F2\",\"bold\":true},{\"text\":\"皇家騎士之劍\",\"color\":\"white\",\"bold\":true}],\"italic\":false,\"text\":\"\"}",
+                "minecraft:lore": [
+                  "{\"extra\":[{\"text\":\"\",\"italic\":false},{\"text\":\"劍 / 皇家騎士 / \",\"color\":\"dark_gray\"},{\"text\":\"\\uE011\",\"color\":\"white\"},{\"text\":\"火\",\"color\":\"dark_gray\"}],\"italic\":false,\"text\":\"\"}",
+                  "{\"extra\":[{\"text\":\"皇家騎士之劍，代表王國的榮耀\",\"italic\":false,\"color\":\"blue\"}],\"italic\":false,\"text\":\"\"}",
+                  "{\"extra\":[{\"text\":\"\",\"italic\":false},{\"text\":\"攻擊力\\uF829\\uF803\",\"color\":\"gray\"},{\"text\":\"5\",\"color\":\"white\"}],\"italic\":false,\"text\":\"\"}",
+                  "{\"extra\":[{\"text\":\"\",\"italic\":false},{\"text\":\"攻擊速度 \",\"color\":\"gray\"},{\"text\":\"1.5\",\"color\":\"white\"}],\"italic\":false,\"text\":\"\"}",
+                  "{\"extra\":[{\"text\":\"\",\"italic\":false},{\"text\":\"盔甲值\\uF829\\uF803\",\"color\":\"gray\"},{\"text\":\"4\",\"color\":\"white\"}],\"italic\":false,\"text\":\"\"}"
+                ],
+                "minecraft:custom_model_data": 35,
+                "minecraft:custom_data": "{type:\"weapon\",weapon:\"royal_knight_sword\",can_modify:1b,fire:1b}",
+                "minecraft:max_damage": 156
+              }
             }
           ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:iron_sword",
-          "weight": 10,
-          "quality": 20,
+          "weight": 5,
           "functions": [
             {
-              "function": "minecraft:set_custom_data",
-              "tag": "{vault:\"noob_axe\"}"
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "1234-1234-1234-1234",
+                  "attribute": "minecraft:generic.attack_damage",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "1234-1234-1234-1234",
+                  "attribute": "minecraft:generic.attack_speed",
+                  "amount": -2.25,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "1234-1234-1234-1234",
+                  "attribute": "minecraft:generic.movement_speed",
+                  "amount": 0.1,
+                  "operation": "add_multiplied_base",
+                  "slot": "offhand"
+                }
+              ]
             },
             {
-              "function": "minecraft:set_custom_model_data",
-              "value": 2
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:iron_sword",
-          "weight": 10,
-          "quality": 20,
-          "functions": [
-            {
-              "function": "minecraft:set_custom_data",
-              "tag": "{vault:\"noob_sickle\"}"
-            },
-            {
-              "function": "minecraft:set_custom_model_data",
-              "value": 3
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": "{\"extra\":[{\"text\":\"\",\"italic\":false,\"bold\":true},{\"text\":\"☆\",\"color\":\"white\",\"bold\":true},{\"text\":\"曬衣架\",\"color\":\"white\",\"bold\":true}],\"italic\":false,\"text\":\"\"}",
+                "minecraft:lore": [
+                  "{\"extra\":[{\"text\":\"\",\"italic\":false},{\"text\":\"鐮刀 / 生活 / \",\"color\":\"dark_gray\"},{\"text\":\"\\uE012\",\"color\":\"white\"},{\"text\":\"物理\",\"color\":\"dark_gray\"}],\"italic\":false,\"text\":\"\"}",
+                  "{\"extra\":[{\"text\":\"每個小孩的噩夢。\",\"italic\":false,\"color\":\"blue\"}],\"italic\":false,\"text\":\"\"}",
+                  "{\"extra\":[{\"text\":\"放在副手移動速度會變快！\",\"italic\":false,\"color\":\"blue\"}],\"italic\":false,\"text\":\"\"}",
+                  "{\"extra\":[{\"text\":\"\",\"italic\":false},{\"text\":\"攻擊力\\uF829\\uF803\",\"color\":\"gray\"},{\"text\":\"4\",\"color\":\"white\"}],\"italic\":false,\"text\":\"\"}",
+                  "{\"extra\":[{\"text\":\"\",\"italic\":false},{\"text\":\"攻擊速度 \",\"color\":\"gray\"},{\"text\":\"1.75\",\"color\":\"white\"}],\"italic\":false,\"text\":\"\"}",
+                  "{\"extra\":[{\"text\":\"\",\"italic\":false},{\"text\":\"移動速度 \",\"color\":\"gray\"},{\"text\":\"10%\",\"color\":\"white\"}],\"italic\":false,\"text\":\"\"}"
+                ],
+                "minecraft:custom_model_data": 9,
+                "minecraft:custom_data": "{type:\"weapon\",weapon:\"coat_hanger\",can_modify:1b,physical:1b}",
+                "minecraft:max_damage": 156
+              }
             }
           ]
         },
@@ -101,173 +159,33 @@
           "children": [
             {
               "type": "minecraft:item",
-              "name": "minecraft:cooked_beef",
-              "weight": 20,
-              "quality": 20,
-              "functions": [
-                {
-                  "function": "minecraft:set_count",
-                  "count": {
-                    "min": 1,
-                    "max": 2
-                  }
-                }
-              ]
+              "name": "minecraft:dried_kelp",
+              "weight": 80
             },
             {
               "type": "minecraft:item",
-              "name": "minecraft:cooked_porkchop",
-              "weight": 20,
-              "quality": 20,
-              "functions": [
-                {
-                  "function": "minecraft:set_count",
-                  "count": {
-                    "min": 1,
-                    "max": 2
-                  }
-                }
-              ]
+              "name": "minecraft:cookie",
+              "weight": 80
             },
             {
               "type": "minecraft:item",
-              "name": "minecraft:cooked_mutton",
-              "weight": 20,
-              "quality": 20,
-              "functions": [
-                {
-                  "function": "minecraft:set_count",
-                  "count": {
-                    "min": 1,
-                    "max": 2
-                  }
-                }
-              ]
+              "name": "minecraft:cod",
+              "weight": 80
             },
             {
               "type": "minecraft:item",
-              "name": "minecraft:cooked_salmon",
-              "weight": 20,
-              "quality": 20,
-              "functions": [
-                {
-                  "function": "minecraft:set_count",
-                  "count": {
-                    "min": 1,
-                    "max": 2
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "minecraft:alternatives",
-          "children": [
-            {
-              "type": "minecraft:item",
-              "name": "minecraft:baked_potato",
-              "weight": 40,
-              "quality": 40,
-              "functions": [
-                {
-                  "function": "minecraft:set_count",
-                  "count": {
-                    "min": 1,
-                    "max": 5
-                  }
-                }
-              ]
+              "name": "minecraft:salmon",
+              "weight": 80
             },
             {
               "type": "minecraft:item",
-              "name": "minecraft:beetroot",
-              "weight": 40,
-              "quality": 40,
-              "functions": [
-                {
-                  "function": "minecraft:set_count",
-                  "count": {
-                    "min": 1,
-                    "max": 5
-                  }
-                }
-              ]
+              "name": "minecraft:rotten_flesh",
+              "weight": 80
             },
             {
               "type": "minecraft:item",
-              "name": "minecraft:bread",
-              "weight": 40,
-              "quality": 40,
-              "functions": [
-                {
-                  "function": "minecraft:set_count",
-                  "count": {
-                    "min": 1,
-                    "max": 5
-                  }
-                }
-              ]
-            },
-            {
-              "type": "minecraft:item",
-              "name": "minecraft:carrot",
-              "weight": 40,
-              "quality": 40,
-              "functions": [
-                {
-                  "function": "minecraft:set_count",
-                  "count": {
-                    "min": 1,
-                    "max": 5
-                  }
-                }
-              ]
-            },
-            {
-              "type": "minecraft:item",
-              "name": "minecraft:cooked_chicken",
-              "weight": 40,
-              "quality": 40,
-              "functions": [
-                {
-                  "function": "minecraft:set_count",
-                  "count": {
-                    "min": 1,
-                    "max": 5
-                  }
-                }
-              ]
-            },
-            {
-              "type": "minecraft:item",
-              "name": "minecraft:cooked_cod",
-              "weight": 40,
-              "quality": 40,
-              "functions": [
-                {
-                  "function": "minecraft:set_count",
-                  "count": {
-                    "min": 1,
-                    "max": 5
-                  }
-                }
-              ]
-            },
-            {
-              "type": "minecraft:item",
-              "name": "minecraft:cooked_rabbit",
-              "weight": 40,
-              "quality": 40,
-              "functions": [
-                {
-                  "function": "minecraft:set_count",
-                  "count": {
-                    "min": 1,
-                    "max": 5
-                  }
-                }
-              ]
+              "name": "minecraft:glow_berries",
+              "weight": 80
             }
           ]
         },
@@ -277,44 +195,22 @@
             {
               "type": "minecraft:item",
               "name": "minecraft:apple",
-              "weight": 60,
-              "functions": [
-                {
-                  "function": "minecraft:set_count",
-                  "count": {
-                    "min": 1,
-                    "max": 8
-                  }
-                }
-              ]
+              "weight": 60
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:melon_slice",
-              "weight": 60,
-              "functions": [
-                {
-                  "function": "minecraft:set_count",
-                  "count": {
-                    "min": 1,
-                    "max": 8
-                  }
-                }
-              ]
+              "weight": 60
             },
             {
               "type": "minecraft:item",
-              "name": "minecraft:pumpkin_pie",
-              "weight": 60,
-              "functions": [
-                {
-                  "function": "minecraft:set_count",
-                  "count": {
-                    "min": 1,
-                    "max": 8
-                  }
-                }
-              ]
+              "name": "minecraft:potato",
+              "weight": 60
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:sweet_berries",
+              "weight": 60
             }
           ]
         },
@@ -323,45 +219,167 @@
           "children": [
             {
               "type": "minecraft:item",
-              "name": "minecraft:cookie",
+              "name": "minecraft:cooked_rabbit",
+              "weight": 40
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:cooked_chicken",
+              "weight": 40
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:carrot",
+              "weight": 40
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:bread",
+              "weight": 40
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:beetroot",
+              "weight": 40
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:baked_potato",
+              "weight": 40
+            }
+          ]
+        },
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:cooked_salmon",
+              "weight": 20
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:cooked_porkchop",
+              "weight": 20
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:cooked_beef",
+              "weight": 20
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:cooked_mutton",
+              "weight": 20
+            }
+          ]
+        },
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:stone",
               "weight": 80,
               "functions": [
                 {
                   "function": "minecraft:set_count",
                   "count": {
                     "min": 1,
-                    "max": 10
+                    "max": 5
                   }
                 }
               ]
             },
             {
               "type": "minecraft:item",
-              "name": "minecraft:glow_berries",
+              "name": "minecraft:cobblestone",
               "weight": 80,
               "functions": [
                 {
                   "function": "minecraft:set_count",
                   "count": {
                     "min": 1,
-                    "max": 10
+                    "max": 5
                   }
                 }
               ]
             },
             {
               "type": "minecraft:item",
-              "name": "minecraft:sweet_berries",
+              "name": "minecraft:andesite",
               "weight": 80,
               "functions": [
                 {
                   "function": "minecraft:set_count",
                   "count": {
                     "min": 1,
-                    "max": 10
+                    "max": 5
                   }
                 }
               ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:tuff",
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 1,
+                    "max": 5
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:stripped_warped_stem",
+              "weight": 80,
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 1,
+                    "max": 5
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:oak_log",
+              "weight": 80
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:dark_oak_log",
+              "weight": 80
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:spruce_log",
+              "weight": 80
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:oak_planks",
+              "weight": 80
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:dark_oak_planks",
+              "weight": 80
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:spruce_planks",
+              "weight": 80
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:warped_planks",
+              "weight": 80
             }
           ]
         }

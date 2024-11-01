@@ -15,3 +15,5 @@ execute if block ~ ~-1 ~ slime_block facing entity @p eyes rotated ~ -30 run fun
 particle spore_blossom_air ~ ~1 ~ 2 2 2 2 2 force @a
 
 bossbar set poison players @a[distance=..60]
+
+execute unless entity @a[distance=..60] run function monsters:poison/void

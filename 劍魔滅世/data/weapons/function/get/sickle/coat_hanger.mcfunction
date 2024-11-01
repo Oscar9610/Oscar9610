@@ -1,0 +1,11 @@
+give @s minecraft:iron_sword[custom_name='[{"text":"","italic":false,"bold":true},{"text":"☆","color":"white"},{"text":"曬衣架","color":"white"}]',lore=['[{"text":"","italic":false},{"text":"鐮刀 / 生活 / ","color":"dark_gray"},{"text":"\\uE012","color":"white"},{"text":"物理","color":"dark_gray"}]','[{"text":"每個小孩的噩夢。","italic":false,"color":"blue"}]','[{"text":"放在副手移動速度會變快！","italic":false,"color":"blue"}]','[{"text":"","italic":false},{"text":"攻擊力\\uF829\\uF803","color":"gray"},{"text":"4","color":"white"}]','[{"text":"","italic":false},{"text":"攻擊速度 ","color":"gray"},{"text":"1.75","color":"white"}]','[{"text":"","italic":false},{"text":"移動速度 ","color":"gray"},{"text":"10%","color":"white"}]'],attribute_modifiers={modifiers:[{type:"generic.attack_damage",id:"base_attack_damage",amount:4,slot:"mainhand",operation:"add_value"},{type:"generic.attack_speed",id:"base_attack_speed",amount:-2.25,slot:"mainhand",operation:"add_value"},{type:"generic.movement_speed",id:"1",amount:0.1,slot:"offhand",operation:"add_multiplied_base"}],show_in_tooltip:false},max_stack_size=1,unbreakable={show_in_tooltip:0b},custom_model_data=9,custom_data={type:"weapon",weapon:"coat_hanger",can_modify:1b,physical:1b},] 1
+#custom_name = ['1', '曬衣架', '#14D8FF']
+#info  = ['鐮刀', '生活', '物理']
+#story = ['每個小孩的噩夢。', '放在副手移動速度會變快！']
+#item_data     = {'real_item': 'iron_sword', 'custom_model_data': 9, 'custom_data': '{type:"weapon",weapon:"coat_hanger",can_modify:1b,physical:1b}', 'max_damage': -1, 'can_use': False}
+#main_skill    = {'is_skill': False, 'cd': 25, 'name': '悲鳴雨斬 ● 明鏡止水', 'info': ['使用時會切換「光/水」兩種型態，並觸發「局部時空減速」，', '使時空減速內的敵人&=無法動彈、無法攻擊&-。', '「光型態」時會&=獲得力量、攻擊速度、加速&+，彈飛範圍內敵人', '「水型態」時會&=獲得立即恢復、抗性、漂浮&+，使範圍內敵人快', '速墜落並根據「幽光」層數，每秒對範圍內隨機敵人造成20次', '&=75%攻擊傷害&-，每次減少一層幽光，直到幽光耗盡。']}
+#passive_skill = {'is_skill': False, 'cd': 0, 'name': '幽光', 'info': ['攻擊敵人時會疊加一層「幽光」，上限為10層。']}
+
+#attribute.append({'name': '攻擊力', 'show_value': '4', 'value': 4, 'attribute_name': 'generic.attack_damage', 'slot': 'mainhand'})
+#attribute.append({'name': '攻擊速度', 'show_value': '1.75', 'value': -2.25, 'attribute_name': 'generic.attack_speed', 'slot': 'mainhand'})
+#attribute.append({'name': '移動速度', 'show_value': '10%', 'value': 0.1, 'attribute_name': 'generic.movement_speed', 'slot': 'offhand'})

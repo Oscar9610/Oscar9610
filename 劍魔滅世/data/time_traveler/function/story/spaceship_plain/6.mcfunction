@@ -16,5 +16,6 @@ execute if score #emera orantes.story matches 23 run schedule clear time_travele
 execute if score #emera orantes.story matches 23 run scoreboard players set @a disable.tp_book 0
 execute as @e[tag=hill] if score #emera orantes.story matches 23 run kill @s
 execute if score #emera orantes.story matches 23 run scoreboard players set #spaceship global.advancements 6
+execute if score #emera orantes.story matches 23 run scoreboard players set #emera.system spaceship.global.main 1
 
 execute if score #emera orantes.story matches 17..23 run scoreboard players add #emera orantes.story 1

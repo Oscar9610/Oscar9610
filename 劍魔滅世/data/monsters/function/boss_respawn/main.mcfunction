@@ -17,3 +17,5 @@ execute in game_map:ancient_lorras positioned -173 265 167 run function monsters
 execute in game_map:realm_of_time_and_space positioned -247 -10 433 run function monsters:boss_respawn/dark_overlord/start
 
 execute in game_map:ancient_lorras positioned 10000 60 10000 run function monsters:boss_respawn/su/start
+
+schedule function time_traveler:tp/map_lobby/loop 1t
