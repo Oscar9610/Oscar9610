@@ -1,6 +1,6 @@
-kill @e[tag=al.cutscene.1.1]
-kill @e[tag=al.cutscene.1.2]
-kill @e[tag=al.cutscene.1.3]
+kill @e[tag=orantes.cutscene.1.1]
+kill @e[tag=orantes.cutscene.1.2]
+kill @e[tag=orantes.cutscene.1.3]
 execute as @a run function ancient_lorras:cutscene/start
 
 

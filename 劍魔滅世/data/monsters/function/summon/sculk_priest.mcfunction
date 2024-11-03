@@ -3,7 +3,7 @@ summon zombie ~ ~ ~ {Passengers:[{id:"marker",Tags:["monster.marker"]}],CustomNa
 
 ## ----- 怪物屬性 ----- ##
 # 血量
-scoreboard players set #hp global.main 30
+scoreboard players set #hp global.main 20
 
 # 攻擊力
 scoreboard players set #atk global.main 2

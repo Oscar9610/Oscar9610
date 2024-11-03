@@ -20,16 +20,15 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-custom_name = ['3', '皇家騎士之劍', '#14D8FF']
-info  = ['劍', '皇家騎士', '火']
-story = ['皇家騎士之劍，代表王國的榮耀']
-item_data     = {'real_item': 'iron_sword', 'custom_model_data': 35, 'custom_data': '{type:"weapon",weapon:"royal_knight_sword",can_modify:1b,fire:1b}', 'max_damage': -1, 'can_use': False}
-main_skill    = {'is_skill': False, 'cd': 25, 'name': '悲鳴雨斬 ● 明鏡止水', 'info': ['使用時會切換「光/水」兩種型態，並觸發「局部時空減速」，', '使時空減速內的敵人&=無法動彈、無法攻擊&-。', '「光型態」時會&=獲得力量、攻擊速度、加速&+，彈飛範圍內敵人', '「水型態」時會&=獲得立即恢復、抗性、漂浮&+，使範圍內敵人快', '速墜落並根據「幽光」層數，每秒對範圍內隨機敵人造成20次', '&=75%攻擊傷害&-，每次減少一層幽光，直到幽光耗盡。']}
-passive_skill = {'is_skill': False, 'cd': 0, 'name': '幽光', 'info': ['攻擊敵人時會疊加一層「幽光」，上限為10層。']}
+custom_name = ['2', '破軍斧', '#FF4500']
+info  = ['斧頭', '戰爭', '物理']
+story = ['戰爭中的象徵，能夠一斧破敵。']
+item_data     = {'real_item': 'iron_axe', 'custom_model_data': 41, 'custom_data': '{type:"weapon",weapon:"war_axe",can_modify:1b,physical:1b}', 'max_damage': -1, 'can_use': False}
+main_skill    = {'is_skill': False, 'cd': 30, 'name': '破軍一擊 ● 毀滅', 'info': ['使用時對前方敵人造成200%攻擊傷害。']}
+passive_skill = {'is_skill': False, 'cd': 0, 'name': '戰鬥狂熱', 'info': ['每次擊殺敵人時，攻擊力提升5%。']}
 
-attribute.append({'name': '攻擊力', 'show_value': '5', 'value': 5, 'attribute_name': 'generic.attack_damage', 'slot': 'mainhand'})
-attribute.append({'name': '攻擊速度', 'show_value': '1.5', 'value': -2.5, 'attribute_name': 'generic.attack_speed', 'slot': 'mainhand'})
-attribute.append({'name': '盔甲值', 'show_value': '4', 'value': 4.0, 'attribute_name': 'generic.armor', 'slot': 'mainhand'})
+attribute.append({'name': '攻擊力', 'show_value': '7.0', 'value': 7.0, 'attribute_name': 'generic.attack_damage', 'slot': 'mainhand'})
+attribute.append({'name': '攻擊速度', 'show_value': '1.1', 'value': -2.9, 'attribute_name': 'generic.attack_speed', 'slot': 'mainhand'})
 
 # ----- init ----- #
 
