@@ -23,9 +23,10 @@ scoreboard objectives add orantes.story dummy "[水星 - 奧蘭蒂斯] 劇情"
 scoreboard objectives add orantes.global.main dummy "[水星 - 奧蘭蒂斯] 主要全局"
 scoreboard objectives add spaceship.global.main dummy "[太空站 - 奧莉亞] 主要全局"
 scoreboard objectives add orantes.transitions dummy "[水星 - 奧蘭蒂斯] 城市"
+scoreboard objectives add death_count deathCount [{"text":" ☠ 死亡次數 ☠","color":"red"}]
 
 scoreboard objectives add daytime_weather.weather dummy "[地圖大廳] 暫存天氣"
-scoreboard objectives add music.time_and_space_journey_mercury.chr.1 dummy "[時空旅途其一] 背景音樂"
+scoreboard objectives add music.hurricane_island dummy "[水星 - 奧蘭蒂斯] 颶風之島背景音樂"
 scoreboard objectives add duration dummy "實體存在時間"
 scoreboard objectives add health health "玩家血量"
 scoreboard objectives add player_count dummy "玩家數量"
@@ -104,7 +105,6 @@ scoreboard players set #music.rain_city bool.main 1
 scoreboard players set @a music.orantes_city 0
 scoreboard players set @a music.spaceship 0
 scoreboard players set @a music.place_of_trial 0
-scoreboard players set @a music.time_and_space_journey_mercury.chr.1 0
 scoreboard players set @a music.map_hall 0
 
 #=====================================================================================
@@ -118,6 +118,9 @@ scoreboard players add #portal.open global.main 0
 scoreboard players add #planet_id global.main 0
 
 scoreboard players add #spaceship.tutorial.state spaceship.global.main 0
+
+scoreboard players add @a death_count 0
+scoreboard objectives setdisplay sidebar death_count
 
 ##時空之境水星傳送門
 scoreboard players set #fx.tp_door orantes.global.main 0

@@ -28,6 +28,7 @@ team modify main_line color white
 team add players
 team join players @a
 team modify players friendlyFire false
+team modify players seeFriendlyInvisibles false
 
 # 怪物
 team add monster

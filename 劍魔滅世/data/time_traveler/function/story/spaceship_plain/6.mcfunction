@@ -9,8 +9,9 @@ execute as @e[tag=hill] at @s if score #emera orantes.story matches 22 run data 
 execute if score #emera orantes.story matches 23 run effect clear @n[tag=Emera] glowing
 execute if score #emera orantes.story matches 23 run tellraw @a ["\n",{"translate":"spaceship_plain.story.58","bold":true,"color":"gray"},"\n",{"translate":"spaceship_plain.story.59","bold":true,"color":"white"},{"translate":"spaceship_plain.story.60","bold":true,"color":"dark_aqua"},"\n",{"translate":"spaceship_plain.story.62","bold":true,"color":"gray"}]
 execute if score #emera orantes.story matches 23 run give @a trial_key 1
+execute if score #emera orantes.story matches 23 run give @a stone_pickaxe[unbreakable={show_in_tooltip:true}] 1
 execute if score #emera orantes.story matches 23 run tellraw @a ["\n",{"translate":"spaceship_plain.story.67","color":"gold"}]
-execute in game_map:orantes if score #emera orantes.story matches 23 run summon minecraft:block_display -42.50 55.5001 31.50 {Tags:["story.spaceship_plain.6"],Glowing:1b,block_state: {Name: "minecraft:cyan_concrete"}, brightness: {block: 10, sky: 0}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [-0.5f, -0.5f, -0.5f]}}
+execute in game_map:spaceship_interior if score #emera orantes.story matches 23 run summon minecraft:block_display -42.50 55.5001 31.50 {Tags:["story.spaceship_plain.6"],Glowing:1b,block_state: {Name: "minecraft:cyan_concrete"}, brightness: {block: 10, sky: 0}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [-0.5f, -0.5f, -0.5f]}}
 execute if score #emera orantes.story matches 23 run scoreboard players set .global orantes_-17_62_16 1
 execute if score #emera orantes.story matches 23 run scoreboard players set .global spaceship_0_61_-51 1
 execute if score #emera orantes.story matches 23 run schedule clear time_traveler:tp/disable_tp_book

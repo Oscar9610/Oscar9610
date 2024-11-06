@@ -16,6 +16,7 @@ execute as @a at @s run function time_traveler:monster_weakness/player_loop
 
 function system:main
 function rpg_armors:loop
+function rpg_items:main
 
 execute as @a[scores={disable_operate=1..}] at @s run function players:disable_operate
 function players:space_time_deceleration/loop

@@ -5,4 +5,6 @@ playsound minecraft:item.trident.return voice @s[gamemode=!spectator,gamemode=!c
 
 scoreboard players set @s disable.airborne 2147483647
 
+advancement grant @s only airborne:fly_mode/false
+
 advancement revoke @s only world_area:enable_airborne/true

@@ -7,7 +7,7 @@ execute as @e[type=minecraft:interaction,tag=Emera] if data entity @s interactio
 execute as @e[type=minecraft:interaction,tag=Emera] if data entity @s interaction.timestamp if score #emera orantes.story matches 17..23 if score #lena orantes.story matches 7.. run function time_traveler:story/spaceship_plain/6
 #========================================================
 #控制劇情進度
-execute as @e[type=minecraft:interaction,tag=Emera] at @s if data entity @s interaction.timestamp if score #emera.system spaceship.global.main matches 1.. run function time_traveler:story/spaceship_plain/emera/main
+execute as @e[type=minecraft:interaction,tag=Emera] at @s if data entity @s interaction.timestamp if score #emera orantes.story matches 5.. if score #emera.system spaceship.global.main matches 1.. run function time_traveler:story/spaceship_plain/emera/main
 
 #========================================================
 #草星

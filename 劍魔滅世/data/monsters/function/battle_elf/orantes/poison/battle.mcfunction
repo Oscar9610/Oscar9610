@@ -13,7 +13,7 @@
 
 # 設置玩家重生點
 
-    execute in game_map:orantes run spawnpoint @a[distance=..60] -174 106 342
+    execute in game_map:orantes run spawnpoint @a[distance=..60] -212 34 -51
 
 # 移除光源
 

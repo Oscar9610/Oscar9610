@@ -30,5 +30,8 @@
     execute as @a at @s if biome ~ ~ ~ #orantes:enable_airborne run advancement grant @s only world_area:enable_airborne/true
     execute as @a at @s unless biome ~ ~ ~ #orantes:enable_airborne run advancement grant @s only world_area:enable_airborne/false
 
+    execute as @a at @s if biome ~ ~ ~ #orantes:change_gravity run advancement grant @s only world_area:main/attributes/gravity/in
+    execute as @a at @s unless biome ~ ~ ~ #orantes:change_gravity run advancement grant @s only world_area:main/attributes/gravity/out
+
 # Loop
 schedule function world_area:main/loop 1t

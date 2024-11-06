@@ -14,6 +14,13 @@ execute as @a[scores={music.place_of_trial=1}] run function time_traveler:music/
 
 #============================================================================================================================================================================
 
+# ---颶風之島--- #
+
+execute as @a[scores={music.hurricane_island=1}] at @s run function time_traveler:music/hurricane_island/start
+
+#============================================================================================================================================================================
+
+
 # ---地圖大廳--- #
 
 execute as @a[scores={music.map_hall=1}] run function time_traveler:music/map_hall/start

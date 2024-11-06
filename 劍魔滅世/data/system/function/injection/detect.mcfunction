@@ -1,2 +1,3 @@
+execute if data entity @s {Invulnerable:1b} run data merge entity @s {Invulnerable:0b}
 execute if entity @s[tag=system.injection.weapon] unless data entity @s {Item:{components:{"minecraft:custom_data":{type:"weapon",can_modify:1b}}}} run function system:injection/false
 execute if entity @s[tag=system.injection.skill] unless data entity @s {Item:{components:{"minecraft:custom_data":{type:"skill"}}}} run function system:injection/false

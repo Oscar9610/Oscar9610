@@ -23,6 +23,11 @@ execute as @e[type=marker,tag=gravity_axe.1] at @s run function weapons:gravity_
 execute as @a[tag=water_sword.water] at @s run function weapons:water_sword/water/main
 execute as @a[tag=water_sword.light] at @s run function weapons:water_sword/light/main
 
+execute store result score #water_sword_demon.count global.main run clear @a iron_sword[custom_data~{weapon:"water_sword"}] 0
+
+execute if score #water_sword_demon.count global.main matches 2.. run tellraw @a {"text":"\n⚠: 根據世界觀設定，這個世界上只能存在一把水鏡之光\n隨機移除玩家多餘的武器\n","color":"gold"}
+execute if score #water_sword_demon.count global.main matches 2.. run clear @r iron_sword[custom_data~{weapon:"water_sword"}] 1
+
 # sharp dual
 execute as @a[tag=sharp_dual.user] at @s run function weapons:sharp_dual/main
 

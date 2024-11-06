@@ -16,6 +16,21 @@
     execute as @a at @s if biome ~ ~ ~ orantes:orantes/corrosion_of_conformity run advancement grant @s only world_area:orantes/corrosion_of_conformity/in
     execute as @a at @s unless biome ~ ~ ~ orantes:orantes/corrosion_of_conformity run advancement grant @s only world_area:orantes/corrosion_of_conformity/out
 
+    #幻影之境
+
+    execute as @a at @s if biome ~ ~ ~ orantes:orantes/phantom_realm run advancement grant @s only world_area:orantes/phantom_realm/in
+    execute as @a at @s unless biome ~ ~ ~ orantes:orantes/phantom_realm run advancement grant @s only world_area:orantes/phantom_realm/out
+
+    #颶風之島
+
+    execute as @a at @s if biome ~ ~ ~ orantes:orantes/hurricane_island run advancement grant @s only world_area:orantes/hurricane_island/in
+    execute as @a at @s unless biome ~ ~ ~ orantes:orantes/hurricane_island run advancement grant @s only world_area:orantes/hurricane_island/out
+
+    #風暴點
+
+    execute as @a at @s if biome ~ ~ ~ orantes:orantes/storm_point run advancement grant @s only world_area:orantes/storm_point/in
+    execute as @a at @s unless biome ~ ~ ~ orantes:orantes/storm_point run advancement grant @s only world_area:orantes/storm_point/out
+
     #試煉之地
 
     execute as @a at @s if biome ~ ~ ~ orantes:sculk_biome run advancement grant @s only world_area:orantes/land_of_trial/in

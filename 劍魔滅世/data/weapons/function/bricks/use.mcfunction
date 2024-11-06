@@ -1,9 +1,9 @@
 
 # effect
-scoreboard players set @s bricks.cd 15
+scoreboard players set @s bricks.cd 45
 
 tag @e[type=#time_traveler:monsters,distance=..4] add dmger
-scoreboard players set @s atk 200
+scoreboard players set @s atk 125
 function time_traveler:dmg_formula/calculate
 
 effect give @e[type=#time_traveler:monsters,distance=..4] slowness 7 255 true

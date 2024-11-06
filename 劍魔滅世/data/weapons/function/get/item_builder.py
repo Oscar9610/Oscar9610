@@ -20,15 +20,16 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-custom_name = ['2', '破軍斧', '#FF4500']
-info  = ['斧頭', '戰爭', '物理']
-story = ['戰爭中的象徵，能夠一斧破敵。']
-item_data     = {'real_item': 'iron_axe', 'custom_model_data': 41, 'custom_data': '{type:"weapon",weapon:"war_axe",can_modify:1b,physical:1b}', 'max_damage': -1, 'can_use': False}
-main_skill    = {'is_skill': False, 'cd': 30, 'name': '破軍一擊 ● 毀滅', 'info': ['使用時對前方敵人造成200%攻擊傷害。']}
-passive_skill = {'is_skill': False, 'cd': 0, 'name': '戰鬥狂熱', 'info': ['每次擊殺敵人時，攻擊力提升5%。']}
+custom_name = ['4', '重力斧', '#F4E75D']
+info  = ['斧頭', '重力', '雷']
+story = ['注入魔力後能透過引力，', '把敵人吸入其中的重力斧。']
+item_data     = {'real_item': 'iron_sword', 'custom_model_data': 28, 'custom_data': '{type:"weapon",weapon:"gravity_axe",thunder:1b}', 'max_damage': -1, 'can_use': True}
+main_skill    = {'is_skill': True, 'cd': 20, 'name': '引力扭曲', 'info': ['對最近的敵人造成&=200%攻擊傷害&-，', '並製造引力黑洞，吸附大範圍內的', '敵人至玩家位置，期間被吸附的', '敵人會受到&=50%攻擊傷害&-。']}
+passive_skill = {'is_skill': False, 'cd': 0, 'name': '重力鎧甲', 'info': ['重力無形的能量支撐周圍，', '放在副手時能夠獲得&=20%盔甲值&-。']}
 
-attribute.append({'name': '攻擊力', 'show_value': '7.0', 'value': 7.0, 'attribute_name': 'generic.attack_damage', 'slot': 'mainhand'})
+attribute.append({'name': '攻擊力', 'show_value': '7.5', 'value': 7.5, 'attribute_name': 'generic.attack_damage', 'slot': 'mainhand'})
 attribute.append({'name': '攻擊速度', 'show_value': '1.1', 'value': -2.9, 'attribute_name': 'generic.attack_speed', 'slot': 'mainhand'})
+attribute.append({'name': '抗擊退', 'show_value': '40%', 'value': 0.4, 'attribute_name': 'generic.knockback_resistance', 'slot': 'mainhand'})
 
 # ----- init ----- #
 

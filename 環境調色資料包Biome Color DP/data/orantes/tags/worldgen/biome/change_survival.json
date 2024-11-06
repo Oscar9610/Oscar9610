@@ -2,6 +2,9 @@
   "replace": true,
   "values": [
     "orantes:orantes/corrosion_of_conformity",
-    "orantes:rain_city"
+    "orantes:rain_city",
+    "orantes:orantes/storm_point",
+    "orantes:orantes/hurricane_island",
+    "orantes:orantes/phantom_realm"
   ]
 }

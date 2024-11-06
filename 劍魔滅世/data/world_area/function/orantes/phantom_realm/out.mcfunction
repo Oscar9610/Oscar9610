@@ -1,0 +1,1 @@
+advancement revoke @s only world_area:orantes/phantom_realm/in

@@ -1,6 +1,6 @@
 summon minecraft:text_display ~ ~2.5 ~ {alignment:"center",background:1073741824,billboard:"vertical",default_background:0b,line_width:200,see_through:0b,shadow:0b,text:'"啟動壓力版即可設置重生點！"',text_opacity:-1b}
 setblock ~ ~1 ~ minecraft:stone_pressure_plate[powered=false] replace
-setblock ~ ~ ~ gold_block replace
+setblock ~ ~ ~ bedrock replace
 
 setblock ~ ~ ~1 minecraft:tuff_brick_stairs[facing=north,half=bottom,shape=straight,waterlogged=false] replace
 setblock ~1 ~ ~1 minecraft:tuff_brick_stairs[facing=north,half=bottom,shape=outer_left,waterlogged=false] replace
