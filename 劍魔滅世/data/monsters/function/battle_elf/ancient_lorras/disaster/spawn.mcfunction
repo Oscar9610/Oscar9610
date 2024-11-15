@@ -5,7 +5,7 @@ execute in game_map:ancient_lorras run summon interaction -177 264 156 {width:1,
 execute in game_map:ancient_lorras run setblock -175 264 160 light[level=15]
 
 execute in game_map:ancient_lorras positioned -175 264 160 as @e[tag=boss.display,distance=..10] run function animated_java:boss_display/remove/all
-execute in game_map:ancient_lorras positioned -175 264.5 160 rotated 0 0 run function animated_java:boss_display/summon/default
+execute in game_map:ancient_lorras positioned -175 264.5 160 rotated 0 0 run function animated_java:boss_display/summon {args: {}}
 
 tag @e[tag=boss.display.spawn] remove boss.display.spawn
 

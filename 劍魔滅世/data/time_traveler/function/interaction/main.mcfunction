@@ -1,5 +1,9 @@
 #太空站
-function time_traveler:interaction/emera
+
+# Emera / 艾梅拉
+    execute as @e[type=minecraft:interaction,tag=Emera] at @s if data entity @s interaction.timestamp run function time_traveler:interaction/emera
+
+# 萊納
 function time_traveler:interaction/lena
 function time_traveler:interaction/tutorial
 

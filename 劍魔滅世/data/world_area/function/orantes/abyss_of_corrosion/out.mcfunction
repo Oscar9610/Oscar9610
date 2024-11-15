@@ -1,0 +1,1 @@
+advancement revoke @s only world_area:orantes/abyss_of_corrosion/in

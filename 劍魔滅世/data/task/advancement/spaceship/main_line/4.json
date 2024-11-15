@@ -14,8 +14,8 @@
         }
       }
     },
-    "title": "去找萊娜",
-    "description": "萊娜是飛船駕駛員，任何地圖都可以在她那邊拿到",
+    "title": "去找萊納",
+    "description": "萊納是飛船駕駛員，任何地圖都可以在她那邊拿到",
     "background": "minecraft:textures/gui/advancements/backgrounds/space.png",
     "frame": "task",
     "show_toast": true,

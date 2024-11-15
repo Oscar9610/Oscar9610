@@ -1,7 +1,7 @@
 # 怪物
 summon zombie ~ ~ ~ {DeathLootTable:"",Silent:1b,Tags:["normal.zombie.hurt.sound","monster","flash_crystal","monster.spawn","flash_crystal.entity"],ArmorItems:[{},{},{},{id:"minecraft:brown_carpet",count:1}],ArmorDropChances:[0.085F,0.085F,0.085F,0.000F],active_effects:[{id:"minecraft:invisibility",amplifier:-1,duration:-1,show_particles:0b,show_icon:0b,ambient:0b}],attributes:[{id:"minecraft:generic.armor",base:8},{id:"minecraft:generic.attack_speed",base:0},{id:"minecraft:generic.knockback_resistance",base:0.5},{id:"minecraft:generic.movement_speed",base:0.25},{id:"minecraft:generic.explosion_knockback_resistance",base:0.5}]}
 
-function animated_java:flash_crystal/summon/default
+function animated_java:flash_crystal/summon {args: {}}
 
 # particle
 particle minecraft:end_rod ~ ~1.5 ~ 0 0 0 0.5 50

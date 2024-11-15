@@ -17,6 +17,7 @@ execute if score #emera orantes.story matches 23 run scoreboard players set .glo
 execute if score #emera orantes.story matches 23 run schedule clear time_traveler:tp/disable_tp_book
 execute if score #emera orantes.story matches 23 run scoreboard players set @a disable.tp_book 0
 execute as @e[tag=hill] if score #emera orantes.story matches 23 run kill @s
+execute if score #emera orantes.story matches 23 run scoreboard players set #music.rain_city global.main 3
 execute if score #emera orantes.story matches 23 run scoreboard players set #spaceship global.advancements 6
 execute if score #emera orantes.story matches 23 run scoreboard players set #emera.system spaceship.global.main 1
 

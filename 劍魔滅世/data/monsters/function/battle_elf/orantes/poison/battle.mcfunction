@@ -17,7 +17,7 @@
 
 # 移除光源
 
-    execute in game_map:orantes run setblock -218 35 -52 air
+    execute in game_map:orantes run setblock -218 36 -52 air
 
 # 重啟戰鬥音樂
 
@@ -27,7 +27,7 @@
 
 # 移除 Display
 
-    execute in game_map:orantes positioned -218 35 -52 as @e[tag=boss.display,distance=..10] run function animated_java:boss_display/remove/this
+    execute in game_map:orantes positioned -218 36 -52 as @e[tag=boss.display,distance=..10] run function animated_java:boss_display/remove/this
     kill @e[tag=battle_elf.poison]
 
 # BOSS 生成

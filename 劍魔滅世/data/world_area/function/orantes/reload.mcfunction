@@ -4,3 +4,4 @@ advancement revoke @a only world_area:orantes/corrosion_of_conformity/in
 advancement revoke @a only world_area:orantes/phantom_realm/in
 advancement revoke @a only world_area:orantes/storm_point/in
 advancement revoke @a only world_area:orantes/hurricane_island/in
+advancement revoke @a only world_area:orantes/abyss_of_corrosion/in

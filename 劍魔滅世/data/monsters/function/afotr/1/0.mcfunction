@@ -1,6 +1,6 @@
 
 # effect
-execute if entity @a[distance=..20] at @p[distance=..20] run function animated_java:chain_lock/summon/default
+execute if entity @a[distance=..20] at @p[distance=..20] run function animated_java:chain_lock/summon {args: {}}
 
 # particle
 title @a[distance=..20] title {"text":"\uE024"}

@@ -12,4 +12,3 @@ tag @s remove poison_boss.4
 execute store result score @s[tag=!poison_boss.4.already] monster.skill.cast.cd run random value 80..150
 execute store result score @s[tag=poison_boss.4.already] monster.skill.cast.cd run random value 60..100
 execute store result score @s monster.skill.rdm.skill run random value 1..3
-execute if score @s monster.skill.rdm.skill matches 2 store result score @s monster.skill.rdm.skill run random value 1..3

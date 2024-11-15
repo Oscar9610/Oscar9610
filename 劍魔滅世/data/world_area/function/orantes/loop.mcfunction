@@ -16,6 +16,12 @@
     execute as @a at @s if biome ~ ~ ~ orantes:orantes/corrosion_of_conformity run advancement grant @s only world_area:orantes/corrosion_of_conformity/in
     execute as @a at @s unless biome ~ ~ ~ orantes:orantes/corrosion_of_conformity run advancement grant @s only world_area:orantes/corrosion_of_conformity/out
 
+    #腐蝕之淵
+
+    execute as @a at @s if biome ~ ~ ~ orantes:orantes/abyss_of_corrosion run advancement grant @s only world_area:orantes/abyss_of_corrosion/in
+    execute as @a at @s unless biome ~ ~ ~ orantes:orantes/abyss_of_corrosion run advancement grant @s only world_area:orantes/abyss_of_corrosion/out
+
+
     #幻影之境
 
     execute as @a at @s if biome ~ ~ ~ orantes:orantes/phantom_realm run advancement grant @s only world_area:orantes/phantom_realm/in

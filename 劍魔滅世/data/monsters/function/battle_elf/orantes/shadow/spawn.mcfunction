@@ -10,7 +10,7 @@
     
     execute in game_map:orantes run setblock 1 75 -347 light[level=15]
     execute in game_map:orantes positioned 1 75 -347 as @e[tag=boss.display,distance=..10] run function animated_java:boss_display/remove/all
-    execute in game_map:orantes positioned 1 75 -347 rotated 0 0 run function animated_java:boss_display/summon/default
+    execute in game_map:orantes positioned 1 75 -347 rotated 0 0 run function animated_java:boss_display/summon {args: {}}
 
 # 移除設置完畢的標籤
 

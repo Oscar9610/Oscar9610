@@ -20,6 +20,9 @@
         "dark_oak_leaves",
         "mangrove_leaves",
         "cherry_leaves",
-        "flowering_azalea_leaves"
+        "flowering_azalea_leaves",
+        "stone_bricks",
+        "cracked_stone_bricks",
+        "stone_brick_stairs"
     ]
 }
