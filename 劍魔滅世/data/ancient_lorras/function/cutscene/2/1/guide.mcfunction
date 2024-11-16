@@ -9,4 +9,4 @@ scoreboard players set .main_line ancient_lorras.story 107
 schedule function ancient_lorras:story/main_line/sakura_grove/10/main 4s
 
 
-execute rotated 0 0 in game_map:ancient_lorras positioned 10000 60 10000 run function animated_java:su_boss/summon/default
+execute rotated 0 0 in game_map:ancient_lorras positioned 10000 60 10000 run function animated_java:su_boss/summon {args: {}}

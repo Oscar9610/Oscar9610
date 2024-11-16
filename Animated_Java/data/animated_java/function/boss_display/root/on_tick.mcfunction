@@ -2,8 +2,7 @@
 execute unless entity @s[tag=aj.boss_display.root] run return 0
 execute unless score @s aj.is_rig_loaded matches 1 run function #animated_java:global/root/on_load
 function #animated_java:boss_display/as_root/pre_tick
-execute if entity @s[tag=aj.boss_display.animation.idle.playing] run function animated_java:boss_display/animations/idle/zzz/on_tick
 execute if entity @s[tag=aj.boss_display.animation.spawn.playing] run function animated_java:boss_display/animations/spawn/zzz/on_tick
-execute on passengers if entity @s[tag=aj.boss_display.data] run function animated_java:boss_display/root/zzz/1
+execute if entity @s[tag=aj.boss_display.animation.idle.playing] run function animated_java:boss_display/animations/idle/zzz/on_tick
 execute at @s on passengers run tp @s ~ ~ ~ ~ ~
 function #animated_java:boss_display/as_root/post_tick

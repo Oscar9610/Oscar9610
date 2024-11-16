@@ -1,6 +1,7 @@
 {
   "replace": true,
   "values": [
-    "orantes:rain_city_1"
+    "orantes:rain_city_1",
+    "orantes:space_station"
   ]
 }

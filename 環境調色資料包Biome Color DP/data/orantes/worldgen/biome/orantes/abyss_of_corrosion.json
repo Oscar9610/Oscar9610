@@ -1,0 +1,24 @@
+{
+    "temperature": 0.8,
+    "downfall": 0,
+    "has_precipitation": true,
+    "effects": {
+      "sky_color": 4100936,
+      "fog_color": 617748,
+      "water_color": 617748,
+      "water_fog_color": 13062,
+      "grass_color": 13062,
+      "foliage_color": 13062,
+      "particle": {
+        "options": {
+          "type": "minecraft:item_slime"
+        },
+        "probability": 0.01
+      }
+    },
+    "spawners": {},
+    "spawn_costs": {},
+    "carvers": {},
+    "features": []
+  }
+  
