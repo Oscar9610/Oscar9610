@@ -1,0 +1,1 @@
+scoreboard players add @s[scores={screen.water_moon_realm.frame=0..28}] screen.water_moon_realm.frame 1

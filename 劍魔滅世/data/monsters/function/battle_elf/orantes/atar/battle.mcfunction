@@ -8,6 +8,8 @@
     title @a[distance=..60] subtitle ""
     title @a[distance=..60] times 10 20 10
 
+    scoreboard players set @a[distance=..60] global.main 1
+
 # 啟動音效
     playsound minecraft:entity.ender_dragon.growl voice @a[distance=..30] ~ ~ ~ 9999 1
 

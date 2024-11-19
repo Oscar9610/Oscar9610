@@ -1,10 +1,8 @@
 # BOSS介紹
     execute as @n[tag=battle_elf.su.act] at @s if data entity @s interaction.timestamp as @a[distance=..30] run function monsters:battle_elf/ancient_lorras/su/introduce
-    execute as @n[tag=battle_elf.disaster.act] at @s if data entity @s interaction.timestamp as @a[distance=..30] run function monsters:battle_elf/ancient_lorras/disaster/introduce
     execute as @n[tag=battle_elf.afotr.act] at @s if data entity @s interaction.timestamp as @a[distance=..30] run function monsters:battle_elf/ancient_lorras/afotr/introduce
     execute as @n[tag=battle_elf.atar.act] at @s if data entity @s interaction.timestamp as @a[distance=..30] run function monsters:battle_elf/orantes/atar/introduce
     execute as @n[tag=battle_elf.poison.act] at @s if data entity @s interaction.timestamp as @a[distance=..30] run function monsters:battle_elf/orantes/poison/introduce
-    execute as @n[tag=battle_elf.shadow.act] at @s if data entity @s interaction.timestamp as @a[distance=..30] run function monsters:battle_elf/orantes/shadow/introduce
     execute as @n[tag=battle_elf.storm.act] at @s if data entity @s interaction.timestamp as @a[distance=..30] run function monsters:battle_elf/orantes/storm/introduce
 
 # 全局BOSS精靈互動

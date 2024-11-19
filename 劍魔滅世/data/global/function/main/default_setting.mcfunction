@@ -24,3 +24,5 @@ advancement revoke @a only rotas:task/1
 scoreboard players set global detect_player_in_lobby 0
 scoreboard players set .player.highest_level global.main 1
 scoreboard objectives setdisplay sidebar
+
+scoreboard objectives setdisplay sidebar death_count

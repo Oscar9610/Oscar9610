@@ -9,6 +9,8 @@ scoreboard objectives add boss.respawn.cd dummy "自動生成BOSS間隔"
 
 scoreboard objectives add monster.id dummy "怪物編號"
 
+scoreboard objectives add monster.state.machine dummy "怪物狀態機"
+
 scoreboard objectives add animation.controller dummy "動畫控制器"
 
 # ----- 特殊Boss記分板 ----- #

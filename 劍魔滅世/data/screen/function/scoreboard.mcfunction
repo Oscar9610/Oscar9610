@@ -1,0 +1,1 @@
+scoreboard objectives add screen.water_moon_realm.frame dummy

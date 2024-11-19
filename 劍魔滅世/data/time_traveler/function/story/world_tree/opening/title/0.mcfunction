@@ -1,10 +1,10 @@
-execute if score #world_tree.opening.title world_tree.story matches 5 run title @a title {"text":"一"}
+execute if score #world_tree.opening.title world_tree.story matches 5 run title @a title {"text":"光"}
 execute if score #world_tree.opening.title world_tree.story matches 5 run playsound minecraft:ui.button.click voice @a 5 -36 -129 9999 1
-execute if score #world_tree.opening.title world_tree.story matches 10 run title @a title {"text":"一切"}
+execute if score #world_tree.opening.title world_tree.story matches 10 run title @a title {"text":"光暗"}
 execute if score #world_tree.opening.title world_tree.story matches 10 run playsound minecraft:ui.button.click voice @a 5 -36 -129 9999 1
-execute if score #world_tree.opening.title world_tree.story matches 15 run title @a title {"text":"一切都"}
+execute if score #world_tree.opening.title world_tree.story matches 15 run title @a title {"text":"光暗大"}
 execute if score #world_tree.opening.title world_tree.story matches 15 run playsound minecraft:ui.button.click voice @a 5 -36 -129 9999 1
-execute if score #world_tree.opening.title world_tree.story matches 20 run title @a title {"text":"一切都結"}
+execute if score #world_tree.opening.title world_tree.story matches 20 run title @a title {"text":"光暗大戰"}
 execute if score #world_tree.opening.title world_tree.story matches 20 run playsound minecraft:ui.button.click voice @a 5 -36 -129 9999 1
 execute if score #world_tree.opening.title world_tree.story matches 22 run title @a title {"text":"光暗大戰."}
 execute if score #world_tree.opening.title world_tree.story matches 22 run playsound minecraft:ui.button.click voice @a 5 -36 -129 9999 1

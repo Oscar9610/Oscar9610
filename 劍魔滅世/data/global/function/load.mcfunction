@@ -42,6 +42,7 @@ function rpg_armors:scoreboard
 function weapons:scoreboard
 function rotas:scoreboard
 function ancient_lorras:scoreboard
+function screen:scoreboard
 # ============================================================================================
 
 # 偵測玩家是否完成水星主線？ ；開啟調用 草星 - 古羅拉斯 function 資源

@@ -52,6 +52,15 @@
                 "minecraft:custom_data": "{type:\"weapon\",weapon:\"bibi_hammer\",can_modify:1b,physical:1b}",
                 "minecraft:max_damage": 156
               }
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "type": "minecraft:score",
+                "target": "this",
+                "score": "player.level",
+                "scale": 1
+              }
             }
           ]
         },
@@ -100,6 +109,15 @@
                 "minecraft:custom_model_data": 35,
                 "minecraft:custom_data": "{type:\"weapon\",weapon:\"royal_knight_sword\",can_modify:1b,fire:1b}",
                 "minecraft:max_damage": 156
+              }
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "type": "minecraft:score",
+                "target": "this",
+                "score": "player.level",
+                "scale": 1
               }
             }
           ]
@@ -151,6 +169,15 @@
                 "minecraft:custom_data": "{type:\"weapon\",weapon:\"coat_hanger\",can_modify:1b,physical:1b}",
                 "minecraft:max_damage": 156
               }
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "type": "minecraft:score",
+                "target": "this",
+                "score": "player.level",
+                "scale": 1
+              }
             }
           ]
         },
@@ -160,17 +187,44 @@
             {
               "type": "minecraft:item",
               "name": "minecraft:dried_kelp",
-              "weight": 80
+              "weight": 80,
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 1,
+                    "max": 5
+                  }
+                }
+              ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:cookie",
-              "weight": 80
+              "weight": 80,
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 1,
+                    "max": 5
+                  }
+                }
+              ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:cod",
-              "weight": 80
+              "weight": 80,
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 1,
+                    "max": 5
+                  }
+                }
+              ]
             },
             {
               "type": "minecraft:item",
@@ -180,12 +234,30 @@
             {
               "type": "minecraft:item",
               "name": "minecraft:rotten_flesh",
-              "weight": 80
+              "weight": 80,
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 1,
+                    "max": 5
+                  }
+                }
+              ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:glow_berries",
-              "weight": 80
+              "weight": 80,
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 1,
+                    "max": 5
+                  }
+                }
+              ]
             }
           ]
         },
@@ -195,22 +267,58 @@
             {
               "type": "minecraft:item",
               "name": "minecraft:apple",
-              "weight": 60
+              "weight": 60,
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 2,
+                    "max": 8
+                  }
+                }
+              ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:melon_slice",
-              "weight": 60
+              "weight": 60,
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 2,
+                    "max": 8
+                  }
+                }
+              ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:potato",
-              "weight": 60
+              "weight": 60,
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 2,
+                    "max": 8
+                  }
+                }
+              ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:sweet_berries",
-              "weight": 60
+              "weight": 60,
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 2,
+                    "max": 8
+                  }
+                }
+              ]
             }
           ]
         },
@@ -220,32 +328,86 @@
             {
               "type": "minecraft:item",
               "name": "minecraft:cooked_rabbit",
-              "weight": 40
+              "weight": 40,
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 1,
+                    "max": 5
+                  }
+                }
+              ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:cooked_chicken",
-              "weight": 40
+              "weight": 40,
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 1,
+                    "max": 5
+                  }
+                }
+              ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:carrot",
-              "weight": 40
+              "weight": 40,
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 1,
+                    "max": 5
+                  }
+                }
+              ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:bread",
-              "weight": 40
+              "weight": 40,
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 1,
+                    "max": 5
+                  }
+                }
+              ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:beetroot",
-              "weight": 40
+              "weight": 40,
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 1,
+                    "max": 5
+                  }
+                }
+              ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:baked_potato",
-              "weight": 40
+              "weight": 40,
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 1,
+                    "max": 5
+                  }
+                }
+              ]
             }
           ]
         },
@@ -255,22 +417,58 @@
             {
               "type": "minecraft:item",
               "name": "minecraft:cooked_salmon",
-              "weight": 20
+              "weight": 20,
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 3,
+                    "max": 6
+                  }
+                }
+              ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:cooked_porkchop",
-              "weight": 20
+              "weight": 20,
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 3,
+                    "max": 6
+                  }
+                }
+              ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:cooked_beef",
-              "weight": 20
+              "weight": 20,
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 3,
+                    "max": 6
+                  }
+                }
+              ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:cooked_mutton",
-              "weight": 20
+              "weight": 20,
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 3,
+                    "max": 6
+                  }
+                }
+              ]
             }
           ]
         },
@@ -389,7 +587,23 @@
             {
               "type": "minecraft:item",
               "name": "minecraft:stone_sword",
-              "weight": 33,
+              "weight": 15,
+              "functions": [
+                {
+                  "function": "minecraft:enchant_with_levels",
+                  "levels": {
+                    "type": "minecraft:score",
+                    "target": "this",
+                    "score": "player.level",
+                    "scale": 1
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:stone_axe",
+              "weight": 15,
               "functions": [
                 {
                   "function": "minecraft:enchant_with_levels",
@@ -402,31 +616,19 @@
             },
             {
               "type": "minecraft:item",
-              "name": "minecraft:stone_axe",
-              "weight": 33,
+              "name": "minecraft:stone_pickaxe",
+              "weight": 15,
               "functions": [
                 {
                   "function": "minecraft:enchant_with_levels",
                   "levels": {
-                    "min": 0,
-                    "max": 30
+                    "type": "minecraft:score",
+                    "target": "this",
+                    "score": "player.level",
+                    "scale": 1
                   }
                 }
               ]
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:stone_pickaxe",
-          "weight": 33,
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "min": 0,
-                "max": 15
-              }
             }
           ]
         }

@@ -12,15 +12,11 @@ function system:treasure_chests/guide
 function system:portal/loop
 function system:chapter_portal/main
 
-execute as @a at @s run function time_traveler:monster_weakness/player_loop
-
 function system:main
 function rpg_armors:loop
-function rpg_items:main
 
 execute as @a[scores={disable_operate=1..}] at @s run function players:disable_operate
 function players:space_time_deceleration/loop
-execute as @a at @s run function time_traveler:players/update_strength/main
 
 function map_hall:tp_door/in
 function map_hall:tp_door/loop
@@ -34,7 +30,6 @@ function system:injection/interaction/fusion
 function time_traveler:players/effects/main
 execute as @a at @s run function time_traveler:monster_weakness/player_loop
 execute as @a[scores={disable_operate=1..}] at @s run function players:disable_operate
-execute as @a at @s run function time_traveler:players/update_strength/main
 function players:space_time_deceleration/loop
 
 #=========================================================

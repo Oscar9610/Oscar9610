@@ -5,13 +5,13 @@
 #health(玩家血量) 字面上
 #player_count(玩家數量) 為了偵測與給予對應的玩家ID 因此設計了這個偵測
 #player_death(玩家死亡偵測) minecraft有一個特性 死亡會清除所有 效果(Effect) 為了修復觸發特性新手4件套、皇家騎士4件套等失效 因此設計了這個偵測
-#player.out_of_combat_detection(脫離戰場) 為了方便玩家恢復狀態 因此設計了脫戰後5秒開始 加速、回血
 #.rdm(隨機數) 字面上
 #=====================================================================================
 
 ##記分板
 scoreboard objectives add player_leave minecraft.custom:minecraft.leave_game
 scoreboard objectives add id dummy
+scoreboard objectives add player.level dummy "玩家等級"
 scoreboard objectives add disable_operate dummy "禁用操作"
 scoreboard objectives add global.main dummy "主要全局"
 scoreboard objectives add bool.main dummy "布林值全局"
@@ -24,6 +24,7 @@ scoreboard objectives add orantes.global.main dummy "[水星 - 奧蘭蒂斯] 主
 scoreboard objectives add spaceship.global.main dummy "[太空站 - 奧莉亞] 主要全局"
 scoreboard objectives add orantes.transitions dummy "[水星 - 奧蘭蒂斯] 城市"
 scoreboard objectives add death_count deathCount [{"text":" ☠ 死亡次數 ☠","color":"red"}]
+scoreboard players add @a death_count 0
 
 scoreboard objectives add daytime_weather.weather dummy "[地圖大廳] 暫存天氣"
 scoreboard objectives add music.hurricane_island dummy "[水星 - 奧蘭蒂斯] 颶風之島背景音樂"
@@ -32,7 +33,6 @@ scoreboard objectives add health health "玩家血量"
 scoreboard objectives add player_count dummy "玩家數量"
 scoreboard objectives add money dummy "就是他madre的dinero"
 scoreboard objectives add player_death deathCount "玩家死亡偵測"
-scoreboard objectives add player.out_of_combat_detection dummy "脫離戰場"
 scoreboard objectives add .rdm dummy "隨機數"
 scoreboard objectives add player.space_time_deceleration dummy "超時空減速"
 scoreboard objectives add player.space_time_deceleration.fx dummy "超時空減速特效"
@@ -70,9 +70,6 @@ scoreboard players set #20 global.main 20
 scoreboard players set #40 global.main 40
 scoreboard players set #60 global.main 60
 scoreboard players set #100 global.main 100
-
-##脫離戰場
-scoreboard players set @a player.out_of_combat_detection 0
 
 ##區域
 
@@ -120,7 +117,6 @@ scoreboard players add #planet_id global.main 0
 scoreboard players add #spaceship.tutorial.state spaceship.global.main 0
 
 scoreboard players add @a death_count 0
-scoreboard objectives setdisplay sidebar death_count
 
 ##時空之境水星傳送門
 scoreboard players set #fx.tp_door orantes.global.main 0

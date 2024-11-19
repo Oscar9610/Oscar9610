@@ -13,11 +13,11 @@
 
 # 設置玩家重生點
 
-    execute in game_map:orantes run spawnpoint @a[distance=..60] 171 167 -55
+    execute in game_map:orantes run spawnpoint @a[distance=..60] 277 213 -82
 
 # 移除光源
 
-    execute in game_map:orantes run setblock 176 167 -56 air
+    execute in game_map:orantes run setblock 283 212 -86 air
 
 # 重啟戰鬥音樂
 
@@ -27,7 +27,7 @@
 
 # 移除 Display
 
-    execute in game_map:orantes positioned 176 167 -56 as @e[tag=boss.display,distance=..10] run function animated_java:boss_display/remove/this
+    execute in game_map:orantes positioned 283 212 -86 as @e[tag=boss.display,distance=..10] run function animated_java:boss_display/remove/this
     kill @e[tag=battle_elf.storm]
 
 # BOSS 生成

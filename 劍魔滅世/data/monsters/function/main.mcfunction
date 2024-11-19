@@ -1,28 +1,25 @@
 
 ## ----- 怪物種類 ----- ##
-# 普通小怪
-function monsters:flash_crystal/main
 
 function monsters:soul_abyss_beast/main
 function monsters:sculk_saboteur/main
 function monsters:sculk_priest/main
 function monsters:wind_shamen/main
-function monsters:disaster/main
 
 # Boss
 function monsters:shadow/main
 function monsters:poison/main
 function monsters:storm/main
 function monsters:atar/main
-function monsters:stormpromax/main
-function monsters:su/main
+execute as @e[tag=rajeta] at @s run function monsters:rajeta/main
+
+
+execute as @e[tag=monsters.ai] at @s run function monsters:state_machine/main
 
 ## ----- 偵測怪物死亡 ----- ##
 
 function monsters:detect_kill/loop
 function monsters:dark_overlord/main
-function monsters:bloodmoon_lord/main
-function monsters:afotr/main
 
 # CTM
 function monsters:ctm/main

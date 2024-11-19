@@ -1,0 +1,1 @@
+stopsound @a[distance=..16] voice minecraft:voice.characters.hill.orantes.2.1

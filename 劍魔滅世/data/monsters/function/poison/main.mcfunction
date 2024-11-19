@@ -23,3 +23,5 @@ execute as @e[type=marker,tag=poison_boss.4.1] at @s run function monsters:poiso
 
 # Boss Self
 execute as @e[type=zombie,tag=poison_boss,limit=1] at @s run function monsters:poison/main.boss
+
+execute as @a at @s run function monsters:poison/main.player
